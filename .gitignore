@@ -1,0 +1,10 @@
+.venv*/
+lgjs-*/
+node_modules/
+__pycache__/
+*.pyc
+saga/results/runs.jsonl
+saga/results/smoke.jsonl
+saga/results/window_sweep_W*/
+*.log
+*.stderr

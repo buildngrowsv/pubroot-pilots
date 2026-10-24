@@ -1,0 +1,18 @@
+{
+ "mem0ai": "2.2.1",
+ "update_signature": "(memory_id, text: Optional[str] = None, metadata: Optional[Dict[str, Any]] = None, expiration_date: Any = <object object at 0x7f30aab293d0>, data: Optional[str] = None)",
+ "memory_id": "adbbaed1-3487-4d7a-b380-2957cc6e2311",
+ "alice_before": [
+  "adbbaed1-3487-4d7a-b380-2957cc6e2311"
+ ],
+ "alice_after": [
+  "adbbaed1-3487-4d7a-b380-2957cc6e2311"
+ ],
+ "bob_after": [],
+ "stored_user_id": "alice",
+ "stored_metadata": {
+  "category": "food"
+ },
+ "exists_after_alice_delete_all": false,
+ "reproduced": false
+}

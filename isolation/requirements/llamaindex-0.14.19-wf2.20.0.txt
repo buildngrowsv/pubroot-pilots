@@ -1,0 +1,2 @@
+llama-index-core==0.14.19
+llama-index-workflows==2.20.0

@@ -1,0 +1,11 @@
+{"op": "git_create_branch", "immediate": "restored", "immediate_residue": [], "late": "restored", "late_residue": [], "label": "full"}
+{"op": "git_commit_file", "immediate": "residue", "immediate_residue": ["work_main_commits"], "late": "residue", "late_residue": ["work_main_commits"], "label": "partial"}
+{"op": "git_push", "immediate": "residue", "immediate_residue": ["mirror_refs"], "late": "residue", "late_residue": ["mirror_refs"], "label": "partial"}
+{"op": "db_insert", "immediate": "restored", "immediate_residue": [], "late": "restored", "late_residue": [], "label": "full"}
+{"op": "db_update", "immediate": "restored", "immediate_residue": [], "late": "restored", "late_residue": [], "label": "full"}
+{"op": "pay_charge", "immediate": "residue", "immediate_residue": ["ledger_rows"], "late": "residue", "late_residue": ["ledger_rows"], "label": "partial"}
+{"op": "email_send", "immediate": "restored", "immediate_residue": [], "late": "window_closed", "late_residue": ["email 1 already dispatched"], "label": "windowed"}
+{"op": "cal_create", "immediate": "restored", "immediate_residue": [], "late": "restored", "late_residue": [], "label": "full"}
+{"op": "chat_post", "immediate": "residue", "immediate_residue": ["chat"], "late": "residue", "late_residue": ["chat"], "label": "partial"}
+{"op": "sms_send", "immediate": "no_inverse", "immediate_residue": ["SMS cannot be recalled"], "late": "no_inverse", "label": "irreversible"}
+{"op": "webhook_notify", "immediate": "no_inverse", "immediate_residue": ["partner already notified"], "late": "no_inverse", "label": "irreversible"}

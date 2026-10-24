@@ -1,0 +1,33 @@
+{
+ "agno": "3.1.10",
+ "a_write": "Created company/acme. Recorded 1 fact(s).",
+ "b_write": "Created company/acme. Recorded 1 fact(s).",
+ "reads": {
+  "alice@corp.com": [
+   "CANARY-ALICE renewal at $50k"
+  ],
+  "bob@corp.com": [
+   "CANARY-BOB they churned"
+  ]
+ },
+ "rows": [
+  {
+   "table": "agno_learnings",
+   "learning_id": "entity_user_a1e48674b77de978_company_acme",
+   "user_id": "alice@corp.com",
+   "content_has_alice": true,
+   "content_has_bob": false
+  },
+  {
+   "table": "agno_learnings",
+   "learning_id": "entity_user_32e7ccbae8d132f1_company_acme",
+   "user_id": "bob@corp.com",
+   "content_has_alice": false,
+   "content_has_bob": true
+  }
+ ],
+ "alice_sees_bob_canary": false,
+ "alice_lost_own_canary": false,
+ "bob_cannot_read_own": false,
+ "reproduced": false
+}

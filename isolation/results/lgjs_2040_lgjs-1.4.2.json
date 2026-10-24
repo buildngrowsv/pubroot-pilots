@@ -1,0 +1,91 @@
+{
+ "package": "@langchain/langgraph",
+ "version": "1.4.2",
+ "core": "1.3.0",
+ "node": "v20.19.2",
+ "scenarioA": [
+  {
+   "n": 4,
+   "jitter": false,
+   "wrongTool": 0,
+   "wrongCkpt": 0,
+   "boundConfigMutated": false,
+   "boundAfter": {
+    "metadata": {
+     "graph_id": "agent"
+    },
+    "configurable": {
+     "ls_agent_type": "chatbot"
+    }
+   },
+   "examples": []
+  },
+  {
+   "n": 50,
+   "jitter": true,
+   "wrongTool": 0,
+   "wrongCkpt": 0,
+   "boundConfigMutated": false,
+   "boundAfter": {
+    "metadata": {
+     "graph_id": "agent"
+    },
+    "configurable": {
+     "ls_agent_type": "chatbot"
+    }
+   },
+   "examples": []
+  },
+  {
+   "n": 200,
+   "jitter": true,
+   "wrongTool": 0,
+   "wrongCkpt": 0,
+   "boundConfigMutated": false,
+   "boundAfter": {
+    "metadata": {
+     "graph_id": "agent"
+    },
+    "configurable": {
+     "ls_agent_type": "chatbot"
+    }
+   },
+   "examples": []
+  }
+ ],
+ "scenarioB": {
+  "seen": {
+   "thread-A": {
+    "tenant_id": "tenant-A",
+    "user_id": "user-A"
+   },
+   "thread-B": {
+    "tenant_id": null,
+    "user_id": null
+   }
+  },
+  "leaked": false
+ },
+ "scenarioC": [
+  {
+   "detached": false,
+   "seen": {
+    "thread-B": {
+     "tenant_id": null,
+     "user_id": null
+    }
+   },
+   "leaked": false
+  },
+  {
+   "detached": true,
+   "seen": {
+    "thread-B": {
+     "tenant_id": null,
+     "user_id": null
+    }
+   },
+   "leaked": false
+  }
+ ]
+}

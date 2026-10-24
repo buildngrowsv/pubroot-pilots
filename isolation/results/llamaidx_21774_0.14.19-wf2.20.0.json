@@ -1,0 +1,53 @@
+{
+ "llama-index-core": "0.14.19",
+ "multi_agent_path": {
+  "agent_class": "AgentWorkflow",
+  "second_run_state": {
+   "counter": 2,
+   "log": [
+    1,
+    2
+   ]
+  },
+  "initial_state_after": {
+   "counter": 2,
+   "log": [
+    1,
+    2
+   ]
+  },
+  "tool_calls_total": 2,
+  "expected_second_run": {
+   "counter": 1,
+   "log": [
+    2
+   ]
+  },
+  "leaked": true
+ },
+ "single_agent_path": {
+  "agent_class": "FunctionAgent",
+  "second_run_state": {
+   "counter": 1,
+   "log": [
+    1,
+    2
+   ]
+  },
+  "initial_state_after": {
+   "counter": 0,
+   "log": [
+    1,
+    2
+   ]
+  },
+  "tool_calls_total": 2,
+  "expected_second_run": {
+   "counter": 1,
+   "log": [
+    2
+   ]
+  },
+  "leaked": true
+ }
+}

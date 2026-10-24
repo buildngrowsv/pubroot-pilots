@@ -1,0 +1,24 @@
+{
+ "agno": "2.8.6",
+ "a_write": "Created company/acme. Recorded 1 fact(s).",
+ "b_write": "Created company/acme. Recorded 1 fact(s).",
+ "reads": {
+  "alice@corp.com": [
+   "CANARY-BOB they churned"
+  ],
+  "bob@corp.com": null
+ },
+ "rows": [
+  {
+   "table": "agno_learnings",
+   "learning_id": "entity_user_company_acme",
+   "user_id": "alice@corp.com",
+   "content_has_alice": false,
+   "content_has_bob": true
+  }
+ ],
+ "alice_sees_bob_canary": true,
+ "alice_lost_own_canary": true,
+ "bob_cannot_read_own": true,
+ "reproduced": true
+}

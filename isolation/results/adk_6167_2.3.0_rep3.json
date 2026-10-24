@@ -1,0 +1,18 @@
+{
+ "google-adk": "2.3.0",
+ "python": "3.13.5",
+ "part1_isolation": {
+  "users": 200,
+  "cross_user_or_cross_app_hits": 0,
+  "own_missing": 0
+ },
+ "part2_concurrent_read_write": {
+  "seconds": 8.0,
+  "adds": 1646,
+  "searches": 2040,
+  "runtime_errors": 118,
+  "error_samples": [
+   "dictionary changed size during iteration"
+  ]
+ }
+}
