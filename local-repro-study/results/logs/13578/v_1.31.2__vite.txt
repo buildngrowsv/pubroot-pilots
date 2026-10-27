@@ -1,0 +1,18 @@
+
+  VITE v7.3.2  ready in 1693 ms
+
+  ➜  Local:   http://localhost:5196/
+  ➜  Network: use --host to expose
+  ➜  Debug:   http://localhost:5196/__debug
+3:55:21 AM [vite] Internal server error: fetch failed
+      at Object.processResponse (./v_1.31.2/node_modules/undici/lib/web/fetch/index.js:237:16)
+      at ./v_1.31.2/node_modules/undici/lib/web/fetch/index.js:1081:19
+      at node:internal/process/task_queues:149:7
+      at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+      at AsyncResource.runMicrotask (node:internal/process/task_queues:146:8)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at ./v_1.31.2/node_modules/undici/index.js:157:7
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async fetch4 (./v_1.31.2/node_modules/miniflare/dist/src/index.js:57562:20)
+      at async _Miniflare.dispatchFetch (./v_1.31.2/node_modules/miniflare/dist/src/index.js:87758:22)
+      at async file://./v_1.31.2/node_modules/@cloudflare/vite-plugin/dist/index.mjs:11142:19

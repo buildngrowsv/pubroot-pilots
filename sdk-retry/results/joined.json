@@ -1,0 +1,1598 @@
+[
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.87,
+  "client_timed_out": false,
+  "error": "openai.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 4.72,
+  "client_timed_out": true,
+  "error": "openai.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.8,
+  "client_timed_out": false,
+  "error": "openai.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.69,
+  "client_timed_out": false,
+  "error": "anthropic.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 4.93,
+  "client_timed_out": true,
+  "error": "anthropic.APITimeoutError: Request timed out or interrupted. This could be due to a network timeout, dropped connection,"
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.02,
+  "client_timed_out": false,
+  "error": "anthropic.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.64,
+  "client_timed_out": false,
+  "error": "groq.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 4.39,
+  "client_timed_out": true,
+  "error": "groq.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.57,
+  "client_timed_out": false,
+  "error": "groq.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 3.5,
+  "client_timed_out": false,
+  "error": "together.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 5.61,
+  "client_timed_out": true,
+  "error": "together.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 3.13,
+  "client_timed_out": false,
+  "error": "together.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.44,
+  "client_timed_out": false,
+  "error": "mistralai.client.errors.sdkerror.SDKError: API error occurred: Status 500. Body: {\"error\": {\"message\": \"stub server erro"
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.3,
+  "client_timed_out": true,
+  "error": "httpx2.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.28,
+  "client_timed_out": false,
+  "error": "httpx2.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 3.83,
+  "client_timed_out": false,
+  "error": "cohere.errors.internal_server_error.InternalServerError: headers: {'server': 'BaseHTTP/0.6 Python/3.13.5', 'date': 'Mon,"
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.3,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 3.3,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.24,
+  "client_timed_out": false,
+  "error": "replicate.exceptions.ReplicateError: ReplicateError Details:\nstatus: 500"
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 2.67,
+  "client_timed_out": false,
+  "error": "replicate.exceptions.ReplicateError: ReplicateError Details:\nstatus: 500"
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.15,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "e500",
+  "rep": "r1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.13,
+  "client_timed_out": false,
+  "error": "fal_client.client.FalClientHTTPError: {\"error\": {\"message\": \"stub server error\", \"type\": \"server_error\"}}"
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "timeout",
+  "rep": "r1",
+  "attempts": 10,
+  "duplicates": 9,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 58.09,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: The read operation timed out"
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "drop",
+  "rep": "r1",
+  "attempts": 10,
+  "duplicates": 9,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 53.99,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.67,
+  "client_timed_out": false,
+  "error": "openai.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 4.71,
+  "client_timed_out": true,
+  "error": "openai.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.89,
+  "client_timed_out": false,
+  "error": "openai.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 5.82,
+  "client_timed_out": false,
+  "error": "anthropic.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 65.61,
+  "client_timed_out": true,
+  "error": "anthropic.APITimeoutError: Request timed out or interrupted. This could be due to a network timeout, dropped connection,"
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 3.03,
+  "client_timed_out": false,
+  "error": "anthropic.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.53,
+  "client_timed_out": false,
+  "error": "groq.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 16.05,
+  "client_timed_out": true,
+  "error": "groq.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.63,
+  "client_timed_out": false,
+  "error": "groq.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.95,
+  "client_timed_out": false,
+  "error": "together.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 6.18,
+  "client_timed_out": true,
+  "error": "together.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 3.07,
+  "client_timed_out": false,
+  "error": "together.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.34,
+  "client_timed_out": false,
+  "error": "mistralai.client.errors.sdkerror.SDKError: API error occurred: Status 500. Body: {\"error\": {\"message\": \"stub server erro"
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.28,
+  "client_timed_out": true,
+  "error": "httpx2.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.26,
+  "client_timed_out": false,
+  "error": "httpx2.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 3.46,
+  "client_timed_out": false,
+  "error": "cohere.errors.internal_server_error.InternalServerError: headers: {'server': 'BaseHTTP/0.6 Python/3.13.5', 'date': 'Mon,"
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.29,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 3.3,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.17,
+  "client_timed_out": false,
+  "error": "replicate.exceptions.ReplicateError: ReplicateError Details:\nstatus: 500"
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 2.66,
+  "client_timed_out": false,
+  "error": "replicate.exceptions.ReplicateError: ReplicateError Details:\nstatus: 500"
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.15,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "e500",
+  "rep": "r2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.12,
+  "client_timed_out": false,
+  "error": "fal_client.client.FalClientHTTPError: {\"error\": {\"message\": \"stub server error\", \"type\": \"server_error\"}}"
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "timeout",
+  "rep": "r2",
+  "attempts": 10,
+  "duplicates": 9,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 54.9,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: The read operation timed out"
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "drop",
+  "rep": "r2",
+  "attempts": 10,
+  "duplicates": 9,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 55.36,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.73,
+  "client_timed_out": false,
+  "error": "openai.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 4.63,
+  "client_timed_out": true,
+  "error": "openai.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "openai",
+  "version": "3.37.0",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.65,
+  "client_timed_out": false,
+  "error": "openai.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.36,
+  "client_timed_out": false,
+  "error": "anthropic.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 5.11,
+  "client_timed_out": true,
+  "error": "anthropic.APITimeoutError: Request timed out or interrupted. This could be due to a network timeout, dropped connection,"
+ },
+ {
+  "sdk": "anthropic",
+  "version": "2.3.0",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.18,
+  "client_timed_out": false,
+  "error": "anthropic.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.42,
+  "client_timed_out": false,
+  "error": "groq.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 4.44,
+  "client_timed_out": true,
+  "error": "groq.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "groq",
+  "version": "1.7.0",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 1.46,
+  "client_timed_out": false,
+  "error": "groq.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.93,
+  "client_timed_out": false,
+  "error": "together.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 6.13,
+  "client_timed_out": true,
+  "error": "together.APITimeoutError: Request timed out."
+ },
+ {
+  "sdk": "together",
+  "version": "3.0.0",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   "0",
+   "1",
+   "2"
+  ],
+  "elapsed_s": 2.8,
+  "client_timed_out": false,
+  "error": "together.APIConnectionError: Connection error."
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.27,
+  "client_timed_out": false,
+  "error": "mistralai.client.errors.sdkerror.SDKError: API error occurred: Status 500. Body: {\"error\": {\"message\": \"stub server erro"
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.27,
+  "client_timed_out": true,
+  "error": "httpx2.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "mistralai",
+  "version": "3.5.0",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.26,
+  "client_timed_out": false,
+  "error": "httpx2.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 3.18,
+  "client_timed_out": false,
+  "error": "cohere.errors.internal_server_error.InternalServerError: headers: {'server': 'BaseHTTP/0.6 Python/3.13.5', 'date': 'Mon,"
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.29,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "cohere",
+  "version": "7.3.0",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 3,
+  "duplicates": 2,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 3.16,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.14,
+  "client_timed_out": false,
+  "error": "replicate.exceptions.ReplicateError: ReplicateError Details:\nstatus: 500"
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 2.64,
+  "client_timed_out": false,
+  "error": "replicate.exceptions.ReplicateError: ReplicateError Details:\nstatus: 500"
+ },
+ {
+  "sdk": "replicate",
+  "version": "1.0.7",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.14,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "e500",
+  "rep": "r3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.11,
+  "client_timed_out": false,
+  "error": "fal_client.client.FalClientHTTPError: {\"error\": {\"message\": \"stub server error\", \"type\": \"server_error\"}}"
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "timeout",
+  "rep": "r3",
+  "attempts": 10,
+  "duplicates": 9,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 62.32,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: The read operation timed out"
+ },
+ {
+  "sdk": "fal-client",
+  "version": "1.0.3",
+  "scenario": "drop",
+  "rep": "r3",
+  "attempts": 10,
+  "duplicates": 9,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "elapsed_s": 54.58,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "e500",
+  "rep": "g1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.43,
+  "client_timed_out": false,
+  "error": "google.genai.errors.ServerError: 500 None. {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "timeout",
+  "rep": "g1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.37,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "drop",
+  "rep": "g1",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.39,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "e500",
+  "rep": "g2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.38,
+  "client_timed_out": false,
+  "error": "google.genai.errors.ServerError: 500 None. {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "timeout",
+  "rep": "g2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.37,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "drop",
+  "rep": "g2",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.42,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "e500",
+  "rep": "g3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.36,
+  "client_timed_out": false,
+  "error": "google.genai.errors.ServerError: 500 None. {'error': {'message': 'stub server error', 'type': 'server_error'}}"
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "timeout",
+  "rep": "g3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 1.36,
+  "client_timed_out": true,
+  "error": "httpx.ReadTimeout: timed out"
+ },
+ {
+  "sdk": "google-genai",
+  "version": "2.33.0",
+  "scenario": "drop",
+  "rep": "g3",
+  "attempts": 1,
+  "duplicates": 0,
+  "same_body": true,
+  "idem_header_names": [],
+  "idem_present": false,
+  "idem_stable_across_attempts": false,
+  "retry_count_header": [
+   null
+  ],
+  "elapsed_s": 0.36,
+  "client_timed_out": false,
+  "error": "httpx.RemoteProtocolError: Server disconnected without sending a response."
+ }
+]

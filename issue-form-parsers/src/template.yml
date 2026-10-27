@@ -1,0 +1,22 @@
+name: Generic report
+description: Synthetic form used only for the parser differential test
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: [Low, High, Critical]
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Agreement
+      options:
+        - label: I agree

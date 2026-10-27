@@ -8,3 +8,22 @@ saga/results/smoke.jsonl
 saga/results/window_sweep_W*/
 *.log
 *.stderr
+.certs/
+*.pem
+*.key
+issue-form-parsers/vendor/
+sdk-retry/results/client_stderr.log
+sdk-retry/results/stub*.log
+# local-repro-study: installs, clones and state recreated by the scripts
+local-repro-study/runs/*/v_*/
+local-repro-study/runs/*/min_*/
+local-repro-study/runs/*/old/
+local-repro-study/runs/*/new/
+local-repro-study/runs/*/My Project/
+local-repro-study/runs/*/repo/
+local-repro-study/runs/*/gist/
+local-repro-study/data/frame_raw.json
+.wrangler/
+# voice-approval-gate: downloaded model and generated audio
+voice-approval-gate/models/
+voice-approval-gate/results/wav/

@@ -1,0 +1,9 @@
+
+ RUN  v4.1.12 ./min_1.65.0_4.1.12
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  03:57:44
+   Duration  182ms (transform 8ms, setup 0ms, import 17ms, tests 3ms, environment 0ms)
+

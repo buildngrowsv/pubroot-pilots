@@ -1,6 +1,6 @@
-     143  .gitignore
+     718  .gitignore
     1066  LICENSE
-   11665  README.md
+   17211  README.md
      573  isolation/README.md
     3300  isolation/repro/adk_6167.py
     2210  isolation/repro/agno_9319.py
@@ -64,6 +64,54 @@
      550  isolation/results/mem0_6277_2.0.12.json
      554  isolation/results/mem0_6277_2.0.13.json
      553  isolation/results/mem0_6277_2.2.1.json
+    2488  issue-form-parsers/README.md
+     728  issue-form-parsers/fetch_vendor.sh
+   60076  issue-form-parsers/package-lock.json
+     392  issue-form-parsers/package.json
+   82185  issue-form-parsers/results/differential.jsonl
+     392  issue-form-parsers/results/env.txt
+    4300  issue-form-parsers/results/summary.md
+   10356  issue-form-parsers/src/differential.mjs
+     519  issue-form-parsers/src/probe.mjs
+     472  issue-form-parsers/src/template.yml
+    3766  local-repro-study/README.md
+   30530  local-repro-study/data/frame.json
+     138  local-repro-study/data/frame_query.txt
+    4381  local-repro-study/data/results.jsonl
+     414  local-repro-study/data/sample.json
+     544  local-repro-study/fetch_frame.sh
+    3342  local-repro-study/results/logs/10170/min_1.30.2_4.1.2__test.txt
+     199  local-repro-study/results/logs/10170/min_1.65.0_4.1.12__test.txt
+   14163  local-repro-study/results/logs/10170/test_old.txt
+     536  local-repro-study/results/logs/12706/v_4.152.0__dev.txt
+     639  local-repro-study/results/logs/12706/v_4.69.0__dev.txt
+    1075  local-repro-study/results/logs/13578/v_1.31.2__vite.txt
+     156  local-repro-study/results/logs/13578/v_1.65.0__vite.txt
+     458  local-repro-study/results/logs/13609/v_4.152.0__dev.txt
+      34  local-repro-study/results/logs/13609/v_4.152.0__echo.txt
+     561  local-repro-study/results/logs/13609/v_4.84.0__dev.txt
+      34  local-repro-study/results/logs/13609/v_4.84.0__echo.txt
+    1089  local-repro-study/results/logs/13790/new__test.txt
+    1088  local-repro-study/results/logs/13790/old__test.txt
+     197  local-repro-study/results/logs/14107/My_Project__new__test.txt
+    3586  local-repro-study/results/logs/14107/My_Project__old__test.txt
+    1169  local-repro-study/results/logs/14255/v_4.152.0__dev.txt
+    1164  local-repro-study/results/logs/14255/v_4.98.0__dev.txt
+    1279  local-repro-study/results/logs/14255/v_4.99.0__dev.txt
+     285  local-repro-study/runs/10170/fetch_repo.sh
+     974  local-repro-study/runs/10170/run_min.sh
+     356  local-repro-study/runs/10170/run_old.sh
+    1460  local-repro-study/runs/12706/run.sh
+     573  local-repro-study/runs/12929/repro.mjs
+     287  local-repro-study/runs/12929/run.sh
+    1485  local-repro-study/runs/13578/run.sh
+     373  local-repro-study/runs/13609/fetch_gist.sh
+     238  local-repro-study/runs/13609/gist.sha256
+     875  local-repro-study/runs/13609/run.sh
+    2613  local-repro-study/runs/13790/run.sh
+    1583  local-repro-study/runs/14107/run.sh
+    1522  local-repro-study/runs/14255/run.sh
+    1329  local-repro-study/sample.py
      547  saga/README.md
     2973  saga/requirements.lock.txt
       93  saga/requirements.txt
@@ -80,4 +128,29 @@
     4596  saga/src/run_pilot.py
    10895  saga/src/sandbox.py
     1133  saga/src/window_sweep.py
+    4247  sdk-retry/README.md
+     634  sdk-retry/gen_localhost_cert.sh
+    1257  sdk-retry/requirements.lock.txt
+     147  sdk-retry/requirements.txt
+   60594  sdk-retry/results/attempts.jsonl
+   17640  sdk-retry/results/client.jsonl
+    2551  sdk-retry/results/client_callerkey.jsonl
+    1989  sdk-retry/results/invalid_google_genai_harness_v1.jsonl
+   34682  sdk-retry/results/joined.json
+    1776  sdk-retry/results/summary.md
+     971  sdk-retry/results/summary_callerkey.md
+     632  sdk-retry/run_caller_key.sh
+     765  sdk-retry/run_genai.sh
+     876  sdk-retry/run_matrix.sh
+    2420  sdk-retry/src/analyze.py
+    3061  sdk-retry/src/call_sdk.py
+    3208  sdk-retry/src/stub_server.py
+    2359  voice-approval-gate/README.md
+     481  voice-approval-gate/fetch_model.sh
+    4452  voice-approval-gate/pilot.py
+    1249  voice-approval-gate/replies.json
+     171  voice-approval-gate/requirements.lock.txt
+      13  voice-approval-gate/requirements.txt
+   71960  voice-approval-gate/results/clips.jsonl
+     963  voice-approval-gate/results/summary.json
        -  FILELIST.txt

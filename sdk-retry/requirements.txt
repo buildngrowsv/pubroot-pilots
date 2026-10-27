@@ -1,0 +1,9 @@
+openai==3.37.0
+anthropic==2.3.0
+groq==1.7.0
+together==3.0.0
+mistralai==3.5.0
+cohere==7.3.0
+google-genai==2.33.0
+replicate==1.0.7
+fal-client==1.0.3

@@ -1,0 +1,12 @@
+{"sdk": "openai", "version": "3.37.0", "run_id": "k1-openai", "scenario": "e500", "timeout_s": 1.0, "elapsed_s": 1.57, "error": "openai.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"}
+{"sdk": "openai", "version": "3.37.0", "run_id": "k1-openai", "scenario": "timeout", "timeout_s": 1.0, "elapsed_s": 4.68, "error": "openai.APITimeoutError: Request timed out."}
+{"sdk": "openai", "version": "3.37.0", "run_id": "k1-openai", "scenario": "drop", "timeout_s": 1.0, "elapsed_s": 1.79, "error": "openai.APIConnectionError: Connection error."}
+{"sdk": "anthropic", "version": "2.3.0", "run_id": "k1-anthropic", "scenario": "e500", "timeout_s": 1.0, "elapsed_s": 2.12, "error": "anthropic.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"}
+{"sdk": "anthropic", "version": "2.3.0", "run_id": "k1-anthropic", "scenario": "timeout", "timeout_s": 1.0, "elapsed_s": 5.1, "error": "anthropic.APITimeoutError: Request timed out or interrupted. This could be due to a network timeout, dropped connection, or request cancellation. See https://docs.anthropic.com/en/api/err"}
+{"sdk": "anthropic", "version": "2.3.0", "run_id": "k1-anthropic", "scenario": "drop", "timeout_s": 1.0, "elapsed_s": 2.18, "error": "anthropic.APIConnectionError: Connection error."}
+{"sdk": "groq", "version": "1.7.0", "run_id": "k1-groq", "scenario": "e500", "timeout_s": 1.0, "elapsed_s": 1.54, "error": "groq.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"}
+{"sdk": "groq", "version": "1.7.0", "run_id": "k1-groq", "scenario": "timeout", "timeout_s": 1.0, "elapsed_s": 4.58, "error": "groq.APITimeoutError: Request timed out."}
+{"sdk": "groq", "version": "1.7.0", "run_id": "k1-groq", "scenario": "drop", "timeout_s": 1.0, "elapsed_s": 1.51, "error": "groq.APIConnectionError: Connection error."}
+{"sdk": "together", "version": "3.0.0", "run_id": "k1-together", "scenario": "e500", "timeout_s": 1.0, "elapsed_s": 3.09, "error": "together.InternalServerError: Error code: 500 - {'error': {'message': 'stub server error', 'type': 'server_error'}}"}
+{"sdk": "together", "version": "3.0.0", "run_id": "k1-together", "scenario": "timeout", "timeout_s": 1.0, "elapsed_s": 5.97, "error": "together.APITimeoutError: Request timed out."}
+{"sdk": "together", "version": "3.0.0", "run_id": "k1-together", "scenario": "drop", "timeout_s": 1.0, "elapsed_s": 2.94, "error": "together.APIConnectionError: Connection error."}

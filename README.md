@@ -1,15 +1,19 @@
 # pubroot-pilots
 
-Code for the two pilot studies submitted to Pubroot. Repository: https://github.com/buildngrowsv/pubroot-pilots
+Code for the pilot studies submitted (or prepared for submission) to Pubroot. Repository: https://github.com/buildngrowsv/pubroot-pilots
 
 | Folder | Paper | Submission |
 |---|---|---|
 | [`saga/`](saga/) | *Can Agent Sagas Roll Back? A Compensation-Coverage Benchmark Protocol with a Pilot on LangGraph, AG2 and CrewAI* (2026-251) | https://github.com/buildngrowsv/pubroot-website/issues/251 |
 | [`isolation/`](isolation/) | *Do Session-Isolation Bug Reports in LLM Agent Frameworks Reproduce? A Case Study of Five Closed Issues, with a Mining Protocol* (2026-253) | https://github.com/buildngrowsv/pubroot-website/issues/253 |
+| [`sdk-retry/`](sdk-retry/) | *Do Generative AI Client SDKs Make Retries Idempotent? A Local Audit of Nine Python SDKs Against a Failure-Injecting Stub* | not yet submitted |
+| [`issue-form-parsers/`](issue-form-parsers/) | *Heading Collisions in GitHub Issue-Form Body Parsers: A Differential Test of Three Open-Source Parsers on Agent-Style Markdown* | not yet submitted |
+| [`local-repro-study/`](local-repro-study/) | *Do Closed Workers Toolchain Bug Reports Still Reproduce Offline? A Pinned-Version Replay of Ten Sampled wrangler and Miniflare Issues* | not yet submitted |
+| [`voice-approval-gate/`](voice-approval-gate/) | *Spoken Approval as a Human Gate for Agent Actions: How Often Do Streaming Transcripts Turn a Hesitant Reply into a False Yes?* | not yet submitted |
 
-Everything runs offline. **No API keys are needed and no model is called:** every model is a deterministic stub, every tool acts on a local sandbox, and storage is local (SQLite, local Qdrant, in-memory). No third-party code is vendored; frameworks are installed from PyPI/npm with the pinned versions below. All paths are relative to the folder they are run from.
+Everything runs offline (network is needed only to install packages; `issue-form-parsers/fetch_vendor.sh` also clones one parser from GitHub; `local-repro-study` fetches public GitHub issue data, one public repo and one public gist; `voice-approval-gate/fetch_model.sh` downloads one public speech model). **No API keys are needed and no model is called:** every model is a deterministic stub, every tool acts on a local sandbox, and storage is local (SQLite, local Qdrant, in-memory). No third-party code is vendored; frameworks are installed from PyPI/npm with the pinned versions below (or cloned at a pinned commit). No certificates or keys are committed: the `sdk-retry` stub generates a throwaway localhost certificate at run time. All paths are relative to the folder they are run from.
 
-Original runs: 2026-10-23, Linux x86_64, Python 3.13.5, git 2.47.3, Node v20.19.2.
+Original runs: saga and isolation 2026-10-23; sdk-retry and issue-form-parsers 2026-10-25; local-repro-study and voice-approval-gate 2026-10-26. Linux x86_64, Python 3.13.5, git 2.47.3, Node v20.19.2 (local-repro-study: Node v22.23.4 except issue 12929).
 
 ---
 
@@ -123,6 +127,53 @@ The committed `isolation/results/*.json` are the original outputs.
 
 ---
 
+---
+
+## 3. SDK retry audit (`sdk-retry/`)
+
+Nine generative-AI Python SDKs (openai 3.37.0, anthropic 2.3.0, groq 1.7.0, together 3.0.0, mistralai 3.5.0, cohere 7.3.0, google-genai 2.33.0, replicate 1.0.7, fal-client 1.0.3) make one logical call each against a local failure-injecting stub on 127.0.0.1, with fake keys. The failure modes are HTTP 500, timeout, and connection drop, with 3 reps of each. The stub logs every attempt. See [`sdk-retry/README.md`](sdk-retry/README.md) for install and run, the run-time localhost certificate, and limits.
+
+| Paper number | Where it comes from |
+|---|---|
+| 81 logical calls produced 219 attempts, 138 of them duplicate POSTs; 48/81 calls retried | `sdk-retry/results/summary.md` (sum of the attempts column; raw rows in `attempts.jsonl`) |
+| 0 attempts carried an idempotency header by default | `summary.md` (idempotency-header column) |
+| A caller key passed via `extra_headers` was re-sent unchanged on every attempt in 12/12 runs | `sdk-retry/results/summary_callerkey.md` |
+
+## 4. Issue-form parser differential (`issue-form-parsers/`)
+
+19 synthetic issue-form bodies (3 controls) for a 4-field form, run through 8 subjects:
+- stefanbuck/github-issue-parser v3.2.4 and v3.2.5, with and without a template;
+- @github/issue-parser 2.0.0, with and without a template;
+- @zentered/issue-forms-body-parser 3.0.0;
+- a naive split baseline;
+- a strict-AST reference.
+
+See [`issue-form-parsers/README.md`](issue-form-parsers/README.md).
+
+| Paper number | Where it comes from |
+|---|---|
+| Per-subject outcome counts (FIELD_CHANGED, DESC_ALTERED, EXTRA_KEYS, REJECT, OK) over 16 non-control cases | `issue-form-parsers/results/summary.md` |
+| Raw outputs per case and subject (152 rows) | `issue-form-parsers/results/differential.jsonl` |
+
+## 5. Workers toolchain issue replay (`local-repro-study/`)
+
+10 issues were drawn with a fixed seed from 21 auto-eligible closed `cloudflare/workers-sdk` issues (frame of 77, from a public GitHub search). 8 were replayed on localhost at the reported ("before") and current ("after") package versions; 2 were excluded (Docker, interactive HMR). No Cloudflare account or deployment is used. Issue bodies, the reporter's repo and gist, and all `node_modules` installs are **not** included. Fetch scripts recreate them. See [`local-repro-study/README.md`](local-repro-study/README.md).
+
+| Paper number | Where it comes from |
+|---|---|
+| 77 in frame, 21 auto-eligible, seed 20261026, first 10 drawn | `local-repro-study/data/frame.json`, `sample.py` → `data/sample.json` |
+| 5 reproduced and fixed, 2 closed without code change, 1 not reproduced, 2 excluded; 2 of 8 replays verbatim | `local-repro-study/data/results.jsonl` (`class`, `edits`) |
+| Observed before/after behaviour per issue | `data/results.jsonl` and `results/logs/` |
+
+## 6. Spoken approval gate (`voice-approval-gate/`)
+
+24 scripted replies × 6 espeak-ng voice settings = 144 synthetic clips, streamed into Vosk (small English model) in 100 ms chunks; four gate policies decide on the partial/final transcripts. No human voices and no personal data. The model and the generated audio are not included (`fetch_model.sh` downloads and checksums the model; `pilot.py` regenerates the clips). See [`voice-approval-gate/README.md`](voice-approval-gate/README.md).
+
+| Paper number | Where it comes from |
+|---|---|
+| False approvals 51/45/2/5 of 96 and false rejections 14/18/18/37 of 48 for P1–P4 | `voice-approval-gate/results/summary.json` |
+| Final transcript exact match 66/144; per-clip partials and finals | `summary.json`, `results/clips.jsonl` |
+
 ## Limitations
 
 - **Stubs, not models.** All agents are driven by deterministic stub models. The pilots measure framework and harness mechanics, not how real LLMs behave under faults.
@@ -131,6 +182,8 @@ The committed `isolation/results/*.json` are the original outputs.
 - **Isolation sample is small and a convenience sample:** five closed issues, not a random or exhaustive sample of agent frameworks.
 - **Timing-dependent results.** The ADK race counts vary run to run (3 runs per version were recorded). The LlamaIndex leak depends on the llama-index-workflows version: it appears with 2.20.0 and not with 2.26.1; the change in between was not bisected.
 - **Not reproduced ≠ not a bug.** LangGraph.js #2040 did not reproduce in three scenarios; the reporter's exact environment was not available.
+- **sdk-retry** measures client behaviour against a stub only. Whether a real provider deduplicates or bills retried calls was not tested. **issue-form-parsers** uses synthetic bodies written by the same author as the strict reference.
+- **local-repro-study** is a small seeded sample from one repository; "after" is the current npm release, not the fixing commit, and 6 of 8 replays needed recorded edits. **voice-approval-gate** uses synthetic TTS speech and one small ASR model, so the error counts say nothing about real human speakers.
 - Results were produced on one Linux machine with Python 3.13.5 / Node 20.19.2; other platforms were not tested.
 
 ## License

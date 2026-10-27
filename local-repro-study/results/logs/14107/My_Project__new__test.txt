@@ -1,0 +1,9 @@
+
+ RUN  v4.1.12 ./My Project/new
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  03:58:40
+   Duration  1.10s (transform 13ms, setup 0ms, import 20ms, tests 2ms, environment 0ms)
+

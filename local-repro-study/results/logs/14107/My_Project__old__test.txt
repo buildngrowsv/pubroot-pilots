@@ -1,0 +1,34 @@
+
+ RUN  v2.1.9 ./My Project/old
+
+[vpw:inf] Starting isolated runtimes for vitest.config.ts...
+[mf:wrn] The latest compatibility date supported by the installed Cloudflare Workers Runtime is "2024-12-30",
+but you've requested "2025-01-01". Falling back to "2024-12-30"...
+workerd/server/server.c++:3319: error: Fallback service failed to fetch module; payload = ; spec = /?specifier=%2Fworkspace%2Fpubroot%2Fresearch%2Fconcept-map-v0%2Fpilots%2Flocal-repro-study%2Fruns%2F14107%2FMy+Project%2Fold%2Fnode_modules%2Fvitest%2Fdist%2Ffile%3A%2Fworkspace%2Fpubroot%2Fresearch%2Fconcept-map-v0%2Fpilots%2Flocal-repro-study%2Fruns%2F14107%2FMy%2520Project%2Fold%2Fnode_modules%2Fvitest%2Fdist%2Fworkers%2Fthreads.js&referrer=%2Fworkspace%2Fpubroot%2Fresearch%2Fconcept-map-v0%2Fpilots%2Flocal-repro-study%2Fruns%2F14107%2FMy+Project%2Fold%2Fnode_modules%2Fvitest%2Fdist%2Fworker.js&rawSpecifier=file%3A%2F%2F%2Fworkspace%2Fpubroot%2Fresearch%2Fconcept-map-v0%2Fpilots%2Flocal-repro-study%2Fruns%2F14107%2FMy%2520Project%2Fold%2Fnode_modules%2Fvitest%2Fdist%2Fworkers%2Fthreads.js
+Error running worker: Error: No such module "workspace/pubroot/research/concept-map-v0/pilots/local-repro-study/runs/14107/My Project/old/node_modules/vitest/dist/file:./My%20Project/old/node_modules/vitest/dist/workers/threads.js".
+    at execute (file://./My%20Project/old/node_modules/vitest/dist/worker.js:86:43)
+    at Module.run (file://./My%20Project/old/node_modules/vitest/dist/worker.js:135:10)
+    at RunnerObject.handleVitestRunRequest (file://./My%20Project/old/node_modules/@cloudflare/vitest-pool-workers/dist/worker/index.mjs:337:22)
+workerd/io/io-context.c++:355: info: uncaught exception; exception = kj/compat/http.c++:4098: disconnected: other end of WebSocketPipe was destroyed
+stack: ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@4db9040 ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@34d5470 ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@35012bc ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2c6e2a7 ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2a24310 ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2a250d6 ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@4db316f ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2874bf0 ./My Project/old/node_modules/@cloudflare/workerd-linux-64/bin/workerd@2875170
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯ Unhandled Error ⎯⎯⎯⎯⎯⎯⎯
+Error: No such module "workspace/pubroot/research/concept-map-v0/pilots/local-repro-study/runs/14107/My Project/old/node_modules/vitest/dist/file:./My%20Project/old/node_modules/vitest/dist/workers/threads.js".
+ ❯ execute ../../My%20Project/old/node_modules/vitest/dist/worker.js:86:43
+ ❯ Module.run ../../My%20Project/old/node_modules/vitest/dist/worker.js:135:10
+ ❯ RunnerObject.handleVitestRunRequest ../../My%20Project/old/node_modules/@cloudflare/vitest-pool-workers/dist/worker/index.mjs:337:22
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ Test Files  no tests
+      Tests  no tests
+     Errors  1 error
+   Start at  03:58:38
+   Duration  1.06s (transform 0ms, setup 0ms, collect 0ms, tests 0ms, environment 0ms, prepare 0ms)
+
+[vpw:dbg] Shutting down runtimes...

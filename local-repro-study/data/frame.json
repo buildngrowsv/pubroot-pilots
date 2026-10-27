@@ -1,0 +1,778 @@
+{
+ "query_file": "frame_query.txt",
+ "fetched": "2026-10-26T03:51:43-05:00",
+ "total_count": 77,
+ "note": "Issue bodies are not redistributed; the two body-derived flags were computed from them. Re-fetch full bodies with ../fetch_frame.sh.",
+ "items": [
+  {
+   "number": 9822,
+   "title": "require-ing a json file breaks vitest",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/9822",
+   "created_at": "2025-07-02T13:54:16Z",
+   "closed_at": "2026-01-26T08:09:24Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 9882,
+   "title": "can't test cron triggers locally with assets or redirected config",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/9882",
+   "created_at": "2025-07-08T10:23:26Z",
+   "closed_at": "2026-06-06T17:08:26Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 9911,
+   "title": "Cannot use `node-redis` in react-router: `[vite] Internal server error: Class extends value undefined is not a constructor or null`",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/9911",
+   "created_at": "2025-07-09T19:28:31Z",
+   "closed_at": "2025-07-29T11:05:15Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 9919,
+   "title": "Wrangler local dev crashes when processing logged errors",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/9919",
+   "created_at": "2025-07-10T13:18:37Z",
+   "closed_at": "2026-06-18T15:21:41Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 9999,
+   "title": "Types not properly generated for Durable Objects",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/9999",
+   "created_at": "2025-07-17T07:47:56Z",
+   "closed_at": "2025-08-07T16:25:23Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10104,
+   "title": "Expose Vite `server` headers in dev mode",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10104",
+   "created_at": "2025-07-28T21:41:35Z",
+   "closed_at": "2025-08-01T09:50:28Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10108,
+   "title": "\ud83d\udc1b BUG: TypeScript type incompatibility between standard Request and @cloudflare/workers-types Request",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10108",
+   "created_at": "2025-07-29T07:47:27Z",
+   "closed_at": "2026-02-04T12:39:44Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10146,
+   "title": "Debug unenv polyfill is wrong and breaking apps",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10146",
+   "created_at": "2025-07-31T00:15:35Z",
+   "closed_at": "2025-07-31T12:25:13Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10170,
+   "title": "`@cloudflare/vite-plugin` is incompatible with Vitest 4",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10170",
+   "created_at": "2025-08-01T03:53:33Z",
+   "closed_at": "2026-05-03T23:47:50Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10184,
+   "title": "Polyfills for process are wrong.",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10184",
+   "created_at": "2025-08-01T20:32:46Z",
+   "closed_at": "2025-08-07T17:24:31Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10202,
+   "title": "`SELF.fetch()` doesn't carry cookies across redirects",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10202",
+   "created_at": "2025-08-03T22:13:06Z",
+   "closed_at": "2025-08-07T16:16:22Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10213,
+   "title": "[vite-plugin] Rollup might add extra exports to worker entrypoint, causing runtime error",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10213",
+   "created_at": "2025-08-04T13:20:56Z",
+   "closed_at": "2025-09-03T17:48:17Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10254,
+   "title": "Rollup failed to resolve import \"cloudflare:workers\" from \".../app/root.tsx\".",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10254",
+   "created_at": "2025-08-06T16:39:17Z",
+   "closed_at": "2025-08-14T21:02:59Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10260,
+   "title": "SSR Optimizer uses Node.js builds instead of Worker/browser builds for dependencies",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10260",
+   "created_at": "2025-08-07T08:42:38Z",
+   "closed_at": "2026-03-10T21:26:51Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10276,
+   "title": "URL.canParse missing from TypeScript declarations",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10276",
+   "created_at": "2025-08-07T18:47:55Z",
+   "closed_at": "2025-08-08T10:12:16Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10287,
+   "title": "Vite plugin doesn't work with vanilla-extract",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10287",
+   "created_at": "2025-08-08T17:15:36Z",
+   "closed_at": "2025-12-15T17:48:40Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10350,
+   "title": "Run multiple workers with specific environment on both",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10350",
+   "created_at": "2025-08-13T09:45:25Z",
+   "closed_at": "2026-09-28T08:51:47Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10369,
+   "title": "Workers AI not functioning in mixed local/remote setup",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10369",
+   "created_at": "2025-08-14T15:27:57Z",
+   "closed_at": "2025-09-01T13:38:20Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10460,
+   "title": "Remote bindings not using preview D1 DB",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10460",
+   "created_at": "2025-08-24T19:36:02Z",
+   "closed_at": "2025-09-04T17:30:43Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10473,
+   "title": "Persistent \"Unexpected export\" build error on a fully compliant ES Module project",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10473",
+   "created_at": "2025-08-27T10:51:22Z",
+   "closed_at": "2025-09-01T10:49:04Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10506,
+   "title": "bug: vitest and cloudflare d1 experiencing Error: internal error; reference = in latest version",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10506",
+   "created_at": "2025-08-30T11:55:10Z",
+   "closed_at": "2026-02-10T18:42:46Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10553,
+   "title": "Ability to deploy and run Workers-for-Platforms scripts fully-locally with wrangler",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10553",
+   "created_at": "2025-09-04T10:56:46Z",
+   "closed_at": "2026-04-01T19:52:30Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10601,
+   "title": "cannot deploy solidjs app on workers",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10601",
+   "created_at": "2025-09-10T09:37:27Z",
+   "closed_at": "2025-10-22T11:47:44Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10643,
+   "title": "Workflow errors due to missing event handlers",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10643",
+   "created_at": "2025-09-14T09:17:15Z",
+   "closed_at": "2025-09-14T09:38:04Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10644,
+   "title": "The requested module 'cloudflare:workers' does not provide an export named 'WorkflowEvent'",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10644",
+   "created_at": "2025-09-14T09:40:04Z",
+   "closed_at": "2025-09-29T09:26:21Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10666,
+   "title": "How hard would it be to support scheduled and queue endpoints in pages functions build?",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10666",
+   "created_at": "2025-09-16T00:55:38Z",
+   "closed_at": "2025-10-06T13:28:51Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10670,
+   "title": "Error running `vite build` when using `@cloudflare/vite-plugin` combined with a multi-page app config",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10670",
+   "created_at": "2025-09-16T06:51:06Z",
+   "closed_at": "2025-09-16T09:42:13Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10694,
+   "title": "Enable dev.persist_to in wrangler config",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10694",
+   "created_at": "2025-09-18T11:18:11Z",
+   "closed_at": "2025-09-19T11:04:47Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10857,
+   "title": "[Workers AI] Error with wrangler > 4.35.0 but works with 4.35.0",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10857",
+   "created_at": "2025-10-03T03:22:46Z",
+   "closed_at": "2025-10-14T15:05:12Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10947,
+   "title": "URGENT: internal error on fetch to specific URL! HTTP/3?",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10947",
+   "created_at": "2025-10-12T01:20:50Z",
+   "closed_at": "2025-10-13T08:11:36Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 10978,
+   "title": "Bug: Cloudflare Vite Plugin sets \"workerd\" condition for browser client code",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10978",
+   "created_at": "2025-10-14T16:38:29Z",
+   "closed_at": "2025-10-15T08:28:26Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 10996,
+   "title": "Wrangler does not support email binding for sveltekit adapter",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/10996",
+   "created_at": "2025-10-16T17:49:57Z",
+   "closed_at": "2026-07-08T11:22:52Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11063,
+   "title": "Vite plugin fails with vite-plugin-vue-devtools and remote bindings enabled",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11063",
+   "created_at": "2025-10-22T18:59:57Z",
+   "closed_at": "2026-03-15T23:01:59Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11074,
+   "title": "Bug: Workers for Platforms --dispatch-namespace deploys with incorrect worker name (uses namespace name twice)",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11074",
+   "created_at": "2025-10-23T14:04:11Z",
+   "closed_at": "2025-10-28T06:33:03Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11100,
+   "title": "@tanstack/react-start/server-entry doesn't point to custom server entry",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11100",
+   "created_at": "2025-10-25T21:35:22Z",
+   "closed_at": "2025-10-25T21:46:05Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11122,
+   "title": "Durable object hanging tests while preventing timeouts",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11122",
+   "created_at": "2025-10-29T10:29:48Z",
+   "closed_at": "2025-12-17T13:20:55Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 11230,
+   "title": "TypeError: Expected \"default\" export of \"index.ts\" to be a subclass of `WorkerEntrypoint` for RPC",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11230",
+   "created_at": "2025-11-09T22:50:08Z",
+   "closed_at": "2025-11-20T15:13:09Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 11288,
+   "title": "Sveltekit Cloudflare adapter Remote Binding Not Works",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11288",
+   "created_at": "2025-11-14T19:33:01Z",
+   "closed_at": "2025-12-23T11:56:14Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 11299,
+   "title": "Vite plugin doesn't externalize cloudflare:workers with rolldown-vite",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11299",
+   "created_at": "2025-11-16T11:17:35Z",
+   "closed_at": "2025-12-10T13:46:43Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11303,
+   "title": "Vite plugin throws error when adding rollup inputs",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11303",
+   "created_at": "2025-11-16T19:58:08Z",
+   "closed_at": "2025-11-17T10:23:12Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11527,
+   "title": "I have created the exact API for my account pivotbianalytics.com but i cannot deploy cloudflare pages",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11527",
+   "created_at": "2025-12-04T21:28:14Z",
+   "closed_at": "2025-12-10T13:53:23Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 11625,
+   "title": "BUG: Container local dev health check uses HTTPS instead of HTTP, causing connection errors",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11625",
+   "created_at": "2025-12-12T14:35:53Z",
+   "closed_at": "2025-12-12T14:50:18Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 11727,
+   "title": "[create-cloudflare]: Cloudflare type inference in Nuxt v4 doesn't work",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11727",
+   "created_at": "2025-12-20T11:55:42Z",
+   "closed_at": "2026-03-10T22:47:40Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11765,
+   "title": "Error starting dev server with @cloudflare/vite-plugin v1.19.0",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11765",
+   "created_at": "2025-12-28T09:45:12Z",
+   "closed_at": "2026-01-07T17:34:47Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11825,
+   "title": "@cloudflare/vite-plugin: SSR causes \"Invalid hook call\" with React due to module duplication",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11825",
+   "created_at": "2026-01-07T19:28:26Z",
+   "closed_at": "2026-01-09T08:41:59Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11857,
+   "title": "regression: vite-plugin no longer works with vite's `base` option since `1.13.8` for SPAs",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11857",
+   "created_at": "2026-01-10T03:28:40Z",
+   "closed_at": "2026-02-03T13:58:40Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 11948,
+   "title": "`nodejs_compat` + vite-plugin + require(node package) does not work with Vite 8",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/11948",
+   "created_at": "2026-01-16T03:57:10Z",
+   "closed_at": "2026-01-27T14:49:32Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 12014,
+   "title": "Add configurable log level for vitest-pool-workers",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12014",
+   "created_at": "2026-01-20T21:06:24Z",
+   "closed_at": "2026-04-19T17:21:53Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12049,
+   "title": "Workaround to broken ?raw imports in vitest-pool-workers 0.12.x",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12049",
+   "created_at": "2026-01-22T15:32:14Z",
+   "closed_at": "2026-01-22T21:37:53Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12357,
+   "title": "Double Request",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12357",
+   "created_at": "2026-02-02T08:11:46Z",
+   "closed_at": "2026-02-05T08:43:27Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12374,
+   "title": "wrangler should not implicitly change compat dates when workerd is outdated",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12374",
+   "created_at": "2026-02-02T21:14:34Z",
+   "closed_at": "2026-04-01T22:58:18Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 12542,
+   "title": "bun create cloudflare setup fails with Invalid target 'es2024' error",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12542",
+   "created_at": "2026-02-12T10:11:28Z",
+   "closed_at": "2026-03-04T17:07:04Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 12589,
+   "title": "feat: Add Istanbul coverage support for @cloudflare/vitest-pool-workers",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12589",
+   "created_at": "2026-02-17T20:21:55Z",
+   "closed_at": "2026-02-20T10:02:39Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12706,
+   "title": "[BUG] wrangler dev serves HTML from ASSETS binding as raw text instead of rendering in browser",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12706",
+   "created_at": "2026-02-28T01:45:08Z",
+   "closed_at": "2026-03-03T08:23:25Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12722,
+   "title": "Vite plugin: respect wrangler.jsonc `main` as worker entry in RSC mode",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12722",
+   "created_at": "2026-03-01T09:54:18Z",
+   "closed_at": "2026-03-04T19:31:00Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 12731,
+   "title": "Vite hot reload with bindings causes \"promise was resolved or rejected from a different request context\"",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12731",
+   "created_at": "2026-03-02T20:44:25Z",
+   "closed_at": "2026-03-26T17:10:42Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12921,
+   "title": "vitest-pool-workers 0.13.0: global-scope async I/O error on pool startup with Vitest 4.1",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12921",
+   "created_at": "2026-03-16T10:54:52Z",
+   "closed_at": "2026-03-16T15:20:37Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12924,
+   "title": "[vitest-pool-workers] 0.13.0 `exports.default.fetch()` fails when handler uses dynamic `import()`",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12924",
+   "created_at": "2026-03-16T14:31:01Z",
+   "closed_at": "2026-03-27T01:09:44Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12929,
+   "title": "Miniflare fails to parse worker scripts containing the using keyword",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12929",
+   "created_at": "2026-03-16T20:46:10Z",
+   "closed_at": "2026-05-18T11:51:34Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 12984,
+   "title": "Vite 8 breaks importing pg in Vitest",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/12984",
+   "created_at": "2026-03-20T13:57:43Z",
+   "closed_at": "2026-10-25T08:10:30Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13138,
+   "title": "@cloudflare/vite-plugin overrides user-defined resolve.conditions for SSR environments",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13138",
+   "created_at": "2026-03-31T09:37:09Z",
+   "closed_at": "2026-03-31T17:18:06Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 13191,
+   "title": "vitest-pool-workers: workerd fails to resolve cross-package ESM re-exports from node_modules",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13191",
+   "created_at": "2026-04-01T14:16:21Z",
+   "closed_at": "2026-04-01T16:15:19Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13281,
+   "title": "index.ts",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13281",
+   "created_at": "2026-04-05T12:54:32Z",
+   "closed_at": "2026-04-05T18:38:14Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 13403,
+   "title": "Workers asset upload API fails with `[code: -1]` for files ~15MB+ (`/workers/assets/upload?base64=true`)",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13403",
+   "created_at": "2026-04-10T13:59:25Z",
+   "closed_at": "2026-04-13T14:29:25Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 13425,
+   "title": "@cloudflare/vite-plugin: HMR extremely slow (~30-40s) \u2014 SSR re-bundles virtual:cloudflare/worker-entry on every file change",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13425",
+   "created_at": "2026-04-10T20:43:10Z",
+   "closed_at": "2026-05-11T09:57:11Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 13433,
+   "title": "`@cloudflare/vitest-pool-workers`: Same-type RPC calls to Durable Objects occasionally arrive out of order",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13433",
+   "created_at": "2026-04-11T09:31:45Z",
+   "closed_at": "2026-05-18T20:28:03Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13578,
+   "title": "@cloudflare/vite-plugin: POST requests that return 401 fail with `fetch failed` (undici auth-retry requires non-null body source)",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13578",
+   "created_at": "2026-04-17T03:38:08Z",
+   "closed_at": "2026-04-17T09:59:20Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13609,
+   "title": "Enforce the 6 simultaneous open connections limit during local dev",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13609",
+   "created_at": "2026-04-20T15:16:32Z",
+   "closed_at": "2026-04-28T19:55:41Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13679,
+   "title": "`wrangler types --check` falsely reports stale when `.dev.vars` exists (drops `--env-file` on internal regen)",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13679",
+   "created_at": "2026-04-26T05:53:18Z",
+   "closed_at": "2026-05-07T10:21:09Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 13755,
+   "title": "Version Trap: between Next.js 16\u2019s new Proxy architecture and OpenNext\u2019s current Cloudflare adapter",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13755",
+   "created_at": "2026-04-30T11:57:19Z",
+   "closed_at": "2026-06-22T11:55:26Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13790,
+   "title": "vitest-pool-workers: 3xx redirect responses silently followed instead of returned to test",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13790",
+   "created_at": "2026-05-02T16:36:05Z",
+   "closed_at": "2026-05-02T18:58:22Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13872,
+   "title": "Add startup sweep of orphan .wrangler/tmp/* dirs from abnormal exits",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13872",
+   "created_at": "2026-05-09T20:41:59Z",
+   "closed_at": "2026-05-15T13:13:26Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 13906,
+   "title": "wrangler silently fails in ci",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/13906",
+   "created_at": "2026-05-13T00:48:02Z",
+   "closed_at": "2026-05-25T15:17:48Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  },
+  {
+   "number": 14035,
+   "title": "`wrangler containers info`: no `--json` flag (asymmetric with `list` / `instances`",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/14035",
+   "created_at": "2026-05-25T10:35:39Z",
+   "closed_at": "2026-07-31T10:46:45Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 14107,
+   "title": "vitest-pool-workers: workerd path resolution double-URL-encodes spaces (%20 \u2192 %2520) breaking host paths with spaces",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/14107",
+   "created_at": "2026-05-29T12:32:25Z",
+   "closed_at": "2026-06-02T14:24:49Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 14255,
+   "title": "[wrangler@4.99.0] not_found_handling SPA fallback no longer rewrites `/` when --env + inherited [[routes]] are both present",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/14255",
+   "created_at": "2026-06-11T06:03:54Z",
+   "closed_at": "2026-06-15T13:42:47Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": true,
+   "body_mentions_local_tooling": true
+  },
+  {
+   "number": 14258,
+   "title": "First deploy of a new Worker with secrets.required: every suggested remedy fails (secret put -> 10007, .dev.vars/env -> blocked or 10057), while the one working path (--secrets-file) is never mentioned",
+   "html_url": "https://github.com/cloudflare/workers-sdk/issues/14258",
+   "created_at": "2026-06-11T08:39:08Z",
+   "closed_at": "2026-07-03T17:20:29Z",
+   "state_reason": "completed",
+   "body_has_export_default_code_block": false,
+   "body_mentions_local_tooling": false
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "issue-form-parsers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@github/issue-parser": "^2.0.0",
+    "@zentered/issue-forms-body-parser": "^3.0.0",
+    "js-yaml": "^5.5.0"
+  }
+}

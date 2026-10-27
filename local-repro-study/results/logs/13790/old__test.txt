@@ -1,0 +1,36 @@
+
+ RUN  v4.1.5 ./old
+
+stdout | src/test/repro.test.ts > 302 with redirect=follow
+OBSERVED redirect=follow status=404
+
+ ❯ src/test/repro.test.ts (2 tests | 1 failed) 15ms
+   × 302 with redirect=follow 11ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/repro.test.ts > 302 with redirect=follow
+AssertionError: expected 404 to be 302 // Object.is equality
+
+- Expected
++ Received
+
+- 302
++ 404
+
+ ❯ src/test/repro.test.ts:9:87
+      7|     const req = mode === "follow" ? new Request("http://localhost/debu…
+      8|     const ctx = createExecutionContext(); const res = await worker.fet…
+      9|     console.log(`OBSERVED redirect=${mode} status=${res.status}`); exp…
+       |                                                                                       ^
+     10|   });
+     11| }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 1 passed (2)
+   Start at  04:00:52
+   Duration  578ms (transform 86ms, setup 0ms, import 104ms, tests 15ms, environment 0ms)
+

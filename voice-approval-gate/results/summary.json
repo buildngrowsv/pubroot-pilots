@@ -1,0 +1,61 @@
+{
+ "n_clips": 144,
+ "n_replies": 24,
+ "voices": [
+  [
+   "en-us",
+   150
+  ],
+  [
+   "en-us",
+   190
+  ],
+  [
+   "en-gb",
+   150
+  ],
+  [
+   "en-gb",
+   190
+  ],
+  [
+   "en-us+f3",
+   170
+  ],
+  [
+   "en-gb-x-rp",
+   170
+  ]
+ ],
+ "policies": {
+  "P1_first_affirmative_partial": {
+   "false_approvals": 51,
+   "of_non_approvals": 96,
+   "false_rejections": 14,
+   "of_approvals": 48,
+   "mean_decision_lead_s": 0.882
+  },
+  "P2_final_affirmative": {
+   "false_approvals": 45,
+   "of_non_approvals": 96,
+   "false_rejections": 18,
+   "of_approvals": 48,
+   "mean_decision_lead_s": 0.0
+  },
+  "P3_final_affirmative_no_negation": {
+   "false_approvals": 2,
+   "of_non_approvals": 96,
+   "false_rejections": 18,
+   "of_approvals": 48,
+   "mean_decision_lead_s": 0.0
+  },
+  "P4_P3_plus_action_echo": {
+   "false_approvals": 5,
+   "of_non_approvals": 96,
+   "false_rejections": 37,
+   "of_approvals": 48,
+   "mean_decision_lead_s": 0.0
+  }
+ },
+ "final_exact_match": 66
+}
