@@ -1,6 +1,30 @@
      718  .gitignore
     1066  LICENSE
-   17211  README.md
+   17417  README.md
+    4477  a11y-password-exposure/README.md
+    5180  a11y-password-exposure/analyze.py
+    1103  a11y-password-exposure/bus_shim.py
+    1853  a11y-password-exposure/env.sh
+      97  a11y-password-exposure/fixtures/canaries.json
+     742  a11y-password-exposure/fixtures/form.html
+     774  a11y-password-exposure/fixtures/gtk3_app.py
+     995  a11y-password-exposure/fixtures/gtk4_app.py
+    7810  a11y-password-exposure/reader.py
+   20336  a11y-password-exposure/results/rep1/chrome.json
+   69902  a11y-password-exposure/results/rep1/firefox.json
+   14580  a11y-password-exposure/results/rep1/gtk3.json
+   13599  a11y-password-exposure/results/rep1/gtk4.json
+   20336  a11y-password-exposure/results/rep2/chrome.json
+   68085  a11y-password-exposure/results/rep2/firefox.json
+   14580  a11y-password-exposure/results/rep2/gtk3.json
+   13599  a11y-password-exposure/results/rep2/gtk4.json
+    9986  a11y-password-exposure/results/screens/gtk4.png
+   12377  a11y-password-exposure/results/summary.json
+    1494  a11y-password-exposure/results/summary.md
+    2528  a11y-password-exposure/run_all.py
+     317  a11y-password-exposure/shot.py
+     325  a11y-password-exposure/teardown.sh
+     451  a11y-password-exposure/vars.sh
      573  isolation/README.md
     3300  isolation/repro/adk_6167.py
     2210  isolation/repro/agno_9319.py
@@ -153,4 +177,3 @@
       13  voice-approval-gate/requirements.txt
    71960  voice-approval-gate/results/clips.jsonl
      963  voice-approval-gate/results/summary.json
-       -  FILELIST.txt

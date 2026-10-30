@@ -1,0 +1,736 @@
+{
+ "fixture": "gtk3",
+ "app_name": "gtk3_app.py",
+ "toolkit": "gtk",
+ "toolkit_version": "3.24.49",
+ "n_nodes": 9,
+ "editable": [
+  {
+   "path": "0.0.0.4",
+   "role": "text",
+   "name": "",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "focused",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "EditableText",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "toolkit": "gtk"
+   },
+   "char_count": 14,
+   "text": "plainuser-0001",
+   "relations": [
+    [
+     "labelled-by",
+     "Username",
+     "label"
+    ]
+   ],
+   "extents": [
+    680,
+    432,
+    168,
+    34
+   ]
+  },
+  {
+   "path": "0.0.0.2",
+   "role": "password text",
+   "name": "",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "EditableText",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "toolkit": "gtk"
+   },
+   "char_count": 13,
+   "text": "•••••••••••••",
+   "relations": [
+    [
+     "labelled-by",
+     "Password",
+     "label"
+    ]
+   ],
+   "extents": [
+    680,
+    472,
+    168,
+    34
+   ]
+  },
+  {
+   "path": "0.0.0.0",
+   "role": "password text",
+   "name": "",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "EditableText",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "toolkit": "gtk"
+   },
+   "char_count": 13,
+   "text": "•••••••••••••",
+   "relations": [
+    [
+     "labelled-by",
+     "Account key",
+     "label"
+    ]
+   ],
+   "extents": [
+    680,
+    512,
+    168,
+    34
+   ]
+  }
+ ],
+ "static_hits": {
+  "user": [
+   [
+    "0.0.0.4",
+    "text",
+    "text"
+   ]
+  ],
+  "pw": [],
+  "ak": [],
+  "typed": []
+ },
+ "typed": [
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.0.2",
+   "target_role": "password text",
+   "events": [
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "text",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "text",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "•••••••••••••",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    }
+   ],
+   "n_events": 35,
+   "event_hits": {
+    "user": [],
+    "pw": [],
+    "ak": [],
+    "typed": []
+   },
+   "target_text_after": "•••••••••••"
+  },
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.0.0",
+   "target_role": "password text",
+   "events": [
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "•••••••••••••",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": ""
+    }
+   ],
+   "n_events": 34,
+   "event_hits": {
+    "user": [],
+    "pw": [],
+    "ak": [],
+    "typed": []
+   },
+   "target_text_after": "•••••••••••"
+  }
+ ]
+}

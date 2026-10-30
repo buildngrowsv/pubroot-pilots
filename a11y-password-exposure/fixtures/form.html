@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><title>fixture-web</title></head><body>
+<!-- Synthetic canaries only. Values are set by script, as a password manager or an agent fill would. -->
+<form onsubmit="return false">
+<p><label for="u">Username</label> <input id="u" type="text" autocomplete="off"></p>
+<p><label for="p">Password</label> <input id="p" type="password" autocomplete="off"></p>
+<p><label for="k">Account key</label> <input id="k" type="password" autocomplete="off"></p>
+</form>
+<script>
+const C = {user: "plainuser-0001", pw: "Cn7rY-PW-4417", ak: "Cn7rY-AK-9052"};
+document.getElementById("u").value = C.user; document.getElementById("p").value = C.pw; document.getElementById("k").value = C.ak;
+</script></body></html>

@@ -1,0 +1,981 @@
+{
+ "fixture": "chrome",
+ "app_name": "Google Chrome",
+ "toolkit": "Chromium",
+ "toolkit_version": "1.0",
+ "n_nodes": 246,
+ "editable": [
+  {
+   "path": "0.0.0.0.5.1.0.5.2",
+   "role": "entry",
+   "name": "Address and search bar",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "supports-autocompletion",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "Document",
+    "Hyperlink",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "id": "view_1012",
+    "text-model": "a1",
+    "name-from": "attribute",
+    "autocomplete": "both",
+    "class": "OmniboxViewViews",
+    "explicit-name": "true",
+    "placeholder": "Search Google or type a URL",
+    "keyshortcuts": "Ctrl+L"
+   },
+   "char_count": 85,
+   "text": "<pilot-dir>/fixtures/form.html",
+   "relations": [],
+   "extents": [
+    202,
+    61,
+    671,
+    24
+   ]
+  },
+  {
+   "path": "0.0.0.0.5.2.1.3.0.0.1",
+   "role": "entry",
+   "name": "Username",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "Document",
+    "Hyperlink",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "tag": "input",
+    "id": "u",
+    "text-model": "a1",
+    "text-input-type": "text",
+    "name-from": "related-element",
+    "display": "inline-block",
+    "explicit-name": "true",
+    "text-align": "left"
+   },
+   "char_count": 14,
+   "text": "plainuser-0001",
+   "relations": [
+    [
+     "labelled-by",
+     "",
+     "label"
+    ]
+   ],
+   "extents": [
+    90,
+    113,
+    206,
+    21
+   ]
+  },
+  {
+   "path": "0.0.0.0.5.2.1.3.0.1.1",
+   "role": "password text",
+   "name": "Password",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "Document",
+    "Hyperlink",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "tag": "input",
+    "id": "p",
+    "text-model": "a1",
+    "text-input-type": "password",
+    "name-from": "related-element",
+    "display": "inline-block",
+    "explicit-name": "true",
+    "text-align": "left"
+   },
+   "char_count": 13,
+   "text": "•••••••••••••",
+   "relations": [
+    [
+     "labelled-by",
+     "",
+     "label"
+    ]
+   ],
+   "extents": [
+    87,
+    150,
+    206,
+    21
+   ]
+  },
+  {
+   "path": "0.0.0.0.5.2.1.3.0.2.1",
+   "role": "password text",
+   "name": "Account key",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "Document",
+    "Hyperlink",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "tag": "input",
+    "id": "k",
+    "text-model": "a1",
+    "text-input-type": "password",
+    "name-from": "related-element",
+    "display": "inline-block",
+    "explicit-name": "true",
+    "text-align": "left"
+   },
+   "char_count": 13,
+   "text": "•••••••••••••",
+   "relations": [
+    [
+     "labelled-by",
+     "",
+     "label"
+    ]
+   ],
+   "extents": [
+    107,
+    187,
+    206,
+    21
+   ]
+  }
+ ],
+ "static_hits": {
+  "user": [
+   [
+    "0.0.0.0.5.2.1.3.0.0.1",
+    "entry",
+    "text"
+   ]
+  ],
+  "pw": [],
+  "ak": [],
+  "typed": []
+ },
+ "typed": [
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.0.0.5.2.1.3.0.0.1",
+   "target_role": "entry",
+   "events": [
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 14,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "document web",
+     "src_name": "fixture-web"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 14,
+     "any_data": "plainuser-0001",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "C",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "n",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "7",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "r",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "Y",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "T",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "Y",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "3",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "3",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "1",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "8",
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    }
+   ],
+   "n_events": 29,
+   "event_hits": {
+    "user": [
+     [
+      "event",
+      "object:text-changed:delete",
+      "entry"
+     ]
+    ],
+    "pw": [],
+    "ak": [],
+    "typed": [
+     [
+      "event-reconstructed",
+      "object:text-changed:insert",
+      "entry|Username"
+     ]
+    ]
+   },
+   "target_text_after": "Cn7rYTY3318"
+  },
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.0.0.5.2.1.3.0.1.1",
+   "target_role": "password text",
+   "events": [
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Username"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "•••••••••••••",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    }
+   ],
+   "n_events": 29,
+   "event_hits": {
+    "user": [],
+    "pw": [],
+    "ak": [],
+    "typed": []
+   },
+   "target_text_after": "•••••••••••"
+  },
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.0.0.5.2.1.3.0.2.1",
+   "target_role": "password text",
+   "events": [
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "•••••••••••••",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    }
+   ],
+   "n_events": 29,
+   "event_hits": {
+    "user": [],
+    "pw": [],
+    "ak": [],
+    "typed": []
+   },
+   "target_text_after": "•••••••••••"
+  }
+ ]
+}

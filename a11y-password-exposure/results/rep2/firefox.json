@@ -1,0 +1,2578 @@
+{
+ "fixture": "firefox",
+ "app_name": "Firefox",
+ "toolkit": "Gecko",
+ "toolkit_version": "140.15.0",
+ "n_nodes": 242,
+ "editable": [
+  {
+   "path": "0.0.25.0.0.0.0.0.1",
+   "role": "entry",
+   "name": "Username",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "opaque",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "EditableText",
+    "Hypertext",
+    "Hyperlink",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "text-input-type": "text",
+    "tag": "input",
+    "display": "inline-block",
+    "id": "u",
+    "explicit-name": "true"
+   },
+   "char_count": 14,
+   "text": "plainuser-0001",
+   "relations": [
+    [
+     "labelled-by",
+     "Username",
+     "label"
+    ]
+   ],
+   "extents": [
+    -1,
+    -1,
+    -1,
+    -1
+   ]
+  },
+  {
+   "path": "0.0.25.0.0.0.0.1.1",
+   "role": "password text",
+   "name": "Password",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "opaque",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "EditableText",
+    "Hypertext",
+    "Hyperlink",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "text-input-type": "password",
+    "tag": "input",
+    "display": "inline-block",
+    "id": "p",
+    "explicit-name": "true"
+   },
+   "char_count": 13,
+   "text": "•••••••••••••",
+   "relations": [
+    [
+     "labelled-by",
+     "Password",
+     "label"
+    ]
+   ],
+   "extents": [
+    -1,
+    -1,
+    -1,
+    -1
+   ]
+  },
+  {
+   "path": "0.0.25.0.0.0.0.2.1",
+   "role": "password text",
+   "name": "Account key",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "opaque",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "EditableText",
+    "Hypertext",
+    "Hyperlink",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "text-input-type": "password",
+    "tag": "input",
+    "display": "inline-block",
+    "id": "k",
+    "explicit-name": "true"
+   },
+   "char_count": 13,
+   "text": "•••••••••••••",
+   "relations": [
+    [
+     "labelled-by",
+     "Account key",
+     "label"
+    ]
+   ],
+   "extents": [
+    -1,
+    -1,
+    -1,
+    -1
+   ]
+  },
+  {
+   "path": "0.0.23.4.2.0",
+   "role": "entry",
+   "name": "Search with Google or enter address",
+   "description": "",
+   "states": [
+    "editable",
+    "enabled",
+    "focusable",
+    "has-popup",
+    "opaque",
+    "selectable-text",
+    "sensitive",
+    "showing",
+    "single-line",
+    "supports-autocompletion",
+    "visible"
+   ],
+   "interfaces": [
+    "Accessible",
+    "Action",
+    "Collection",
+    "Component",
+    "EditableText",
+    "Hypertext",
+    "Text"
+   ],
+   "accessible_id": "",
+   "attributes": {
+    "tag": "input",
+    "id": "urlbar-input",
+    "margin-left": "0px",
+    "text-indent": "0px",
+    "margin-right": "0px",
+    "display": "block",
+    "margin-top": "0px",
+    "class": "urlbar-input",
+    "explicit-name": "true",
+    "autocomplete": "both",
+    "margin-bottom": "0px",
+    "text-align": "left"
+   },
+   "char_count": 92,
+   "text": "file://<pilot-dir>/fixtures/form.html",
+   "relations": [],
+   "extents": [
+    257,
+    79,
+    780,
+    28
+   ]
+  }
+ ],
+ "static_hits": {
+  "user": [
+   [
+    "0.0.25.0.0.0.0.0.1",
+    "entry",
+    "text"
+   ]
+  ],
+  "pw": [],
+  "ak": [],
+  "typed": []
+ },
+ "typed": [
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.25.0.0.0.0.1.1",
+   "target_role": "password text",
+   "events": [
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Christa Pike says there is ‘pain in my mind and in my soul’ one month after her failed execution",
+     "src_role": "button",
+     "src_name": "Open context menu for Christa Pike says there is ‘pain in my mind and in my soul’ one month after her failed execution"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "NBC News Christa Pike says there is ‘pain in my mind and in my soul’ one month after her failed execution Pike, the only woman on Tennessee’s death row, survived a lethal injection. In her first statement since her Sept. 30 ordeal, she said she is “searching for meaning.” Entertainment",
+     "src_role": "link",
+     "src_name": "NBC News Christa Pike says there is ‘pain in my mind and in my soul’ one month after her failed execution Pike, the only woman on Tennessee’s death row, survived a lethal injection. In her first statement since her Sept. 30 ordeal, she said she is “searching for meaning.” Entertainment"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "fixture-web",
+     "src_role": "document web",
+     "src_name": "fixture-web"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 11,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 11,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 8,
+     "any_data": "Business",
+     "src_role": "link",
+     "src_name": "CNN Wall Street sell-off continues as investors question returns on ‘monster AI splurge’ Wall Street braced for another steep day of losses Friday, with stocks falling after the latest earnings from Big Tech reignited concerns that the massive spending on AI may not deliver the returns that investors expect. Business"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Wall Street sell-off continues as investors question returns on ‘monster AI splurge’",
+     "src_role": "button",
+     "src_name": "Open context menu for Wall Street sell-off continues as investors question returns on ‘monster AI splurge’"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "CNN Wall Street sell-off continues as investors question returns on ‘monster AI splurge’ Wall Street braced for another steep day of losses Friday, with stocks falling after the latest earnings from Big Tech reignited concerns that the massive spending on AI may not deliver the returns that investors expect. Business",
+     "src_role": "link",
+     "src_name": "CNN Wall Street sell-off continues as investors question returns on ‘monster AI splurge’ Wall Street braced for another steep day of losses Friday, with stocks falling after the latest earnings from Big Tech reignited concerns that the massive spending on AI may not deliver the returns that investors expect. Business"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "•••••••••••••",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 12,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 12,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 23,
+     "any_data": "Sponsored by HelloFresh",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for 10 Free Meals + Free Breakfast For Life",
+     "src_role": "button",
+     "src_name": "Open context menu for 10 Free Meals + Free Breakfast For Life"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "www.hellofresh.com 10 Free Meals + Free Breakfast For Life Sponsored by HelloFresh",
+     "src_role": "link",
+     "src_name": "www.hellofresh.com 10 Free Meals + Free Breakfast For Life Sponsored by HelloFresh"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Password"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 13,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 13,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 4,
+     "any_data": "Tech",
+     "src_role": "link",
+     "src_name": "404 Media Apple Is Entering Its Slop Era I might finally buy an iPhone now that Apple has been taken down a peg. Tech"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Apple Is Entering Its Slop Era",
+     "src_role": "button",
+     "src_name": "Open context menu for Apple Is Entering Its Slop Era"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "404 Media Apple Is Entering Its Slop Era I might finally buy an iPhone now that Apple has been taken down a peg. Tech",
+     "src_role": "link",
+     "src_name": "404 Media Apple Is Entering Its Slop Era I might finally buy an iPhone now that Apple has been taken down a peg. Tech"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 14,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 14,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 13,
+     "any_data": "Entertainment",
+     "src_role": "link",
+     "src_name": "The New Yorker “Tip Toe” Is a Rare Outcry Against Social Revanchism “Tip Toe,” a gripping British show about middle-aged queer masculinity from Russell T. Davies, is fuelled by panic over the erosion of progressive political and cultural gains. Entertainment"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for “Tip Toe” Is a Rare Outcry Against Social Revanchism",
+     "src_role": "button",
+     "src_name": "Open context menu for “Tip Toe” Is a Rare Outcry Against Social Revanchism"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "The New Yorker “Tip Toe” Is a Rare Outcry Against Social Revanchism “Tip Toe,” a gripping British show about middle-aged queer masculinity from Russell T. Davies, is fuelled by panic over the erosion of progressive political and cultural gains. Entertainment",
+     "src_role": "link",
+     "src_name": "The New Yorker “Tip Toe” Is a Rare Outcry Against Social Revanchism “Tip Toe,” a gripping British show about middle-aged queer masculinity from Russell T. Davies, is fuelled by panic over the erosion of progressive political and cultural gains. Entertainment"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 15,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 15,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 6,
+     "any_data": "Sports",
+     "src_role": "link",
+     "src_name": "CBS Sports Three reasons why the Brewers can repeat as World Series champions in 2027 Fresh off the first title in franchise history, the Brew Crew are nowhere close to done Sports"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Three reasons why the Brewers can repeat as World Series champions in 2027",
+     "src_role": "button",
+     "src_name": "Open context menu for Three reasons why the Brewers can repeat as World Series champions in 2027"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "CBS Sports Three reasons why the Brewers can repeat as World Series champions in 2027 Fresh off the first title in franchise history, the Brew Crew are nowhere close to done Sports",
+     "src_role": "link",
+     "src_name": "CBS Sports Three reasons why the Brewers can repeat as World Series champions in 2027 Fresh off the first title in franchise history, the Brew Crew are nowhere close to done Sports"
+    }
+   ],
+   "n_events": 56,
+   "event_hits": {
+    "user": [],
+    "pw": [],
+    "ak": [],
+    "typed": []
+   },
+   "target_text_after": "•••••••••••"
+  },
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.25.0.0.0.0.2.1",
+   "target_role": "password text",
+   "events": [
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 16,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 16,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 6,
+     "any_data": "Sports",
+     "src_role": "link",
+     "src_name": "Bleacher Report Angel Reese Reacts to Historic Performance in Dream’s WNBA Finals Game 6 Win over Valkyries Atlanta Dream star Angel Reese commented following her team’s series-extending, 80-69 win over the Golden State Valkyries in Game 6 of the WNBA Finals on Thursday. Sports"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Angel Reese Reacts to Historic Performance in Dream’s WNBA Finals Game 6 Win over Valkyries",
+     "src_role": "button",
+     "src_name": "Open context menu for Angel Reese Reacts to Historic Performance in Dream’s WNBA Finals Game 6 Win over Valkyries"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Bleacher Report Angel Reese Reacts to Historic Performance in Dream’s WNBA Finals Game 6 Win over Valkyries Atlanta Dream star Angel Reese commented following her team’s series-extending, 80-69 win over the Golden State Valkyries in Game 6 of the WNBA Finals on Thursday. Sports",
+     "src_role": "link",
+     "src_name": "Bleacher Report Angel Reese Reacts to Historic Performance in Dream’s WNBA Finals Game 6 Win over Valkyries Atlanta Dream star Angel Reese commented following her team’s series-extending, 80-69 win over the Golden State Valkyries in Game 6 of the WNBA Finals on Thursday. Sports"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 13,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "•••••••••••••",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 17,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 17,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 4,
+     "any_data": "Food",
+     "src_role": "link",
+     "src_name": "The Kitchn An Italian Grandma Just Taught Me the Best 1-Ingredient Spaghetti Sauce Upgrade I never would have thought of it myself. Food"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for An Italian Grandma Just Taught Me the Best 1-Ingredient Spaghetti Sauce Upgrade",
+     "src_role": "button",
+     "src_name": "Open context menu for An Italian Grandma Just Taught Me the Best 1-Ingredient Spaghetti Sauce Upgrade"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "The Kitchn An Italian Grandma Just Taught Me the Best 1-Ingredient Spaghetti Sauce Upgrade I never would have thought of it myself. Food",
+     "src_role": "link",
+     "src_name": "The Kitchn An Italian Grandma Just Taught Me the Best 1-Ingredient Spaghetti Sauce Upgrade I never would have thought of it myself. Food"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "•",
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "password text",
+     "src_name": "Account key"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 18,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 18,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 4,
+     "any_data": "Tech",
+     "src_role": "link",
+     "src_name": "Reuters Reddit plunges as Google AI search squeezes traffic Shares of Reddit tumbled 23% in premarket trading on Friday after it warned Google’s growing use of AI in ​search was hurting referral traffic and could shrink its user ‌base, offering fresh evidence of AI-driven disruption. Tech"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Reddit plunges as Google AI search squeezes traffic",
+     "src_role": "button",
+     "src_name": "Open context menu for Reddit plunges as Google AI search squeezes traffic"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Reuters Reddit plunges as Google AI search squeezes traffic Shares of Reddit tumbled 23% in premarket trading on Friday after it warned Google’s growing use of AI in ​search was hurting referral traffic and could shrink its user ‌base, offering fresh evidence of AI-driven disruption. Tech",
+     "src_role": "link",
+     "src_name": "Reuters Reddit plunges as Google AI search squeezes traffic Shares of Reddit tumbled 23% in premarket trading on Friday after it warned Google’s growing use of AI in ​search was hurting referral traffic and could shrink its user ‌base, offering fresh evidence of AI-driven disruption. Tech"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 19,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 19,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 24,
+     "any_data": "Sponsored by Elite Daily",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Gifts On Amazon That We're Loving Right Now",
+     "src_role": "button",
+     "src_name": "Open context menu for Gifts On Amazon That We're Loving Right Now"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "www.elitedaily.com Gifts On Amazon That We're Loving Right Now Sponsored by Elite Daily",
+     "src_role": "link",
+     "src_name": "www.elitedaily.com Gifts On Amazon That We're Loving Right Now Sponsored by Elite Daily"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 20,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 20,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 13,
+     "any_data": "Entertainment",
+     "src_role": "link",
+     "src_name": "BBC Sir Ian McKellen leads tributes to 'beloved actor' Sir Patrick Stewart after his death at 86 The actor died in Los Angeles following a \"a brief and poignant journey\" with Alzheimer's Disease and Lewy Body Dementia. Entertainment"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Sir Ian McKellen leads tributes to 'beloved actor' Sir Patrick Stewart after his death at 86",
+     "src_role": "button",
+     "src_name": "Open context menu for Sir Ian McKellen leads tributes to 'beloved actor' Sir Patrick Stewart after his death at 86"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "BBC Sir Ian McKellen leads tributes to 'beloved actor' Sir Patrick Stewart after his death at 86 The actor died in Los Angeles following a \"a brief and poignant journey\" with Alzheimer's Disease and Lewy Body Dementia. Entertainment",
+     "src_role": "link",
+     "src_name": "BBC Sir Ian McKellen leads tributes to 'beloved actor' Sir Patrick Stewart after his death at 86 The actor died in Los Angeles following a \"a brief and poignant journey\" with Alzheimer's Disease and Lewy Body Dementia. Entertainment"
+    }
+   ],
+   "n_events": 53,
+   "event_hits": {
+    "user": [],
+    "pw": [],
+    "ak": [],
+    "typed": []
+   },
+   "target_text_after": "•••••••••••"
+  },
+  {
+   "grab_focus": true,
+   "focus_method": "grab_focus",
+   "focused_before_typing": true,
+   "target_path": "0.0.23.4.2.0",
+   "target_role": "entry",
+   "events": [
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Cool Gifts Under Budget",
+     "src_role": "button",
+     "src_name": "Open context menu for Cool Gifts Under Budget"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "www.bustle.com Cool Gifts Under Budget Sponsored by Bustle",
+     "src_role": "link",
+     "src_name": "www.bustle.com Cool Gifts Under Budget Sponsored by Bustle"
+    },
+    {
+     "type": "object:state-changed:focused",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-selection-changed",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 92,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "panel",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "panel",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete",
+     "detail1": 0,
+     "detail2": 92,
+     "any_data": "file://<pilot-dir>/fixtures/form.html",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "panel",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:expanded",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:state-changed:expandable",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 9,
+     "any_data": "Wikipedia",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "wikipedia.org",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 7,
+     "any_data": "YouTube",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 11,
+     "any_data": "youtube.com",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 7,
+     "any_data": "AP News",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 10,
+     "any_data": "apnews.com",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 6,
+     "any_data": "Reddit",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 10,
+     "any_data": "reddit.com",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 6,
+     "any_data": "Reddit",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 10,
+     "any_data": "apnews.com",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 7,
+     "any_data": "AP News",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 13,
+     "any_data": "wikipedia.org",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 7,
+     "any_data": "YouTube",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 11,
+     "any_data": "youtube.com",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 6,
+     "any_data": "￼￼￼￼￼￼",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 10,
+     "any_data": "reddit.com",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 9,
+     "any_data": "Wikipedia",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 18,
+     "any_data": "Trending on Google",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:visible",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "image",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 22,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 22,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 6,
+     "any_data": "Health",
+     "src_role": "link",
+     "src_name": "The Associated Press Takeaways from AP’s reporting on measles in Pennsylvania’s Amish country EPHRATA, Pa. (AP) — Lancaster County, home to the largest Amish population in the U.S., is now the epicenter of the nation’s worst measles outbreak in 35 years. Health"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Takeaways from AP’s reporting on measles in Pennsylvania’s Amish country",
+     "src_role": "button",
+     "src_name": "Open context menu for Takeaways from AP’s reporting on measles in Pennsylvania’s Amish country"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "The Associated Press Takeaways from AP’s reporting on measles in Pennsylvania’s Amish country EPHRATA, Pa. (AP) — Lancaster County, home to the largest Amish population in the U.S., is now the epicenter of the nation’s worst measles outbreak in 35 years. Health",
+     "src_role": "link",
+     "src_name": "The Associated Press Takeaways from AP’s reporting on measles in Pennsylvania’s Amish country EPHRATA, Pa. (AP) — Lancaster County, home to the largest Amish population in the U.S., is now the epicenter of the nation’s worst measles outbreak in 35 years. Health"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "C",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "panel",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "menu item",
+     "src_name": "Shortcuts YouTube — youtube.com"
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 1,
+     "detail2": 1,
+     "any_data": "n",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 2,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Shortcuts YouTube — youtube.com",
+     "src_role": "menu item",
+     "src_name": "Shortcuts YouTube — youtube.com"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "—",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "—",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 1,
+     "detail2": 9,
+     "any_data": "Shortcuts",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 1,
+     "any_data": "C",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 2,
+     "any_data": "Cn",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 2,
+     "detail2": 1,
+     "any_data": "7",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 3,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 2,
+     "any_data": "Cn",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 3,
+     "any_data": "Cn7",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7 — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 3,
+     "detail2": 1,
+     "any_data": "r",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 4,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 3,
+     "any_data": "Cn7",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 4,
+     "any_data": "Cn7r",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7r — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 4,
+     "detail2": 1,
+     "any_data": "Y",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 5,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 4,
+     "any_data": "Cn7r",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 5,
+     "any_data": "Cn7rY",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7rY — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 5,
+     "detail2": 1,
+     "any_data": "T",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 6,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 5,
+     "any_data": "Cn7rY",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 6,
+     "any_data": "Cn7rYT",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 6,
+     "detail2": 1,
+     "any_data": "Y",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 7,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7rYT — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 6,
+     "any_data": "Cn7rYT",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 7,
+     "any_data": "Cn7rYTY",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 7,
+     "detail2": 1,
+     "any_data": "3",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 8,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7rYTY — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 7,
+     "any_data": "Cn7rYTY",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 8,
+     "any_data": "Cn7rYTY3",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7rYTY3 — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 8,
+     "detail2": 1,
+     "any_data": "3",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 9,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 8,
+     "any_data": "Cn7rYTY3",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 9,
+     "any_data": "Cn7rYTY33",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7rYTY33 — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 9,
+     "detail2": 1,
+     "any_data": "1",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 10,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 9,
+     "any_data": "Cn7rYTY33",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 10,
+     "any_data": "Cn7rYTY331",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7rYTY331 — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:insert",
+     "detail1": 10,
+     "detail2": 1,
+     "any_data": "8",
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-caret-moved",
+     "detail1": 11,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "entry",
+     "src_name": "Search with Google or enter address"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 10,
+     "any_data": "Cn7rYTY331",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 11,
+     "any_data": "Cn7rYTY3318",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 0,
+     "detail2": 18,
+     "any_data": "Search with Google",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:state-changed:selected",
+     "detail1": 1,
+     "detail2": 0,
+     "any_data": 0,
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Cn7rYTY3318 — Search with Google",
+     "src_role": "menu item",
+     "src_name": "Cn7rYTY3318 — Search with Google"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 32,
+     "detail2": 5,
+     "any_data": "￼￼￼￼￼",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 11,
+     "detail2": 21,
+     "any_data": "￼￼Trending on Google￼",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 1,
+     "detail2": 10,
+     "any_data": "Shortcuts￼",
+     "src_role": "menu",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 23,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 23,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 13,
+     "any_data": "Entertainment",
+     "src_role": "link",
+     "src_name": "Consequence Patrick Stewart’s Best Roles, Ranked Stewart’s work as an actor went well beyond the captain’s chair. Entertainment"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Patrick Stewart’s Best Roles, Ranked",
+     "src_role": "button",
+     "src_name": "Open context menu for Patrick Stewart’s Best Roles, Ranked"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Consequence Patrick Stewart’s Best Roles, Ranked Stewart’s work as an actor went well beyond the captain’s chair. Entertainment",
+     "src_role": "link",
+     "src_name": "Consequence Patrick Stewart’s Best Roles, Ranked Stewart’s work as an actor went well beyond the captain’s chair. Entertainment"
+    },
+    {
+     "type": "object:text-changed:delete:system",
+     "detail1": 24,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 24,
+     "detail2": 1,
+     "any_data": "￼",
+     "src_role": "section",
+     "src_name": ""
+    },
+    {
+     "type": "object:text-changed:insert:system",
+     "detail1": 4,
+     "detail2": 13,
+     "any_data": "Entertainment",
+     "src_role": "link",
+     "src_name": "Rolling Stone Kevin Feige, Hugh Jackman, Seth MacFarlane Remember Patrick Stewart: ‘This One Hurts’ Patrick Stewart’s co-stars, colleagues, and fellow actors in Hollywood paid tribute to the late acting legend following his death at the age of 86. Entertainment"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Open context menu for Kevin Feige, Hugh Jackman, Seth MacFarlane Remember Patrick Stewart: ‘This One Hurts’",
+     "src_role": "button",
+     "src_name": "Open context menu for Kevin Feige, Hugh Jackman, Seth MacFarlane Remember Patrick Stewart: ‘This One Hurts’"
+    },
+    {
+     "type": "object:property-change:accessible-name",
+     "detail1": 0,
+     "detail2": 0,
+     "any_data": "Rolling Stone Kevin Feige, Hugh Jackman, Seth MacFarlane Remember Patrick Stewart: ‘This One Hurts’ Patrick Stewart’s co-stars, colleagues, and fellow actors in Hollywood paid tribute to the late acting legend following his death at the age of 86. Entertainment",
+     "src_role": "link",
+     "src_name": "Rolling Stone Kevin Feige, Hugh Jackman, Seth MacFarlane Remember Patrick Stewart: ‘This One Hurts’ Patrick Stewart’s co-stars, colleagues, and fellow actors in Hollywood paid tribute to the late acting legend following his death at the age of 86. Entertainment"
+    }
+   ],
+   "n_events": 158,
+   "event_hits": {
+    "user": [],
+    "pw": [],
+    "ak": [],
+    "typed": [
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:text-changed:insert:system",
+      "section"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:state-changed:selected",
+      "menu item"
+     ],
+     [
+      "event",
+      "object:property-change:accessible-name",
+      "menu item"
+     ],
+     [
+      "event-reconstructed",
+      "object:text-changed:insert",
+      "section|"
+     ],
+     [
+      "event-reconstructed",
+      "object:text-changed:insert",
+      "entry|Search with Google or enter address"
+     ]
+    ]
+   },
+   "target_text_after": null
+  }
+ ]
+}
