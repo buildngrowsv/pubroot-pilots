@@ -27,3 +27,5 @@ local-repro-study/data/frame_raw.json
 # voice-approval-gate: downloaded model and generated audio
 voice-approval-gate/models/
 voice-approval-gate/results/wav/
+webhook-verifiers/js/dist/
+webhook-verifiers/results/stability/

@@ -1,0 +1,1077 @@
+{
+ "generated_at": 1793719209,
+ "n": 83,
+ "cases": [
+  {
+   "scheme": "S",
+   "id": "S-valid",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-age_270",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "stripe-signature": "t=1793718939,v1=95050d514e14df049482261e5039b51e47609be02a2e866c2a4dc1b5840406c4"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-age_330",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793718879,v1=53ea81279391f8f0c87646ceb89489aec0bcc106cd72bb3ed6e58f40de06521c"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-future_330",
+   "cls": "control",
+   "ref": "unspecified",
+   "headers": {
+    "stripe-signature": "t=1793719539,v1=d47d90f843c86f8fbd5243d70c31d936c7bb69bcff2108e0027bb399a835582d"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "docs: tolerance 'between the timestamp and the current time'"
+  },
+  {
+   "scheme": "S",
+   "id": "S-future_1d",
+   "cls": "control",
+   "ref": "unspecified",
+   "headers": {
+    "stripe-signature": "t=1793805609,v1=643b2c12ec7bf8cb47a35a15520122479002d51631a508f3158871ca9d8c15e1"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-body_altered",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1235}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-body_reserialized",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\n \"id\": \"evt_synthetic_0001\",\n \"type\": \"test.event\",\n \"data\": {\n  \"amount\": 1234\n }\n}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-wrong_secret",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=e23b23ca564969dfd80acf84c47d3c7e0862be7a1c87fe3db50ac34fe72f3f37"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-multi_valid_last",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=e23b23ca564969dfd80acf84c47d3c7e0862be7a1c87fe3db50ac34fe72f3f37,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-multi_none_valid",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=e23b23ca564969dfd80acf84c47d3c7e0862be7a1c87fe3db50ac34fe72f3f37,v1=0000000000000000000000000000000000000000000000000000000000000000"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-scheme_v0_only",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,v0=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-empty_v1",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_ms",
+   "cls": "control",
+   "ref": "unspecified",
+   "headers": {
+    "stripe-signature": "t=1793719209000,v1=3fc2cdd3cf39d428f7e12c216ff48b8756d072cc5397c0e1645137dfe638d6cb"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "milliseconds = far future"
+  },
+  {
+   "scheme": "S",
+   "id": "S-tolerance_0_old",
+   "cls": "config",
+   "ref": "unspecified",
+   "headers": {
+    "stripe-signature": "t=1791127209,v1=b4fa99d2e8d96de573ab9fe7ebbb30045b0dad21e58287ddc5ef0c1f77a5866e"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "docs: 0 disables recency check",
+   "tolerance": 0
+  },
+  {
+   "scheme": "S",
+   "id": "S-empty_secret",
+   "cls": "config",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=1d9b6045398e8597b128a79f77d90d37c0fc99c73233445b2db3a4256d5987d9"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_plus_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=+1793719209,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "header t='+1793719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_leading_zero_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=01793719209,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "header t='01793719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_float_0_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209.0,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "header t='1793719209.0', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_underscore_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793_719209,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "header t='1793_719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_space_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t= 1793719209,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "header t=' 1793719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_exp_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1.793719209e9,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "header t='1.793719209e9', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "S",
+   "id": "S-ts_leading_zero_sig_literal",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "stripe-signature": "t=01793719209,v1=2ef357836209486f8625f0e58c6da62104b31d2c6caf40745699e29809edc26d"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "signature over the literal header string"
+  },
+  {
+   "scheme": "S",
+   "id": "S-upper_hex",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=07661EB528CF4E35E9D1A3438406DC81BDEB636D777EDD2ABAA58DD786DEC393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-multi_empty_then_valid",
+   "cls": "parsing",
+   "ref": "accept",
+   "headers": {
+    "stripe-signature": "t=1793719209,v1=,v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "an empty v1 entry before the valid one"
+  },
+  {
+   "scheme": "S",
+   "id": "S-space_after_comma",
+   "cls": "parsing",
+   "ref": "unspecified",
+   "headers": {
+    "stripe-signature": "t=1793719209, v1=07661eb528cf4e35e9d1a3438406dc81bdeb636d777edd2abaa58dd786dec393"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "S",
+   "id": "S-dup_t_old_first",
+   "cls": "parsing",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793632809,v1=75ec64cf1e26bdb3c082bab5c263fa843a3075ba265fffa22a35d4a6f0365964,t=1793719209"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "replayed old delivery with a fresh t appended"
+  },
+  {
+   "scheme": "S",
+   "id": "S-dup_t_new_first",
+   "cls": "parsing",
+   "ref": "reject",
+   "headers": {
+    "stripe-signature": "t=1793719209,t=1793632809,v1=75ec64cf1e26bdb3c082bab5c263fa843a3075ba265fffa22a35d4a6f0365964"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_synthetic_stripe_secret_0001",
+   "note": "fresh t prepended to an old delivery"
+  },
+  {
+   "scheme": "W",
+   "id": "W-valid",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-age_270",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793718939",
+    "webhook-signature": "v1,NElRRDEZecLQ/8VWQYu7pObYmLTLlXsm+nR+iUh/pCc="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-age_330",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793718879",
+    "webhook-signature": "v1,G1NEStyiKxpi/Tv9TgJnqr8Lypq3dLud0GsJXiottEk="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-future_330",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719539",
+    "webhook-signature": "v1,U/0I45DSgLByDsjumtyDHZ1KDdeczro5/YCgvngf34o="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-future_1d",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793805609",
+    "webhook-signature": "v1,y7pcu/7YjjS6JUp2jtbFW0HAvOnvYVPEgVGjSTlUQ2E="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-body_altered",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1235}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-body_reserialized",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\n \"id\": \"evt_synthetic_0001\",\n \"type\": \"test.event\",\n \"data\": {\n  \"amount\": 1234\n }\n}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-wrong_key",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,3KtscMBMhvezXUv25F7EEVOeR2sefMsY66j/Q3mtA6A="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-id_swapped",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,UwZv1gU2hbDiqH2weg/TAgN7v80JIcPv4o27daIlnqs="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-multi_valid_last",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,3KtscMBMhvezXUv25F7EEVOeR2sefMsY66j/Q3mtA6A= v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-multi_none_valid",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,3KtscMBMhvezXUv25F7EEVOeR2sefMsY66j/Q3mtA6A= v1,AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-scheme_v2",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v2,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-scheme_v1a_only",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1a,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "v1a is the asymmetric scheme; an HMAC value under v1a must not verify"
+  },
+  {
+   "scheme": "W",
+   "id": "W-empty_sig",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_ms",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209000",
+    "webhook-signature": "v1,YacvW7nvRGOFP/ZfQVZ4Wq0RW9jinBA4oOTfwUIUxMI="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_nonnumeric",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "abc",
+    "webhook-signature": "v1,22xAiO/HMPEVq99Yx3WEgvYO3r6BD1iLrCWBpiZsKM8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_plus_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "+1793719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "header '+1793719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_leading_zero_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "01793719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "header '01793719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_float_0_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209.0",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "header '1793719209.0', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_float_9_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209.9",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "header '1793719209.9', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_underscore_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793_719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "header '1793_719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_space_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": " 1793719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "header ' 1793719209', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_exp_sig_canonical",
+   "cls": "canonicalization",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1.793719209e9",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "header '1.793719209e9', signature over canonical 1793719209"
+  },
+  {
+   "scheme": "W",
+   "id": "W-ts_float_9_sig_literal",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209.9",
+    "webhook-signature": "v1,a3+7L2dtcqJLpTnAKkd7/tCCCrsxco1sxIJUjjZ69+g="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "signature over the literal header"
+  },
+  {
+   "scheme": "W",
+   "id": "W-b64url_nopad",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,IQMrlO1L964-QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-double_space",
+   "cls": "parsing",
+   "ref": "unspecified",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,3KtscMBMhvezXUv25F7EEVOeR2sefMsY66j/Q3mtA6A=  v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-dup_ts_joined",
+   "cls": "parsing",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793632809, 1793719209",
+    "webhook-signature": "v1,9mUpADxeR+VBF7aCMmWhPhAZtF/BRF7pK3GvSKflRfs="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": "two timestamp headers joined by the HTTP stack; old signature"
+  },
+  {
+   "scheme": "W",
+   "id": "W-secret_no_prefix",
+   "cls": "config",
+   "ref": "unspecified",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,IQMrlO1L964+QQNkxJcmPHnSxC4fiQqblRhXIrbD3E8="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "c3ludGhldGljLXN0YW5kYXJkLXdlYmhvb2tzLWtleS0wMDAx",
+   "note": ""
+  },
+  {
+   "scheme": "W",
+   "id": "W-empty_secret",
+   "cls": "config",
+   "ref": "reject",
+   "headers": {
+    "webhook-id": "msg_synthetic_0001",
+    "webhook-timestamp": "1793719209",
+    "webhook-signature": "v1,2v7b8KTjH89cnTQwqDALlD+qW7AUZdUfKFcuqVKmcVw="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "whsec_",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-valid",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209",
+    "x-slack-signature": "v0=76ed9eccb2f059f941c4c559147f75d4c77f716d805debefd0442b94fa4a82cf"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-age_270",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "x-slack-request-timestamp": "1793718939",
+    "x-slack-signature": "v0=8570e065ba85ee0a6f35aee5b97db9fa7234c6183c364dc72d5a7a25b6dff06c"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-age_330",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793718879",
+    "x-slack-signature": "v0=b60435d8671bd6d2971829ce0afb282ff7922d48d3a7f53a865c0fdca7099f9d"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-future_330",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793719539",
+    "x-slack-signature": "v0=6ae10263615bddfa1864ffed6dd881629e752026defe3b12ac74ca003959a811"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": "docs: 'more than five minutes from local time'"
+  },
+  {
+   "scheme": "K",
+   "id": "K-future_1d",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793805609",
+    "x-slack-signature": "v0=af2225d5b07abe556ae5f71999dc0e55847690be48a0989f1b1db8f369bc7e5b"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-body_altered",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209",
+    "x-slack-signature": "v0=76ed9eccb2f059f941c4c559147f75d4c77f716d805debefd0442b94fa4a82cf"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1235}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-wrong_secret",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209",
+    "x-slack-signature": "v0=3934951e301db7cc3adf59661d10fbe2e1c31bfd65de8cc08fdcff40ee29bd73"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-empty_sig",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209",
+    "x-slack-signature": "v0="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-ts_ms",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209000",
+    "x-slack-signature": "v0=c89bb5692f50dd7d50d36c8f60904528efe15694052cf30421d83d973f8a485a"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-ts_nonnumeric",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "abc",
+    "x-slack-signature": "v0=0338cfe804aa9e74a3450cc5d795b52e3e86ca16794104975f360bd824ae229a"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-ts_plus_sig_literal",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-slack-request-timestamp": "+1793719209",
+    "x-slack-signature": "v0=10292bfa17cf3550cfefb3ed8f275e2d3bf15b7363e5e577f76b6f628703ad20"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": "signature over the literal header string"
+  },
+  {
+   "scheme": "K",
+   "id": "K-ts_leading_zero_sig_literal",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-slack-request-timestamp": "01793719209",
+    "x-slack-signature": "v0=1f65c43273a3a4b4e6185e8630ba4f078777980c1d7d394b3ce537d37f218575"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": "signature over the literal header string"
+  },
+  {
+   "scheme": "K",
+   "id": "K-ts_float_0_sig_literal",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209.0",
+    "x-slack-signature": "v0=241e9fefd6c4fbecd3b6c0a9f7a34ea49271c40ff0da19bc645daea5ddd70e4c"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": "signature over the literal header string"
+  },
+  {
+   "scheme": "K",
+   "id": "K-ts_space_sig_literal",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-slack-request-timestamp": " 1793719209",
+    "x-slack-signature": "v0=d4f4993d3a6747039b06ba3a1aace061258a8294404114b25e032cd89dbb4ca6"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": "signature over the literal header string"
+  },
+  {
+   "scheme": "K",
+   "id": "K-upper_hex",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209",
+    "x-slack-signature": "v0=76ED9ECCB2F059F941C4C559147F75D4C77F716D805DEBEFD0442B94FA4A82CF"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_slack_signing_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "K",
+   "id": "K-empty_secret",
+   "cls": "config",
+   "ref": "reject",
+   "headers": {
+    "x-slack-request-timestamp": "1793719209",
+    "x-slack-signature": "v0=870a8e76e380b082a265e48b1d13e3deae7f6bf22f0ad2827e4879b18d4a959b"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-valid",
+   "cls": "control",
+   "ref": "accept",
+   "headers": {
+    "x-hub-signature-256": "sha256=950e50b5dcd54b505b0a1fd4c3a050046cda6abd45a78570c543774902c119b7"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-body_altered",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-hub-signature-256": "sha256=950e50b5dcd54b505b0a1fd4c3a050046cda6abd45a78570c543774902c119b7"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1235}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-wrong_secret",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-hub-signature-256": "sha256=f348900ae42b1a0ff51388bf15746406cbb67c129394ed6db72e5834917d24b6"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-sha1_prefix",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-hub-signature-256": "sha1=3b989b022ff34871cee53808c2d795c2882d65f2"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-no_prefix",
+   "cls": "control",
+   "ref": "unspecified",
+   "headers": {
+    "x-hub-signature-256": "950e50b5dcd54b505b0a1fd4c3a050046cda6abd45a78570c543774902c119b7"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-empty_sig",
+   "cls": "control",
+   "ref": "reject",
+   "headers": {
+    "x-hub-signature-256": "sha256="
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-upper_hex",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-hub-signature-256": "sha256=950E50B5DCD54B505B0A1FD4C3A050046CDA6ABD45A78570C543774902C119B7"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-trailing_garbage",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-hub-signature-256": "sha256=950e50b5dcd54b505b0a1fd4c3a050046cda6abd45a78570c543774902c119b7 junk"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": "non-hex text after the digest"
+  },
+  {
+   "scheme": "G",
+   "id": "G-prefix_upper",
+   "cls": "canonicalization",
+   "ref": "unspecified",
+   "headers": {
+    "x-hub-signature-256": "SHA256=950e50b5dcd54b505b0a1fd4c3a050046cda6abd45a78570c543774902c119b7"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": ""
+  },
+  {
+   "scheme": "G",
+   "id": "G-replay_old",
+   "cls": "control",
+   "ref": "unspecified",
+   "headers": {
+    "x-hub-signature-256": "sha256=950e50b5dcd54b505b0a1fd4c3a050046cda6abd45a78570c543774902c119b7"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "synthetic_github_secret_0001",
+   "note": "scheme has no timestamp: any captured delivery verifies forever"
+  },
+  {
+   "scheme": "G",
+   "id": "G-empty_secret",
+   "cls": "config",
+   "ref": "reject",
+   "headers": {
+    "x-hub-signature-256": "sha256=8c74d73b4b21ed8a0344df8164d9c087e7ccb762b80a06f8cb69399520ae8593"
+   },
+   "body": "{\"id\":\"evt_synthetic_0001\",\"type\":\"test.event\",\"data\":{\"amount\":1234}}",
+   "secret": "",
+   "note": ""
+  }
+ ]
+}

@@ -11,6 +11,7 @@ Code for the pilot studies submitted (or prepared for submission) to Pubroot. Re
 | [`local-repro-study/`](local-repro-study/) | *Do Closed Workers Toolchain Bug Reports Still Reproduce Offline? A Pinned-Version Replay of Ten Sampled wrangler and Miniflare Issues* | not yet submitted |
 | [`voice-approval-gate/`](voice-approval-gate/) | *Spoken Approval as a Human Gate for Agent Actions: How Often Do Streaming Transcripts Turn a Hesitant Reply into a False Yes?* | not yet submitted |
 | [`a11y-password-exposure/`](a11y-password-exposure/) | *Masked on Screen, Plain on the Bus: What AT-SPI Exposes from Linux Password Fields to Accessibility-Tree Computer-Use Agents* | not yet submitted |
+| [`webhook-verifiers/`](webhook-verifiers/) | *Same Signature, Different Verdicts: A Differential Test of Webhook Signature Verifiers Across Official SDKs and JavaScript Runtimes* | not yet submitted |
 
 Everything runs offline (network is needed only to install packages; `issue-form-parsers/fetch_vendor.sh` also clones one parser from GitHub; `local-repro-study` fetches public GitHub issue data, one public repo and one public gist; `voice-approval-gate/fetch_model.sh` downloads one public speech model). **No API keys are needed and no model is called:** every model is a deterministic stub, every tool acts on a local sandbox, and storage is local (SQLite, local Qdrant, in-memory). No third-party code is vendored; frameworks are installed from PyPI/npm with the pinned versions below (or cloned at a pinned commit). No certificates or keys are committed: the `sdk-retry` stub generates a throwaway localhost certificate at run time. All paths are relative to the folder they are run from.
 
@@ -190,3 +191,9 @@ See [`issue-form-parsers/README.md`](issue-form-parsers/README.md).
 ## License
 
 MIT, see [LICENSE](LICENSE). Third-party frameworks are installed from their registries under their own licenses and are not included here.
+
+---
+
+## Webhook verifier differential test (`webhook-verifiers/`)
+
+One synthetic case set of 83 signed deliveries (Stripe, Standard Webhooks, Slack and GitHub schemes) is run against official verifiers on CPython 3.13.5, Node v24.22.1, Bun 1.4.2 and workerd (via local `wrangler dev` 4.157.0). Secrets are generated locally; no keys or provider accounts are used. Original run 2026-11-03. Versions, files and run instructions are in [`webhook-verifiers/README.md`](webhook-verifiers/README.md).

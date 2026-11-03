@@ -1,0 +1,718 @@
+{
+ "reps": 2,
+ "stable_across_reps": true,
+ "rows_per_rep": 502,
+ "cases": 83,
+ "runtimes": {
+  "Bun": "Bun 1.4.2",
+  "Node": "Node v24.22.1",
+  "CPython": "CPython 3.13.5",
+  "workerd": "workerd via wrangler 4.157.0 dev"
+ },
+ "subjects": {
+  "Bun: js-@octokit/webhooks-methods": {
+   "rows": 11,
+   "graded": 6,
+   "agree": 5,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "G-empty_secret"
+   ],
+   "canon_accept": []
+  },
+  "Bun: js-@slack/bolt verifySlackRequest": {
+   "rows": 16,
+   "graded": 11,
+   "agree": 7,
+   "over_accept": [
+    "K-future_330",
+    "K-future_1d",
+    "K-ts_ms",
+    "K-ts_nonnumeric"
+   ],
+   "under_accept": [],
+   "crash": [],
+   "canon_accept": [
+    "K-ts_plus_sig_literal",
+    "K-ts_leading_zero_sig_literal",
+    "K-ts_float_0_sig_literal",
+    "K-ts_space_sig_literal"
+   ]
+  },
+  "Bun: js-standardwebhooks": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_space_sig_canonical"
+   ]
+  },
+  "Bun: js-stripe constructEvent": {
+   "rows": 27,
+   "graded": 14,
+   "agree": 2,
+   "over_accept": [],
+   "under_accept": [
+    "S-valid",
+    "S-age_270",
+    "S-multi_valid_last",
+    "S-multi_empty_then_valid"
+   ],
+   "crash": [
+    "S-valid",
+    "S-age_270",
+    "S-age_330",
+    "S-future_330",
+    "S-future_1d",
+    "S-body_altered",
+    "S-body_reserialized",
+    "S-wrong_secret",
+    "S-multi_valid_last",
+    "S-multi_none_valid",
+    "S-empty_v1",
+    "S-ts_ms",
+    "S-tolerance_0_old",
+    "S-ts_plus_sig_canonical",
+    "S-ts_leading_zero_sig_canonical",
+    "S-ts_float_0_sig_canonical",
+    "S-ts_underscore_sig_canonical",
+    "S-ts_space_sig_canonical",
+    "S-ts_exp_sig_canonical",
+    "S-ts_leading_zero_sig_literal",
+    "S-upper_hex",
+    "S-multi_empty_then_valid",
+    "S-dup_t_old_first",
+    "S-dup_t_new_first"
+   ],
+   "canon_accept": []
+  },
+  "Bun: js-stripe constructEventAsync": {
+   "rows": 27,
+   "graded": 14,
+   "agree": 14,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [],
+   "canon_accept": [
+    "S-ts_plus_sig_canonical",
+    "S-ts_leading_zero_sig_canonical",
+    "S-ts_float_0_sig_canonical",
+    "S-ts_space_sig_canonical"
+   ]
+  },
+  "Bun: js-svix": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_space_sig_canonical"
+   ]
+  },
+  "CPython: py-slack_sdk 3.46.0": {
+   "rows": 16,
+   "graded": 11,
+   "agree": 9,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "K-ts_nonnumeric",
+    "K-ts_float_0_sig_literal",
+    "K-empty_secret"
+   ],
+   "canon_accept": [
+    "K-ts_plus_sig_literal",
+    "K-ts_leading_zero_sig_literal",
+    "K-ts_space_sig_literal"
+   ]
+  },
+  "CPython: py-standardwebhooks 1.1.0": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-b64url_nopad",
+    "W-double_space",
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_underscore_sig_canonical",
+    "W-ts_space_sig_canonical",
+    "W-ts_exp_sig_canonical"
+   ]
+  },
+  "CPython: py-stripe 16.1.0": {
+   "rows": 27,
+   "graded": 14,
+   "agree": 14,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [],
+   "canon_accept": [
+    "S-ts_plus_sig_canonical",
+    "S-ts_leading_zero_sig_canonical",
+    "S-ts_underscore_sig_canonical",
+    "S-ts_space_sig_canonical"
+   ]
+  },
+  "CPython: py-svix 2.9.1": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-b64url_nopad",
+    "W-double_space",
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_underscore_sig_canonical",
+    "W-ts_space_sig_canonical",
+    "W-ts_exp_sig_canonical"
+   ]
+  },
+  "Node: js-@octokit/webhooks-methods": {
+   "rows": 11,
+   "graded": 6,
+   "agree": 5,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "G-empty_secret"
+   ],
+   "canon_accept": []
+  },
+  "Node: js-@slack/bolt verifySlackRequest": {
+   "rows": 16,
+   "graded": 11,
+   "agree": 7,
+   "over_accept": [
+    "K-future_330",
+    "K-future_1d",
+    "K-ts_ms",
+    "K-ts_nonnumeric"
+   ],
+   "under_accept": [],
+   "crash": [],
+   "canon_accept": [
+    "K-ts_plus_sig_literal",
+    "K-ts_leading_zero_sig_literal",
+    "K-ts_float_0_sig_literal",
+    "K-ts_space_sig_literal"
+   ]
+  },
+  "Node: js-standardwebhooks": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_space_sig_canonical"
+   ]
+  },
+  "Node: js-stripe constructEvent": {
+   "rows": 27,
+   "graded": 14,
+   "agree": 12,
+   "over_accept": [],
+   "under_accept": [
+    "S-multi_empty_then_valid"
+   ],
+   "crash": [
+    "S-empty_v1",
+    "S-multi_empty_then_valid"
+   ],
+   "canon_accept": [
+    "S-ts_plus_sig_canonical",
+    "S-ts_leading_zero_sig_canonical",
+    "S-ts_float_0_sig_canonical",
+    "S-ts_space_sig_canonical"
+   ]
+  },
+  "Node: js-stripe constructEventAsync": {
+   "rows": 27,
+   "graded": 14,
+   "agree": 12,
+   "over_accept": [],
+   "under_accept": [
+    "S-multi_empty_then_valid"
+   ],
+   "crash": [
+    "S-empty_v1",
+    "S-multi_empty_then_valid"
+   ],
+   "canon_accept": [
+    "S-ts_plus_sig_canonical",
+    "S-ts_leading_zero_sig_canonical",
+    "S-ts_float_0_sig_canonical",
+    "S-ts_space_sig_canonical"
+   ]
+  },
+  "Node: js-svix": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_space_sig_canonical"
+   ]
+  },
+  "workerd: js-@octokit/webhooks-methods": {
+   "rows": 11,
+   "graded": 6,
+   "agree": 4,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "G-empty_sig",
+    "G-empty_secret"
+   ],
+   "canon_accept": [
+    "G-upper_hex",
+    "G-trailing_garbage"
+   ]
+  },
+  "workerd: js-standardwebhooks": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_space_sig_canonical"
+   ]
+  },
+  "workerd: js-stripe constructEvent": {
+   "rows": 27,
+   "graded": 14,
+   "agree": 2,
+   "over_accept": [],
+   "under_accept": [
+    "S-valid",
+    "S-age_270",
+    "S-multi_valid_last",
+    "S-multi_empty_then_valid"
+   ],
+   "crash": [
+    "S-valid",
+    "S-age_270",
+    "S-age_330",
+    "S-future_330",
+    "S-future_1d",
+    "S-body_altered",
+    "S-body_reserialized",
+    "S-wrong_secret",
+    "S-multi_valid_last",
+    "S-multi_none_valid",
+    "S-empty_v1",
+    "S-ts_ms",
+    "S-tolerance_0_old",
+    "S-ts_plus_sig_canonical",
+    "S-ts_leading_zero_sig_canonical",
+    "S-ts_float_0_sig_canonical",
+    "S-ts_underscore_sig_canonical",
+    "S-ts_space_sig_canonical",
+    "S-ts_exp_sig_canonical",
+    "S-ts_leading_zero_sig_literal",
+    "S-upper_hex",
+    "S-multi_empty_then_valid",
+    "S-dup_t_old_first",
+    "S-dup_t_new_first"
+   ],
+   "canon_accept": []
+  },
+  "workerd: js-stripe constructEventAsync": {
+   "rows": 27,
+   "graded": 14,
+   "agree": 14,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [],
+   "canon_accept": [
+    "S-ts_plus_sig_canonical",
+    "S-ts_leading_zero_sig_canonical",
+    "S-ts_float_0_sig_canonical",
+    "S-ts_space_sig_canonical"
+   ]
+  },
+  "workerd: js-svix": {
+   "rows": 29,
+   "graded": 18,
+   "agree": 17,
+   "over_accept": [],
+   "under_accept": [],
+   "crash": [
+    "W-empty_secret"
+   ],
+   "canon_accept": [
+    "W-ts_plus_sig_canonical",
+    "W-ts_leading_zero_sig_canonical",
+    "W-ts_float_0_sig_canonical",
+    "W-ts_float_9_sig_canonical",
+    "W-ts_space_sig_canonical"
+   ]
+  }
+ },
+ "disagreeing_cases": 38,
+ "disagreements": {
+  "S-valid": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-age_270": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-age_330": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-future_330": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-future_1d": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-body_altered": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-body_reserialized": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-wrong_secret": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-multi_valid_last": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-multi_none_valid": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-empty_v1": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "crash",
+   "Node: js-stripe constructEventAsync": "crash",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-ts_ms": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-tolerance_0_old": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-ts_plus_sig_canonical": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-ts_leading_zero_sig_canonical": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-ts_float_0_sig_canonical": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-ts_underscore_sig_canonical": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-ts_space_sig_canonical": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "accept",
+   "Node: js-stripe constructEventAsync": "accept",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-ts_exp_sig_canonical": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-ts_leading_zero_sig_literal": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-upper_hex": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-multi_empty_then_valid": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "accept",
+   "Node: js-stripe constructEvent": "crash",
+   "Node: js-stripe constructEventAsync": "crash",
+   "CPython: py-stripe 16.1.0": "accept",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "accept"
+  },
+  "S-dup_t_old_first": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "S-dup_t_new_first": {
+   "Bun: js-stripe constructEvent": "crash",
+   "Bun: js-stripe constructEventAsync": "reject",
+   "Node: js-stripe constructEvent": "reject",
+   "Node: js-stripe constructEventAsync": "reject",
+   "CPython: py-stripe 16.1.0": "reject",
+   "workerd: js-stripe constructEvent": "crash",
+   "workerd: js-stripe constructEventAsync": "reject"
+  },
+  "W-ts_underscore_sig_canonical": {
+   "Bun: js-standardwebhooks": "reject",
+   "Bun: js-svix": "reject",
+   "Node: js-standardwebhooks": "reject",
+   "Node: js-svix": "reject",
+   "CPython: py-standardwebhooks 1.1.0": "accept",
+   "CPython: py-svix 2.9.1": "accept",
+   "workerd: js-standardwebhooks": "reject",
+   "workerd: js-svix": "reject"
+  },
+  "W-ts_exp_sig_canonical": {
+   "Bun: js-standardwebhooks": "reject",
+   "Bun: js-svix": "reject",
+   "Node: js-standardwebhooks": "reject",
+   "Node: js-svix": "reject",
+   "CPython: py-standardwebhooks 1.1.0": "accept",
+   "CPython: py-svix 2.9.1": "accept",
+   "workerd: js-standardwebhooks": "reject",
+   "workerd: js-svix": "reject"
+  },
+  "W-b64url_nopad": {
+   "Bun: js-standardwebhooks": "reject",
+   "Bun: js-svix": "reject",
+   "Node: js-standardwebhooks": "reject",
+   "Node: js-svix": "reject",
+   "CPython: py-standardwebhooks 1.1.0": "crash",
+   "CPython: py-svix 2.9.1": "crash",
+   "workerd: js-standardwebhooks": "reject",
+   "workerd: js-svix": "reject"
+  },
+  "W-double_space": {
+   "Bun: js-standardwebhooks": "accept",
+   "Bun: js-svix": "accept",
+   "Node: js-standardwebhooks": "accept",
+   "Node: js-svix": "accept",
+   "CPython: py-standardwebhooks 1.1.0": "crash",
+   "CPython: py-svix 2.9.1": "crash",
+   "workerd: js-standardwebhooks": "accept",
+   "workerd: js-svix": "accept"
+  },
+  "K-future_330": {
+   "Bun: js-@slack/bolt verifySlackRequest": "accept",
+   "Node: js-@slack/bolt verifySlackRequest": "accept",
+   "CPython: py-slack_sdk 3.46.0": "reject"
+  },
+  "K-future_1d": {
+   "Bun: js-@slack/bolt verifySlackRequest": "accept",
+   "Node: js-@slack/bolt verifySlackRequest": "accept",
+   "CPython: py-slack_sdk 3.46.0": "reject"
+  },
+  "K-ts_ms": {
+   "Bun: js-@slack/bolt verifySlackRequest": "accept",
+   "Node: js-@slack/bolt verifySlackRequest": "accept",
+   "CPython: py-slack_sdk 3.46.0": "reject"
+  },
+  "K-ts_nonnumeric": {
+   "Bun: js-@slack/bolt verifySlackRequest": "accept",
+   "Node: js-@slack/bolt verifySlackRequest": "accept",
+   "CPython: py-slack_sdk 3.46.0": "crash"
+  },
+  "K-ts_float_0_sig_literal": {
+   "Bun: js-@slack/bolt verifySlackRequest": "accept",
+   "Node: js-@slack/bolt verifySlackRequest": "accept",
+   "CPython: py-slack_sdk 3.46.0": "crash"
+  },
+  "K-empty_secret": {
+   "Bun: js-@slack/bolt verifySlackRequest": "reject",
+   "Node: js-@slack/bolt verifySlackRequest": "reject",
+   "CPython: py-slack_sdk 3.46.0": "crash"
+  },
+  "G-no_prefix": {
+   "Bun: js-@octokit/webhooks-methods": "reject",
+   "Node: js-@octokit/webhooks-methods": "reject",
+   "workerd: js-@octokit/webhooks-methods": "accept"
+  },
+  "G-empty_sig": {
+   "Bun: js-@octokit/webhooks-methods": "reject",
+   "Node: js-@octokit/webhooks-methods": "reject",
+   "workerd: js-@octokit/webhooks-methods": "crash"
+  },
+  "G-upper_hex": {
+   "Bun: js-@octokit/webhooks-methods": "reject",
+   "Node: js-@octokit/webhooks-methods": "reject",
+   "workerd: js-@octokit/webhooks-methods": "accept"
+  },
+  "G-trailing_garbage": {
+   "Bun: js-@octokit/webhooks-methods": "reject",
+   "Node: js-@octokit/webhooks-methods": "reject",
+   "workerd: js-@octokit/webhooks-methods": "accept"
+  }
+ },
+ "disagreeing_cases_excl_sync_stripe_on_web_runtimes": 18
+}

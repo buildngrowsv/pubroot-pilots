@@ -1,6 +1,6 @@
-     718  .gitignore
+     782  .gitignore
     1066  LICENSE
-   17417  README.md
+   18116  README.md
     4477  a11y-password-exposure/README.md
     5180  a11y-password-exposure/analyze.py
     1103  a11y-password-exposure/bus_shim.py
@@ -177,3 +177,34 @@
       13  voice-approval-gate/requirements.txt
    71960  voice-approval-gate/results/clips.jsonl
      963  voice-approval-gate/results/summary.json
+    3956  webhook-verifiers/README.md
+    3523  webhook-verifiers/analyze.py
+    9951  webhook-verifiers/gen_cases.py
+   97792  webhook-verifiers/js/package-lock.json
+     441  webhook-verifiers/js/package.json
+     537  webhook-verifiers/js/run_node.mjs
+     850  webhook-verifiers/js/run_workerd.sh
+    2125  webhook-verifiers/js/subjects.mjs
+     447  webhook-verifiers/js/worker.mjs
+     126  webhook-verifiers/js/wrangler.toml
+    1147  webhook-verifiers/py/nopad_sweep.py
+    1776  webhook-verifiers/py/run_py.py
+      69  webhook-verifiers/requirements.txt
+   11474  webhook-verifiers/results/matrix.md
+     210  webhook-verifiers/results/nopad_sweep.txt
+     235  webhook-verifiers/results/npm_ls.txt
+     410  webhook-verifiers/results/pip_freeze.txt
+   32232  webhook-verifiers/results/rep1/bun.jsonl
+   36450  webhook-verifiers/results/rep1/cases.json
+   31046  webhook-verifiers/results/rep1/node.jsonl
+   22116  webhook-verifiers/results/rep1/py.jsonl
+   31604  webhook-verifiers/results/rep1/workerd.jsonl
+   32232  webhook-verifiers/results/rep2/bun.jsonl
+   36450  webhook-verifiers/results/rep2/cases.json
+   31046  webhook-verifiers/results/rep2/node.jsonl
+   22116  webhook-verifiers/results/rep2/py.jsonl
+   31604  webhook-verifiers/results/rep2/workerd.jsonl
+     244  webhook-verifiers/results/stability.txt
+   20862  webhook-verifiers/results/summary.json
+     595  webhook-verifiers/run_all.sh
+    1310  webhook-verifiers/stability.sh
