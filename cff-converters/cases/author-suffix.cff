@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Demo Tool"
+authors:
+  - family-names: Okafor
+    given-names: Chidi
+    name-suffix: Jr.
+version: "2.1.0"
+date-released: "2024-03-05"

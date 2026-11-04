@@ -1,0 +1,47 @@
+case,tool,hazard
+author-alias-only,citation-js,no author field
+author-alias-only,citation-js,non-standard month value 'mar 5'
+author-cjk,citation-js,"empty family name (', given')"
+author-cjk,citation-js,non-standard month value 'mar 5'
+author-entity,cffconvert,multi-word entity author not brace-protected (BibTeX reads last word as family name)
+author-entity,citation-js,non-standard month value 'mar 5'
+author-entity-amp,cffconvert,multi-word entity author not brace-protected (BibTeX reads last word as family name)
+author-entity-amp,cffconvert,unescaped LaTeX special in author
+author-entity-amp,citation-js,non-standard month value 'mar 5'
+author-entity-amp,citation-js,unescaped LaTeX special in author
+author-family-only,citation-js,non-standard month value 'mar 5'
+author-given-only,citation-js,"empty family name (', given')"
+author-given-only,citation-js,non-standard month value 'mar 5'
+author-mixed-person-entity,cffconvert,multi-word entity author not brace-protected (BibTeX reads last word as family name)
+author-mixed-person-entity,citation-js,non-standard month value 'mar 5'
+author-nonascii,citation-js,non-standard month value 'mar 5'
+author-orcid,citation-js,non-standard month value 'mar 5'
+author-particle,citation-js,non-standard month value 'mar 5'
+author-suffix,citation-js,non-standard month value 'mar 5'
+author-two-word-family,citation-js,non-standard month value 'mar 5'
+authors-12,citation-js,non-standard month value 'mar 5'
+base,citation-js,non-standard month value 'mar 5'
+cff-1.1.0,citation-js,non-standard month value 'mar 5'
+date-jan1,citation-js,non-standard month value 'jan 1'
+date-unquoted,citation-js,non-standard month value 'mar 5'
+doi-both-differ,citation-js,non-standard month value 'mar 5'
+doi-identifiers,citation-js,non-standard month value 'mar 5'
+doi-top,citation-js,non-standard month value 'mar 5'
+license-keywords-abstract,citation-js,non-standard month value 'mar 5'
+no-version,citation-js,non-standard month value 'mar 5'
+pref-article,citation-js,non-standard month value 'mar 5'
+pref-conference,citation-js,non-standard month value 'mar 5'
+pref-software-other-version,citation-js,non-standard month value 'mar 5'
+title-acronym,citation-js,non-standard month value 'mar 5'
+title-braces,citation-js,non-standard month value 'mar 5'
+title-colon,citation-js,non-standard month value 'mar 5'
+title-latex-specials,cffconvert,unescaped LaTeX special in title
+title-latex-specials,citation-js,non-standard month value 'mar 5'
+type-dataset,citation-js,non-standard month value 'mar 5'
+url-all,citation-js,non-standard month value 'mar 5'
+url-identifiers,citation-js,non-standard month value 'mar 5'
+url-repo-artifact,citation-js,non-standard month value 'mar 5'
+url-repo-code,citation-js,non-standard month value 'mar 5'
+url-top,citation-js,non-standard month value 'mar 5'
+version-yaml-float,citation-js,non-standard month value 'mar 5'
+version-yaml-int,citation-js,non-standard month value 'mar 5'

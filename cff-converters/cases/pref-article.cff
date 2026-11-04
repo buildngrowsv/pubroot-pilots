@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Demo Tool"
+authors:
+  - family-names: Rivera
+    given-names: Dana
+version: "2.1.0"
+date-released: "2024-03-05"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Rivera
+      given-names: Dana
+    - family-names: Chen
+      given-names: Wei
+  title: "A Paper About Demo Tool"
+  journal: "Journal of Synthetic Software"
+  volume: 7
+  issue: 2
+  start: 101
+  end: 115
+  year: 2023
+  doi: 10.5281/zenodo.1000009

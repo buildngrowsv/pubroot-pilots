@@ -1,0 +1,52 @@
+{
+ "cases": 38,
+ "disagree_per_field": {
+  "type": 37,
+  "authors": 7,
+  "title": 4,
+  "year": 3,
+  "month": 3,
+  "doi": 3,
+  "url": 4,
+  "version": 34,
+  "journal": 1,
+  "n_entries": 3,
+  "apa": 38
+ },
+ "cases_with_semantic_disagreement": 16,
+ "semantic_disagreement_cases": [
+  "author-alias-only",
+  "author-cjk",
+  "author-entity-amp",
+  "author-given-only",
+  "author-suffix",
+  "doi-both-differ",
+  "doi-identifiers",
+  "pref-article",
+  "pref-conference",
+  "pref-software-other-version",
+  "title-braces",
+  "title-latex-specials",
+  "url-all",
+  "url-identifiers",
+  "url-repo-artifact",
+  "url-repo-code"
+ ],
+ "pairwise_cases_differing_on_semantic_fields": {
+  "ruby-cff vs cffconvert": 12,
+  "ruby-cff vs citation-js": 13,
+  "cffconvert vs citation-js": 9
+ },
+ "hazards": {
+  "citation-js": {
+   "no author field": 1,
+   "non-standard month value": 37,
+   "empty family name (', given')": 2,
+   "unescaped LaTeX special": 1
+  },
+  "cffconvert": {
+   "multi-word entity author not brace-protected (BibTeX reads last word as family name)": 3,
+   "unescaped LaTeX special": 2
+  }
+ }
+}

@@ -1,0 +1,17 @@
+<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:19938
+    var m = num.match(/\s*(-{0,1}[0-9]+)/);
+                ^
+
+TypeError: num.match is not a function
+    at CSL.Util.padding (<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:19938:17)
+    at CSL.Token.func (<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:11182:48)
+    at CSL.tokenExec (<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:2904:26)
+    at CSL.getCite (<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:8422:30)
+    at CSL.getSortKeys (<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:23581:17)
+    at CSL.Registry.setsortkeys (<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:23387:59)
+    at CSL.Engine.updateItems (<pilot>/js/node_modules/citeproc/citeproc_commonjs.js:9219:19)
+    at bibliography (<pilot>/js/node_modules/@citation-js/plugin-csl/lib/bibliography.js:26:30)
+    at format (<pilot>/js/node_modules/@citation-js/core/lib/plugins/output.js:39:28)
+    at Cite.format (<pilot>/js/node_modules/@citation-js/core/lib/Cite/get.js:16:29)
+
+Node.js v24.22.1

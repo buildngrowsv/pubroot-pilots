@@ -1,0 +1,419 @@
+case,field,agree,ruby-cff,cffconvert,citation-js
+author-alias-only,type,False,software,misc,misc
+author-alias-only,authors,False,demo-bot,demo-bot,
+author-alias-only,title,True,Demo Tool,Demo Tool,Demo Tool
+author-alias-only,year,True,2024,2024,2024
+author-alias-only,month,True,3,3,3
+author-alias-only,doi,True,,,
+author-alias-only,url,True,,,
+author-alias-only,version,False,2.1.0,,
+author-alias-only,journal,True,,,
+author-alias-only,n_entries,True,1,1,1
+author-alias-only,apa,False,demo-bot. (2024). Demo Tool (Version 2.1.0) [Computer software],demo-bot (2024). Demo Tool (version 2.1.0).,Demo Tool (Version 2.1.0). (2024).
+author-cjk,type,False,software,misc,misc
+author-cjk,authors,False,"山田, 太郎","山田, 太郎",","
+author-cjk,title,True,Demo Tool,Demo Tool,Demo Tool
+author-cjk,year,True,2024,2024,2024
+author-cjk,month,True,3,3,3
+author-cjk,doi,True,,,
+author-cjk,url,True,,,
+author-cjk,version,False,2.1.0,,
+author-cjk,journal,True,,,
+author-cjk,n_entries,True,1,1,1
+author-cjk,apa,False,"山田, 太. (2024). Demo Tool (Version 2.1.0) [Computer software]",山田 太. (2024). Demo Tool (version 2.1.0).,山田太郎. (2024). Demo Tool (Version 2.1.0).
+author-entity,type,False,software,misc,misc
+author-entity,authors,True,Open Demo Consortium,Open Demo Consortium,Open Demo Consortium
+author-entity,title,True,Demo Tool,Demo Tool,Demo Tool
+author-entity,year,True,2024,2024,2024
+author-entity,month,True,3,3,3
+author-entity,doi,True,,,
+author-entity,url,True,,,
+author-entity,version,False,2.1.0,,
+author-entity,journal,True,,,
+author-entity,n_entries,True,1,1,1
+author-entity,apa,False,Open Demo Consortium. (2024). Demo Tool (Version 2.1.0) [Computer software],Open Demo Consortium (2024). Demo Tool (version 2.1.0).,Open Demo Consortium. (2024). Demo Tool (Version 2.1.0).
+author-entity-amp,type,False,software,misc,misc
+author-entity-amp,authors,False,R&D Lab of Example,R D Lab of Example,R D Lab of Example
+author-entity-amp,title,True,Demo Tool,Demo Tool,Demo Tool
+author-entity-amp,year,True,2024,2024,2024
+author-entity-amp,month,True,3,3,3
+author-entity-amp,doi,True,,,
+author-entity-amp,url,True,,,
+author-entity-amp,version,False,2.1.0,,
+author-entity-amp,journal,True,,,
+author-entity-amp,n_entries,True,1,1,1
+author-entity-amp,apa,False,R&D Lab of Example. (2024). Demo Tool (Version 2.1.0) [Computer software],R&D Lab of Example (2024). Demo Tool (version 2.1.0).,R&D Lab of Example. (2024). Demo Tool (Version 2.1.0).
+author-family-only,type,False,software,misc,misc
+author-family-only,authors,True,Plato,Plato,Plato
+author-family-only,title,True,Demo Tool,Demo Tool,Demo Tool
+author-family-only,year,True,2024,2024,2024
+author-family-only,month,True,3,3,3
+author-family-only,doi,True,,,
+author-family-only,url,True,,,
+author-family-only,version,False,2.1.0,,
+author-family-only,journal,True,,,
+author-family-only,n_entries,True,1,1,1
+author-family-only,apa,False,Plato. (2024). Demo Tool (Version 2.1.0) [Computer software],Plato (2024). Demo Tool (version 2.1.0).,Plato. (2024). Demo Tool (Version 2.1.0).
+author-given-only,type,False,software,misc,misc
+author-given-only,authors,False,Quinn,Quinn,", Quinn"
+author-given-only,title,True,Demo Tool,Demo Tool,Demo Tool
+author-given-only,year,True,2024,2024,2024
+author-given-only,month,True,3,3,3
+author-given-only,doi,True,,,
+author-given-only,url,True,,,
+author-given-only,version,False,2.1.0,,
+author-given-only,journal,True,,,
+author-given-only,n_entries,True,1,1,1
+author-given-only,apa,False,Quinn. (2024). Demo Tool (Version 2.1.0) [Computer software],Quinn (2024). Demo Tool (version 2.1.0).,Quinn. (2024). Demo Tool (Version 2.1.0).
+author-mixed-person-entity,type,False,software,misc,misc
+author-mixed-person-entity,authors,True,"Rivera, Dana | Open Demo Consortium","Rivera, Dana | Open Demo Consortium","Rivera, Dana | Open Demo Consortium"
+author-mixed-person-entity,title,True,Demo Tool,Demo Tool,Demo Tool
+author-mixed-person-entity,year,True,2024,2024,2024
+author-mixed-person-entity,month,True,3,3,3
+author-mixed-person-entity,doi,True,,,
+author-mixed-person-entity,url,True,,,
+author-mixed-person-entity,version,False,2.1.0,,
+author-mixed-person-entity,journal,True,,,
+author-mixed-person-entity,n_entries,True,1,1,1
+author-mixed-person-entity,apa,False,"Rivera, D., & Open Demo Consortium. (2024). Demo Tool (Version 2.1.0) [Computer software]","Rivera D., Open Demo Consortium (2024). Demo Tool (version 2.1.0).","Rivera, D. & Open Demo Consortium. (2024). Demo Tool (Version 2.1.0)."
+author-nonascii,type,False,software,misc,misc
+author-nonascii,authors,True,"Schröder-Núñez, Åsa","Schröder-Núñez, Åsa","Schröder-Núñez, Åsa"
+author-nonascii,title,True,Demo Tool,Demo Tool,Demo Tool
+author-nonascii,year,True,2024,2024,2024
+author-nonascii,month,True,3,3,3
+author-nonascii,doi,True,,,
+author-nonascii,url,True,,,
+author-nonascii,version,False,2.1.0,,
+author-nonascii,journal,True,,,
+author-nonascii,n_entries,True,1,1,1
+author-nonascii,apa,False,"Schröder-Núñez, Å. (2024). Demo Tool (Version 2.1.0) [Computer software]",Schröder-Núñez Å. (2024). Demo Tool (version 2.1.0).,"Schröder-Núñez, Å. (2024). Demo Tool (Version 2.1.0)."
+author-orcid,type,False,software,misc,misc
+author-orcid,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+author-orcid,title,True,Demo Tool,Demo Tool,Demo Tool
+author-orcid,year,True,2024,2024,2024
+author-orcid,month,True,3,3,3
+author-orcid,doi,True,,,
+author-orcid,url,True,,,
+author-orcid,version,False,2.1.0,,
+author-orcid,journal,True,,,
+author-orcid,n_entries,True,1,1,1
+author-orcid,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+author-particle,type,False,software,misc,misc
+author-particle,authors,True,"van den Berg, Lena","van den Berg, Lena","van den Berg, Lena"
+author-particle,title,True,Demo Tool,Demo Tool,Demo Tool
+author-particle,year,True,2024,2024,2024
+author-particle,month,True,3,3,3
+author-particle,doi,True,,,
+author-particle,url,True,,,
+author-particle,version,False,2.1.0,,
+author-particle,journal,True,,,
+author-particle,n_entries,True,1,1,1
+author-particle,apa,False,"van den Berg, L. (2024). Demo Tool (Version 2.1.0) [Computer software]",van den Berg L. (2024). Demo Tool (version 2.1.0).,"van den Berg, L. (2024). Demo Tool (Version 2.1.0)."
+author-suffix,type,False,software,misc,misc
+author-suffix,authors,False,"Okafor, Jr., Chidi","Okafor Jr., Chidi","Okafor, Jr., Chidi"
+author-suffix,title,True,Demo Tool,Demo Tool,Demo Tool
+author-suffix,year,True,2024,2024,2024
+author-suffix,month,True,3,3,3
+author-suffix,doi,True,,,
+author-suffix,url,True,,,
+author-suffix,version,False,2.1.0,,
+author-suffix,journal,True,,,
+author-suffix,n_entries,True,1,1,1
+author-suffix,apa,False,"Okafor, C., Jr. (2024). Demo Tool (Version 2.1.0) [Computer software]",Okafor Jr. C. (2024). Demo Tool (version 2.1.0).,"Okafor, C., Jr. (2024). Demo Tool (Version 2.1.0)."
+author-two-word-family,type,False,software,misc,misc
+author-two-word-family,authors,True,"Garcia Lopez, Maria","Garcia Lopez, Maria","Garcia Lopez, Maria"
+author-two-word-family,title,True,Demo Tool,Demo Tool,Demo Tool
+author-two-word-family,year,True,2024,2024,2024
+author-two-word-family,month,True,3,3,3
+author-two-word-family,doi,True,,,
+author-two-word-family,url,True,,,
+author-two-word-family,version,False,2.1.0,,
+author-two-word-family,journal,True,,,
+author-two-word-family,n_entries,True,1,1,1
+author-two-word-family,apa,False,"Garcia Lopez, M. (2024). Demo Tool (Version 2.1.0) [Computer software]",Garcia Lopez M. (2024). Demo Tool (version 2.1.0).,"Garcia Lopez, M. (2024). Demo Tool (Version 2.1.0)."
+authors-12,type,False,software,misc,misc
+authors-12,authors,True,"Author0, Test | Author1, Test | Author2, Test | Author3, Test | Author4, Test | Author5, Test | Author6, Test | Author7, Test | Author8, Test | Author9, Test | Author10, Test | Author11, Test","Author0, Test | Author1, Test | Author2, Test | Author3, Test | Author4, Test | Author5, Test | Author6, Test | Author7, Test | Author8, Test | Author9, Test | Author10, Test | Author11, Test","Author0, Test | Author1, Test | Author2, Test | Author3, Test | Author4, Test | Author5, Test | Author6, Test | Author7, Test | Author8, Test | Author9, Test | Author10, Test | Author11, Test"
+authors-12,title,True,Demo Tool,Demo Tool,Demo Tool
+authors-12,year,True,2024,2024,2024
+authors-12,month,True,3,3,3
+authors-12,doi,True,,,
+authors-12,url,True,,,
+authors-12,version,False,2.1.0,,
+authors-12,journal,True,,,
+authors-12,n_entries,True,1,1,1
+authors-12,apa,False,"Author0, T., Author1, T., Author2, T., Author3, T., Author4, T., Author5, T., Author6, T., Author7, T., Author8, T., Author9, T., Author10, T., & Author11, T. (2024). Demo Tool (Version 2.1.0) [Computer software]","Author0 T., Author1 T., Author2 T., Author3 T., Author4 T., Author5 T., Author6 T., Author7 T., Author8 T., Author9 T., Author10 T., Author11 T. (2024). Demo Tool (version 2.1.0).","Author0, T., Author1, T., Author2, T., Author3, T., Author4, T., Author5, T., Author6, T., Author7, T., Author8, T., Author9, T., Author10, T., & Author11, T. (2024). Demo Tool (Version 2.1.0)."
+base,type,False,software,misc,misc
+base,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+base,title,True,Demo Tool,Demo Tool,Demo Tool
+base,year,True,2024,2024,2024
+base,month,True,3,3,3
+base,doi,True,,,
+base,url,True,,,
+base,version,False,2.1.0,,
+base,journal,True,,,
+base,n_entries,True,1,1,1
+base,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+cff-1.1.0,type,False,software,misc,misc
+cff-1.1.0,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+cff-1.1.0,title,True,Demo Tool,Demo Tool,Demo Tool
+cff-1.1.0,year,True,2024,2024,2024
+cff-1.1.0,month,True,3,3,3
+cff-1.1.0,doi,True,,,
+cff-1.1.0,url,True,,,
+cff-1.1.0,version,False,2.1.0,,
+cff-1.1.0,journal,True,,,
+cff-1.1.0,n_entries,True,1,1,1
+cff-1.1.0,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]."
+date-jan1,type,False,software,misc,misc
+date-jan1,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+date-jan1,title,True,Demo Tool,Demo Tool,Demo Tool
+date-jan1,year,True,2024,2024,2024
+date-jan1,month,True,1,1,1
+date-jan1,doi,True,,,
+date-jan1,url,True,,,
+date-jan1,version,False,2.1.0,,
+date-jan1,journal,True,,,
+date-jan1,n_entries,True,1,1,1
+date-jan1,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+date-unquoted,type,False,software,misc,misc
+date-unquoted,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+date-unquoted,title,True,Demo Tool,Demo Tool,Demo Tool
+date-unquoted,year,True,2024,2024,2024
+date-unquoted,month,True,3,3,3
+date-unquoted,doi,True,,,
+date-unquoted,url,True,,,
+date-unquoted,version,False,2.1.0,,
+date-unquoted,journal,True,,,
+date-unquoted,n_entries,True,1,1,1
+date-unquoted,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+doi-both-differ,type,False,software,misc,misc
+doi-both-differ,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+doi-both-differ,title,True,Demo Tool,Demo Tool,Demo Tool
+doi-both-differ,year,True,2024,2024,2024
+doi-both-differ,month,True,3,3,3
+doi-both-differ,doi,False,10.5281/zenodo.1000001,10.5281/zenodo.1000002,10.5281/zenodo.1000001
+doi-both-differ,url,True,,,
+doi-both-differ,version,False,2.1.0,,
+doi-both-differ,journal,True,,,
+doi-both-differ,n_entries,True,1,1,1
+doi-both-differ,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]. https://doi.org/10.5281/zenodo.1000001",Rivera D. (2024). Demo Tool (version 2.1.0). DOI: 10.5281/zenodo.1000002,"Rivera, D. (2024). Demo Tool (Version 2.1.0). https://doi.org/10.5281/zenodo.1000001"
+doi-identifiers,type,False,software,misc,misc
+doi-identifiers,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+doi-identifiers,title,True,Demo Tool,Demo Tool,Demo Tool
+doi-identifiers,year,True,2024,2024,2024
+doi-identifiers,month,True,3,3,3
+doi-identifiers,doi,False,,10.5281/zenodo.1000002,10.5281/zenodo.1000002
+doi-identifiers,url,True,,,
+doi-identifiers,version,False,2.1.0,,
+doi-identifiers,journal,True,,,
+doi-identifiers,n_entries,True,1,1,1
+doi-identifiers,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0). DOI: 10.5281/zenodo.1000002,"Rivera, D. (2024). Demo Tool (Version 2.1.0). https://doi.org/10.5281/zenodo.1000002"
+doi-top,type,False,software,misc,misc
+doi-top,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+doi-top,title,True,Demo Tool,Demo Tool,Demo Tool
+doi-top,year,True,2024,2024,2024
+doi-top,month,True,3,3,3
+doi-top,doi,True,10.5281/zenodo.1000001,10.5281/zenodo.1000001,10.5281/zenodo.1000001
+doi-top,url,True,,,
+doi-top,version,False,2.1.0,,
+doi-top,journal,True,,,
+doi-top,n_entries,True,1,1,1
+doi-top,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]. https://doi.org/10.5281/zenodo.1000001",Rivera D. (2024). Demo Tool (version 2.1.0). DOI: 10.5281/zenodo.1000001,"Rivera, D. (2024). Demo Tool (Version 2.1.0). https://doi.org/10.5281/zenodo.1000001"
+license-keywords-abstract,type,False,software,misc,misc
+license-keywords-abstract,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+license-keywords-abstract,title,True,Demo Tool,Demo Tool,Demo Tool
+license-keywords-abstract,year,True,2024,2024,2024
+license-keywords-abstract,month,True,3,3,3
+license-keywords-abstract,doi,True,,,
+license-keywords-abstract,url,True,,,
+license-keywords-abstract,version,False,2.1.0,,
+license-keywords-abstract,journal,True,,,
+license-keywords-abstract,n_entries,True,1,1,1
+license-keywords-abstract,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+no-date,type,False,software,misc,misc
+no-date,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+no-date,title,True,Demo Tool,Demo Tool,Demo Tool
+no-date,year,True,,,
+no-date,month,True,,,
+no-date,doi,True,,,
+no-date,url,True,,,
+no-date,version,False,2.1.0,,
+no-date,journal,True,,,
+no-date,n_entries,True,1,1,1
+no-date,apa,False,"Rivera, D. Demo Tool (Version 2.1.0) [Computer software]",Rivera D. Demo Tool (version 2.1.0).,"Rivera, D. (n.d.). Demo Tool (Version 2.1.0)."
+no-version,type,False,software,misc,misc
+no-version,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+no-version,title,True,Demo Tool,Demo Tool,Demo Tool
+no-version,year,True,2024,2024,2024
+no-version,month,True,3,3,3
+no-version,doi,True,,,
+no-version,url,True,,,
+no-version,version,True,,,
+no-version,journal,True,,,
+no-version,n_entries,True,1,1,1
+no-version,apa,False,"Rivera, D. (2024). Demo Tool [Computer software]",Rivera D. (2024). Demo Tool,"Rivera, D. (2024). Demo Tool."
+pref-article,type,False,article,misc,misc
+pref-article,authors,False,"Rivera, Dana | Chen, Wei","Rivera, Dana","Rivera, Dana"
+pref-article,title,False,A Paper About Demo Tool,Demo Tool,Demo Tool
+pref-article,year,False,2023,2024,2024
+pref-article,month,False,,3,3
+pref-article,doi,False,10.5281/zenodo.1000009,,
+pref-article,url,True,,,
+pref-article,version,True,,,
+pref-article,journal,False,Journal of Synthetic Software,,
+pref-article,n_entries,False,1,1,2
+pref-article,apa,False,"Rivera, D., & Chen, W. (2023). A Paper About Demo Tool. Journal of Synthetic Software, 7(2), 101–115. https://doi.org/10.5281/zenodo.1000009",Rivera D. (2024). Demo Tool (version 2.1.0).,
+pref-conference,type,False,inproceedings,misc,misc
+pref-conference,authors,False,"Chen, Wei","Rivera, Dana","Rivera, Dana"
+pref-conference,title,False,Demo Tool at a Conference,Demo Tool,Demo Tool
+pref-conference,year,False,2022,2024,2024
+pref-conference,month,False,,3,3
+pref-conference,doi,True,,,
+pref-conference,url,True,,,
+pref-conference,version,True,,,
+pref-conference,journal,True,,,
+pref-conference,n_entries,False,1,1,2
+pref-conference,apa,False,"Chen, W. (2022). Demo Tool at a Conference [Conference paper]. Proceedings of the Synthetic Workshop",Rivera D. (2024). Demo Tool (version 2.1.0).,"Chen, W. (2022). Demo Tool at a Conference. Proceedings of the Synthetic Workshop. Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+pref-software-other-version,type,False,software,misc,misc
+pref-software-other-version,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+pref-software-other-version,title,True,Demo Tool,Demo Tool,Demo Tool
+pref-software-other-version,year,False,2020,2024,2024
+pref-software-other-version,month,False,,3,3
+pref-software-other-version,doi,True,,,
+pref-software-other-version,url,True,,,
+pref-software-other-version,version,False,1.0.0,,
+pref-software-other-version,journal,True,,,
+pref-software-other-version,n_entries,False,1,1,2
+pref-software-other-version,apa,False,"Rivera, D. (2020). Demo Tool (Version 1.0.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2020). Demo Tool (Version 1.0.0) [Computer software]. Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+title-acronym,type,False,software,misc,misc
+title-acronym,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+title-acronym,title,True,BERT Embeddings for GPU Clusters in LLaMA Pipelines,BERT Embeddings for GPU Clusters in LLaMA Pipelines,BERT Embeddings for GPU Clusters in LLaMA Pipelines
+title-acronym,year,True,2024,2024,2024
+title-acronym,month,True,3,3,3
+title-acronym,doi,True,,,
+title-acronym,url,True,,,
+title-acronym,version,False,2.1.0,,
+title-acronym,journal,True,,,
+title-acronym,n_entries,True,1,1,1
+title-acronym,apa,False,"Rivera, D. (2024). BERT Embeddings for GPU Clusters in LLaMA Pipelines (Version 2.1.0) [Computer software]",Rivera D. (2024). BERT Embeddings for GPU Clusters in LLaMA Pipelines (version 2.1.0).,"Rivera, D. (2024). BERT Embeddings for GPU Clusters in LLaMA Pipelines (Version 2.1.0)."
+title-braces,type,False,software,misc,misc
+title-braces,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+title-braces,title,False,Set {x} Notation Helper,Set x Notation Helper,Set x Notation Helper
+title-braces,year,True,2024,2024,2024
+title-braces,month,True,3,3,3
+title-braces,doi,True,,,
+title-braces,url,True,,,
+title-braces,version,False,2.1.0,,
+title-braces,journal,True,,,
+title-braces,n_entries,True,1,1,1
+title-braces,apa,False,"Rivera, D. (2024). Set {x} Notation Helper (Version 2.1.0) [Computer software]",Rivera D. (2024). Set {x} Notation Helper (version 2.1.0).,"Rivera, D. (2024). Set {x} Notation Helper (Version 2.1.0)."
+title-colon,type,False,software,misc,misc
+title-colon,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+title-colon,title,True,demo: a lowercase tool,demo: a lowercase tool,demo: a lowercase tool
+title-colon,year,True,2024,2024,2024
+title-colon,month,True,3,3,3
+title-colon,doi,True,,,
+title-colon,url,True,,,
+title-colon,version,False,2.1.0,,
+title-colon,journal,True,,,
+title-colon,n_entries,True,1,1,1
+title-colon,apa,False,"Rivera, D. (2024). demo: a lowercase tool (Version 2.1.0) [Computer software]",Rivera D. (2024). demo: a lowercase tool (version 2.1.0).,"Rivera, D. (2024). demo: a lowercase tool (Version 2.1.0)."
+title-latex-specials,type,False,software,misc,misc
+title-latex-specials,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+title-latex-specials,title,False,Fast 100% R&D_Tools for $5,Fast 100,Fast 100% R&DTools for $5
+title-latex-specials,year,True,2024,2024,2024
+title-latex-specials,month,True,3,3,3
+title-latex-specials,doi,True,,,
+title-latex-specials,url,True,,,
+title-latex-specials,version,False,2.1.0,,
+title-latex-specials,journal,True,,,
+title-latex-specials,n_entries,True,1,1,1
+title-latex-specials,apa,False,"Rivera, D. (2024). Fast 100% R&D_Tools for $5 (Version 2.1.0) [Computer software]",Rivera D. (2024). Fast 100% R&D_Tools for $5 (version 2.1.0).,"Rivera, D. (2024). Fast 100% R&D_Tools for $5 (Version 2.1.0)."
+type-dataset,type,True,misc,misc,misc
+type-dataset,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+type-dataset,title,True,Demo Tool,Demo Tool,Demo Tool
+type-dataset,year,True,2024,2024,2024
+type-dataset,month,True,3,3,3
+type-dataset,doi,True,,,
+type-dataset,url,True,,,
+type-dataset,version,True,,,
+type-dataset,journal,True,,,
+type-dataset,n_entries,True,1,1,1
+type-dataset,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Data set]",Rivera D. (2024). Demo Tool (version 2.1.0).,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Dataset]."
+url-all,type,False,software,misc,misc
+url-all,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+url-all,title,True,Demo Tool,Demo Tool,Demo Tool
+url-all,year,True,2024,2024,2024
+url-all,month,True,3,3,3
+url-all,doi,True,,,
+url-all,url,False,https://github.com/example/demo,https://example.org/id-url,https://example.org/demo
+url-all,version,False,2.1.0,,
+url-all,journal,True,,,
+url-all,n_entries,True,1,1,1
+url-all,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]. https://github.com/example/demo",Rivera D. (2024). Demo Tool (version 2.1.0). URL: https://example.org/id-url,"Rivera, D. (2024). Demo Tool (Version 2.1.0). https://example.org/demo"
+url-identifiers,type,False,software,misc,misc
+url-identifiers,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+url-identifiers,title,True,Demo Tool,Demo Tool,Demo Tool
+url-identifiers,year,True,2024,2024,2024
+url-identifiers,month,True,3,3,3
+url-identifiers,doi,True,,,
+url-identifiers,url,False,,https://example.org/id-url,https://example.org/id-url
+url-identifiers,version,False,2.1.0,,
+url-identifiers,journal,True,,,
+url-identifiers,n_entries,True,1,1,1
+url-identifiers,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0). URL: https://example.org/id-url,"Rivera, D. (2024). Demo Tool (Version 2.1.0). https://example.org/id-url"
+url-repo-artifact,type,False,software,misc,misc
+url-repo-artifact,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+url-repo-artifact,title,True,Demo Tool,Demo Tool,Demo Tool
+url-repo-artifact,year,True,2024,2024,2024
+url-repo-artifact,month,True,3,3,3
+url-repo-artifact,doi,True,,,
+url-repo-artifact,url,False,,https://pypi.org/project/demo,
+url-repo-artifact,version,False,2.1.0,,
+url-repo-artifact,journal,True,,,
+url-repo-artifact,n_entries,True,1,1,1
+url-repo-artifact,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]",Rivera D. (2024). Demo Tool (version 2.1.0). URL: https://pypi.org/project/demo,"Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+url-repo-code,type,False,software,misc,misc
+url-repo-code,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+url-repo-code,title,True,Demo Tool,Demo Tool,Demo Tool
+url-repo-code,year,True,2024,2024,2024
+url-repo-code,month,True,3,3,3
+url-repo-code,doi,True,,,
+url-repo-code,url,False,https://github.com/example/demo,https://github.com/example/demo,
+url-repo-code,version,False,2.1.0,,
+url-repo-code,journal,True,,,
+url-repo-code,n_entries,True,1,1,1
+url-repo-code,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]. https://github.com/example/demo",Rivera D. (2024). Demo Tool (version 2.1.0). URL: https://github.com/example/demo,"Rivera, D. (2024). Demo Tool (Version 2.1.0)."
+url-top,type,False,software,misc,misc
+url-top,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+url-top,title,True,Demo Tool,Demo Tool,Demo Tool
+url-top,year,True,2024,2024,2024
+url-top,month,True,3,3,3
+url-top,doi,True,,,
+url-top,url,True,https://example.org/demo,https://example.org/demo,https://example.org/demo
+url-top,version,False,2.1.0,,
+url-top,journal,True,,,
+url-top,n_entries,True,1,1,1
+url-top,apa,False,"Rivera, D. (2024). Demo Tool (Version 2.1.0) [Computer software]. https://example.org/demo",Rivera D. (2024). Demo Tool (version 2.1.0). URL: https://example.org/demo,"Rivera, D. (2024). Demo Tool (Version 2.1.0). https://example.org/demo"
+version-yaml-float,type,False,software,misc,misc
+version-yaml-float,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+version-yaml-float,title,True,Demo Tool,Demo Tool,Demo Tool
+version-yaml-float,year,True,2024,2024,2024
+version-yaml-float,month,True,3,3,3
+version-yaml-float,doi,True,,,
+version-yaml-float,url,True,,,
+version-yaml-float,version,False,1.1,,
+version-yaml-float,journal,True,,,
+version-yaml-float,n_entries,True,1,1,1
+version-yaml-float,apa,False,"Rivera, D. (2024). Demo Tool (Version 1.1) [Computer software]",Rivera D. (2024). Demo Tool (version 1.1).,"Rivera, D. (2024). Demo Tool (Version 1.1)."
+version-yaml-int,type,False,software,misc,misc
+version-yaml-int,authors,True,"Rivera, Dana","Rivera, Dana","Rivera, Dana"
+version-yaml-int,title,True,Demo Tool,Demo Tool,Demo Tool
+version-yaml-int,year,True,2024,2024,2024
+version-yaml-int,month,True,3,3,3
+version-yaml-int,doi,True,,,
+version-yaml-int,url,True,,,
+version-yaml-int,version,False,2,,
+version-yaml-int,journal,True,,,
+version-yaml-int,n_entries,True,1,1,1
+version-yaml-int,apa,False,"Rivera, D. (2024). Demo Tool (Version 2) [Computer software]",Rivera D. (2024). Demo Tool (version 2).,"Rivera, D. (2024). Demo Tool (Version 2)."

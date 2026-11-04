@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Demo Tool"
+authors:
+  - family-names: Rivera
+    given-names: Dana
+version: "2.1.0"
+date-released: "2024-03-05"
+license: MIT
+keywords:
+  - demo
+  - test
+abstract: "A synthetic test tool."

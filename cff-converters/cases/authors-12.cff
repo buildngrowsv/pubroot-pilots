@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Demo Tool"
+authors:
+  - family-names: Author0
+    given-names: Test
+  - family-names: Author1
+    given-names: Test
+  - family-names: Author2
+    given-names: Test
+  - family-names: Author3
+    given-names: Test
+  - family-names: Author4
+    given-names: Test
+  - family-names: Author5
+    given-names: Test
+  - family-names: Author6
+    given-names: Test
+  - family-names: Author7
+    given-names: Test
+  - family-names: Author8
+    given-names: Test
+  - family-names: Author9
+    given-names: Test
+  - family-names: Author10
+    given-names: Test
+  - family-names: Author11
+    given-names: Test
+version: "2.1.0"
+date-released: "2024-03-05"
