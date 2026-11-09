@@ -1,0 +1,5 @@
+git 2.47.3
+moby/patternmatcher github.com/moby/patternmatcher v0.6.1
+go go1.27.3
+@balena/dockerignore 1.0.2
+node v24.22.1

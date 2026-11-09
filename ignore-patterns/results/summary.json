@@ -1,0 +1,261 @@
+{
+  "n_cases": 23,
+  "n_paths": 37,
+  "path_verdicts": 851,
+  "cases_git_vs_moby_disagree": 9,
+  "path_cells_git_vs_moby": 21,
+  "path_cells_git_vs_balena": 21,
+  "path_cells_moby_vs_balena": 0,
+  "cases": [
+    {
+      "case": "unanchored_nm",
+      "n_diff_any": 2,
+      "diffs": [
+        {
+          "path": "src/node_modules/x.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "apps/web/node_modules/y.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "anchored_nm",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "star_nm",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "globstar_nm",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "unanchored_env",
+      "n_diff_any": 1,
+      "diffs": [
+        {
+          "path": "config/.env",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "anchored_env",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "dir_only_build",
+      "n_diff_any": 2,
+      "diffs": [
+        {
+          "path": "build",
+          "git": false,
+          "moby": true,
+          "balena": true
+        },
+        {
+          "path": "src/build/out.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "negation_under_star",
+      "n_diff_any": 7,
+      "diffs": [
+        {
+          "path": "src/node_modules/x.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "src/build/out.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "keep.txt",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "src/keep.txt",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "src/main.py",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "src/__pycache__",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "src/__pycache__/x.pyc",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "negation_under_dir",
+      "n_diff_any": 1,
+      "diffs": [
+        {
+          "path": "dist/keep.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "leading_slash_foo",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "no_slash_foo",
+      "n_diff_any": 1,
+      "diffs": [
+        {
+          "path": "bar/foo",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "double_star_log",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "star_log",
+      "n_diff_any": 1,
+      "diffs": [
+        {
+          "path": "logs/debug.log",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "question",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "bracket",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "space_name",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "comment_and_blank",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "nested_git_style",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "escape_bang",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "root_dotgit",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "pycache",
+      "n_diff_any": 1,
+      "diffs": [
+        {
+          "path": "src/__pycache__/x.pyc",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    },
+    {
+      "case": "venv",
+      "n_diff_any": 0,
+      "diffs": []
+    },
+    {
+      "case": "complex_js",
+      "n_diff_any": 5,
+      "diffs": [
+        {
+          "path": "src/node_modules/x.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "apps/web/node_modules/y.js",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "config/.env",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": "logs/debug.log",
+          "git": true,
+          "moby": false,
+          "balena": false
+        },
+        {
+          "path": ".env.example",
+          "git": true,
+          "moby": false,
+          "balena": false
+        }
+      ]
+    }
+  ]
+}
