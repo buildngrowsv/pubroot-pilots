@@ -1,0 +1,174 @@
+{
+  "n_cases": 21,
+  "cases_disagree_any": 8,
+  "rows": [
+    {
+      "id": "exact_allow",
+      "origin": "https://app.example.com",
+      "express": "https://app.example.com",
+      "starlette": "https://app.example.com",
+      "flask_cors": "https://app.example.com",
+      "agree": true
+    },
+    {
+      "id": "exact_deny",
+      "origin": "https://evil.example.com",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "exact_allow_other",
+      "origin": "https://other.example.com",
+      "express": "https://other.example.com",
+      "starlette": "https://other.example.com",
+      "flask_cors": "https://other.example.com",
+      "agree": true
+    },
+    {
+      "id": "star_allow",
+      "origin": "https://app.example.com",
+      "express": "*",
+      "starlette": "*",
+      "flask_cors": "https://app.example.com",
+      "agree": false
+    },
+    {
+      "id": "star_null",
+      "origin": null,
+      "express": "*",
+      "starlette": null,
+      "flask_cors": "*",
+      "agree": false
+    },
+    {
+      "id": "trail_slash_req",
+      "origin": "https://app.example.com/",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "trail_slash_cfg",
+      "origin": "https://app.example.com",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "port_mismatch",
+      "origin": "https://app.example.com:443",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "http_vs_https",
+      "origin": "http://app.example.com",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "subdomain",
+      "origin": "https://api.app.example.com",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "null_in_list",
+      "origin": "null",
+      "express": "null",
+      "starlette": "null",
+      "flask_cors": "null",
+      "agree": true
+    },
+    {
+      "id": "null_not_in_list",
+      "origin": "null",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "regex_subdomain_allow",
+      "origin": "https://foo.app.example.com",
+      "express": "https://foo.app.example.com",
+      "starlette": "https://foo.app.example.com",
+      "flask_cors": "https://foo.app.example.com",
+      "agree": true
+    },
+    {
+      "id": "regex_subdomain_deny",
+      "origin": "https://evil.example.com",
+      "express": null,
+      "starlette": null,
+      "flask_cors": null,
+      "agree": true
+    },
+    {
+      "id": "regex_partial_vs_full",
+      "origin": "https://app.example.com.evil.com",
+      "express": "https://app.example.com.evil.com",
+      "starlette": null,
+      "flask_cors": "https://app.example.com.evil.com",
+      "agree": false
+    },
+    {
+      "id": "regex_unanchored",
+      "origin": "https://app.example.com.evil.com",
+      "express": "https://app.example.com.evil.com",
+      "starlette": null,
+      "flask_cors": null,
+      "agree": false
+    },
+    {
+      "id": "cred_exact",
+      "origin": "https://app.example.com",
+      "express": "https://app.example.com",
+      "starlette": "https://app.example.com",
+      "flask_cors": "https://app.example.com",
+      "agree": true
+    },
+    {
+      "id": "cred_star",
+      "origin": "https://app.example.com",
+      "express": "*",
+      "starlette": "https://app.example.com",
+      "flask_cors": "https://app.example.com",
+      "agree": false
+    },
+    {
+      "id": "missing_origin",
+      "origin": null,
+      "express": null,
+      "starlette": null,
+      "flask_cors": "https://app.example.com",
+      "agree": false
+    },
+    {
+      "id": "case_scheme",
+      "origin": "HTTPS://app.example.com",
+      "express": null,
+      "starlette": null,
+      "flask_cors": "HTTPS://app.example.com",
+      "agree": false
+    },
+    {
+      "id": "case_host",
+      "origin": "https://APP.example.com",
+      "express": null,
+      "starlette": null,
+      "flask_cors": "https://APP.example.com",
+      "agree": false
+    }
+  ]
+}
