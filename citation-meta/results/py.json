@@ -1,0 +1,247 @@
+{
+  "selector": {
+    "agree_all.html": {
+      "title": "Alpha Study",
+      "doi": "10.1234/alpha",
+      "pdf_or_url": "https://ex.test/alpha.pdf",
+      "authors": [
+        "Ann Author"
+      ],
+      "source_pref": "hw>dc>og"
+    },
+    "author_conflict.html": {
+      "title": "A",
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [
+        "Highwire A",
+        "Highwire B"
+      ],
+      "source_pref": "hw>dc>og"
+    },
+    "dc_only.html": {
+      "title": "Only DC",
+      "doi": "10.1/dc",
+      "pdf_or_url": null,
+      "authors": [
+        "DC Only",
+        "DC Only"
+      ],
+      "source_pref": "hw>dc>og"
+    },
+    "doi_conflict.html": {
+      "title": "D",
+      "doi": "10.1234/hw",
+      "pdf_or_url": "https://doi.org/10.1234/og",
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "emptyish.html": {
+      "title": null,
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "html_entities.html": {
+      "title": "Alpha & Beta: a study",
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "hw_only.html": {
+      "title": "Only Highwire",
+      "doi": "10.1/hw",
+      "pdf_or_url": "https://ex.test/only.pdf",
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "jsonld_only.html": {
+      "title": null,
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "og_only.html": {
+      "title": "Only OG",
+      "doi": null,
+      "pdf_or_url": "https://ex.test/og-only",
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "pdf_conflict.html": {
+      "title": "P",
+      "doi": null,
+      "pdf_or_url": "https://ex.test/hw.pdf",
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "relative_pdf.html": {
+      "title": "Rel",
+      "doi": null,
+      "pdf_or_url": "/files/paper.pdf",
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    },
+    "title_conflict.html": {
+      "title": "Highwire Title",
+      "doi": "10.1234/t",
+      "pdf_or_url": null,
+      "authors": [],
+      "source_pref": "hw>dc>og"
+    }
+  },
+  "extruct": {
+    "agree_all.html": {
+      "title": "Alpha Study",
+      "doi": "10.1234/alpha",
+      "pdf_or_url": "https://ex.test/alpha.pdf",
+      "authors": [
+        "Ann Author"
+      ],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "author_conflict.html": {
+      "title": "A",
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [
+        "LD One",
+        "LD Two"
+      ],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "dc_only.html": {
+      "title": null,
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "doi_conflict.html": {
+      "title": "D",
+      "doi": "10.1234/ld",
+      "pdf_or_url": "https://doi.org/10.1234/og",
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "emptyish.html": {
+      "title": null,
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "html_entities.html": {
+      "title": "Alpha & Beta: a study",
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "hw_only.html": {
+      "title": null,
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "jsonld_only.html": {
+      "title": "Only JSON-LD",
+      "doi": "10.1/ld",
+      "pdf_or_url": null,
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "og_only.html": {
+      "title": "Only OG",
+      "doi": null,
+      "pdf_or_url": "https://ex.test/og-only",
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "pdf_conflict.html": {
+      "title": "P",
+      "doi": null,
+      "pdf_or_url": "https://ex.test/ld.pdf",
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "relative_pdf.html": {
+      "title": "Rel",
+      "doi": null,
+      "pdf_or_url": "files/paper.pdf",
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    },
+    "title_conflict.html": {
+      "title": "JSON-LD Title",
+      "doi": null,
+      "pdf_or_url": null,
+      "authors": [],
+      "raw_keys": [
+        "microdata",
+        "json-ld",
+        "opengraph",
+        "dublincore"
+      ]
+    }
+  }
+}

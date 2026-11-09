@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "hw_only.html",
+    "html_entities.html",
+    "title_conflict.html",
+    "jsonld_only.html",
+    "agree_all.html",
+    "doi_conflict.html",
+    "relative_pdf.html",
+    "dc_only.html",
+    "emptyish.html",
+    "author_conflict.html",
+    "og_only.html",
+    "pdf_conflict.html"
+  ]
+}

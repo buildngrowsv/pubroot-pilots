@@ -1,0 +1,372 @@
+{
+  "n_pages": 12,
+  "pages_title_disagree": 1,
+  "pages_doi_disagree": 1,
+  "pages_pdf_or_url_disagree": 4,
+  "pages_author_disagree": 3,
+  "extruct_ignores_highwire_only": true,
+  "selector_and_metascraper_miss_jsonld_only": true,
+  "rows": [
+    {
+      "page": "agree_all.html",
+      "titles": {
+        "selector": "Alpha Study",
+        "extruct": "Alpha Study",
+        "metascraper": "Alpha Study"
+      },
+      "dois": {
+        "selector": "10.1234/alpha",
+        "extruct": "10.1234/alpha",
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": "https://ex.test/alpha.pdf",
+        "extruct": "https://ex.test/alpha.pdf",
+        "metascraper": "https://ex.test/alpha"
+      },
+      "authors": {
+        "selector": [
+          "Ann Author"
+        ],
+        "extruct": [
+          "Ann Author"
+        ],
+        "metascraper": "Ann Author"
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": true,
+      "author_disagree": true,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "author_conflict.html",
+      "titles": {
+        "selector": "A",
+        "extruct": "A",
+        "metascraper": "A"
+      },
+      "dois": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": "https://example.com/landing/author_conflict.html"
+      },
+      "authors": {
+        "selector": [
+          "Highwire A",
+          "Highwire B"
+        ],
+        "extruct": [
+          "LD One",
+          "LD Two"
+        ],
+        "metascraper": "Highwire A"
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": false,
+      "author_disagree": true,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "dc_only.html",
+      "titles": {
+        "selector": "Only DC",
+        "extruct": null,
+        "metascraper": "Only DC"
+      },
+      "dois": {
+        "selector": "10.1/dc",
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": "https://example.com/landing/dc_only.html"
+      },
+      "authors": {
+        "selector": [
+          "DC Only",
+          "DC Only"
+        ],
+        "extruct": [],
+        "metascraper": "DC Only"
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": false,
+      "author_disagree": true,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "doi_conflict.html",
+      "titles": {
+        "selector": "D",
+        "extruct": "D",
+        "metascraper": "D"
+      },
+      "dois": {
+        "selector": "10.1234/hw",
+        "extruct": "10.1234/ld",
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": "https://doi.org/10.1234/og",
+        "extruct": "https://doi.org/10.1234/og",
+        "metascraper": "https://doi.org/10.1234/og"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": true,
+      "pdf_disagree": false,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "emptyish.html",
+      "titles": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": null
+      },
+      "dois": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": "https://example.com/landing/emptyish.html"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": false,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "html_entities.html",
+      "titles": {
+        "selector": "Alpha & Beta: a study",
+        "extruct": "Alpha & Beta: a study",
+        "metascraper": "Alpha & Beta: a study"
+      },
+      "dois": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": "https://example.com/landing/html_entities.html"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": false,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "hw_only.html",
+      "titles": {
+        "selector": "Only Highwire",
+        "extruct": null,
+        "metascraper": "Only Highwire"
+      },
+      "dois": {
+        "selector": "10.1/hw",
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": "https://ex.test/only.pdf",
+        "extruct": null,
+        "metascraper": "https://example.com/landing/hw_only.html"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": true,
+      "author_disagree": false,
+      "extruct_miss_hw": true,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "jsonld_only.html",
+      "titles": {
+        "selector": null,
+        "extruct": "Only JSON-LD",
+        "metascraper": null
+      },
+      "dois": {
+        "selector": null,
+        "extruct": "10.1/ld",
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": "https://example.com/landing/jsonld_only.html"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": false,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": true
+    },
+    {
+      "page": "og_only.html",
+      "titles": {
+        "selector": "Only OG",
+        "extruct": "Only OG",
+        "metascraper": "Only OG"
+      },
+      "dois": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": "https://ex.test/og-only",
+        "extruct": "https://ex.test/og-only",
+        "metascraper": "https://ex.test/og-only"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": false,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "pdf_conflict.html",
+      "titles": {
+        "selector": "P",
+        "extruct": "P",
+        "metascraper": "P"
+      },
+      "dois": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": "https://ex.test/hw.pdf",
+        "extruct": "https://ex.test/ld.pdf",
+        "metascraper": "https://ex.test/og.pdf"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": true,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "relative_pdf.html",
+      "titles": {
+        "selector": "Rel",
+        "extruct": "Rel",
+        "metascraper": "Rel"
+      },
+      "dois": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": "/files/paper.pdf",
+        "extruct": "files/paper.pdf",
+        "metascraper": "https://example.com/og/paper"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": false,
+      "doi_disagree": false,
+      "pdf_disagree": true,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    },
+    {
+      "page": "title_conflict.html",
+      "titles": {
+        "selector": "Highwire Title",
+        "extruct": "JSON-LD Title",
+        "metascraper": "Highwire Title"
+      },
+      "dois": {
+        "selector": "10.1234/t",
+        "extruct": null,
+        "metascraper": null
+      },
+      "pdfs": {
+        "selector": null,
+        "extruct": null,
+        "metascraper": "https://example.com/landing/title_conflict.html"
+      },
+      "authors": {
+        "selector": [],
+        "extruct": [],
+        "metascraper": null
+      },
+      "title_disagree": true,
+      "doi_disagree": false,
+      "pdf_disagree": false,
+      "author_disagree": false,
+      "extruct_miss_hw": false,
+      "selector_miss_ld": false
+    }
+  ]
+}

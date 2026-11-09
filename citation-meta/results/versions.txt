@@ -1,0 +1,6 @@
+extruct 0.18.0
+metascraper 5.58.6
+metascraper-citation 5.58.4
+metascraper-title 5.58.4
+node v24.22.1
+python 3.13.5

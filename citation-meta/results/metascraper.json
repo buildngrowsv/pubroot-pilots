@@ -1,0 +1,98 @@
+{
+  "agree_all.html": {
+    "title": "Alpha Study",
+    "author": "Ann Author",
+    "url": "https://ex.test/alpha",
+    "description": null,
+    "date": null,
+    "publisher": null
+  },
+  "author_conflict.html": {
+    "title": "A",
+    "author": "Highwire A",
+    "url": "https://example.com/landing/author_conflict.html",
+    "description": null,
+    "date": null,
+    "publisher": null
+  },
+  "dc_only.html": {
+    "title": "Only DC",
+    "author": "DC Only",
+    "url": "https://example.com/landing/dc_only.html",
+    "description": null,
+    "date": null,
+    "publisher": null
+  },
+  "doi_conflict.html": {
+    "title": "D",
+    "url": "https://doi.org/10.1234/og",
+    "description": null,
+    "date": null,
+    "publisher": null,
+    "author": null
+  },
+  "emptyish.html": {
+    "url": "https://example.com/landing/emptyish.html",
+    "description": null,
+    "date": null,
+    "title": null,
+    "publisher": null,
+    "author": null
+  },
+  "html_entities.html": {
+    "title": "Alpha & Beta: a study",
+    "url": "https://example.com/landing/html_entities.html",
+    "description": null,
+    "date": null,
+    "publisher": null,
+    "author": null
+  },
+  "hw_only.html": {
+    "title": "Only Highwire",
+    "url": "https://example.com/landing/hw_only.html",
+    "description": null,
+    "date": null,
+    "publisher": null,
+    "author": null
+  },
+  "jsonld_only.html": {
+    "date": null,
+    "url": "https://example.com/landing/jsonld_only.html",
+    "description": null,
+    "title": null,
+    "publisher": null,
+    "author": null
+  },
+  "og_only.html": {
+    "date": null,
+    "title": "Only OG",
+    "url": "https://ex.test/og-only",
+    "description": null,
+    "publisher": null,
+    "author": null
+  },
+  "pdf_conflict.html": {
+    "title": "P",
+    "url": "https://ex.test/og.pdf",
+    "description": null,
+    "date": null,
+    "publisher": null,
+    "author": null
+  },
+  "relative_pdf.html": {
+    "title": "Rel",
+    "url": "https://example.com/og/paper",
+    "description": null,
+    "date": null,
+    "publisher": null,
+    "author": null
+  },
+  "title_conflict.html": {
+    "title": "Highwire Title",
+    "url": "https://example.com/landing/title_conflict.html",
+    "description": null,
+    "date": null,
+    "publisher": null,
+    "author": null
+  }
+}
