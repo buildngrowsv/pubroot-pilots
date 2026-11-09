@@ -1,0 +1,5 @@
+# Trunc
+
+## Docs
+
+- [A](https://example.com/a): incomplete

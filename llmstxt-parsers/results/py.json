@@ -1,0 +1,134 @@
+{
+  "llms-txt": {
+    "basic.txt": {
+      "ok": true,
+      "title": "Title One",
+      "summary": "> Optional summary here.",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "main page"
+            },
+            {
+              "url": "https://example.com/api",
+              "title": "API",
+              "description": "API docs"
+            }
+          ]
+        }
+      ]
+    },
+    "bullet_variants.txt": {
+      "ok": false,
+      "error": "'NoneType' object has no attribute 'groupdict'"
+    },
+    "code_fence.txt": {
+      "ok": false,
+      "error": "'NoneType' object has no attribute 'groupdict'"
+    },
+    "duplicate_h2.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "empty_file.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "html_in_desc.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "missing_title.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "multi_optional.txt": {
+      "ok": true,
+      "title": "Multi",
+      "summary": "> Sum",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/a",
+              "title": "A",
+              "description": "a"
+            }
+          ]
+        },
+        {
+          "name": "Optional",
+          "links": [
+            {
+              "url": "https://example.com/b",
+              "title": "B",
+              "description": "b"
+            }
+          ]
+        },
+        {
+          "name": "More",
+          "links": [
+            {
+              "url": "https://example.com/c",
+              "title": "C",
+              "description": "c"
+            }
+          ]
+        }
+      ]
+    },
+    "nested_heading.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "no_summary.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "only_title.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "optional_section.txt": {
+      "ok": true,
+      "title": "Title Three",
+      "summary": "> Summary",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "home"
+            }
+          ]
+        },
+        {
+          "name": "Optional",
+          "links": [
+            {
+              "url": "https://example.com/extra",
+              "title": "Extra",
+              "description": "optional notes"
+            }
+          ]
+        }
+      ]
+    },
+    "relative_links.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    },
+    "truncated.txt": {
+      "ok": false,
+      "error": "'NoneType' object does not support item assignment"
+    }
+  }
+}

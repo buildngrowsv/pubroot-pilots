@@ -1,0 +1,483 @@
+{
+  "n_files": 14,
+  "disagree_any": 11,
+  "rows": [
+    {
+      "file": "basic.txt",
+      "titles": [
+        "Title One",
+        "Title One",
+        "Title One"
+      ],
+      "n_sections": [
+        1,
+        1,
+        1
+      ],
+      "n_urls": [
+        2,
+        2,
+        2
+      ],
+      "urls": [
+        [
+          "https://example.com/",
+          "https://example.com/api"
+        ],
+        [
+          "https://example.com/",
+          "https://example.com/api"
+        ],
+        [
+          "https://example.com/",
+          "https://example.com/api"
+        ]
+      ],
+      "ok": [
+        true,
+        true,
+        true
+      ],
+      "agree": true
+    },
+    {
+      "file": "bullet_variants.txt",
+      "titles": [
+        "Bullets",
+        "Bullets",
+        null
+      ],
+      "n_sections": [
+        1,
+        1,
+        0
+      ],
+      "n_urls": [
+        2,
+        1,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/s",
+          "https://example.com/d"
+        ],
+        [
+          "https://example.com/d"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "code_fence.txt",
+      "titles": [
+        "Code",
+        "Code",
+        null
+      ],
+      "n_sections": [
+        1,
+        1,
+        0
+      ],
+      "n_urls": [
+        1,
+        1,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/r"
+        ],
+        [
+          "https://example.com/r"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "duplicate_h2.txt",
+      "titles": [
+        "Title Four",
+        "Title Four",
+        null
+      ],
+      "n_sections": [
+        2,
+        2,
+        0
+      ],
+      "n_urls": [
+        2,
+        2,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/a",
+          "https://example.com/b"
+        ],
+        [
+          "https://example.com/a",
+          "https://example.com/b"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "empty_file.txt",
+      "titles": [
+        null,
+        null,
+        null
+      ],
+      "n_sections": [
+        0,
+        0,
+        0
+      ],
+      "n_urls": [
+        0,
+        0,
+        0
+      ],
+      "urls": [
+        [],
+        [],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "html_in_desc.txt",
+      "titles": [
+        "HTML",
+        "HTML",
+        null
+      ],
+      "n_sections": [
+        1,
+        1,
+        0
+      ],
+      "n_urls": [
+        1,
+        1,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/x"
+        ],
+        [
+          "https://example.com/x"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "missing_title.txt",
+      "titles": [
+        null,
+        null,
+        null
+      ],
+      "n_sections": [
+        1,
+        1,
+        0
+      ],
+      "n_urls": [
+        1,
+        1,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/"
+        ],
+        [
+          "https://example.com/"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "multi_optional.txt",
+      "titles": [
+        "Multi",
+        "Multi",
+        "Multi"
+      ],
+      "n_sections": [
+        3,
+        3,
+        3
+      ],
+      "n_urls": [
+        3,
+        3,
+        3
+      ],
+      "urls": [
+        [
+          "https://example.com/a",
+          "https://example.com/b",
+          "https://example.com/c"
+        ],
+        [
+          "https://example.com/a",
+          "https://example.com/b",
+          "https://example.com/c"
+        ],
+        [
+          "https://example.com/a",
+          "https://example.com/b",
+          "https://example.com/c"
+        ]
+      ],
+      "ok": [
+        true,
+        true,
+        true
+      ],
+      "agree": true
+    },
+    {
+      "file": "nested_heading.txt",
+      "titles": [
+        "Nest",
+        "Nest",
+        null
+      ],
+      "n_sections": [
+        2,
+        1,
+        0
+      ],
+      "n_urls": [
+        1,
+        1,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/x"
+        ],
+        [
+          "https://example.com/x"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "no_summary.txt",
+      "titles": [
+        "Title Two",
+        "Title Two",
+        null
+      ],
+      "n_sections": [
+        1,
+        1,
+        0
+      ],
+      "n_urls": [
+        1,
+        1,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/"
+        ],
+        [
+          "https://example.com/"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "only_title.txt",
+      "titles": [
+        "Only Title",
+        "Only Title",
+        null
+      ],
+      "n_sections": [
+        0,
+        0,
+        0
+      ],
+      "n_urls": [
+        0,
+        0,
+        0
+      ],
+      "urls": [
+        [],
+        [],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "optional_section.txt",
+      "titles": [
+        "Title Three",
+        "Title Three",
+        "Title Three"
+      ],
+      "n_sections": [
+        2,
+        2,
+        2
+      ],
+      "n_urls": [
+        2,
+        2,
+        2
+      ],
+      "urls": [
+        [
+          "https://example.com/",
+          "https://example.com/extra"
+        ],
+        [
+          "https://example.com/",
+          "https://example.com/extra"
+        ],
+        [
+          "https://example.com/",
+          "https://example.com/extra"
+        ]
+      ],
+      "ok": [
+        true,
+        true,
+        true
+      ],
+      "agree": true
+    },
+    {
+      "file": "relative_links.txt",
+      "titles": [
+        "Rel",
+        "Rel",
+        null
+      ],
+      "n_sections": [
+        1,
+        1,
+        0
+      ],
+      "n_urls": [
+        2,
+        2,
+        0
+      ],
+      "urls": [
+        [
+          "/docs/index.md",
+          "../readme.md"
+        ],
+        [
+          "/docs/index.md",
+          "../readme.md"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    },
+    {
+      "file": "truncated.txt",
+      "titles": [
+        "Trunc",
+        "Trunc",
+        null
+      ],
+      "n_sections": [
+        1,
+        1,
+        0
+      ],
+      "n_urls": [
+        1,
+        1,
+        0
+      ],
+      "urls": [
+        [
+          "https://example.com/a"
+        ],
+        [
+          "https://example.com/a"
+        ],
+        []
+      ],
+      "ok": [
+        true,
+        true,
+        false
+      ],
+      "agree": false
+    }
+  ]
+}

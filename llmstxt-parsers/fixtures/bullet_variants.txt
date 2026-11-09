@@ -1,0 +1,7 @@
+# Bullets
+
+## Docs
+
+* [Star](https://example.com/s): star
+- [Dash](https://example.com/d): dash
++ [Plus](https://example.com/p): plus

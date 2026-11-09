@@ -1,0 +1,947 @@
+{
+  "25xcodes": {
+    "basic.txt": {
+      "ok": true,
+      "title": "Title One",
+      "summary": "Optional summary here.",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "main page"
+            },
+            {
+              "url": "https://example.com/api",
+              "title": "API",
+              "description": "API docs"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw",
+        "summary"
+      ]
+    },
+    "bullet_variants.txt": {
+      "ok": true,
+      "title": "Bullets",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/s",
+              "title": "Star",
+              "description": "star"
+            },
+            {
+              "url": "https://example.com/d",
+              "title": "Dash",
+              "description": "dash"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "code_fence.txt": {
+      "ok": true,
+      "title": "Code",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/r",
+              "title": "Real",
+              "description": "real"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "duplicate_h2.txt": {
+      "ok": true,
+      "title": "Title Four",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/a",
+              "title": "A",
+              "description": "a"
+            }
+          ]
+        },
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/b",
+              "title": "B",
+              "description": "b"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "empty_file.txt": {
+      "ok": true,
+      "title": null,
+      "summary": null,
+      "sections": [],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "html_in_desc.txt": {
+      "ok": true,
+      "title": "HTML",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/x",
+              "title": "X",
+              "description": "use <code>foo</code> &amp; bar"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "missing_title.txt": {
+      "ok": true,
+      "title": null,
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "home"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "multi_optional.txt": {
+      "ok": true,
+      "title": "Multi",
+      "summary": "Sum",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/a",
+              "title": "A",
+              "description": "a"
+            }
+          ]
+        },
+        {
+          "name": "Optional",
+          "links": [
+            {
+              "url": "https://example.com/b",
+              "title": "B",
+              "description": "b"
+            }
+          ]
+        },
+        {
+          "name": "More",
+          "links": [
+            {
+              "url": "https://example.com/c",
+              "title": "C",
+              "description": "c"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw",
+        "summary"
+      ]
+    },
+    "nested_heading.txt": {
+      "ok": true,
+      "title": "Nest",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": []
+        },
+        {
+          "name": "Sub",
+          "links": [
+            {
+              "url": "https://example.com/x",
+              "title": "X",
+              "description": "x"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "no_summary.txt": {
+      "ok": true,
+      "title": "Title Two",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "only_title.txt": {
+      "ok": true,
+      "title": "Only Title",
+      "summary": null,
+      "sections": [],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "optional_section.txt": {
+      "ok": true,
+      "title": "Title Three",
+      "summary": "Summary",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "home"
+            }
+          ]
+        },
+        {
+          "name": "Optional",
+          "links": [
+            {
+              "url": "https://example.com/extra",
+              "title": "Extra",
+              "description": "optional notes"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw",
+        "summary"
+      ]
+    },
+    "relative_links.txt": {
+      "ok": true,
+      "title": "Rel",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "/docs/index.md",
+              "title": "Local",
+              "description": "local doc"
+            },
+            {
+              "url": "../readme.md",
+              "title": "Up",
+              "description": "parent"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    },
+    "truncated.txt": {
+      "ok": true,
+      "title": "Trunc",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/a",
+              "title": "A",
+              "description": "incomplete"
+            }
+          ]
+        }
+      ],
+      "optional": null,
+      "raw_keys": [
+        "title",
+        "sections",
+        "links",
+        "raw"
+      ]
+    }
+  },
+  "parse-llms-txt": {
+    "basic.txt": {
+      "ok": true,
+      "title": "Title One",
+      "summary": "Optional summary here.",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "main page"
+            },
+            {
+              "url": "https://example.com/api",
+              "title": "API",
+              "description": "API docs"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections",
+        "description"
+      ],
+      "raw": {
+        "title": "Title One",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "Home",
+                "url": "https://example.com/",
+                "notes": "main page"
+              },
+              {
+                "name": "API",
+                "url": "https://example.com/api",
+                "notes": "API docs"
+              }
+            ]
+          }
+        ],
+        "description": "Optional summary here."
+      }
+    },
+    "bullet_variants.txt": {
+      "ok": true,
+      "title": "Bullets",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/d",
+              "title": "Dash",
+              "description": "dash"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Bullets",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "Dash",
+                "url": "https://example.com/d",
+                "notes": "dash"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "code_fence.txt": {
+      "ok": true,
+      "title": "Code",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/r",
+              "title": "Real",
+              "description": "real"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Code",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "Real",
+                "url": "https://example.com/r",
+                "notes": "real"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "duplicate_h2.txt": {
+      "ok": true,
+      "title": "Title Four",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/a",
+              "title": "A",
+              "description": "a"
+            }
+          ]
+        },
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/b",
+              "title": "B",
+              "description": "b"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Title Four",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "A",
+                "url": "https://example.com/a",
+                "notes": "a"
+              }
+            ]
+          },
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "B",
+                "url": "https://example.com/b",
+                "notes": "b"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "empty_file.txt": {
+      "ok": true,
+      "title": null,
+      "summary": null,
+      "sections": [],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "",
+        "sections": []
+      }
+    },
+    "html_in_desc.txt": {
+      "ok": true,
+      "title": "HTML",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/x",
+              "title": "X",
+              "description": "use <code>foo</code> &amp; bar"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "HTML",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "X",
+                "url": "https://example.com/x",
+                "notes": "use <code>foo</code> &amp; bar"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "missing_title.txt": {
+      "ok": true,
+      "title": null,
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "home"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "Home",
+                "url": "https://example.com/",
+                "notes": "home"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "multi_optional.txt": {
+      "ok": true,
+      "title": "Multi",
+      "summary": "Sum",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/a",
+              "title": "A",
+              "description": "a"
+            }
+          ]
+        },
+        {
+          "name": "Optional",
+          "links": [
+            {
+              "url": "https://example.com/b",
+              "title": "B",
+              "description": "b"
+            }
+          ]
+        },
+        {
+          "name": "More",
+          "links": [
+            {
+              "url": "https://example.com/c",
+              "title": "C",
+              "description": "c"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections",
+        "description"
+      ],
+      "raw": {
+        "title": "Multi",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "A",
+                "url": "https://example.com/a",
+                "notes": "a"
+              }
+            ]
+          },
+          {
+            "name": "Optional",
+            "files": [
+              {
+                "name": "B",
+                "url": "https://example.com/b",
+                "notes": "b"
+              }
+            ]
+          },
+          {
+            "name": "More",
+            "files": [
+              {
+                "name": "C",
+                "url": "https://example.com/c",
+                "notes": "c"
+              }
+            ]
+          }
+        ],
+        "description": "Sum"
+      }
+    },
+    "nested_heading.txt": {
+      "ok": true,
+      "title": "Nest",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/x",
+              "title": "X",
+              "description": "x"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Nest",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "X",
+                "url": "https://example.com/x",
+                "notes": "x"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "no_summary.txt": {
+      "ok": true,
+      "title": "Title Two",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": null
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Title Two",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "Home",
+                "url": "https://example.com/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "only_title.txt": {
+      "ok": true,
+      "title": "Only Title",
+      "summary": null,
+      "sections": [],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Only Title",
+        "sections": []
+      }
+    },
+    "optional_section.txt": {
+      "ok": true,
+      "title": "Title Three",
+      "summary": "Summary",
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/",
+              "title": "Home",
+              "description": "home"
+            }
+          ]
+        },
+        {
+          "name": "Optional",
+          "links": [
+            {
+              "url": "https://example.com/extra",
+              "title": "Extra",
+              "description": "optional notes"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections",
+        "description"
+      ],
+      "raw": {
+        "title": "Title Three",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "Home",
+                "url": "https://example.com/",
+                "notes": "home"
+              }
+            ]
+          },
+          {
+            "name": "Optional",
+            "files": [
+              {
+                "name": "Extra",
+                "url": "https://example.com/extra",
+                "notes": "optional notes"
+              }
+            ]
+          }
+        ],
+        "description": "Summary"
+      }
+    },
+    "relative_links.txt": {
+      "ok": true,
+      "title": "Rel",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "/docs/index.md",
+              "title": "Local",
+              "description": "local doc"
+            },
+            {
+              "url": "../readme.md",
+              "title": "Up",
+              "description": "parent"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Rel",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "Local",
+                "url": "/docs/index.md",
+                "notes": "local doc"
+              },
+              {
+                "name": "Up",
+                "url": "../readme.md",
+                "notes": "parent"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "truncated.txt": {
+      "ok": true,
+      "title": "Trunc",
+      "summary": null,
+      "sections": [
+        {
+          "name": "Docs",
+          "links": [
+            {
+              "url": "https://example.com/a",
+              "title": "A",
+              "description": "incomplete"
+            }
+          ]
+        }
+      ],
+      "raw_keys": [
+        "title",
+        "sections"
+      ],
+      "raw": {
+        "title": "Trunc",
+        "sections": [
+          {
+            "name": "Docs",
+            "files": [
+              {
+                "name": "A",
+                "url": "https://example.com/a",
+                "notes": "incomplete"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

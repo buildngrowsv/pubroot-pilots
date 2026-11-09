@@ -1,0 +1,4 @@
+llms-txt 0.0.7
+@25xcodes/llmstxt-parser 1.2.0
+parse-llms-txt 0.0.10
+node v24.22.1

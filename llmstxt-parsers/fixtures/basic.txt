@@ -1,0 +1,8 @@
+# Title One
+
+> Optional summary here.
+
+## Docs
+
+- [Home](https://example.com/): main page
+- [API](https://example.com/api): API docs
