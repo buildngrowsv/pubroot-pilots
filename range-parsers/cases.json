@@ -1,0 +1,408 @@
+[
+ {
+  "id": "R01",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=0-9",
+  "note": ""
+ },
+ {
+  "id": "R02",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=10-19",
+  "note": ""
+ },
+ {
+  "id": "R03",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=0-0",
+  "note": ""
+ },
+ {
+  "id": "R04",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=99-99",
+  "note": ""
+ },
+ {
+  "id": "R05",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=50-",
+  "note": "open-ended"
+ },
+ {
+  "id": "R06",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=-10",
+  "note": "suffix"
+ },
+ {
+  "id": "R07",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=-100",
+  "note": "suffix == length"
+ },
+ {
+  "id": "R08",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=-200",
+  "note": "suffix > length"
+ },
+ {
+  "id": "R09",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=0-199",
+  "note": "last-pos past end"
+ },
+ {
+  "id": "R10",
+  "group": "single",
+  "size": 100,
+  "range": "bytes=0-3145727",
+  "note": "real-world: crawler cap"
+ },
+ {
+  "id": "R11",
+  "group": "unsat",
+  "size": 100,
+  "range": "bytes=100-",
+  "note": "first-pos == length"
+ },
+ {
+  "id": "R12",
+  "group": "unsat",
+  "size": 100,
+  "range": "bytes=100-150",
+  "note": ""
+ },
+ {
+  "id": "R13",
+  "group": "unsat",
+  "size": 100,
+  "range": "bytes=200-300",
+  "note": ""
+ },
+ {
+  "id": "R14",
+  "group": "unsat",
+  "size": 100,
+  "range": "bytes=-0",
+  "note": "zero-length suffix"
+ },
+ {
+  "id": "R15",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=10-5",
+  "note": "last < first"
+ },
+ {
+  "id": "R16",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=",
+  "note": ""
+ },
+ {
+  "id": "R17",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=-",
+  "note": ""
+ },
+ {
+  "id": "R18",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=abc",
+  "note": ""
+ },
+ {
+  "id": "R19",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=--5",
+  "note": ""
+ },
+ {
+  "id": "R20",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=5--10",
+  "note": ""
+ },
+ {
+  "id": "R21",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=-5-10",
+  "note": ""
+ },
+ {
+  "id": "R22",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=0-9;x",
+  "note": ""
+ },
+ {
+  "id": "R23",
+  "group": "invalid",
+  "size": 100,
+  "range": "bytes=0-9x",
+  "note": ""
+ },
+ {
+  "id": "R24",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=0-9,20-29",
+  "note": ""
+ },
+ {
+  "id": "R25",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=0-9,5-14",
+  "note": "overlap"
+ },
+ {
+  "id": "R26",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=0-9,10-19",
+  "note": "adjacent"
+ },
+ {
+  "id": "R27",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=20-29,0-9",
+  "note": "descending"
+ },
+ {
+  "id": "R28",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=0-9,200-300",
+  "note": "one unsatisfiable"
+ },
+ {
+  "id": "R29",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=200-300,300-400",
+  "note": "all unsatisfiable"
+ },
+ {
+  "id": "R30",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=0-9,10-5",
+  "note": "one invalid"
+ },
+ {
+  "id": "R31",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=0-9,0-9,0-9",
+  "note": "three identical"
+ },
+ {
+  "id": "R32",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=-10,0-9",
+  "note": "suffix + first"
+ },
+ {
+  "id": "R33",
+  "group": "multi",
+  "size": 100,
+  "range": "bytes=0-0,2-2,4-4,6-6,8-8,10-10,12-12,14-14,16-16,18-18,20-20,22-22,24-24,26-26,28-28,30-30,32-32,34-34,36-36,38-38",
+  "note": "20 small ranges"
+ },
+ {
+  "id": "R34",
+  "group": "syntax",
+  "size": 100,
+  "range": "Bytes=0-9",
+  "note": "unit case"
+ },
+ {
+  "id": "R35",
+  "group": "syntax",
+  "size": 100,
+  "range": "BYTES=0-9",
+  "note": "unit upper"
+ },
+ {
+  "id": "R36",
+  "group": "syntax",
+  "size": 100,
+  "range": "items=0-9",
+  "note": "unknown unit"
+ },
+ {
+  "id": "R37",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes 0-9",
+  "note": "no equals"
+ },
+ {
+  "id": "R38",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes = 0-9",
+  "note": "space around ="
+ },
+ {
+  "id": "R39",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes= 0-9",
+  "note": "space after ="
+ },
+ {
+  "id": "R40",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes=0 - 9",
+  "note": "space inside spec"
+ },
+ {
+  "id": "R41",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes=0-9, 20-29",
+  "note": "OWS after comma"
+ },
+ {
+  "id": "R42",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes=0-9 ,20-29",
+  "note": "OWS before comma"
+ },
+ {
+  "id": "R43",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes=0-9,,20-29",
+  "note": "empty list element"
+ },
+ {
+  "id": "R44",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes=0-9,",
+  "note": "trailing comma"
+ },
+ {
+  "id": "R45",
+  "group": "syntax",
+  "size": 100,
+  "range": "bytes=,0-9",
+  "note": "leading comma"
+ },
+ {
+  "id": "R46",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=+0-9",
+  "note": "plus sign"
+ },
+ {
+  "id": "R47",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=0x0-0x9",
+  "note": "hex prefix"
+ },
+ {
+  "id": "R48",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=00-09",
+  "note": "leading zeros"
+ },
+ {
+  "id": "R49",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=1_0-19",
+  "note": "underscore digit separator"
+ },
+ {
+  "id": "R50",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=0-99999999999999999999",
+  "note": "last-pos > 2^64"
+ },
+ {
+  "id": "R51",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=99999999999999999999-",
+  "note": "first-pos > 2^64"
+ },
+ {
+  "id": "R52",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=-99999999999999999999",
+  "note": "suffix > 2^64"
+ },
+ {
+  "id": "R53",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=0.0-9",
+  "note": "decimal point"
+ },
+ {
+  "id": "R54",
+  "group": "numeral",
+  "size": 100,
+  "range": "bytes=1e1-19",
+  "note": "exponent"
+ },
+ {
+  "id": "R55",
+  "group": "empty",
+  "size": 0,
+  "range": "bytes=0-0",
+  "note": ""
+ },
+ {
+  "id": "R56",
+  "group": "empty",
+  "size": 0,
+  "range": "bytes=0-",
+  "note": ""
+ },
+ {
+  "id": "R57",
+  "group": "empty",
+  "size": 0,
+  "range": "bytes=-1",
+  "note": ""
+ },
+ {
+  "id": "R58",
+  "group": "empty",
+  "size": 0,
+  "range": "bytes=-0",
+  "note": ""
+ }
+]

@@ -1,0 +1,1845 @@
+{
+ "cases_all_A": 11,
+ "cases_disagree_any": 48,
+ "class_tally": {
+  "aiohttp": {
+   "A": 23,
+   "L": 0,
+   "P": 3,
+   "R": 19,
+   "X": 13
+  },
+  "express": {
+   "A": 40,
+   "L": 3,
+   "P": 12,
+   "R": 1,
+   "X": 2
+  },
+  "fastify_send": {
+   "A": 29,
+   "L": 11,
+   "P": 10,
+   "R": 6,
+   "X": 2
+  },
+  "go_net_http": {
+   "A": 30,
+   "L": 3,
+   "P": 2,
+   "R": 15,
+   "X": 8
+  },
+  "starlette": {
+   "A": 36,
+   "L": 5,
+   "P": 1,
+   "R": 14,
+   "X": 2
+  },
+  "tornado": {
+   "A": 27,
+   "L": 6,
+   "P": 23,
+   "R": 2,
+   "X": 0
+  },
+  "werkzeug": {
+   "A": 20,
+   "L": 3,
+   "P": 5,
+   "R": 16,
+   "X": 14
+  }
+ },
+ "go_godebug_maxranges1_changed": [
+  "R24",
+  "R25",
+  "R26",
+  "R27",
+  "R28",
+  "R29",
+  "R30",
+  "R31",
+  "R32",
+  "R33",
+  "R41",
+  "R42",
+  "R43",
+  "R44",
+  "R45"
+ ],
+ "max_distinct_outcomes": 5,
+ "n_cases": 58,
+ "n_impls": 7,
+ "pairwise_disagreements": {
+  "aiohttp~go_net_http": 43,
+  "aiohttp~tornado": 41,
+  "aiohttp~werkzeug": 10,
+  "express~aiohttp": 37,
+  "express~fastify_send": 15,
+  "express~go_net_http": 40,
+  "express~starlette": 32,
+  "express~tornado": 17,
+  "express~werkzeug": 36,
+  "fastify_send~aiohttp": 32,
+  "fastify_send~go_net_http": 38,
+  "fastify_send~starlette": 28,
+  "fastify_send~tornado": 26,
+  "fastify_send~werkzeug": 31,
+  "starlette~aiohttp": 32,
+  "starlette~go_net_http": 33,
+  "starlette~tornado": 37,
+  "starlette~werkzeug": 34,
+  "tornado~go_net_http": 44,
+  "werkzeug~go_net_http": 40,
+  "werkzeug~tornado": 41
+ },
+ "rows": [
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-9"
+   ],
+   "group": "single",
+   "id": "R01",
+   "kind": "valid",
+   "n_distinct": 1,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "206 0-9",
+    "express": "206 0-9",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "206 0-9",
+    "tornado": "206 0-9",
+    "werkzeug": "206 0-9"
+   },
+   "range": "bytes=0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 10-19"
+   ],
+   "group": "single",
+   "id": "R02",
+   "kind": "valid",
+   "n_distinct": 1,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "206 10-19",
+    "express": "206 10-19",
+    "fastify_send": "206 10-19",
+    "go_net_http": "206 10-19",
+    "starlette": "206 10-19",
+    "tornado": "206 10-19",
+    "werkzeug": "206 10-19"
+   },
+   "range": "bytes=10-19",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-0"
+   ],
+   "group": "single",
+   "id": "R03",
+   "kind": "valid",
+   "n_distinct": 1,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "206 0-0",
+    "express": "206 0-0",
+    "fastify_send": "206 0-0",
+    "go_net_http": "206 0-0",
+    "starlette": "206 0-0",
+    "tornado": "206 0-0",
+    "werkzeug": "206 0-0"
+   },
+   "range": "bytes=0-0",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 99-99"
+   ],
+   "group": "single",
+   "id": "R04",
+   "kind": "valid",
+   "n_distinct": 1,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "206 99-99",
+    "express": "206 99-99",
+    "fastify_send": "206 99-99",
+    "go_net_http": "206 99-99",
+    "starlette": "206 99-99",
+    "tornado": "206 99-99",
+    "werkzeug": "206 99-99"
+   },
+   "range": "bytes=99-99",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 50-99"
+   ],
+   "group": "single",
+   "id": "R05",
+   "kind": "valid",
+   "n_distinct": 1,
+   "note": "open-ended",
+   "outcomes": {
+    "aiohttp": "206 50-99",
+    "express": "206 50-99",
+    "fastify_send": "206 50-99",
+    "go_net_http": "206 50-99",
+    "starlette": "206 50-99",
+    "tornado": "206 50-99",
+    "werkzeug": "206 50-99"
+   },
+   "range": "bytes=50-",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 90-99"
+   ],
+   "group": "single",
+   "id": "R06",
+   "kind": "valid",
+   "n_distinct": 1,
+   "note": "suffix",
+   "outcomes": {
+    "aiohttp": "206 90-99",
+    "express": "206 90-99",
+    "fastify_send": "206 90-99",
+    "go_net_http": "206 90-99",
+    "starlette": "206 90-99",
+    "tornado": "206 90-99",
+    "werkzeug": "206 90-99"
+   },
+   "range": "bytes=-10",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-99"
+   ],
+   "group": "single",
+   "id": "R07",
+   "kind": "valid",
+   "n_distinct": 2,
+   "note": "suffix == length",
+   "outcomes": {
+    "aiohttp": "206 0-99",
+    "express": "206 0-99",
+    "fastify_send": "206 0-99",
+    "go_net_http": "206 0-99",
+    "starlette": "206 0-99",
+    "tornado": "200 full",
+    "werkzeug": "206 0-99"
+   },
+   "range": "bytes=-100",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "X",
+    "fastify_send": "X",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 0-99"
+   ],
+   "group": "single",
+   "id": "R08",
+   "kind": "valid",
+   "n_distinct": 3,
+   "note": "suffix > length",
+   "outcomes": {
+    "aiohttp": "206 0-99",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "206 0-99",
+    "starlette": "206 0-99",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=-200",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-99"
+   ],
+   "group": "single",
+   "id": "R09",
+   "kind": "valid",
+   "n_distinct": 2,
+   "note": "last-pos past end",
+   "outcomes": {
+    "aiohttp": "206 0-99",
+    "express": "206 0-99",
+    "fastify_send": "206 0-99",
+    "go_net_http": "206 0-99",
+    "starlette": "206 0-99",
+    "tornado": "200 full",
+    "werkzeug": "206 0-99"
+   },
+   "range": "bytes=0-199",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-99"
+   ],
+   "group": "single",
+   "id": "R10",
+   "kind": "valid",
+   "n_distinct": 2,
+   "note": "real-world: crawler cap",
+   "outcomes": {
+    "aiohttp": "206 0-99",
+    "express": "206 0-99",
+    "fastify_send": "206 0-99",
+    "go_net_http": "206 0-99",
+    "starlette": "206 0-99",
+    "tornado": "200 full",
+    "werkzeug": "206 0-99"
+   },
+   "range": "bytes=0-3145727",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "416 cr=bytes */100"
+   ],
+   "group": "unsat",
+   "id": "R11",
+   "kind": "unsat",
+   "n_distinct": 1,
+   "note": "first-pos == length",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=bytes */100",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "416 cr=bytes */100",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=100-",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "416 cr=bytes */100"
+   ],
+   "group": "unsat",
+   "id": "R12",
+   "kind": "unsat",
+   "n_distinct": 1,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=bytes */100",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "416 cr=bytes */100",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=100-150",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "416 cr=bytes */100"
+   ],
+   "group": "unsat",
+   "id": "R13",
+   "kind": "unsat",
+   "n_distinct": 1,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=bytes */100",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "416 cr=bytes */100",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=200-300",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "X",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "416 cr=bytes */100"
+   ],
+   "group": "unsat",
+   "id": "R14",
+   "kind": "unsat",
+   "n_distinct": 3,
+   "note": "zero-length suffix",
+   "outcomes": {
+    "aiohttp": "206 0-99",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "206 cr=bytes 100-99/100",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "416 cr=bytes */100",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=-0",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "R",
+    "fastify_send": "R",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "R",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R15",
+   "kind": "invalid",
+   "n_distinct": 3,
+   "note": "last < first",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "416 cr=bytes */100",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=10-5",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "R",
+    "go_net_http": "A",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R16",
+   "kind": "invalid",
+   "n_distinct": 3,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "200 full",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "R",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R17",
+   "kind": "invalid",
+   "n_distinct": 4,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=-",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "R",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R18",
+   "kind": "invalid",
+   "n_distinct": 4,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=abc",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "R",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "L",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R19",
+   "kind": "invalid",
+   "n_distinct": 4,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=-",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "206 5-99",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=--5",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "R",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "R",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R20",
+   "kind": "invalid",
+   "n_distinct": 4,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "416 cr=bytes */100",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=5--10",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R21",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 95-99",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=-5-10",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R22",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 0-9",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9;x",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "invalid",
+   "id": "R23",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 0-9",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9x",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 multi[0-9,20-29]"
+   ],
+   "group": "multi",
+   "id": "R24",
+   "kind": "multi",
+   "n_distinct": 3,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "206 multi[0-9,20-29]",
+    "starlette": "206 multi[0-9,20-29]",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,20-29",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 0-14",
+    "206 multi[0-9,5-14]"
+   ],
+   "group": "multi",
+   "id": "R25",
+   "kind": "multi",
+   "n_distinct": 4,
+   "note": "overlap",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "206 0-14",
+    "fastify_send": "206 0-14",
+    "go_net_http": "206 multi[0-9,5-14]",
+    "starlette": "206 0-14",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,5-14",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 0-19",
+    "206 multi[0-9,10-19]"
+   ],
+   "group": "multi",
+   "id": "R26",
+   "kind": "multi",
+   "n_distinct": 4,
+   "note": "adjacent",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "206 0-19",
+    "fastify_send": "206 0-19",
+    "go_net_http": "206 multi[0-9,10-19]",
+    "starlette": "206 0-19",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,10-19",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 multi[0-9,20-29]",
+    "206 multi[20-29,0-9]"
+   ],
+   "group": "multi",
+   "id": "R27",
+   "kind": "multi",
+   "n_distinct": 4,
+   "note": "descending",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "206 multi[20-29,0-9]",
+    "starlette": "206 multi[0-9,20-29]",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=20-29,0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "X",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 0-9"
+   ],
+   "group": "multi",
+   "id": "R28",
+   "kind": "valid",
+   "n_distinct": 3,
+   "note": "one unsatisfiable",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "206 0-9",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,200-300",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "416 cr=bytes */100"
+   ],
+   "group": "multi",
+   "id": "R29",
+   "kind": "unsat",
+   "n_distinct": 2,
+   "note": "all unsatisfiable",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=bytes */100",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=200-300,300-400",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "L",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "multi",
+   "id": "R30",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "one invalid",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "206 0-9",
+    "fastify_send": "206 0-9",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,10-5",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "P",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "P"
+   },
+   "expected": [
+    "206 0-9",
+    "206 multi[0-9,0-9,0-9]"
+   ],
+   "group": "multi",
+   "id": "R31",
+   "kind": "multi_excessive",
+   "n_distinct": 4,
+   "note": "three identical",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "206 0-9",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 multi[0-9,0-9,0-9]",
+    "starlette": "206 0-9",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,0-9,0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 multi[0-9,90-99]",
+    "206 multi[90-99,0-9]"
+   ],
+   "group": "multi",
+   "id": "R32",
+   "kind": "multi",
+   "n_distinct": 4,
+   "note": "suffix + first",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "206 multi[90-99,0-9]",
+    "starlette": "206 multi[0-9,90-99]",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=-10,0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "P",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "P"
+   },
+   "expected": [
+    "206 multi[0-0,2-2,4-4,6-6,8-8,10-10,12-12,14-14,16-16,18-18,20-20,22-22,24-24,26-26,28-28,30-30,32-32,34-34,36-36,38-38]"
+   ],
+   "group": "multi",
+   "id": "R33",
+   "kind": "multi_excessive",
+   "n_distinct": 3,
+   "note": "20 small ranges",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "206 multi[0-0,2-2,4-4,6-6,8-8,10-10,12-12,14-14,16-16,18-18,20-20,22-22,24-24,26-26,28-28,30-30,32-32,34-34,36-36,38-38]",
+    "starlette": "206 multi[0-0,2-2,4-4,6-6,8-8,10-10,12-12,14-14,16-16,18-18,20-20,22-22,24-24,26-26,28-28,30-30,32-32,34-34,36-36,38-38]",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-0,2-2,4-4,6-6,8-8,10-10,12-12,14-14,16-16,18-18,20-20,22-22,24-24,26-26,28-28,30-30,32-32,34-34,36-36,38-38",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "X",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-9"
+   ],
+   "group": "syntax",
+   "id": "R34",
+   "kind": "valid",
+   "n_distinct": 3,
+   "note": "unit case",
+   "outcomes": {
+    "aiohttp": "206 0-9",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "416 cr=-",
+    "starlette": "206 0-9",
+    "tornado": "200 full",
+    "werkzeug": "206 0-9"
+   },
+   "range": "Bytes=0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "X",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-9"
+   ],
+   "group": "syntax",
+   "id": "R35",
+   "kind": "valid",
+   "n_distinct": 3,
+   "note": "unit upper",
+   "outcomes": {
+    "aiohttp": "206 0-9",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "416 cr=-",
+    "starlette": "206 0-9",
+    "tornado": "200 full",
+    "werkzeug": "206 0-9"
+   },
+   "range": "BYTES=0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "X",
+    "starlette": "X",
+    "tornado": "A",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "syntax",
+   "id": "R36",
+   "kind": "unknown_unit",
+   "n_distinct": 4,
+   "note": "unknown unit",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "items=0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "syntax",
+   "id": "R37",
+   "kind": "invalid",
+   "n_distinct": 4,
+   "note": "no equals",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes 0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "R",
+    "starlette": "L",
+    "tornado": "L",
+    "werkzeug": "L"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "syntax",
+   "id": "R38",
+   "kind": "invalid",
+   "n_distinct": 4,
+   "note": "space around =",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "416 cr=-",
+    "starlette": "206 0-9",
+    "tornado": "206 0-9",
+    "werkzeug": "206 0-9"
+   },
+   "range": "bytes = 0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "L",
+    "fastify_send": "L",
+    "go_net_http": "L",
+    "starlette": "L",
+    "tornado": "L",
+    "werkzeug": "L"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "syntax",
+   "id": "R39",
+   "kind": "invalid",
+   "n_distinct": 2,
+   "note": "space after =",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "206 0-9",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "206 0-9",
+    "tornado": "206 0-9",
+    "werkzeug": "206 0-9"
+   },
+   "range": "bytes= 0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "L",
+    "fastify_send": "L",
+    "go_net_http": "L",
+    "starlette": "L",
+    "tornado": "L",
+    "werkzeug": "L"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "syntax",
+   "id": "R40",
+   "kind": "invalid",
+   "n_distinct": 2,
+   "note": "space inside spec",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "206 0-9",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "206 0-9",
+    "tornado": "206 0-9",
+    "werkzeug": "206 0-9"
+   },
+   "range": "bytes=0 - 9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 multi[0-9,20-29]"
+   ],
+   "group": "syntax",
+   "id": "R41",
+   "kind": "multi",
+   "n_distinct": 3,
+   "note": "OWS after comma",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "206 multi[0-9,20-29]",
+    "starlette": "206 multi[0-9,20-29]",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9, 20-29",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 multi[0-9,20-29]"
+   ],
+   "group": "syntax",
+   "id": "R42",
+   "kind": "multi",
+   "n_distinct": 3,
+   "note": "OWS before comma",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "206 multi[0-9,20-29]",
+    "starlette": "206 multi[0-9,20-29]",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9 ,20-29",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 multi[0-9,20-29]"
+   ],
+   "group": "syntax",
+   "id": "R43",
+   "kind": "multi",
+   "n_distinct": 3,
+   "note": "empty list element",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "200 full",
+    "go_net_http": "206 multi[0-9,20-29]",
+    "starlette": "206 multi[0-9,20-29]",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,,20-29",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 0-9"
+   ],
+   "group": "syntax",
+   "id": "R44",
+   "kind": "valid",
+   "n_distinct": 3,
+   "note": "trailing comma",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "206 0-9",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0-9,",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "X",
+    "express": "P",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 0-9"
+   ],
+   "group": "syntax",
+   "id": "R45",
+   "kind": "valid",
+   "n_distinct": 3,
+   "note": "leading comma",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "206 0-9",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=,0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "L",
+    "starlette": "L",
+    "tornado": "L",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "numeral",
+   "id": "R46",
+   "kind": "invalid",
+   "n_distinct": 3,
+   "note": "plus sign",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "206 0-9",
+    "tornado": "206 0-9",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=+0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "numeral",
+   "id": "R47",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "hex prefix",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 0-0",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0x0-0x9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-9"
+   ],
+   "group": "numeral",
+   "id": "R48",
+   "kind": "valid",
+   "n_distinct": 1,
+   "note": "leading zeros",
+   "outcomes": {
+    "aiohttp": "206 0-9",
+    "express": "206 0-9",
+    "fastify_send": "206 0-9",
+    "go_net_http": "206 0-9",
+    "starlette": "206 0-9",
+    "tornado": "206 0-9",
+    "werkzeug": "206 0-9"
+   },
+   "range": "bytes=00-09",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "L",
+    "tornado": "L",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "numeral",
+   "id": "R49",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "underscore digit separator",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 1-19",
+    "go_net_http": "416 cr=-",
+    "starlette": "206 10-19",
+    "tornado": "206 10-19",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=1_0-19",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "X",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "206 0-99"
+   ],
+   "group": "numeral",
+   "id": "R50",
+   "kind": "valid",
+   "n_distinct": 3,
+   "note": "last-pos > 2^64",
+   "outcomes": {
+    "aiohttp": "206 0-99",
+    "express": "206 0-99",
+    "fastify_send": "206 0-99",
+    "go_net_http": "416 cr=-",
+    "starlette": "206 0-99",
+    "tornado": "200 full",
+    "werkzeug": "206 0-99"
+   },
+   "range": "bytes=0-99999999999999999999",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "A",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "416 cr=bytes */100"
+   ],
+   "group": "numeral",
+   "id": "R51",
+   "kind": "unsat",
+   "n_distinct": 2,
+   "note": "first-pos > 2^64",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=-",
+    "starlette": "416 cr=bytes */100",
+    "tornado": "416 cr=bytes */100",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=99999999999999999999-",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "X",
+    "fastify_send": "X",
+    "go_net_http": "X",
+    "starlette": "A",
+    "tornado": "P",
+    "werkzeug": "X"
+   },
+   "expected": [
+    "206 0-99"
+   ],
+   "group": "numeral",
+   "id": "R52",
+   "kind": "valid",
+   "n_distinct": 4,
+   "note": "suffix > 2^64",
+   "outcomes": {
+    "aiohttp": "206 0-99",
+    "express": "416 cr=bytes */100",
+    "fastify_send": "416 cr=bytes */100",
+    "go_net_http": "416 cr=-",
+    "starlette": "206 0-99",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=-99999999999999999999",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "numeral",
+   "id": "R53",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "decimal point",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 0-9",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=0.0-9",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "R",
+    "express": "A",
+    "fastify_send": "L",
+    "go_net_http": "R",
+    "starlette": "R",
+    "tornado": "A",
+    "werkzeug": "R"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "numeral",
+   "id": "R54",
+   "kind": "invalid",
+   "n_distinct": 5,
+   "note": "exponent",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */100",
+    "express": "200 full",
+    "fastify_send": "206 1-19",
+    "go_net_http": "416 cr=-",
+    "starlette": "400",
+    "tornado": "200 full",
+    "werkzeug": "416 cr=bytes */100"
+   },
+   "range": "bytes=1e1-19",
+   "size": 100
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "P",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "P"
+   },
+   "expected": [
+    "416 cr=bytes */0"
+   ],
+   "group": "empty",
+   "id": "R55",
+   "kind": "unsat",
+   "n_distinct": 2,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */0",
+    "express": "416 cr=bytes */0",
+    "fastify_send": "416 cr=bytes */0",
+    "go_net_http": "200 full",
+    "starlette": "416 cr=bytes */0",
+    "tornado": "416 cr=bytes */0",
+    "werkzeug": "200 full"
+   },
+   "range": "bytes=0-0",
+   "size": 0
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "P",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "P"
+   },
+   "expected": [
+    "416 cr=bytes */0"
+   ],
+   "group": "empty",
+   "id": "R56",
+   "kind": "unsat",
+   "n_distinct": 2,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */0",
+    "express": "416 cr=bytes */0",
+    "fastify_send": "416 cr=bytes */0",
+    "go_net_http": "200 full",
+    "starlette": "416 cr=bytes */0",
+    "tornado": "416 cr=bytes */0",
+    "werkzeug": "200 full"
+   },
+   "range": "bytes=0-",
+   "size": 0
+  },
+  {
+   "class": {
+    "aiohttp": "P",
+    "express": "P",
+    "fastify_send": "P",
+    "go_net_http": "X",
+    "starlette": "P",
+    "tornado": "P",
+    "werkzeug": "A"
+   },
+   "expected": [
+    "200 full"
+   ],
+   "group": "empty",
+   "id": "R57",
+   "kind": "empty_suffix",
+   "n_distinct": 3,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */0",
+    "express": "416 cr=bytes */0",
+    "fastify_send": "416 cr=bytes */0",
+    "go_net_http": "206 cr=bytes 0--1/0",
+    "starlette": "416 cr=bytes */0",
+    "tornado": "416 cr=bytes */0",
+    "werkzeug": "200 full"
+   },
+   "range": "bytes=-1",
+   "size": 0
+  },
+  {
+   "class": {
+    "aiohttp": "A",
+    "express": "A",
+    "fastify_send": "A",
+    "go_net_http": "X",
+    "starlette": "A",
+    "tornado": "A",
+    "werkzeug": "P"
+   },
+   "expected": [
+    "416 cr=bytes */0"
+   ],
+   "group": "empty",
+   "id": "R58",
+   "kind": "unsat",
+   "n_distinct": 3,
+   "note": "",
+   "outcomes": {
+    "aiohttp": "416 cr=bytes */0",
+    "express": "416 cr=bytes */0",
+    "fastify_send": "416 cr=bytes */0",
+    "go_net_http": "206 cr=bytes 0--1/0",
+    "starlette": "416 cr=bytes */0",
+    "tornado": "416 cr=bytes */0",
+    "werkzeug": "200 full"
+   },
+   "range": "bytes=-0",
+   "size": 0
+  }
+ ]
+}
