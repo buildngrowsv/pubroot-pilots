@@ -1,0 +1,2494 @@
+{
+ "cases_disagree_any": 44,
+ "matches_reading": {
+  "accepts1": 45,
+  "accepts2": 45,
+  "contenttype": 40,
+  "django": 42,
+  "falcon": 40,
+  "gddo": 31,
+  "goautoneg": 31,
+  "werkzeug": 43
+ },
+ "max_distinct": 3,
+ "n_cases": 68,
+ "n_cases_with_reading": 45,
+ "n_impls": 8,
+ "pairwise_disagreements": {
+  "accepts1~contenttype": 22,
+  "accepts1~django": 9,
+  "accepts1~falcon": 18,
+  "accepts1~gddo": 28,
+  "accepts1~goautoneg": 19,
+  "accepts1~werkzeug": 12,
+  "accepts2~accepts1": 1,
+  "accepts2~contenttype": 22,
+  "accepts2~django": 8,
+  "accepts2~falcon": 18,
+  "accepts2~gddo": 28,
+  "accepts2~goautoneg": 18,
+  "accepts2~werkzeug": 11,
+  "django~contenttype": 23,
+  "django~falcon": 23,
+  "django~gddo": 25,
+  "django~goautoneg": 18,
+  "falcon~contenttype": 21,
+  "falcon~gddo": 28,
+  "falcon~goautoneg": 28,
+  "gddo~contenttype": 23,
+  "goautoneg~contenttype": 35,
+  "goautoneg~gddo": 23,
+  "werkzeug~contenttype": 23,
+  "werkzeug~django": 17,
+  "werkzeug~falcon": 23,
+  "werkzeug~gddo": 23,
+  "werkzeug~goautoneg": 21
+ },
+ "refusal_violations": {
+  "accepts1": [],
+  "accepts2": [],
+  "contenttype": [],
+  "django": [
+   "A11",
+   "A12",
+   "A14"
+  ],
+  "falcon": [],
+  "gddo": [
+   "A11",
+   "A12",
+   "A14"
+  ],
+  "goautoneg": [
+   "A10",
+   "A11",
+   "A12",
+   "A14",
+   "A15",
+   "A17"
+  ],
+  "werkzeug": []
+ },
+ "rows": [
+  {
+   "accept": "application/json",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "basic",
+   "id": "A01",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "basic",
+   "id": "A02",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "*/*",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "basic",
+   "id": "A03",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "wildcard only",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html",
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": null,
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "none"
+   },
+   "group": "basic",
+   "id": "A04",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "header absent",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html",
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "text/html",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "none"
+   },
+   "group": "basic",
+   "id": "A05",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "header present but empty",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "text/html;q=0.5, application/json",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "q",
+   "id": "A06",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html;q=0.5, application/json;q=0.5",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "q",
+   "id": "A07",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "tie, header lists html first",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html",
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json;q=0.5, text/html;q=0.5",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "application/json",
+    "werkzeug": "text/html"
+   },
+   "group": "q",
+   "id": "A08",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "tie, header lists json first",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html",
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html, application/json",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "text/html",
+    "werkzeug": "application/json"
+   },
+   "group": "q",
+   "id": "A09",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "tie at q=1, server prefers json",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html",
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html;q=0",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "none"
+   },
+   "group": "q0",
+   "id": "A10",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "only listed type refused",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "none"
+    ],
+    "refused": [
+     "text/html"
+    ]
+   }
+  },
+  {
+   "accept": "text/html;q=0, */*",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "text/html",
+    "falcon": "application/json",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "application/json"
+   },
+   "group": "q0",
+   "id": "A11",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": false,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": [
+     "text/html"
+    ]
+   }
+  },
+  {
+   "accept": "*/*;q=0.1, text/html;q=0",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "text/html",
+    "falcon": "application/json",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "application/json"
+   },
+   "group": "q0",
+   "id": "A12",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": false,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": [
+     "text/html"
+    ]
+   }
+  },
+  {
+   "accept": "text/*;q=0, text/html",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "q0",
+   "id": "A13",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "specific beats wildcard refusal",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html;q=0, text/*",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "text/html",
+    "falcon": "none",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "none"
+   },
+   "group": "q0",
+   "id": "A14",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": false,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "specific refusal beats wildcard",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "none"
+    ],
+    "refused": [
+     "text/html"
+    ]
+   }
+  },
+  {
+   "accept": "*/*;q=0",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "none"
+   },
+   "group": "q0",
+   "id": "A15",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "refuse everything",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "none"
+    ],
+    "refused": [
+     "text/html",
+     "application/json"
+    ]
+   }
+  },
+  {
+   "accept": "application/json;q=0.9, application/json;q=0",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "q0",
+   "id": "A16",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 1,
+   "note": "same type accepted then refused",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "text/markdown;q=0",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "text/markdown",
+    "werkzeug": "none"
+   },
+   "group": "q0",
+   "id": "A17",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "anything but markdown",
+   "offers": [
+    "text/markdown",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "none"
+    ],
+    "refused": [
+     "text/markdown"
+    ]
+   }
+  },
+  {
+   "accept": "application/json;q=1.0, text/html;q=0.9",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A18",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json;q=1.000, text/html;q=0.9",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A19",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json;q=1.0001, text/html;q=0.9",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A20",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "4 decimals",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=1.5, text/html;q=0.9",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A21",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "q > 1",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=-1, text/html;q=0.1",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A22",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "negative q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=abc, text/html;q=0.1",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A23",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "non-numeric q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=, text/html;q=0.1",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A24",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "empty q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=.5, text/html;q=0.4",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A25",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "no leading zero",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=0.0001, text/html;q=0.00001",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A26",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "sub-0.001 q values",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=0.001",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A27",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "minimum positive q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json; q=0.5, text/html; q=0.4",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A28",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "OWS before q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json;Q=0.1, text/html;q=0.2",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A29",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 3,
+   "note": "upper-case Q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json;q = 0.1, text/html;q=0.2",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A30",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "spaces around =",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=\"0.1\", text/html;q=0.2",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A31",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "quoted q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "text/html;q=0.9, application/json;q=0.9;q=0.1",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A32",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 1,
+   "note": "duplicate q param",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=0.1, application/json;q=0.9, text/html;q=0.5",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "text/html",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "qsyntax",
+   "id": "A33",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "type listed twice",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=1e-1, text/html;q=0.2",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "application/json",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A34",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "exponent q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;q=0x1, text/html;q=0.2",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "qsyntax",
+   "id": "A35",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "hex q",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "text/*, application/json;q=0.5",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "application/json",
+    "werkzeug": "text/html"
+   },
+   "group": "wild",
+   "id": "A36",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "*/*;q=0.5, application/json",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "wild",
+   "id": "A37",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "*",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "application/json",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "none"
+   },
+   "group": "wild",
+   "id": "A38",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "bare *",
+   "offers": [
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "*/json",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "none"
+   },
+   "group": "wild",
+   "id": "A39",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "wildcard type with concrete subtype",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/*+json",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "none"
+   },
+   "group": "wild",
+   "id": "A40",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 1,
+   "note": "structured-suffix wildcard",
+   "offers": [
+    "text/html",
+    "application/vnd.api+json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "TEXT/HTML",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "text/html"
+   },
+   "group": "wild",
+   "id": "A41",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "upper-case type",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html",
+   "choices": {
+    "accepts1": "TEXT/HTML",
+    "accepts2": "TEXT/HTML",
+    "contenttype": "text/html",
+    "django": "TEXT/HTML",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "TEXT/HTML"
+   },
+   "group": "wild",
+   "id": "A42",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 3,
+   "note": "upper-case offer",
+   "offers": [
+    "application/json",
+    "TEXT/HTML"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "TEXT/HTML",
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html;level=1, text/html;q=0.5",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "params",
+   "id": "A43",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "offer has no level",
+   "offers": [
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html;level=1;q=0.5, text/html",
+   "choices": {
+    "accepts1": "text/html;level=1",
+    "accepts2": "text/html;level=1",
+    "contenttype": "text/html;level=1",
+    "django": "text/html;level=1",
+    "falcon": "text/html;level=1",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "text/html;level=1"
+   },
+   "group": "params",
+   "id": "A44",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "offer with level",
+   "offers": [
+    "text/html;level=1"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html;level=1"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json;charset=utf-8",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "application/json",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "none"
+   },
+   "group": "params",
+   "id": "A45",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "param in header only",
+   "offers": [
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json",
+   "choices": {
+    "accepts1": "application/json;charset=utf-8",
+    "accepts2": "application/json;charset=utf-8",
+    "contenttype": "application/json;charset=utf-8",
+    "django": "application/json;charset=utf-8",
+    "falcon": "application/json;charset=utf-8",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "none"
+   },
+   "group": "params",
+   "id": "A46",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "param in offer only",
+   "offers": [
+    "application/json;charset=utf-8"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json;charset=utf-8"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/vnd.api+json, application/json;q=0.9",
+   "choices": {
+    "accepts1": "application/vnd.api+json",
+    "accepts2": "application/vnd.api+json",
+    "contenttype": "application/vnd.api+json",
+    "django": "application/vnd.api+json",
+    "falcon": "application/vnd.api+json",
+    "gddo": "application/vnd.api+json",
+    "goautoneg": "application/vnd.api+json",
+    "werkzeug": "application/vnd.api+json"
+   },
+   "group": "params",
+   "id": "A47",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "",
+   "offers": [
+    "application/json",
+    "application/vnd.api+json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/vnd.api+json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/plain;format=flowed;q=0.9, text/plain;q=0.5",
+   "choices": {
+    "accepts1": "text/plain;format=flowed",
+    "accepts2": "text/plain;format=flowed",
+    "contenttype": "text/plain;format=flowed",
+    "django": "text/plain;format=flowed",
+    "falcon": "text/plain;format=flowed",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "text/plain;format=flowed"
+   },
+   "group": "params",
+   "id": "A48",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "offer param values",
+   "offers": [
+    "text/plain;format=fixed",
+    "text/plain;format=flowed"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/plain;format=flowed"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json, , text/html;q=0.5",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "malformed",
+   "id": "A49",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": false,
+    "django": true,
+    "falcon": false,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "empty element",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json,",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "malformed",
+   "id": "A50",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": false,
+    "django": true,
+    "falcon": false,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "trailing comma",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": ",application/json",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "malformed",
+   "id": "A51",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": false,
+    "django": true,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "leading comma",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application",
+   "choices": {
+    "accepts1": "none",
+    "accepts2": "none",
+    "contenttype": "none",
+    "django": "none",
+    "falcon": "none",
+    "gddo": "none",
+    "goautoneg": "none",
+    "werkzeug": "none"
+   },
+   "group": "malformed",
+   "id": "A52",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 1,
+   "note": "no slash",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json;",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "malformed",
+   "id": "A53",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": false,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "trailing semicolon",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json;;q=0.5, text/html;q=0.9",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "none",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "malformed",
+   "id": "A54",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": false,
+    "django": true,
+    "falcon": true,
+    "gddo": false,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "empty parameter",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "application/json garbage, text/html;q=0.5",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "application/json",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "malformed",
+   "id": "A55",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 3,
+   "note": "junk after type",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "text/html;q=0.5 , application/json;q=0.4",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "malformed",
+   "id": "A56",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "space before comma",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "real",
+   "id": "A57",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "Firefox 132+ / Safari default",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "real",
+   "id": "A58",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "Firefox default, no html offered",
+   "offers": [
+    "application/json",
+    "text/markdown"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json",
+     "text/markdown"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "real",
+   "id": "A59",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "Chrome 131+ default",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "real",
+   "id": "A60",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "Chrome default, no html offered",
+   "offers": [
+    "application/json",
+    "text/markdown"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json",
+     "text/markdown"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html, application/xhtml+xml, image/jxr, */*",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "text/html",
+    "django": "text/html",
+    "falcon": "application/json",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "real",
+   "id": "A61",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "Edge (legacy) default",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/json",
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1",
+   "choices": {
+    "accepts1": "application/xml",
+    "accepts2": "application/xml",
+    "contenttype": "application/xml",
+    "django": "application/xml",
+    "falcon": "application/xml",
+    "gddo": "application/xml",
+    "goautoneg": "application/xml",
+    "werkzeug": "application/xml"
+   },
+   "group": "real",
+   "id": "A62",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "Opera default",
+   "offers": [
+    "application/json",
+    "application/xml"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "application/xml"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+   "choices": {
+    "accepts1": "text/html",
+    "accepts2": "text/html",
+    "contenttype": "none",
+    "django": "text/html",
+    "falcon": "text/html",
+    "gddo": "text/html",
+    "goautoneg": "text/html",
+    "werkzeug": "text/html"
+   },
+   "group": "real",
+   "id": "A63",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "JDK 8 HttpURLConnection default",
+   "offers": [
+    "application/json",
+    "text/html"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "none",
+    "django": "application/json",
+    "falcon": "application/json",
+    "gddo": "none",
+    "goautoneg": "application/json",
+    "werkzeug": "none"
+   },
+   "group": "real",
+   "id": "A64",
+   "matches_reading": {
+    "accepts1": false,
+    "accepts2": false,
+    "contenttype": false,
+    "django": false,
+    "falcon": false,
+    "gddo": false,
+    "goautoneg": false,
+    "werkzeug": false
+   },
+   "n_distinct": 2,
+   "note": "JDK 8 default, json only",
+   "offers": [
+    "application/json"
+   ],
+   "rfc_reading": null
+  },
+  {
+   "accept": "application/json, text/plain, */*",
+   "choices": {
+    "accepts1": "application/json",
+    "accepts2": "application/json",
+    "contenttype": "application/json",
+    "django": "application/json",
+    "falcon": "text/html",
+    "gddo": "application/json",
+    "goautoneg": "application/json",
+    "werkzeug": "application/json"
+   },
+   "group": "real",
+   "id": "A65",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "axios default",
+   "offers": [
+    "text/html",
+    "application/json"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/html",
+     "application/json"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "*/*",
+   "choices": {
+    "accepts1": "text/markdown",
+    "accepts2": "text/markdown",
+    "contenttype": "text/markdown",
+    "django": "text/markdown",
+    "falcon": "text/markdown",
+    "gddo": "text/markdown",
+    "goautoneg": "text/markdown",
+    "werkzeug": "text/markdown"
+   },
+   "group": "real",
+   "id": "A66",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "curl / python-requests default",
+   "offers": [
+    "text/markdown",
+    "text/html"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/markdown",
+     "text/html"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "text/markdown, text/html;q=0.9, */*;q=0.1",
+   "choices": {
+    "accepts1": "text/markdown",
+    "accepts2": "text/markdown",
+    "contenttype": "text/markdown",
+    "django": "text/markdown",
+    "falcon": "text/markdown",
+    "gddo": "text/markdown",
+    "goautoneg": "text/markdown",
+    "werkzeug": "text/markdown"
+   },
+   "group": "real",
+   "id": "A67",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 1,
+   "note": "markdown-preferring agent",
+   "offers": [
+    "text/html",
+    "text/markdown"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "text/markdown"
+    ],
+    "refused": []
+   }
+  },
+  {
+   "accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+   "choices": {
+    "accepts1": "image/webp",
+    "accepts2": "image/webp",
+    "contenttype": "image/webp",
+    "django": "image/webp",
+    "falcon": "image/png",
+    "gddo": "image/webp",
+    "goautoneg": "image/webp",
+    "werkzeug": "image/webp"
+   },
+   "group": "real",
+   "id": "A68",
+   "matches_reading": {
+    "accepts1": true,
+    "accepts2": true,
+    "contenttype": true,
+    "django": true,
+    "falcon": true,
+    "gddo": true,
+    "goautoneg": true,
+    "werkzeug": true
+   },
+   "n_distinct": 2,
+   "note": "Chrome image default",
+   "offers": [
+    "image/png",
+    "image/webp"
+   ],
+   "rfc_reading": {
+    "ok": [
+     "image/png",
+     "image/webp"
+    ],
+    "refused": []
+   }
+  }
+ ]
+}

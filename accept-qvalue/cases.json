@@ -1,0 +1,676 @@
+[
+ {
+  "id": "A01",
+  "group": "basic",
+  "accept": "application/json",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A02",
+  "group": "basic",
+  "accept": "text/html",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A03",
+  "group": "basic",
+  "accept": "*/*",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "wildcard only"
+ },
+ {
+  "id": "A04",
+  "group": "basic",
+  "accept": null,
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "header absent"
+ },
+ {
+  "id": "A05",
+  "group": "basic",
+  "accept": "",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "header present but empty"
+ },
+ {
+  "id": "A06",
+  "group": "q",
+  "accept": "text/html;q=0.5, application/json",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A07",
+  "group": "q",
+  "accept": "text/html;q=0.5, application/json;q=0.5",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "tie, header lists html first"
+ },
+ {
+  "id": "A08",
+  "group": "q",
+  "accept": "application/json;q=0.5, text/html;q=0.5",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "tie, header lists json first"
+ },
+ {
+  "id": "A09",
+  "group": "q",
+  "accept": "text/html, application/json",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": "tie at q=1, server prefers json"
+ },
+ {
+  "id": "A10",
+  "group": "q0",
+  "accept": "text/html;q=0",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "only listed type refused"
+ },
+ {
+  "id": "A11",
+  "group": "q0",
+  "accept": "text/html;q=0, */*",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A12",
+  "group": "q0",
+  "accept": "*/*;q=0.1, text/html;q=0",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A13",
+  "group": "q0",
+  "accept": "text/*;q=0, text/html",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "specific beats wildcard refusal"
+ },
+ {
+  "id": "A14",
+  "group": "q0",
+  "accept": "text/html;q=0, text/*",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "specific refusal beats wildcard"
+ },
+ {
+  "id": "A15",
+  "group": "q0",
+  "accept": "*/*;q=0",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "refuse everything"
+ },
+ {
+  "id": "A16",
+  "group": "q0",
+  "accept": "application/json;q=0.9, application/json;q=0",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "same type accepted then refused"
+ },
+ {
+  "id": "A17",
+  "group": "q0",
+  "accept": "text/markdown;q=0",
+  "offers": [
+   "text/markdown",
+   "text/html"
+  ],
+  "note": "anything but markdown"
+ },
+ {
+  "id": "A18",
+  "group": "qsyntax",
+  "accept": "application/json;q=1.0, text/html;q=0.9",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A19",
+  "group": "qsyntax",
+  "accept": "application/json;q=1.000, text/html;q=0.9",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A20",
+  "group": "qsyntax",
+  "accept": "application/json;q=1.0001, text/html;q=0.9",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "4 decimals"
+ },
+ {
+  "id": "A21",
+  "group": "qsyntax",
+  "accept": "application/json;q=1.5, text/html;q=0.9",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "q > 1"
+ },
+ {
+  "id": "A22",
+  "group": "qsyntax",
+  "accept": "application/json;q=-1, text/html;q=0.1",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "negative q"
+ },
+ {
+  "id": "A23",
+  "group": "qsyntax",
+  "accept": "application/json;q=abc, text/html;q=0.1",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "non-numeric q"
+ },
+ {
+  "id": "A24",
+  "group": "qsyntax",
+  "accept": "application/json;q=, text/html;q=0.1",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "empty q"
+ },
+ {
+  "id": "A25",
+  "group": "qsyntax",
+  "accept": "application/json;q=.5, text/html;q=0.4",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "no leading zero"
+ },
+ {
+  "id": "A26",
+  "group": "qsyntax",
+  "accept": "application/json;q=0.0001, text/html;q=0.00001",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "sub-0.001 q values"
+ },
+ {
+  "id": "A27",
+  "group": "qsyntax",
+  "accept": "application/json;q=0.001",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "minimum positive q"
+ },
+ {
+  "id": "A28",
+  "group": "qsyntax",
+  "accept": "application/json; q=0.5, text/html; q=0.4",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "OWS before q"
+ },
+ {
+  "id": "A29",
+  "group": "qsyntax",
+  "accept": "application/json;Q=0.1, text/html;q=0.2",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "upper-case Q"
+ },
+ {
+  "id": "A30",
+  "group": "qsyntax",
+  "accept": "application/json;q = 0.1, text/html;q=0.2",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "spaces around ="
+ },
+ {
+  "id": "A31",
+  "group": "qsyntax",
+  "accept": "application/json;q=\"0.1\", text/html;q=0.2",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "quoted q"
+ },
+ {
+  "id": "A32",
+  "group": "qsyntax",
+  "accept": "text/html;q=0.9, application/json;q=0.9;q=0.1",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "duplicate q param"
+ },
+ {
+  "id": "A33",
+  "group": "qsyntax",
+  "accept": "application/json;q=0.1, application/json;q=0.9, text/html;q=0.5",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "type listed twice"
+ },
+ {
+  "id": "A34",
+  "group": "qsyntax",
+  "accept": "application/json;q=1e-1, text/html;q=0.2",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "exponent q"
+ },
+ {
+  "id": "A35",
+  "group": "qsyntax",
+  "accept": "application/json;q=0x1, text/html;q=0.2",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "hex q"
+ },
+ {
+  "id": "A36",
+  "group": "wild",
+  "accept": "text/*, application/json;q=0.5",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A37",
+  "group": "wild",
+  "accept": "*/*;q=0.5, application/json",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A38",
+  "group": "wild",
+  "accept": "*",
+  "offers": [
+   "application/json"
+  ],
+  "note": "bare *"
+ },
+ {
+  "id": "A39",
+  "group": "wild",
+  "accept": "*/json",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "wildcard type with concrete subtype"
+ },
+ {
+  "id": "A40",
+  "group": "wild",
+  "accept": "application/*+json",
+  "offers": [
+   "text/html",
+   "application/vnd.api+json"
+  ],
+  "note": "structured-suffix wildcard"
+ },
+ {
+  "id": "A41",
+  "group": "wild",
+  "accept": "TEXT/HTML",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": "upper-case type"
+ },
+ {
+  "id": "A42",
+  "group": "wild",
+  "accept": "text/html",
+  "offers": [
+   "application/json",
+   "TEXT/HTML"
+  ],
+  "note": "upper-case offer"
+ },
+ {
+  "id": "A43",
+  "group": "params",
+  "accept": "text/html;level=1, text/html;q=0.5",
+  "offers": [
+   "text/html"
+  ],
+  "note": "offer has no level"
+ },
+ {
+  "id": "A44",
+  "group": "params",
+  "accept": "text/html;level=1;q=0.5, text/html",
+  "offers": [
+   "text/html;level=1"
+  ],
+  "note": "offer with level"
+ },
+ {
+  "id": "A45",
+  "group": "params",
+  "accept": "application/json;charset=utf-8",
+  "offers": [
+   "application/json"
+  ],
+  "note": "param in header only"
+ },
+ {
+  "id": "A46",
+  "group": "params",
+  "accept": "application/json",
+  "offers": [
+   "application/json;charset=utf-8"
+  ],
+  "note": "param in offer only"
+ },
+ {
+  "id": "A47",
+  "group": "params",
+  "accept": "application/vnd.api+json, application/json;q=0.9",
+  "offers": [
+   "application/json",
+   "application/vnd.api+json"
+  ],
+  "note": ""
+ },
+ {
+  "id": "A48",
+  "group": "params",
+  "accept": "text/plain;format=flowed;q=0.9, text/plain;q=0.5",
+  "offers": [
+   "text/plain;format=fixed",
+   "text/plain;format=flowed"
+  ],
+  "note": "offer param values"
+ },
+ {
+  "id": "A49",
+  "group": "malformed",
+  "accept": "application/json, , text/html;q=0.5",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "empty element"
+ },
+ {
+  "id": "A50",
+  "group": "malformed",
+  "accept": "application/json,",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "trailing comma"
+ },
+ {
+  "id": "A51",
+  "group": "malformed",
+  "accept": ",application/json",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "leading comma"
+ },
+ {
+  "id": "A52",
+  "group": "malformed",
+  "accept": "application",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": "no slash"
+ },
+ {
+  "id": "A53",
+  "group": "malformed",
+  "accept": "application/json;",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "trailing semicolon"
+ },
+ {
+  "id": "A54",
+  "group": "malformed",
+  "accept": "application/json;;q=0.5, text/html;q=0.9",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "empty parameter"
+ },
+ {
+  "id": "A55",
+  "group": "malformed",
+  "accept": "application/json garbage, text/html;q=0.5",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "junk after type"
+ },
+ {
+  "id": "A56",
+  "group": "malformed",
+  "accept": "text/html;q=0.5 , application/json;q=0.4",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "space before comma"
+ },
+ {
+  "id": "A57",
+  "group": "real",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": "Firefox 132+ / Safari default"
+ },
+ {
+  "id": "A58",
+  "group": "real",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "offers": [
+   "application/json",
+   "text/markdown"
+  ],
+  "note": "Firefox default, no html offered"
+ },
+ {
+  "id": "A59",
+  "group": "real",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": "Chrome 131+ default"
+ },
+ {
+  "id": "A60",
+  "group": "real",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+  "offers": [
+   "application/json",
+   "text/markdown"
+  ],
+  "note": "Chrome default, no html offered"
+ },
+ {
+  "id": "A61",
+  "group": "real",
+  "accept": "text/html, application/xhtml+xml, image/jxr, */*",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": "Edge (legacy) default"
+ },
+ {
+  "id": "A62",
+  "group": "real",
+  "accept": "text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1",
+  "offers": [
+   "application/json",
+   "application/xml"
+  ],
+  "note": "Opera default"
+ },
+ {
+  "id": "A63",
+  "group": "real",
+  "accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+  "offers": [
+   "application/json",
+   "text/html"
+  ],
+  "note": "JDK 8 HttpURLConnection default"
+ },
+ {
+  "id": "A64",
+  "group": "real",
+  "accept": "text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2",
+  "offers": [
+   "application/json"
+  ],
+  "note": "JDK 8 default, json only"
+ },
+ {
+  "id": "A65",
+  "group": "real",
+  "accept": "application/json, text/plain, */*",
+  "offers": [
+   "text/html",
+   "application/json"
+  ],
+  "note": "axios default"
+ },
+ {
+  "id": "A66",
+  "group": "real",
+  "accept": "*/*",
+  "offers": [
+   "text/markdown",
+   "text/html"
+  ],
+  "note": "curl / python-requests default"
+ },
+ {
+  "id": "A67",
+  "group": "real",
+  "accept": "text/markdown, text/html;q=0.9, */*;q=0.1",
+  "offers": [
+   "text/html",
+   "text/markdown"
+  ],
+  "note": "markdown-preferring agent"
+ },
+ {
+  "id": "A68",
+  "group": "real",
+  "accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+  "offers": [
+   "image/png",
+   "image/webp"
+  ],
+  "note": "Chrome image default"
+ }
+]

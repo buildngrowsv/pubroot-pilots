@@ -1,0 +1,297 @@
+{
+ "A01": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A02": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A03": {
+  "ok": [
+   "text/html",
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A04": {
+  "ok": [
+   "text/html",
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A06": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A07": {
+  "ok": [
+   "text/html",
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A08": {
+  "ok": [
+   "text/html",
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A09": {
+  "ok": [
+   "text/html",
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A10": {
+  "ok": [
+   "none"
+  ],
+  "refused": [
+   "text/html"
+  ]
+ },
+ "A11": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": [
+   "text/html"
+  ]
+ },
+ "A12": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": [
+   "text/html"
+  ]
+ },
+ "A13": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A14": {
+  "ok": [
+   "none"
+  ],
+  "refused": [
+   "text/html"
+  ]
+ },
+ "A15": {
+  "ok": [
+   "none"
+  ],
+  "refused": [
+   "text/html",
+   "application/json"
+  ]
+ },
+ "A17": {
+  "ok": [
+   "none"
+  ],
+  "refused": [
+   "text/markdown"
+  ]
+ },
+ "A18": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A19": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A27": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A28": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A29": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A36": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A37": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A41": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A42": {
+  "ok": [
+   "TEXT/HTML",
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A43": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A44": {
+  "ok": [
+   "text/html;level=1"
+  ],
+  "refused": []
+ },
+ "A46": {
+  "ok": [
+   "application/json;charset=utf-8"
+  ],
+  "refused": []
+ },
+ "A47": {
+  "ok": [
+   "application/vnd.api+json"
+  ],
+  "refused": []
+ },
+ "A48": {
+  "ok": [
+   "text/plain;format=flowed"
+  ],
+  "refused": []
+ },
+ "A49": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A50": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A51": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A53": {
+  "ok": [
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A54": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A56": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A57": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A58": {
+  "ok": [
+   "application/json",
+   "text/markdown"
+  ],
+  "refused": []
+ },
+ "A59": {
+  "ok": [
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A60": {
+  "ok": [
+   "application/json",
+   "text/markdown"
+  ],
+  "refused": []
+ },
+ "A61": {
+  "ok": [
+   "application/json",
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A62": {
+  "ok": [
+   "application/xml"
+  ],
+  "refused": []
+ },
+ "A65": {
+  "ok": [
+   "text/html",
+   "application/json"
+  ],
+  "refused": []
+ },
+ "A66": {
+  "ok": [
+   "text/markdown",
+   "text/html"
+  ],
+  "refused": []
+ },
+ "A67": {
+  "ok": [
+   "text/markdown"
+  ],
+  "refused": []
+ },
+ "A68": {
+  "ok": [
+   "image/png",
+   "image/webp"
+  ],
+  "refused": []
+ }
+}

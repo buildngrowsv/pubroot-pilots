@@ -1,0 +1,824 @@
+{
+ "werkzeug": [
+  {
+   "id": "A01",
+   "choice": "application/json"
+  },
+  {
+   "id": "A02",
+   "choice": "text/html"
+  },
+  {
+   "id": "A03",
+   "choice": "text/html"
+  },
+  {
+   "id": "A04",
+   "choice": null
+  },
+  {
+   "id": "A05",
+   "choice": null
+  },
+  {
+   "id": "A06",
+   "choice": "application/json"
+  },
+  {
+   "id": "A07",
+   "choice": "text/html"
+  },
+  {
+   "id": "A08",
+   "choice": "text/html"
+  },
+  {
+   "id": "A09",
+   "choice": "application/json"
+  },
+  {
+   "id": "A10",
+   "choice": null
+  },
+  {
+   "id": "A11",
+   "choice": "application/json"
+  },
+  {
+   "id": "A12",
+   "choice": "application/json"
+  },
+  {
+   "id": "A13",
+   "choice": "text/html"
+  },
+  {
+   "id": "A14",
+   "choice": null
+  },
+  {
+   "id": "A15",
+   "choice": null
+  },
+  {
+   "id": "A16",
+   "choice": "application/json"
+  },
+  {
+   "id": "A17",
+   "choice": null
+  },
+  {
+   "id": "A18",
+   "choice": "application/json"
+  },
+  {
+   "id": "A19",
+   "choice": "application/json"
+  },
+  {
+   "id": "A20",
+   "choice": "text/html"
+  },
+  {
+   "id": "A21",
+   "choice": "text/html"
+  },
+  {
+   "id": "A22",
+   "choice": "text/html"
+  },
+  {
+   "id": "A23",
+   "choice": "text/html"
+  },
+  {
+   "id": "A24",
+   "choice": "application/json"
+  },
+  {
+   "id": "A25",
+   "choice": "text/html"
+  },
+  {
+   "id": "A26",
+   "choice": "application/json"
+  },
+  {
+   "id": "A27",
+   "choice": "application/json"
+  },
+  {
+   "id": "A28",
+   "choice": "application/json"
+  },
+  {
+   "id": "A29",
+   "choice": "text/html"
+  },
+  {
+   "id": "A30",
+   "choice": "application/json"
+  },
+  {
+   "id": "A31",
+   "choice": "text/html"
+  },
+  {
+   "id": "A32",
+   "choice": "text/html"
+  },
+  {
+   "id": "A33",
+   "choice": "application/json"
+  },
+  {
+   "id": "A34",
+   "choice": "text/html"
+  },
+  {
+   "id": "A35",
+   "choice": "text/html"
+  },
+  {
+   "id": "A36",
+   "choice": "text/html"
+  },
+  {
+   "id": "A37",
+   "choice": "application/json"
+  },
+  {
+   "id": "A38",
+   "choice": null
+  },
+  {
+   "id": "A39",
+   "choice": null
+  },
+  {
+   "id": "A40",
+   "choice": null
+  },
+  {
+   "id": "A41",
+   "choice": "text/html"
+  },
+  {
+   "id": "A42",
+   "choice": "TEXT/HTML"
+  },
+  {
+   "id": "A43",
+   "choice": "text/html"
+  },
+  {
+   "id": "A44",
+   "choice": "text/html;level=1"
+  },
+  {
+   "id": "A45",
+   "choice": null
+  },
+  {
+   "id": "A46",
+   "choice": null
+  },
+  {
+   "id": "A47",
+   "choice": "application/vnd.api+json"
+  },
+  {
+   "id": "A48",
+   "choice": "text/plain;format=flowed"
+  },
+  {
+   "id": "A49",
+   "choice": "application/json"
+  },
+  {
+   "id": "A50",
+   "choice": "application/json"
+  },
+  {
+   "id": "A51",
+   "choice": "application/json"
+  },
+  {
+   "id": "A52",
+   "choice": null
+  },
+  {
+   "id": "A53",
+   "choice": "application/json"
+  },
+  {
+   "id": "A54",
+   "choice": "text/html"
+  },
+  {
+   "id": "A55",
+   "choice": "text/html"
+  },
+  {
+   "id": "A56",
+   "choice": "text/html"
+  },
+  {
+   "id": "A57",
+   "choice": "text/html"
+  },
+  {
+   "id": "A58",
+   "choice": "application/json"
+  },
+  {
+   "id": "A59",
+   "choice": "text/html"
+  },
+  {
+   "id": "A60",
+   "choice": "application/json"
+  },
+  {
+   "id": "A61",
+   "choice": "text/html"
+  },
+  {
+   "id": "A62",
+   "choice": "application/xml"
+  },
+  {
+   "id": "A63",
+   "choice": "text/html"
+  },
+  {
+   "id": "A64",
+   "choice": null
+  },
+  {
+   "id": "A65",
+   "choice": "application/json"
+  },
+  {
+   "id": "A66",
+   "choice": "text/markdown"
+  },
+  {
+   "id": "A67",
+   "choice": "text/markdown"
+  },
+  {
+   "id": "A68",
+   "choice": "image/webp"
+  }
+ ],
+ "django": [
+  {
+   "id": "A01",
+   "choice": "application/json"
+  },
+  {
+   "id": "A02",
+   "choice": "text/html"
+  },
+  {
+   "id": "A03",
+   "choice": "text/html"
+  },
+  {
+   "id": "A04",
+   "choice": "text/html"
+  },
+  {
+   "id": "A05",
+   "choice": null
+  },
+  {
+   "id": "A06",
+   "choice": "application/json"
+  },
+  {
+   "id": "A07",
+   "choice": "text/html"
+  },
+  {
+   "id": "A08",
+   "choice": "application/json"
+  },
+  {
+   "id": "A09",
+   "choice": "text/html"
+  },
+  {
+   "id": "A10",
+   "choice": null
+  },
+  {
+   "id": "A11",
+   "choice": "text/html"
+  },
+  {
+   "id": "A12",
+   "choice": "text/html"
+  },
+  {
+   "id": "A13",
+   "choice": "text/html"
+  },
+  {
+   "id": "A14",
+   "choice": "text/html"
+  },
+  {
+   "id": "A15",
+   "choice": null
+  },
+  {
+   "id": "A16",
+   "choice": "application/json"
+  },
+  {
+   "id": "A17",
+   "choice": null
+  },
+  {
+   "id": "A18",
+   "choice": "application/json"
+  },
+  {
+   "id": "A19",
+   "choice": "application/json"
+  },
+  {
+   "id": "A20",
+   "choice": "application/json"
+  },
+  {
+   "id": "A21",
+   "choice": "application/json"
+  },
+  {
+   "id": "A22",
+   "choice": "application/json"
+  },
+  {
+   "id": "A23",
+   "choice": "application/json"
+  },
+  {
+   "id": "A24",
+   "choice": "application/json"
+  },
+  {
+   "id": "A25",
+   "choice": "application/json"
+  },
+  {
+   "id": "A26",
+   "choice": null
+  },
+  {
+   "id": "A27",
+   "choice": "application/json"
+  },
+  {
+   "id": "A28",
+   "choice": "application/json"
+  },
+  {
+   "id": "A29",
+   "choice": "text/html"
+  },
+  {
+   "id": "A30",
+   "choice": "text/html"
+  },
+  {
+   "id": "A31",
+   "choice": "text/html"
+  },
+  {
+   "id": "A32",
+   "choice": "text/html"
+  },
+  {
+   "id": "A33",
+   "choice": "application/json"
+  },
+  {
+   "id": "A34",
+   "choice": "text/html"
+  },
+  {
+   "id": "A35",
+   "choice": "application/json"
+  },
+  {
+   "id": "A36",
+   "choice": "text/html"
+  },
+  {
+   "id": "A37",
+   "choice": "application/json"
+  },
+  {
+   "id": "A38",
+   "choice": null
+  },
+  {
+   "id": "A39",
+   "choice": "application/json"
+  },
+  {
+   "id": "A40",
+   "choice": null
+  },
+  {
+   "id": "A41",
+   "choice": "text/html"
+  },
+  {
+   "id": "A42",
+   "choice": "TEXT/HTML"
+  },
+  {
+   "id": "A43",
+   "choice": "text/html"
+  },
+  {
+   "id": "A44",
+   "choice": "text/html;level=1"
+  },
+  {
+   "id": "A45",
+   "choice": null
+  },
+  {
+   "id": "A46",
+   "choice": "application/json;charset=utf-8"
+  },
+  {
+   "id": "A47",
+   "choice": "application/vnd.api+json"
+  },
+  {
+   "id": "A48",
+   "choice": "text/plain;format=flowed"
+  },
+  {
+   "id": "A49",
+   "choice": "application/json"
+  },
+  {
+   "id": "A50",
+   "choice": "application/json"
+  },
+  {
+   "id": "A51",
+   "choice": "application/json"
+  },
+  {
+   "id": "A52",
+   "choice": null
+  },
+  {
+   "id": "A53",
+   "choice": "application/json"
+  },
+  {
+   "id": "A54",
+   "choice": "text/html"
+  },
+  {
+   "id": "A55",
+   "choice": "text/html"
+  },
+  {
+   "id": "A56",
+   "choice": "text/html"
+  },
+  {
+   "id": "A57",
+   "choice": "text/html"
+  },
+  {
+   "id": "A58",
+   "choice": "application/json"
+  },
+  {
+   "id": "A59",
+   "choice": "text/html"
+  },
+  {
+   "id": "A60",
+   "choice": "application/json"
+  },
+  {
+   "id": "A61",
+   "choice": "text/html"
+  },
+  {
+   "id": "A62",
+   "choice": "application/xml"
+  },
+  {
+   "id": "A63",
+   "choice": "text/html"
+  },
+  {
+   "id": "A64",
+   "choice": "application/json"
+  },
+  {
+   "id": "A65",
+   "choice": "application/json"
+  },
+  {
+   "id": "A66",
+   "choice": "text/markdown"
+  },
+  {
+   "id": "A67",
+   "choice": "text/markdown"
+  },
+  {
+   "id": "A68",
+   "choice": "image/webp"
+  }
+ ],
+ "falcon": [
+  {
+   "id": "A01",
+   "choice": "application/json"
+  },
+  {
+   "id": "A02",
+   "choice": "text/html"
+  },
+  {
+   "id": "A03",
+   "choice": "text/html"
+  },
+  {
+   "id": "A04",
+   "choice": "text/html"
+  },
+  {
+   "id": "A05",
+   "choice": "text/html"
+  },
+  {
+   "id": "A06",
+   "choice": "application/json"
+  },
+  {
+   "id": "A07",
+   "choice": "text/html"
+  },
+  {
+   "id": "A08",
+   "choice": "text/html"
+  },
+  {
+   "id": "A09",
+   "choice": "application/json"
+  },
+  {
+   "id": "A10",
+   "choice": null
+  },
+  {
+   "id": "A11",
+   "choice": "application/json"
+  },
+  {
+   "id": "A12",
+   "choice": "application/json"
+  },
+  {
+   "id": "A13",
+   "choice": "text/html"
+  },
+  {
+   "id": "A14",
+   "choice": null
+  },
+  {
+   "id": "A15",
+   "choice": null
+  },
+  {
+   "id": "A16",
+   "choice": "application/json"
+  },
+  {
+   "id": "A17",
+   "choice": null
+  },
+  {
+   "id": "A18",
+   "choice": "application/json"
+  },
+  {
+   "id": "A19",
+   "choice": "application/json"
+  },
+  {
+   "id": "A20",
+   "choice": null
+  },
+  {
+   "id": "A21",
+   "choice": null
+  },
+  {
+   "id": "A22",
+   "choice": null
+  },
+  {
+   "id": "A23",
+   "choice": null
+  },
+  {
+   "id": "A24",
+   "choice": null
+  },
+  {
+   "id": "A25",
+   "choice": "application/json"
+  },
+  {
+   "id": "A26",
+   "choice": "application/json"
+  },
+  {
+   "id": "A27",
+   "choice": "application/json"
+  },
+  {
+   "id": "A28",
+   "choice": "application/json"
+  },
+  {
+   "id": "A29",
+   "choice": "text/html"
+  },
+  {
+   "id": "A30",
+   "choice": "text/html"
+  },
+  {
+   "id": "A31",
+   "choice": "text/html"
+  },
+  {
+   "id": "A32",
+   "choice": "text/html"
+  },
+  {
+   "id": "A33",
+   "choice": "application/json"
+  },
+  {
+   "id": "A34",
+   "choice": "text/html"
+  },
+  {
+   "id": "A35",
+   "choice": null
+  },
+  {
+   "id": "A36",
+   "choice": "text/html"
+  },
+  {
+   "id": "A37",
+   "choice": "application/json"
+  },
+  {
+   "id": "A38",
+   "choice": "application/json"
+  },
+  {
+   "id": "A39",
+   "choice": "application/json"
+  },
+  {
+   "id": "A40",
+   "choice": null
+  },
+  {
+   "id": "A41",
+   "choice": null
+  },
+  {
+   "id": "A42",
+   "choice": null
+  },
+  {
+   "id": "A43",
+   "choice": "text/html"
+  },
+  {
+   "id": "A44",
+   "choice": "text/html;level=1"
+  },
+  {
+   "id": "A45",
+   "choice": "application/json"
+  },
+  {
+   "id": "A46",
+   "choice": "application/json;charset=utf-8"
+  },
+  {
+   "id": "A47",
+   "choice": "application/vnd.api+json"
+  },
+  {
+   "id": "A48",
+   "choice": "text/plain;format=flowed"
+  },
+  {
+   "id": "A49",
+   "choice": null
+  },
+  {
+   "id": "A50",
+   "choice": null
+  },
+  {
+   "id": "A51",
+   "choice": null
+  },
+  {
+   "id": "A52",
+   "choice": null
+  },
+  {
+   "id": "A53",
+   "choice": "application/json"
+  },
+  {
+   "id": "A54",
+   "choice": "text/html"
+  },
+  {
+   "id": "A55",
+   "choice": "text/html"
+  },
+  {
+   "id": "A56",
+   "choice": "text/html"
+  },
+  {
+   "id": "A57",
+   "choice": "text/html"
+  },
+  {
+   "id": "A58",
+   "choice": "application/json"
+  },
+  {
+   "id": "A59",
+   "choice": "text/html"
+  },
+  {
+   "id": "A60",
+   "choice": "application/json"
+  },
+  {
+   "id": "A61",
+   "choice": "application/json"
+  },
+  {
+   "id": "A62",
+   "choice": "application/xml"
+  },
+  {
+   "id": "A63",
+   "choice": "text/html"
+  },
+  {
+   "id": "A64",
+   "choice": "application/json"
+  },
+  {
+   "id": "A65",
+   "choice": "text/html"
+  },
+  {
+   "id": "A66",
+   "choice": "text/markdown"
+  },
+  {
+   "id": "A67",
+   "choice": "text/markdown"
+  },
+  {
+   "id": "A68",
+   "choice": "image/png"
+  }
+ ]
+}
