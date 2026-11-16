@@ -7,7 +7,7 @@ classes A/N/T/R/L/-:
   packaging                  A80 N0 T0 R2 L5 -4
   go-spdx                    A77 N1 T0 R7 L2 -4
 probe mismatches vs spec precedence: {'spdx-satisfies@6': ['K07'], 'go-spdx': ['K07'], 'spdx-rs': []}
-go-spdx: ValidateAndNormalize accepts but ExtractLicenses fails: ['K03', 'K06']
+go-spdx ValidateAndNormalizeLicensesWithOptions vs ExtractLicenses: {'validate_ok_extract_fails': ['K03', 'K06'], 'validate_fails_extract_ok': ['U05']}
 pairwise acceptance disagreement: 7 - 23
   license-expression vs spdx-expression-parse@3: 23
   license-expression vs spdx-rs: 23

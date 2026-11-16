@@ -1,8 +1,13 @@
 {
- "go_validate_ok_but_extract_fails": [
-  "K03",
-  "K06"
- ],
+ "go_validate_vs_extract": {
+  "validate_ok_extract_fails": [
+   "K03",
+   "K06"
+  ],
+  "validate_fails_extract_ok": [
+   "U05"
+  ]
+ },
  "n_cases": 91,
  "n_accept_split": 34,
  "n_any_split": 35,

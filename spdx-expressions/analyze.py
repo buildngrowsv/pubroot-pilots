@@ -101,8 +101,9 @@ for a in IMPLS:
     for b in IMPLS:
         if a < b: pw[f"{a} vs {b}"] = sum((r["out"][a] == "REJECT") != (r["out"][b] == "REJECT") for r in rows)
 probe_fail = {p: [r["id"] for r in rows if r["probes"] and r["probes"].get(p) is not None and r["probes"][p] != r["probe_expect"]] for p in PROBERS}
-go_internal = [r["id"] for r in rows if R["go-spdx"][r["id"]].get("ok") and "extract_err" in R["go-spdx"][r["id"]]]
-summary = dict(go_validate_ok_but_extract_fails=go_internal, n_cases=n, n_accept_split=len(acc_split), n_any_split=len(any_split),
+go_internal = {"validate_ok_extract_fails": [r["id"] for r in rows if R["go-spdx"][r["id"]].get("ok") and "extract_err" in R["go-spdx"][r["id"]]],
+               "validate_fails_extract_ok": [r["id"] for r in rows if not R["go-spdx"][r["id"]].get("ok") and "leaves" in R["go-spdx"][r["id"]]]}
+summary = dict(go_validate_vs_extract=go_internal, n_cases=n, n_accept_split=len(acc_split), n_any_split=len(any_split),
                n_leaf_split=sum(r["leaf_split"] for r in rows), n_tree_split=sum(r["tree_split"] for r in rows),
                classes={i: dict(sorted(cls_count[i].items())) for i in IMPLS},
                pairwise_accept_disagreement=pw, probe_mismatch=probe_fail, rows=rows)
@@ -112,7 +113,7 @@ print(f"cases {n}; acceptance split {len(acc_split)}; any split (acceptance, lea
 print("classes A/N/T/R/L/-:")
 for i in IMPLS: print(f"  {i:<26}", " ".join(f"{k}{cls_count[i][k]}" for k in "ANTRL-"))
 print("probe mismatches vs spec precedence:", probe_fail)
-print("go-spdx: ValidateAndNormalize accepts but ExtractLicenses fails:", go_internal)
+print("go-spdx ValidateAndNormalizeLicensesWithOptions vs ExtractLicenses:", go_internal)
 print("pairwise acceptance disagreement:", min(pw.values()), "-", max(pw.values()))
 for k, v in sorted(pw.items(), key=lambda x: -x[1]): print(f"  {k}: {v}")
 print()
