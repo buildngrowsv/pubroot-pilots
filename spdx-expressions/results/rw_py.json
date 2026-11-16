@@ -1,0 +1,237 @@
+{
+ "license-expression": {
+  "RW01": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "RW02": {
+   "ok": true,
+   "tree": "Apache-2.0"
+  },
+  "RW03": {
+   "ok": true,
+   "tree": "BSD-3-Clause"
+  },
+  "RW04": {
+   "ok": true,
+   "tree": "ISC"
+  },
+  "RW05": {
+   "ok": true,
+   "tree": "BSD-2-Clause"
+  },
+  "RW06": {
+   "ok": true,
+   "tree": "BlueOak-1.0.0"
+  },
+  "RW07": {
+   "ok": true,
+   "tree": "0BSD"
+  },
+  "RW08": {
+   "ok": true,
+   "tree": "LGPL-3.0-only"
+  },
+  "RW09": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "RW10": {
+   "ok": true,
+   "tree": "PSF-2.0"
+  },
+  "RW11": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "CC0-1.0"
+   ]
+  },
+  "RW12": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "Apache-2.0",
+    "BSD-2-Clause"
+   ]
+  },
+  "RW13": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "Apache-2.0",
+    "CNRI-Python"
+   ]
+  },
+  "RW14": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "Apache-2.0",
+    "MIT"
+   ]
+  },
+  "RW15": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "Apache-2.0",
+    "BSD-2-Clause"
+   ]
+  },
+  "RW16": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "Apache-2.0",
+    "BSD-3-Clause"
+   ]
+  },
+  "RW17": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "BSD-3-Clause",
+    "0BSD",
+    "MIT",
+    "Zlib",
+    "CC0-1.0"
+   ]
+  },
+  "RW18": {
+   "ok": true,
+   "tree": "CC-BY-4.0"
+  },
+  "RW19": {
+   "ok": true,
+   "tree": "LGPL-2.1-only"
+  },
+  "RW20": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "PSF-2.0"
+   ]
+  },
+  "RW21": {
+   "ok": true,
+   "tree": "MIT-0"
+  },
+  "RW22": {
+   "ok": true,
+   "tree": "MIT-CMU"
+  },
+  "RW23": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MPL-2.0",
+    [
+     "OR",
+     "Apache-2.0",
+     "MIT"
+    ]
+   ]
+  }
+ },
+ "packaging": {
+  "RW01": {
+   "ok": true,
+   "canon": "MIT"
+  },
+  "RW02": {
+   "ok": true,
+   "canon": "Apache-2.0"
+  },
+  "RW03": {
+   "ok": true,
+   "canon": "BSD-3-Clause"
+  },
+  "RW04": {
+   "ok": true,
+   "canon": "ISC"
+  },
+  "RW05": {
+   "ok": true,
+   "canon": "BSD-2-Clause"
+  },
+  "RW06": {
+   "ok": true,
+   "canon": "BlueOak-1.0.0"
+  },
+  "RW07": {
+   "ok": true,
+   "canon": "0BSD"
+  },
+  "RW08": {
+   "ok": true,
+   "canon": "LGPL-3.0-only"
+  },
+  "RW09": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0"
+  },
+  "RW10": {
+   "ok": true,
+   "canon": "PSF-2.0"
+  },
+  "RW11": {
+   "ok": true,
+   "canon": "(MIT OR CC0-1.0)"
+  },
+  "RW12": {
+   "ok": true,
+   "canon": "Apache-2.0 AND BSD-2-Clause"
+  },
+  "RW13": {
+   "ok": true,
+   "canon": "Apache-2.0 AND CNRI-Python"
+  },
+  "RW14": {
+   "ok": true,
+   "canon": "Apache-2.0 AND MIT"
+  },
+  "RW15": {
+   "ok": true,
+   "canon": "Apache-2.0 OR BSD-2-Clause"
+  },
+  "RW16": {
+   "ok": true,
+   "canon": "Apache-2.0 OR BSD-3-Clause"
+  },
+  "RW17": {
+   "ok": true,
+   "canon": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+  },
+  "RW18": {
+   "ok": true,
+   "canon": "CC-BY-4.0"
+  },
+  "RW19": {
+   "ok": true,
+   "canon": "LGPL-2.1"
+  },
+  "RW20": {
+   "ok": true,
+   "canon": "MIT AND PSF-2.0"
+  },
+  "RW21": {
+   "ok": true,
+   "canon": "MIT-0"
+  },
+  "RW22": {
+   "ok": true,
+   "canon": "MIT-CMU"
+  },
+  "RW23": {
+   "ok": true,
+   "canon": "MPL-2.0 AND (Apache-2.0 OR MIT)"
+  }
+ }
+}

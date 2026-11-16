@@ -1,0 +1,123 @@
+cases 91; acceptance split 34; any split (acceptance, leaves or tree) 35; leaf split 1; tree split 1
+classes A/N/T/R/L/-:
+  spdx-expression-parse@5    A77 N0 T0 R6 L4 -4
+  spdx-expression-parse@3    A75 N0 T0 R11 L1 -4
+  license-expression         A67 N5 T1 R11 L3 -4
+  spdx-rs                    A75 N0 T0 R11 L1 -4
+  packaging                  A80 N0 T0 R2 L5 -4
+  go-spdx                    A77 N1 T0 R7 L2 -4
+probe mismatches vs spec precedence: {'spdx-satisfies@6': ['K07'], 'go-spdx': ['K07'], 'spdx-rs': []}
+go-spdx: ValidateAndNormalize accepts but ExtractLicenses fails: ['K03', 'K06']
+pairwise acceptance disagreement: 7 - 23
+  license-expression vs spdx-expression-parse@3: 23
+  license-expression vs spdx-rs: 23
+  go-spdx vs spdx-rs: 23
+  packaging vs spdx-rs: 20
+  spdx-expression-parse@3 vs spdx-rs: 18
+  packaging vs spdx-expression-parse@3: 18
+  license-expression vs spdx-expression-parse@5: 17
+  spdx-expression-parse@5 vs spdx-rs: 16
+  go-spdx vs license-expression: 16
+  go-spdx vs packaging: 13
+  license-expression vs packaging: 11
+  go-spdx vs spdx-expression-parse@5: 11
+  packaging vs spdx-expression-parse@5: 10
+  spdx-expression-parse@3 vs spdx-expression-parse@5: 8
+  go-spdx vs spdx-expression-parse@3: 7
+
+id | expr | expect | spdx-expression-parse@5 | spdx-expression-parse@3 | license-expression | spdx-rs | packaging | go-spdx
+S01 | 'MIT' | MIT | A:MIT | A:MIT | A:MIT | A:MIT | A:MIT | A:MIT
+S02 | 'Apache-2.0' | Apache-2.0 | A:Apache-2.0 | A:Apache-2.0 | A:Apache-2.0 | A:Apache-2.0 | A:Apache-2.0 | A:Apache-2.0
+S03 | 'MIT OR Apache-2.0' | (OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:MIT OR Apache-2.0 | A:MIT OR Apache-2.0
+S04 | 'MIT AND Apache-2.0' | (AND MIT Apache-2.0) | A:(AND MIT Apache-2.0) | A:(AND MIT Apache-2.0) | A:(AND MIT Apache-2.0) | A:(AND MIT Apache-2.0) | A:MIT AND Apache-2.0 | A:MIT AND Apache-2.0
+S05 | 'GPL-2.0-or-later WITH Classpath-exception-2.0' | GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0
+S06 | 'LicenseRef-Proprietary' | LicenseRef-Proprietary | A:LicenseRef-Proprietary | A:LicenseRef-Proprietary | R:REJECT | A:LicenseRef-Proprietary | A:LicenseRef-Proprietary | A:LicenseRef-Proprietary
+S07 | 'DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2' | DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2 | A:DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2 | A:DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2 | R:REJECT | A:DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2 | R:REJECT | A:DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2
+S08 | 'CDDL-1.0+' | CDDL-1.0+ | A:CDDL-1.0+ | A:CDDL-1.0+ | R:REJECT | A:CDDL-1.0+ | A:CDDL-1.0+ | A:CDDL-1.0+
+S09 | '(MIT OR Apache-2.0) AND BSD-3-Clause' | (AND (OR MIT Apache-2.0) BSD-3-Clause) | A:(AND (OR MIT Apache-2.0) BSD-3-Clause) | A:(AND (OR MIT Apache-2.0) BSD-3-Clause) | A:(AND (OR MIT Apache-2.0) BSD-3-Clause) | A:(AND (OR MIT Apache-2.0) BSD-3-Clause) | A:(MIT OR Apache-2.0) AND BSD-3-Clause | A:(MIT OR Apache-2.0) AND BSD-3-Clause
+S10 | 'Apache-2.0 WITH LLVM-exception' | Apache-2.0 WITH LLVM-exception | A:Apache-2.0 WITH LLVM-exception | A:Apache-2.0 WITH LLVM-exception | A:Apache-2.0 WITH LLVM-exception | A:Apache-2.0 WITH LLVM-exception | A:Apache-2.0 WITH LLVM-exception | A:Apache-2.0 WITH LLVM-exception
+P01 | 'LGPL-2.1-only OR BSD-3-Clause AND MIT' | (OR LGPL-2.1-only (AND BSD-3-Clause MIT)) | A:(OR LGPL-2.1-only (AND BSD-3-Clause MIT)) | A:(OR LGPL-2.1-only (AND BSD-3-Clause MIT)) | A:(OR LGPL-2.1-only (AND BSD-3-Clause MIT)) | A:(OR LGPL-2.1-only (AND BSD-3-Clause MIT)) | A:LGPL-2.1-only OR BSD-3-Clause AND MIT | A:LGPL-2.1-only OR BSD-3-Clause AND MIT
+P02 | 'MIT AND BSD-3-Clause OR Apache-2.0' | (OR (AND MIT BSD-3-Clause) Apache-2.0) | A:(OR (AND MIT BSD-3-Clause) Apache-2.0) | A:(OR (AND MIT BSD-3-Clause) Apache-2.0) | A:(OR (AND MIT BSD-3-Clause) Apache-2.0) | A:(OR (AND MIT BSD-3-Clause) Apache-2.0) | A:MIT AND BSD-3-Clause OR Apache-2.0 | A:MIT AND BSD-3-Clause OR Apache-2.0
+P03 | 'MIT OR Apache-2.0 AND BSD-2-Clause OR ISC' | (OR MIT (AND Apache-2.0 BSD-2-Clause) ISC) | A:(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC) | A:(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC) | A:(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC) | A:(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC) | A:MIT OR Apache-2.0 AND BSD-2-Clause OR ISC | A:MIT OR Apache-2.0 AND BSD-2-Clause OR ISC
+P04 | 'GPL-2.0-only WITH Classpath-exception-2.0 OR MIT' | (OR GPL-2.0-only WITH Classpath-exception-2.0 MIT) | A:(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT) | A:(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT) | A:(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT) | A:(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT) | A:GPL-2.0-only WITH Classpath-exception-2.0 OR MIT | A:GPL-2.0-only WITH Classpath-exception-2.0 OR MIT
+P05 | 'MIT AND GPL-2.0-only WITH Classpath-exception-2.0' | (AND MIT GPL-2.0-only WITH Classpath-exception-2.0) | A:(AND MIT GPL-2.0-only WITH Classpath-exception-2.0) | A:(AND MIT GPL-2.0-only WITH Classpath-exception-2.0) | A:(AND MIT GPL-2.0-only WITH Classpath-exception-2.0) | A:(AND MIT GPL-2.0-only WITH Classpath-exception-2.0) | A:MIT AND GPL-2.0-only WITH Classpath-exception-2.0 | A:MIT AND GPL-2.0-only WITH Classpath-exception-2.0
+P06 | '(MIT)' | MIT | A:MIT | A:MIT | A:MIT | A:MIT | A:(MIT) | A:MIT
+P07 | '((MIT))' | MIT | A:MIT | A:MIT | A:MIT | A:MIT | A:((MIT)) | A:MIT
+P08 | 'MIT AND (Apache-2.0 OR BSD-3-Clause)' | (AND MIT (OR Apache-2.0 BSD-3-Clause)) | A:(AND MIT (OR Apache-2.0 BSD-3-Clause)) | A:(AND MIT (OR Apache-2.0 BSD-3-Clause)) | A:(AND MIT (OR Apache-2.0 BSD-3-Clause)) | A:(AND MIT (OR Apache-2.0 BSD-3-Clause)) | A:MIT AND (Apache-2.0 OR BSD-3-Clause) | A:MIT AND (Apache-2.0 OR BSD-3-Clause)
+P09 | '(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)' | (AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC)) | A:(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC)) | A:(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC)) | A:(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC)) | A:(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC)) | A:(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC) | A:(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)
+P10 | 'MIT AND Apache-2.0 AND BSD-3-Clause OR ISC' | (OR (AND MIT Apache-2.0 BSD-3-Clause) ISC) | A:(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC) | A:(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC) | A:(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC) | A:(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC) | A:MIT AND Apache-2.0 AND BSD-3-Clause OR ISC | A:MIT AND Apache-2.0 AND BSD-3-Clause OR ISC
+K01 | 'MIT or Apache-2.0' | (OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | R:REJECT | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:MIT OR Apache-2.0 | R:REJECT
+K02 | 'MIT and Apache-2.0' | (AND MIT Apache-2.0) | A:(AND MIT Apache-2.0) | R:REJECT | A:(AND MIT Apache-2.0) | A:(AND MIT Apache-2.0) | A:MIT AND Apache-2.0 | R:REJECT
+K03 | 'GPL-2.0-or-later with Classpath-exception-2.0' | GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | R:REJECT | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0
+K04 | 'MIT Or Apache-2.0' | INVALID | L:(OR MIT Apache-2.0) | A:REJECT | L:(OR MIT Apache-2.0) | A:REJECT | L:MIT OR Apache-2.0 | A:REJECT
+K05 | 'MIT aNd Apache-2.0' | INVALID | L:(AND MIT Apache-2.0) | A:REJECT | L:(AND MIT Apache-2.0) | A:REJECT | L:MIT AND Apache-2.0 | A:REJECT
+K06 | 'GPL-2.0-or-later With Classpath-exception-2.0' | INVALID | L:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:REJECT | L:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:REJECT | L:GPL-2.0-or-later WITH Classpath-exception-2.0 | L:GPL-2.0-or-later WITH Classpath-exception-2.0
+K07 | 'MIT OR Apache-2.0 and BSD-3-Clause' | (OR MIT (AND Apache-2.0 BSD-3-Clause)) | A:(OR MIT (AND Apache-2.0 BSD-3-Clause)) | R:REJECT | A:(OR MIT (AND Apache-2.0 BSD-3-Clause)) | A:(OR MIT (AND Apache-2.0 BSD-3-Clause)) | A:MIT OR Apache-2.0 AND BSD-3-Clause | R:REJECT
+I01 | 'mit' | MIT | R:REJECT | R:REJECT | A:MIT | R:REJECT | A:MIT | A:MIT
+I02 | 'apache-2.0 OR mit' | (OR Apache-2.0 MIT) | R:REJECT | R:REJECT | A:(OR Apache-2.0 MIT) | R:REJECT | A:Apache-2.0 OR MIT | A:Apache-2.0 OR MIT
+I03 | 'Gpl-2.0-Or-Later WITH classpath-exception-2.0' | GPL-2.0-or-later WITH Classpath-exception-2.0 | R:REJECT | R:REJECT | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | R:REJECT | A:GPL-2.0-or-later WITH Classpath-exception-2.0 | A:GPL-2.0-or-later WITH Classpath-exception-2.0
+I04 | 'BSD-3-CLAUSE' | BSD-3-Clause | R:REJECT | R:REJECT | A:BSD-3-Clause | R:REJECT | A:BSD-3-Clause | A:BSD-3-Clause
+I05 | 'licenseref-foo' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | L:LicenseRef-foo | A:REJECT
+I06 | 'LICENSEREF-foo' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | L:LicenseRef-foo | A:REJECT
+I07 | 'LicenseRef-FOO' | LicenseRef-FOO | A:LicenseRef-FOO | A:LicenseRef-FOO | R:REJECT | A:LicenseRef-FOO | A:LicenseRef-FOO | A:LicenseRef-FOO
+I08 | 'documentref-a:LicenseRef-b' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+D01 | 'GPL-2.0' | GPL-2.0 | A:GPL-2.0 | A:GPL-2.0 | N:GPL-2.0-only | R:REJECT | A:GPL-2.0 | A:GPL-2.0
+D02 | 'GPL-2.0+' | GPL-2.0+ | A:GPL-2.0+ | A:GPL-2.0+ | N:GPL-2.0-or-later | R:REJECT | A:GPL-2.0+ | A:GPL-2.0+
+D03 | 'LGPL-2.1+' | LGPL-2.1+ | A:LGPL-2.1+ | A:LGPL-2.1+ | N:LGPL-2.1-or-later | R:REJECT | A:LGPL-2.1+ | A:LGPL-2.1+
+D04 | 'GPL-2.0-with-classpath-exception' | GPL-2.0-with-classpath-exception | A:GPL-2.0-with-classpath-exception | A:GPL-2.0-with-classpath-exception | R:REJECT | R:REJECT | A:GPL-2.0-with-classpath-exception | A:GPL-2.0-with-classpath-exception
+D05 | 'wxWindows' | wxWindows | A:wxWindows | A:wxWindows | A:wxWindows | R:REJECT | A:wxWindows | A:wxWindows
+D06 | 'Nokia-Qt-exception-1.1' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+D07 | 'GPL-2.0-only WITH Nokia-Qt-exception-1.1' | GPL-2.0-only WITH Nokia-Qt-exception-1.1 | R:REJECT | R:REJECT | N:GPL-2.0-only WITH Qt-LGPL-exception-1.1 | A:GPL-2.0-only WITH Nokia-Qt-exception-1.1 | A:GPL-2.0-only WITH Nokia-Qt-exception-1.1 | R:REJECT
+D08 | 'Foo-License-1.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+D09 | 'MIT OR Foo-License-1.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+U01 | 'MIT+' | MIT+ | A:MIT+ | A:MIT+ | R:REJECT | A:MIT+ | A:MIT+ | A:MIT+
+U02 | 'GPL-2.0-or-later+' | GPL-2.0-or-later+ | A:GPL-2.0-or-later+ | A:GPL-2.0-or-later+ | R:REJECT | R:REJECT | A:GPL-2.0-or-later+ | N:GPL-2.0-or-later
+U03 | 'MIT +' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+U04 | 'LicenseRef-foo+' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+U05 | 'Apache-1.1+ WITH LLVM-exception' | Apache-1.1+ WITH LLVM-exception | A:Apache-1.1+ WITH LLVM-exception | A:Apache-1.1+ WITH LLVM-exception | R:REJECT | A:Apache-1.1+ WITH LLVM-exception | A:Apache-1.1+ WITH LLVM-exception | R:REJECT
+W01 | 'MIT WITH Apache-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+W02 | 'Classpath-exception-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+W03 | 'GPL-2.0-only WITH LicenseRef-x' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+W04 | 'GPL-2.0-only WITH AdditionRef-x' | GPL-2.0-only WITH AdditionRef-x | R:REJECT | R:REJECT | R:REJECT | A:GPL-2.0-only WITH AdditionRef-x | R:REJECT | R:REJECT
+W05 | 'LicenseRef-x WITH Classpath-exception-2.0' | LicenseRef-x WITH Classpath-exception-2.0 | A:LicenseRef-x WITH Classpath-exception-2.0 | R:REJECT | R:REJECT | A:LicenseRef-x WITH Classpath-exception-2.0 | A:LicenseRef-x WITH Classpath-exception-2.0 | R:REJECT
+W06 | 'GPL-2.0-only WITH Classpath-exception-2.0 WITH LLVM-exception' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+W07 | '(MIT OR Apache-2.0) WITH LLVM-exception' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+W08 | 'GPL-2.0-only WITH' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+W09 | 'WITH Classpath-exception-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X01 | '' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X02 | 'MIT OR' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X03 | 'OR MIT' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X04 | 'MIT AND AND Apache-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X05 | '(MIT OR Apache-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X06 | 'MIT OR Apache-2.0)' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X07 | '()' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X08 | 'MIT/Apache-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X09 | 'MIT, Apache-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X10 | 'MIT Apache-2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+X11 | 'MIT OR(Apache-2.0)' | (OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:MIT OR (Apache-2.0) | A:MIT OR Apache-2.0
+X12 | '(MIT)OR(Apache-2.0)' | (OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(MIT) OR (Apache-2.0) | A:MIT OR Apache-2.0
+X13 | 'MIT  OR  Apache-2.0' | (OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:MIT OR Apache-2.0 | A:MIT OR Apache-2.0
+X14 | ' MIT ' | OPEN | -:MIT | -:MIT | -:MIT | -:MIT | -:MIT | -:MIT
+X15 | 'MIT\tOR Apache-2.0' | OPEN | -:REJECT | -:REJECT | -:(OR MIT Apache-2.0) | -:(OR MIT Apache-2.0) | -:MIT OR Apache-2.0 | -:REJECT
+X16 | 'MIT ORApache-2.0' | INVALID | L:(OR MIT Apache-2.0) | L:(OR MIT Apache-2.0) | A:REJECT | A:REJECT | A:REJECT | L:MIT OR Apache-2.0
+R01 | 'LicenseRef-my_license' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+R02 | 'LicenseRef-' | INVALID | A:REJECT | A:REJECT | A:REJECT | L:LicenseRef- | A:REJECT | A:REJECT
+R03 | 'LicenseRef-a.b-c' | LicenseRef-a.b-c | A:LicenseRef-a.b-c | A:LicenseRef-a.b-c | R:REJECT | A:LicenseRef-a.b-c | A:LicenseRef-a.b-c | A:LicenseRef-a.b-c
+R04 | 'LicenseRef-scancode-unknown-license-reference' | LicenseRef-scancode-unknown-license-reference | A:LicenseRef-scancode-unknown-license-reference | A:LicenseRef-scancode-unknown-license-reference | A:LicenseRef-scancode-unknown-license-reference | A:LicenseRef-scancode-unknown-license-reference | A:LicenseRef-scancode-unknown-license-reference | A:LicenseRef-scancode-unknown-license-reference
+R05 | 'MIT AND LicenseRef-Commercial' | (AND MIT LicenseRef-Commercial) | A:(AND MIT LicenseRef-Commercial) | A:(AND MIT LicenseRef-Commercial) | T:(AND MIT LicenseRef-scancode-commercial-license) | A:(AND MIT LicenseRef-Commercial) | A:MIT AND LicenseRef-Commercial | A:MIT AND LicenseRef-Commercial
+M01 | 'Apache 2.0' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+M02 | 'MIT License' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+M03 | 'BSD' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+M04 | 'UNLICENSED' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+M05 | 'SEE LICENSE IN LICENSE' | INVALID | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT | A:REJECT
+M06 | 'NONE' | OPEN | -:REJECT | -:REJECT | -:REJECT | -:REJECT | -:REJECT | -:REJECT
+M07 | 'NOASSERTION' | OPEN | -:REJECT | -:REJECT | -:REJECT | -:NOASSERTION | -:REJECT | -:REJECT
+M08 | 'MIT OR Apache-2.0' | (OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:(OR MIT Apache-2.0) | A:MIT OR Apache-2.0 | A:MIT OR Apache-2.0
+M09 | 'Apache-2.0 WITH LLVM-exception OR MIT' | (OR Apache-2.0 WITH LLVM-exception MIT) | A:(OR Apache-2.0 WITH LLVM-exception MIT) | A:(OR Apache-2.0 WITH LLVM-exception MIT) | A:(OR Apache-2.0 WITH LLVM-exception MIT) | A:(OR Apache-2.0 WITH LLVM-exception MIT) | A:Apache-2.0 WITH LLVM-exception OR MIT | A:Apache-2.0 WITH LLVM-exception OR MIT
+M10 | '(MIT OR Apache-2.0) AND Unicode-3.0' | (AND (OR MIT Apache-2.0) Unicode-3.0) | A:(AND (OR MIT Apache-2.0) Unicode-3.0) | A:(AND (OR MIT Apache-2.0) Unicode-3.0) | A:(AND (OR MIT Apache-2.0) Unicode-3.0) | A:(AND (OR MIT Apache-2.0) Unicode-3.0) | A:(MIT OR Apache-2.0) AND Unicode-3.0 | A:(MIT OR Apache-2.0) AND Unicode-3.0
+M11 | 'GPL-3.0' | GPL-3.0 | A:GPL-3.0 | A:GPL-3.0 | N:GPL-3.0-only | R:REJECT | A:GPL-3.0 | A:GPL-3.0
+M12 | 'Python-2.0' | Python-2.0 | A:Python-2.0 | A:Python-2.0 | A:Python-2.0 | A:Python-2.0 | A:Python-2.0 | A:Python-2.0
+
+real-world sample: 23 distinct strings from 453 packages
+  RW19 'LGPL-2.1' packages=1 rejected_by=['spdx-rs'] rewritten=True
+  unanimous: 22/23 strings

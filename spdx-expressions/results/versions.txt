@@ -1,0 +1,17 @@
+node v24.22.1
+spdx-expression-parse 5.0.0
+sep3 3.0.1
+spdx-satisfies 6.0.1
+spdx-license-ids 3.0.24
+spdx-exceptions 2.5.0
+python 3.13.5
+license-expression 30.4.4
+packaging 26.3
+boolean.py 5.0
+go version go1.27.3 linux/amd64
+require github.com/github/go-spdx/v2 v2.8.0
+rustc 1.85.1 (4eb161250 2025-03-15) (built from a source tarball)
+name = "spdx" version = "0.13.6" 
+go-spdx license list 3.29.0
+packaging license list 3.27.0
+spdx-rs license list 3.29.0

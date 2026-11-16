@@ -1,0 +1,538 @@
+{
+  "_list_version": "3.29.0",
+  "spdx-rs": {
+    "D01": {
+      "err": "DeprecatedLicenseId",
+      "ok": false
+    },
+    "D02": {
+      "err": "DeprecatedLicenseId",
+      "ok": false
+    },
+    "D03": {
+      "err": "DeprecatedLicenseId",
+      "ok": false
+    },
+    "D04": {
+      "err": "DeprecatedLicenseId",
+      "ok": false
+    },
+    "D05": {
+      "err": "DeprecatedLicenseId",
+      "ok": false
+    },
+    "D06": {
+      "err": "Unexpected([\"<license>\", \"(\"])",
+      "ok": false
+    },
+    "D07": {
+      "ok": true,
+      "tree": "GPL-2.0-only WITH Nokia-Qt-exception-1.1"
+    },
+    "D08": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "D09": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "I01": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "I02": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "I03": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "I04": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "I05": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "I06": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "I07": {
+      "ok": true,
+      "tree": "LicenseRef-FOO"
+    },
+    "I08": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "K01": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "K02": {
+      "ok": true,
+      "tree": [
+        "AND",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "K03": {
+      "ok": true,
+      "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+    },
+    "K04": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "K05": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "K06": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "K07": {
+      "ok": true,
+      "probes": [
+        true,
+        false
+      ],
+      "tree": [
+        "OR",
+        "MIT",
+        [
+          "AND",
+          "Apache-2.0",
+          "BSD-3-Clause"
+        ]
+      ]
+    },
+    "M01": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "M02": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "M03": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "M04": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "M05": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "M06": {
+      "err": "UnknownTerm",
+      "ok": false
+    },
+    "M07": {
+      "ok": true,
+      "tree": "NOASSERTION"
+    },
+    "M08": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "M09": {
+      "ok": true,
+      "probes": [
+        true,
+        false
+      ],
+      "tree": [
+        "OR",
+        "Apache-2.0 WITH LLVM-exception",
+        "MIT"
+      ]
+    },
+    "M10": {
+      "ok": true,
+      "tree": [
+        "AND",
+        [
+          "OR",
+          "MIT",
+          "Apache-2.0"
+        ],
+        "Unicode-3.0"
+      ]
+    },
+    "M11": {
+      "err": "DeprecatedLicenseId",
+      "ok": false
+    },
+    "M12": {
+      "ok": true,
+      "tree": "Python-2.0"
+    },
+    "P01": {
+      "ok": true,
+      "probes": [
+        true,
+        false,
+        true
+      ],
+      "tree": [
+        "OR",
+        "LGPL-2.1-only",
+        [
+          "AND",
+          "BSD-3-Clause",
+          "MIT"
+        ]
+      ]
+    },
+    "P02": {
+      "ok": true,
+      "probes": [
+        true,
+        false,
+        true
+      ],
+      "tree": [
+        "OR",
+        [
+          "AND",
+          "MIT",
+          "BSD-3-Clause"
+        ],
+        "Apache-2.0"
+      ]
+    },
+    "P03": {
+      "ok": true,
+      "probes": [
+        true,
+        false,
+        true
+      ],
+      "tree": [
+        "OR",
+        "MIT",
+        [
+          "OR",
+          [
+            "AND",
+            "Apache-2.0",
+            "BSD-2-Clause"
+          ],
+          "ISC"
+        ]
+      ]
+    },
+    "P04": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "GPL-2.0-only WITH Classpath-exception-2.0",
+        "MIT"
+      ]
+    },
+    "P05": {
+      "ok": true,
+      "tree": [
+        "AND",
+        "MIT",
+        "GPL-2.0-only WITH Classpath-exception-2.0"
+      ]
+    },
+    "P06": {
+      "ok": true,
+      "tree": "MIT"
+    },
+    "P07": {
+      "ok": true,
+      "tree": "MIT"
+    },
+    "P08": {
+      "ok": true,
+      "probes": [
+        false,
+        true,
+        false
+      ],
+      "tree": [
+        "AND",
+        "MIT",
+        [
+          "OR",
+          "Apache-2.0",
+          "BSD-3-Clause"
+        ]
+      ]
+    },
+    "P09": {
+      "ok": true,
+      "tree": [
+        "AND",
+        [
+          "OR",
+          "MIT",
+          "Apache-2.0"
+        ],
+        [
+          "OR",
+          "BSD-2-Clause",
+          "ISC"
+        ]
+      ]
+    },
+    "P10": {
+      "ok": true,
+      "probes": [
+        true,
+        false,
+        true
+      ],
+      "tree": [
+        "OR",
+        [
+          "AND",
+          "MIT",
+          [
+            "AND",
+            "Apache-2.0",
+            "BSD-3-Clause"
+          ]
+        ],
+        "ISC"
+      ]
+    },
+    "R01": {
+      "err": "InvalidCharacters",
+      "ok": false
+    },
+    "R02": {
+      "ok": true,
+      "tree": "LicenseRef-"
+    },
+    "R03": {
+      "ok": true,
+      "tree": "LicenseRef-a.b-c"
+    },
+    "R04": {
+      "ok": true,
+      "tree": "LicenseRef-scancode-unknown-license-reference"
+    },
+    "R05": {
+      "ok": true,
+      "tree": [
+        "AND",
+        "MIT",
+        "LicenseRef-Commercial"
+      ]
+    },
+    "S01": {
+      "ok": true,
+      "tree": "MIT"
+    },
+    "S02": {
+      "ok": true,
+      "tree": "Apache-2.0"
+    },
+    "S03": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "S04": {
+      "ok": true,
+      "tree": [
+        "AND",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "S05": {
+      "ok": true,
+      "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+    },
+    "S06": {
+      "ok": true,
+      "tree": "LicenseRef-Proprietary"
+    },
+    "S07": {
+      "ok": true,
+      "tree": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2"
+    },
+    "S08": {
+      "ok": true,
+      "tree": "CDDL-1.0+"
+    },
+    "S09": {
+      "ok": true,
+      "tree": [
+        "AND",
+        [
+          "OR",
+          "MIT",
+          "Apache-2.0"
+        ],
+        "BSD-3-Clause"
+      ]
+    },
+    "S10": {
+      "ok": true,
+      "tree": "Apache-2.0 WITH LLVM-exception"
+    },
+    "U01": {
+      "ok": true,
+      "tree": "MIT+"
+    },
+    "U02": {
+      "err": "GnuNoPlus",
+      "ok": false
+    },
+    "U03": {
+      "err": "SeparatedPlus",
+      "ok": false
+    },
+    "U04": {
+      "err": "Unexpected([\"AND\", \"OR\", \"WITH\", \")\"])",
+      "ok": false
+    },
+    "U05": {
+      "ok": true,
+      "tree": "Apache-1.1+ WITH LLVM-exception"
+    },
+    "W01": {
+      "err": "Unexpected([\"<addition>\"])",
+      "ok": false
+    },
+    "W02": {
+      "err": "Unexpected([\"<license>\", \"(\"])",
+      "ok": false
+    },
+    "W03": {
+      "err": "Unexpected([\"<addition>\"])",
+      "ok": false
+    },
+    "W04": {
+      "ok": true,
+      "tree": "GPL-2.0-only WITH AdditionRef-x"
+    },
+    "W05": {
+      "ok": true,
+      "tree": "LicenseRef-x WITH Classpath-exception-2.0"
+    },
+    "W06": {
+      "err": "Unexpected([\"AND\", \"OR\", \")\"])",
+      "ok": false
+    },
+    "W07": {
+      "err": "Unexpected([\"AND\", \"OR\"])",
+      "ok": false
+    },
+    "W08": {
+      "err": "Unexpected([\"<addition>\"])",
+      "ok": false
+    },
+    "W09": {
+      "err": "Unexpected([\"<license>\", \"(\"])",
+      "ok": false
+    },
+    "X01": {
+      "err": "Empty",
+      "ok": false
+    },
+    "X02": {
+      "err": "Unexpected([\"<license>\", \"(\"])",
+      "ok": false
+    },
+    "X03": {
+      "err": "Unexpected([\"<license>\", \"(\"])",
+      "ok": false
+    },
+    "X04": {
+      "err": "Unexpected([\"<license>\", \"(\"])",
+      "ok": false
+    },
+    "X05": {
+      "err": "UnclosedParens",
+      "ok": false
+    },
+    "X06": {
+      "err": "UnopenedParens",
+      "ok": false
+    },
+    "X07": {
+      "err": "Unexpected([\"<license>\", \"(\"])",
+      "ok": false
+    },
+    "X08": {
+      "err": "InvalidCharacters",
+      "ok": false
+    },
+    "X09": {
+      "err": "InvalidCharacters",
+      "ok": false
+    },
+    "X10": {
+      "err": "Unexpected([\"AND\", \"OR\", \"WITH\", \")\", \"+\"])",
+      "ok": false
+    },
+    "X11": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "X12": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "X13": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "X14": {
+      "ok": true,
+      "tree": "MIT"
+    },
+    "X15": {
+      "ok": true,
+      "tree": [
+        "OR",
+        "MIT",
+        "Apache-2.0"
+      ]
+    },
+    "X16": {
+      "err": "UnknownTerm",
+      "ok": false
+    }
+  }
+}

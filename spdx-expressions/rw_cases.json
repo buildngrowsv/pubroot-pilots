@@ -1,0 +1,186 @@
+[
+ {
+  "id": "RW01",
+  "group": "realworld",
+  "expr": "MIT",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 310
+ },
+ {
+  "id": "RW02",
+  "group": "realworld",
+  "expr": "Apache-2.0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 40
+ },
+ {
+  "id": "RW03",
+  "group": "realworld",
+  "expr": "BSD-3-Clause",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 37
+ },
+ {
+  "id": "RW04",
+  "group": "realworld",
+  "expr": "ISC",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 20
+ },
+ {
+  "id": "RW05",
+  "group": "realworld",
+  "expr": "BSD-2-Clause",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 13
+ },
+ {
+  "id": "RW06",
+  "group": "realworld",
+  "expr": "BlueOak-1.0.0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 12
+ },
+ {
+  "id": "RW07",
+  "group": "realworld",
+  "expr": "0BSD",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 2
+ },
+ {
+  "id": "RW08",
+  "group": "realworld",
+  "expr": "LGPL-3.0-only",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 2
+ },
+ {
+  "id": "RW09",
+  "group": "realworld",
+  "expr": "MIT OR Apache-2.0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 2
+ },
+ {
+  "id": "RW10",
+  "group": "realworld",
+  "expr": "PSF-2.0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 2
+ },
+ {
+  "id": "RW11",
+  "group": "realworld",
+  "expr": "(MIT OR CC0-1.0)",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW12",
+  "group": "realworld",
+  "expr": "Apache-2.0 AND BSD-2-Clause",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW13",
+  "group": "realworld",
+  "expr": "Apache-2.0 AND CNRI-Python",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW14",
+  "group": "realworld",
+  "expr": "Apache-2.0 AND MIT",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW15",
+  "group": "realworld",
+  "expr": "Apache-2.0 OR BSD-2-Clause",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW16",
+  "group": "realworld",
+  "expr": "Apache-2.0 OR BSD-3-Clause",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW17",
+  "group": "realworld",
+  "expr": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW18",
+  "group": "realworld",
+  "expr": "CC-BY-4.0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW19",
+  "group": "realworld",
+  "expr": "LGPL-2.1",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW20",
+  "group": "realworld",
+  "expr": "MIT AND PSF-2.0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW21",
+  "group": "realworld",
+  "expr": "MIT-0",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW22",
+  "group": "realworld",
+  "expr": "MIT-CMU",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ },
+ {
+  "id": "RW23",
+  "group": "realworld",
+  "expr": "MPL-2.0 AND (Apache-2.0 OR MIT)",
+  "expect": "OPEN",
+  "probes": [],
+  "packages": 1
+ }
+]

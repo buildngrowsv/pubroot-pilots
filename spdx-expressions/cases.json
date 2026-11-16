@@ -1,0 +1,767 @@
+[
+ {
+  "id": "S01",
+  "group": "basic",
+  "expr": "MIT",
+  "expect": "MIT",
+  "probes": []
+ },
+ {
+  "id": "S02",
+  "group": "basic",
+  "expr": "Apache-2.0",
+  "expect": "Apache-2.0",
+  "probes": []
+ },
+ {
+  "id": "S03",
+  "group": "basic",
+  "expr": "MIT OR Apache-2.0",
+  "expect": "(OR MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "S04",
+  "group": "basic",
+  "expr": "MIT AND Apache-2.0",
+  "expect": "(AND MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "S05",
+  "group": "basic",
+  "expr": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+  "expect": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+  "probes": []
+ },
+ {
+  "id": "S06",
+  "group": "basic",
+  "expr": "LicenseRef-Proprietary",
+  "expect": "LicenseRef-Proprietary",
+  "probes": []
+ },
+ {
+  "id": "S07",
+  "group": "basic",
+  "expr": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+  "expect": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+  "probes": []
+ },
+ {
+  "id": "S08",
+  "group": "basic",
+  "expr": "CDDL-1.0+",
+  "expect": "CDDL-1.0+",
+  "probes": []
+ },
+ {
+  "id": "S09",
+  "group": "basic",
+  "expr": "(MIT OR Apache-2.0) AND BSD-3-Clause",
+  "expect": "(AND (OR MIT Apache-2.0) BSD-3-Clause)",
+  "probes": []
+ },
+ {
+  "id": "S10",
+  "group": "basic",
+  "expr": "Apache-2.0 WITH LLVM-exception",
+  "expect": "Apache-2.0 WITH LLVM-exception",
+  "probes": []
+ },
+ {
+  "id": "P01",
+  "group": "precedence",
+  "expr": "LGPL-2.1-only OR BSD-3-Clause AND MIT",
+  "expect": "(OR LGPL-2.1-only (AND BSD-3-Clause MIT))",
+  "probes": [
+   {
+    "allow": [
+     "LGPL-2.1-only"
+    ],
+    "sat": true
+   },
+   {
+    "allow": [
+     "BSD-3-Clause"
+    ],
+    "sat": false
+   },
+   {
+    "allow": [
+     "BSD-3-Clause",
+     "MIT"
+    ],
+    "sat": true
+   }
+  ]
+ },
+ {
+  "id": "P02",
+  "group": "precedence",
+  "expr": "MIT AND BSD-3-Clause OR Apache-2.0",
+  "expect": "(OR (AND MIT BSD-3-Clause) Apache-2.0)",
+  "probes": [
+   {
+    "allow": [
+     "Apache-2.0"
+    ],
+    "sat": true
+   },
+   {
+    "allow": [
+     "MIT"
+    ],
+    "sat": false
+   },
+   {
+    "allow": [
+     "MIT",
+     "BSD-3-Clause"
+    ],
+    "sat": true
+   }
+  ]
+ },
+ {
+  "id": "P03",
+  "group": "precedence",
+  "expr": "MIT OR Apache-2.0 AND BSD-2-Clause OR ISC",
+  "expect": "(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC)",
+  "probes": [
+   {
+    "allow": [
+     "ISC"
+    ],
+    "sat": true
+   },
+   {
+    "allow": [
+     "Apache-2.0"
+    ],
+    "sat": false
+   },
+   {
+    "allow": [
+     "Apache-2.0",
+     "BSD-2-Clause"
+    ],
+    "sat": true
+   }
+  ]
+ },
+ {
+  "id": "P04",
+  "group": "precedence",
+  "expr": "GPL-2.0-only WITH Classpath-exception-2.0 OR MIT",
+  "expect": "(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT)",
+  "probes": []
+ },
+ {
+  "id": "P05",
+  "group": "precedence",
+  "expr": "MIT AND GPL-2.0-only WITH Classpath-exception-2.0",
+  "expect": "(AND MIT GPL-2.0-only WITH Classpath-exception-2.0)",
+  "probes": []
+ },
+ {
+  "id": "P06",
+  "group": "precedence",
+  "expr": "(MIT)",
+  "expect": "MIT",
+  "probes": []
+ },
+ {
+  "id": "P07",
+  "group": "precedence",
+  "expr": "((MIT))",
+  "expect": "MIT",
+  "probes": []
+ },
+ {
+  "id": "P08",
+  "group": "precedence",
+  "expr": "MIT AND (Apache-2.0 OR BSD-3-Clause)",
+  "expect": "(AND MIT (OR Apache-2.0 BSD-3-Clause))",
+  "probes": [
+   {
+    "allow": [
+     "MIT"
+    ],
+    "sat": false
+   },
+   {
+    "allow": [
+     "MIT",
+     "BSD-3-Clause"
+    ],
+    "sat": true
+   },
+   {
+    "allow": [
+     "Apache-2.0"
+    ],
+    "sat": false
+   }
+  ]
+ },
+ {
+  "id": "P09",
+  "group": "precedence",
+  "expr": "(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)",
+  "expect": "(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC))",
+  "probes": []
+ },
+ {
+  "id": "P10",
+  "group": "precedence",
+  "expr": "MIT AND Apache-2.0 AND BSD-3-Clause OR ISC",
+  "expect": "(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC)",
+  "probes": [
+   {
+    "allow": [
+     "ISC"
+    ],
+    "sat": true
+   },
+   {
+    "allow": [
+     "MIT",
+     "Apache-2.0"
+    ],
+    "sat": false
+   },
+   {
+    "allow": [
+     "MIT",
+     "Apache-2.0",
+     "BSD-3-Clause"
+    ],
+    "sat": true
+   }
+  ]
+ },
+ {
+  "id": "K01",
+  "group": "op-case",
+  "expr": "MIT or Apache-2.0",
+  "expect": "(OR MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "K02",
+  "group": "op-case",
+  "expr": "MIT and Apache-2.0",
+  "expect": "(AND MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "K03",
+  "group": "op-case",
+  "expr": "GPL-2.0-or-later with Classpath-exception-2.0",
+  "expect": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+  "probes": []
+ },
+ {
+  "id": "K04",
+  "group": "op-case",
+  "expr": "MIT Or Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "K05",
+  "group": "op-case",
+  "expr": "MIT aNd Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "K06",
+  "group": "op-case",
+  "expr": "GPL-2.0-or-later With Classpath-exception-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "K07",
+  "group": "op-case",
+  "expr": "MIT OR Apache-2.0 and BSD-3-Clause",
+  "expect": "(OR MIT (AND Apache-2.0 BSD-3-Clause))",
+  "probes": [
+   {
+    "allow": [
+     "MIT"
+    ],
+    "sat": true
+   },
+   {
+    "allow": [
+     "Apache-2.0"
+    ],
+    "sat": false
+   }
+  ]
+ },
+ {
+  "id": "I01",
+  "group": "id-case",
+  "expr": "mit",
+  "expect": "MIT",
+  "probes": []
+ },
+ {
+  "id": "I02",
+  "group": "id-case",
+  "expr": "apache-2.0 OR mit",
+  "expect": "(OR Apache-2.0 MIT)",
+  "probes": []
+ },
+ {
+  "id": "I03",
+  "group": "id-case",
+  "expr": "Gpl-2.0-Or-Later WITH classpath-exception-2.0",
+  "expect": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+  "probes": []
+ },
+ {
+  "id": "I04",
+  "group": "id-case",
+  "expr": "BSD-3-CLAUSE",
+  "expect": "BSD-3-Clause",
+  "probes": []
+ },
+ {
+  "id": "I05",
+  "group": "id-case",
+  "expr": "licenseref-foo",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "I06",
+  "group": "id-case",
+  "expr": "LICENSEREF-foo",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "I07",
+  "group": "id-case",
+  "expr": "LicenseRef-FOO",
+  "expect": "LicenseRef-FOO",
+  "probes": []
+ },
+ {
+  "id": "I08",
+  "group": "id-case",
+  "expr": "documentref-a:LicenseRef-b",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "D01",
+  "group": "list",
+  "expr": "GPL-2.0",
+  "expect": "GPL-2.0",
+  "probes": []
+ },
+ {
+  "id": "D02",
+  "group": "list",
+  "expr": "GPL-2.0+",
+  "expect": "GPL-2.0+",
+  "probes": []
+ },
+ {
+  "id": "D03",
+  "group": "list",
+  "expr": "LGPL-2.1+",
+  "expect": "LGPL-2.1+",
+  "probes": []
+ },
+ {
+  "id": "D04",
+  "group": "list",
+  "expr": "GPL-2.0-with-classpath-exception",
+  "expect": "GPL-2.0-with-classpath-exception",
+  "probes": []
+ },
+ {
+  "id": "D05",
+  "group": "list",
+  "expr": "wxWindows",
+  "expect": "wxWindows",
+  "probes": []
+ },
+ {
+  "id": "D06",
+  "group": "list",
+  "expr": "Nokia-Qt-exception-1.1",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "D07",
+  "group": "list",
+  "expr": "GPL-2.0-only WITH Nokia-Qt-exception-1.1",
+  "expect": "GPL-2.0-only WITH Nokia-Qt-exception-1.1",
+  "probes": []
+ },
+ {
+  "id": "D08",
+  "group": "list",
+  "expr": "Foo-License-1.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "D09",
+  "group": "list",
+  "expr": "MIT OR Foo-License-1.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "U01",
+  "group": "plus",
+  "expr": "MIT+",
+  "expect": "MIT+",
+  "probes": []
+ },
+ {
+  "id": "U02",
+  "group": "plus",
+  "expr": "GPL-2.0-or-later+",
+  "expect": "GPL-2.0-or-later+",
+  "probes": []
+ },
+ {
+  "id": "U03",
+  "group": "plus",
+  "expr": "MIT +",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "U04",
+  "group": "plus",
+  "expr": "LicenseRef-foo+",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "U05",
+  "group": "plus",
+  "expr": "Apache-1.1+ WITH LLVM-exception",
+  "expect": "Apache-1.1+ WITH LLVM-exception",
+  "probes": []
+ },
+ {
+  "id": "W01",
+  "group": "with",
+  "expr": "MIT WITH Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "W02",
+  "group": "with",
+  "expr": "Classpath-exception-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "W03",
+  "group": "with",
+  "expr": "GPL-2.0-only WITH LicenseRef-x",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "W04",
+  "group": "with",
+  "expr": "GPL-2.0-only WITH AdditionRef-x",
+  "expect": "GPL-2.0-only WITH AdditionRef-x",
+  "probes": []
+ },
+ {
+  "id": "W05",
+  "group": "with",
+  "expr": "LicenseRef-x WITH Classpath-exception-2.0",
+  "expect": "LicenseRef-x WITH Classpath-exception-2.0",
+  "probes": []
+ },
+ {
+  "id": "W06",
+  "group": "with",
+  "expr": "GPL-2.0-only WITH Classpath-exception-2.0 WITH LLVM-exception",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "W07",
+  "group": "with",
+  "expr": "(MIT OR Apache-2.0) WITH LLVM-exception",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "W08",
+  "group": "with",
+  "expr": "GPL-2.0-only WITH",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "W09",
+  "group": "with",
+  "expr": "WITH Classpath-exception-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X01",
+  "group": "syntax",
+  "expr": "",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X02",
+  "group": "syntax",
+  "expr": "MIT OR",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X03",
+  "group": "syntax",
+  "expr": "OR MIT",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X04",
+  "group": "syntax",
+  "expr": "MIT AND AND Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X05",
+  "group": "syntax",
+  "expr": "(MIT OR Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X06",
+  "group": "syntax",
+  "expr": "MIT OR Apache-2.0)",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X07",
+  "group": "syntax",
+  "expr": "()",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X08",
+  "group": "syntax",
+  "expr": "MIT/Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X09",
+  "group": "syntax",
+  "expr": "MIT, Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X10",
+  "group": "syntax",
+  "expr": "MIT Apache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "X11",
+  "group": "syntax",
+  "expr": "MIT OR(Apache-2.0)",
+  "expect": "(OR MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "X12",
+  "group": "syntax",
+  "expr": "(MIT)OR(Apache-2.0)",
+  "expect": "(OR MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "X13",
+  "group": "syntax",
+  "expr": "MIT  OR  Apache-2.0",
+  "expect": "(OR MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "X14",
+  "group": "syntax",
+  "expr": " MIT ",
+  "expect": "OPEN",
+  "probes": []
+ },
+ {
+  "id": "X15",
+  "group": "syntax",
+  "expr": "MIT\tOR Apache-2.0",
+  "expect": "OPEN",
+  "probes": []
+ },
+ {
+  "id": "X16",
+  "group": "syntax",
+  "expr": "MIT ORApache-2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "R01",
+  "group": "ref",
+  "expr": "LicenseRef-my_license",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "R02",
+  "group": "ref",
+  "expr": "LicenseRef-",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "R03",
+  "group": "ref",
+  "expr": "LicenseRef-a.b-c",
+  "expect": "LicenseRef-a.b-c",
+  "probes": []
+ },
+ {
+  "id": "R04",
+  "group": "ref",
+  "expr": "LicenseRef-scancode-unknown-license-reference",
+  "expect": "LicenseRef-scancode-unknown-license-reference",
+  "probes": []
+ },
+ {
+  "id": "R05",
+  "group": "ref",
+  "expr": "MIT AND LicenseRef-Commercial",
+  "expect": "(AND MIT LicenseRef-Commercial)",
+  "probes": []
+ },
+ {
+  "id": "M01",
+  "group": "metadata",
+  "expr": "Apache 2.0",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "M02",
+  "group": "metadata",
+  "expr": "MIT License",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "M03",
+  "group": "metadata",
+  "expr": "BSD",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "M04",
+  "group": "metadata",
+  "expr": "UNLICENSED",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "M05",
+  "group": "metadata",
+  "expr": "SEE LICENSE IN LICENSE",
+  "expect": "INVALID",
+  "probes": []
+ },
+ {
+  "id": "M06",
+  "group": "metadata",
+  "expr": "NONE",
+  "expect": "OPEN",
+  "probes": []
+ },
+ {
+  "id": "M07",
+  "group": "metadata",
+  "expr": "NOASSERTION",
+  "expect": "OPEN",
+  "probes": []
+ },
+ {
+  "id": "M08",
+  "group": "metadata",
+  "expr": "MIT OR Apache-2.0",
+  "expect": "(OR MIT Apache-2.0)",
+  "probes": []
+ },
+ {
+  "id": "M09",
+  "group": "metadata",
+  "expr": "Apache-2.0 WITH LLVM-exception OR MIT",
+  "expect": "(OR Apache-2.0 WITH LLVM-exception MIT)",
+  "probes": [
+   {
+    "allow": [
+     "MIT"
+    ],
+    "sat": true
+   },
+   {
+    "allow": [
+     "Apache-2.0"
+    ],
+    "sat": false
+   }
+  ]
+ },
+ {
+  "id": "M10",
+  "group": "metadata",
+  "expr": "(MIT OR Apache-2.0) AND Unicode-3.0",
+  "expect": "(AND (OR MIT Apache-2.0) Unicode-3.0)",
+  "probes": []
+ },
+ {
+  "id": "M11",
+  "group": "metadata",
+  "expr": "GPL-3.0",
+  "expect": "GPL-3.0",
+  "probes": []
+ },
+ {
+  "id": "M12",
+  "group": "metadata",
+  "expr": "Python-2.0",
+  "expect": "Python-2.0",
+  "probes": []
+ }
+]

@@ -1,0 +1,2760 @@
+{
+ "go_validate_ok_but_extract_fails": [
+  "K03",
+  "K06"
+ ],
+ "n_cases": 91,
+ "n_accept_split": 34,
+ "n_any_split": 35,
+ "n_leaf_split": 1,
+ "n_tree_split": 1,
+ "classes": {
+  "spdx-expression-parse@5": {
+   "-": 4,
+   "A": 77,
+   "L": 4,
+   "R": 6
+  },
+  "spdx-expression-parse@3": {
+   "-": 4,
+   "A": 75,
+   "L": 1,
+   "R": 11
+  },
+  "license-expression": {
+   "-": 4,
+   "A": 67,
+   "L": 3,
+   "N": 5,
+   "R": 11,
+   "T": 1
+  },
+  "spdx-rs": {
+   "-": 4,
+   "A": 75,
+   "L": 1,
+   "R": 11
+  },
+  "packaging": {
+   "-": 4,
+   "A": 80,
+   "L": 5,
+   "R": 2
+  },
+  "go-spdx": {
+   "-": 4,
+   "A": 77,
+   "L": 2,
+   "N": 1,
+   "R": 7
+  }
+ },
+ "pairwise_accept_disagreement": {
+  "spdx-expression-parse@5 vs spdx-rs": 16,
+  "spdx-expression-parse@3 vs spdx-expression-parse@5": 8,
+  "spdx-expression-parse@3 vs spdx-rs": 18,
+  "license-expression vs spdx-expression-parse@5": 17,
+  "license-expression vs spdx-expression-parse@3": 23,
+  "license-expression vs spdx-rs": 23,
+  "license-expression vs packaging": 11,
+  "packaging vs spdx-expression-parse@5": 10,
+  "packaging vs spdx-expression-parse@3": 18,
+  "packaging vs spdx-rs": 20,
+  "go-spdx vs spdx-expression-parse@5": 11,
+  "go-spdx vs spdx-expression-parse@3": 7,
+  "go-spdx vs license-expression": 16,
+  "go-spdx vs spdx-rs": 23,
+  "go-spdx vs packaging": 13
+ },
+ "probe_mismatch": {
+  "spdx-satisfies@6": [
+   "K07"
+  ],
+  "go-spdx": [
+   "K07"
+  ],
+  "spdx-rs": []
+ },
+ "rows": [
+  {
+   "id": "S01",
+   "group": "basic",
+   "expr": "MIT",
+   "expect": "MIT",
+   "out": {
+    "spdx-expression-parse@5": "MIT",
+    "spdx-expression-parse@3": "MIT",
+    "license-expression": "MIT",
+    "spdx-rs": "MIT",
+    "packaging": "MIT",
+    "go-spdx": "MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "S02",
+   "group": "basic",
+   "expr": "Apache-2.0",
+   "expect": "Apache-2.0",
+   "out": {
+    "spdx-expression-parse@5": "Apache-2.0",
+    "spdx-expression-parse@3": "Apache-2.0",
+    "license-expression": "Apache-2.0",
+    "spdx-rs": "Apache-2.0",
+    "packaging": "Apache-2.0",
+    "go-spdx": "Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "S03",
+   "group": "basic",
+   "expr": "MIT OR Apache-2.0",
+   "expect": "(OR MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "(OR MIT Apache-2.0)",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "(OR MIT Apache-2.0)",
+    "packaging": "MIT OR Apache-2.0",
+    "go-spdx": "MIT OR Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "S04",
+   "group": "basic",
+   "expr": "MIT AND Apache-2.0",
+   "expect": "(AND MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(AND MIT Apache-2.0)",
+    "spdx-expression-parse@3": "(AND MIT Apache-2.0)",
+    "license-expression": "(AND MIT Apache-2.0)",
+    "spdx-rs": "(AND MIT Apache-2.0)",
+    "packaging": "MIT AND Apache-2.0",
+    "go-spdx": "MIT AND Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "S05",
+   "group": "basic",
+   "expr": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "expect": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "out": {
+    "spdx-expression-parse@5": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "spdx-expression-parse@3": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "license-expression": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "spdx-rs": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "packaging": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "go-spdx": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "S06",
+   "group": "basic",
+   "expr": "LicenseRef-Proprietary",
+   "expect": "LicenseRef-Proprietary",
+   "out": {
+    "spdx-expression-parse@5": "LicenseRef-Proprietary",
+    "spdx-expression-parse@3": "LicenseRef-Proprietary",
+    "license-expression": "REJECT",
+    "spdx-rs": "LicenseRef-Proprietary",
+    "packaging": "LicenseRef-Proprietary",
+    "go-spdx": "LicenseRef-Proprietary"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "S07",
+   "group": "basic",
+   "expr": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+   "expect": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+   "out": {
+    "spdx-expression-parse@5": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+    "spdx-expression-parse@3": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+    "license-expression": "REJECT",
+    "spdx-rs": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+    "packaging": "REJECT",
+    "go-spdx": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "R",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "S08",
+   "group": "basic",
+   "expr": "CDDL-1.0+",
+   "expect": "CDDL-1.0+",
+   "out": {
+    "spdx-expression-parse@5": "CDDL-1.0+",
+    "spdx-expression-parse@3": "CDDL-1.0+",
+    "license-expression": "REJECT",
+    "spdx-rs": "CDDL-1.0+",
+    "packaging": "CDDL-1.0+",
+    "go-spdx": "CDDL-1.0+"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "S09",
+   "group": "basic",
+   "expr": "(MIT OR Apache-2.0) AND BSD-3-Clause",
+   "expect": "(AND (OR MIT Apache-2.0) BSD-3-Clause)",
+   "out": {
+    "spdx-expression-parse@5": "(AND (OR MIT Apache-2.0) BSD-3-Clause)",
+    "spdx-expression-parse@3": "(AND (OR MIT Apache-2.0) BSD-3-Clause)",
+    "license-expression": "(AND (OR MIT Apache-2.0) BSD-3-Clause)",
+    "spdx-rs": "(AND (OR MIT Apache-2.0) BSD-3-Clause)",
+    "packaging": "(MIT OR Apache-2.0) AND BSD-3-Clause",
+    "go-spdx": "(MIT OR Apache-2.0) AND BSD-3-Clause"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "S10",
+   "group": "basic",
+   "expr": "Apache-2.0 WITH LLVM-exception",
+   "expect": "Apache-2.0 WITH LLVM-exception",
+   "out": {
+    "spdx-expression-parse@5": "Apache-2.0 WITH LLVM-exception",
+    "spdx-expression-parse@3": "Apache-2.0 WITH LLVM-exception",
+    "license-expression": "Apache-2.0 WITH LLVM-exception",
+    "spdx-rs": "Apache-2.0 WITH LLVM-exception",
+    "packaging": "Apache-2.0 WITH LLVM-exception",
+    "go-spdx": "Apache-2.0 WITH LLVM-exception"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "P01",
+   "group": "precedence",
+   "expr": "LGPL-2.1-only OR BSD-3-Clause AND MIT",
+   "expect": "(OR LGPL-2.1-only (AND BSD-3-Clause MIT))",
+   "out": {
+    "spdx-expression-parse@5": "(OR LGPL-2.1-only (AND BSD-3-Clause MIT))",
+    "spdx-expression-parse@3": "(OR LGPL-2.1-only (AND BSD-3-Clause MIT))",
+    "license-expression": "(OR LGPL-2.1-only (AND BSD-3-Clause MIT))",
+    "spdx-rs": "(OR LGPL-2.1-only (AND BSD-3-Clause MIT))",
+    "packaging": "LGPL-2.1-only OR BSD-3-Clause AND MIT",
+    "go-spdx": "LGPL-2.1-only OR BSD-3-Clause AND MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {
+    "spdx-satisfies@6": [
+     true,
+     false,
+     true
+    ],
+    "go-spdx": [
+     true,
+     false,
+     true
+    ],
+    "spdx-rs": [
+     true,
+     false,
+     true
+    ]
+   },
+   "probe_expect": [
+    true,
+    false,
+    true
+   ],
+   "distinct": 1
+  },
+  {
+   "id": "P02",
+   "group": "precedence",
+   "expr": "MIT AND BSD-3-Clause OR Apache-2.0",
+   "expect": "(OR (AND MIT BSD-3-Clause) Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(OR (AND MIT BSD-3-Clause) Apache-2.0)",
+    "spdx-expression-parse@3": "(OR (AND MIT BSD-3-Clause) Apache-2.0)",
+    "license-expression": "(OR (AND MIT BSD-3-Clause) Apache-2.0)",
+    "spdx-rs": "(OR (AND MIT BSD-3-Clause) Apache-2.0)",
+    "packaging": "MIT AND BSD-3-Clause OR Apache-2.0",
+    "go-spdx": "MIT AND BSD-3-Clause OR Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {
+    "spdx-satisfies@6": [
+     true,
+     false,
+     true
+    ],
+    "go-spdx": [
+     true,
+     false,
+     true
+    ],
+    "spdx-rs": [
+     true,
+     false,
+     true
+    ]
+   },
+   "probe_expect": [
+    true,
+    false,
+    true
+   ],
+   "distinct": 1
+  },
+  {
+   "id": "P03",
+   "group": "precedence",
+   "expr": "MIT OR Apache-2.0 AND BSD-2-Clause OR ISC",
+   "expect": "(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC)",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC)",
+    "spdx-expression-parse@3": "(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC)",
+    "license-expression": "(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC)",
+    "spdx-rs": "(OR MIT (AND Apache-2.0 BSD-2-Clause) ISC)",
+    "packaging": "MIT OR Apache-2.0 AND BSD-2-Clause OR ISC",
+    "go-spdx": "MIT OR Apache-2.0 AND BSD-2-Clause OR ISC"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {
+    "spdx-satisfies@6": [
+     true,
+     false,
+     true
+    ],
+    "go-spdx": [
+     true,
+     false,
+     true
+    ],
+    "spdx-rs": [
+     true,
+     false,
+     true
+    ]
+   },
+   "probe_expect": [
+    true,
+    false,
+    true
+   ],
+   "distinct": 1
+  },
+  {
+   "id": "P04",
+   "group": "precedence",
+   "expr": "GPL-2.0-only WITH Classpath-exception-2.0 OR MIT",
+   "expect": "(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT)",
+   "out": {
+    "spdx-expression-parse@5": "(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT)",
+    "spdx-expression-parse@3": "(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT)",
+    "license-expression": "(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT)",
+    "spdx-rs": "(OR GPL-2.0-only WITH Classpath-exception-2.0 MIT)",
+    "packaging": "GPL-2.0-only WITH Classpath-exception-2.0 OR MIT",
+    "go-spdx": "GPL-2.0-only WITH Classpath-exception-2.0 OR MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "P05",
+   "group": "precedence",
+   "expr": "MIT AND GPL-2.0-only WITH Classpath-exception-2.0",
+   "expect": "(AND MIT GPL-2.0-only WITH Classpath-exception-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(AND MIT GPL-2.0-only WITH Classpath-exception-2.0)",
+    "spdx-expression-parse@3": "(AND MIT GPL-2.0-only WITH Classpath-exception-2.0)",
+    "license-expression": "(AND MIT GPL-2.0-only WITH Classpath-exception-2.0)",
+    "spdx-rs": "(AND MIT GPL-2.0-only WITH Classpath-exception-2.0)",
+    "packaging": "MIT AND GPL-2.0-only WITH Classpath-exception-2.0",
+    "go-spdx": "MIT AND GPL-2.0-only WITH Classpath-exception-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "P06",
+   "group": "precedence",
+   "expr": "(MIT)",
+   "expect": "MIT",
+   "out": {
+    "spdx-expression-parse@5": "MIT",
+    "spdx-expression-parse@3": "MIT",
+    "license-expression": "MIT",
+    "spdx-rs": "MIT",
+    "packaging": "(MIT)",
+    "go-spdx": "MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "P07",
+   "group": "precedence",
+   "expr": "((MIT))",
+   "expect": "MIT",
+   "out": {
+    "spdx-expression-parse@5": "MIT",
+    "spdx-expression-parse@3": "MIT",
+    "license-expression": "MIT",
+    "spdx-rs": "MIT",
+    "packaging": "((MIT))",
+    "go-spdx": "MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "P08",
+   "group": "precedence",
+   "expr": "MIT AND (Apache-2.0 OR BSD-3-Clause)",
+   "expect": "(AND MIT (OR Apache-2.0 BSD-3-Clause))",
+   "out": {
+    "spdx-expression-parse@5": "(AND MIT (OR Apache-2.0 BSD-3-Clause))",
+    "spdx-expression-parse@3": "(AND MIT (OR Apache-2.0 BSD-3-Clause))",
+    "license-expression": "(AND MIT (OR Apache-2.0 BSD-3-Clause))",
+    "spdx-rs": "(AND MIT (OR Apache-2.0 BSD-3-Clause))",
+    "packaging": "MIT AND (Apache-2.0 OR BSD-3-Clause)",
+    "go-spdx": "MIT AND (Apache-2.0 OR BSD-3-Clause)"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {
+    "spdx-satisfies@6": [
+     false,
+     true,
+     false
+    ],
+    "go-spdx": [
+     false,
+     true,
+     false
+    ],
+    "spdx-rs": [
+     false,
+     true,
+     false
+    ]
+   },
+   "probe_expect": [
+    false,
+    true,
+    false
+   ],
+   "distinct": 1
+  },
+  {
+   "id": "P09",
+   "group": "precedence",
+   "expr": "(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)",
+   "expect": "(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC))",
+   "out": {
+    "spdx-expression-parse@5": "(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC))",
+    "spdx-expression-parse@3": "(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC))",
+    "license-expression": "(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC))",
+    "spdx-rs": "(AND (OR MIT Apache-2.0) (OR BSD-2-Clause ISC))",
+    "packaging": "(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)",
+    "go-spdx": "(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "P10",
+   "group": "precedence",
+   "expr": "MIT AND Apache-2.0 AND BSD-3-Clause OR ISC",
+   "expect": "(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC)",
+   "out": {
+    "spdx-expression-parse@5": "(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC)",
+    "spdx-expression-parse@3": "(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC)",
+    "license-expression": "(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC)",
+    "spdx-rs": "(OR (AND MIT Apache-2.0 BSD-3-Clause) ISC)",
+    "packaging": "MIT AND Apache-2.0 AND BSD-3-Clause OR ISC",
+    "go-spdx": "MIT AND Apache-2.0 AND BSD-3-Clause OR ISC"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {
+    "spdx-satisfies@6": [
+     true,
+     false,
+     true
+    ],
+    "go-spdx": [
+     true,
+     false,
+     true
+    ],
+    "spdx-rs": [
+     true,
+     false,
+     true
+    ]
+   },
+   "probe_expect": [
+    true,
+    false,
+    true
+   ],
+   "distinct": 1
+  },
+  {
+   "id": "K01",
+   "group": "op-case",
+   "expr": "MIT or Apache-2.0",
+   "expect": "(OR MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "(OR MIT Apache-2.0)",
+    "packaging": "MIT OR Apache-2.0",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "R"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "K02",
+   "group": "op-case",
+   "expr": "MIT and Apache-2.0",
+   "expect": "(AND MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(AND MIT Apache-2.0)",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "(AND MIT Apache-2.0)",
+    "spdx-rs": "(AND MIT Apache-2.0)",
+    "packaging": "MIT AND Apache-2.0",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "R"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "K03",
+   "group": "op-case",
+   "expr": "GPL-2.0-or-later with Classpath-exception-2.0",
+   "expect": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "out": {
+    "spdx-expression-parse@5": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "spdx-rs": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "packaging": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "go-spdx": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "K04",
+   "group": "op-case",
+   "expr": "MIT Or Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "REJECT",
+    "packaging": "MIT OR Apache-2.0",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "L",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "L",
+    "spdx-rs": "A",
+    "packaging": "L",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "K05",
+   "group": "op-case",
+   "expr": "MIT aNd Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "(AND MIT Apache-2.0)",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "(AND MIT Apache-2.0)",
+    "spdx-rs": "REJECT",
+    "packaging": "MIT AND Apache-2.0",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "L",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "L",
+    "spdx-rs": "A",
+    "packaging": "L",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "K06",
+   "group": "op-case",
+   "expr": "GPL-2.0-or-later With Classpath-exception-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "spdx-rs": "REJECT",
+    "packaging": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "go-spdx": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "L",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "L",
+    "spdx-rs": "A",
+    "packaging": "L",
+    "go-spdx": "L"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "K07",
+   "group": "op-case",
+   "expr": "MIT OR Apache-2.0 and BSD-3-Clause",
+   "expect": "(OR MIT (AND Apache-2.0 BSD-3-Clause))",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT (AND Apache-2.0 BSD-3-Clause))",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "(OR MIT (AND Apache-2.0 BSD-3-Clause))",
+    "spdx-rs": "(OR MIT (AND Apache-2.0 BSD-3-Clause))",
+    "packaging": "MIT OR Apache-2.0 AND BSD-3-Clause",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "R"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {
+    "spdx-satisfies@6": [
+     "ERR",
+     "ERR"
+    ],
+    "go-spdx": [
+     "ERR",
+     "ERR"
+    ],
+    "spdx-rs": [
+     true,
+     false
+    ]
+   },
+   "probe_expect": [
+    true,
+    false
+   ],
+   "distinct": 2
+  },
+  {
+   "id": "I01",
+   "group": "id-case",
+   "expr": "mit",
+   "expect": "MIT",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "MIT",
+    "spdx-rs": "REJECT",
+    "packaging": "MIT",
+    "go-spdx": "MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "R",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "I02",
+   "group": "id-case",
+   "expr": "apache-2.0 OR mit",
+   "expect": "(OR Apache-2.0 MIT)",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "(OR Apache-2.0 MIT)",
+    "spdx-rs": "REJECT",
+    "packaging": "Apache-2.0 OR MIT",
+    "go-spdx": "Apache-2.0 OR MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "R",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "I03",
+   "group": "id-case",
+   "expr": "Gpl-2.0-Or-Later WITH classpath-exception-2.0",
+   "expect": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "spdx-rs": "REJECT",
+    "packaging": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+    "go-spdx": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "R",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "I04",
+   "group": "id-case",
+   "expr": "BSD-3-CLAUSE",
+   "expect": "BSD-3-Clause",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "BSD-3-Clause",
+    "spdx-rs": "REJECT",
+    "packaging": "BSD-3-Clause",
+    "go-spdx": "BSD-3-Clause"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "R",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "A",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "I05",
+   "group": "id-case",
+   "expr": "licenseref-foo",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "LicenseRef-foo",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "L",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "I06",
+   "group": "id-case",
+   "expr": "LICENSEREF-foo",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "LicenseRef-foo",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "L",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "I07",
+   "group": "id-case",
+   "expr": "LicenseRef-FOO",
+   "expect": "LicenseRef-FOO",
+   "out": {
+    "spdx-expression-parse@5": "LicenseRef-FOO",
+    "spdx-expression-parse@3": "LicenseRef-FOO",
+    "license-expression": "REJECT",
+    "spdx-rs": "LicenseRef-FOO",
+    "packaging": "LicenseRef-FOO",
+    "go-spdx": "LicenseRef-FOO"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "I08",
+   "group": "id-case",
+   "expr": "documentref-a:LicenseRef-b",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "D01",
+   "group": "list",
+   "expr": "GPL-2.0",
+   "expect": "GPL-2.0",
+   "out": {
+    "spdx-expression-parse@5": "GPL-2.0",
+    "spdx-expression-parse@3": "GPL-2.0",
+    "license-expression": "GPL-2.0-only",
+    "spdx-rs": "REJECT",
+    "packaging": "GPL-2.0",
+    "go-spdx": "GPL-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "N",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "D02",
+   "group": "list",
+   "expr": "GPL-2.0+",
+   "expect": "GPL-2.0+",
+   "out": {
+    "spdx-expression-parse@5": "GPL-2.0+",
+    "spdx-expression-parse@3": "GPL-2.0+",
+    "license-expression": "GPL-2.0-or-later",
+    "spdx-rs": "REJECT",
+    "packaging": "GPL-2.0+",
+    "go-spdx": "GPL-2.0+"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "N",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "D03",
+   "group": "list",
+   "expr": "LGPL-2.1+",
+   "expect": "LGPL-2.1+",
+   "out": {
+    "spdx-expression-parse@5": "LGPL-2.1+",
+    "spdx-expression-parse@3": "LGPL-2.1+",
+    "license-expression": "LGPL-2.1-or-later",
+    "spdx-rs": "REJECT",
+    "packaging": "LGPL-2.1+",
+    "go-spdx": "LGPL-2.1+"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "N",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "D04",
+   "group": "list",
+   "expr": "GPL-2.0-with-classpath-exception",
+   "expect": "GPL-2.0-with-classpath-exception",
+   "out": {
+    "spdx-expression-parse@5": "GPL-2.0-with-classpath-exception",
+    "spdx-expression-parse@3": "GPL-2.0-with-classpath-exception",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "GPL-2.0-with-classpath-exception",
+    "go-spdx": "GPL-2.0-with-classpath-exception"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "D05",
+   "group": "list",
+   "expr": "wxWindows",
+   "expect": "wxWindows",
+   "out": {
+    "spdx-expression-parse@5": "wxWindows",
+    "spdx-expression-parse@3": "wxWindows",
+    "license-expression": "wxWindows",
+    "spdx-rs": "REJECT",
+    "packaging": "wxWindows",
+    "go-spdx": "wxWindows"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "D06",
+   "group": "list",
+   "expr": "Nokia-Qt-exception-1.1",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "D07",
+   "group": "list",
+   "expr": "GPL-2.0-only WITH Nokia-Qt-exception-1.1",
+   "expect": "GPL-2.0-only WITH Nokia-Qt-exception-1.1",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "GPL-2.0-only WITH Qt-LGPL-exception-1.1",
+    "spdx-rs": "GPL-2.0-only WITH Nokia-Qt-exception-1.1",
+    "packaging": "GPL-2.0-only WITH Nokia-Qt-exception-1.1",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "R",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "N",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "R"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "D08",
+   "group": "list",
+   "expr": "Foo-License-1.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "D09",
+   "group": "list",
+   "expr": "MIT OR Foo-License-1.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "U01",
+   "group": "plus",
+   "expr": "MIT+",
+   "expect": "MIT+",
+   "out": {
+    "spdx-expression-parse@5": "MIT+",
+    "spdx-expression-parse@3": "MIT+",
+    "license-expression": "REJECT",
+    "spdx-rs": "MIT+",
+    "packaging": "MIT+",
+    "go-spdx": "MIT+"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "U02",
+   "group": "plus",
+   "expr": "GPL-2.0-or-later+",
+   "expect": "GPL-2.0-or-later+",
+   "out": {
+    "spdx-expression-parse@5": "GPL-2.0-or-later+",
+    "spdx-expression-parse@3": "GPL-2.0-or-later+",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "GPL-2.0-or-later+",
+    "go-spdx": "GPL-2.0-or-later"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "N"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "U03",
+   "group": "plus",
+   "expr": "MIT +",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "U04",
+   "group": "plus",
+   "expr": "LicenseRef-foo+",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "U05",
+   "group": "plus",
+   "expr": "Apache-1.1+ WITH LLVM-exception",
+   "expect": "Apache-1.1+ WITH LLVM-exception",
+   "out": {
+    "spdx-expression-parse@5": "Apache-1.1+ WITH LLVM-exception",
+    "spdx-expression-parse@3": "Apache-1.1+ WITH LLVM-exception",
+    "license-expression": "REJECT",
+    "spdx-rs": "Apache-1.1+ WITH LLVM-exception",
+    "packaging": "Apache-1.1+ WITH LLVM-exception",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "R"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "W01",
+   "group": "with",
+   "expr": "MIT WITH Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "W02",
+   "group": "with",
+   "expr": "Classpath-exception-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "W03",
+   "group": "with",
+   "expr": "GPL-2.0-only WITH LicenseRef-x",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "W04",
+   "group": "with",
+   "expr": "GPL-2.0-only WITH AdditionRef-x",
+   "expect": "GPL-2.0-only WITH AdditionRef-x",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "GPL-2.0-only WITH AdditionRef-x",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "R",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "R",
+    "go-spdx": "R"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "W05",
+   "group": "with",
+   "expr": "LicenseRef-x WITH Classpath-exception-2.0",
+   "expect": "LicenseRef-x WITH Classpath-exception-2.0",
+   "out": {
+    "spdx-expression-parse@5": "LicenseRef-x WITH Classpath-exception-2.0",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "LicenseRef-x WITH Classpath-exception-2.0",
+    "packaging": "LicenseRef-x WITH Classpath-exception-2.0",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "R",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "R"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "W06",
+   "group": "with",
+   "expr": "GPL-2.0-only WITH Classpath-exception-2.0 WITH LLVM-exception",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "W07",
+   "group": "with",
+   "expr": "(MIT OR Apache-2.0) WITH LLVM-exception",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "W08",
+   "group": "with",
+   "expr": "GPL-2.0-only WITH",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "W09",
+   "group": "with",
+   "expr": "WITH Classpath-exception-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X01",
+   "group": "syntax",
+   "expr": "",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X02",
+   "group": "syntax",
+   "expr": "MIT OR",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X03",
+   "group": "syntax",
+   "expr": "OR MIT",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X04",
+   "group": "syntax",
+   "expr": "MIT AND AND Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X05",
+   "group": "syntax",
+   "expr": "(MIT OR Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X06",
+   "group": "syntax",
+   "expr": "MIT OR Apache-2.0)",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X07",
+   "group": "syntax",
+   "expr": "()",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X08",
+   "group": "syntax",
+   "expr": "MIT/Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X09",
+   "group": "syntax",
+   "expr": "MIT, Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X10",
+   "group": "syntax",
+   "expr": "MIT Apache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X11",
+   "group": "syntax",
+   "expr": "MIT OR(Apache-2.0)",
+   "expect": "(OR MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "(OR MIT Apache-2.0)",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "(OR MIT Apache-2.0)",
+    "packaging": "MIT OR (Apache-2.0)",
+    "go-spdx": "MIT OR Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X12",
+   "group": "syntax",
+   "expr": "(MIT)OR(Apache-2.0)",
+   "expect": "(OR MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "(OR MIT Apache-2.0)",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "(OR MIT Apache-2.0)",
+    "packaging": "(MIT) OR (Apache-2.0)",
+    "go-spdx": "MIT OR Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X13",
+   "group": "syntax",
+   "expr": "MIT  OR  Apache-2.0",
+   "expect": "(OR MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "(OR MIT Apache-2.0)",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "(OR MIT Apache-2.0)",
+    "packaging": "MIT OR Apache-2.0",
+    "go-spdx": "MIT OR Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X14",
+   "group": "syntax",
+   "expr": " MIT ",
+   "expect": "OPEN",
+   "out": {
+    "spdx-expression-parse@5": "MIT",
+    "spdx-expression-parse@3": "MIT",
+    "license-expression": "MIT",
+    "spdx-rs": "MIT",
+    "packaging": "MIT",
+    "go-spdx": "MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "-",
+    "spdx-expression-parse@3": "-",
+    "license-expression": "-",
+    "spdx-rs": "-",
+    "packaging": "-",
+    "go-spdx": "-"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "X15",
+   "group": "syntax",
+   "expr": "MIT\tOR Apache-2.0",
+   "expect": "OPEN",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "(OR MIT Apache-2.0)",
+    "packaging": "MIT OR Apache-2.0",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "-",
+    "spdx-expression-parse@3": "-",
+    "license-expression": "-",
+    "spdx-rs": "-",
+    "packaging": "-",
+    "go-spdx": "-"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "X16",
+   "group": "syntax",
+   "expr": "MIT ORApache-2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "(OR MIT Apache-2.0)",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "MIT OR Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "L",
+    "spdx-expression-parse@3": "L",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "L"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "R01",
+   "group": "ref",
+   "expr": "LicenseRef-my_license",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "R02",
+   "group": "ref",
+   "expr": "LicenseRef-",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "LicenseRef-",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "L",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "R03",
+   "group": "ref",
+   "expr": "LicenseRef-a.b-c",
+   "expect": "LicenseRef-a.b-c",
+   "out": {
+    "spdx-expression-parse@5": "LicenseRef-a.b-c",
+    "spdx-expression-parse@3": "LicenseRef-a.b-c",
+    "license-expression": "REJECT",
+    "spdx-rs": "LicenseRef-a.b-c",
+    "packaging": "LicenseRef-a.b-c",
+    "go-spdx": "LicenseRef-a.b-c"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "R",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "R04",
+   "group": "ref",
+   "expr": "LicenseRef-scancode-unknown-license-reference",
+   "expect": "LicenseRef-scancode-unknown-license-reference",
+   "out": {
+    "spdx-expression-parse@5": "LicenseRef-scancode-unknown-license-reference",
+    "spdx-expression-parse@3": "LicenseRef-scancode-unknown-license-reference",
+    "license-expression": "LicenseRef-scancode-unknown-license-reference",
+    "spdx-rs": "LicenseRef-scancode-unknown-license-reference",
+    "packaging": "LicenseRef-scancode-unknown-license-reference",
+    "go-spdx": "LicenseRef-scancode-unknown-license-reference"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "R05",
+   "group": "ref",
+   "expr": "MIT AND LicenseRef-Commercial",
+   "expect": "(AND MIT LicenseRef-Commercial)",
+   "out": {
+    "spdx-expression-parse@5": "(AND MIT LicenseRef-Commercial)",
+    "spdx-expression-parse@3": "(AND MIT LicenseRef-Commercial)",
+    "license-expression": "(AND MIT LicenseRef-scancode-commercial-license)",
+    "spdx-rs": "(AND MIT LicenseRef-Commercial)",
+    "packaging": "MIT AND LicenseRef-Commercial",
+    "go-spdx": "MIT AND LicenseRef-Commercial"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "T",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": true,
+   "tree_split": true,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "M01",
+   "group": "metadata",
+   "expr": "Apache 2.0",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M02",
+   "group": "metadata",
+   "expr": "MIT License",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M03",
+   "group": "metadata",
+   "expr": "BSD",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M04",
+   "group": "metadata",
+   "expr": "UNLICENSED",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M05",
+   "group": "metadata",
+   "expr": "SEE LICENSE IN LICENSE",
+   "expect": "INVALID",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M06",
+   "group": "metadata",
+   "expr": "NONE",
+   "expect": "OPEN",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "REJECT",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "-",
+    "spdx-expression-parse@3": "-",
+    "license-expression": "-",
+    "spdx-rs": "-",
+    "packaging": "-",
+    "go-spdx": "-"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M07",
+   "group": "metadata",
+   "expr": "NOASSERTION",
+   "expect": "OPEN",
+   "out": {
+    "spdx-expression-parse@5": "REJECT",
+    "spdx-expression-parse@3": "REJECT",
+    "license-expression": "REJECT",
+    "spdx-rs": "NOASSERTION",
+    "packaging": "REJECT",
+    "go-spdx": "REJECT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "-",
+    "spdx-expression-parse@3": "-",
+    "license-expression": "-",
+    "spdx-rs": "-",
+    "packaging": "-",
+    "go-spdx": "-"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "M08",
+   "group": "metadata",
+   "expr": "MIT OR Apache-2.0",
+   "expect": "(OR MIT Apache-2.0)",
+   "out": {
+    "spdx-expression-parse@5": "(OR MIT Apache-2.0)",
+    "spdx-expression-parse@3": "(OR MIT Apache-2.0)",
+    "license-expression": "(OR MIT Apache-2.0)",
+    "spdx-rs": "(OR MIT Apache-2.0)",
+    "packaging": "MIT OR Apache-2.0",
+    "go-spdx": "MIT OR Apache-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M09",
+   "group": "metadata",
+   "expr": "Apache-2.0 WITH LLVM-exception OR MIT",
+   "expect": "(OR Apache-2.0 WITH LLVM-exception MIT)",
+   "out": {
+    "spdx-expression-parse@5": "(OR Apache-2.0 WITH LLVM-exception MIT)",
+    "spdx-expression-parse@3": "(OR Apache-2.0 WITH LLVM-exception MIT)",
+    "license-expression": "(OR Apache-2.0 WITH LLVM-exception MIT)",
+    "spdx-rs": "(OR Apache-2.0 WITH LLVM-exception MIT)",
+    "packaging": "Apache-2.0 WITH LLVM-exception OR MIT",
+    "go-spdx": "Apache-2.0 WITH LLVM-exception OR MIT"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {
+    "spdx-satisfies@6": [
+     true,
+     false
+    ],
+    "go-spdx": [
+     true,
+     false
+    ],
+    "spdx-rs": [
+     true,
+     false
+    ]
+   },
+   "probe_expect": [
+    true,
+    false
+   ],
+   "distinct": 1
+  },
+  {
+   "id": "M10",
+   "group": "metadata",
+   "expr": "(MIT OR Apache-2.0) AND Unicode-3.0",
+   "expect": "(AND (OR MIT Apache-2.0) Unicode-3.0)",
+   "out": {
+    "spdx-expression-parse@5": "(AND (OR MIT Apache-2.0) Unicode-3.0)",
+    "spdx-expression-parse@3": "(AND (OR MIT Apache-2.0) Unicode-3.0)",
+    "license-expression": "(AND (OR MIT Apache-2.0) Unicode-3.0)",
+    "spdx-rs": "(AND (OR MIT Apache-2.0) Unicode-3.0)",
+    "packaging": "(MIT OR Apache-2.0) AND Unicode-3.0",
+    "go-spdx": "(MIT OR Apache-2.0) AND Unicode-3.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  },
+  {
+   "id": "M11",
+   "group": "metadata",
+   "expr": "GPL-3.0",
+   "expect": "GPL-3.0",
+   "out": {
+    "spdx-expression-parse@5": "GPL-3.0",
+    "spdx-expression-parse@3": "GPL-3.0",
+    "license-expression": "GPL-3.0-only",
+    "spdx-rs": "REJECT",
+    "packaging": "GPL-3.0",
+    "go-spdx": "GPL-3.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "N",
+    "spdx-rs": "R",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": true,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 2
+  },
+  {
+   "id": "M12",
+   "group": "metadata",
+   "expr": "Python-2.0",
+   "expect": "Python-2.0",
+   "out": {
+    "spdx-expression-parse@5": "Python-2.0",
+    "spdx-expression-parse@3": "Python-2.0",
+    "license-expression": "Python-2.0",
+    "spdx-rs": "Python-2.0",
+    "packaging": "Python-2.0",
+    "go-spdx": "Python-2.0"
+   },
+   "cls": {
+    "spdx-expression-parse@5": "A",
+    "spdx-expression-parse@3": "A",
+    "license-expression": "A",
+    "spdx-rs": "A",
+    "packaging": "A",
+    "go-spdx": "A"
+   },
+   "accept_split": false,
+   "leaf_split": false,
+   "tree_split": false,
+   "probes": {},
+   "probe_expect": [],
+   "distinct": 1
+  }
+ ]
+}

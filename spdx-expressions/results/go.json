@@ -1,0 +1,572 @@
+{
+ "_list_version": "3.29.0",
+ "go-spdx": {
+  "D01": {
+   "canon": "GPL-2.0",
+   "leaves": [
+    "GPL-2.0"
+   ],
+   "ok": true
+  },
+  "D02": {
+   "canon": "GPL-2.0+",
+   "leaves": [
+    "GPL-2.0-or-later"
+   ],
+   "ok": true
+  },
+  "D03": {
+   "canon": "LGPL-2.1+",
+   "leaves": [
+    "LGPL-2.1-or-later"
+   ],
+   "ok": true
+  },
+  "D04": {
+   "canon": "GPL-2.0-with-classpath-exception",
+   "leaves": [
+    "GPL-2.0-with-classpath-exception"
+   ],
+   "ok": true
+  },
+  "D05": {
+   "canon": "wxWindows",
+   "leaves": [
+    "wxWindows"
+   ],
+   "ok": true
+  },
+  "D06": {
+   "extract_err": "unknown license 'Nokia-Qt-exception-1.1' at offset 0",
+   "ok": false
+  },
+  "D07": {
+   "extract_err": "unknown license 'Nokia-Qt-exception-1.1' at offset 18",
+   "ok": false
+  },
+  "D08": {
+   "extract_err": "unknown license 'Foo-License-1.0' at offset 0",
+   "ok": false
+  },
+  "D09": {
+   "extract_err": "unknown license 'Foo-License-1.0' at offset 7",
+   "ok": false
+  },
+  "I01": {
+   "canon": "MIT",
+   "leaves": [
+    "MIT"
+   ],
+   "ok": true
+  },
+  "I02": {
+   "canon": "Apache-2.0 OR MIT",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "I03": {
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "leaves": [
+    "GPL-2.0-or-later WITH Classpath-exception-2.0"
+   ],
+   "ok": true
+  },
+  "I04": {
+   "canon": "BSD-3-Clause",
+   "leaves": [
+    "BSD-3-Clause"
+   ],
+   "ok": true
+  },
+  "I05": {
+   "extract_err": "unknown license 'licenseref-foo' at offset 0",
+   "ok": false
+  },
+  "I06": {
+   "extract_err": "unknown license 'LICENSEREF-foo' at offset 0",
+   "ok": false
+  },
+  "I07": {
+   "canon": "LicenseRef-FOO",
+   "leaves": [
+    "LicenseRef-FOO"
+   ],
+   "ok": true
+  },
+  "I08": {
+   "extract_err": "unknown license 'documentref-a' at offset 0",
+   "ok": false
+  },
+  "K01": {
+   "extract_err": "unknown license 'or' at offset 4",
+   "ok": false
+  },
+  "K02": {
+   "extract_err": "unknown license 'and' at offset 4",
+   "ok": false
+  },
+  "K03": {
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "extract_err": "unknown license 'with' at offset 17",
+   "ok": true
+  },
+  "K04": {
+   "extract_err": "unknown license 'Or' at offset 4",
+   "ok": false
+  },
+  "K05": {
+   "extract_err": "unknown license 'aNd' at offset 4",
+   "ok": false
+  },
+  "K06": {
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "extract_err": "unknown license 'With' at offset 17",
+   "ok": true
+  },
+  "K07": {
+   "extract_err": "unknown license 'and' at offset 18",
+   "ok": false,
+   "probes": [
+    "ERR",
+    "ERR"
+   ]
+  },
+  "M01": {
+   "extract_err": "unknown license 'Apache' at offset 0",
+   "ok": false
+  },
+  "M02": {
+   "extract_err": "unknown license 'License' at offset 4",
+   "ok": false
+  },
+  "M03": {
+   "extract_err": "unknown license 'BSD' at offset 0",
+   "ok": false
+  },
+  "M04": {
+   "extract_err": "unknown license 'UNLICENSED' at offset 0",
+   "ok": false
+  },
+  "M05": {
+   "extract_err": "unknown license 'SEE' at offset 0",
+   "ok": false
+  },
+  "M06": {
+   "extract_err": "unknown license 'NONE' at offset 0",
+   "ok": false
+  },
+  "M07": {
+   "extract_err": "unknown license 'NOASSERTION' at offset 0",
+   "ok": false
+  },
+  "M08": {
+   "canon": "MIT OR Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "M09": {
+   "canon": "Apache-2.0 WITH LLVM-exception OR MIT",
+   "leaves": [
+    "Apache-2.0 WITH LLVM-exception",
+    "MIT"
+   ],
+   "ok": true,
+   "probes": [
+    true,
+    false
+   ]
+  },
+  "M10": {
+   "canon": "(MIT OR Apache-2.0) AND Unicode-3.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT",
+    "Unicode-3.0"
+   ],
+   "ok": true
+  },
+  "M11": {
+   "canon": "GPL-3.0",
+   "leaves": [
+    "GPL-3.0"
+   ],
+   "ok": true
+  },
+  "M12": {
+   "canon": "Python-2.0",
+   "leaves": [
+    "Python-2.0"
+   ],
+   "ok": true
+  },
+  "P01": {
+   "canon": "LGPL-2.1-only OR BSD-3-Clause AND MIT",
+   "leaves": [
+    "BSD-3-Clause",
+    "LGPL-2.1-only",
+    "MIT"
+   ],
+   "ok": true,
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "P02": {
+   "canon": "MIT AND BSD-3-Clause OR Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "BSD-3-Clause",
+    "MIT"
+   ],
+   "ok": true,
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "P03": {
+   "canon": "MIT OR Apache-2.0 AND BSD-2-Clause OR ISC",
+   "leaves": [
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "ISC",
+    "MIT"
+   ],
+   "ok": true,
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "P04": {
+   "canon": "GPL-2.0-only WITH Classpath-exception-2.0 OR MIT",
+   "leaves": [
+    "GPL-2.0-only WITH Classpath-exception-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "P05": {
+   "canon": "MIT AND GPL-2.0-only WITH Classpath-exception-2.0",
+   "leaves": [
+    "GPL-2.0-only WITH Classpath-exception-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "P06": {
+   "canon": "MIT",
+   "leaves": [
+    "MIT"
+   ],
+   "ok": true
+  },
+  "P07": {
+   "canon": "MIT",
+   "leaves": [
+    "MIT"
+   ],
+   "ok": true
+  },
+  "P08": {
+   "canon": "MIT AND (Apache-2.0 OR BSD-3-Clause)",
+   "leaves": [
+    "Apache-2.0",
+    "BSD-3-Clause",
+    "MIT"
+   ],
+   "ok": true,
+   "probes": [
+    false,
+    true,
+    false
+   ]
+  },
+  "P09": {
+   "canon": "(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)",
+   "leaves": [
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "ISC",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "P10": {
+   "canon": "MIT AND Apache-2.0 AND BSD-3-Clause OR ISC",
+   "leaves": [
+    "Apache-2.0",
+    "BSD-3-Clause",
+    "ISC",
+    "MIT"
+   ],
+   "ok": true,
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "R01": {
+   "extract_err": "expected id at offset 13",
+   "ok": false
+  },
+  "R02": {
+   "extract_err": "expected id at offset 11",
+   "ok": false
+  },
+  "R03": {
+   "canon": "LicenseRef-a.b-c",
+   "leaves": [
+    "LicenseRef-a.b-c"
+   ],
+   "ok": true
+  },
+  "R04": {
+   "canon": "LicenseRef-scancode-unknown-license-reference",
+   "leaves": [
+    "LicenseRef-scancode-unknown-license-reference"
+   ],
+   "ok": true
+  },
+  "R05": {
+   "canon": "MIT AND LicenseRef-Commercial",
+   "leaves": [
+    "LicenseRef-Commercial",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "S01": {
+   "canon": "MIT",
+   "leaves": [
+    "MIT"
+   ],
+   "ok": true
+  },
+  "S02": {
+   "canon": "Apache-2.0",
+   "leaves": [
+    "Apache-2.0"
+   ],
+   "ok": true
+  },
+  "S03": {
+   "canon": "MIT OR Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "S04": {
+   "canon": "MIT AND Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "S05": {
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0",
+   "leaves": [
+    "GPL-2.0-or-later WITH Classpath-exception-2.0"
+   ],
+   "ok": true
+  },
+  "S06": {
+   "canon": "LicenseRef-Proprietary",
+   "leaves": [
+    "LicenseRef-Proprietary"
+   ],
+   "ok": true
+  },
+  "S07": {
+   "canon": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2",
+   "leaves": [
+    "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2"
+   ],
+   "ok": true
+  },
+  "S08": {
+   "canon": "CDDL-1.0+",
+   "leaves": [
+    "CDDL-1.0+"
+   ],
+   "ok": true
+  },
+  "S09": {
+   "canon": "(MIT OR Apache-2.0) AND BSD-3-Clause",
+   "leaves": [
+    "Apache-2.0",
+    "BSD-3-Clause",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "S10": {
+   "canon": "Apache-2.0 WITH LLVM-exception",
+   "leaves": [
+    "Apache-2.0 WITH LLVM-exception"
+   ],
+   "ok": true
+  },
+  "U01": {
+   "canon": "MIT+",
+   "leaves": [
+    "MIT+"
+   ],
+   "ok": true
+  },
+  "U02": {
+   "canon": "GPL-2.0-or-later",
+   "leaves": [
+    "GPL-2.0-or-later"
+   ],
+   "ok": true
+  },
+  "U03": {
+   "extract_err": "unexpected space before +",
+   "ok": false
+  },
+  "U04": {
+   "extract_err": "syntax error",
+   "ok": false
+  },
+  "U05": {
+   "leaves": [
+    "Apache-1.1+ WITH LLVM-exception"
+   ],
+   "ok": false
+  },
+  "W01": {
+   "extract_err": "expected exception after 'WITH'",
+   "ok": false
+  },
+  "W02": {
+   "extract_err": "syntax error",
+   "ok": false
+  },
+  "W03": {
+   "extract_err": "expected exception after 'WITH'",
+   "ok": false
+  },
+  "W04": {
+   "extract_err": "unknown license 'AdditionRef-x' at offset 18",
+   "ok": false
+  },
+  "W05": {
+   "extract_err": "syntax error",
+   "ok": false
+  },
+  "W06": {
+   "extract_err": "syntax error",
+   "ok": false
+  },
+  "W07": {
+   "extract_err": "syntax error",
+   "ok": false
+  },
+  "W08": {
+   "extract_err": "expected exception after 'WITH'",
+   "ok": false
+  },
+  "W09": {
+   "extract_err": "syntax error",
+   "ok": false
+  },
+  "X01": {
+   "extract_err": "parse error - cannot parse empty string",
+   "ok": false
+  },
+  "X02": {
+   "extract_err": "expected expression following OR, but found none",
+   "ok": false
+  },
+  "X03": {
+   "extract_err": "expression starts with OR",
+   "ok": false
+  },
+  "X04": {
+   "extract_err": "expected license or expression, but found AND",
+   "ok": false
+  },
+  "X05": {
+   "extract_err": "open parenthesis does not have a matching close parenthesis",
+   "ok": false
+  },
+  "X06": {
+   "extract_err": "close parenthesis does not have a matching open parenthesis",
+   "ok": false
+  },
+  "X07": {
+   "extract_err": "expected license or expression, but found close parenthesis",
+   "ok": false
+  },
+  "X08": {
+   "extract_err": "expected id at offset 3",
+   "ok": false
+  },
+  "X09": {
+   "extract_err": "expected id at offset 3",
+   "ok": false
+  },
+  "X10": {
+   "extract_err": "licenses or expressions are not separated by an operator",
+   "ok": false
+  },
+  "X11": {
+   "canon": "MIT OR Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "X12": {
+   "canon": "MIT OR Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "X13": {
+   "canon": "MIT OR Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  },
+  "X14": {
+   "canon": "MIT",
+   "leaves": [
+    "MIT"
+   ],
+   "ok": true
+  },
+  "X15": {
+   "extract_err": "expected id at offset 3",
+   "ok": false
+  },
+  "X16": {
+   "canon": "MIT OR Apache-2.0",
+   "leaves": [
+    "Apache-2.0",
+    "MIT"
+   ],
+   "ok": true
+  }
+ }
+}

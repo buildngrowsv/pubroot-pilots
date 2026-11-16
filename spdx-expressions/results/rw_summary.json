@@ -1,0 +1,347 @@
+[
+ {
+  "id": "RW01",
+  "expr": "MIT",
+  "packages": 310,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW02",
+  "expr": "Apache-2.0",
+  "packages": 40,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW03",
+  "expr": "BSD-3-Clause",
+  "packages": 37,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW04",
+  "expr": "ISC",
+  "packages": 20,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW05",
+  "expr": "BSD-2-Clause",
+  "packages": 13,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW06",
+  "expr": "BlueOak-1.0.0",
+  "packages": 12,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW07",
+  "expr": "0BSD",
+  "packages": 2,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW08",
+  "expr": "LGPL-3.0-only",
+  "packages": 2,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW09",
+  "expr": "MIT OR Apache-2.0",
+  "packages": 2,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW10",
+  "expr": "PSF-2.0",
+  "packages": 2,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW11",
+  "expr": "(MIT OR CC0-1.0)",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW12",
+  "expr": "Apache-2.0 AND BSD-2-Clause",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW13",
+  "expr": "Apache-2.0 AND CNRI-Python",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW14",
+  "expr": "Apache-2.0 AND MIT",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW15",
+  "expr": "Apache-2.0 OR BSD-2-Clause",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW16",
+  "expr": "Apache-2.0 OR BSD-3-Clause",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW17",
+  "expr": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW18",
+  "expr": "CC-BY-4.0",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW19",
+  "expr": "LGPL-2.1",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": false,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": true,
+  "rewrite": true
+ },
+ {
+  "id": "RW20",
+  "expr": "MIT AND PSF-2.0",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW21",
+  "expr": "MIT-0",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW22",
+  "expr": "MIT-CMU",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ },
+ {
+  "id": "RW23",
+  "expr": "MPL-2.0 AND (Apache-2.0 OR MIT)",
+  "packages": 1,
+  "accept": {
+   "spdx-expression-parse@5": true,
+   "spdx-expression-parse@3": true,
+   "license-expression": true,
+   "spdx-rs": true,
+   "packaging": true,
+   "go-spdx": true
+  },
+  "leaf_split": false,
+  "rewrite": false
+ }
+]

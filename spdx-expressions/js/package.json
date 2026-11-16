@@ -1,0 +1,2 @@
+{ "name": "spdx-pilot", "private": true, "type": "commonjs",
+  "dependencies": { "spdx-expression-parse": "5.0.0", "sep3": "npm:spdx-expression-parse@3.0.1", "spdx-satisfies": "6.0.1" } }

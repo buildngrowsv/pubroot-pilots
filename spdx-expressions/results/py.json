@@ -1,0 +1,876 @@
+{
+ "license-expression": {
+  "S01": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "S02": {
+   "ok": true,
+   "tree": "Apache-2.0"
+  },
+  "S03": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "S04": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "S05": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "S06": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LicenseRef-Proprietary"
+  },
+  "S07": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style"
+  },
+  "S08": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): CDDL-1.0+"
+  },
+  "S09": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    "BSD-3-Clause"
+   ]
+  },
+  "S10": {
+   "ok": true,
+   "tree": "Apache-2.0 WITH LLVM-exception"
+  },
+  "P01": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "LGPL-2.1-only",
+    [
+     "AND",
+     "BSD-3-Clause",
+     "MIT"
+    ]
+   ]
+  },
+  "P02": {
+   "ok": true,
+   "tree": [
+    "OR",
+    [
+     "AND",
+     "MIT",
+     "BSD-3-Clause"
+    ],
+    "Apache-2.0"
+   ]
+  },
+  "P03": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    [
+     "AND",
+     "Apache-2.0",
+     "BSD-2-Clause"
+    ],
+    "ISC"
+   ]
+  },
+  "P04": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "GPL-2.0-only WITH Classpath-exception-2.0",
+    "MIT"
+   ]
+  },
+  "P05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "GPL-2.0-only WITH Classpath-exception-2.0"
+   ]
+  },
+  "P06": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "P07": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "P08": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    [
+     "OR",
+     "Apache-2.0",
+     "BSD-3-Clause"
+    ]
+   ]
+  },
+  "P09": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    [
+     "OR",
+     "BSD-2-Clause",
+     "ISC"
+    ]
+   ]
+  },
+  "P10": {
+   "ok": true,
+   "tree": [
+    "OR",
+    [
+     "AND",
+     "MIT",
+     "Apache-2.0",
+     "BSD-3-Clause"
+    ],
+    "ISC"
+   ]
+  },
+  "K01": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K02": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K03": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "K04": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K06": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "K07": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    [
+     "AND",
+     "Apache-2.0",
+     "BSD-3-Clause"
+    ]
+   ]
+  },
+  "I01": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "I02": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "Apache-2.0",
+    "MIT"
+   ]
+  },
+  "I03": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "I04": {
+   "ok": true,
+   "tree": "BSD-3-Clause"
+  },
+  "I05": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): licenseref-foo"
+  },
+  "I06": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LICENSEREF-foo"
+  },
+  "I07": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LicenseRef-FOO"
+  },
+  "I08": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): documentref-a:LicenseRef-b"
+  },
+  "D01": {
+   "ok": true,
+   "tree": "GPL-2.0-only"
+  },
+  "D02": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later"
+  },
+  "D03": {
+   "ok": true,
+   "tree": "LGPL-2.1-or-later"
+  },
+  "D04": {
+   "ok": false,
+   "err": "ExpressionParseError: A license exception symbol can only be used as an exception in a \"WITH"
+  },
+  "D05": {
+   "ok": true,
+   "tree": "wxWindows"
+  },
+  "D06": {
+   "ok": false,
+   "err": "ExpressionParseError: A license exception symbol can only be used as an exception in a \"WITH"
+  },
+  "D07": {
+   "ok": true,
+   "tree": "GPL-2.0-only WITH Qt-LGPL-exception-1.1"
+  },
+  "D08": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): Foo-License-1.0"
+  },
+  "D09": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): Foo-License-1.0"
+  },
+  "U01": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): MIT+"
+  },
+  "U02": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): GPL-2.0-or-later+"
+  },
+  "U03": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid symbols sequence such as (A B) for token: \"+\" at position: 4"
+  },
+  "U04": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LicenseRef-foo+"
+  },
+  "U05": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): Apache-1.1+"
+  },
+  "W01": {
+   "ok": false,
+   "err": "ExpressionParseError: A plain license symbol cannot be used as an exception in a \"WITH symbo"
+  },
+  "W02": {
+   "ok": false,
+   "err": "ExpressionParseError: A license exception symbol can only be used as an exception in a \"WITH"
+  },
+  "W03": {
+   "ok": false,
+   "err": "ExpressionParseError: A plain license symbol cannot be used as an exception in a \"WITH symbo"
+  },
+  "W04": {
+   "ok": false,
+   "err": "ExpressionParseError: A plain license symbol cannot be used as an exception in a \"WITH symbo"
+  },
+  "W05": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LicenseRef-x"
+  },
+  "W06": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid expression for token: \"WITH\" at position: 42"
+  },
+  "W07": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid expression for token: \"WITH\" at position: 20"
+  },
+  "W08": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid expression for token: \"WITH\" at position: 13"
+  },
+  "W09": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid expression for token: \"WITH\""
+  },
+  "X01": {
+   "ok": false,
+   "err": "parse returned None"
+  },
+  "X02": {
+   "ok": false,
+   "err": "ExpressionError: OR requires two or more licenses as in: MIT OR BSD"
+  },
+  "X03": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid operator sequence without symbols such as AND OR or OR OR for "
+  },
+  "X04": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid operator sequence without symbols such as AND OR or OR OR for "
+  },
+  "X05": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid expression"
+  },
+  "X06": {
+   "ok": false,
+   "err": "ExpressionParseError: Unbalanced parenthesis for token: \")\" at position: 17"
+  },
+  "X07": {
+   "ok": false,
+   "err": "IndexError: list index out of range"
+  },
+  "X08": {
+   "ok": false,
+   "err": "ExpressionError: Invalid license key: the valid characters are: letters and numbers, un"
+  },
+  "X09": {
+   "ok": false,
+   "err": "ExpressionError: Invalid license key: the valid characters are: letters and numbers, un"
+  },
+  "X10": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid symbols sequence such as (A B) for token: \"Apache-2.0\" at posi"
+  },
+  "X11": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X12": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X13": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X14": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "X15": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X16": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid symbols sequence such as (A B) for token: \"ORApache-2.0\" at po"
+  },
+  "R01": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LicenseRef-my_license"
+  },
+  "R02": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LicenseRef-"
+  },
+  "R03": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): LicenseRef-a.b-c"
+  },
+  "R04": {
+   "ok": true,
+   "tree": "LicenseRef-scancode-unknown-license-reference"
+  },
+  "R05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "LicenseRef-scancode-commercial-license"
+   ]
+  },
+  "M01": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): Apache 2.0"
+  },
+  "M02": {
+   "ok": false,
+   "err": "ExpressionParseError: Invalid symbols sequence such as (A B) for token: \"License\" at positio"
+  },
+  "M03": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): BSD"
+  },
+  "M04": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): UNLICENSED"
+  },
+  "M05": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): SEE LICENSE IN LICENSE"
+  },
+  "M06": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): NONE"
+  },
+  "M07": {
+   "ok": false,
+   "err": "ExpressionError: Unknown license key(s): NOASSERTION"
+  },
+  "M08": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "M09": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "Apache-2.0 WITH LLVM-exception",
+    "MIT"
+   ]
+  },
+  "M10": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    "Unicode-3.0"
+   ]
+  },
+  "M11": {
+   "ok": true,
+   "tree": "GPL-3.0-only"
+  },
+  "M12": {
+   "ok": true,
+   "tree": "Python-2.0"
+  }
+ },
+ "packaging": {
+  "S01": {
+   "ok": true,
+   "canon": "MIT"
+  },
+  "S02": {
+   "ok": true,
+   "canon": "Apache-2.0"
+  },
+  "S03": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0"
+  },
+  "S04": {
+   "ok": true,
+   "canon": "MIT AND Apache-2.0"
+  },
+  "S05": {
+   "ok": true,
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "S06": {
+   "ok": true,
+   "canon": "LicenseRef-Proprietary"
+  },
+  "S07": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'documentref-spdx-tool-1.2:licenseref-mit-style-2'"
+  },
+  "S08": {
+   "ok": true,
+   "canon": "CDDL-1.0+"
+  },
+  "S09": {
+   "ok": true,
+   "canon": "(MIT OR Apache-2.0) AND BSD-3-Clause"
+  },
+  "S10": {
+   "ok": true,
+   "canon": "Apache-2.0 WITH LLVM-exception"
+  },
+  "P01": {
+   "ok": true,
+   "canon": "LGPL-2.1-only OR BSD-3-Clause AND MIT"
+  },
+  "P02": {
+   "ok": true,
+   "canon": "MIT AND BSD-3-Clause OR Apache-2.0"
+  },
+  "P03": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0 AND BSD-2-Clause OR ISC"
+  },
+  "P04": {
+   "ok": true,
+   "canon": "GPL-2.0-only WITH Classpath-exception-2.0 OR MIT"
+  },
+  "P05": {
+   "ok": true,
+   "canon": "MIT AND GPL-2.0-only WITH Classpath-exception-2.0"
+  },
+  "P06": {
+   "ok": true,
+   "canon": "(MIT)"
+  },
+  "P07": {
+   "ok": true,
+   "canon": "((MIT))"
+  },
+  "P08": {
+   "ok": true,
+   "canon": "MIT AND (Apache-2.0 OR BSD-3-Clause)"
+  },
+  "P09": {
+   "ok": true,
+   "canon": "(MIT OR Apache-2.0) AND (BSD-2-Clause OR ISC)"
+  },
+  "P10": {
+   "ok": true,
+   "canon": "MIT AND Apache-2.0 AND BSD-3-Clause OR ISC"
+  },
+  "K01": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0"
+  },
+  "K02": {
+   "ok": true,
+   "canon": "MIT AND Apache-2.0"
+  },
+  "K03": {
+   "ok": true,
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "K04": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0"
+  },
+  "K05": {
+   "ok": true,
+   "canon": "MIT AND Apache-2.0"
+  },
+  "K06": {
+   "ok": true,
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "K07": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0 AND BSD-3-Clause"
+  },
+  "I01": {
+   "ok": true,
+   "canon": "MIT"
+  },
+  "I02": {
+   "ok": true,
+   "canon": "Apache-2.0 OR MIT"
+  },
+  "I03": {
+   "ok": true,
+   "canon": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "I04": {
+   "ok": true,
+   "canon": "BSD-3-Clause"
+  },
+  "I05": {
+   "ok": true,
+   "canon": "LicenseRef-foo"
+  },
+  "I06": {
+   "ok": true,
+   "canon": "LicenseRef-foo"
+  },
+  "I07": {
+   "ok": true,
+   "canon": "LicenseRef-FOO"
+  },
+  "I08": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'documentref-a:licenseref-b'"
+  },
+  "D01": {
+   "ok": true,
+   "canon": "GPL-2.0"
+  },
+  "D02": {
+   "ok": true,
+   "canon": "GPL-2.0+"
+  },
+  "D03": {
+   "ok": true,
+   "canon": "LGPL-2.1+"
+  },
+  "D04": {
+   "ok": true,
+   "canon": "GPL-2.0-with-classpath-exception"
+  },
+  "D05": {
+   "ok": true,
+   "canon": "wxWindows"
+  },
+  "D06": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'nokia-qt-exception-1.1'"
+  },
+  "D07": {
+   "ok": true,
+   "canon": "GPL-2.0-only WITH Nokia-Qt-exception-1.1"
+  },
+  "D08": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'foo-license-1.0'"
+  },
+  "D09": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'foo-license-1.0'"
+  },
+  "U01": {
+   "ok": true,
+   "canon": "MIT+"
+  },
+  "U02": {
+   "ok": true,
+   "canon": "GPL-2.0-or-later+"
+  },
+  "U03": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT +'"
+  },
+  "U04": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid licenseref: 'licenseref-foo+'"
+  },
+  "U05": {
+   "ok": true,
+   "canon": "Apache-1.1+ WITH LLVM-exception"
+  },
+  "W01": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license exception: 'apache-2.0'"
+  },
+  "W02": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'classpath-exception-2.0'"
+  },
+  "W03": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license exception: 'licenseref-x'"
+  },
+  "W04": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license exception: 'additionref-x'"
+  },
+  "W05": {
+   "ok": true,
+   "canon": "LicenseRef-x WITH Classpath-exception-2.0"
+  },
+  "W06": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'GPL-2.0-only WITH Classpath-exception-2.0"
+  },
+  "W07": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: '(MIT OR Apache-2.0) WITH LLVM-exception'"
+  },
+  "W08": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'GPL-2.0-only WITH'"
+  },
+  "W09": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'WITH Classpath-exception-2.0'"
+  },
+  "X01": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: ''"
+  },
+  "X02": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT OR'"
+  },
+  "X03": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'OR MIT'"
+  },
+  "X04": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT AND AND Apache-2.0'"
+  },
+  "X05": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: '(MIT OR Apache-2.0'"
+  },
+  "X06": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT OR Apache-2.0)'"
+  },
+  "X07": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: '()'"
+  },
+  "X08": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'mit/apache-2.0'"
+  },
+  "X09": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT, Apache-2.0'"
+  },
+  "X10": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT Apache-2.0'"
+  },
+  "X11": {
+   "ok": true,
+   "canon": "MIT OR (Apache-2.0)"
+  },
+  "X12": {
+   "ok": true,
+   "canon": "(MIT) OR (Apache-2.0)"
+  },
+  "X13": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0"
+  },
+  "X14": {
+   "ok": true,
+   "canon": "MIT"
+  },
+  "X15": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0"
+  },
+  "X16": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT ORApache-2.0'"
+  },
+  "R01": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid licenseref: 'licenseref-my_license'"
+  },
+  "R02": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid licenseref: 'licenseref-'"
+  },
+  "R03": {
+   "ok": true,
+   "canon": "LicenseRef-a.b-c"
+  },
+  "R04": {
+   "ok": true,
+   "canon": "LicenseRef-scancode-unknown-license-reference"
+  },
+  "R05": {
+   "ok": true,
+   "canon": "MIT AND LicenseRef-Commercial"
+  },
+  "M01": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'Apache 2.0'"
+  },
+  "M02": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'MIT License'"
+  },
+  "M03": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'bsd'"
+  },
+  "M04": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'unlicensed'"
+  },
+  "M05": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Invalid license expression: 'SEE LICENSE IN LICENSE'"
+  },
+  "M06": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'none'"
+  },
+  "M07": {
+   "ok": false,
+   "err": "InvalidLicenseExpression: Unknown license: 'noassertion'"
+  },
+  "M08": {
+   "ok": true,
+   "canon": "MIT OR Apache-2.0"
+  },
+  "M09": {
+   "ok": true,
+   "canon": "Apache-2.0 WITH LLVM-exception OR MIT"
+  },
+  "M10": {
+   "ok": true,
+   "canon": "(MIT OR Apache-2.0) AND Unicode-3.0"
+  },
+  "M11": {
+   "ok": true,
+   "canon": "GPL-3.0"
+  },
+  "M12": {
+   "ok": true,
+   "canon": "Python-2.0"
+  }
+ }
+}

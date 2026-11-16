@@ -1,0 +1,8 @@
+[package]
+name = "spdx_pilot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spdx = "=0.13.6"
+serde_json = "1"

@@ -1,0 +1,1047 @@
+{
+ "spdx-expression-parse@5": {
+  "S01": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "S02": {
+   "ok": true,
+   "tree": "Apache-2.0"
+  },
+  "S03": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "S04": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "S05": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "S06": {
+   "ok": true,
+   "tree": "LicenseRef-Proprietary"
+  },
+  "S07": {
+   "ok": true,
+   "tree": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2"
+  },
+  "S08": {
+   "ok": true,
+   "tree": "CDDL-1.0+"
+  },
+  "S09": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    "BSD-3-Clause"
+   ]
+  },
+  "S10": {
+   "ok": true,
+   "tree": "Apache-2.0 WITH LLVM-exception"
+  },
+  "P01": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "LGPL-2.1-only",
+    [
+     "AND",
+     "BSD-3-Clause",
+     "MIT"
+    ]
+   ]
+  },
+  "P02": {
+   "ok": true,
+   "tree": [
+    "OR",
+    [
+     "AND",
+     "MIT",
+     "BSD-3-Clause"
+    ],
+    "Apache-2.0"
+   ]
+  },
+  "P03": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    [
+     "OR",
+     [
+      "AND",
+      "Apache-2.0",
+      "BSD-2-Clause"
+     ],
+     "ISC"
+    ]
+   ]
+  },
+  "P04": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "GPL-2.0-only WITH Classpath-exception-2.0",
+    "MIT"
+   ]
+  },
+  "P05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "GPL-2.0-only WITH Classpath-exception-2.0"
+   ]
+  },
+  "P06": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "P07": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "P08": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    [
+     "OR",
+     "Apache-2.0",
+     "BSD-3-Clause"
+    ]
+   ]
+  },
+  "P09": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    [
+     "OR",
+     "BSD-2-Clause",
+     "ISC"
+    ]
+   ]
+  },
+  "P10": {
+   "ok": true,
+   "tree": [
+    "OR",
+    [
+     "AND",
+     "MIT",
+     [
+      "AND",
+      "Apache-2.0",
+      "BSD-3-Clause"
+     ]
+    ],
+    "ISC"
+   ]
+  },
+  "K01": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K02": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K03": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "K04": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "K06": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "K07": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    [
+     "AND",
+     "Apache-2.0",
+     "BSD-3-Clause"
+    ]
+   ]
+  },
+  "I01": {
+   "ok": false,
+   "err": "Unexpected `m` at offset 0"
+  },
+  "I02": {
+   "ok": false,
+   "err": "Unexpected `a` at offset 0"
+  },
+  "I03": {
+   "ok": false,
+   "err": "Unexpected `G` at offset 0"
+  },
+  "I04": {
+   "ok": false,
+   "err": "Unexpected `B` at offset 0"
+  },
+  "I05": {
+   "ok": false,
+   "err": "Unexpected `l` at offset 0"
+  },
+  "I06": {
+   "ok": false,
+   "err": "Unexpected `L` at offset 0"
+  },
+  "I07": {
+   "ok": true,
+   "tree": "LicenseRef-FOO"
+  },
+  "I08": {
+   "ok": false,
+   "err": "Unexpected `d` at offset 0"
+  },
+  "D01": {
+   "ok": true,
+   "tree": "GPL-2.0"
+  },
+  "D02": {
+   "ok": true,
+   "tree": "GPL-2.0+"
+  },
+  "D03": {
+   "ok": true,
+   "tree": "LGPL-2.1+"
+  },
+  "D04": {
+   "ok": true,
+   "tree": "GPL-2.0-with-classpath-exception"
+  },
+  "D05": {
+   "ok": true,
+   "tree": "wxWindows"
+  },
+  "D06": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 0"
+  },
+  "D07": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 18"
+  },
+  "D08": {
+   "ok": false,
+   "err": "Unexpected `F` at offset 0"
+  },
+  "D09": {
+   "ok": false,
+   "err": "Unexpected `F` at offset 7"
+  },
+  "U01": {
+   "ok": true,
+   "tree": "MIT+"
+  },
+  "U02": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later+"
+  },
+  "U03": {
+   "ok": false,
+   "err": "Space before `+`"
+  },
+  "U04": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "U05": {
+   "ok": true,
+   "tree": "Apache-1.1+ WITH LLVM-exception"
+  },
+  "W01": {
+   "ok": false,
+   "err": "Expected exception after `WITH`"
+  },
+  "W02": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "W03": {
+   "ok": false,
+   "err": "Expected exception after `WITH`"
+  },
+  "W04": {
+   "ok": false,
+   "err": "Unexpected `A` at offset 18"
+  },
+  "W05": {
+   "ok": true,
+   "tree": "LicenseRef-x WITH Classpath-exception-2.0"
+  },
+  "W06": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "W07": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "W08": {
+   "ok": false,
+   "err": "Expected exception after `WITH`"
+  },
+  "W09": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X01": {
+   "ok": false,
+   "err": "Cannot read properties of null (reading 'type')"
+  },
+  "X02": {
+   "ok": false,
+   "err": "Cannot read properties of null (reading 'type')"
+  },
+  "X03": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X04": {
+   "ok": false,
+   "err": "Expected expression"
+  },
+  "X05": {
+   "ok": false,
+   "err": "Expected `)`"
+  },
+  "X06": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X07": {
+   "ok": false,
+   "err": "Cannot read properties of null (reading 'type')"
+  },
+  "X08": {
+   "ok": false,
+   "err": "Unexpected `0` at offset 13"
+  },
+  "X09": {
+   "ok": false,
+   "err": "Unexpected `.` at offset 13"
+  },
+  "X10": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X11": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X12": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X13": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X14": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "X15": {
+   "ok": false,
+   "err": "Unexpected `\t` at offset 3"
+  },
+  "X16": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "R01": {
+   "ok": false,
+   "err": "Unexpected `_` at offset 13"
+  },
+  "R02": {
+   "ok": false,
+   "err": "Expected idstring at offset 11"
+  },
+  "R03": {
+   "ok": true,
+   "tree": "LicenseRef-a.b-c"
+  },
+  "R04": {
+   "ok": true,
+   "tree": "LicenseRef-scancode-unknown-license-reference"
+  },
+  "R05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "LicenseRef-Commercial"
+   ]
+  },
+  "M01": {
+   "ok": false,
+   "err": "Unexpected `A` at offset 0"
+  },
+  "M02": {
+   "ok": false,
+   "err": "Unexpected `L` at offset 4"
+  },
+  "M03": {
+   "ok": false,
+   "err": "Unexpected `B` at offset 0"
+  },
+  "M04": {
+   "ok": false,
+   "err": "Unexpected `U` at offset 0"
+  },
+  "M05": {
+   "ok": false,
+   "err": "Unexpected `S` at offset 0"
+  },
+  "M06": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 0"
+  },
+  "M07": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 0"
+  },
+  "M08": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "M09": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "Apache-2.0 WITH LLVM-exception",
+    "MIT"
+   ]
+  },
+  "M10": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    "Unicode-3.0"
+   ]
+  },
+  "M11": {
+   "ok": true,
+   "tree": "GPL-3.0"
+  },
+  "M12": {
+   "ok": true,
+   "tree": "Python-2.0"
+  }
+ },
+ "spdx-expression-parse@3": {
+  "S01": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "S02": {
+   "ok": true,
+   "tree": "Apache-2.0"
+  },
+  "S03": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "S04": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "S05": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later WITH Classpath-exception-2.0"
+  },
+  "S06": {
+   "ok": true,
+   "tree": "LicenseRef-Proprietary"
+  },
+  "S07": {
+   "ok": true,
+   "tree": "DocumentRef-spdx-tool-1.2:LicenseRef-MIT-Style-2"
+  },
+  "S08": {
+   "ok": true,
+   "tree": "CDDL-1.0+"
+  },
+  "S09": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    "BSD-3-Clause"
+   ]
+  },
+  "S10": {
+   "ok": true,
+   "tree": "Apache-2.0 WITH LLVM-exception"
+  },
+  "P01": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "LGPL-2.1-only",
+    [
+     "AND",
+     "BSD-3-Clause",
+     "MIT"
+    ]
+   ]
+  },
+  "P02": {
+   "ok": true,
+   "tree": [
+    "OR",
+    [
+     "AND",
+     "MIT",
+     "BSD-3-Clause"
+    ],
+    "Apache-2.0"
+   ]
+  },
+  "P03": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    [
+     "OR",
+     [
+      "AND",
+      "Apache-2.0",
+      "BSD-2-Clause"
+     ],
+     "ISC"
+    ]
+   ]
+  },
+  "P04": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "GPL-2.0-only WITH Classpath-exception-2.0",
+    "MIT"
+   ]
+  },
+  "P05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "GPL-2.0-only WITH Classpath-exception-2.0"
+   ]
+  },
+  "P06": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "P07": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "P08": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    [
+     "OR",
+     "Apache-2.0",
+     "BSD-3-Clause"
+    ]
+   ]
+  },
+  "P09": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    [
+     "OR",
+     "BSD-2-Clause",
+     "ISC"
+    ]
+   ]
+  },
+  "P10": {
+   "ok": true,
+   "tree": [
+    "OR",
+    [
+     "AND",
+     "MIT",
+     [
+      "AND",
+      "Apache-2.0",
+      "BSD-3-Clause"
+     ]
+    ],
+    "ISC"
+   ]
+  },
+  "K01": {
+   "ok": false,
+   "err": "Unexpected `o` at offset 4"
+  },
+  "K02": {
+   "ok": false,
+   "err": "Unexpected `a` at offset 4"
+  },
+  "K03": {
+   "ok": false,
+   "err": "Unexpected `w` at offset 17"
+  },
+  "K04": {
+   "ok": false,
+   "err": "Unexpected `O` at offset 4"
+  },
+  "K05": {
+   "ok": false,
+   "err": "Unexpected `a` at offset 4"
+  },
+  "K06": {
+   "ok": false,
+   "err": "Unexpected `W` at offset 17"
+  },
+  "K07": {
+   "ok": false,
+   "err": "Unexpected `a` at offset 18"
+  },
+  "I01": {
+   "ok": false,
+   "err": "Unexpected `m` at offset 0"
+  },
+  "I02": {
+   "ok": false,
+   "err": "Unexpected `a` at offset 0"
+  },
+  "I03": {
+   "ok": false,
+   "err": "Unexpected `G` at offset 0"
+  },
+  "I04": {
+   "ok": false,
+   "err": "Unexpected `B` at offset 0"
+  },
+  "I05": {
+   "ok": false,
+   "err": "Unexpected `l` at offset 0"
+  },
+  "I06": {
+   "ok": false,
+   "err": "Unexpected `L` at offset 0"
+  },
+  "I07": {
+   "ok": true,
+   "tree": "LicenseRef-FOO"
+  },
+  "I08": {
+   "ok": false,
+   "err": "Unexpected `d` at offset 0"
+  },
+  "D01": {
+   "ok": true,
+   "tree": "GPL-2.0"
+  },
+  "D02": {
+   "ok": true,
+   "tree": "GPL-2.0+"
+  },
+  "D03": {
+   "ok": true,
+   "tree": "LGPL-2.1+"
+  },
+  "D04": {
+   "ok": true,
+   "tree": "GPL-2.0-with-classpath-exception"
+  },
+  "D05": {
+   "ok": true,
+   "tree": "wxWindows"
+  },
+  "D06": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 0"
+  },
+  "D07": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 18"
+  },
+  "D08": {
+   "ok": false,
+   "err": "Unexpected `F` at offset 0"
+  },
+  "D09": {
+   "ok": false,
+   "err": "Unexpected `F` at offset 7"
+  },
+  "U01": {
+   "ok": true,
+   "tree": "MIT+"
+  },
+  "U02": {
+   "ok": true,
+   "tree": "GPL-2.0-or-later+"
+  },
+  "U03": {
+   "ok": false,
+   "err": "Space before `+`"
+  },
+  "U04": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "U05": {
+   "ok": true,
+   "tree": "Apache-1.1+ WITH LLVM-exception"
+  },
+  "W01": {
+   "ok": false,
+   "err": "Expected exception after `WITH`"
+  },
+  "W02": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "W03": {
+   "ok": false,
+   "err": "Expected exception after `WITH`"
+  },
+  "W04": {
+   "ok": false,
+   "err": "Unexpected `A` at offset 18"
+  },
+  "W05": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "W06": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "W07": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "W08": {
+   "ok": false,
+   "err": "Expected exception after `WITH`"
+  },
+  "W09": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X01": {
+   "ok": false,
+   "err": "Cannot read properties of null (reading 'type')"
+  },
+  "X02": {
+   "ok": false,
+   "err": "Cannot read properties of null (reading 'type')"
+  },
+  "X03": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X04": {
+   "ok": false,
+   "err": "Expected expression"
+  },
+  "X05": {
+   "ok": false,
+   "err": "Expected `)`"
+  },
+  "X06": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X07": {
+   "ok": false,
+   "err": "Cannot read properties of null (reading 'type')"
+  },
+  "X08": {
+   "ok": false,
+   "err": "Unexpected `0` at offset 13"
+  },
+  "X09": {
+   "ok": false,
+   "err": "Unexpected `.` at offset 13"
+  },
+  "X10": {
+   "ok": false,
+   "err": "Syntax error"
+  },
+  "X11": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X12": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X13": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "X14": {
+   "ok": true,
+   "tree": "MIT"
+  },
+  "X15": {
+   "ok": false,
+   "err": "Unexpected `\t` at offset 3"
+  },
+  "X16": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "R01": {
+   "ok": false,
+   "err": "Unexpected `_` at offset 13"
+  },
+  "R02": {
+   "ok": false,
+   "err": "Expected idstring at offset 11"
+  },
+  "R03": {
+   "ok": true,
+   "tree": "LicenseRef-a.b-c"
+  },
+  "R04": {
+   "ok": true,
+   "tree": "LicenseRef-scancode-unknown-license-reference"
+  },
+  "R05": {
+   "ok": true,
+   "tree": [
+    "AND",
+    "MIT",
+    "LicenseRef-Commercial"
+   ]
+  },
+  "M01": {
+   "ok": false,
+   "err": "Unexpected `A` at offset 0"
+  },
+  "M02": {
+   "ok": false,
+   "err": "Unexpected `L` at offset 4"
+  },
+  "M03": {
+   "ok": false,
+   "err": "Unexpected `B` at offset 0"
+  },
+  "M04": {
+   "ok": false,
+   "err": "Unexpected `U` at offset 0"
+  },
+  "M05": {
+   "ok": false,
+   "err": "Unexpected `S` at offset 0"
+  },
+  "M06": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 0"
+  },
+  "M07": {
+   "ok": false,
+   "err": "Unexpected `N` at offset 0"
+  },
+  "M08": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "MIT",
+    "Apache-2.0"
+   ]
+  },
+  "M09": {
+   "ok": true,
+   "tree": [
+    "OR",
+    "Apache-2.0 WITH LLVM-exception",
+    "MIT"
+   ]
+  },
+  "M10": {
+   "ok": true,
+   "tree": [
+    "AND",
+    [
+     "OR",
+     "MIT",
+     "Apache-2.0"
+    ],
+    "Unicode-3.0"
+   ]
+  },
+  "M11": {
+   "ok": true,
+   "tree": "GPL-3.0"
+  },
+  "M12": {
+   "ok": true,
+   "tree": "Python-2.0"
+  }
+ },
+ "spdx-satisfies@6": {
+  "P01": {
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "P02": {
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "P03": {
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "P08": {
+   "probes": [
+    false,
+    true,
+    false
+   ]
+  },
+  "P10": {
+   "probes": [
+    true,
+    false,
+    true
+   ]
+  },
+  "K07": {
+   "probes": [
+    "ERR",
+    "ERR"
+   ]
+  },
+  "M09": {
+   "probes": [
+    true,
+    false
+   ]
+  }
+ }
+}

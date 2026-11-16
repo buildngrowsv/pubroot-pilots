@@ -1,0 +1,2 @@
+license-expression==30.4.4
+packaging==26.3
