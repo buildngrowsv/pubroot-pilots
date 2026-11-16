@@ -1,0 +1,2 @@
+{ "name": "cron-pilot", "private": true, "type": "commonjs",
+  "dependencies": { "cron-parser": "5.10.6", "croner": "11.0.1", "cron": "4.4.0" } }
