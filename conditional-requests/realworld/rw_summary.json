@@ -1,0 +1,3944 @@
+{
+ "fetched": [
+  "2026-11-20T15:26:47+00:00",
+  "2026-11-20T15:31:42+00:00"
+ ],
+ "pass_differences": [
+  "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js I01: 200 vs 412",
+  "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js I04: 200 vs 412",
+  "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js N03: 200 vs 304",
+  "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js N13: 200 vs 304"
+ ],
+ "n_urls": 40,
+ "n_scored_sites": 32,
+ "unstable_excluded": [
+  "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
+ ],
+ "excluded": [
+  {
+   "url": "https://www.netlify.com/favicon.ico",
+   "status": 301,
+   "error": null
+  },
+  {
+   "url": "https://www.rust-lang.org/static/images/favicon-32x32.png",
+   "status": 301,
+   "error": null
+  },
+  {
+   "url": "https://nodejs.org/favicon.ico",
+   "status": 307,
+   "error": null
+  },
+  {
+   "url": "https://www.kernel.org/favicon.ico",
+   "status": 404,
+   "error": null
+  },
+  {
+   "url": "https://www.openssl.org/favicon.ico",
+   "status": 404,
+   "error": null
+  },
+  {
+   "url": "https://www.gitlab.com/favicon.ico",
+   "status": 308,
+   "error": null
+  },
+  {
+   "url": "https://ubuntu.com/favicon.ico",
+   "status": 404,
+   "error": null
+  }
+ ],
+ "per_case": {
+  "N01": {
+   "-": 7,
+   "A": 22,
+   "M": 3
+  },
+  "N02": {
+   "-": 7,
+   "A": 21,
+   "M": 4
+  },
+  "N03": {
+   "-": 7,
+   "A": 22,
+   "M": 3
+  },
+  "N05": {
+   "-": 7,
+   "A": 19,
+   "M": 6
+  },
+  "N06": {
+   "-": 7,
+   "A": 19,
+   "M": 6
+  },
+  "N07": {
+   "M": 10,
+   "A": 22
+  },
+  "N10": {
+   "-": 7,
+   "M": 16,
+   "O": 5,
+   "A": 4
+  },
+  "N13": {
+   "-": 7,
+   "A": 19,
+   "M": 6
+  },
+  "M01": {
+   "M": 2,
+   "A": 25,
+   "-": 5
+  },
+  "M03": {
+   "A": 27,
+   "-": 5
+  },
+  "M04": {
+   "M": 3,
+   "A": 24,
+   "-": 5
+  },
+  "M05": {
+   "M": 3,
+   "A": 24,
+   "-": 5
+  },
+  "M07": {
+   "M": 13,
+   "A": 14,
+   "-": 5
+  },
+  "M11": {
+   "A": 7,
+   "F": 20,
+   "-": 5
+  },
+  "C01": {
+   "A": 26,
+   "-": 5,
+   "F": 1
+  },
+  "C04": {
+   "M": 15,
+   "A": 12,
+   "-": 5
+  }
+ },
+ "sites": [
+  {
+   "host": "unpkg.com",
+   "server": "cloudflare",
+   "infra": [
+    "age",
+    "cf-ray",
+    "via"
+   ],
+   "etag_kind": "none",
+   "has_lm": true,
+   "counts": {
+    "-": 7,
+    "M": 6,
+    "A": 3
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N02": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N05": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N06": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N13": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "cdnjs.cloudflare.com",
+   "server": "cloudflare",
+   "infra": [
+    "age",
+    "cf-ray"
+   ],
+   "etag_kind": "none",
+   "has_lm": true,
+   "counts": {
+    "-": 7,
+    "M": 2,
+    "A": 7
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N02": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N05": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N06": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N13": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "code.jquery.com",
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "ajax.googleapis.com",
+   "server": "sffe",
+   "infra": [
+    "age"
+   ],
+   "etag_kind": "none",
+   "has_lm": true,
+   "counts": {
+    "-": 7,
+    "A": 8,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N02": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N05": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N06": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N13": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "raw.githubusercontent.com",
+   "server": null,
+   "infra": [
+    "via",
+    "x-cache",
+    "x-fastly-request-id",
+    "x-github-request-id",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": false,
+   "counts": {
+    "A": 7,
+    "M": 1,
+    "-": 8
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M04": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M05": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M07": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M11": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C04": {
+     "exp": 304,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "pages.github.com",
+   "server": "GitHub.com",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-fastly-request-id",
+    "x-github-request-id",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.python.org",
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "docs.python.org",
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.rfc-editor.org",
+   "server": "cloudflare",
+   "infra": [
+    "cf-ray"
+   ],
+   "etag_kind": "weak",
+   "has_lm": false,
+   "counts": {
+    "A": 7,
+    "O": 1,
+    "-": 8
+   },
+   "etag_changed_in": 7,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 400,
+     "cls": "O"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M04": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M05": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M07": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M11": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C04": {
+     "exp": 304,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "I01": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "nginx.org",
+   "server": "nginx/1.31.8",
+   "infra": [],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 12,
+    "O": 1,
+    "M": 2,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 400,
+     "cls": "O"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "httpd.apache.org",
+   "server": "Apache",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.debian.org",
+   "server": "Apache",
+   "infra": [],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 13,
+    "M": 2,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "upload.wikimedia.org",
+   "server": "ATS/9.2.16",
+   "infra": [
+    "age",
+    "x-cache"
+   ],
+   "etag_kind": "malformed",
+   "has_lm": true,
+   "counts": {
+    "-": 7,
+    "M": 3,
+    "A": 6
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N02": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N05": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N06": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N13": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.w3.org",
+   "server": "cloudflare",
+   "infra": [
+    "age",
+    "cf-ray",
+    "via",
+    "x-amz-cf-id",
+    "x-cache"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 15,
+    "O": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 400,
+     "cls": "O"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "developer.mozilla.org",
+   "server": "Google Frontend",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-goog-generation",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "go.dev",
+   "server": "Google Frontend",
+   "infra": [],
+   "etag_kind": "none",
+   "has_lm": false,
+   "counts": {
+    "-": 15,
+    "A": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N02": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N05": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N06": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N13": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M04": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M05": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M07": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M11": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C04": {
+     "exp": 304,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "I01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.cloudflare.com",
+   "server": "cloudflare",
+   "infra": [
+    "cf-ray",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": false,
+   "counts": {
+    "M": 7,
+    "O": 1,
+    "-": 8
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 400,
+     "cls": "O"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M04": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M05": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M07": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M11": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C04": {
+     "exp": 304,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.fastly.com",
+   "server": "Artisanal bits",
+   "infra": [
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": false,
+   "counts": {
+    "A": 7,
+    "M": 1,
+    "-": 8
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M04": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M05": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M07": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M11": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C01": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "C04": {
+     "exp": 304,
+     "got": "n/a",
+     "cls": "-"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 200,
+     "got": "n/a",
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "aws.amazon.com",
+   "server": "Server",
+   "infra": [
+    "via",
+    "x-amz-cf-id",
+    "x-cache"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 12,
+    "M": 3,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "learn.microsoft.com",
+   "server": null,
+   "infra": [
+    "x-azure-ref"
+   ],
+   "etag_kind": "weak",
+   "has_lm": true,
+   "counts": {
+    "M": 10,
+    "A": 5,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.apple.com",
+   "server": "Apple",
+   "infra": [],
+   "etag_kind": "none",
+   "has_lm": true,
+   "counts": {
+    "-": 7,
+    "M": 3,
+    "A": 5,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N02": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N05": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N06": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N13": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "nextjs.org",
+   "server": "Vercel",
+   "infra": [
+    "age",
+    "x-vercel-id"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "M": 13,
+    "A": 3
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "fonts.gstatic.com",
+   "server": "sffe",
+   "infra": [
+    "age"
+   ],
+   "etag_kind": "none",
+   "has_lm": true,
+   "counts": {
+    "-": 7,
+    "A": 8,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N02": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N05": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N06": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "N13": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "-"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I03": {
+     "exp": "N/A",
+     "got": "n/a",
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "crates.io",
+   "server": "Heroku",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.gnu.org",
+   "server": "Apache",
+   "infra": [],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 13,
+    "M": 2,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "ftp.gnu.org",
+   "server": "Apache/2.4.52 (Trisquel_GNU/Linux)",
+   "infra": [],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 13,
+    "M": 2,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.djangoproject.com",
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.php.net",
+   "server": "BunnyCDN-ASB1-1503",
+   "infra": [],
+   "etag_kind": "weak",
+   "has_lm": true,
+   "counts": {
+    "A": 12,
+    "O": 1,
+    "M": 2,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 400,
+     "cls": "O"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.postgresql.org",
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 9,
+    "M": 7
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "curl.se",
+   "server": "nginx/1.31.3",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 14,
+    "M": 1,
+    "F": 1
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 412,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.sqlite.org",
+   "server": null,
+   "infra": [],
+   "etag_kind": "strong",
+   "has_lm": true,
+   "counts": {
+    "A": 6,
+    "M": 8,
+    "F": 2
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 304,
+     "cls": "F"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  },
+  {
+   "host": "www.wikipedia.org",
+   "server": "ATS/9.2.16",
+   "infra": [
+    "age",
+    "x-cache"
+   ],
+   "etag_kind": "weak",
+   "has_lm": true,
+   "counts": {
+    "A": 9,
+    "M": 7
+   },
+   "etag_changed_in": 0,
+   "n_304_without_etag": 0,
+   "rows": {
+    "N01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N02": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N03": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "N05": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N06": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N10": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "N13": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M01": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M03": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "M04": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M05": {
+     "exp": 304,
+     "got": 304,
+     "cls": "A"
+    },
+    "M07": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "M11": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C01": {
+     "exp": 200,
+     "got": 200,
+     "cls": "A"
+    },
+    "C04": {
+     "exp": 304,
+     "got": 200,
+     "cls": "M"
+    },
+    "I01": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "I04": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    },
+    "U03": {
+     "exp": 412,
+     "got": 200,
+     "cls": "info"
+    }
+   }
+  }
+ ]
+}

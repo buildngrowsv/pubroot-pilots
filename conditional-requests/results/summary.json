@@ -1,0 +1,3678 @@
+{
+ "n_cases": 54,
+ "n_open": 5,
+ "n_status_split": 36,
+ "n_scored_with_deviation": 34,
+ "baseline": {
+  "express": {
+   "status": 200,
+   "etag_kind": "weak",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "fastify_send": {
+   "status": 200,
+   "etag_kind": "weak",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "sirv": {
+   "status": 200,
+   "etag_kind": "weak",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "serve_handler": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": null,
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "starlette": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "aiohttp": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "werkzeug": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "tornado": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "falcon": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "django": {
+   "status": 200,
+   "etag_kind": "none",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "go_servecontent": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "go_fileserver": {
+   "status": 200,
+   "etag_kind": "none",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "tower_http": {
+   "status": 200,
+   "etag_kind": "none",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  },
+  "actix_files": {
+   "status": 200,
+   "etag_kind": "strong",
+   "last_modified": "Thu, 15 Jan 2026 12:00:00 GMT",
+   "body_ok": true,
+   "content_length": "100"
+  }
+ },
+ "classes": {
+  "express": {
+   "A": 44,
+   "-": 5,
+   "P": 5
+  },
+  "fastify_send": {
+   "A": 43,
+   "-": 5,
+   "P": 5,
+   "X": 1
+  },
+  "sirv": {
+   "A": 21,
+   "M": 14,
+   "-": 5,
+   "P": 14
+  },
+  "serve_handler": {
+   "A": 35,
+   "M": 8,
+   "-": 5,
+   "P": 6
+  },
+  "starlette": {
+   "A": 37,
+   "-": 5,
+   "M": 1,
+   "F": 1,
+   "P": 10
+  },
+  "aiohttp": {
+   "A": 47,
+   "-": 5,
+   "M": 1,
+   "F": 1
+  },
+  "werkzeug": {
+   "A": 40,
+   "-": 5,
+   "F": 1,
+   "X": 3,
+   "P": 4,
+   "M": 1
+  },
+  "tornado": {
+   "A": 38,
+   "-": 5,
+   "F": 1,
+   "P": 10
+  },
+  "falcon": {
+   "A": 35,
+   "-": 5,
+   "O": 4,
+   "P": 10
+  },
+  "django": {
+   "A": 20,
+   "n/a": 18,
+   "M": 3,
+   "-": 5,
+   "F": 1,
+   "P": 7
+  },
+  "go_servecontent": {
+   "A": 48,
+   "-": 5,
+   "M": 1
+  },
+  "go_fileserver": {
+   "A": 31,
+   "n/a": 18,
+   "-": 5
+  },
+  "tower_http": {
+   "A": 22,
+   "n/a": 18,
+   "M": 3,
+   "-": 5,
+   "F": 1,
+   "P": 4,
+   "X": 1
+  },
+  "actix_files": {
+   "A": 48,
+   "-": 5,
+   "X": 1
+  }
+ },
+ "defects_304": {
+  "express": {
+   "304s": 24
+  },
+  "fastify_send": {
+   "304s": 24
+  },
+  "sirv": {
+   "304s": 9,
+   "304 without the ETag": 9
+  },
+  "serve_handler": {
+   "304s": 9,
+   "304 without the ETag": 9
+  },
+  "starlette": {
+   "304s": 28
+  },
+  "aiohttp": {
+   "304s": 24
+  },
+  "werkzeug": {
+   "304s": 26
+  },
+  "tornado": {
+   "304s": 30
+  },
+  "falcon": {
+   "304s": 25
+  },
+  "django": {
+   "304s": 9
+  },
+  "go_servecontent": {
+   "304s": 21
+  },
+  "go_fileserver": {
+   "304s": 10
+  },
+  "tower_http": {
+   "304s": 8
+  },
+  "actix_files": {
+   "304s": 21,
+   "304 with Content-Type": 21
+  }
+ },
+ "pairwise": {
+  "express vs fastify_send": 1,
+  "express vs sirv": 26,
+  "express vs serve_handler": 26,
+  "express vs starlette": 11,
+  "express vs aiohttp": 3,
+  "express vs werkzeug": 11,
+  "express vs tornado": 11,
+  "express vs falcon": 16,
+  "express vs django": 14,
+  "express vs go_servecontent": 6,
+  "express vs go_fileserver": 4,
+  "express vs tower_http": 12,
+  "express vs actix_files": 5,
+  "fastify_send vs sirv": 27,
+  "fastify_send vs serve_handler": 27,
+  "fastify_send vs starlette": 12,
+  "fastify_send vs aiohttp": 4,
+  "fastify_send vs werkzeug": 10,
+  "fastify_send vs tornado": 12,
+  "fastify_send vs falcon": 17,
+  "fastify_send vs django": 15,
+  "fastify_send vs go_servecontent": 7,
+  "fastify_send vs go_fileserver": 5,
+  "fastify_send vs tower_http": 11,
+  "fastify_send vs actix_files": 4,
+  "sirv vs serve_handler": 2,
+  "sirv vs starlette": 19,
+  "sirv vs aiohttp": 27,
+  "sirv vs werkzeug": 29,
+  "sirv vs tornado": 21,
+  "sirv vs falcon": 22,
+  "sirv vs django": 9,
+  "sirv vs go_servecontent": 24,
+  "sirv vs go_fileserver": 17,
+  "sirv vs tower_http": 12,
+  "sirv vs actix_files": 25,
+  "serve_handler vs starlette": 19,
+  "serve_handler vs aiohttp": 27,
+  "serve_handler vs werkzeug": 29,
+  "serve_handler vs tornado": 21,
+  "serve_handler vs falcon": 22,
+  "serve_handler vs django": 9,
+  "serve_handler vs go_servecontent": 24,
+  "serve_handler vs go_fileserver": 17,
+  "serve_handler vs tower_http": 12,
+  "serve_handler vs actix_files": 25,
+  "starlette vs aiohttp": 10,
+  "starlette vs werkzeug": 12,
+  "starlette vs tornado": 2,
+  "starlette vs falcon": 8,
+  "starlette vs django": 8,
+  "starlette vs go_servecontent": 15,
+  "starlette vs go_fileserver": 12,
+  "starlette vs tower_http": 12,
+  "starlette vs actix_files": 16,
+  "aiohttp vs werkzeug": 10,
+  "aiohttp vs tornado": 12,
+  "aiohttp vs falcon": 18,
+  "aiohttp vs django": 15,
+  "aiohttp vs go_servecontent": 5,
+  "aiohttp vs go_fileserver": 5,
+  "aiohttp vs tower_http": 13,
+  "aiohttp vs actix_files": 6,
+  "werkzeug vs tornado": 12,
+  "werkzeug vs falcon": 16,
+  "werkzeug vs django": 14,
+  "werkzeug vs go_servecontent": 15,
+  "werkzeug vs go_fileserver": 11,
+  "werkzeug vs tower_http": 16,
+  "werkzeug vs actix_files": 12,
+  "tornado vs falcon": 8,
+  "tornado vs django": 9,
+  "tornado vs go_servecontent": 15,
+  "tornado vs go_fileserver": 11,
+  "tornado vs tower_http": 13,
+  "tornado vs actix_files": 16,
+  "falcon vs django": 11,
+  "falcon vs go_servecontent": 20,
+  "falcon vs go_fileserver": 15,
+  "falcon vs tower_http": 15,
+  "falcon vs actix_files": 19,
+  "django vs go_servecontent": 12,
+  "django vs go_fileserver": 12,
+  "django vs tower_http": 4,
+  "django vs actix_files": 12,
+  "go_servecontent vs go_fileserver": 0,
+  "go_servecontent vs tower_http": 10,
+  "go_servecontent vs actix_files": 3,
+  "go_fileserver vs tower_http": 10,
+  "go_fileserver vs actix_files": 2,
+  "tower_http vs actix_files": 8
+ },
+ "rows": [
+  {
+   "id": "B01",
+   "group": "baseline",
+   "method": "GET",
+   "headers": [],
+   "open": false,
+   "note": "no precondition",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "B02",
+   "group": "baseline",
+   "method": "HEAD",
+   "headers": [],
+   "open": false,
+   "note": "HEAD, no precondition",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N01",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "exact tag",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N02",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{EW}"
+    ]
+   ],
+   "open": false,
+   "note": "weak form of the tag",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "M",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N03",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{ES}"
+    ]
+   ],
+   "open": false,
+   "note": "strong form of the tag",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N04",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{X}"
+    ]
+   ],
+   "open": false,
+   "note": "other tag",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N05",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{X}, {E}"
+    ]
+   ],
+   "open": false,
+   "note": "list, match second",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "M",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N06",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{X},{E}"
+    ]
+   ],
+   "open": false,
+   "note": "list without space",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "M",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N07",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "*"
+    ]
+   ],
+   "open": false,
+   "note": "star",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 200,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 200,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "M",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "M",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "M",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N08",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{E}  "
+    ]
+   ],
+   "open": false,
+   "note": "trailing spaces (OWS)",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N09",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{EU}"
+    ]
+   ],
+   "open": true,
+   "note": "unquoted (malformed)",
+   "exp": {
+    "express": "OPEN",
+    "fastify_send": "OPEN",
+    "sirv": "OPEN",
+    "serve_handler": "OPEN",
+    "starlette": "OPEN",
+    "aiohttp": "OPEN",
+    "werkzeug": "OPEN",
+    "tornado": "OPEN",
+    "falcon": "OPEN",
+    "django": "OPEN",
+    "go_servecontent": "OPEN",
+    "go_fileserver": "OPEN",
+    "tower_http": "OPEN",
+    "actix_files": "OPEN"
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 304,
+    "tornado": 200,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 200,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "-",
+    "fastify_send": "-",
+    "sirv": "-",
+    "serve_handler": "-",
+    "starlette": "-",
+    "aiohttp": "-",
+    "werkzeug": "-",
+    "tornado": "-",
+    "falcon": "-",
+    "django": "-",
+    "go_servecontent": "-",
+    "go_fileserver": "-",
+    "tower_http": "-",
+    "actix_files": "-"
+   }
+  },
+  {
+   "id": "N10",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{X}"
+    ],
+    [
+     "If-None-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "two field lines",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 200,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "M",
+    "starlette": "M",
+    "aiohttp": "M",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "M",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N11",
+   "group": "if-none-match",
+   "method": "HEAD",
+   "headers": [
+    [
+     "If-None-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "HEAD, exact tag",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "N12",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "*, {X}"
+    ]
+   ],
+   "open": true,
+   "note": "star inside a list (invalid)",
+   "exp": {
+    "express": "OPEN",
+    "fastify_send": "OPEN",
+    "sirv": "OPEN",
+    "serve_handler": "OPEN",
+    "starlette": "OPEN",
+    "aiohttp": "OPEN",
+    "werkzeug": "OPEN",
+    "tornado": "OPEN",
+    "falcon": "OPEN",
+    "django": "OPEN",
+    "go_servecontent": "OPEN",
+    "go_fileserver": "OPEN",
+    "tower_http": "OPEN",
+    "actix_files": "OPEN"
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 304,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "-",
+    "fastify_send": "-",
+    "sirv": "-",
+    "serve_handler": "-",
+    "starlette": "-",
+    "aiohttp": "-",
+    "werkzeug": "-",
+    "tornado": "-",
+    "falcon": "-",
+    "django": "-",
+    "go_servecontent": "-",
+    "go_fileserver": "-",
+    "tower_http": "-",
+    "actix_files": "-"
+   }
+  },
+  {
+   "id": "N13",
+   "group": "if-none-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{EW}, {X}"
+    ]
+   ],
+   "open": false,
+   "note": "list, weak form first",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "M",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M01",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 12:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "= Last-Modified",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M02",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "LM + 1 h",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M03",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 11:59:59 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "LM - 1 s",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M04",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thursday, 15-Jan-26 12:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "= LM, RFC 850 form",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 400,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "O",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M05",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu Jan 15 12:00:00 2026"
+    ]
+   ],
+   "open": false,
+   "note": "= LM, asctime form",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 400,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "O",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M06",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "yesterday"
+    ]
+   ],
+   "open": false,
+   "note": "not a date",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 400,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "O",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M07",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Fri, 01 Jan 2100 00:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "future date (RFC 2616 called it invalid; RFC 9110 does not)",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M08",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 12:00:00 UTC"
+    ]
+   ],
+   "open": true,
+   "note": "UTC instead of GMT",
+   "exp": {
+    "express": "OPEN",
+    "fastify_send": "OPEN",
+    "sirv": "OPEN",
+    "serve_handler": "OPEN",
+    "starlette": "OPEN",
+    "aiohttp": "OPEN",
+    "werkzeug": "OPEN",
+    "tornado": "OPEN",
+    "falcon": "OPEN",
+    "django": "OPEN",
+    "go_servecontent": "OPEN",
+    "go_fileserver": "OPEN",
+    "tower_http": "OPEN",
+    "actix_files": "OPEN"
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 400,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "-",
+    "fastify_send": "-",
+    "sirv": "-",
+    "serve_handler": "-",
+    "starlette": "-",
+    "aiohttp": "-",
+    "werkzeug": "-",
+    "tornado": "-",
+    "falcon": "-",
+    "django": "-",
+    "go_servecontent": "-",
+    "go_fileserver": "-",
+    "tower_http": "-",
+    "actix_files": "-"
+   }
+  },
+  {
+   "id": "M09",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 01 Jan 1970 00:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "epoch",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M10",
+   "group": "if-modified-since",
+   "method": "HEAD",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "HEAD, LM + 1 h",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M11",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 12:00:00 GMT, Thu, 15 Jan 2026 12:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "two dates (more than one member)",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 400,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "F",
+    "aiohttp": "F",
+    "werkzeug": "F",
+    "tornado": "F",
+    "falcon": "O",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "M12",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "thu, 15 jan 2026 12:00:00 gmt"
+    ]
+   ],
+   "open": true,
+   "note": "lower case",
+   "exp": {
+    "express": "OPEN",
+    "fastify_send": "OPEN",
+    "sirv": "OPEN",
+    "serve_handler": "OPEN",
+    "starlette": "OPEN",
+    "aiohttp": "OPEN",
+    "werkzeug": "OPEN",
+    "tornado": "OPEN",
+    "falcon": "OPEN",
+    "django": "OPEN",
+    "go_servecontent": "OPEN",
+    "go_fileserver": "OPEN",
+    "tower_http": "OPEN",
+    "actix_files": "OPEN"
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "-",
+    "fastify_send": "-",
+    "sirv": "-",
+    "serve_handler": "-",
+    "starlette": "-",
+    "aiohttp": "-",
+    "werkzeug": "-",
+    "tornado": "-",
+    "falcon": "-",
+    "django": "-",
+    "go_servecontent": "-",
+    "go_fileserver": "-",
+    "tower_http": "-",
+    "actix_files": "-"
+   }
+  },
+  {
+   "id": "M13",
+   "group": "if-modified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 12:00:00 GMT junk"
+    ]
+   ],
+   "open": true,
+   "note": "trailing garbage",
+   "exp": {
+    "express": "OPEN",
+    "fastify_send": "OPEN",
+    "sirv": "OPEN",
+    "serve_handler": "OPEN",
+    "starlette": "OPEN",
+    "aiohttp": "OPEN",
+    "werkzeug": "OPEN",
+    "tornado": "OPEN",
+    "falcon": "OPEN",
+    "django": "OPEN",
+    "go_servecontent": "OPEN",
+    "go_fileserver": "OPEN",
+    "tower_http": "OPEN",
+    "actix_files": "OPEN"
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 400,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "-",
+    "fastify_send": "-",
+    "sirv": "-",
+    "serve_handler": "-",
+    "starlette": "-",
+    "aiohttp": "-",
+    "werkzeug": "-",
+    "tornado": "-",
+    "falcon": "-",
+    "django": "-",
+    "go_servecontent": "-",
+    "go_fileserver": "-",
+    "tower_http": "-",
+    "actix_files": "-"
+   }
+  },
+  {
+   "id": "C01",
+   "group": "inm+ims",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{X}"
+    ],
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "INM false-match + IMS unmodified",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 304,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 304,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "F",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "F",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "C02",
+   "group": "inm+ims",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{E}"
+    ],
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 11:59:59 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "INM match + IMS modified",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "C03",
+   "group": "inm+ims",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "{X}"
+    ],
+    [
+     "If-Modified-Since",
+     "yesterday"
+    ]
+   ],
+   "open": false,
+   "note": "INM other + IMS invalid",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "C04",
+   "group": "inm+ims",
+   "method": "GET",
+   "headers": [
+    [
+     "If-None-Match",
+     "*"
+    ],
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 11:59:59 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "INM star + IMS modified",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 200,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 200,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "M",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "M",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "M",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "I01",
+   "group": "if-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "exact tag (strong comparison)",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": "N/A",
+    "go_servecontent": 200,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": "n/a",
+    "go_servecontent": 200,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "P",
+    "fastify_send": "P",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "I02",
+   "group": "if-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{ES}"
+    ]
+   ],
+   "open": false,
+   "note": "strong form",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": "N/A",
+    "go_servecontent": 200,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": "n/a",
+    "go_servecontent": 200,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "P",
+    "fastify_send": "P",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "I03",
+   "group": "if-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{EW}"
+    ]
+   ],
+   "open": false,
+   "note": "weak form",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 412,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": "N/A",
+    "go_servecontent": 412,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 412
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 200,
+    "falcon": 200,
+    "django": "n/a",
+    "go_servecontent": 412,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "P",
+    "fastify_send": "P",
+    "sirv": "P",
+    "serve_handler": "P",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "I04",
+   "group": "if-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{X}"
+    ]
+   ],
+   "open": false,
+   "note": "other tag",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 412,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": 412,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 200,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "P",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "P",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "P",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "I05",
+   "group": "if-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "*"
+    ]
+   ],
+   "open": false,
+   "note": "star",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 412,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "X",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "I06",
+   "group": "if-match",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{X}, {ES}"
+    ]
+   ],
+   "open": false,
+   "note": "list, strong form second",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": "N/A",
+    "go_servecontent": 200,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": "n/a",
+    "go_servecontent": 200,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "P",
+    "fastify_send": "P",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "I07",
+   "group": "if-match",
+   "method": "HEAD",
+   "headers": [
+    [
+     "If-Match",
+     "{X}"
+    ]
+   ],
+   "open": false,
+   "note": "HEAD, other tag",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 412,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": 412,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 200,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "P",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "P",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "P",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "U01",
+   "group": "if-unmodified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 12:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "= LM",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "U02",
+   "group": "if-unmodified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "LM + 1 h",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "U03",
+   "group": "if-unmodified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 11:59:59 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "LM - 1 s",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 200,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": 412,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 412,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "P",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "P",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "U04",
+   "group": "if-unmodified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "yesterday"
+    ]
+   ],
+   "open": false,
+   "note": "not a date",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "U05",
+   "group": "if-unmodified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Wednesday, 14-Jan-26 12:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "LM - 1 day, RFC 850",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 200,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": 412,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 412,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "P",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "P",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "U06",
+   "group": "if-unmodified-since",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Thu Jan 15 12:00:00 2026"
+    ]
+   ],
+   "open": false,
+   "note": "= LM, asctime",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P01",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "*"
+    ],
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 11:59:59 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "IM true; IUS must be ignored",
+   "exp": {
+    "express": 200,
+    "fastify_send": 200,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 200,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 200,
+    "actix_files": 200
+   },
+   "got": {
+    "express": 200,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 200,
+    "werkzeug": 412,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 200,
+    "go_fileserver": 200,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "X",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "X",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "A",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "X",
+    "actix_files": "X"
+   }
+  },
+  {
+   "id": "P02",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{X}"
+    ],
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "IM false wins",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 412,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": 412,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 200,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 200,
+    "falcon": 200,
+    "django": 200,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 200,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "P",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "P",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "P",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P03",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{ES}"
+    ],
+    [
+     "If-None-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "IM (strong) then INM",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 200,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "P",
+    "fastify_send": "P",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "M",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P04",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 11:59:59 GMT"
+    ],
+    [
+     "If-None-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "IUS false before INM",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 304,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": "N/A",
+    "go_servecontent": 412,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 412,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 412,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "P",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P05",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ],
+    [
+     "If-None-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "IUS true, INM match",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "N/A",
+    "go_servecontent": 304,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 304,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "A",
+    "serve_handler": "A",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P06",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "*"
+    ],
+    [
+     "If-None-Match",
+     "*"
+    ]
+   ],
+   "open": false,
+   "note": "IM star, INM star",
+   "exp": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 304,
+    "actix_files": 304
+   },
+   "got": {
+    "express": 304,
+    "fastify_send": 304,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 304,
+    "werkzeug": 412,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 200,
+    "go_servecontent": 304,
+    "go_fileserver": 304,
+    "tower_http": 200,
+    "actix_files": 304
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "M",
+    "serve_handler": "M",
+    "starlette": "A",
+    "aiohttp": "A",
+    "werkzeug": "X",
+    "tornado": "A",
+    "falcon": "A",
+    "django": "M",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "M",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P07",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Unmodified-Since",
+     "Thu, 15 Jan 2026 11:59:59 GMT"
+    ],
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "IUS false, IMS unmodified",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 200,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": 412,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 412,
+    "werkzeug": 304,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "A",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "P",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "P",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "A",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P08",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{X}"
+    ],
+    [
+     "If-Modified-Since",
+     "Thu, 15 Jan 2026 13:00:00 GMT"
+    ]
+   ],
+   "open": false,
+   "note": "IM false, IMS unmodified",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 412,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": 412,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 412,
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 200,
+    "serve_handler": 200,
+    "starlette": 304,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 304,
+    "falcon": 304,
+    "django": 304,
+    "go_servecontent": 412,
+    "go_fileserver": 412,
+    "tower_http": 304,
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "P",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "P",
+    "go_servecontent": "A",
+    "go_fileserver": "A",
+    "tower_http": "P",
+    "actix_files": "A"
+   }
+  },
+  {
+   "id": "P09",
+   "group": "precedence",
+   "method": "GET",
+   "headers": [
+    [
+     "If-Match",
+     "{X}"
+    ],
+    [
+     "If-None-Match",
+     "{E}"
+    ]
+   ],
+   "open": false,
+   "note": "IM false, INM match",
+   "exp": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 412,
+    "serve_handler": 412,
+    "starlette": 412,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 412,
+    "falcon": 412,
+    "django": "N/A",
+    "go_servecontent": 412,
+    "go_fileserver": "N/A",
+    "tower_http": "N/A",
+    "actix_files": 412
+   },
+   "got": {
+    "express": 412,
+    "fastify_send": 412,
+    "sirv": 304,
+    "serve_handler": 304,
+    "starlette": 304,
+    "aiohttp": 412,
+    "werkzeug": 412,
+    "tornado": 304,
+    "falcon": 304,
+    "django": "n/a",
+    "go_servecontent": 412,
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": 412
+   },
+   "cls": {
+    "express": "A",
+    "fastify_send": "A",
+    "sirv": "P",
+    "serve_handler": "P",
+    "starlette": "P",
+    "aiohttp": "A",
+    "werkzeug": "A",
+    "tornado": "P",
+    "falcon": "P",
+    "django": "n/a",
+    "go_servecontent": "A",
+    "go_fileserver": "n/a",
+    "tower_http": "n/a",
+    "actix_files": "A"
+   }
+  }
+ ]
+}

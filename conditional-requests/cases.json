@@ -1,0 +1,750 @@
+[
+ {
+  "id": "B01",
+  "group": "baseline",
+  "method": "GET",
+  "headers": [],
+  "open": false,
+  "note": "no precondition"
+ },
+ {
+  "id": "B02",
+  "group": "baseline",
+  "method": "HEAD",
+  "headers": [],
+  "open": false,
+  "note": "HEAD, no precondition"
+ },
+ {
+  "id": "N01",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "exact tag"
+ },
+ {
+  "id": "N02",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{EW}"
+   ]
+  ],
+  "open": false,
+  "note": "weak form of the tag"
+ },
+ {
+  "id": "N03",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{ES}"
+   ]
+  ],
+  "open": false,
+  "note": "strong form of the tag"
+ },
+ {
+  "id": "N04",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{X}"
+   ]
+  ],
+  "open": false,
+  "note": "other tag"
+ },
+ {
+  "id": "N05",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{X}, {E}"
+   ]
+  ],
+  "open": false,
+  "note": "list, match second"
+ },
+ {
+  "id": "N06",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{X},{E}"
+   ]
+  ],
+  "open": false,
+  "note": "list without space"
+ },
+ {
+  "id": "N07",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "*"
+   ]
+  ],
+  "open": false,
+  "note": "star"
+ },
+ {
+  "id": "N08",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{E}  "
+   ]
+  ],
+  "open": false,
+  "note": "trailing spaces (OWS)"
+ },
+ {
+  "id": "N09",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{EU}"
+   ]
+  ],
+  "open": true,
+  "note": "unquoted (malformed)"
+ },
+ {
+  "id": "N10",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{X}"
+   ],
+   [
+    "If-None-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "two field lines"
+ },
+ {
+  "id": "N11",
+  "group": "if-none-match",
+  "method": "HEAD",
+  "headers": [
+   [
+    "If-None-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "HEAD, exact tag"
+ },
+ {
+  "id": "N12",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "*, {X}"
+   ]
+  ],
+  "open": true,
+  "note": "star inside a list (invalid)"
+ },
+ {
+  "id": "N13",
+  "group": "if-none-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{EW}, {X}"
+   ]
+  ],
+  "open": false,
+  "note": "list, weak form first"
+ },
+ {
+  "id": "M01",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 12:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "= Last-Modified"
+ },
+ {
+  "id": "M02",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "LM + 1 h"
+ },
+ {
+  "id": "M03",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 11:59:59 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "LM - 1 s"
+ },
+ {
+  "id": "M04",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thursday, 15-Jan-26 12:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "= LM, RFC 850 form"
+ },
+ {
+  "id": "M05",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu Jan 15 12:00:00 2026"
+   ]
+  ],
+  "open": false,
+  "note": "= LM, asctime form"
+ },
+ {
+  "id": "M06",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "yesterday"
+   ]
+  ],
+  "open": false,
+  "note": "not a date"
+ },
+ {
+  "id": "M07",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Fri, 01 Jan 2100 00:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "future date (RFC 2616 called it invalid; RFC 9110 does not)"
+ },
+ {
+  "id": "M08",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 12:00:00 UTC"
+   ]
+  ],
+  "open": true,
+  "note": "UTC instead of GMT"
+ },
+ {
+  "id": "M09",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 01 Jan 1970 00:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "epoch"
+ },
+ {
+  "id": "M10",
+  "group": "if-modified-since",
+  "method": "HEAD",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "HEAD, LM + 1 h"
+ },
+ {
+  "id": "M11",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 12:00:00 GMT, Thu, 15 Jan 2026 12:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "two dates (more than one member)"
+ },
+ {
+  "id": "M12",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "thu, 15 jan 2026 12:00:00 gmt"
+   ]
+  ],
+  "open": true,
+  "note": "lower case"
+ },
+ {
+  "id": "M13",
+  "group": "if-modified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 12:00:00 GMT junk"
+   ]
+  ],
+  "open": true,
+  "note": "trailing garbage"
+ },
+ {
+  "id": "C01",
+  "group": "inm+ims",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{X}"
+   ],
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "INM false-match + IMS unmodified"
+ },
+ {
+  "id": "C02",
+  "group": "inm+ims",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{E}"
+   ],
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 11:59:59 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "INM match + IMS modified"
+ },
+ {
+  "id": "C03",
+  "group": "inm+ims",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "{X}"
+   ],
+   [
+    "If-Modified-Since",
+    "yesterday"
+   ]
+  ],
+  "open": false,
+  "note": "INM other + IMS invalid"
+ },
+ {
+  "id": "C04",
+  "group": "inm+ims",
+  "method": "GET",
+  "headers": [
+   [
+    "If-None-Match",
+    "*"
+   ],
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 11:59:59 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "INM star + IMS modified"
+ },
+ {
+  "id": "I01",
+  "group": "if-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "exact tag (strong comparison)"
+ },
+ {
+  "id": "I02",
+  "group": "if-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{ES}"
+   ]
+  ],
+  "open": false,
+  "note": "strong form"
+ },
+ {
+  "id": "I03",
+  "group": "if-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{EW}"
+   ]
+  ],
+  "open": false,
+  "note": "weak form"
+ },
+ {
+  "id": "I04",
+  "group": "if-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{X}"
+   ]
+  ],
+  "open": false,
+  "note": "other tag"
+ },
+ {
+  "id": "I05",
+  "group": "if-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "*"
+   ]
+  ],
+  "open": false,
+  "note": "star"
+ },
+ {
+  "id": "I06",
+  "group": "if-match",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{X}, {ES}"
+   ]
+  ],
+  "open": false,
+  "note": "list, strong form second"
+ },
+ {
+  "id": "I07",
+  "group": "if-match",
+  "method": "HEAD",
+  "headers": [
+   [
+    "If-Match",
+    "{X}"
+   ]
+  ],
+  "open": false,
+  "note": "HEAD, other tag"
+ },
+ {
+  "id": "U01",
+  "group": "if-unmodified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 12:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "= LM"
+ },
+ {
+  "id": "U02",
+  "group": "if-unmodified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "LM + 1 h"
+ },
+ {
+  "id": "U03",
+  "group": "if-unmodified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 11:59:59 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "LM - 1 s"
+ },
+ {
+  "id": "U04",
+  "group": "if-unmodified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "yesterday"
+   ]
+  ],
+  "open": false,
+  "note": "not a date"
+ },
+ {
+  "id": "U05",
+  "group": "if-unmodified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Wednesday, 14-Jan-26 12:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "LM - 1 day, RFC 850"
+ },
+ {
+  "id": "U06",
+  "group": "if-unmodified-since",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Thu Jan 15 12:00:00 2026"
+   ]
+  ],
+  "open": false,
+  "note": "= LM, asctime"
+ },
+ {
+  "id": "P01",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "*"
+   ],
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 11:59:59 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "IM true; IUS must be ignored"
+ },
+ {
+  "id": "P02",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{X}"
+   ],
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "IM false wins"
+ },
+ {
+  "id": "P03",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{ES}"
+   ],
+   [
+    "If-None-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "IM (strong) then INM"
+ },
+ {
+  "id": "P04",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 11:59:59 GMT"
+   ],
+   [
+    "If-None-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "IUS false before INM"
+ },
+ {
+  "id": "P05",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ],
+   [
+    "If-None-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "IUS true, INM match"
+ },
+ {
+  "id": "P06",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "*"
+   ],
+   [
+    "If-None-Match",
+    "*"
+   ]
+  ],
+  "open": false,
+  "note": "IM star, INM star"
+ },
+ {
+  "id": "P07",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Unmodified-Since",
+    "Thu, 15 Jan 2026 11:59:59 GMT"
+   ],
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "IUS false, IMS unmodified"
+ },
+ {
+  "id": "P08",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{X}"
+   ],
+   [
+    "If-Modified-Since",
+    "Thu, 15 Jan 2026 13:00:00 GMT"
+   ]
+  ],
+  "open": false,
+  "note": "IM false, IMS unmodified"
+ },
+ {
+  "id": "P09",
+  "group": "precedence",
+  "method": "GET",
+  "headers": [
+   [
+    "If-Match",
+    "{X}"
+   ],
+   [
+    "If-None-Match",
+    "{E}"
+   ]
+  ],
+  "open": false,
+  "note": "IM false, INM match"
+ }
+]

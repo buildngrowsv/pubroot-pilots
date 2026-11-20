@@ -1,0 +1,5 @@
+.venv/
+js/node_modules/
+rs/target/
+.bin-go-cond
+__pycache__/

@@ -1,0 +1,2968 @@
+{
+ "fetched": "2026-11-20T15:31:42+00:00",
+ "user_agent": "pubroot-pilots conditional-requests probe (one-off measurement; 21 requests per URL)",
+ "cases": [
+  "B01",
+  "N01",
+  "N02",
+  "N03",
+  "N05",
+  "N06",
+  "N07",
+  "N10",
+  "N13",
+  "M01",
+  "M03",
+  "M04",
+  "M05",
+  "M07",
+  "M11",
+  "C01",
+  "C04",
+  "I01",
+  "I03",
+  "I04",
+  "U03"
+ ],
+ "sites": [
+  {
+   "url": "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js",
+   "status": 200,
+   "server": null,
+   "infra": [
+    "age",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "weak",
+   "last_modified": null,
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 200,
+     "etag": "other"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 200,
+     "etag": "other"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "other"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": "n/a",
+    "M03": "n/a",
+    "M04": "n/a",
+    "M05": "n/a",
+    "M07": "n/a",
+    "M11": "n/a",
+    "C01": "n/a",
+    "C04": "n/a",
+    "I01": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "other"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": "n/a"
+   }
+  },
+  {
+   "url": "https://unpkg.com/react@18.3.1/umd/react.production.min.js",
+   "status": 200,
+   "server": "cloudflare",
+   "infra": [
+    "age",
+    "cf-ray",
+    "via"
+   ],
+   "etag_kind": "none",
+   "last_modified": "Mon, 16 Nov 2026 19:17:33 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N01": "n/a",
+    "N02": "n/a",
+    "N03": "n/a",
+    "N05": "n/a",
+    "N06": "n/a",
+    "N07": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N10": "n/a",
+    "N13": "n/a",
+    "M01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M05": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M11": {
+     "status": 200,
+     "etag": "none"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "I01": "n/a",
+    "I03": "n/a",
+    "I04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+   "status": 200,
+   "server": "cloudflare",
+   "infra": [
+    "age",
+    "cf-ray"
+   ],
+   "etag_kind": "none",
+   "last_modified": "Tue, 29 Aug 2023 04:36:11 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N01": "n/a",
+    "N02": "n/a",
+    "N03": "n/a",
+    "N05": "n/a",
+    "N06": "n/a",
+    "N07": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N10": "n/a",
+    "N13": "n/a",
+    "M01": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M11": {
+     "status": 200,
+     "etag": "none"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "I01": "n/a",
+    "I03": "n/a",
+    "I04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://code.jquery.com/jquery-3.7.1.min.js",
+   "status": 200,
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 18 Oct 1991 12:00:00 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js",
+   "status": 200,
+   "server": "sffe",
+   "infra": [
+    "age"
+   ],
+   "etag_kind": "none",
+   "last_modified": "Tue, 12 Sep 2023 02:38:22 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N01": "n/a",
+    "N02": "n/a",
+    "N03": "n/a",
+    "N05": "n/a",
+    "N06": "n/a",
+    "N07": {
+     "status": 304,
+     "etag": "none"
+    },
+    "N10": "n/a",
+    "N13": "n/a",
+    "M01": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "none"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "none"
+    },
+    "I01": "n/a",
+    "I03": "n/a",
+    "I04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore",
+   "status": 200,
+   "server": null,
+   "infra": [
+    "via",
+    "x-cache",
+    "x-fastly-request-id",
+    "x-github-request-id",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": null,
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": "n/a",
+    "M03": "n/a",
+    "M04": "n/a",
+    "M05": "n/a",
+    "M07": "n/a",
+    "M11": "n/a",
+    "C01": "n/a",
+    "C04": "n/a",
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "same"
+    },
+    "U03": "n/a"
+   }
+  },
+  {
+   "url": "https://pages.github.com/",
+   "status": 200,
+   "server": "GitHub.com",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-fastly-request-id",
+    "x-github-request-id",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Wed, 13 Aug 2025 12:02:55 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.python.org/static/favicon.ico",
+   "status": 200,
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Sat, 24 Oct 2026 05:31:04 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://docs.python.org/3/_static/py.svg",
+   "status": 200,
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 20 Nov 2026 14:51:16 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.rfc-editor.org/rfc/rfc2397.txt",
+   "status": 200,
+   "server": "cloudflare",
+   "infra": [
+    "cf-ray"
+   ],
+   "etag_kind": "weak",
+   "last_modified": null,
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "other"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "other"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "other"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "other"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "other"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "other"
+    },
+    "N10": {
+     "status": 400,
+     "etag": "none"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "other"
+    },
+    "M01": "n/a",
+    "M03": "n/a",
+    "M04": "n/a",
+    "M05": "n/a",
+    "M07": "n/a",
+    "M11": "n/a",
+    "C01": "n/a",
+    "C04": "n/a",
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": "n/a"
+   }
+  },
+  {
+   "url": "https://nginx.org/favicon.ico",
+   "status": 200,
+   "server": "nginx/1.31.8",
+   "infra": [],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 20 Nov 2026 13:47:30 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 400,
+     "etag": "none"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://httpd.apache.org/favicon.ico",
+   "status": 200,
+   "server": "Apache",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 06 Nov 2026 13:04:05 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.debian.org/favicon.ico",
+   "status": 200,
+   "server": "Apache",
+   "infra": [],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 01 Jun 2018 04:50:22 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png",
+   "status": 200,
+   "server": "ATS/9.2.16",
+   "infra": [
+    "age",
+    "x-cache"
+   ],
+   "etag_kind": "malformed",
+   "last_modified": "Sun, 17 Aug 2014 19:42:57 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": "n/a",
+    "N02": "n/a",
+    "N03": "n/a",
+    "N05": "n/a",
+    "N06": "n/a",
+    "N07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N10": "n/a",
+    "N13": "n/a",
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": "n/a",
+    "I03": "n/a",
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://www.w3.org/favicon.ico",
+   "status": 200,
+   "server": "cloudflare",
+   "infra": [
+    "age",
+    "cf-ray",
+    "via",
+    "x-amz-cf-id",
+    "x-cache"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 24 Oct 2025 15:06:28 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 400,
+     "etag": "none"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://developer.mozilla.org/favicon.ico",
+   "status": 200,
+   "server": "Google Frontend",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-goog-generation",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Tue, 06 Oct 2026 10:38:35 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://go.dev/images/favicon-gopher.png",
+   "status": 200,
+   "server": "Google Frontend",
+   "infra": [],
+   "etag_kind": "none",
+   "last_modified": null,
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N01": "n/a",
+    "N02": "n/a",
+    "N03": "n/a",
+    "N05": "n/a",
+    "N06": "n/a",
+    "N07": {
+     "status": 304,
+     "etag": "none"
+    },
+    "N10": "n/a",
+    "N13": "n/a",
+    "M01": "n/a",
+    "M03": "n/a",
+    "M04": "n/a",
+    "M05": "n/a",
+    "M07": "n/a",
+    "M11": "n/a",
+    "C01": "n/a",
+    "C04": "n/a",
+    "I01": "n/a",
+    "I03": "n/a",
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": "n/a"
+   }
+  },
+  {
+   "url": "https://www.cloudflare.com/favicon.ico",
+   "status": 200,
+   "server": "cloudflare",
+   "infra": [
+    "cf-ray",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": null,
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 400,
+     "etag": "none"
+    },
+    "N13": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M01": "n/a",
+    "M03": "n/a",
+    "M04": "n/a",
+    "M05": "n/a",
+    "M07": "n/a",
+    "M11": "n/a",
+    "C01": "n/a",
+    "C04": "n/a",
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": "n/a"
+   }
+  },
+  {
+   "url": "https://www.fastly.com/favicon.ico",
+   "status": 200,
+   "server": "Artisanal bits",
+   "infra": [
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": null,
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": "n/a",
+    "M03": "n/a",
+    "M04": "n/a",
+    "M05": "n/a",
+    "M07": "n/a",
+    "M11": "n/a",
+    "C01": "n/a",
+    "C04": "n/a",
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": "n/a"
+   }
+  },
+  {
+   "url": "https://aws.amazon.com/favicon.ico",
+   "status": 200,
+   "server": "Server",
+   "infra": [
+    "via",
+    "x-amz-cf-id",
+    "x-cache"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Thu, 12 Nov 2026 00:51:24 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://learn.microsoft.com/favicon.ico",
+   "status": 200,
+   "server": null,
+   "infra": [
+    "x-azure-ref"
+   ],
+   "etag_kind": "weak",
+   "last_modified": "Fri, 13 Nov 2026 19:49:30 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.apple.com/favicon.ico",
+   "status": 200,
+   "server": "Apple",
+   "infra": [],
+   "etag_kind": "none",
+   "last_modified": "Tue, 04 Apr 2023 20:18:04 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N01": "n/a",
+    "N02": "n/a",
+    "N03": "n/a",
+    "N05": "n/a",
+    "N06": "n/a",
+    "N07": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N10": "n/a",
+    "N13": "n/a",
+    "M01": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "none"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "I01": "n/a",
+    "I03": "n/a",
+    "I04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://nextjs.org/favicon.ico",
+   "status": 200,
+   "server": "Vercel",
+   "infra": [
+    "age",
+    "x-vercel-id"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 20 Nov 2026 14:08:18 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.netlify.com/favicon.ico",
+   "status": 301,
+   "server": "Netlify",
+   "infra": [
+    "age",
+    "x-nf-request-id"
+   ],
+   "etag_kind": "none",
+   "last_modified": null,
+   "rows": {}
+  },
+  {
+   "url": "https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2",
+   "status": 200,
+   "server": "sffe",
+   "infra": [
+    "age"
+   ],
+   "etag_kind": "none",
+   "last_modified": "Wed, 11 May 2022 19:24:48 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "N01": "n/a",
+    "N02": "n/a",
+    "N03": "n/a",
+    "N05": "n/a",
+    "N06": "n/a",
+    "N07": {
+     "status": 304,
+     "etag": "none"
+    },
+    "N10": "n/a",
+    "N13": "n/a",
+    "M01": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "none"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "none"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "none"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "none"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "none"
+    },
+    "I01": "n/a",
+    "I03": "n/a",
+    "I04": {
+     "status": 200,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://crates.io/favicon.ico",
+   "status": 200,
+   "server": "Heroku",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Wed, 18 Nov 2026 12:05:19 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.rust-lang.org/static/images/favicon-32x32.png",
+   "status": 301,
+   "server": "GitHub.com",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-fastly-request-id",
+    "x-github-request-id",
+    "x-served-by"
+   ],
+   "etag_kind": "none",
+   "last_modified": null,
+   "rows": {}
+  },
+  {
+   "url": "https://nodejs.org/favicon.ico",
+   "status": 307,
+   "server": "cloudflare",
+   "infra": [
+    "cf-ray",
+    "x-vercel-id"
+   ],
+   "etag_kind": "none",
+   "last_modified": null,
+   "rows": {}
+  },
+  {
+   "url": "https://www.gnu.org/graphics/heckert_gnu.transp.small.png",
+   "status": 200,
+   "server": "Apache",
+   "infra": [],
+   "etag_kind": "strong",
+   "last_modified": "Thu, 04 Sep 2025 15:14:39 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://ftp.gnu.org/gnu/hello/hello-2.12.tar.gz.sig",
+   "status": 200,
+   "server": "Apache/2.4.52 (Trisquel_GNU/Linux)",
+   "infra": [],
+   "etag_kind": "strong",
+   "last_modified": "Mon, 31 Jan 2022 18:58:56 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://www.kernel.org/favicon.ico",
+   "status": 404,
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "none",
+   "last_modified": null,
+   "rows": {}
+  },
+  {
+   "url": "https://www.djangoproject.com/favicon.ico",
+   "status": 200,
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Tue, 03 Nov 2026 11:07:47 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.php.net/favicon.ico",
+   "status": 200,
+   "server": "BunnyCDN-ASB1-1503",
+   "infra": [],
+   "etag_kind": "weak",
+   "last_modified": "Thu, 18 Jun 2026 12:55:22 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 400,
+     "etag": "none"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.postgresql.org/favicon.ico",
+   "status": 200,
+   "server": "nginx",
+   "infra": [
+    "age",
+    "via"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Fri, 08 Nov 2019 12:20:36 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://www.openssl.org/favicon.ico",
+   "status": 404,
+   "server": "UploadServer",
+   "infra": [
+    "age",
+    "via",
+    "x-goog-generation"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Mon, 02 Nov 2026 07:31:57 GMT",
+   "rows": {}
+  },
+  {
+   "url": "https://curl.se/favicon.ico",
+   "status": 200,
+   "server": "nginx/1.31.3",
+   "infra": [
+    "age",
+    "via",
+    "x-cache",
+    "x-served-by"
+   ],
+   "etag_kind": "strong",
+   "last_modified": "Wed, 24 Aug 2016 12:15:09 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 412,
+     "etag": "none"
+    },
+    "I04": {
+     "status": 412,
+     "etag": "none"
+    },
+    "U03": {
+     "status": 412,
+     "etag": "none"
+    }
+   }
+  },
+  {
+   "url": "https://www.sqlite.org/favicon.ico",
+   "status": 200,
+   "server": null,
+   "infra": [],
+   "etag_kind": "strong",
+   "last_modified": "Thu, 19 Nov 2026 19:33:24 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "same"
+    }
+   }
+  },
+  {
+   "url": "https://www.gitlab.com/favicon.ico",
+   "status": 308,
+   "server": "cloudflare",
+   "infra": [
+    "cf-ray"
+   ],
+   "etag_kind": "none",
+   "last_modified": null,
+   "rows": {}
+  },
+  {
+   "url": "https://ubuntu.com/favicon.ico",
+   "status": 404,
+   "server": "nginx/1.14.0 (Ubuntu)",
+   "infra": [],
+   "etag_kind": "none",
+   "last_modified": null,
+   "rows": {}
+  },
+  {
+   "url": "https://www.wikipedia.org/static/favicon/wikipedia.ico",
+   "status": 200,
+   "server": "ATS/9.2.16",
+   "infra": [
+    "age",
+    "x-cache"
+   ],
+   "etag_kind": "weak",
+   "last_modified": "Fri, 30 Oct 2026 13:58:26 GMT",
+   "rows": {
+    "B01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N02": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N03": {
+     "status": 304,
+     "etag": "same"
+    },
+    "N05": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N06": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N10": {
+     "status": 200,
+     "etag": "same"
+    },
+    "N13": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M01": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M04": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M05": {
+     "status": 304,
+     "etag": "same"
+    },
+    "M07": {
+     "status": 200,
+     "etag": "same"
+    },
+    "M11": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "C04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I01": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I03": {
+     "status": 200,
+     "etag": "same"
+    },
+    "I04": {
+     "status": 200,
+     "etag": "same"
+    },
+    "U03": {
+     "status": 200,
+     "etag": "same"
+    }
+   }
+  }
+ ]
+}

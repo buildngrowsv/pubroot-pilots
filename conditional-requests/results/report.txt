@@ -1,0 +1,155 @@
+cases 54 (open 5); status differs across servers on 36; scored cases with a deviation: 34
+baseline (ETag kind, Last-Modified, 200 body ok):
+  express          200 weak    Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  fastify_send     200 weak    Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  sirv             200 weak    Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  serve_handler    200 strong  None body_ok=True
+  starlette        200 strong  Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  aiohttp          200 strong  Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  werkzeug         200 strong  Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  tornado          200 strong  Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  falcon           200 strong  Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  django           200 none    Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  go_servecontent  200 strong  Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  go_fileserver    200 none    Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  tower_http       200 none    Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+  actix_files      200 strong  Thu, 15 Jan 2026 12:00:00 GMT body_ok=True
+classes A/M/F/P/X/O/-/n/a:
+  express          A=44 M=0 F=0 P=5 X=0 O=0 -=5 n/a=0
+  fastify_send     A=43 M=0 F=0 P=5 X=1 O=0 -=5 n/a=0
+  sirv             A=21 M=14 F=0 P=14 X=0 O=0 -=5 n/a=0
+  serve_handler    A=35 M=8 F=0 P=6 X=0 O=0 -=5 n/a=0
+  starlette        A=37 M=1 F=1 P=10 X=0 O=0 -=5 n/a=0
+  aiohttp          A=47 M=1 F=1 P=0 X=0 O=0 -=5 n/a=0
+  werkzeug         A=40 M=1 F=1 P=4 X=3 O=0 -=5 n/a=0
+  tornado          A=38 M=0 F=1 P=10 X=0 O=0 -=5 n/a=0
+  falcon           A=35 M=0 F=0 P=10 X=0 O=4 -=5 n/a=0
+  django           A=20 M=3 F=1 P=7 X=0 O=0 -=5 n/a=18
+  go_servecontent  A=48 M=1 F=0 P=0 X=0 O=0 -=5 n/a=0
+  go_fileserver    A=31 M=0 F=0 P=0 X=0 O=0 -=5 n/a=18
+  tower_http       A=22 M=3 F=1 P=4 X=1 O=0 -=5 n/a=18
+  actix_files      A=48 M=0 F=0 P=0 X=1 O=0 -=5 n/a=0
+304 metadata:
+  express          {'304s': 24}
+  fastify_send     {'304s': 24}
+  sirv             {'304s': 9, '304 without the ETag': 9}
+  serve_handler    {'304s': 9, '304 without the ETag': 9}
+  starlette        {'304s': 28}
+  aiohttp          {'304s': 24}
+  werkzeug         {'304s': 26}
+  tornado          {'304s': 30}
+  falcon           {'304s': 25}
+  django           {'304s': 9}
+  go_servecontent  {'304s': 21}
+  go_fileserver    {'304s': 10}
+  tower_http       {'304s': 8}
+  actix_files      {'304s': 21, '304 with Content-Type': 21}
+pairwise status differences (min/max): 0 29
+B01 GET []
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+B02 HEAD []
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+N01 GET [['If-None-Match', '{E}']]
+    express=304/A fastify_send=304/A sirv=304/A serve_handler=304/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N02 GET [['If-None-Match', '{EW}']]
+    express=304/A fastify_send=304/A sirv=304/A serve_handler=200/M starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N03 GET [['If-None-Match', '{ES}']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=304/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N04 GET [['If-None-Match', '{X}']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+N05 GET [['If-None-Match', '{X}, {E}']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/M starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N06 GET [['If-None-Match', '{X},{E}']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/M starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N07 GET [['If-None-Match', '*']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/M starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=200/M go_servecontent=304/A go_fileserver=304/A tower_http=200/M actix_files=304/A
+N08 GET [['If-None-Match', '{E}  ']]
+    express=304/A fastify_send=304/A sirv=304/A serve_handler=304/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N09 GET [['If-None-Match', '{EU}']] OPEN
+    express=200/- fastify_send=200/- sirv=200/- serve_handler=200/- starlette=200/- aiohttp=200/- werkzeug=304/- tornado=200/- falcon=304/- django=n/a/- go_servecontent=200/- go_fileserver=n/a/- tower_http=n/a/- actix_files=200/-
+N10 GET [['If-None-Match', '{X}'], ['If-None-Match', '{E}']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/M starlette=200/M aiohttp=200/M werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=200/M go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N11 HEAD [['If-None-Match', '{E}']]
+    express=304/A fastify_send=304/A sirv=304/A serve_handler=304/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+N12 GET [['If-None-Match', '*, {X}']] OPEN
+    express=200/- fastify_send=200/- sirv=200/- serve_handler=200/- starlette=200/- aiohttp=200/- werkzeug=200/- tornado=304/- falcon=200/- django=200/- go_servecontent=304/- go_fileserver=304/- tower_http=200/- actix_files=200/-
+N13 GET [['If-None-Match', '{EW}, {X}']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/M starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+M01 GET [['If-Modified-Since', 'Thu, 15 Jan 2026 12:00:00 GMT']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=304/A go_servecontent=304/A go_fileserver=304/A tower_http=304/A actix_files=304/A
+M02 GET [['If-Modified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=304/A go_servecontent=304/A go_fileserver=304/A tower_http=304/A actix_files=304/A
+M03 GET [['If-Modified-Since', 'Thu, 15 Jan 2026 11:59:59 GMT']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+M04 GET [['If-Modified-Since', 'Thursday, 15-Jan-26 12:00:00 GMT']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=400/O django=304/A go_servecontent=304/A go_fileserver=304/A tower_http=304/A actix_files=304/A
+M05 GET [['If-Modified-Since', 'Thu Jan 15 12:00:00 2026']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=400/O django=304/A go_servecontent=304/A go_fileserver=304/A tower_http=304/A actix_files=304/A
+M06 GET [['If-Modified-Since', 'yesterday']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=400/O django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+M07 GET [['If-Modified-Since', 'Fri, 01 Jan 2100 00:00:00 GMT']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=304/A go_servecontent=304/A go_fileserver=304/A tower_http=304/A actix_files=304/A
+M08 GET [['If-Modified-Since', 'Thu, 15 Jan 2026 12:00:00 UTC']] OPEN
+    express=304/- fastify_send=304/- sirv=200/- serve_handler=200/- starlette=304/- aiohttp=304/- werkzeug=304/- tornado=304/- falcon=400/- django=200/- go_servecontent=200/- go_fileserver=200/- tower_http=200/- actix_files=200/-
+M09 GET [['If-Modified-Since', 'Thu, 01 Jan 1970 00:00:00 GMT']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+M10 HEAD [['If-Modified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=304/A go_servecontent=304/A go_fileserver=304/A tower_http=304/A actix_files=304/A
+M11 GET [['If-Modified-Since', 'Thu, 15 Jan 2026 12:00:00 GMT, Thu, 15 Jan 2026 12:00:00 GMT']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=304/F aiohttp=304/F werkzeug=304/F tornado=304/F falcon=400/O django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+M12 GET [['If-Modified-Since', 'thu, 15 jan 2026 12:00:00 gmt']] OPEN
+    express=304/- fastify_send=304/- sirv=200/- serve_handler=200/- starlette=304/- aiohttp=304/- werkzeug=304/- tornado=304/- falcon=304/- django=200/- go_servecontent=200/- go_fileserver=200/- tower_http=200/- actix_files=200/-
+M13 GET [['If-Modified-Since', 'Thu, 15 Jan 2026 12:00:00 GMT junk']] OPEN
+    express=304/- fastify_send=304/- sirv=200/- serve_handler=200/- starlette=304/- aiohttp=304/- werkzeug=304/- tornado=304/- falcon=400/- django=200/- go_servecontent=200/- go_fileserver=200/- tower_http=200/- actix_files=200/-
+C01 GET [['If-None-Match', '{X}'], ['If-Modified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=304/F go_servecontent=200/A go_fileserver=200/A tower_http=304/F actix_files=200/A
+C02 GET [['If-None-Match', '{E}'], ['If-Modified-Since', 'Thu, 15 Jan 2026 11:59:59 GMT']]
+    express=304/A fastify_send=304/A sirv=304/A serve_handler=304/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+C03 GET [['If-None-Match', '{X}'], ['If-Modified-Since', 'yesterday']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+C04 GET [['If-None-Match', '*'], ['If-Modified-Since', 'Thu, 15 Jan 2026 11:59:59 GMT']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/M starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=200/M go_servecontent=304/A go_fileserver=304/A tower_http=200/M actix_files=304/A
+I01 GET [['If-Match', '{E}']]
+    express=200/P fastify_send=200/P sirv=200/P serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=n/a/n/a go_servecontent=200/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=200/A
+I02 GET [['If-Match', '{ES}']]
+    express=200/P fastify_send=200/P sirv=200/P serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=n/a/n/a go_servecontent=200/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=200/A
+I03 GET [['If-Match', '{EW}']]
+    express=200/P fastify_send=200/P sirv=200/P serve_handler=200/P starlette=200/P aiohttp=412/A werkzeug=412/A tornado=200/P falcon=200/P django=n/a/n/a go_servecontent=412/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=412/A
+I04 GET [['If-Match', '{X}']]
+    express=412/A fastify_send=412/A sirv=200/P serve_handler=200/P starlette=200/P aiohttp=412/A werkzeug=412/A tornado=200/P falcon=200/P django=200/P go_servecontent=412/A go_fileserver=412/A tower_http=200/P actix_files=412/A
+I05 GET [['If-Match', '*']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=412/X tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+I06 GET [['If-Match', '{X}, {ES}']]
+    express=200/P fastify_send=200/P sirv=200/P serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=n/a/n/a go_servecontent=200/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=200/A
+I07 HEAD [['If-Match', '{X}']]
+    express=412/A fastify_send=412/A sirv=200/P serve_handler=200/P starlette=200/P aiohttp=412/A werkzeug=412/A tornado=200/P falcon=200/P django=200/P go_servecontent=412/A go_fileserver=412/A tower_http=200/P actix_files=412/A
+U01 GET [['If-Unmodified-Since', 'Thu, 15 Jan 2026 12:00:00 GMT']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+U02 GET [['If-Unmodified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+U03 GET [['If-Unmodified-Since', 'Thu, 15 Jan 2026 11:59:59 GMT']]
+    express=412/A fastify_send=412/A sirv=200/P serve_handler=200/A starlette=200/P aiohttp=412/A werkzeug=200/P tornado=200/P falcon=200/P django=200/P go_servecontent=412/A go_fileserver=412/A tower_http=412/A actix_files=412/A
+U04 GET [['If-Unmodified-Since', 'yesterday']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+U05 GET [['If-Unmodified-Since', 'Wednesday, 14-Jan-26 12:00:00 GMT']]
+    express=412/A fastify_send=412/A sirv=200/P serve_handler=200/A starlette=200/P aiohttp=412/A werkzeug=200/P tornado=200/P falcon=200/P django=200/P go_servecontent=412/A go_fileserver=412/A tower_http=412/A actix_files=412/A
+U06 GET [['If-Unmodified-Since', 'Thu Jan 15 12:00:00 2026']]
+    express=200/A fastify_send=200/A sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=200/A tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=200/A actix_files=200/A
+P01 GET [['If-Match', '*'], ['If-Unmodified-Since', 'Thu, 15 Jan 2026 11:59:59 GMT']]
+    express=200/A fastify_send=412/X sirv=200/A serve_handler=200/A starlette=200/A aiohttp=200/A werkzeug=412/X tornado=200/A falcon=200/A django=200/A go_servecontent=200/A go_fileserver=200/A tower_http=412/X actix_files=412/X
+P02 GET [['If-Match', '{X}'], ['If-Unmodified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT']]
+    express=412/A fastify_send=412/A sirv=200/P serve_handler=200/P starlette=200/P aiohttp=412/A werkzeug=412/A tornado=200/P falcon=200/P django=200/P go_servecontent=412/A go_fileserver=412/A tower_http=200/P actix_files=412/A
+P03 GET [['If-Match', '{ES}'], ['If-None-Match', '{E}']]
+    express=304/P fastify_send=304/P sirv=304/P serve_handler=304/A starlette=304/A aiohttp=304/A werkzeug=200/M tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+P04 GET [['If-Unmodified-Since', 'Thu, 15 Jan 2026 11:59:59 GMT'], ['If-None-Match', '{E}']]
+    express=412/A fastify_send=412/A sirv=304/P serve_handler=304/A starlette=304/P aiohttp=412/A werkzeug=304/P tornado=304/P falcon=304/P django=n/a/n/a go_servecontent=412/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=412/A
+P05 GET [['If-Unmodified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT'], ['If-None-Match', '{E}']]
+    express=304/A fastify_send=304/A sirv=304/A serve_handler=304/A starlette=304/A aiohttp=304/A werkzeug=304/A tornado=304/A falcon=304/A django=n/a/n/a go_servecontent=304/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=304/A
+P06 GET [['If-Match', '*'], ['If-None-Match', '*']]
+    express=304/A fastify_send=304/A sirv=200/M serve_handler=200/M starlette=304/A aiohttp=304/A werkzeug=412/X tornado=304/A falcon=304/A django=200/M go_servecontent=304/A go_fileserver=304/A tower_http=200/M actix_files=304/A
+P07 GET [['If-Unmodified-Since', 'Thu, 15 Jan 2026 11:59:59 GMT'], ['If-Modified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT']]
+    express=412/A fastify_send=412/A sirv=200/P serve_handler=200/A starlette=304/P aiohttp=412/A werkzeug=304/P tornado=304/P falcon=304/P django=304/P go_servecontent=412/A go_fileserver=412/A tower_http=412/A actix_files=412/A
+P08 GET [['If-Match', '{X}'], ['If-Modified-Since', 'Thu, 15 Jan 2026 13:00:00 GMT']]
+    express=412/A fastify_send=412/A sirv=200/P serve_handler=200/P starlette=304/P aiohttp=412/A werkzeug=412/A tornado=304/P falcon=304/P django=304/P go_servecontent=412/A go_fileserver=412/A tower_http=304/P actix_files=412/A
+P09 GET [['If-Match', '{X}'], ['If-None-Match', '{E}']]
+    express=412/A fastify_send=412/A sirv=304/P serve_handler=304/P starlette=304/P aiohttp=412/A werkzeug=412/A tornado=304/P falcon=304/P django=n/a/n/a go_servecontent=412/A go_fileserver=n/a/n/a tower_http=n/a/n/a actix_files=412/A

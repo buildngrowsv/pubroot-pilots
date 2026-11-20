@@ -1,0 +1,49 @@
+pass 1 2026-11-20T15:26:47+00:00, pass 2 2026-11-20T15:31:42+00:00; status differences between passes: 4
+  https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js I01: 200 vs 412
+  https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js I04: 200 vs 412
+  https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js N03: 200 vs 304
+  https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js N13: 200 vs 304
+40 URLs; 32 answered 200 and are scored
+
+host | server | etag | LM | N01 N02 N03 N05 N06 N07 N10 N13 M01 M03 M04 M05 M07 M11 C01 C04 | info I01 I03 I04 U03
+unpkg.com | cloudflare | none | y | - - - - - M - - M A M M M A A M | n/a n/a 200 200
+cdnjs.cloudflare.com | cloudflare | none | y | - - - - - M - - A A A A A A A M | n/a n/a 200 200
+code.jquery.com | nginx | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+ajax.googleapis.com | sffe | none | y | - - - - - A - - A A A A A F A A | n/a n/a 200 200
+raw.githubusercontent.com | None | strong | n | A A A A A A M A - - - - - - - - | 200 412 412 n/a
+pages.github.com | GitHub.com | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+www.python.org | nginx | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+docs.python.org | nginx | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+www.rfc-editor.org | cloudflare | weak | n | A A A A A A O A - - - - - - - - | 200 200 200 n/a | other ETag in 7
+nginx.org | nginx/1.31.8 | strong | y | A A A A A A O A A A A A M F A M | 200 412 412 412
+httpd.apache.org | Apache | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+www.debian.org | Apache | strong | y | A A A A A A A A A A A A M F A M | 200 412 412 412
+upload.wikimedia.org | ATS/9.2.16 | malformed | y | - - - - - M - - A A A A M A A M | n/a n/a 200 200
+www.w3.org | cloudflare | strong | y | A A A A A A O A A A A A A A A A | 200 200 200 200
+developer.mozilla.org | Google Frontend | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+go.dev | Google Frontend | none | n | - - - - - A - - - - - - - - - - | n/a n/a 412 n/a
+www.cloudflare.com | cloudflare | strong | n | M M M M M M O M - - - - - - - - | 200 200 200 n/a
+www.fastly.com | Artisanal bits | strong | n | A A A A A A M A - - - - - - - - | 200 412 412 n/a
+aws.amazon.com | Server | strong | y | A A A A A A M A A A A A M F A M | 200 412 412 412
+learn.microsoft.com | None | weak | y | M M M M M M M M A A A A M F A M | 200 200 200 412
+www.apple.com | Apple | none | y | - - - - - M - - A A A A M F A M | n/a n/a 200 412
+nextjs.org | Vercel | strong | y | M M M M M M M M M A M M M A A M | 200 412 412 412
+fonts.gstatic.com | sffe | none | y | - - - - - A - - A A A A A F A A | n/a n/a 200 200
+crates.io | Heroku | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+www.gnu.org | Apache | strong | y | A A A A A A A A A A A A M F A M | 200 412 412 412
+ftp.gnu.org | Apache/2.4.52 (Trisquel_GNU/Linux) | strong | y | A A A A A A A A A A A A M F A M | 200 412 412 412
+www.djangoproject.com | nginx | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+www.php.net | BunnyCDN-ASB1-1503 | weak | y | A A A A A A O A A A A A M F A M | 200 200 412 412
+www.postgresql.org | nginx | strong | y | A A A M M M M M A A A A M A A M | 200 200 200 200
+curl.se | nginx/1.31.3 | strong | y | A A A A A A M A A A A A A F A A | 200 412 412 412
+www.sqlite.org | None | strong | y | A M A M M M A M A A M M A F F M | 200 200 200 200
+www.wikipedia.org | ATS/9.2.16 | weak | y | A A A M M M M M A A A A M A A M | 200 200 200 200
+
+per case: N01 -7,A22,M3; N02 -7,A21,M4; N03 -7,A22,M3; N05 -7,A19,M6; N06 -7,A19,M6; N07 A22,M10; N10 -7,A4,M16,O5; N13 -7,A19,M6; M01 -5,A25,M2; M03 -5,A27; M04 -5,A24,M3; M05 -5,A24,M3; M07 -5,A14,M13; M11 -5,A7,F20; C01 -5,A26,F1; C04 -5,A12,M15
+sites with >=1 deviation on scored cases: 31/32
+  ... ignoring M07: 31/32
+  ... ignoring M07/M11: 29/32
+  ... ignoring M07/M11/N10: 16/32
+C04 (INM * + IMS older than LM) answered 200: 15 ['unpkg.com', 'cdnjs.cloudflare.com', 'nginx.org', 'www.debian.org', 'upload.wikimedia.org', 'aws.amazon.com', 'learn.microsoft.com', 'www.apple.com', 'nextjs.org', 'www.gnu.org', 'ftp.gnu.org', 'www.php.net', 'www.postgresql.org', 'www.sqlite.org', 'www.wikipedia.org']
+N10 400 responses: ['www.rfc-editor.org', 'nginx.org', 'www.w3.org', 'www.cloudflare.com', 'www.php.net']
+304 carrying a different ETag than sent: ['www.rfc-editor.org']

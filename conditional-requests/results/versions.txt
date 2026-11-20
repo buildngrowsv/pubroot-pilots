@@ -1,0 +1,23 @@
+node v24.22.1
+express 5.3.0
+send 1.2.1
+etag 1.8.1
+fresh 2.0.0
+@fastify/send 4.2.1
+sirv 3.0.2
+serve-handler 6.1.8
+python 3.13.5
+starlette 1.10.0
+uvicorn 0.54.0
+h11 0.16.0
+aiohttp 3.14.5
+werkzeug 3.1.9
+tornado 6.6.1
+falcon 4.4.0
+django 6.1.3
+go version go1.27.3 linux/amd64
+rustc 1.85.1 (4eb161250 2025-03-15) (built from a source tarball)
+axum 0.8.9
+tower-http 0.6.11
+actix-web 4.12.1
+actix-files 0.6.10
