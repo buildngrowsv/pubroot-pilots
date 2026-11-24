@@ -1,0 +1,662 @@
+{
+ "B01": {
+  "entries": [
+   [
+    "core.bare",
+    "false"
+   ]
+  ]
+ },
+ "B02": {
+  "entries": [
+   [
+    "core.bare",
+    "false"
+   ],
+   [
+    "user.name",
+    "A B"
+   ]
+  ]
+ },
+ "B03": {
+  "entries": [
+   [
+    "a.x",
+    "1"
+   ],
+   [
+    "b.y",
+    "2"
+   ],
+   [
+    "a.z",
+    "3"
+   ]
+  ]
+ },
+ "B04": {
+  "entries": [
+   [
+    "remote.origin.fetch",
+    "+refs/heads/*:refs/remotes/origin/*"
+   ],
+   [
+    "remote.origin.fetch",
+    "+refs/tags/*:refs/tags/*"
+   ]
+  ]
+ },
+ "B05": {
+  "entries": []
+ },
+ "B06": {
+  "entries": []
+ },
+ "B07": {
+  "entries": [
+   [
+    "core.bare",
+    "false"
+   ],
+   [
+    "core.name",
+    "x"
+   ]
+  ]
+ },
+ "B08": {
+  "entries": [
+   [
+    "core.bare",
+    "true"
+   ]
+  ]
+ },
+ "B09": {
+  "entries": [
+   [
+    "a.x",
+    "1"
+   ],
+   [
+    "a.y",
+    "2"
+   ]
+  ]
+ },
+ "B10": {
+  "entries": [
+   [
+    "a.x",
+    "1"
+   ]
+  ]
+ },
+ "B11": {
+  "entries": [
+   [
+    "a.x",
+    "1"
+   ],
+   [
+    "a.x",
+    "2"
+   ]
+  ]
+ },
+ "B12": {
+  "entries": [
+   [
+    "core.bare",
+    "false"
+   ]
+  ]
+ },
+ "K01": {
+  "entries": [
+   [
+    "core.filemode",
+    "true"
+   ]
+  ]
+ },
+ "K02": {
+  "entries": [
+   [
+    "my-sec.my-key",
+    "1"
+   ]
+  ]
+ },
+ "K03": {
+  "entries": [
+   [
+    "a.b.x",
+    "1"
+   ]
+  ]
+ },
+ "K04": {
+  "entries": [
+   [
+    "a.B.x",
+    "1"
+   ]
+  ]
+ },
+ "K05": {
+  "error": "fatal: bad config line 2 in file <dir>/config"
+ },
+ "K06": {
+  "error": "fatal: bad config line 2 in file <dir>/config"
+ },
+ "K07": {
+  "error": "fatal: bad config line 1 in file <dir>/config"
+ },
+ "K08": {
+  "error": "fatal: bad config line 1 in file <dir>/config"
+ },
+ "K09": {
+  "entries": [
+   [
+    "x",
+    "1"
+   ],
+   [
+    "a.y",
+    "2"
+   ]
+  ]
+ },
+ "K10": {
+  "error": "fatal: bad config line 2 in file <dir>/config"
+ },
+ "K11": {
+  "entries": [
+   [
+    "a.b.c.x",
+    "1"
+   ]
+  ]
+ },
+ "K12": {
+  "entries": [
+   [
+    "a.b.x",
+    "1"
+   ],
+   [
+    "a.b.x",
+    "2"
+   ]
+  ]
+ },
+ "K13": {
+  "entries": [
+   [
+    "a.b.x",
+    "1"
+   ],
+   [
+    "a.B.x",
+    "2"
+   ]
+  ]
+ },
+ "K14": {
+  "entries": [
+   [
+    "a.x-",
+    "1"
+   ]
+  ]
+ },
+ "S01": {
+  "entries": [
+   [
+    "a.with space.x",
+    "1"
+   ]
+  ]
+ },
+ "S02": {
+  "entries": [
+   [
+    "a.q\"uote.x",
+    "1"
+   ]
+  ]
+ },
+ "S03": {
+  "entries": [
+   [
+    "a.back\\slash.x",
+    "1"
+   ]
+  ]
+ },
+ "S04": {
+  "entries": [
+   [
+    "a.bc.x",
+    "1"
+   ]
+  ]
+ },
+ "S05": {
+  "entries": [
+   [
+    "a..x",
+    "1"
+   ]
+  ]
+ },
+ "S06": {
+  "entries": [
+   [
+    "a.x]y.x",
+    "1"
+   ]
+  ]
+ },
+ "S07": {
+  "error": "fatal: bad config line 1 in file <dir>/config"
+ },
+ "S08": {
+  "entries": [
+   [
+    "a.b.x",
+    "1"
+   ]
+  ]
+ },
+ "S09": {
+  "error": "fatal: bad config line 1 in file <dir>/config"
+ },
+ "S10": {
+  "error": "fatal: bad config line 1 in file <dir>/config"
+ },
+ "S11": {
+  "entries": [
+   [
+    "a.https://example.com/x.git.x",
+    "1"
+   ]
+  ]
+ },
+ "S12": {
+  "entries": [
+   [
+    "a.b.c.x",
+    "1"
+   ]
+  ]
+ },
+ "V01": {
+  "entries": [
+   [
+    "a.x",
+    "padded"
+   ]
+  ]
+ },
+ "V02": {
+  "entries": [
+   [
+    "a.x",
+    "one   two"
+   ]
+  ]
+ },
+ "V03": {
+  "entries": [
+   [
+    "a.x",
+    "  lead"
+   ]
+  ]
+ },
+ "V04": {
+  "entries": [
+   [
+    "a.x",
+    "val"
+   ]
+  ]
+ },
+ "V05": {
+  "entries": [
+   [
+    "a.x",
+    "val"
+   ]
+  ]
+ },
+ "V06": {
+  "entries": [
+   [
+    "a.x",
+    "val # not a comment"
+   ]
+  ]
+ },
+ "V07": {
+  "entries": [
+   [
+    "a.x",
+    "a\nb\tc\bd"
+   ]
+  ]
+ },
+ "V08": {
+  "entries": [
+   [
+    "a.x",
+    "a\"b\\c"
+   ]
+  ]
+ },
+ "V09": {
+  "error": "fatal: bad config line 2 in file <dir>/config"
+ },
+ "V10": {
+  "entries": [
+   [
+    "a.x",
+    "first  second"
+   ]
+  ]
+ },
+ "V11": {
+  "entries": [
+   [
+    "a.x",
+    "first  second"
+   ]
+  ]
+ },
+ "V12": {
+  "entries": [
+   [
+    "a.x",
+    null
+   ]
+  ]
+ },
+ "V13": {
+  "entries": [
+   [
+    "a.x",
+    ""
+   ]
+  ]
+ },
+ "V14": {
+  "entries": [
+   [
+    "a.x",
+    ""
+   ]
+  ]
+ },
+ "V15": {
+  "error": "fatal: bad config line 2 in file <dir>/config"
+ },
+ "V16": {
+  "entries": [
+   [
+    "a.x",
+    "ab cd"
+   ]
+  ]
+ },
+ "V17": {
+  "entries": [
+   [
+    "a.x",
+    "a\tb"
+   ]
+  ]
+ },
+ "V18": {
+  "entries": [
+   [
+    "a.x",
+    "a=b"
+   ]
+  ]
+ },
+ "V19": {
+  "entries": [
+   [
+    "a.x",
+    "end"
+   ]
+  ]
+ },
+ "V20": {
+  "entries": [
+   [
+    "a.x",
+    "a "
+   ]
+  ]
+ },
+ "V21": {
+  "entries": [
+   [
+    "a.x",
+    "héllo wörld"
+   ]
+  ]
+ },
+ "V22": {
+  "entries": [
+   [
+    "a.x",
+    "a]b"
+   ]
+  ]
+ },
+ "V23": {
+  "entries": [
+   [
+    "a.x",
+    "ab"
+   ]
+  ]
+ },
+ "V24": {
+  "entries": [
+   [
+    "a.x",
+    "a"
+   ]
+  ]
+ },
+ "V25": {
+  "entries": [
+   [
+    "a.x",
+    "a"
+   ]
+  ]
+ },
+ "V26": {
+  "entries": [
+   [
+    "a.x",
+    "a;b#c"
+   ]
+  ]
+ },
+ "V27": {
+  "entries": [
+   [
+    "a.x",
+    "!f() { echo $1"
+   ]
+  ]
+ },
+ "V28": {
+  "entries": [
+   [
+    "a.x",
+    "a \"b\" c"
+   ]
+  ]
+ },
+ "V29": {
+  "entries": [
+   [
+    "a.x",
+    "trailing"
+   ]
+  ]
+ },
+ "V30": {
+  "entries": [
+   [
+    "a.x",
+    "\n"
+   ]
+  ]
+ },
+ "L01": {
+  "entries": [
+   [
+    "core.repositoryformatversion",
+    "0"
+   ],
+   [
+    "core.filemode",
+    "true"
+   ],
+   [
+    "core.bare",
+    "false"
+   ],
+   [
+    "core.logallrefupdates",
+    "true"
+   ],
+   [
+    "remote.origin.url",
+    "git@github.com:o/r.git"
+   ],
+   [
+    "remote.origin.fetch",
+    "+refs/heads/*:refs/remotes/origin/*"
+   ],
+   [
+    "branch.main.remote",
+    "origin"
+   ],
+   [
+    "branch.main.merge",
+    "refs/heads/main"
+   ]
+  ]
+ },
+ "L02": {
+  "entries": [
+   [
+    "submodule.vendor/lib.path",
+    "vendor/lib"
+   ],
+   [
+    "submodule.vendor/lib.url",
+    "https://github.com/o/lib.git"
+   ],
+   [
+    "submodule.vendor/lib.branch",
+    "main"
+   ]
+  ]
+ },
+ "L03": {
+  "entries": [
+   [
+    "alias.lg",
+    "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+   ],
+   [
+    "alias.st",
+    "status -sb"
+   ]
+  ]
+ },
+ "L04": {
+  "entries": [
+   [
+    "alias.amend",
+    "!git commit --amend --no-edit"
+   ],
+   [
+    "alias.last",
+    "log -1 HEAD"
+   ]
+  ]
+ },
+ "L05": {
+  "entries": [
+   [
+    "url.git@github.com:.insteadof",
+    "https://github.com/"
+   ]
+  ]
+ },
+ "L06": {
+  "entries": [
+   [
+    "user.name",
+    "Ada Lovelace"
+   ],
+   [
+    "user.email",
+    "ada@example.com"
+   ],
+   [
+    "includeif.gitdir:~/work/.path",
+    "~/.gitconfig-work"
+   ]
+  ]
+ },
+ "L07": {
+  "entries": [
+   [
+    "filter.lfs.clean",
+    "git-lfs clean -- %f"
+   ],
+   [
+    "filter.lfs.smudge",
+    "git-lfs smudge -- %f"
+   ],
+   [
+    "filter.lfs.process",
+    "git-lfs filter-process"
+   ],
+   [
+    "filter.lfs.required",
+    "true"
+   ]
+  ]
+ },
+ "L08": {
+  "entries": [
+   [
+    "diff.word.textconv",
+    "docx2txt"
+   ],
+   [
+    "merge.conflictstyle",
+    "zdiff3"
+   ],
+   [
+    "pull.rebase",
+    null
+   ]
+  ]
+ }
+}

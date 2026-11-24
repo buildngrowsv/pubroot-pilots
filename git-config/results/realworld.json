@@ -1,0 +1,1016 @@
+{
+ "source": "https://raw.githubusercontent.com/webpro/awesome-dotfiles/a6bf526494f0923adc30f9d4bf631019091155f6/README.md",
+ "files": 39,
+ "git_entries": 1641,
+ "git_rejects": 0,
+ "classes": {
+  "dulwich": {
+   "A": 38,
+   "W": 1
+  },
+  "GitPython": {
+   "W": 22,
+   "A": 17
+  },
+  "pygit2 (libgit2)": {
+   "A": 39
+  },
+  "parse-git-config": {
+   "W": 26,
+   "A": 13
+  },
+  "isomorphic-git": {
+   "A": 38,
+   "W": 1
+  },
+  "go-git": {
+   "A": 38,
+   "W": 1
+  },
+  "gix-config": {
+   "A": 39
+  }
+ },
+ "keys_differing": {
+  "dulwich": 2,
+  "GitPython": 80,
+  "pygit2 (libgit2)": 0,
+  "parse-git-config": 167,
+  "isomorphic-git": 7,
+  "go-git": 2,
+  "gix-config": 0
+ },
+ "per_file": [
+  {
+   "file": "mathiasbynens/dotfiles@b7c7894e7bb2:.gitconfig",
+   "git_ok": true,
+   "git_entries": 58,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.d",
+     "alias.di"
+    ],
+    "parse-git-config": [
+     "alias.d",
+     "alias.di",
+     "url.git@gist.github.com:.pushinsteadof",
+     "url.git@github.com:.pushinsteadof"
+    ]
+   }
+  },
+  {
+   "file": "lewagon/dotfiles@c12c9f5b37fb:gitconfig",
+   "git_ok": true,
+   "git_entries": 30,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.sweep"
+    ],
+    "parse-git-config": [
+     "alias.sweep"
+    ]
+   }
+  },
+  {
+   "file": "thoughtbot/dotfiles@939a27005b2d:gitconfig",
+   "git_ok": true,
+   "git_entries": 19,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.branches"
+    ],
+    "parse-git-config": [
+     "alias.branches"
+    ]
+   }
+  },
+  {
+   "file": "holman/dotfiles@9a90082b61fa:git/gitconfig.symlink",
+   "git_ok": true,
+   "git_entries": 22,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "skwp/dotfiles@630d39fb1dfb:git/gitconfig",
+   "git_ok": true,
+   "git_entries": 69,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.changes",
+     "alias.short",
+     "alias.shortnocolor",
+     "alias.simple",
+     "alias.snapshot"
+    ],
+    "parse-git-config": [
+     "alias.changes",
+     "alias.short",
+     "alias.shortnocolor",
+     "alias.simple",
+     "alias.snapshot",
+     "mergetool.mvimdiff.cmd"
+    ]
+   }
+  },
+  {
+   "file": "paulirish/dotfiles@9457fe94db82:.gitconfig",
+   "git_ok": true,
+   "git_entries": 98,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.commitwip",
+     "alias.diffbase",
+     "alias.diffbranch",
+     "alias.diffcommitsfrommain",
+     "alias.diffcommitsfrommain-incl-merges",
+     "alias.mainormaster",
+     "alias.mergeorigin",
+     "alias.squash"
+    ],
+    "parse-git-config": [
+     "alias.commitwip",
+     "alias.diffbase",
+     "alias.diffbranch",
+     "alias.diffcommitsfrommain",
+     "alias.diffcommitsfrommain-incl-merges",
+     "alias.mainormaster",
+     "alias.mergeorigin",
+     "alias.squash",
+     "color.[color \"diff\"]",
+     "color.commit",
+     "color.diff-highlight.newhighlight",
+     "color.diff-highlight.newnormal",
+     "color.diff-highlight.oldhighlight",
+     "color.diff-highlight.oldnormal",
+     "color.diff.commit",
+     "color.diff.frag",
+     "color.diff.meta",
+     "color.diff.new",
+     "color.diff.newmoved",
+     "color.diff.newmovedalternative",
+     "color.diff.old",
+     "color.diff.oldmoved",
+     "color.diff.oldmovedalternative",
+     "color.diff.whitespace",
+     "color.frag",
+     "color.meta",
+     "color.new",
+     "color.newmoved",
+     "color.newmovedalternative",
+     "color.old",
+     "color.oldmoved",
+     "color.oldmovedalternative",
+     "color.status.[color \"diff-highlight\"]",
+     "color.status.newhighlight",
+     "color.status.newnormal",
+     "color.status.oldhighlight",
+     "color.status.oldnormal",
+     "color.whitespace",
+     "diff.pdl.xfuncname"
+    ]
+   }
+  },
+  {
+   "file": "jessfraz/dotfiles@cbbbcb3ccd1b:.gitconfig",
+   "git_ok": true,
+   "git_entries": 81,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.d",
+     "alias.di",
+     "alias.graph",
+     "alias.p",
+     "alias.pr"
+    ],
+    "parse-git-config": [
+     "alias.d",
+     "alias.di",
+     "alias.fc",
+     "alias.fm",
+     "alias.graph",
+     "alias.p",
+     "alias.pr",
+     "url.git@gist.github.com:.pushinsteadof",
+     "url.git@github.com:.pushinsteadof",
+     "url.git@github.com:github.insteadof"
+    ]
+   }
+  },
+  {
+   "file": "nicknisi/dotfiles@5f99a4be9d71:config/git/config",
+   "git_ok": true,
+   "git_entries": 98,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "parse-git-config": [
+     "credential.https://gist.github.com.helper",
+     "credential.https://github.com.helper",
+     "include.path"
+    ]
+   }
+  },
+  {
+   "file": "driesvints/dotfiles@32049202c70c:.gitconfig",
+   "git_ok": true,
+   "git_entries": 10,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "ryanb/dotfiles@481e9234f156:gitconfig",
+   "git_ok": true,
+   "git_entries": 21,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "hlissner/dotfiles@1d73dca3f2f4:config/git/config",
+   "git_ok": true,
+   "git_entries": 27,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.email-domains",
+     "alias.emails"
+    ],
+    "parse-git-config": [
+     "alias.email-domains",
+     "alias.emails",
+     "credential.https://gist.github.com.helper",
+     "credential.https://github.com.helper"
+    ]
+   }
+  },
+  {
+   "file": "garybernhardt/dotfiles@eed3bbab874f:.gitconfig",
+   "git_ok": true,
+   "git_entries": 42,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "color.diff-highlight.newhighlight",
+     "color.diff-highlight.oldhighlight",
+     "color.diff.whitespace"
+    ],
+    "parse-git-config": [
+     "color.diff-highlight.newhighlight",
+     "color.diff-highlight.oldhighlight",
+     "color.diff.whitespace"
+    ]
+   }
+  },
+  {
+   "file": "dikiaap/dotfiles@ef6e4bdee7dd:.gitconfig",
+   "git_ok": true,
+   "git_entries": 54,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "mislav/dotfiles@6a4f77589266:gitconfig",
+   "git_ok": true,
+   "git_entries": 9,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "wesbos/dotfiles@4c4b0036eb47:.gitconfig",
+   "git_ok": true,
+   "git_entries": 10,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.acp"
+    ],
+    "parse-git-config": [
+     "alias.acp"
+    ]
+   }
+  },
+  {
+   "file": "webpro/dotfiles@f06d67883c12:config/git/config",
+   "git_ok": true,
+   "git_entries": 77,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "parse-git-config": [
+     "credential.https://github.com.helper",
+     "versionsort.suffix"
+    ]
+   }
+  },
+  {
+   "file": "paulmillr/dotfiles@530535edfb60:home/.gitconfig",
+   "git_ok": true,
+   "git_entries": 1,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "SeniorMars/dotfiles@ea99c6844e1d:.config/git/config",
+   "git_ok": true,
+   "git_entries": 32,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "difftool.nvimdiff.cmd"
+    ],
+    "parse-git-config": [
+     "difftool.nvimdiff.cmd",
+     "interactive.difffilter"
+    ]
+   }
+  },
+  {
+   "file": "gf3/dotfiles@9fac550c0e6b:.gitconfig",
+   "git_ok": true,
+   "git_entries": 39,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.ch",
+     "alias.find"
+    ],
+    "parse-git-config": [
+     "alias.ch",
+     "alias.find",
+     "credential.helper",
+     "credential.https://gist.github.com.helper",
+     "credential.https://github.com.helper"
+    ]
+   }
+  },
+  {
+   "file": "freekmurze/dotfiles@05044c62b57c:home/.gitconfig",
+   "git_ok": true,
+   "git_entries": 28,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "parse-git-config": [
+     "credential.https://gist.github.com.helper",
+     "credential.https://github.com.helper"
+    ]
+   }
+  },
+  {
+   "file": "yutkat/dotfiles@6f196e4b97de:.config/git/config",
+   "git_ok": true,
+   "git_entries": 68,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.aliases",
+     "alias.ll",
+     "alias.tree",
+     "alias.update",
+     "mergetool.nvimdiff.cmd"
+    ],
+    "parse-git-config": [
+     "alias.ll",
+     "alias.tree",
+     "alias.update",
+     "mergetool.nvimdiff.cmd"
+    ]
+   }
+  },
+  {
+   "file": "XNM1/linux-nixos-hyprland-config-dotfiles@9518598180b4:home/.gitconfig",
+   "git_ok": true,
+   "git_entries": 51,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "fatih/dotfiles@0aad0a27550f:gitconfig",
+   "git_ok": true,
+   "git_entries": 38,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "necolas/dotfiles@0a77d4ba026e:git/gitconfig",
+   "git_ok": true,
+   "git_entries": 34,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.who"
+    ],
+    "parse-git-config": [
+     "alias.who"
+    ]
+   }
+  },
+  {
+   "file": "Mic92/dotfiles@0642d247eda9:home/.gitconfig",
+   "git_ok": true,
+   "git_entries": 102,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.checkout-pr",
+     "alias.pick-pr",
+     "delta.file-decoration-style",
+     "delta.file-style",
+     "delta.hunk-header-decoration-style",
+     "delta.minus-emph-style",
+     "delta.minus-empty-line-marker-style",
+     "delta.minus-non-emph-style",
+     "delta.minus-style",
+     "delta.plus-emph-style",
+     "delta.plus-empty-line-marker-style",
+     "delta.plus-non-emph-style",
+     "delta.plus-style"
+    ],
+    "parse-git-config": [
+     "alias.checkout-pr",
+     "alias.pick-pr",
+     "core.attributesfile",
+     "delta.file-decoration-style",
+     "delta.file-style",
+     "delta.hunk-header-decoration-style",
+     "delta.minus-emph-style",
+     "delta.minus-empty-line-marker-style",
+     "delta.minus-non-emph-style",
+     "delta.minus-style",
+     "delta.plus-emph-style",
+     "delta.plus-empty-line-marker-style",
+     "delta.plus-non-emph-style",
+     "delta.plus-style"
+    ]
+   }
+  },
+  {
+   "file": "avivace/dotfiles@0ff0dc866163:git/.gitconfig",
+   "git_ok": true,
+   "git_entries": 6,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "Matt-FTW/dotfiles@0bcecd91cd93:.config/git/config",
+   "git_ok": true,
+   "git_entries": 36,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "difftool.codediff.cmd",
+     "mergetool.codediff.cmd"
+    ],
+    "parse-git-config": [
+     "difftool.codediff.cmd",
+     "mergetool.codediff.cmd"
+    ]
+   }
+  },
+  {
+   "file": "babarot/dotfiles@bfd0b6fee5cf:home/.gitconfig",
+   "git_ok": true,
+   "git_entries": 53,
+   "cls": {
+    "dulwich": "W",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "W",
+    "go-git": "W",
+    "gix-config": "A"
+   },
+   "keys": {
+    "dulwich": [
+     "alias.land",
+     "alias.sync"
+    ],
+    "GitPython": [
+     "alias.typechange"
+    ],
+    "parse-git-config": [
+     "alias.'')",
+     "alias.*) echo \\\"usage: git land [--push]\\\" >&2",
+     "alias.-p|--push) push",
+     "alias.[ -n \\\"$b\\\" ] && [ \\\"$b\\\" !",
+     "alias.[ \\\"$(git -c \\\"$root\\\" branch --show-current)\\\"",
+     "alias.b",
+     "alias.base",
+     "alias.case ${1-} in \\",
+     "alias.echo \\\"sync: $b was rebased",
+     "alias.echo \\\"sync: $m and origin/$m have diverged",
+     "alias.elif git merge-base --is-ancestor \\\"origin/$m\\\" \\\"$m\\\"",
+     "alias.else \\",
+     "alias.esac",
+     "alias.fi",
+     "alias.git -c \\\"$root\\\" log --oneline -1 && \\",
+     "alias.git -c \\\"$root\\\" merge -q --ff-only \\\"$b\\\" && \\",
+     "alias.git -c \\\"$root\\\" merge -q --ff-only \\\"origin/$m\\\" || echo \\\"sync: could not fast-forward $m in $root\\\" >&2",
+     "alias.git -c \\\"$root\\\" pull -q --ff-only origin \\\"$m\\\" && \\",
+     "alias.git fetch -q origin \\\"$m\\\" || return 1",
+     "alias.git rebase \\\"$base\\\" || return 1",
+     "alias.git rebase \\\"$m\\\" && \\",
+     "alias.if ! git rev-parse -q --verify \\\"refs/heads/$m\\\" >/dev/null || git merge-base --is-ancestor \\\"$m\\\" \\\"origin/$m\\\"",
+     "alias.if [ -n \\\"$push\\\" ]",
+     "alias.if [ \\\"$(git -c \\\"$root\\\" branch --show-current)\\\"",
+     "alias.if git rev-parse -q --verify '@{push}' >/dev/null && ! git merge-base --is-ancestor '@{push}' head",
+     "alias.land",
+     "alias.m",
+     "alias.push",
+     "alias.root",
+     "alias.sync",
+     "alias.typechange",
+     "alias.unset git_dir git_work_tree",
+     "alias.}"
+    ],
+    "isomorphic-git": [
+     "alias.b",
+     "alias.base",
+     "alias.land",
+     "alias.m",
+     "alias.push",
+     "alias.root",
+     "alias.sync"
+    ],
+    "go-git": [
+     "alias.land",
+     "alias.sync"
+    ]
+   }
+  },
+  {
+   "file": "anishathalye/dotfiles@f7e7ecb63820:gitconfig",
+   "git_ok": true,
+   "git_entries": 90,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.count",
+     "alias.ctags",
+     "alias.exec",
+     "alias.info",
+     "alias.linecredit",
+     "alias.mirror-remote",
+     "alias.save",
+     "alias.showtool",
+     "alias.tar",
+     "alias.targz",
+     "alias.zip"
+    ],
+    "parse-git-config": [
+     "alias.count",
+     "alias.ctags",
+     "alias.exec",
+     "alias.info",
+     "alias.linecredit",
+     "alias.mirror-remote",
+     "alias.save",
+     "alias.showtool",
+     "alias.tar",
+     "alias.targz",
+     "alias.zip",
+     "include.path"
+    ]
+   }
+  },
+  {
+   "file": "Phantas0s/.dotfiles@998e1e9fd7b3:git/gitconfig",
+   "git_ok": true,
+   "git_entries": 28,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.files",
+     "alias.review",
+     "alias.reviewone",
+     "alias.stat",
+     "mergetool.nvim.cmd"
+    ],
+    "parse-git-config": [
+     "alias.files",
+     "alias.review",
+     "alias.reviewone",
+     "alias.stat",
+     "mergetool.nvim.cmd"
+    ]
+   }
+  },
+  {
+   "file": "maxhu08/dotfiles@f31923cd13c8:git/.gitconfig",
+   "git_ok": true,
+   "git_entries": 1,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "int32bit/dotfiles@7a31997c723d:git/gitconfig",
+   "git_ok": true,
+   "git_entries": 55,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.changes",
+     "alias.short",
+     "alias.shortnocolor",
+     "alias.simple",
+     "alias.snapshot"
+    ],
+    "parse-git-config": [
+     "alias.changes",
+     "alias.short",
+     "alias.shortnocolor",
+     "alias.simple",
+     "alias.snapshot",
+     "mergetool.mvimdiff.cmd"
+    ]
+   }
+  },
+  {
+   "file": "geerlingguy/dotfiles@575f77a28a33:.gitconfig",
+   "git_ok": true,
+   "git_entries": 23,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.l"
+    ],
+    "parse-git-config": [
+     "alias.l"
+    ]
+   }
+  },
+  {
+   "file": "rexim/dotfiles@36955dfe7aaa:.gitconfig",
+   "git_ok": true,
+   "git_entries": 7,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "jessarcher/dotfiles@937de502c829:git/gitconfig",
+   "git_ok": true,
+   "git_entries": 66,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "Airblader/dotfiles-manjaro@726f72b0cc9f:.gitconfig",
+   "git_ok": true,
+   "git_entries": 26,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {}
+  },
+  {
+   "file": "mhartington/dotfiles@9f70efddf955:gitconfig",
+   "git_ok": true,
+   "git_entries": 39,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "gui.fontdiff"
+    ],
+    "parse-git-config": [
+     "gui.fontdiff"
+    ]
+   }
+  },
+  {
+   "file": "tpope/dotfiles@30b0609c6bdc:.gitconfig",
+   "git_ok": true,
+   "git_entries": 37,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "GitPython": [
+     "alias.cherry-lick",
+     "alias.rlog",
+     "alias.summary",
+     "user.email"
+    ],
+    "parse-git-config": [
+     "alias.cherry-lick",
+     "alias.rlog",
+     "alias.summary",
+     "user.email"
+    ]
+   }
+  },
+  {
+   "file": "2KAbhishek/dots2k@e55ef9b79d9c:config/git/config",
+   "git_ok": true,
+   "git_entries": 56,
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   },
+   "keys": {
+    "parse-git-config": [
+     "include.path"
+    ]
+   }
+  }
+ ]
+}

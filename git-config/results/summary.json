@@ -1,0 +1,6773 @@
+{
+ "n_cases": 76,
+ "n_scored": 74,
+ "n_any_differs_from_git_or_each_other": 35,
+ "n_scored_any_non_A": 33,
+ "n_scored_any_WRL": 33,
+ "classes": {
+  "dulwich": {
+   "A": 64,
+   "W": 4,
+   "L": 3,
+   "R": 1,
+   "T": 2
+  },
+  "GitPython": {
+   "A": 55,
+   "W": 10,
+   "L": 9
+  },
+  "pygit2 (libgit2)": {
+   "A": 72,
+   "L": 2
+  },
+  "parse-git-config": {
+   "A": 44,
+   "W": 18,
+   "L": 10,
+   "T": 2
+  },
+  "isomorphic-git": {
+   "A": 59,
+   "W": 3,
+   "L": 10,
+   "T": 2
+  },
+  "go-git": {
+   "A": 63,
+   "R": 6,
+   "L": 1,
+   "W": 4
+  },
+  "gix-config": {
+   "A": 71,
+   "W": 2,
+   "L": 1
+  }
+ },
+ "classes_open": {
+  "dulwich": {
+   "R": 1,
+   "W": 1
+  },
+  "GitPython": {
+   "R": 1,
+   "A": 1
+  },
+  "pygit2 (libgit2)": {
+   "A": 2
+  },
+  "parse-git-config": {
+   "A": 1,
+   "W": 1
+  },
+  "isomorphic-git": {
+   "A": 1,
+   "W": 1
+  },
+  "go-git": {
+   "R": 2
+  },
+  "gix-config": {
+   "W": 1,
+   "A": 1
+  }
+ },
+ "pairwise_scored": {
+  "dulwich vs GitPython": 25,
+  "dulwich vs pygit2 (libgit2)": 10,
+  "dulwich vs parse-git-config": 24,
+  "dulwich vs isomorphic-git": 15,
+  "dulwich vs go-git": 15,
+  "dulwich vs gix-config": 9,
+  "GitPython vs pygit2 (libgit2)": 17,
+  "GitPython vs parse-git-config": 16,
+  "GitPython vs isomorphic-git": 21,
+  "GitPython vs go-git": 26,
+  "GitPython vs gix-config": 21,
+  "pygit2 (libgit2) vs parse-git-config": 29,
+  "pygit2 (libgit2) vs isomorphic-git": 14,
+  "pygit2 (libgit2) vs go-git": 13,
+  "pygit2 (libgit2) vs gix-config": 5,
+  "parse-git-config vs isomorphic-git": 26,
+  "parse-git-config vs go-git": 30,
+  "parse-git-config vs gix-config": 28,
+  "isomorphic-git vs go-git": 20,
+  "isomorphic-git vs gix-config": 17,
+  "go-git vs gix-config": 12
+ },
+ "rows": [
+  {
+   "id": "B01",
+   "text": "[core]\n\tbare = false\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "core.bare",
+      "false"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B02",
+   "text": "[core]\n\tbare = false\n[user]\n\tname = A B\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "core.bare",
+      "false"
+     ],
+     [
+      "user.name",
+      "A B"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "user.name",
+       "A B"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "user.name",
+       "A B"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "user.name",
+       "A B"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "user.name",
+       "A B"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "user.name",
+       "A B"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "user.name",
+       "A B"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "user.name",
+       "A B"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B03",
+   "text": "[a]\n\tx = 1\n[b]\n\ty = 2\n[a]\n\tz = 3\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "1"
+     ],
+     [
+      "b.y",
+      "2"
+     ],
+     [
+      "a.z",
+      "3"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.z",
+       "3"
+      ],
+      [
+       "b.y",
+       "2"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.z",
+       "3"
+      ],
+      [
+       "b.y",
+       "2"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "b.y",
+       "2"
+      ],
+      [
+       "a.z",
+       "3"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.z",
+       "3"
+      ],
+      [
+       "b.y",
+       "2"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "b.y",
+       "2"
+      ],
+      [
+       "a.z",
+       "3"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.z",
+       "3"
+      ],
+      [
+       "b.y",
+       "2"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "b.y",
+       "2"
+      ],
+      [
+       "a.z",
+       "3"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B04",
+   "text": "[remote \"origin\"]\n\tfetch = +refs/heads/*:refs/remotes/origin/*\n\tfetch = +refs/tags/*:refs/tags/*\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "remote.origin.fetch",
+      "+refs/heads/*:refs/remotes/origin/*"
+     ],
+     [
+      "remote.origin.fetch",
+      "+refs/tags/*:refs/tags/*"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/tags/*:refs/tags/*"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/tags/*:refs/tags/*"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/tags/*:refs/tags/*"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "remote.origin.fetch",
+       "+refs/tags/*:refs/tags/*"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/tags/*:refs/tags/*"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/tags/*:refs/tags/*"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/tags/*:refs/tags/*"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B05",
+   "text": "",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": []
+   },
+   "out": {
+    "dulwich": {
+     "entries": []
+    },
+    "GitPython": {
+     "entries": []
+    },
+    "pygit2 (libgit2)": {
+     "entries": []
+    },
+    "parse-git-config": {
+     "entries": []
+    },
+    "isomorphic-git": {
+     "entries": []
+    },
+    "go-git": {
+     "entries": []
+    },
+    "gix-config": {
+     "entries": []
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B06",
+   "text": "# only a comment\n; another\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": []
+   },
+   "out": {
+    "dulwich": {
+     "entries": []
+    },
+    "GitPython": {
+     "entries": []
+    },
+    "pygit2 (libgit2)": {
+     "entries": []
+    },
+    "parse-git-config": {
+     "entries": []
+    },
+    "isomorphic-git": {
+     "entries": []
+    },
+    "go-git": {
+     "entries": []
+    },
+    "gix-config": {
+     "entries": []
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B07",
+   "text": "[core]\r\n\tbare = false\r\n\tname = x\r\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "core.bare",
+      "false"
+     ],
+     [
+      "core.name",
+      "x"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.name",
+       "x"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.name",
+       "x"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.name",
+       "x"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.name",
+       "x"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.name",
+       "x"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.name",
+       "x"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.name",
+       "x"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B08",
+   "text": "﻿[core]\n\tbare = true\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "core.bare",
+      "true"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "core.bare",
+       "true"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "core.bare",
+       "true"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "core.bare",
+       "true"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "[core]",
+       "true"
+      ],
+      [
+       "bare",
+       "true"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "core.bare",
+       "true"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:1: illegal character U+FEFF"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "core.bare",
+       "true"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "R",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B09",
+   "text": "[a]\nx=1\n  y   =   2\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "1"
+     ],
+     [
+      "a.y",
+      "2"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B10",
+   "text": "[a] x = 1\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": []
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "[a] x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": []
+    },
+    "go-git": {
+     "error": "1:5: expected EOL, EOF, or comment"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "W",
+    "go-git": "R",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B11",
+   "text": "[a]\n\tx = 1\n[a]\n\tx = 2\n",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "1"
+     ],
+     [
+      "a.x",
+      "2"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.x",
+       "2"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.x",
+       "2"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.x",
+       "2"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "2"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.x",
+       "2"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.x",
+       "2"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "1"
+      ],
+      [
+       "a.x",
+       "2"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "B12",
+   "text": "[core]\n\tbare = false",
+   "group": "basic structure",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "core.bare",
+      "false"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "core.bare",
+       "false"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K01",
+   "text": "[Core]\n\tFileMode = true\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "core.filemode",
+      "true"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "core.filemode",
+       "true"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "core.filemode",
+       "true"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "core.filemode",
+       "true"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "core.filemode",
+       "true"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "core.filemode",
+       "true"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "core.filemode",
+       "true"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "core.filemode",
+       "true"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K02",
+   "text": "[my-sec]\n\tmy-key = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "my-sec.my-key",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "my-sec.my-key",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "my-sec.my-key",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "my-sec.my-key",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "my-sec.my-key",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "my-sec.my-key",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "my-sec.my-key",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "my-sec.my-key",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K03",
+   "text": "[a.B]\n\tx = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.b.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:3: illegal character U+002E '.'"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "W",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "R",
+    "gix-config": "W"
+   }
+  },
+  {
+   "id": "K04",
+   "text": "[a \"B\"]\n\tx = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.B.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.B.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K05",
+   "text": "[a]\n\t1x = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 2 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.1x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.1x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.1x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.1x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": []
+    },
+    "go-git": {
+     "error": "2:2: illegal character U+0031 '1'"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 2 while trying to parse a name: '1x = 1\n'"
+    }
+   },
+   "cls": {
+    "dulwich": "L",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "L",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K06",
+   "text": "[a]\n\tx_y = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 2 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: invalid variable name b'x_y'"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x_y",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: failed to parse config file: invalid configuration key (in <dir>/K06-17.config:2)"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x_y",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": []
+    },
+    "go-git": {
+     "error": "2:3: illegal character U+005F '_'"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 2 while trying to parse a name: '_y = 1\n'"
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K07",
+   "text": "[a_b]\n\tx = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 1 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: invalid section name b'a_b'"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a_b.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: failed to parse config file: unexpected character in header (in <dir>/K07-18.config:1, column 3)"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a_b.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:3: illegal character U+005F '_'"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 1 while trying to parse a section header: '[a_b]\n\tx =' ... (3 characters omitted)"
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K08",
+   "text": "[]\n\tx = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 1 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       ".x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "error": "MissingSectionHeaderError: File contains no section headers.\nfile: '<dir>/K08-19.config', line: 1\n'[]\\n'"
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: failed to parse config file: unexpected character in header (in <dir>/K08-19.config:1, column 2)"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       ".x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:2: expected section name"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 1 while trying to parse a section header: '[]\n\tx = 1\n'"
+    }
+   },
+   "cls": {
+    "dulwich": "L",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K09",
+   "text": "x = 1\n[a]\n\ty = 2\n",
+   "group": "section and key names",
+   "open": "key before any section header",
+   "git": {
+    "entries": [
+     [
+      "x",
+      "1"
+     ],
+     [
+      "a.y",
+      "2"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: setting b'x = 1\\n' without section"
+    },
+    "GitPython": {
+     "error": "MissingSectionHeaderError: File contains no section headers.\nfile: '<dir>/K09-20.config', line: 1\n'x = 1\\n'"
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ],
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:1: expected section header"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.y",
+       "2"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "R",
+    "GitPython": "R",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "R",
+    "gix-config": "W"
+   }
+  },
+  {
+   "id": "K10",
+   "text": "[a]\n\tx y = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 2 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: invalid variable name b'x y'"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x y",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: failed to parse config file: invalid configuration key (in <dir>/K10-21.config:2)"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x y",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": []
+    },
+    "go-git": {
+     "error": "2:4: expected '='"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       null
+      ],
+      [
+       "a.y",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "L"
+   }
+  },
+  {
+   "id": "K11",
+   "text": "[a.b.C]\n\tx = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.b.c.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.b.C.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.b.C.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:3: illegal character U+002E '.'"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.b.C.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "W",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "R",
+    "gix-config": "W"
+   }
+  },
+  {
+   "id": "K12",
+   "text": "[A \"b\"]\n\tX = 1\n[a \"b\"]\n\tx = 2\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.b.x",
+      "1"
+     ],
+     [
+      "a.b.x",
+      "2"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.b.x",
+       "2"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.b.x",
+       "2"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.b.x",
+       "2"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.b.x",
+       "2"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.b.x",
+       "2"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.b.x",
+       "2"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.b.x",
+       "2"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K13",
+   "text": "[a \"b\"]\n\tx = 1\n[a \"B\"]\n\tx = 2\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.b.x",
+      "1"
+     ],
+     [
+      "a.B.x",
+      "2"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.B.x",
+       "2"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.B.x",
+       "2"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.B.x",
+       "2"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.B.x",
+       "2"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.B.x",
+       "2"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.B.x",
+       "2"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ],
+      [
+       "a.B.x",
+       "2"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "K14",
+   "text": "[a]\n\tx- = 1\n",
+   "group": "section and key names",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x-",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x-",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x-",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x-",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x-",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x-",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x-",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x-",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S01",
+   "text": "[a \"with space\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.with space.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.with space.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.with space.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.with space.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.with space.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.with space.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.with space.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.with space.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S02",
+   "text": "[a \"q\\\"uote\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.q\"uote.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.q\"uote.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.q\\\"uote.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.q\"uote.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.q\\\"uote.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.q\"uote.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.q\"uote.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.q\"uote.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S03",
+   "text": "[a \"back\\\\slash\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.back\\slash.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.back\\slash.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.back\\\\slash.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.back\\slash.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.back\\slash.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.back\\slash.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.back\\slash.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.back\\slash.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S04",
+   "text": "[a \"b\\c\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.bc.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.bc.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b\\c.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.bc.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.b\\c.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.bc.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:7: unknown escape sequence"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.bc.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "R",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S05",
+   "text": "[a \"\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a..x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a..x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a..x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a..x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a..x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a..x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:4: empty subsection name"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a..x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "R",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S06",
+   "text": "[a \"x]y\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x]y.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x]y.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x]y.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x]y.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "[a \"x]y\"]",
+       "true"
+      ],
+      [
+       "x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x]y.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x]y.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x]y.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S07",
+   "text": "[a \"open]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 1 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: expected trailing ]"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a \"open.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: failed to parse config file: missing closing quotation mark in section header (in <dir>/S07-32.config:1)"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a \"open.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:4: string not terminated"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 1 while trying to parse a section header: '[a \"open]\n' ... (7 characters omitted)"
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S08",
+   "text": "[a  \"b\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.b.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: Invalid subsection b' \"b\"'"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "R",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S09",
+   "text": "[a \"b\" ]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 1 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: Invalid subsection b'\"b\" '"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: failed to parse config file: unexpected text after closing quotes (in <dir>/S09-34.config:1, column 2)"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.b.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 1 while trying to parse a section header: '[a \"b\" ]\n\t' ... (6 characters omitted)"
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "L",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S10",
+   "text": "[a \"b\"c]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 1 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: Invalid subsection b'\"b\"c'"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a \"b\"c.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: failed to parse config file: unexpected text after closing quotes (in <dir>/S10-35.config:1, column 2)"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a \"b\"c.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "1:7: expected right bracket"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 1 while trying to parse a section header: '[a \"b\"c]\n\t' ... (6 characters omitted)"
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S11",
+   "text": "[a \"https://example.com/x.git\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.https://example.com/x.git.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.https://example.com/x.git.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.https://example.com/x.git.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.https://example.com/x.git.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.https://example.com/x.git.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.https://example.com/x.git.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.https://example.com/x.git.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.https://example.com/x.git.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "S12",
+   "text": "[a \"b.c\"]\n\tx = 1\n",
+   "group": "subsections",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.b.c.x",
+      "1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.b.c.x",
+       "1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V01",
+   "text": "[a]\n\tx =    padded   \n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "padded"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "padded"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "padded"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "padded"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "padded"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "padded"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "padded"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "padded"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V02",
+   "text": "[a]\n\tx = one   two\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "one   two"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "one   two"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "one   two"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "one   two"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "one   two"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "one   two"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "one   two"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "one   two"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V03",
+   "text": "[a]\n\tx = \"  lead\"\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "  lead"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "  lead"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "  lead"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "  lead"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "  lead"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "  lead"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "  lead"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "  lead"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V04",
+   "text": "[a]\n\tx = val # comment\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "val"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V05",
+   "text": "[a]\n\tx = val ; comment\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "val"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "val"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V06",
+   "text": "[a]\n\tx = \"val # not a comment\"\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "val # not a comment"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "val # not a comment"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "val # not a comment"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "val # not a comment"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "val # not a comment"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "val # not a comment"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "val # not a comment"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "val # not a comment"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V07",
+   "text": "[a]\n\tx = a\\nb\\tc\\bd\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a\nb\tc\bd"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a\nb\tc\bd"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a\\nb\\tc\\bd"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a\nb\tc\bd"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\\nb\\tc\\bd"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a\nb\tc\bd"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a\nb\tc\bd"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\nb\tc\bd"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V08",
+   "text": "[a]\n\tx = a\\\"b\\\\c\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a\"b\\c"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a\"b\\c"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a\\\"b\\\\c"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a\"b\\c"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\\\"b\\c"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a\"b\\c"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a\"b\\c"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\"b\\c"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V09",
+   "text": "[a]\n\tx = a\\qb\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 2 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a\\qb"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a\\qb"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "error": "GitError: invalid escape at qb"
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\\qb"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a\\qb"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "2:8: unknown escape sequence"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 2 while trying to parse a value: 'a\\qb\n'"
+    }
+   },
+   "cls": {
+    "dulwich": "L",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V10",
+   "text": "[a]\n\tx = first \\\n second\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "first  second"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "first second"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "first  second"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "first  second"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "first \\"
+      ],
+      [
+       "a.second",
+       "true"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "first \\"
+      ],
+      [
+       "a.second",
+       "true"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "first \n second"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "first  second"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "W",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "W",
+    "go-git": "W",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V11",
+   "text": "[a]\n\tx = \"first \\\n second\"\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "first  second"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "first second"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "first  second"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "first  second"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "\"first \\"
+      ],
+      [
+       "a.second\"",
+       "true"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "first \\"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "first \n second"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "first  second"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "W",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "W",
+    "go-git": "W",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V12",
+   "text": "[a]\n\tx\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      null
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "true"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       null
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       null
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "true"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "true"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       null
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "T",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "T",
+    "isomorphic-git": "T",
+    "go-git": "W",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V13",
+   "text": "[a]\n\tx =\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      ""
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V14",
+   "text": "[a]\n\tx = \"\"\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      ""
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       ""
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V15",
+   "text": "[a]\n\tx = \"open\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "error": "fatal: bad config line 2 in file <dir>/config"
+   },
+   "out": {
+    "dulwich": {
+     "error": "ValueError: missing end quote"
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "open"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "open"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "\"open"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "open"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "2:6: string not terminated"
+    },
+    "gix-config": {
+     "error": "Got an unexpected token on line 2 while trying to parse a value: '\"open\n'"
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "L",
+    "pygit2 (libgit2)": "L",
+    "parse-git-config": "L",
+    "isomorphic-git": "L",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V16",
+   "text": "[a]\n\tx = a\"b c\"d\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "ab cd"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "ab cd"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a\"b c\"d"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "ab cd"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\"b c\"d"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "ab cd"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "ab cd"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "ab cd"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V17",
+   "text": "[a]\n\tx = a\tb\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a\tb"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a\tb"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a\tb"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a\tb"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\tb"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a\tb"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a\tb"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a\tb"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V18",
+   "text": "[a]\n\tx = a=b\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a=b"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a=b"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a=b"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a=b"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a=b"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a=b"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a=b"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a=b"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V19",
+   "text": "[a]\n\tx = end\\",
+   "group": "values",
+   "open": "backslash as the last byte of the file",
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "end"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "end\\"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "end"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "end"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "end\\"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "end\\"
+      ]
+     ]
+    },
+    "go-git": {
+     "error": "2:10: unknown escape sequence"
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "end"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "W",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "W",
+    "go-git": "R",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V20",
+   "text": "[a]\n\tx = \"a \"   # c\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a "
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a "
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a "
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a "
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "\"a \""
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a "
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a "
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a "
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V21",
+   "text": "[a]\n\tx = héllo wörld\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "héllo wörld"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "héllo wörld"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "héllo wörld"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "héllo wörld"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "héllo wörld"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "héllo wörld"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "héllo wörld"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "héllo wörld"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V22",
+   "text": "[a]\n\tx = a]b\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a]b"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a]b"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a]b"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a]b"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a]b"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a]b"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a]b"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a]b"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V23",
+   "text": "[a]\n\tx = \"a\"\"b\"\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "ab"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "ab"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "\"a\"\"b\""
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "ab"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "\"a\"\"b\""
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "ab"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "ab"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "ab"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V24",
+   "text": "[a]\n\tx = a#b\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V25",
+   "text": "[a]\n\tx = a;b\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V26",
+   "text": "[a]\n\tx = \"a;b#c\"\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a;b#c"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a;b#c"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a;b#c"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a;b#c"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a;b#c"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a;b#c"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a;b#c"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a;b#c"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V27",
+   "text": "[a]\n\tx = !f() { echo \"$1\"; }; f\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "!f() { echo $1"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "!f() { echo $1"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "!f() { echo \"$1\""
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "!f() { echo $1"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "!f() { echo \"$1\""
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "!f() { echo $1"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "!f() { echo $1"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "!f() { echo $1"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V28",
+   "text": "[a]\n\tx = a \\\"b\\\" c\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "a \"b\" c"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "a \"b\" c"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "a \\\"b\\\" c"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "a \"b\" c"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "a \\\"b\\\" c"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "a \"b\" c"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "a \"b\" c"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "a \"b\" c"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "W",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "W",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V29",
+   "text": "[a]\n\tx = trailing\t\t\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "trailing"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "trailing"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "trailing"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "trailing"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "trailing"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "trailing"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "trailing"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "trailing"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "V30",
+   "text": "[a]\n\tx = \"\\n\"\n",
+   "group": "values",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "a.x",
+      "\n"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "a.x",
+       "\n"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "a.x",
+       "\n"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "a.x",
+       "\n"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "a.x",
+       "\n"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "a.x",
+       "\n"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "a.x",
+       "\n"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "a.x",
+       "\n"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L01",
+   "text": "[core]\n\trepositoryformatversion = 0\n\tfilemode = true\n\tbare = false\n\tlogallrefupdates = true\n[remote \"origin\"]\n\turl = git@github.com:o/r.git\n\tfetch = +refs/heads/*:refs/remotes/origin/*\n[branch \"main\"]\n\tremote = origin\n\tmerge = refs/heads/main\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "core.repositoryformatversion",
+      "0"
+     ],
+     [
+      "core.filemode",
+      "true"
+     ],
+     [
+      "core.bare",
+      "false"
+     ],
+     [
+      "core.logallrefupdates",
+      "true"
+     ],
+     [
+      "remote.origin.url",
+      "git@github.com:o/r.git"
+     ],
+     [
+      "remote.origin.fetch",
+      "+refs/heads/*:refs/remotes/origin/*"
+     ],
+     [
+      "branch.main.remote",
+      "origin"
+     ],
+     [
+      "branch.main.merge",
+      "refs/heads/main"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "core.repositoryformatversion",
+       "0"
+      ],
+      [
+       "core.filemode",
+       "true"
+      ],
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.logallrefupdates",
+       "true"
+      ],
+      [
+       "remote.origin.url",
+       "git@github.com:o/r.git"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "branch.main.remote",
+       "origin"
+      ],
+      [
+       "branch.main.merge",
+       "refs/heads/main"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "core.repositoryformatversion",
+       "0"
+      ],
+      [
+       "core.filemode",
+       "true"
+      ],
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.logallrefupdates",
+       "true"
+      ],
+      [
+       "remote.origin.url",
+       "git@github.com:o/r.git"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "branch.main.remote",
+       "origin"
+      ],
+      [
+       "branch.main.merge",
+       "refs/heads/main"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "core.repositoryformatversion",
+       "0"
+      ],
+      [
+       "core.filemode",
+       "true"
+      ],
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.logallrefupdates",
+       "true"
+      ],
+      [
+       "remote.origin.url",
+       "git@github.com:o/r.git"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "branch.main.remote",
+       "origin"
+      ],
+      [
+       "branch.main.merge",
+       "refs/heads/main"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "core.repositoryformatversion",
+       "0"
+      ],
+      [
+       "core.filemode",
+       "true"
+      ],
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.logallrefupdates",
+       "true"
+      ],
+      [
+       "remote.origin.url",
+       "git@github.com:o/r.git"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "branch.main.remote",
+       "origin"
+      ],
+      [
+       "branch.main.merge",
+       "refs/heads/main"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "core.repositoryformatversion",
+       "0"
+      ],
+      [
+       "core.filemode",
+       "true"
+      ],
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.logallrefupdates",
+       "true"
+      ],
+      [
+       "remote.origin.url",
+       "git@github.com:o/r.git"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "branch.main.remote",
+       "origin"
+      ],
+      [
+       "branch.main.merge",
+       "refs/heads/main"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "core.repositoryformatversion",
+       "0"
+      ],
+      [
+       "core.filemode",
+       "true"
+      ],
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.logallrefupdates",
+       "true"
+      ],
+      [
+       "remote.origin.url",
+       "git@github.com:o/r.git"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "branch.main.remote",
+       "origin"
+      ],
+      [
+       "branch.main.merge",
+       "refs/heads/main"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "core.repositoryformatversion",
+       "0"
+      ],
+      [
+       "core.filemode",
+       "true"
+      ],
+      [
+       "core.bare",
+       "false"
+      ],
+      [
+       "core.logallrefupdates",
+       "true"
+      ],
+      [
+       "remote.origin.url",
+       "git@github.com:o/r.git"
+      ],
+      [
+       "remote.origin.fetch",
+       "+refs/heads/*:refs/remotes/origin/*"
+      ],
+      [
+       "branch.main.remote",
+       "origin"
+      ],
+      [
+       "branch.main.merge",
+       "refs/heads/main"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L02",
+   "text": "[submodule \"vendor/lib\"]\n\tpath = vendor/lib\n\turl = https://github.com/o/lib.git\n\tbranch = main\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "submodule.vendor/lib.path",
+      "vendor/lib"
+     ],
+     [
+      "submodule.vendor/lib.url",
+      "https://github.com/o/lib.git"
+     ],
+     [
+      "submodule.vendor/lib.branch",
+      "main"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "submodule.vendor/lib.path",
+       "vendor/lib"
+      ],
+      [
+       "submodule.vendor/lib.url",
+       "https://github.com/o/lib.git"
+      ],
+      [
+       "submodule.vendor/lib.branch",
+       "main"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "submodule.vendor/lib.path",
+       "vendor/lib"
+      ],
+      [
+       "submodule.vendor/lib.url",
+       "https://github.com/o/lib.git"
+      ],
+      [
+       "submodule.vendor/lib.branch",
+       "main"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "submodule.vendor/lib.path",
+       "vendor/lib"
+      ],
+      [
+       "submodule.vendor/lib.url",
+       "https://github.com/o/lib.git"
+      ],
+      [
+       "submodule.vendor/lib.branch",
+       "main"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "submodule.vendor/lib.path",
+       "vendor/lib"
+      ],
+      [
+       "submodule.vendor/lib.url",
+       "https://github.com/o/lib.git"
+      ],
+      [
+       "submodule.vendor/lib.branch",
+       "main"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "submodule.vendor/lib.path",
+       "vendor/lib"
+      ],
+      [
+       "submodule.vendor/lib.url",
+       "https://github.com/o/lib.git"
+      ],
+      [
+       "submodule.vendor/lib.branch",
+       "main"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "submodule.vendor/lib.path",
+       "vendor/lib"
+      ],
+      [
+       "submodule.vendor/lib.url",
+       "https://github.com/o/lib.git"
+      ],
+      [
+       "submodule.vendor/lib.branch",
+       "main"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "submodule.vendor/lib.path",
+       "vendor/lib"
+      ],
+      [
+       "submodule.vendor/lib.url",
+       "https://github.com/o/lib.git"
+      ],
+      [
+       "submodule.vendor/lib.branch",
+       "main"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L03",
+   "text": "[alias]\n\tlg = log --graph --pretty=format:'%h -%d %s (%cr) <%an>'\n\tst = status -sb\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "alias.lg",
+      "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+     ],
+     [
+      "alias.st",
+      "status -sb"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "alias.lg",
+       "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+      ],
+      [
+       "alias.st",
+       "status -sb"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "alias.lg",
+       "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+      ],
+      [
+       "alias.st",
+       "status -sb"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "alias.lg",
+       "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+      ],
+      [
+       "alias.st",
+       "status -sb"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "alias.lg",
+       "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+      ],
+      [
+       "alias.st",
+       "status -sb"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "alias.lg",
+       "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+      ],
+      [
+       "alias.st",
+       "status -sb"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "alias.lg",
+       "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+      ],
+      [
+       "alias.st",
+       "status -sb"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "alias.lg",
+       "log --graph --pretty=format:'%h -%d %s (%cr) <%an>'"
+      ],
+      [
+       "alias.st",
+       "status -sb"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L04",
+   "text": "[alias]\n\tamend = \"!git commit --amend --no-edit\"\n\tlast = log -1 HEAD\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "alias.amend",
+      "!git commit --amend --no-edit"
+     ],
+     [
+      "alias.last",
+      "log -1 HEAD"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "alias.amend",
+       "!git commit --amend --no-edit"
+      ],
+      [
+       "alias.last",
+       "log -1 HEAD"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "alias.amend",
+       "!git commit --amend --no-edit"
+      ],
+      [
+       "alias.last",
+       "log -1 HEAD"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "alias.amend",
+       "!git commit --amend --no-edit"
+      ],
+      [
+       "alias.last",
+       "log -1 HEAD"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "alias.amend",
+       "!git commit --amend --no-edit"
+      ],
+      [
+       "alias.last",
+       "log -1 HEAD"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "alias.amend",
+       "!git commit --amend --no-edit"
+      ],
+      [
+       "alias.last",
+       "log -1 HEAD"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "alias.amend",
+       "!git commit --amend --no-edit"
+      ],
+      [
+       "alias.last",
+       "log -1 HEAD"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "alias.amend",
+       "!git commit --amend --no-edit"
+      ],
+      [
+       "alias.last",
+       "log -1 HEAD"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L05",
+   "text": "[url \"git@github.com:\"]\n\tinsteadOf = https://github.com/\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "url.git@github.com:.insteadof",
+      "https://github.com/"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "url.git@github.com:.insteadof",
+       "https://github.com/"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "url.git@github.com:.insteadof",
+       "https://github.com/"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "url.git@github.com:.insteadof",
+       "https://github.com/"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "url.git@github.com:.insteadof",
+       "https://github.com/"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "url.git@github.com:.insteadof",
+       "https://github.com/"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "url.git@github.com:.insteadof",
+       "https://github.com/"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "url.git@github.com:.insteadof",
+       "https://github.com/"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L06",
+   "text": "[user]\n\tname = \"Ada Lovelace\"\n\temail = ada@example.com\n[includeIf \"gitdir:~/work/\"]\n\tpath = ~/.gitconfig-work\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "user.name",
+      "Ada Lovelace"
+     ],
+     [
+      "user.email",
+      "ada@example.com"
+     ],
+     [
+      "includeif.gitdir:~/work/.path",
+      "~/.gitconfig-work"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "user.name",
+       "Ada Lovelace"
+      ],
+      [
+       "user.email",
+       "ada@example.com"
+      ],
+      [
+       "includeif.gitdir:~/work/.path",
+       "~/.gitconfig-work"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "user.name",
+       "Ada Lovelace"
+      ],
+      [
+       "user.email",
+       "ada@example.com"
+      ],
+      [
+       "includeif.gitdir:~/work/.path",
+       "~/.gitconfig-work"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "user.name",
+       "Ada Lovelace"
+      ],
+      [
+       "user.email",
+       "ada@example.com"
+      ],
+      [
+       "includeif.gitdir:~/work/.path",
+       "~/.gitconfig-work"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "user.name",
+       "Ada Lovelace"
+      ],
+      [
+       "user.email",
+       "ada@example.com"
+      ],
+      [
+       "includeif.gitdir:~/work/.path",
+       "~/.gitconfig-work"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "user.name",
+       "Ada Lovelace"
+      ],
+      [
+       "user.email",
+       "ada@example.com"
+      ],
+      [
+       "includeif.gitdir:~/work/.path",
+       "~/.gitconfig-work"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "user.name",
+       "Ada Lovelace"
+      ],
+      [
+       "user.email",
+       "ada@example.com"
+      ],
+      [
+       "includeif.gitdir:~/work/.path",
+       "~/.gitconfig-work"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "user.name",
+       "Ada Lovelace"
+      ],
+      [
+       "user.email",
+       "ada@example.com"
+      ],
+      [
+       "includeif.gitdir:~/work/.path",
+       "~/.gitconfig-work"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L07",
+   "text": "[filter \"lfs\"]\n\tclean = git-lfs clean -- %f\n\tsmudge = git-lfs smudge -- %f\n\tprocess = git-lfs filter-process\n\trequired = true\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "filter.lfs.clean",
+      "git-lfs clean -- %f"
+     ],
+     [
+      "filter.lfs.smudge",
+      "git-lfs smudge -- %f"
+     ],
+     [
+      "filter.lfs.process",
+      "git-lfs filter-process"
+     ],
+     [
+      "filter.lfs.required",
+      "true"
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "filter.lfs.clean",
+       "git-lfs clean -- %f"
+      ],
+      [
+       "filter.lfs.smudge",
+       "git-lfs smudge -- %f"
+      ],
+      [
+       "filter.lfs.process",
+       "git-lfs filter-process"
+      ],
+      [
+       "filter.lfs.required",
+       "true"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "filter.lfs.clean",
+       "git-lfs clean -- %f"
+      ],
+      [
+       "filter.lfs.smudge",
+       "git-lfs smudge -- %f"
+      ],
+      [
+       "filter.lfs.process",
+       "git-lfs filter-process"
+      ],
+      [
+       "filter.lfs.required",
+       "true"
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "filter.lfs.clean",
+       "git-lfs clean -- %f"
+      ],
+      [
+       "filter.lfs.smudge",
+       "git-lfs smudge -- %f"
+      ],
+      [
+       "filter.lfs.process",
+       "git-lfs filter-process"
+      ],
+      [
+       "filter.lfs.required",
+       "true"
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "filter.lfs.clean",
+       "git-lfs clean -- %f"
+      ],
+      [
+       "filter.lfs.smudge",
+       "git-lfs smudge -- %f"
+      ],
+      [
+       "filter.lfs.process",
+       "git-lfs filter-process"
+      ],
+      [
+       "filter.lfs.required",
+       "true"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "filter.lfs.clean",
+       "git-lfs clean -- %f"
+      ],
+      [
+       "filter.lfs.smudge",
+       "git-lfs smudge -- %f"
+      ],
+      [
+       "filter.lfs.process",
+       "git-lfs filter-process"
+      ],
+      [
+       "filter.lfs.required",
+       "true"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "filter.lfs.clean",
+       "git-lfs clean -- %f"
+      ],
+      [
+       "filter.lfs.smudge",
+       "git-lfs smudge -- %f"
+      ],
+      [
+       "filter.lfs.process",
+       "git-lfs filter-process"
+      ],
+      [
+       "filter.lfs.required",
+       "true"
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "filter.lfs.clean",
+       "git-lfs clean -- %f"
+      ],
+      [
+       "filter.lfs.smudge",
+       "git-lfs smudge -- %f"
+      ],
+      [
+       "filter.lfs.process",
+       "git-lfs filter-process"
+      ],
+      [
+       "filter.lfs.required",
+       "true"
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "A",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "A",
+    "isomorphic-git": "A",
+    "go-git": "A",
+    "gix-config": "A"
+   }
+  },
+  {
+   "id": "L08",
+   "text": "[diff \"word\"]\n\ttextconv = docx2txt\n[merge]\n\tconflictstyle = zdiff3\n[pull]\n\trebase\n",
+   "group": "practical files",
+   "open": null,
+   "git": {
+    "entries": [
+     [
+      "diff.word.textconv",
+      "docx2txt"
+     ],
+     [
+      "merge.conflictstyle",
+      "zdiff3"
+     ],
+     [
+      "pull.rebase",
+      null
+     ]
+    ]
+   },
+   "out": {
+    "dulwich": {
+     "entries": [
+      [
+       "diff.word.textconv",
+       "docx2txt"
+      ],
+      [
+       "merge.conflictstyle",
+       "zdiff3"
+      ],
+      [
+       "pull.rebase",
+       "true"
+      ]
+     ]
+    },
+    "GitPython": {
+     "entries": [
+      [
+       "diff.word.textconv",
+       "docx2txt"
+      ],
+      [
+       "merge.conflictstyle",
+       "zdiff3"
+      ],
+      [
+       "pull.rebase",
+       null
+      ]
+     ]
+    },
+    "pygit2 (libgit2)": {
+     "entries": [
+      [
+       "diff.word.textconv",
+       "docx2txt"
+      ],
+      [
+       "merge.conflictstyle",
+       "zdiff3"
+      ],
+      [
+       "pull.rebase",
+       null
+      ]
+     ]
+    },
+    "parse-git-config": {
+     "entries": [
+      [
+       "diff.word.textconv",
+       "docx2txt"
+      ],
+      [
+       "merge.conflictstyle",
+       "zdiff3"
+      ],
+      [
+       "pull.rebase",
+       "true"
+      ]
+     ]
+    },
+    "isomorphic-git": {
+     "entries": [
+      [
+       "diff.word.textconv",
+       "docx2txt"
+      ],
+      [
+       "merge.conflictstyle",
+       "zdiff3"
+      ],
+      [
+       "pull.rebase",
+       "true"
+      ]
+     ]
+    },
+    "go-git": {
+     "entries": [
+      [
+       "diff.word.textconv",
+       "docx2txt"
+      ],
+      [
+       "merge.conflictstyle",
+       "zdiff3"
+      ],
+      [
+       "pull.rebase",
+       ""
+      ]
+     ]
+    },
+    "gix-config": {
+     "entries": [
+      [
+       "diff.word.textconv",
+       "docx2txt"
+      ],
+      [
+       "merge.conflictstyle",
+       "zdiff3"
+      ],
+      [
+       "pull.rebase",
+       null
+      ]
+     ]
+    }
+   },
+   "cls": {
+    "dulwich": "T",
+    "GitPython": "A",
+    "pygit2 (libgit2)": "A",
+    "parse-git-config": "T",
+    "isomorphic-git": "T",
+    "go-git": "W",
+    "gix-config": "A"
+   }
+  }
+ ]
+}

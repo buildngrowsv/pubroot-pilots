@@ -1,0 +1,8 @@
+39 files, 1641 entries as read by git; git rejects 0
+  dulwich            A=38 T=0 W=1 R=0 L=0 | keys differing: 2
+  GitPython          A=17 T=0 W=22 R=0 L=0 | keys differing: 80
+  pygit2 (libgit2)   A=39 T=0 W=0 R=0 L=0 | keys differing: 0
+  parse-git-config   A=13 T=0 W=26 R=0 L=0 | keys differing: 167
+  isomorphic-git     A=38 T=0 W=1 R=0 L=0 | keys differing: 7
+  go-git             A=38 T=0 W=1 R=0 L=0 | keys differing: 2
+  gix-config         A=39 T=0 W=0 R=0 L=0 | keys differing: 0

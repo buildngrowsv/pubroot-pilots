@@ -1,0 +1,13 @@
+git version 2.47.3
+python 3.13.5
+dulwich 1.2.21
+GitPython 3.2.1
+pygit2 1.21.0 libgit2 1.9.7
+node v24.22.1
+npm parse-git-config 3.0.0
+npm ini 1.3.8
+npm isomorphic-git 1.44.19
+go version go1.27.3 linux/amd64
+go github.com/go-git/go-git/v5 v5.19.3
+rustc 1.85.1 (4eb161250 2025-03-15) (built from a source tarball)
+crate gix-config 0.60.0

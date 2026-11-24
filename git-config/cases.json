@@ -1,0 +1,382 @@
+[
+ {
+  "id": "B01",
+  "text": "[core]\n\tbare = false\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B02",
+  "text": "[core]\n\tbare = false\n[user]\n\tname = A B\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B03",
+  "text": "[a]\n\tx = 1\n[b]\n\ty = 2\n[a]\n\tz = 3\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B04",
+  "text": "[remote \"origin\"]\n\tfetch = +refs/heads/*:refs/remotes/origin/*\n\tfetch = +refs/tags/*:refs/tags/*\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B05",
+  "text": "",
+  "group": "basic structure"
+ },
+ {
+  "id": "B06",
+  "text": "# only a comment\n; another\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B07",
+  "text": "[core]\r\n\tbare = false\r\n\tname = x\r\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B08",
+  "text": "﻿[core]\n\tbare = true\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B09",
+  "text": "[a]\nx=1\n  y   =   2\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B10",
+  "text": "[a] x = 1\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B11",
+  "text": "[a]\n\tx = 1\n[a]\n\tx = 2\n",
+  "group": "basic structure"
+ },
+ {
+  "id": "B12",
+  "text": "[core]\n\tbare = false",
+  "group": "basic structure"
+ },
+ {
+  "id": "K01",
+  "text": "[Core]\n\tFileMode = true\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K02",
+  "text": "[my-sec]\n\tmy-key = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K03",
+  "text": "[a.B]\n\tx = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K04",
+  "text": "[a \"B\"]\n\tx = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K05",
+  "text": "[a]\n\t1x = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K06",
+  "text": "[a]\n\tx_y = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K07",
+  "text": "[a_b]\n\tx = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K08",
+  "text": "[]\n\tx = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K09",
+  "text": "x = 1\n[a]\n\ty = 2\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K10",
+  "text": "[a]\n\tx y = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K11",
+  "text": "[a.b.C]\n\tx = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K12",
+  "text": "[A \"b\"]\n\tX = 1\n[a \"b\"]\n\tx = 2\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K13",
+  "text": "[a \"b\"]\n\tx = 1\n[a \"B\"]\n\tx = 2\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "K14",
+  "text": "[a]\n\tx- = 1\n",
+  "group": "section and key names"
+ },
+ {
+  "id": "S01",
+  "text": "[a \"with space\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S02",
+  "text": "[a \"q\\\"uote\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S03",
+  "text": "[a \"back\\\\slash\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S04",
+  "text": "[a \"b\\c\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S05",
+  "text": "[a \"\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S06",
+  "text": "[a \"x]y\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S07",
+  "text": "[a \"open]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S08",
+  "text": "[a  \"b\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S09",
+  "text": "[a \"b\" ]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S10",
+  "text": "[a \"b\"c]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S11",
+  "text": "[a \"https://example.com/x.git\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "S12",
+  "text": "[a \"b.c\"]\n\tx = 1\n",
+  "group": "subsections"
+ },
+ {
+  "id": "V01",
+  "text": "[a]\n\tx =    padded   \n",
+  "group": "values"
+ },
+ {
+  "id": "V02",
+  "text": "[a]\n\tx = one   two\n",
+  "group": "values"
+ },
+ {
+  "id": "V03",
+  "text": "[a]\n\tx = \"  lead\"\n",
+  "group": "values"
+ },
+ {
+  "id": "V04",
+  "text": "[a]\n\tx = val # comment\n",
+  "group": "values"
+ },
+ {
+  "id": "V05",
+  "text": "[a]\n\tx = val ; comment\n",
+  "group": "values"
+ },
+ {
+  "id": "V06",
+  "text": "[a]\n\tx = \"val # not a comment\"\n",
+  "group": "values"
+ },
+ {
+  "id": "V07",
+  "text": "[a]\n\tx = a\\nb\\tc\\bd\n",
+  "group": "values"
+ },
+ {
+  "id": "V08",
+  "text": "[a]\n\tx = a\\\"b\\\\c\n",
+  "group": "values"
+ },
+ {
+  "id": "V09",
+  "text": "[a]\n\tx = a\\qb\n",
+  "group": "values"
+ },
+ {
+  "id": "V10",
+  "text": "[a]\n\tx = first \\\n second\n",
+  "group": "values"
+ },
+ {
+  "id": "V11",
+  "text": "[a]\n\tx = \"first \\\n second\"\n",
+  "group": "values"
+ },
+ {
+  "id": "V12",
+  "text": "[a]\n\tx\n",
+  "group": "values"
+ },
+ {
+  "id": "V13",
+  "text": "[a]\n\tx =\n",
+  "group": "values"
+ },
+ {
+  "id": "V14",
+  "text": "[a]\n\tx = \"\"\n",
+  "group": "values"
+ },
+ {
+  "id": "V15",
+  "text": "[a]\n\tx = \"open\n",
+  "group": "values"
+ },
+ {
+  "id": "V16",
+  "text": "[a]\n\tx = a\"b c\"d\n",
+  "group": "values"
+ },
+ {
+  "id": "V17",
+  "text": "[a]\n\tx = a\tb\n",
+  "group": "values"
+ },
+ {
+  "id": "V18",
+  "text": "[a]\n\tx = a=b\n",
+  "group": "values"
+ },
+ {
+  "id": "V19",
+  "text": "[a]\n\tx = end\\",
+  "group": "values"
+ },
+ {
+  "id": "V20",
+  "text": "[a]\n\tx = \"a \"   # c\n",
+  "group": "values"
+ },
+ {
+  "id": "V21",
+  "text": "[a]\n\tx = héllo wörld\n",
+  "group": "values"
+ },
+ {
+  "id": "V22",
+  "text": "[a]\n\tx = a]b\n",
+  "group": "values"
+ },
+ {
+  "id": "V23",
+  "text": "[a]\n\tx = \"a\"\"b\"\n",
+  "group": "values"
+ },
+ {
+  "id": "V24",
+  "text": "[a]\n\tx = a#b\n",
+  "group": "values"
+ },
+ {
+  "id": "V25",
+  "text": "[a]\n\tx = a;b\n",
+  "group": "values"
+ },
+ {
+  "id": "V26",
+  "text": "[a]\n\tx = \"a;b#c\"\n",
+  "group": "values"
+ },
+ {
+  "id": "V27",
+  "text": "[a]\n\tx = !f() { echo \"$1\"; }; f\n",
+  "group": "values"
+ },
+ {
+  "id": "V28",
+  "text": "[a]\n\tx = a \\\"b\\\" c\n",
+  "group": "values"
+ },
+ {
+  "id": "V29",
+  "text": "[a]\n\tx = trailing\t\t\n",
+  "group": "values"
+ },
+ {
+  "id": "V30",
+  "text": "[a]\n\tx = \"\\n\"\n",
+  "group": "values"
+ },
+ {
+  "id": "L01",
+  "text": "[core]\n\trepositoryformatversion = 0\n\tfilemode = true\n\tbare = false\n\tlogallrefupdates = true\n[remote \"origin\"]\n\turl = git@github.com:o/r.git\n\tfetch = +refs/heads/*:refs/remotes/origin/*\n[branch \"main\"]\n\tremote = origin\n\tmerge = refs/heads/main\n",
+  "group": "practical files"
+ },
+ {
+  "id": "L02",
+  "text": "[submodule \"vendor/lib\"]\n\tpath = vendor/lib\n\turl = https://github.com/o/lib.git\n\tbranch = main\n",
+  "group": "practical files"
+ },
+ {
+  "id": "L03",
+  "text": "[alias]\n\tlg = log --graph --pretty=format:'%h -%d %s (%cr) <%an>'\n\tst = status -sb\n",
+  "group": "practical files"
+ },
+ {
+  "id": "L04",
+  "text": "[alias]\n\tamend = \"!git commit --amend --no-edit\"\n\tlast = log -1 HEAD\n",
+  "group": "practical files"
+ },
+ {
+  "id": "L05",
+  "text": "[url \"git@github.com:\"]\n\tinsteadOf = https://github.com/\n",
+  "group": "practical files"
+ },
+ {
+  "id": "L06",
+  "text": "[user]\n\tname = \"Ada Lovelace\"\n\temail = ada@example.com\n[includeIf \"gitdir:~/work/\"]\n\tpath = ~/.gitconfig-work\n",
+  "group": "practical files"
+ },
+ {
+  "id": "L07",
+  "text": "[filter \"lfs\"]\n\tclean = git-lfs clean -- %f\n\tsmudge = git-lfs smudge -- %f\n\tprocess = git-lfs filter-process\n\trequired = true\n",
+  "group": "practical files"
+ },
+ {
+  "id": "L08",
+  "text": "[diff \"word\"]\n\ttextconv = docx2txt\n[merge]\n\tconflictstyle = zdiff3\n[pull]\n\trebase\n",
+  "group": "practical files"
+ }
+]

@@ -1,0 +1,1 @@
+{"name":"git-config-js","private":true,"type":"module","dependencies":{"parse-git-config":"3.0.0","isomorphic-git":"1.44.19"}}

@@ -1,0 +1,443 @@
+{
+ "source": "https://raw.githubusercontent.com/webpro/awesome-dotfiles/a6bf526494f0923adc30f9d4bf631019091155f6/README.md",
+ "repositories": [
+  "mathiasbynens/dotfiles",
+  "lewagon/dotfiles",
+  "webpro/awesome-dotfiles",
+  "thoughtbot/dotfiles",
+  "holman/dotfiles",
+  "craftzdog/dotfiles",
+  "skwp/dotfiles",
+  "mylinuxforwork/dotfiles",
+  "gh0stzk/dotfiles",
+  "paulirish/dotfiles",
+  "elenapan/dotfiles",
+  "omerxx/dotfiles",
+  "jessfraz/dotfiles",
+  "ThePrimeagen/.dotfiles",
+  "Aylur/dotfiles",
+  "nicknisi/dotfiles",
+  "driesvints/dotfiles",
+  "eromatiya/the-glorious-dotfiles",
+  "ryanb/dotfiles",
+  "xero/dotfiles",
+  "owl4ce/dotfiles",
+  "43PR/dotfiles",
+  "FelixKratz/dotfiles",
+  "flickowoa/dotfiles",
+  "hlissner/dotfiles",
+  "Axarva/dotfiles-2.0",
+  "garybernhardt/dotfiles",
+  "cowboy/dotfiles",
+  "linkarzu/dotfiles-latest",
+  "alrra/dotfiles",
+  "dotfiles/dotfiles.github.com",
+  "dikiaap/dotfiles",
+  "typecraft-dev/dotfiles",
+  "addy-dclxvi/almighty-dotfiles",
+  "atomantic/dotfiles",
+  "lokesh-krishna/dotfiles",
+  "WillPower3309/awesome-dotfiles",
+  "mislav/dotfiles",
+  "wesbos/dotfiles",
+  "webpro/dotfiles",
+  "paulmillr/dotfiles",
+  "ChristianLempa/dotfiles",
+  "saimoomedits/dotfiles",
+  "windelicato/dotfiles",
+  "denisse-dev/dotfiles",
+  "fufexan/dotfiles",
+  "SeniorMars/dotfiles",
+  "gf3/dotfiles",
+  "elifouts/Dotfiles",
+  "max-baz/dotfiles",
+  "freekmurze/dotfiles",
+  "linkfrg/dotfiles",
+  "yutkat/dotfiles",
+  "dmmulroy/.dotfiles",
+  "sobolevn/dotfiles",
+  "CoreyMSchafer/dotfiles",
+  "siduck/dotfiles",
+  "XNM1/linux-nixos-hyprland-config-dotfiles",
+  "janleigh/dotfiles",
+  "antoniosarosi/dotfiles",
+  "sameemul-haque/dotfiles",
+  "daviwil/dotfiles",
+  "fatih/dotfiles",
+  "AlphaTechnolog/dotfiles",
+  "szorfein/dotfiles",
+  "maxhu08/dotfiles-old",
+  "necolas/dotfiles",
+  "Mic92/dotfiles",
+  "zoddDev/dotfiles",
+  "avivace/dotfiles",
+  "Matt-FTW/dotfiles",
+  "babarot/dotfiles",
+  "citypaul/.dotfiles",
+  "anishathalye/dotfiles",
+  "mscoutermarsh/dotfiles",
+  "Zproger/bspwm-dotfiles",
+  "spencerwooo/dotfiles-archive",
+  "ChocolateBread799/dotfiles",
+  "bookercodes/dotfiles",
+  "Phantas0s/.dotfiles",
+  "maxhu08/dotfiles",
+  "ericmurphyxyz/dotfiles",
+  "int32bit/dotfiles",
+  "statico/dotfiles",
+  "geerlingguy/dotfiles",
+  "kunchenguid/dotfiles",
+  "caarlos0/dotfiles.zsh",
+  "Sin-cy/dotfiles",
+  "hendrikmi/dotfiles",
+  "hamvocke/dotfiles",
+  "rexim/dotfiles",
+  "roscaa-stack/dotfiles",
+  "jessarcher/dotfiles",
+  "Axenide/Dotfiles",
+  "Airblader/dotfiles-manjaro",
+  "bashbunni/dotfiles",
+  "mhartington/dotfiles",
+  "hrs/dotfiles",
+  "tpope/dotfiles",
+  "notusknot/dotfiles-nix",
+  "Bash-it/bash-it",
+  "darrylabbate/dotfiles",
+  "nicksp/dotfiles",
+  "thoughtbot/rcm",
+  "sorin-ionescu/prezto",
+  "kdeldycke/dotfiles",
+  "LukeSmithxyz/voidrice",
+  "2KAbhishek/dots2k",
+  "zimfw/zimfw",
+  "oh-my-fish/oh-my-fish",
+  "Addvilz/dots",
+  "geerlingguy/mac-dev-playbook",
+  "sloria/dotfiles"
+ ],
+ "paths": [
+  ".gitconfig",
+  "gitconfig",
+  "git/gitconfig",
+  "git/config",
+  ".config/git/config",
+  "git/.gitconfig",
+  "gitconfig.symlink",
+  "git/gitconfig.symlink",
+  "home/.gitconfig",
+  "dot_gitconfig",
+  "config/git/config"
+ ],
+ "not_found": [
+  "webpro/awesome-dotfiles (no config file at the listed paths)",
+  "craftzdog/dotfiles (no config file at the listed paths)",
+  "mylinuxforwork/dotfiles (no config file at the listed paths)",
+  "gh0stzk/dotfiles (no config file at the listed paths)",
+  "elenapan/dotfiles (no config file at the listed paths)",
+  "omerxx/dotfiles (no config file at the listed paths)",
+  "ThePrimeagen/.dotfiles (no config file at the listed paths)",
+  "Aylur/dotfiles (no config file at the listed paths)",
+  "eromatiya/the-glorious-dotfiles (no config file at the listed paths)",
+  "xero/dotfiles (no config file at the listed paths)",
+  "owl4ce/dotfiles (no config file at the listed paths)",
+  "43PR/dotfiles (no config file at the listed paths)",
+  "FelixKratz/dotfiles (no config file at the listed paths)",
+  "flickowoa/dotfiles (no config file at the listed paths)",
+  "Axarva/dotfiles-2.0 (no config file at the listed paths)",
+  "cowboy/dotfiles (no config file at the listed paths)",
+  "linkarzu/dotfiles-latest (no config file at the listed paths)",
+  "alrra/dotfiles (no config file at the listed paths)",
+  "dotfiles/dotfiles.github.com (no config file at the listed paths)",
+  "typecraft-dev/dotfiles (no config file at the listed paths)",
+  "addy-dclxvi/almighty-dotfiles (no config file at the listed paths)",
+  "atomantic/dotfiles (no config file at the listed paths)",
+  "lokesh-krishna/dotfiles (no config file at the listed paths)",
+  "WillPower3309/awesome-dotfiles (no config file at the listed paths)",
+  "ChristianLempa/dotfiles (no config file at the listed paths)",
+  "saimoomedits/dotfiles (no config file at the listed paths)",
+  "windelicato/dotfiles (no config file at the listed paths)",
+  "denisse-dev/dotfiles (no config file at the listed paths)",
+  "fufexan/dotfiles (no config file at the listed paths)",
+  "elifouts/Dotfiles (no config file at the listed paths)",
+  "max-baz/dotfiles (no config file at the listed paths)",
+  "linkfrg/dotfiles (no config file at the listed paths)",
+  "dmmulroy/.dotfiles (no config file at the listed paths)",
+  "sobolevn/dotfiles (no config file at the listed paths)",
+  "CoreyMSchafer/dotfiles (no config file at the listed paths)",
+  "siduck/dotfiles (no config file at the listed paths)",
+  "janleigh/dotfiles (no config file at the listed paths)",
+  "antoniosarosi/dotfiles (no config file at the listed paths)",
+  "sameemul-haque/dotfiles (no config file at the listed paths)",
+  "daviwil/dotfiles (no config file at the listed paths)",
+  "AlphaTechnolog/dotfiles (no config file at the listed paths)",
+  "szorfein/dotfiles (no config file at the listed paths)",
+  "maxhu08/dotfiles-old (no config file at the listed paths)",
+  "zoddDev/dotfiles (no config file at the listed paths)",
+  "citypaul/.dotfiles (no config file at the listed paths)",
+  "mscoutermarsh/dotfiles (no config file at the listed paths)",
+  "Zproger/bspwm-dotfiles (no config file at the listed paths)",
+  "spencerwooo/dotfiles-archive (no config file at the listed paths)",
+  "ChocolateBread799/dotfiles (no config file at the listed paths)",
+  "bookercodes/dotfiles (no config file at the listed paths)",
+  "ericmurphyxyz/dotfiles (no config file at the listed paths)",
+  "statico/dotfiles (no config file at the listed paths)",
+  "kunchenguid/dotfiles (no config file at the listed paths)",
+  "caarlos0/dotfiles.zsh (no config file at the listed paths)",
+  "Sin-cy/dotfiles (no config file at the listed paths)",
+  "hendrikmi/dotfiles (no config file at the listed paths)",
+  "hamvocke/dotfiles (no config file at the listed paths)",
+  "roscaa-stack/dotfiles (no config file at the listed paths)",
+  "Axenide/Dotfiles (no config file at the listed paths)",
+  "bashbunni/dotfiles (no config file at the listed paths)",
+  "hrs/dotfiles (no config file at the listed paths)",
+  "notusknot/dotfiles-nix (no config file at the listed paths)",
+  "Bash-it/bash-it (no config file at the listed paths)",
+  "darrylabbate/dotfiles (no config file at the listed paths)",
+  "nicksp/dotfiles (no config file at the listed paths)",
+  "thoughtbot/rcm (no config file at the listed paths)",
+  "sorin-ionescu/prezto (no config file at the listed paths)",
+  "kdeldycke/dotfiles (no config file at the listed paths)",
+  "LukeSmithxyz/voidrice (no config file at the listed paths)",
+  "zimfw/zimfw (no config file at the listed paths)",
+  "oh-my-fish/oh-my-fish (no config file at the listed paths)",
+  "Addvilz/dots (no config file at the listed paths)",
+  "geerlingguy/mac-dev-playbook (no config file at the listed paths)",
+  "sloria/dotfiles (no config file at the listed paths)"
+ ],
+ "files": [
+  {
+   "repo": "mathiasbynens/dotfiles",
+   "commit": "b7c7894e7bb2de5d60bfb9a2f5e46d01a61300ea",
+   "path": ".gitconfig",
+   "sha256": "814f3a2c3bb3283c1dccff2e7cb2a67ee06419dae20ec5aeef3ae4177e4f437d"
+  },
+  {
+   "repo": "lewagon/dotfiles",
+   "commit": "c12c9f5b37fbda490b3739992fcfcbc6430ab584",
+   "path": "gitconfig",
+   "sha256": "429c5668a899324d25cc5bea9ad6f95bd97ce293248c9ec8c663b5de9f670db1"
+  },
+  {
+   "repo": "thoughtbot/dotfiles",
+   "commit": "939a27005b2dd4ac1556e104fc91122f3aea0a6c",
+   "path": "gitconfig",
+   "sha256": "642150f78b42c535f48fe6c25ba2628b956e55ba2988476752ac37f8d27365a8"
+  },
+  {
+   "repo": "holman/dotfiles",
+   "commit": "9a90082b61fa5659789b9d41544c19098825a3ca",
+   "path": "git/gitconfig.symlink",
+   "sha256": "5ac1c2a5804f7f4f49e524db1467a68992a59e6980f83ab841a23b1846020b58"
+  },
+  {
+   "repo": "skwp/dotfiles",
+   "commit": "630d39fb1dfbddd1cf1eca94ef6fb58c336971f5",
+   "path": "git/gitconfig",
+   "sha256": "c1fb310828ef5edcb0f8e181127117ebed44c8a668e5dbe920aa93e26f78db81"
+  },
+  {
+   "repo": "paulirish/dotfiles",
+   "commit": "9457fe94db82c5023c39e9fb4ececf023d321427",
+   "path": ".gitconfig",
+   "sha256": "c40ac3297f81904c0b036ae4bccd48e25bc58dd8cc66cdae7b233c6f36c0a109"
+  },
+  {
+   "repo": "jessfraz/dotfiles",
+   "commit": "cbbbcb3ccd1bc935cfcae01143213648633a29e0",
+   "path": ".gitconfig",
+   "sha256": "807019e8e4a34b58abce3ebea1fca3931ac55b71a089862ed6f24f8cbe6fde10"
+  },
+  {
+   "repo": "nicknisi/dotfiles",
+   "commit": "5f99a4be9d718f83f35e45a6fc41b31056bd75ec",
+   "path": "config/git/config",
+   "sha256": "bd7916f3a7b0f52d8311bf13d946cdb8bed3ac8dde207fa5b04fdcd5145a780f"
+  },
+  {
+   "repo": "driesvints/dotfiles",
+   "commit": "32049202c70c13445af8ea74c649b909696323ad",
+   "path": ".gitconfig",
+   "sha256": "b362ac7997440f088be8e1d981ab4de42f75ff4dcd0e9d57cc354b5c24f8a640"
+  },
+  {
+   "repo": "ryanb/dotfiles",
+   "commit": "481e9234f156fb4da19fab527ca8166a8bfe6141",
+   "path": "gitconfig",
+   "sha256": "7bf10a2e0227f0effb5e5a63592363ab6a8a5256f4d44dda37f6cfc798c1e1d7"
+  },
+  {
+   "repo": "hlissner/dotfiles",
+   "commit": "1d73dca3f2f4820c90d8ea3d6bbb0d43963cee48",
+   "path": "config/git/config",
+   "sha256": "a736bc926b5a8dcd54b9e1cb6b305099569513318861b7d0f88cdd4aa88d3ca8"
+  },
+  {
+   "repo": "garybernhardt/dotfiles",
+   "commit": "eed3bbab874f15ddbaaf0341fac1923c12b30b5b",
+   "path": ".gitconfig",
+   "sha256": "b4a04e24b18e712ee45fcf255521c9ef53be17a4f4ebae04c00c3eda32f06504"
+  },
+  {
+   "repo": "dikiaap/dotfiles",
+   "commit": "ef6e4bdee7ddb17631911b1530398bbfa7423a52",
+   "path": ".gitconfig",
+   "sha256": "baed37289783fa17920c43d8cc23216c7618ef3e740baef2f69d75b7c8f06016"
+  },
+  {
+   "repo": "mislav/dotfiles",
+   "commit": "6a4f7758926694086f8da691d254890c45efb9b5",
+   "path": "gitconfig",
+   "sha256": "c80ffd658a710d4c7e94084047702811d4f865cfd5b3925820648b5283c5487c"
+  },
+  {
+   "repo": "wesbos/dotfiles",
+   "commit": "4c4b0036eb47465d2be885b799468609024b2028",
+   "path": ".gitconfig",
+   "sha256": "57cf0e8fa427b061dc80616cdeadd92254cbd15b15987a47076f8fdbd4f5055e"
+  },
+  {
+   "repo": "webpro/dotfiles",
+   "commit": "f06d67883c1236358f4c6a66dfbec0ca53585c3b",
+   "path": "config/git/config",
+   "sha256": "ce76da4e1f6180f6f281655230f23c49a575e681558c636206aad08381c6d289"
+  },
+  {
+   "repo": "paulmillr/dotfiles",
+   "commit": "530535edfb603865e21600b4bc45d4aad450c8c9",
+   "path": "home/.gitconfig",
+   "sha256": "280da677bb4345edad845805fdc5a31a71bc0508778b3b63ef5ab21ec5972e16"
+  },
+  {
+   "repo": "SeniorMars/dotfiles",
+   "commit": "ea99c6844e1d8938024ea4753d8b9329bd89d7df",
+   "path": ".config/git/config",
+   "sha256": "12e1e8d3dec5bf446d7bab92a7bd00c93c4df87a9e9cca9a8127383d6fbabb2c"
+  },
+  {
+   "repo": "gf3/dotfiles",
+   "commit": "9fac550c0e6bbc03d546fe2ac7863fdd03225cd0",
+   "path": ".gitconfig",
+   "sha256": "a0950d14421bbcceb6331fe38e26a66e29c4449e6b5abc28fdaa51809a006b36"
+  },
+  {
+   "repo": "freekmurze/dotfiles",
+   "commit": "05044c62b57cb5ad95dec758e379a95a63ae62e2",
+   "path": "home/.gitconfig",
+   "sha256": "c6a966fa29f4ef9a84ce36f44dc6050174771c0ee6eefa46d82b11f88624f3d0"
+  },
+  {
+   "repo": "yutkat/dotfiles",
+   "commit": "6f196e4b97de580dfc52adc5f37d451d8d378447",
+   "path": ".config/git/config",
+   "sha256": "676a064aac0b9efe0d1bcb74e6713db956d7a052c8de61414cf62215462dace4"
+  },
+  {
+   "repo": "XNM1/linux-nixos-hyprland-config-dotfiles",
+   "commit": "9518598180b4b36fd3bdd964dc83331ba0c208e5",
+   "path": "home/.gitconfig",
+   "sha256": "6cc5931ab55e189bfe67269121cc0141e28c0765ccde8019164639be58788e49"
+  },
+  {
+   "repo": "fatih/dotfiles",
+   "commit": "0aad0a27550f2c65b4f9ff0b986cb738380a8abe",
+   "path": "gitconfig",
+   "sha256": "c6927da52e9781c15143753f4252f7f71553320764fd8a709ac47d8ac224b8e3"
+  },
+  {
+   "repo": "necolas/dotfiles",
+   "commit": "0a77d4ba026ef0a8eb60d82ee7ae6dba91014c0f",
+   "path": "git/gitconfig",
+   "sha256": "e38935e2d338f5821855efd9c1db4d1350b037d873e3e6fab68718d0bfe26cc4"
+  },
+  {
+   "repo": "Mic92/dotfiles",
+   "commit": "0642d247eda93a611a972c2416b15f5aa812d9de",
+   "path": "home/.gitconfig",
+   "sha256": "8a85a63bb7db2f35cedd5ecdf423be596687dc3e79fb24f5a92dc2e06aabb94c"
+  },
+  {
+   "repo": "avivace/dotfiles",
+   "commit": "0ff0dc866163db6939089440b863b58323157298",
+   "path": "git/.gitconfig",
+   "sha256": "6a469925389be186123d64beb76b843067214f6e79d153f36499535426c5a2b4"
+  },
+  {
+   "repo": "Matt-FTW/dotfiles",
+   "commit": "0bcecd91cd93f7cabf891b720ec27f5e564d9e0d",
+   "path": ".config/git/config",
+   "sha256": "667dc2776e6dba3d3212955c9ce805f27f56f42eff1ea4f4ae7b7e1f722281b8"
+  },
+  {
+   "repo": "babarot/dotfiles",
+   "commit": "bfd0b6fee5cf306c861d1e779d8707f4703de9ca",
+   "path": "home/.gitconfig",
+   "sha256": "b30f6b0968bf2f42e76df5d150cab18081df75158689b87bdc0a39cfd98e783e"
+  },
+  {
+   "repo": "anishathalye/dotfiles",
+   "commit": "f7e7ecb638208c51941955adf5f2cc80a00e415b",
+   "path": "gitconfig",
+   "sha256": "1563beba9a9c86807ccec510b671facb41411f93173f89d58fe09fdaa4c95a25"
+  },
+  {
+   "repo": "Phantas0s/.dotfiles",
+   "commit": "998e1e9fd7b34ae8f43e8867a15b72c6574b96cf",
+   "path": "git/gitconfig",
+   "sha256": "2414558ac40dacfdcc45ef05abfbe0620bff6d86d95cb3d3227be8e8c170361c"
+  },
+  {
+   "repo": "maxhu08/dotfiles",
+   "commit": "f31923cd13c8f8c9d3be8c59d6d8b85e95f1fabe",
+   "path": "git/.gitconfig",
+   "sha256": "ccbb77bfb28d54d16e7d85d32cd656109c66e6ff87170963436b367853b9cfa3"
+  },
+  {
+   "repo": "int32bit/dotfiles",
+   "commit": "7a31997c723d05f5263db34f7de8790e52e0f992",
+   "path": "git/gitconfig",
+   "sha256": "13df92e031067ba2d4bc563edeab5d122268bccac7b6afd5646e715d4a569bdd"
+  },
+  {
+   "repo": "geerlingguy/dotfiles",
+   "commit": "575f77a28a33c2521a7cd144ec352fb445ca1bd3",
+   "path": ".gitconfig",
+   "sha256": "3769b03040609d60c82ec718197022b2e5d33b48cc3aea5d4a430ed2dcd694d6"
+  },
+  {
+   "repo": "rexim/dotfiles",
+   "commit": "36955dfe7aaabd58227be68a405f578b6ecffc53",
+   "path": ".gitconfig",
+   "sha256": "214d025ada451240afff54731ee9c679c73f08632be855f9ac7a8bca4488fc89"
+  },
+  {
+   "repo": "jessarcher/dotfiles",
+   "commit": "937de502c829412ac89bebc8825161457177a7d1",
+   "path": "git/gitconfig",
+   "sha256": "366d8511ec3adb1155900ff6d84e8b1404fb991070f6e1eb562b884d93bba284"
+  },
+  {
+   "repo": "Airblader/dotfiles-manjaro",
+   "commit": "726f72b0cc9f4fc63800c687bd64e5ad00d28c51",
+   "path": ".gitconfig",
+   "sha256": "1f71629aa67eeb266283b4c1afd0691edd7674044b8cd14bd09bccca08cce74a"
+  },
+  {
+   "repo": "mhartington/dotfiles",
+   "commit": "9f70efddf955f4adc6ab385ac56207b07f2129d7",
+   "path": "gitconfig",
+   "sha256": "32c3a71e87e6a4fade3bd684ad96770332c0cd9f631a7d8c9dd79ab8eed0fb49"
+  },
+  {
+   "repo": "tpope/dotfiles",
+   "commit": "30b0609c6bdc38eb607530d6a1b603dbfdc8a8ef",
+   "path": ".gitconfig",
+   "sha256": "8df8e0ea7a69e62bddf5be1cecb1fcfad5c90f1cbcc5aa54c3b0dc6c19e7d352"
+  },
+  {
+   "repo": "2KAbhishek/dots2k",
+   "commit": "e55ef9b79d9cdd3eba6c15d7c720fb5a3f278f51",
+   "path": "config/git/config",
+   "sha256": "f7b69b36b8deffb362a5755fda5097a5010b2613e65e90ed687318118a98adad"
+  }
+ ]
+}
