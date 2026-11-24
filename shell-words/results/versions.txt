@@ -1,0 +1,16 @@
+dash 0.5.12-12
+GNU bash, version 5.2.37(1)-release (x86_64-pc-linux-gnu)
+python 3.13.5 (shlex from the standard library)
+node v24.22.1
+npm shell-quote 1.12.0
+npm string-argv 0.4.0
+npm shlex 3.0.1
+npm shell-escape 0.2.0
+go version go1.27.3 linux/amd64
+go github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510
+go github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
+go github.com/mattn/go-shellwords v1.0.17
+go mvdan.cc/sh/v3 v3.14.1
+rustc 1.85.1 (4eb161250 2025-03-15) (built from a source tarball)
+crate shlex 1.3.0
+crate shell-words 1.1.0

@@ -1,0 +1,226 @@
+split cases 87 (63 scored); outputs differ across libraries on 47; scored cases with a deviation from dash: 29
+dash vs bash --posix differ on: []
+classes on scored cases (A/W/R/L) | shell-only groups C O X (A/W/R/L) | open case E06:
+  go-shellquote        A=63 W=0 R=0 L=0 | A=6 W=16 R=0 L=1 | R
+  go-shellwords        A=56 W=7 R=0 L=0 | A=13 W=10 R=0 L=0 | R
+  google/shlex         A=57 W=6 R=0 L=0 | A=8 W=14 R=0 L=1 | R
+  mvdan sh Fields      A=62 W=1 R=0 L=0 | A=14 W=1 R=8 L=0 | A
+  shell-quote          A=53 W=8 R=0 L=2 | A=6 W=16 R=0 L=1 | W
+  shell-words (Rust)   A=63 W=0 R=0 L=0 | A=8 W=14 R=0 L=1 | A
+  shlex (Python)       A=58 W=5 R=0 L=0 | A=6 W=16 R=0 L=1 | R
+  shlex (Rust)         A=63 W=0 R=0 L=0 | A=8 W=14 R=0 L=1 | R
+  shlex (npm)          A=60 W=3 R=0 L=0 | A=6 W=16 R=0 L=1 | R
+  string-argv          A=37 W=24 R=0 L=2 | A=6 W=16 R=0 L=1 | A
+pairwise differences on scored cases: min 2 max 28
+quote round trip (OK/FAIL/FAIL-dash/FAIL-bash/E):
+  go-shellquote        OK=28 FAIL=1 FAIL-dash=0 FAIL-bash=0 E=0
+  mvdan sh Quote       OK=25 FAIL=0 FAIL-dash=0 FAIL-bash=0 E=4
+  shell-escape         OK=28 FAIL=1 FAIL-dash=0 FAIL-bash=0 E=0
+  shell-quote          OK=29 FAIL=0 FAIL-dash=0 FAIL-bash=0 E=0
+  shell-words (Rust)   OK=27 FAIL=1 FAIL-dash=0 FAIL-bash=1 E=0
+  shlex (Python)       OK=29 FAIL=0 FAIL-dash=0 FAIL-bash=0 E=0
+  shlex (Rust)         OK=29 FAIL=0 FAIL-dash=0 FAIL-bash=0 E=0
+  shlex (npm)          OK=29 FAIL=0 FAIL-dash=0 FAIL-bash=0 E=0
+B01 'a b c' dash=['a', 'b', 'c']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+B02 '  a   b  ' dash=['a', 'b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+B03 'a\tb' dash=['a', 'b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+B04 '' dash=[]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+B05 '   ' dash=[]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+B06 'a' dash=['a']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+S01 "'a b'" dash=['a b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+S02 "'a'b'c'" dash=['abc']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+S03 "''" dash=['']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+S04 "a''b" dash=['ab']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+S05 "'a\\b'" dash=['a\\b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+S06 "'it'\\''s'" dash=["it's"]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['it\\s']
+S07 '\'a"b\'' dash=['a"b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+S08 "'abc" dash=ERROR
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=L:['abc']; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=L:['abc']
+S09 "x '' y" dash=['x', '', 'y']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D01 '"a b"' dash=['a b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D02 '""' dash=['']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D03 '"a\\"b"' dash=['a"b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a\\b']
+D04 '"a\\\\b"' dash=['a\\b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a\\\\b']
+D05 '"a\\b"' dash=['a\\b']
+    go-shellquote=A; go-shellwords=W:['ab']; google/shlex=W:['ab']; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D06 '"a\\$b"' dash=['a$b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=W:['a\\$b']; shlex (Rust)=A; shlex (npm)=W:['a\\$b']; string-argv=W:['a\\$b']
+D07 '"a\\`b"' dash=['a`b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['a\\`b']; shell-words (Rust)=A; shlex (Python)=W:['a\\`b']; shlex (Rust)=A; shlex (npm)=W:['a\\`b']; string-argv=W:['a\\`b']
+D08 '"a\\nb"' dash=['a\\nb']
+    go-shellquote=A; go-shellwords=W:['a\nb']; google/shlex=W:['anb']; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D09 '"a\'b"' dash=["a'b"]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D10 '"\\x"' dash=['\\x']
+    go-shellquote=A; go-shellwords=W:['x']; google/shlex=W:['x']; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D11 '"a\\\nb"' dash=['ab']
+    go-shellquote=A; go-shellwords=W:['a\nb']; google/shlex=W:['a\nb']; mvdan sh Fields=A; shell-quote=W:['a\\\nb']; shell-words (Rust)=A; shlex (Python)=W:['a\\\nb']; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a\\\nb']
+D12 '"abc' dash=ERROR
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=L:['abc']; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=L:['abc']
+D13 'x "" y' dash=['x', '', 'y']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+D14 '"a\nb"' dash=['a\nb']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+E01 'a\\ b' dash=['a b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a\\', 'b']
+E02 '\\a' dash=['a']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['\\a']
+E03 '\\\\' dash=['\\']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['\\\\']
+E04 "\\'" dash=["'"]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['\\']
+E05 '\\"' dash=['"']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['\\']
+E06 'a\\' dash=['a\\']
+    go-shellquote=R:ERR; go-shellwords=R:ERR; google/shlex=R:ERR; mvdan sh Fields=A; shell-quote=W:['a']; shell-words (Rust)=A; shlex (Python)=R:ERR; shlex (Rust)=R:ERR; shlex (npm)=R:ERR; string-argv=A
+E07 'a\\\nb' dash=['ab']
+    go-shellquote=A; go-shellwords=W:['a\nb']; google/shlex=W:['a\nb']; mvdan sh Fields=A; shell-quote=W:['a', 'b']; shell-words (Rust)=A; shlex (Python)=W:['a\nb']; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a\\', 'b']
+E08 '\\#a' dash=['#a']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['\\#a']
+E09 'a\\tb' dash=['atb']
+    go-shellquote=A; go-shellwords=W:['a\tb']; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a\\tb']
+E10 '\\ ' dash=[' ']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['\\']
+E11 'a\\\\ b' dash=['a\\', 'b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a\\\\', 'b']
+E12 '\\$x' dash=['$x']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['\\$x']
+Q01 'a"b c"d' dash=['ab cd']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+Q02 '"a"\'b\'c' dash=['abc']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+Q03 '--opt="x y"' dash=['--opt=x y']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+Q04 '-c \'echo "hi"\'' dash=['-c', 'echo "hi"']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+Q05 '"\'"\'"\'' dash=['\'"']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+Q06 '""\'\'' dash=['']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+Q07 '\'a\'"b"\\ c' dash=['ab c']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['ab\\', 'c']
+Q08 '--k=\'v w\' --j="x\\"y"' dash=['--k=v w', '--j=x"y']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['--k=v w', '--j=x\\y']
+U01 'héllo wörld' dash=['héllo', 'wörld']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+U02 'a\xa0b' dash=['a\xa0b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['a', 'b']; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a', 'b']
+U03 'a\u3000b' dash=['a\u3000b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['a', 'b']; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a', 'b']
+U04 'a\rb' dash=['a\rb']
+    go-shellquote=A; go-shellwords=W:['a', 'b']; google/shlex=W:['a', 'b']; mvdan sh Fields=W:['a', 'b']; shell-quote=W:['a', 'b']; shell-words (Rust)=A; shlex (Python)=W:['a', 'b']; shlex (Rust)=A; shlex (npm)=W:['a', 'b']; string-argv=W:['a', 'b']
+U05 'a\x0bb' dash=['a\x0bb']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['a', 'b']; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a', 'b']
+U06 'a\x0cb' dash=['a\x0cb']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['a', 'b']; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=W:['a', 'b']
+U07 "日本 '語 文'" dash=['日本', '語 文']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L01 'git commit -m "fix: it\'s done"' dash=['git', 'commit', '-m', "fix: it's done"]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L02 'python -c \'print("a b")\'' dash=['python', '-c', 'print("a b")']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L03 'curl -H "Accept: */*" https://example.com/a?b=c' dash=['curl', '-H', 'Accept: */*', 'https://example.com/a?b=c']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L04 'ssh home \'ls -l \'"\'"\'a b\'"\'"\'\'' dash=['ssh', 'home', "ls -l 'a b'"]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L05 'docker run -e "A=b c" img' dash=['docker', 'run', '-e', 'A=b c', 'img']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L06 "grep -E '^(a|b)+$' file.txt" dash=['grep', '-E', '^(a|b)+$', 'file.txt']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L07 'node -e "console.log(\'x y\')"' dash=['node', '-e', "console.log('x y')"]
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+L08 "find . -name '*.py' -print0" dash=['find', '.', '-name', '*.py', '-print0']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+C01 'a #b' dash=['a']
+    go-shellquote=W:['a', '#b']; go-shellwords=W:['a', '#b']; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['a', '<comment:b>']; shell-words (Rust)=A; shlex (Python)=W:['a', '#b']; shlex (Rust)=A; shlex (npm)=W:['a', '#b']; string-argv=W:['a', '#b']
+C02 'a#b' dash=['a#b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['a', '<comment:b>']; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+C03 '#a' dash=[]
+    go-shellquote=W:['#a']; go-shellwords=W:['#a']; google/shlex=A; mvdan sh Fields=A; shell-quote=W:['<comment:a>']; shell-words (Rust)=A; shlex (Python)=W:['#a']; shlex (Rust)=A; shlex (npm)=W:['#a']; string-argv=W:['#a']
+C04 'a "#b"' dash=['a', '#b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+C05 "a '#'b" dash=['a', '#b']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+O01 'a;b' dash=['a']
+    go-shellquote=W:['a;b']; go-shellwords=A; google/shlex=W:['a;b']; mvdan sh Fields=R:ERR; shell-quote=W:['a', '<op:;>', 'b']; shell-words (Rust)=W:['a;b']; shlex (Python)=W:['a;b']; shlex (Rust)=W:['a;b']; shlex (npm)=W:['a;b']; string-argv=W:['a;b']
+O02 'a|b' dash=['a']
+    go-shellquote=W:['a|b']; go-shellwords=A; google/shlex=W:['a|b']; mvdan sh Fields=R:ERR; shell-quote=W:['a', '<op:|>', 'b']; shell-words (Rust)=W:['a|b']; shlex (Python)=W:['a|b']; shlex (Rust)=W:['a|b']; shlex (npm)=W:['a|b']; string-argv=W:['a|b']
+O03 'a&&b' dash=['a']
+    go-shellquote=W:['a&&b']; go-shellwords=A; google/shlex=W:['a&&b']; mvdan sh Fields=R:ERR; shell-quote=W:['a', '<op:&&>', 'b']; shell-words (Rust)=W:['a&&b']; shlex (Python)=W:['a&&b']; shlex (Rust)=W:['a&&b']; shlex (npm)=W:['a&&b']; string-argv=W:['a&&b']
+O04 'a >b' dash=['a']
+    go-shellquote=W:['a', '>b']; go-shellwords=A; google/shlex=W:['a', '>b']; mvdan sh Fields=R:ERR; shell-quote=W:['a', '<op:>>', 'b']; shell-words (Rust)=W:['a', '>b']; shlex (Python)=W:['a', '>b']; shlex (Rust)=W:['a', '>b']; shlex (npm)=W:['a', '>b']; string-argv=W:['a', '>b']
+O05 'a 2>&1' dash=['a']
+    go-shellquote=W:['a', '2>&1']; go-shellwords=A; google/shlex=W:['a', '2>&1']; mvdan sh Fields=R:ERR; shell-quote=W:['a', '2', '<op:>&>', '1']; shell-words (Rust)=W:['a', '2>&1']; shlex (Python)=W:['a', '2>&1']; shlex (Rust)=W:['a', '2>&1']; shlex (npm)=W:['a', '2>&1']; string-argv=W:['a', '2>&1']
+O06 '(a)' dash=ERROR
+    go-shellquote=L:['(a)']; go-shellwords=A; google/shlex=L:['(a)']; mvdan sh Fields=A; shell-quote=L:['<op:(>', 'a', '<op:)>']; shell-words (Rust)=L:['(a)']; shlex (Python)=L:['(a)']; shlex (Rust)=L:['(a)']; shlex (npm)=L:['(a)']; string-argv=L:['(a)']
+O07 'a\nb' dash=['a']
+    go-shellquote=W:['a', 'b']; go-shellwords=W:['a', 'b']; google/shlex=W:['a', 'b']; mvdan sh Fields=W:['a', 'b']; shell-quote=W:['a', 'b']; shell-words (Rust)=W:['a', 'b']; shlex (Python)=W:['a', 'b']; shlex (Rust)=W:['a', 'b']; shlex (npm)=W:['a', 'b']; string-argv=W:['a', 'b']
+O08 'a & b' dash=['a']
+    go-shellquote=W:['a', '&', 'b']; go-shellwords=A; google/shlex=W:['a', '&', 'b']; mvdan sh Fields=R:ERR; shell-quote=W:['a', '<op:&>', 'b']; shell-words (Rust)=W:['a', '&', 'b']; shlex (Python)=W:['a', '&', 'b']; shlex (Rust)=W:['a', '&', 'b']; shlex (npm)=W:['a', '&', 'b']; string-argv=W:['a', '&', 'b']
+X01 '$HOME' dash=['/nonexistent-home']
+    go-shellquote=W:['$HOME']; go-shellwords=W:['$HOME']; google/shlex=W:['$HOME']; mvdan sh Fields=A; shell-quote=W:['']; shell-words (Rust)=W:['$HOME']; shlex (Python)=W:['$HOME']; shlex (Rust)=W:['$HOME']; shlex (npm)=W:['$HOME']; string-argv=W:['$HOME']
+X02 '"$HOME"' dash=['/nonexistent-home']
+    go-shellquote=W:['$HOME']; go-shellwords=W:['$HOME']; google/shlex=W:['$HOME']; mvdan sh Fields=A; shell-quote=W:['']; shell-words (Rust)=W:['$HOME']; shlex (Python)=W:['$HOME']; shlex (Rust)=W:['$HOME']; shlex (npm)=W:['$HOME']; string-argv=W:['$HOME']
+X03 "'$HOME'" dash=['$HOME']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+X04 '${X}y' dash=['y']
+    go-shellquote=W:['${X}y']; go-shellwords=W:['${X}y']; google/shlex=W:['${X}y']; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=W:['${X}y']; shlex (Python)=W:['${X}y']; shlex (Rust)=W:['${X}y']; shlex (npm)=W:['${X}y']; string-argv=W:['${X}y']
+X05 '$(echo x)' dash=['x']
+    go-shellquote=W:['$(echo', 'x)']; go-shellwords=W:['$(echo x)']; google/shlex=W:['$(echo', 'x)']; mvdan sh Fields=R:ERR; shell-quote=W:['$', '<op:(>', 'echo', 'x', '<op:)>']; shell-words (Rust)=W:['$(echo', 'x)']; shlex (Python)=W:['$(echo', 'x)']; shlex (Rust)=W:['$(echo', 'x)']; shlex (npm)=W:['$(echo', 'x)']; string-argv=W:['$(echo', 'x)']
+X06 '`echo x`' dash=['x']
+    go-shellquote=W:['`echo', 'x`']; go-shellwords=W:['`echo x`']; google/shlex=W:['`echo', 'x`']; mvdan sh Fields=R:ERR; shell-quote=W:['`echo', 'x`']; shell-words (Rust)=W:['`echo', 'x`']; shlex (Python)=W:['`echo', 'x`']; shlex (Rust)=W:['`echo', 'x`']; shlex (npm)=W:['`echo', 'x`']; string-argv=W:['`echo', 'x`']
+X07 '~' dash=['/nonexistent-home']
+    go-shellquote=W:['~']; go-shellwords=W:['~']; google/shlex=W:['~']; mvdan sh Fields=A; shell-quote=W:['~']; shell-words (Rust)=W:['~']; shlex (Python)=W:['~']; shlex (Rust)=W:['~']; shlex (npm)=W:['~']; string-argv=W:['~']
+X08 '~/x' dash=['/nonexistent-home/x']
+    go-shellquote=W:['~/x']; go-shellwords=W:['~/x']; google/shlex=W:['~/x']; mvdan sh Fields=A; shell-quote=W:['~/x']; shell-words (Rust)=W:['~/x']; shlex (Python)=W:['~/x']; shlex (Rust)=W:['~/x']; shlex (npm)=W:['~/x']; string-argv=W:['~/x']
+X09 '*.txt' dash=['*.txt']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+X10 'a=b c' dash=['a=b', 'c']
+    go-shellquote=A; go-shellwords=A; google/shlex=A; mvdan sh Fields=A; shell-quote=A; shell-words (Rust)=A; shlex (Python)=A; shlex (Rust)=A; shlex (npm)=A; string-argv=A
+R01 '': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=FAIL:''; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R02 'a b': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R03 "it's": go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R04 'a"b': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R05 '$HOME': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R06 '`x`': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R07 '\\': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R08 'a\nb': go-shellquote=OK; mvdan sh Quote=E:None; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R09 '!': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R10 '*': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R11 '~': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=FAIL:'~'; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R12 '-n': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R13 'héllo': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R14 '\t': go-shellquote=OK; mvdan sh Quote=E:None; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R15 "'": go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R16 '"': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R17 ' lead': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R18 '#x': go-shellquote=FAIL:'#x'; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R19 ';': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R20 "a\\'b": go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R21 '$(x)': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R22 '{a,b}': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=FAIL-bash:'{a,b}'; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R23 'a\rb': go-shellquote=OK; mvdan sh Quote=E:None; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R24 '\xa0': go-shellquote=OK; mvdan sh Quote=E:None; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R25 '=x': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R26 '[a]': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R27 'a*': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R28 '?': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK
+R29 'é b': go-shellquote=OK; mvdan sh Quote=OK; shell-escape=OK; shell-quote=OK; shell-words (Rust)=OK; shlex (Python)=OK; shlex (Rust)=OK; shlex (npm)=OK

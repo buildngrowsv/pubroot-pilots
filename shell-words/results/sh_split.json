@@ -1,0 +1,940 @@
+{
+ "dash": {
+  "B01": {
+   "argv": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "B02": {
+   "argv": [
+    "a",
+    "b"
+   ]
+  },
+  "B03": {
+   "argv": [
+    "a",
+    "b"
+   ]
+  },
+  "B04": {
+   "argv": []
+  },
+  "B05": {
+   "argv": []
+  },
+  "B06": {
+   "argv": [
+    "a"
+   ]
+  },
+  "S01": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "S02": {
+   "argv": [
+    "abc"
+   ]
+  },
+  "S03": {
+   "argv": [
+    ""
+   ]
+  },
+  "S04": {
+   "argv": [
+    "ab"
+   ]
+  },
+  "S05": {
+   "argv": [
+    "a\\b"
+   ]
+  },
+  "S06": {
+   "argv": [
+    "it's"
+   ]
+  },
+  "S07": {
+   "argv": [
+    "a\"b"
+   ]
+  },
+  "S08": {
+   "error": "exit 2: /usr/bin/dash: 1: Syntax error: Unterminated quoted string"
+  },
+  "S09": {
+   "argv": [
+    "x",
+    "",
+    "y"
+   ]
+  },
+  "D01": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "D02": {
+   "argv": [
+    ""
+   ]
+  },
+  "D03": {
+   "argv": [
+    "a\"b"
+   ]
+  },
+  "D04": {
+   "argv": [
+    "a\\b"
+   ]
+  },
+  "D05": {
+   "argv": [
+    "a\\b"
+   ]
+  },
+  "D06": {
+   "argv": [
+    "a$b"
+   ]
+  },
+  "D07": {
+   "argv": [
+    "a`b"
+   ]
+  },
+  "D08": {
+   "argv": [
+    "a\\nb"
+   ]
+  },
+  "D09": {
+   "argv": [
+    "a'b"
+   ]
+  },
+  "D10": {
+   "argv": [
+    "\\x"
+   ]
+  },
+  "D11": {
+   "argv": [
+    "ab"
+   ]
+  },
+  "D12": {
+   "error": "exit 2: /usr/bin/dash: 1: Syntax error: Unterminated quoted string"
+  },
+  "D13": {
+   "argv": [
+    "x",
+    "",
+    "y"
+   ]
+  },
+  "D14": {
+   "argv": [
+    "a\nb"
+   ]
+  },
+  "E01": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "E02": {
+   "argv": [
+    "a"
+   ]
+  },
+  "E03": {
+   "argv": [
+    "\\"
+   ]
+  },
+  "E04": {
+   "argv": [
+    "'"
+   ]
+  },
+  "E05": {
+   "argv": [
+    "\""
+   ]
+  },
+  "E06": {
+   "argv": [
+    "a\\"
+   ]
+  },
+  "E07": {
+   "argv": [
+    "ab"
+   ]
+  },
+  "E08": {
+   "argv": [
+    "#a"
+   ]
+  },
+  "E09": {
+   "argv": [
+    "atb"
+   ]
+  },
+  "E10": {
+   "argv": [
+    " "
+   ]
+  },
+  "E11": {
+   "argv": [
+    "a\\",
+    "b"
+   ]
+  },
+  "E12": {
+   "argv": [
+    "$x"
+   ]
+  },
+  "Q01": {
+   "argv": [
+    "ab cd"
+   ]
+  },
+  "Q02": {
+   "argv": [
+    "abc"
+   ]
+  },
+  "Q03": {
+   "argv": [
+    "--opt=x y"
+   ]
+  },
+  "Q04": {
+   "argv": [
+    "-c",
+    "echo \"hi\""
+   ]
+  },
+  "Q05": {
+   "argv": [
+    "'\""
+   ]
+  },
+  "Q06": {
+   "argv": [
+    ""
+   ]
+  },
+  "Q07": {
+   "argv": [
+    "ab c"
+   ]
+  },
+  "Q08": {
+   "argv": [
+    "--k=v w",
+    "--j=x\"y"
+   ]
+  },
+  "U01": {
+   "argv": [
+    "héllo",
+    "wörld"
+   ]
+  },
+  "U02": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "U03": {
+   "argv": [
+    "a　b"
+   ]
+  },
+  "U04": {
+   "argv": [
+    "a\rb"
+   ]
+  },
+  "U05": {
+   "argv": [
+    "a\u000bb"
+   ]
+  },
+  "U06": {
+   "argv": [
+    "a\fb"
+   ]
+  },
+  "U07": {
+   "argv": [
+    "日本",
+    "語 文"
+   ]
+  },
+  "L01": {
+   "argv": [
+    "git",
+    "commit",
+    "-m",
+    "fix: it's done"
+   ]
+  },
+  "L02": {
+   "argv": [
+    "python",
+    "-c",
+    "print(\"a b\")"
+   ]
+  },
+  "L03": {
+   "argv": [
+    "curl",
+    "-H",
+    "Accept: */*",
+    "https://example.com/a?b=c"
+   ]
+  },
+  "L04": {
+   "argv": [
+    "ssh",
+    "home",
+    "ls -l 'a b'"
+   ]
+  },
+  "L05": {
+   "argv": [
+    "docker",
+    "run",
+    "-e",
+    "A=b c",
+    "img"
+   ]
+  },
+  "L06": {
+   "argv": [
+    "grep",
+    "-E",
+    "^(a|b)+$",
+    "file.txt"
+   ]
+  },
+  "L07": {
+   "argv": [
+    "node",
+    "-e",
+    "console.log('x y')"
+   ]
+  },
+  "L08": {
+   "argv": [
+    "find",
+    ".",
+    "-name",
+    "*.py",
+    "-print0"
+   ]
+  },
+  "C01": {
+   "argv": [
+    "a"
+   ]
+  },
+  "C02": {
+   "argv": [
+    "a#b"
+   ]
+  },
+  "C03": {
+   "argv": []
+  },
+  "C04": {
+   "argv": [
+    "a",
+    "#b"
+   ]
+  },
+  "C05": {
+   "argv": [
+    "a",
+    "#b"
+   ]
+  },
+  "O01": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/dash: 1: b: not found"
+  },
+  "O02": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/dash: 1: b: not found"
+  },
+  "O03": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/dash: 1: b: not found"
+  },
+  "O04": {
+   "argv": [
+    "a"
+   ]
+  },
+  "O05": {
+   "argv": [
+    "a"
+   ]
+  },
+  "O06": {
+   "error": "exit 2: /usr/bin/dash: 1: Syntax error: word unexpected (expecting \")\")"
+  },
+  "O07": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/dash: 2: b: not found"
+  },
+  "O08": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/dash: 1: b: not found"
+  },
+  "X01": {
+   "argv": [
+    "/nonexistent-home"
+   ]
+  },
+  "X02": {
+   "argv": [
+    "/nonexistent-home"
+   ]
+  },
+  "X03": {
+   "argv": [
+    "$HOME"
+   ]
+  },
+  "X04": {
+   "argv": [
+    "y"
+   ]
+  },
+  "X05": {
+   "argv": [
+    "x"
+   ]
+  },
+  "X06": {
+   "argv": [
+    "x"
+   ]
+  },
+  "X07": {
+   "argv": [
+    "/nonexistent-home"
+   ]
+  },
+  "X08": {
+   "argv": [
+    "/nonexistent-home/x"
+   ]
+  },
+  "X09": {
+   "argv": [
+    "*.txt"
+   ]
+  },
+  "X10": {
+   "argv": [
+    "a=b",
+    "c"
+   ]
+  }
+ },
+ "bash --posix": {
+  "B01": {
+   "argv": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "B02": {
+   "argv": [
+    "a",
+    "b"
+   ]
+  },
+  "B03": {
+   "argv": [
+    "a",
+    "b"
+   ]
+  },
+  "B04": {
+   "argv": []
+  },
+  "B05": {
+   "argv": []
+  },
+  "B06": {
+   "argv": [
+    "a"
+   ]
+  },
+  "S01": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "S02": {
+   "argv": [
+    "abc"
+   ]
+  },
+  "S03": {
+   "argv": [
+    ""
+   ]
+  },
+  "S04": {
+   "argv": [
+    "ab"
+   ]
+  },
+  "S05": {
+   "argv": [
+    "a\\b"
+   ]
+  },
+  "S06": {
+   "argv": [
+    "it's"
+   ]
+  },
+  "S07": {
+   "argv": [
+    "a\"b"
+   ]
+  },
+  "S08": {
+   "error": "exit 2: /usr/bin/bash: -c: line 1: unexpected EOF while looking for matching `''"
+  },
+  "S09": {
+   "argv": [
+    "x",
+    "",
+    "y"
+   ]
+  },
+  "D01": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "D02": {
+   "argv": [
+    ""
+   ]
+  },
+  "D03": {
+   "argv": [
+    "a\"b"
+   ]
+  },
+  "D04": {
+   "argv": [
+    "a\\b"
+   ]
+  },
+  "D05": {
+   "argv": [
+    "a\\b"
+   ]
+  },
+  "D06": {
+   "argv": [
+    "a$b"
+   ]
+  },
+  "D07": {
+   "argv": [
+    "a`b"
+   ]
+  },
+  "D08": {
+   "argv": [
+    "a\\nb"
+   ]
+  },
+  "D09": {
+   "argv": [
+    "a'b"
+   ]
+  },
+  "D10": {
+   "argv": [
+    "\\x"
+   ]
+  },
+  "D11": {
+   "argv": [
+    "ab"
+   ]
+  },
+  "D12": {
+   "error": "exit 2: /usr/bin/bash: -c: line 1: unexpected EOF while looking for matching `\"'"
+  },
+  "D13": {
+   "argv": [
+    "x",
+    "",
+    "y"
+   ]
+  },
+  "D14": {
+   "argv": [
+    "a\nb"
+   ]
+  },
+  "E01": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "E02": {
+   "argv": [
+    "a"
+   ]
+  },
+  "E03": {
+   "argv": [
+    "\\"
+   ]
+  },
+  "E04": {
+   "argv": [
+    "'"
+   ]
+  },
+  "E05": {
+   "argv": [
+    "\""
+   ]
+  },
+  "E06": {
+   "argv": [
+    "a\\"
+   ]
+  },
+  "E07": {
+   "argv": [
+    "ab"
+   ]
+  },
+  "E08": {
+   "argv": [
+    "#a"
+   ]
+  },
+  "E09": {
+   "argv": [
+    "atb"
+   ]
+  },
+  "E10": {
+   "argv": [
+    " "
+   ]
+  },
+  "E11": {
+   "argv": [
+    "a\\",
+    "b"
+   ]
+  },
+  "E12": {
+   "argv": [
+    "$x"
+   ]
+  },
+  "Q01": {
+   "argv": [
+    "ab cd"
+   ]
+  },
+  "Q02": {
+   "argv": [
+    "abc"
+   ]
+  },
+  "Q03": {
+   "argv": [
+    "--opt=x y"
+   ]
+  },
+  "Q04": {
+   "argv": [
+    "-c",
+    "echo \"hi\""
+   ]
+  },
+  "Q05": {
+   "argv": [
+    "'\""
+   ]
+  },
+  "Q06": {
+   "argv": [
+    ""
+   ]
+  },
+  "Q07": {
+   "argv": [
+    "ab c"
+   ]
+  },
+  "Q08": {
+   "argv": [
+    "--k=v w",
+    "--j=x\"y"
+   ]
+  },
+  "U01": {
+   "argv": [
+    "héllo",
+    "wörld"
+   ]
+  },
+  "U02": {
+   "argv": [
+    "a b"
+   ]
+  },
+  "U03": {
+   "argv": [
+    "a　b"
+   ]
+  },
+  "U04": {
+   "argv": [
+    "a\rb"
+   ]
+  },
+  "U05": {
+   "argv": [
+    "a\u000bb"
+   ]
+  },
+  "U06": {
+   "argv": [
+    "a\fb"
+   ]
+  },
+  "U07": {
+   "argv": [
+    "日本",
+    "語 文"
+   ]
+  },
+  "L01": {
+   "argv": [
+    "git",
+    "commit",
+    "-m",
+    "fix: it's done"
+   ]
+  },
+  "L02": {
+   "argv": [
+    "python",
+    "-c",
+    "print(\"a b\")"
+   ]
+  },
+  "L03": {
+   "argv": [
+    "curl",
+    "-H",
+    "Accept: */*",
+    "https://example.com/a?b=c"
+   ]
+  },
+  "L04": {
+   "argv": [
+    "ssh",
+    "home",
+    "ls -l 'a b'"
+   ]
+  },
+  "L05": {
+   "argv": [
+    "docker",
+    "run",
+    "-e",
+    "A=b c",
+    "img"
+   ]
+  },
+  "L06": {
+   "argv": [
+    "grep",
+    "-E",
+    "^(a|b)+$",
+    "file.txt"
+   ]
+  },
+  "L07": {
+   "argv": [
+    "node",
+    "-e",
+    "console.log('x y')"
+   ]
+  },
+  "L08": {
+   "argv": [
+    "find",
+    ".",
+    "-name",
+    "*.py",
+    "-print0"
+   ]
+  },
+  "C01": {
+   "argv": [
+    "a"
+   ]
+  },
+  "C02": {
+   "argv": [
+    "a#b"
+   ]
+  },
+  "C03": {
+   "argv": []
+  },
+  "C04": {
+   "argv": [
+    "a",
+    "#b"
+   ]
+  },
+  "C05": {
+   "argv": [
+    "a",
+    "#b"
+   ]
+  },
+  "O01": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/bash: line 1: b: command not found"
+  },
+  "O02": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/bash: line 1: b: command not found"
+  },
+  "O03": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/bash: line 1: b: command not found"
+  },
+  "O04": {
+   "argv": [
+    "a"
+   ]
+  },
+  "O05": {
+   "argv": [
+    "a"
+   ]
+  },
+  "O06": {
+   "error": "exit 2: /usr/bin/bash: -c: line 1: `trap wait EXIT; f() { for a in \"$@\"; do printf '%s\\0' \"$a\" >&3; done; pr"
+  },
+  "O07": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/bash: line 2: b: command not found"
+  },
+  "O08": {
+   "argv": [
+    "a"
+   ],
+   "stderr": "/usr/bin/bash: line 1: b: command not found"
+  },
+  "X01": {
+   "argv": [
+    "/nonexistent-home"
+   ]
+  },
+  "X02": {
+   "argv": [
+    "/nonexistent-home"
+   ]
+  },
+  "X03": {
+   "argv": [
+    "$HOME"
+   ]
+  },
+  "X04": {
+   "argv": [
+    "y"
+   ]
+  },
+  "X05": {
+   "argv": [
+    "x"
+   ]
+  },
+  "X06": {
+   "argv": [
+    "x"
+   ]
+  },
+  "X07": {
+   "argv": [
+    "/nonexistent-home"
+   ]
+  },
+  "X08": {
+   "argv": [
+    "/nonexistent-home/x"
+   ]
+  },
+  "X09": {
+   "argv": [
+    "*.txt"
+   ]
+  },
+  "X10": {
+   "argv": [
+    "a=b",
+    "c"
+   ]
+  }
+ }
+}

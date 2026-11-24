@@ -1,0 +1,97 @@
+{
+ "mvdan_rejected": 430,
+ "vectors_returned_on_mvdan_rejected": {
+  "shlex (Python)": 429,
+  "shell-quote": 430,
+  "string-argv": 430,
+  "shlex (npm)": 429,
+  "go-shellquote": 429,
+  "go-shellwords": 430,
+  "google/shlex": 429,
+  "mvdan sh Fields": 0,
+  "shell-words (Rust)": 429,
+  "shlex (Rust)": 429
+ },
+ "plain_with_quote_or_backslash": 13,
+ "with_operator": 436,
+ "errors_on_operator_strings": {
+  "shlex (Python)": 1,
+  "shell-quote": 0,
+  "string-argv": 0,
+  "shlex (npm)": 1,
+  "go-shellquote": 1,
+  "go-shellwords": 0,
+  "google/shlex": 1,
+  "mvdan sh Fields": 429,
+  "shell-words (Rust)": 1,
+  "shlex (Rust)": 1
+ },
+ "source": "npm-high-impact 1.13.0 npmTopDownloads[0:500]",
+ "packages": 500,
+ "packages_with_scripts": 442,
+ "distinct_strings": 1402,
+ "plain": 800,
+ "dash_vs_bash_on_plain": 0,
+ "all_libraries_identical_all_strings": 965,
+ "special_char_counts": {
+  "&": 384,
+  "*": 192,
+  "|": 40,
+  "{": 33,
+  "}": 33,
+  "(": 26,
+  ")": 26,
+  ";": 21,
+  ">": 20,
+  "$": 18,
+  "[": 4,
+  "]": 4,
+  "<": 2,
+  "\n": 1,
+  "#": 1
+ },
+ "classes_plain": {
+  "shlex (Python)": {
+   "A": 800
+  },
+  "shell-quote": {
+   "A": 800
+  },
+  "string-argv": {
+   "A": 800
+  },
+  "shlex (npm)": {
+   "A": 800
+  },
+  "go-shellquote": {
+   "A": 800
+  },
+  "go-shellwords": {
+   "A": 800
+  },
+  "google/shlex": {
+   "A": 800
+  },
+  "mvdan sh Fields": {
+   "A": 800
+  },
+  "shell-words (Rust)": {
+   "A": 800
+  },
+  "shlex (Rust)": {
+   "A": 800
+  }
+ },
+ "deviations_plain": {
+  "shlex (Python)": [],
+  "shell-quote": [],
+  "string-argv": [],
+  "shlex (npm)": [],
+  "go-shellquote": [],
+  "go-shellwords": [],
+  "google/shlex": [],
+  "mvdan sh Fields": [],
+  "shell-words (Rust)": [],
+  "shlex (Rust)": []
+ }
+}

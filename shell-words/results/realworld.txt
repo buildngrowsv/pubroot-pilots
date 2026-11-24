@@ -1,0 +1,14 @@
+500 packages (442 with scripts), 1402 distinct strings, 800 plain; dash vs bash differ on 0 plain
+plain strings with a quote or backslash: 13; strings containing ; | & < > (quoted or not): 436; errors on those: {'shlex (Python)': 1, 'shell-quote': 0, 'string-argv': 0, 'shlex (npm)': 1, 'go-shellquote': 1, 'go-shellwords': 0, 'google/shlex': 1, 'mvdan sh Fields': 429, 'shell-words (Rust)': 1, 'shlex (Rust)': 1}
+mvdan's parser rejects 430 strings; argument vectors returned for those: {'shlex (Python)': 429, 'shell-quote': 430, 'string-argv': 430, 'shlex (npm)': 429, 'go-shellquote': 429, 'go-shellwords': 430, 'google/shlex': 429, 'mvdan sh Fields': 0, 'shell-words (Rust)': 429, 'shlex (Rust)': 429}
+all libraries give the same output on 965 of 1402 strings
+  shlex (Python)       A=800 W=0 R=0 L=0
+  shell-quote          A=800 W=0 R=0 L=0
+  string-argv          A=800 W=0 R=0 L=0
+  shlex (npm)          A=800 W=0 R=0 L=0
+  go-shellquote        A=800 W=0 R=0 L=0
+  go-shellwords        A=800 W=0 R=0 L=0
+  google/shlex         A=800 W=0 R=0 L=0
+  mvdan sh Fields      A=800 W=0 R=0 L=0
+  shell-words (Rust)   A=800 W=0 R=0 L=0
+  shlex (Rust)         A=800 W=0 R=0 L=0

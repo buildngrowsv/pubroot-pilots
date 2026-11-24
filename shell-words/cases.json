@@ -1,0 +1,611 @@
+[
+ {
+  "id": "B01",
+  "s": "a b c",
+  "group": "basic",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "B02",
+  "s": "  a   b  ",
+  "group": "basic",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "B03",
+  "s": "a\tb",
+  "group": "basic",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "B04",
+  "s": "",
+  "group": "basic",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "B05",
+  "s": "   ",
+  "group": "basic",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "B06",
+  "s": "a",
+  "group": "basic",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S01",
+  "s": "'a b'",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S02",
+  "s": "'a'b'c'",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S03",
+  "s": "''",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S04",
+  "s": "a''b",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S05",
+  "s": "'a\\b'",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S06",
+  "s": "'it'\\''s'",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S07",
+  "s": "'a\"b'",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S08",
+  "s": "'abc",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "S09",
+  "s": "x '' y",
+  "group": "single quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D01",
+  "s": "\"a b\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D02",
+  "s": "\"\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D03",
+  "s": "\"a\\\"b\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D04",
+  "s": "\"a\\\\b\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D05",
+  "s": "\"a\\b\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D06",
+  "s": "\"a\\$b\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D07",
+  "s": "\"a\\`b\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D08",
+  "s": "\"a\\nb\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D09",
+  "s": "\"a'b\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D10",
+  "s": "\"\\x\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D11",
+  "s": "\"a\\\nb\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D12",
+  "s": "\"abc",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D13",
+  "s": "x \"\" y",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "D14",
+  "s": "\"a\nb\"",
+  "group": "double quotes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E01",
+  "s": "a\\ b",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E02",
+  "s": "\\a",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E03",
+  "s": "\\\\",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E04",
+  "s": "\\'",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E05",
+  "s": "\\\"",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E06",
+  "s": "a\\",
+  "group": "backslash escapes",
+  "scored": false,
+  "open": "backslash as the last character of the input: POSIX gives it nothing to quote; dash and bash keep it"
+ },
+ {
+  "id": "E07",
+  "s": "a\\\nb",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E08",
+  "s": "\\#a",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E09",
+  "s": "a\\tb",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E10",
+  "s": "\\ ",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E11",
+  "s": "a\\\\ b",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "E12",
+  "s": "\\$x",
+  "group": "backslash escapes",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q01",
+  "s": "a\"b c\"d",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q02",
+  "s": "\"a\"'b'c",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q03",
+  "s": "--opt=\"x y\"",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q04",
+  "s": "-c 'echo \"hi\"'",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q05",
+  "s": "\"'\"'\"'",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q06",
+  "s": "\"\"''",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q07",
+  "s": "'a'\"b\"\\ c",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "Q08",
+  "s": "--k='v w' --j=\"x\\\"y\"",
+  "group": "mixed quoting",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "U01",
+  "s": "héllo wörld",
+  "group": "non-blank whitespace and Unicode",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "U02",
+  "s": "a b",
+  "group": "non-blank whitespace and Unicode",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "U03",
+  "s": "a　b",
+  "group": "non-blank whitespace and Unicode",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "U04",
+  "s": "a\rb",
+  "group": "non-blank whitespace and Unicode",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "U05",
+  "s": "a\u000bb",
+  "group": "non-blank whitespace and Unicode",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "U06",
+  "s": "a\fb",
+  "group": "non-blank whitespace and Unicode",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "U07",
+  "s": "日本 '語 文'",
+  "group": "non-blank whitespace and Unicode",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L01",
+  "s": "git commit -m \"fix: it's done\"",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L02",
+  "s": "python -c 'print(\"a b\")'",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L03",
+  "s": "curl -H \"Accept: */*\" https://example.com/a?b=c",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L04",
+  "s": "ssh home 'ls -l '\"'\"'a b'\"'\"''",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L05",
+  "s": "docker run -e \"A=b c\" img",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L06",
+  "s": "grep -E '^(a|b)+$' file.txt",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L07",
+  "s": "node -e \"console.log('x y')\"",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "L08",
+  "s": "find . -name '*.py' -print0",
+  "group": "practical command lines",
+  "scored": true,
+  "open": null
+ },
+ {
+  "id": "C01",
+  "s": "a #b",
+  "group": "comments (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "C02",
+  "s": "a#b",
+  "group": "comments (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "C03",
+  "s": "#a",
+  "group": "comments (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "C04",
+  "s": "a \"#b\"",
+  "group": "comments (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "C05",
+  "s": "a '#'b",
+  "group": "comments (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O01",
+  "s": "a;b",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O02",
+  "s": "a|b",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O03",
+  "s": "a&&b",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O04",
+  "s": "a >b",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O05",
+  "s": "a 2>&1",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O06",
+  "s": "(a)",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O07",
+  "s": "a\nb",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "O08",
+  "s": "a & b",
+  "group": "operators and newlines (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X01",
+  "s": "$HOME",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X02",
+  "s": "\"$HOME\"",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X03",
+  "s": "'$HOME'",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X04",
+  "s": "${X}y",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X05",
+  "s": "$(echo x)",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X06",
+  "s": "`echo x`",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X07",
+  "s": "~",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X08",
+  "s": "~/x",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X09",
+  "s": "*.txt",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ },
+ {
+  "id": "X10",
+  "s": "a=b c",
+  "group": "expansions (shell-only)",
+  "scored": false,
+  "open": null
+ }
+]

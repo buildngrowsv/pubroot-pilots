@@ -1,0 +1,11183 @@
+{
+ "n_cases": 87,
+ "n_scored": 63,
+ "n_any_split": 47,
+ "n_scored_dev": 29,
+ "dash_vs_bash": [],
+ "classes": {
+  "go-shellquote": {
+   "A": 63
+  },
+  "go-shellwords": {
+   "A": 56,
+   "W": 7
+  },
+  "google/shlex": {
+   "A": 57,
+   "W": 6
+  },
+  "mvdan sh Fields": {
+   "A": 62,
+   "W": 1
+  },
+  "shell-quote": {
+   "A": 53,
+   "L": 2,
+   "W": 8
+  },
+  "shell-words (Rust)": {
+   "A": 63
+  },
+  "shlex (Python)": {
+   "A": 58,
+   "W": 5
+  },
+  "shlex (Rust)": {
+   "A": 63
+  },
+  "shlex (npm)": {
+   "A": 60,
+   "W": 3
+  },
+  "string-argv": {
+   "A": 37,
+   "W": 24,
+   "L": 2
+  }
+ },
+ "classes_shell_only": {
+  "go-shellquote": {
+   "W": 16,
+   "A": 6,
+   "L": 1
+  },
+  "go-shellwords": {
+   "W": 10,
+   "A": 13
+  },
+  "google/shlex": {
+   "A": 8,
+   "W": 14,
+   "L": 1
+  },
+  "mvdan sh Fields": {
+   "A": 14,
+   "R": 8,
+   "W": 1
+  },
+  "shell-quote": {
+   "W": 16,
+   "A": 6,
+   "L": 1
+  },
+  "shell-words (Rust)": {
+   "A": 8,
+   "W": 14,
+   "L": 1
+  },
+  "shlex (Python)": {
+   "W": 16,
+   "A": 6,
+   "L": 1
+  },
+  "shlex (Rust)": {
+   "A": 8,
+   "W": 14,
+   "L": 1
+  },
+  "shlex (npm)": {
+   "W": 16,
+   "A": 6,
+   "L": 1
+  },
+  "string-argv": {
+   "W": 16,
+   "A": 6,
+   "L": 1
+  }
+ },
+ "classes_open": {
+  "go-shellquote": {
+   "R": 1
+  },
+  "go-shellwords": {
+   "R": 1
+  },
+  "google/shlex": {
+   "R": 1
+  },
+  "mvdan sh Fields": {
+   "A": 1
+  },
+  "shell-quote": {
+   "W": 1
+  },
+  "shell-words (Rust)": {
+   "A": 1
+  },
+  "shlex (Python)": {
+   "R": 1
+  },
+  "shlex (Rust)": {
+   "R": 1
+  },
+  "shlex (npm)": {
+   "R": 1
+  },
+  "string-argv": {
+   "A": 1
+  }
+ },
+ "pairwise_scored": {
+  "go-shellquote vs go-shellwords": 9,
+  "go-shellquote vs google/shlex": 8,
+  "go-shellquote vs mvdan sh Fields": 3,
+  "go-shellquote vs shell-quote": 10,
+  "go-shellquote vs shell-words (Rust)": 2,
+  "go-shellquote vs shlex (Python)": 7,
+  "go-shellquote vs shlex (Rust)": 2,
+  "go-shellquote vs shlex (npm)": 5,
+  "go-shellquote vs string-argv": 26,
+  "go-shellwords vs google/shlex": 4,
+  "go-shellwords vs mvdan sh Fields": 8,
+  "go-shellwords vs shell-quote": 13,
+  "go-shellwords vs shell-words (Rust)": 9,
+  "go-shellwords vs shlex (Python)": 9,
+  "go-shellwords vs shlex (Rust)": 9,
+  "go-shellwords vs shlex (npm)": 10,
+  "go-shellwords vs string-argv": 28,
+  "google/shlex vs mvdan sh Fields": 7,
+  "google/shlex vs shell-quote": 12,
+  "google/shlex vs shell-words (Rust)": 8,
+  "google/shlex vs shlex (Python)": 8,
+  "google/shlex vs shlex (Rust)": 8,
+  "google/shlex vs shlex (npm)": 9,
+  "google/shlex vs string-argv": 28,
+  "mvdan sh Fields vs shell-quote": 9,
+  "mvdan sh Fields vs shell-words (Rust)": 3,
+  "mvdan sh Fields vs shlex (Python)": 6,
+  "mvdan sh Fields vs shlex (Rust)": 3,
+  "mvdan sh Fields vs shlex (npm)": 4,
+  "mvdan sh Fields vs string-argv": 25,
+  "shell-quote vs shell-words (Rust)": 10,
+  "shell-quote vs shlex (Python)": 8,
+  "shell-quote vs shlex (Rust)": 10,
+  "shell-quote vs shlex (npm)": 9,
+  "shell-quote vs string-argv": 17,
+  "shell-words (Rust) vs shlex (Python)": 7,
+  "shell-words (Rust) vs shlex (Rust)": 2,
+  "shell-words (Rust) vs shlex (npm)": 5,
+  "shell-words (Rust) vs string-argv": 26,
+  "shlex (Python) vs shlex (Rust)": 7,
+  "shlex (Python) vs shlex (npm)": 4,
+  "shlex (Python) vs string-argv": 22,
+  "shlex (Rust) vs shlex (npm)": 5,
+  "shlex (Rust) vs string-argv": 26,
+  "shlex (npm) vs string-argv": 23
+ },
+ "quote_classes": {
+  "go-shellquote": {
+   "OK": 28,
+   "FAIL": 1
+  },
+  "mvdan sh Quote": {
+   "OK": 25,
+   "E": 4
+  },
+  "shell-escape": {
+   "FAIL": 1,
+   "OK": 28
+  },
+  "shell-quote": {
+   "OK": 29
+  },
+  "shell-words (Rust)": {
+   "OK": 27,
+   "FAIL": 1,
+   "FAIL-bash": 1
+  },
+  "shlex (Python)": {
+   "OK": 29
+  },
+  "shlex (Rust)": {
+   "OK": 29
+  },
+  "shlex (npm)": {
+   "OK": 29
+  }
+ },
+ "rows": [
+  {
+   "id": "B01",
+   "s": "a b c",
+   "group": "basic",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a",
+     "b",
+     "c"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a",
+     "b",
+     "c"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "B02",
+   "s": "  a   b  ",
+   "group": "basic",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a",
+     "b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a",
+     "b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "B03",
+   "s": "a\tb",
+   "group": "basic",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a",
+     "b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a",
+     "b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "B04",
+   "s": "",
+   "group": "basic",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": []
+   },
+   "bash": {
+    "argv": []
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": []
+    },
+    "go-shellwords": {
+     "argv": []
+    },
+    "google/shlex": {
+     "argv": []
+    },
+    "mvdan sh Fields": {
+     "argv": []
+    },
+    "shell-quote": {
+     "argv": []
+    },
+    "shell-words (Rust)": {
+     "argv": []
+    },
+    "shlex (Python)": {
+     "argv": []
+    },
+    "shlex (Rust)": {
+     "argv": []
+    },
+    "shlex (npm)": {
+     "argv": []
+    },
+    "string-argv": {
+     "argv": []
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "B05",
+   "s": "   ",
+   "group": "basic",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": []
+   },
+   "bash": {
+    "argv": []
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": []
+    },
+    "go-shellwords": {
+     "argv": []
+    },
+    "google/shlex": {
+     "argv": []
+    },
+    "mvdan sh Fields": {
+     "argv": []
+    },
+    "shell-quote": {
+     "argv": []
+    },
+    "shell-words (Rust)": {
+     "argv": []
+    },
+    "shlex (Python)": {
+     "argv": []
+    },
+    "shlex (Rust)": {
+     "argv": []
+    },
+    "shlex (npm)": {
+     "argv": []
+    },
+    "string-argv": {
+     "argv": []
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "B06",
+   "s": "a",
+   "group": "basic",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "S01",
+   "s": "'a b'",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "S02",
+   "s": "'a'b'c'",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "abc"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "abc"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "abc"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "S03",
+   "s": "''",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     ""
+    ]
+   },
+   "bash": {
+    "argv": [
+     ""
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      ""
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      ""
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      ""
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      ""
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      ""
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "S04",
+   "s": "a''b",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "ab"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "ab"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "ab"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "S05",
+   "s": "'a\\b'",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\\b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\\b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "S06",
+   "s": "'it'\\''s'",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "it's"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "it's"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "it's"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "it\\s"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "S07",
+   "s": "'a\"b'",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\"b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\"b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\"b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "S08",
+   "s": "'abc",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "error": "exit 2: /usr/bin/dash: 1: Syntax error: Unterminated quoted string"
+   },
+   "bash": {
+    "error": "exit 2: /usr/bin/bash: -c: line 1: unexpected EOF while looking for matching `''"
+   },
+   "out": {
+    "go-shellquote": {
+     "error": "Unterminated single-quoted string"
+    },
+    "go-shellwords": {
+     "error": "invalid command line string"
+    },
+    "google/shlex": {
+     "error": "EOF found when expecting closing quote"
+    },
+    "mvdan sh Fields": {
+     "error": "1:1: reached EOF without closing quote `'`"
+    },
+    "shell-quote": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shell-words (Rust)": {
+     "error": "missing closing quote"
+    },
+    "shlex (Python)": {
+     "error": "ValueError: No closing quotation"
+    },
+    "shlex (Rust)": {
+     "error": "None (invalid input)"
+    },
+    "shlex (npm)": {
+     "error": "Got EOF while in a quoted string"
+    },
+    "string-argv": {
+     "argv": [
+      "abc"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "L",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "L"
+   }
+  },
+  {
+   "id": "S09",
+   "s": "x '' y",
+   "group": "single quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "x",
+     "",
+     "y"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "x",
+     "",
+     "y"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D01",
+   "s": "\"a b\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D02",
+   "s": "\"\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     ""
+    ]
+   },
+   "bash": {
+    "argv": [
+     ""
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      ""
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      ""
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      ""
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      ""
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      ""
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D03",
+   "s": "\"a\\\"b\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\"b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\"b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\"b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "D04",
+   "s": "\"a\\\\b\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\\b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\\b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\\\b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "D05",
+   "s": "\"a\\b\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\\b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\\b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\\b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D06",
+   "s": "\"a\\$b\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a$b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a$b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a$b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a$b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a$b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a$b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a$b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a$b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\$b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a$b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\\$b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\$b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "D07",
+   "s": "\"a\\`b\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a`b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a`b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a`b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a`b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a`b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a`b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\\`b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a`b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\`b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a`b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\\`b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\`b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "D08",
+   "s": "\"a\\nb\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\\nb"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\\nb"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\\nb"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "anb"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\\nb"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\\nb"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\\nb"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\nb"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\\nb"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\\nb"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\nb"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D09",
+   "s": "\"a'b\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a'b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a'b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a'b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a'b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D10",
+   "s": "\"\\x\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "\\x"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "\\x"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "\\x"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "x"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "x"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "\\x"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "\\x"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "\\x"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "\\x"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "\\x"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "\\x"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\x"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D11",
+   "s": "\"a\\\nb\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "ab"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "ab"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\\\nb"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\\nb"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\\nb"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "D12",
+   "s": "\"abc",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "error": "exit 2: /usr/bin/dash: 1: Syntax error: Unterminated quoted string"
+   },
+   "bash": {
+    "error": "exit 2: /usr/bin/bash: -c: line 1: unexpected EOF while looking for matching `\"'"
+   },
+   "out": {
+    "go-shellquote": {
+     "error": "Unterminated double-quoted string"
+    },
+    "go-shellwords": {
+     "error": "invalid command line string"
+    },
+    "google/shlex": {
+     "error": "EOF found when expecting closing quote"
+    },
+    "mvdan sh Fields": {
+     "error": "1:1: reached EOF without closing quote `\"`"
+    },
+    "shell-quote": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shell-words (Rust)": {
+     "error": "missing closing quote"
+    },
+    "shlex (Python)": {
+     "error": "ValueError: No closing quotation"
+    },
+    "shlex (Rust)": {
+     "error": "None (invalid input)"
+    },
+    "shlex (npm)": {
+     "error": "Got EOF while in a quoted string"
+    },
+    "string-argv": {
+     "argv": [
+      "abc"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "L",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "L"
+   }
+  },
+  {
+   "id": "D13",
+   "s": "x \"\" y",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "x",
+     "",
+     "y"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "x",
+     "",
+     "y"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "x",
+      "",
+      "y"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "D14",
+   "s": "\"a\nb\"",
+   "group": "double quotes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\nb"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\nb"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\nb"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "E01",
+   "s": "a\\ b",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E02",
+   "s": "\\a",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\a"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E03",
+   "s": "\\\\",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "\\"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "\\"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "\\"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\\\"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E04",
+   "s": "\\'",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "'"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "'"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "'"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "'"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "'"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "'"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "'"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "'"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "'"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "'"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "'"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E05",
+   "s": "\\\"",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "\""
+    ]
+   },
+   "bash": {
+    "argv": [
+     "\""
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "\""
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "\""
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "\""
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "\""
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "\""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "\""
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "\""
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "\""
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "\""
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E06",
+   "s": "a\\",
+   "group": "backslash escapes",
+   "scored": false,
+   "open": "backslash as the last character of the input: POSIX gives it nothing to quote; dash and bash keep it",
+   "dash": {
+    "argv": [
+     "a\\"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\\"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "error": "Unterminated backslash-escape"
+    },
+    "go-shellwords": {
+     "error": "invalid command line string"
+    },
+    "google/shlex": {
+     "error": "EOF found after escape character"
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\\"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\\"
+     ]
+    },
+    "shlex (Python)": {
+     "error": "ValueError: No escaped character"
+    },
+    "shlex (Rust)": {
+     "error": "None (invalid input)"
+    },
+    "shlex (npm)": {
+     "error": "Got EOF while in an escape sequence"
+    },
+    "string-argv": {
+     "argv": [
+      "a\\"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "R",
+    "go-shellwords": "R",
+    "google/shlex": "R",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "R",
+    "shlex (Rust)": "R",
+    "shlex (npm)": "R",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "E07",
+   "s": "a\\\nb",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "ab"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "ab"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\nb"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "ab"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E08",
+   "s": "\\#a",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "#a"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "#a"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\#a"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E09",
+   "s": "a\\tb",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "atb"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "atb"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\tb"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "atb"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\tb"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "W",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E10",
+   "s": "\\ ",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     " "
+    ]
+   },
+   "bash": {
+    "argv": [
+     " "
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      " "
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      " "
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      " "
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      " "
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      " "
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      " "
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      " "
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      " "
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      " "
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E11",
+   "s": "a\\\\ b",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\\",
+     "b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\\",
+     "b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\\",
+      "b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a\\\\",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "E12",
+   "s": "\\$x",
+   "group": "backslash escapes",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "$x"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "$x"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "$x"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "\\$x"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "Q01",
+   "s": "a\"b c\"d",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "ab cd"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "ab cd"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "ab cd"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "ab cd"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "Q02",
+   "s": "\"a\"'b'c",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "abc"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "abc"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "abc"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "abc"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "Q03",
+   "s": "--opt=\"x y\"",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "--opt=x y"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "--opt=x y"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "--opt=x y"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "--opt=x y"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "Q04",
+   "s": "-c 'echo \"hi\"'",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "-c",
+     "echo \"hi\""
+    ]
+   },
+   "bash": {
+    "argv": [
+     "-c",
+     "echo \"hi\""
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "-c",
+      "echo \"hi\""
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "Q05",
+   "s": "\"'\"'\"'",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "'\""
+    ]
+   },
+   "bash": {
+    "argv": [
+     "'\""
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "'\""
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "'\""
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "Q06",
+   "s": "\"\"''",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     ""
+    ]
+   },
+   "bash": {
+    "argv": [
+     ""
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      ""
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      ""
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      ""
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      ""
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      ""
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      ""
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "Q07",
+   "s": "'a'\"b\"\\ c",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "ab c"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "ab c"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "ab c"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "ab\\",
+      "c"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "Q08",
+   "s": "--k='v w' --j=\"x\\\"y\"",
+   "group": "mixed quoting",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "--k=v w",
+     "--j=x\"y"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "--k=v w",
+     "--j=x\"y"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "--k=v w",
+      "--j=x\"y"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "--k=v w",
+      "--j=x\\y"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "U01",
+   "s": "héllo wörld",
+   "group": "non-blank whitespace and Unicode",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "héllo",
+     "wörld"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "héllo",
+     "wörld"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "héllo",
+      "wörld"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "U02",
+   "s": "a b",
+   "group": "non-blank whitespace and Unicode",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "U03",
+   "s": "a　b",
+   "group": "non-blank whitespace and Unicode",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a　b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a　b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a　b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "U04",
+   "s": "a\rb",
+   "group": "non-blank whitespace and Unicode",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\rb"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\rb"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\rb"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\rb"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\rb"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "W",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "U05",
+   "s": "a\u000bb",
+   "group": "non-blank whitespace and Unicode",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\u000bb"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\u000bb"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\u000bb"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "U06",
+   "s": "a\fb",
+   "group": "non-blank whitespace and Unicode",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a\fb"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a\fb"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a\fb"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "U07",
+   "s": "日本 '語 文'",
+   "group": "non-blank whitespace and Unicode",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "日本",
+     "語 文"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "日本",
+     "語 文"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "日本",
+      "語 文"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L01",
+   "s": "git commit -m \"fix: it's done\"",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "git",
+     "commit",
+     "-m",
+     "fix: it's done"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "git",
+     "commit",
+     "-m",
+     "fix: it's done"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "git",
+      "commit",
+      "-m",
+      "fix: it's done"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L02",
+   "s": "python -c 'print(\"a b\")'",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "python",
+     "-c",
+     "print(\"a b\")"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "python",
+     "-c",
+     "print(\"a b\")"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "python",
+      "-c",
+      "print(\"a b\")"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L03",
+   "s": "curl -H \"Accept: */*\" https://example.com/a?b=c",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "curl",
+     "-H",
+     "Accept: */*",
+     "https://example.com/a?b=c"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "curl",
+     "-H",
+     "Accept: */*",
+     "https://example.com/a?b=c"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "curl",
+      "-H",
+      "Accept: */*",
+      "https://example.com/a?b=c"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L04",
+   "s": "ssh home 'ls -l '\"'\"'a b'\"'\"''",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "ssh",
+     "home",
+     "ls -l 'a b'"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "ssh",
+     "home",
+     "ls -l 'a b'"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "ssh",
+      "home",
+      "ls -l 'a b'"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L05",
+   "s": "docker run -e \"A=b c\" img",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "docker",
+     "run",
+     "-e",
+     "A=b c",
+     "img"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "docker",
+     "run",
+     "-e",
+     "A=b c",
+     "img"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "docker",
+      "run",
+      "-e",
+      "A=b c",
+      "img"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L06",
+   "s": "grep -E '^(a|b)+$' file.txt",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "grep",
+     "-E",
+     "^(a|b)+$",
+     "file.txt"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "grep",
+     "-E",
+     "^(a|b)+$",
+     "file.txt"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "grep",
+      "-E",
+      "^(a|b)+$",
+      "file.txt"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L07",
+   "s": "node -e \"console.log('x y')\"",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "node",
+     "-e",
+     "console.log('x y')"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "node",
+     "-e",
+     "console.log('x y')"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "node",
+      "-e",
+      "console.log('x y')"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "L08",
+   "s": "find . -name '*.py' -print0",
+   "group": "practical command lines",
+   "scored": true,
+   "open": null,
+   "dash": {
+    "argv": [
+     "find",
+     ".",
+     "-name",
+     "*.py",
+     "-print0"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "find",
+     ".",
+     "-name",
+     "*.py",
+     "-print0"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "find",
+      ".",
+      "-name",
+      "*.py",
+      "-print0"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "C01",
+   "s": "a #b",
+   "group": "comments (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "<comment:b>"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "C02",
+   "s": "a#b",
+   "group": "comments (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a#b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a#b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "<comment:b>"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a#b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a#b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "C03",
+   "s": "#a",
+   "group": "comments (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": []
+   },
+   "bash": {
+    "argv": []
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "google/shlex": {
+     "argv": []
+    },
+    "mvdan sh Fields": {
+     "argv": []
+    },
+    "shell-quote": {
+     "argv": [
+      "<comment:a>"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": []
+    },
+    "shlex (Python)": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": []
+    },
+    "shlex (npm)": {
+     "argv": [
+      "#a"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "#a"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "C04",
+   "s": "a \"#b\"",
+   "group": "comments (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a",
+     "#b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a",
+     "#b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "C05",
+   "s": "a '#'b",
+   "group": "comments (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a",
+     "#b"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a",
+     "#b"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "#b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "O01",
+   "s": "a;b",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/dash: 1: b: not found"
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/bash: line 1: b: command not found"
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a;b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a;b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "1:2: `;` is not a valid word"
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "<op:;>",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a;b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a;b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a;b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a;b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a;b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "A",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "O02",
+   "s": "a|b",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/dash: 1: b: not found"
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/bash: line 1: b: command not found"
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a|b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a|b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "1:2: `|` is not a valid word"
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "<op:|>",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a|b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a|b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a|b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a|b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a|b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "A",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "O03",
+   "s": "a&&b",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/dash: 1: b: not found"
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/bash: line 1: b: command not found"
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a&&b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a&&b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "1:2: `&&` is not a valid word"
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "<op:&&>",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a&&b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a&&b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a&&b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a&&b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a&&b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "A",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "O04",
+   "s": "a >b",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      ">b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      ">b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "1:3: `>` is not a valid word"
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "<op:>>",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      ">b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      ">b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      ">b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      ">b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      ">b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "A",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "O05",
+   "s": "a 2>&1",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "2>&1"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "2>&1"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "1:4: `>&` is not a valid word"
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "2",
+      "<op:>&>",
+      "1"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "2>&1"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "2>&1"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "2>&1"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "2>&1"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "2>&1"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "A",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "O06",
+   "s": "(a)",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "error": "exit 2: /usr/bin/dash: 1: Syntax error: word unexpected (expecting \")\")"
+   },
+   "bash": {
+    "error": "exit 2: /usr/bin/bash: -c: line 1: `trap wait EXIT; f() { for a in \"$@\"; do printf '%s\\0' \"$a\" >&3; done; pr"
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "(a)"
+     ]
+    },
+    "go-shellwords": {
+     "error": "invalid command line string"
+    },
+    "google/shlex": {
+     "argv": [
+      "(a)"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "1:1: `(` is not a valid word"
+    },
+    "shell-quote": {
+     "argv": [
+      "<op:(>",
+      "a",
+      "<op:)>"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "(a)"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "(a)"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "(a)"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "(a)"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "(a)"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "L",
+    "go-shellwords": "A",
+    "google/shlex": "L",
+    "mvdan sh Fields": "A",
+    "shell-quote": "L",
+    "shell-words (Rust)": "L",
+    "shlex (Python)": "L",
+    "shlex (Rust)": "L",
+    "shlex (npm)": "L",
+    "string-argv": "L"
+   }
+  },
+  {
+   "id": "O07",
+   "s": "a\nb",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/dash: 2: b: not found"
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/bash: line 2: b: command not found"
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "W",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "O08",
+   "s": "a & b",
+   "group": "operators and newlines (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/dash: 1: b: not found"
+   },
+   "bash": {
+    "argv": [
+     "a"
+    ],
+    "stderr": "/usr/bin/bash: line 1: b: command not found"
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a",
+      "&",
+      "b"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a",
+      "&",
+      "b"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "1:3: `&` is not a valid word"
+    },
+    "shell-quote": {
+     "argv": [
+      "a",
+      "<op:&>",
+      "b"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a",
+      "&",
+      "b"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a",
+      "&",
+      "b"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a",
+      "&",
+      "b"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a",
+      "&",
+      "b"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a",
+      "&",
+      "b"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "A",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X01",
+   "s": "$HOME",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "/nonexistent-home"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "/nonexistent-home"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "/nonexistent-home"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "$HOME"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X02",
+   "s": "\"$HOME\"",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "/nonexistent-home"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "/nonexistent-home"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "/nonexistent-home"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      ""
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "$HOME"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X03",
+   "s": "'$HOME'",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "$HOME"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "$HOME"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "$HOME"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "$HOME"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "X04",
+   "s": "${X}y",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "y"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "y"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "${X}y"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "${X}y"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "${X}y"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "y"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "y"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "${X}y"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "${X}y"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "${X}y"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "${X}y"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "${X}y"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X05",
+   "s": "$(echo x)",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "x"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "x"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "$(echo",
+      "x)"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "$(echo x)"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "$(echo",
+      "x)"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "unexpected command substitution at 1:1"
+    },
+    "shell-quote": {
+     "argv": [
+      "$",
+      "<op:(>",
+      "echo",
+      "x",
+      "<op:)>"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "$(echo",
+      "x)"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "$(echo",
+      "x)"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "$(echo",
+      "x)"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "$(echo",
+      "x)"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "$(echo",
+      "x)"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X06",
+   "s": "`echo x`",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "x"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "x"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "`echo x`"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    },
+    "mvdan sh Fields": {
+     "error": "unexpected command substitution at 1:1"
+    },
+    "shell-quote": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "`echo",
+      "x`"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "R",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X07",
+   "s": "~",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "/nonexistent-home"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "/nonexistent-home"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "~"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "~"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "~"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "/nonexistent-home"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "~"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "~"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "~"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "~"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "~"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "~"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X08",
+   "s": "~/x",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "/nonexistent-home/x"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "/nonexistent-home/x"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "/nonexistent-home/x"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "~/x"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "~/x"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "W",
+    "go-shellwords": "W",
+    "google/shlex": "W",
+    "mvdan sh Fields": "A",
+    "shell-quote": "W",
+    "shell-words (Rust)": "W",
+    "shlex (Python)": "W",
+    "shlex (Rust)": "W",
+    "shlex (npm)": "W",
+    "string-argv": "W"
+   }
+  },
+  {
+   "id": "X09",
+   "s": "*.txt",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "*.txt"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "*.txt"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "*.txt"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "*.txt"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  },
+  {
+   "id": "X10",
+   "s": "a=b c",
+   "group": "expansions (shell-only)",
+   "scored": false,
+   "open": null,
+   "dash": {
+    "argv": [
+     "a=b",
+     "c"
+    ]
+   },
+   "bash": {
+    "argv": [
+     "a=b",
+     "c"
+    ]
+   },
+   "out": {
+    "go-shellquote": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "go-shellwords": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "google/shlex": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "mvdan sh Fields": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "shell-quote": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "shell-words (Rust)": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "shlex (Python)": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "shlex (Rust)": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "shlex (npm)": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    },
+    "string-argv": {
+     "argv": [
+      "a=b",
+      "c"
+     ]
+    }
+   },
+   "cls": {
+    "go-shellquote": "A",
+    "go-shellwords": "A",
+    "google/shlex": "A",
+    "mvdan sh Fields": "A",
+    "shell-quote": "A",
+    "shell-words (Rust)": "A",
+    "shlex (Python)": "A",
+    "shlex (Rust)": "A",
+    "shlex (npm)": "A",
+    "string-argv": "A"
+   }
+  }
+ ],
+ "quote_rows": [
+  {
+   "id": "R01",
+   "s": "",
+   "quoted": {
+    "go-shellquote": "''",
+    "mvdan sh Quote": "''",
+    "shell-escape": "",
+    "shell-quote": "''",
+    "shell-words (Rust)": "''",
+    "shlex (Python)": "''",
+    "shlex (Rust)": "''",
+    "shlex (npm)": "''"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "FAIL",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       ""
+      ]
+     },
+     "bash": {
+      "argv": [
+       ""
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       ""
+      ]
+     },
+     "bash": {
+      "argv": [
+       ""
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": []
+     },
+     "bash": {
+      "argv": []
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       ""
+      ]
+     },
+     "bash": {
+      "argv": [
+       ""
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       ""
+      ]
+     },
+     "bash": {
+      "argv": [
+       ""
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       ""
+      ]
+     },
+     "bash": {
+      "argv": [
+       ""
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       ""
+      ]
+     },
+     "bash": {
+      "argv": [
+       ""
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       ""
+      ]
+     },
+     "bash": {
+      "argv": [
+       ""
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R02",
+   "s": "a b",
+   "quoted": {
+    "go-shellquote": "'a b'",
+    "mvdan sh Quote": "'a b'",
+    "shell-escape": "'a b'",
+    "shell-quote": "'a b'",
+    "shell-words (Rust)": "'a b'",
+    "shlex (Python)": "'a b'",
+    "shlex (Rust)": "'a b'",
+    "shlex (npm)": "'a b'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "a b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a b"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R03",
+   "s": "it's",
+   "quoted": {
+    "go-shellquote": "it\\'s",
+    "mvdan sh Quote": "\"it's\"",
+    "shell-escape": "'it'\\''s'",
+    "shell-quote": "\"it's\"",
+    "shell-words (Rust)": "'it'\\''s'",
+    "shlex (Python)": "'it'\"'\"'s'",
+    "shlex (Rust)": "\"it's\"",
+    "shlex (npm)": "'it'\"'\"'s'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "it's"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "it's"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R04",
+   "s": "a\"b",
+   "quoted": {
+    "go-shellquote": "a\\\"b",
+    "mvdan sh Quote": "'a\"b'",
+    "shell-escape": "'a\"b'",
+    "shell-quote": "'a\"b'",
+    "shell-words (Rust)": "'a\"b'",
+    "shlex (Python)": "'a\"b'",
+    "shlex (Rust)": "'a\"b'",
+    "shlex (npm)": "'a\"b'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "a\"b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\"b"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R05",
+   "s": "$HOME",
+   "quoted": {
+    "go-shellquote": "\\$HOME",
+    "mvdan sh Quote": "'$HOME'",
+    "shell-escape": "'$HOME'",
+    "shell-quote": "\\$HOME",
+    "shell-words (Rust)": "'$HOME'",
+    "shlex (Python)": "'$HOME'",
+    "shlex (Rust)": "'$HOME'",
+    "shlex (npm)": "'$HOME'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "$HOME"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$HOME"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R06",
+   "s": "`x`",
+   "quoted": {
+    "go-shellquote": "\\`x\\`",
+    "mvdan sh Quote": "'`x`'",
+    "shell-escape": "'`x`'",
+    "shell-quote": "\\`x\\`",
+    "shell-words (Rust)": "'`x`'",
+    "shlex (Python)": "'`x`'",
+    "shlex (Rust)": "'`x`'",
+    "shlex (npm)": "'`x`'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "`x`"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "`x`"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R07",
+   "s": "\\",
+   "quoted": {
+    "go-shellquote": "\\\\",
+    "mvdan sh Quote": "'\\'",
+    "shell-escape": "'\\'",
+    "shell-quote": "'\\'",
+    "shell-words (Rust)": "'\\'",
+    "shlex (Python)": "'\\'",
+    "shlex (Rust)": "\"\\\\\"",
+    "shlex (npm)": "'\\'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "\\"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\\"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R08",
+   "s": "a\nb",
+   "quoted": {
+    "go-shellquote": "'a\nb'",
+    "mvdan sh Quote": null,
+    "shell-escape": "'a\nb'",
+    "shell-quote": "'a\nb'",
+    "shell-words (Rust)": "'a\nb'",
+    "shlex (Python)": "'a\nb'",
+    "shlex (Rust)": "'a\nb'",
+    "shlex (npm)": "'a\nb'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "E",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "a\nb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\nb"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "a\nb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\nb"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "a\nb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\nb"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "a\nb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\nb"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "a\nb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\nb"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "a\nb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\nb"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "a\nb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\nb"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R09",
+   "s": "!",
+   "quoted": {
+    "go-shellquote": "\\!",
+    "mvdan sh Quote": "'!'",
+    "shell-escape": "'!'",
+    "shell-quote": "\\!",
+    "shell-words (Rust)": "!",
+    "shlex (Python)": "'!'",
+    "shlex (Rust)": "'!'",
+    "shlex (npm)": "'!'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "!"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "!"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R10",
+   "s": "*",
+   "quoted": {
+    "go-shellquote": "\\*",
+    "mvdan sh Quote": "'*'",
+    "shell-escape": "'*'",
+    "shell-quote": "\\*",
+    "shell-words (Rust)": "'*'",
+    "shlex (Python)": "'*'",
+    "shlex (Rust)": "'*'",
+    "shlex (npm)": "'*'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "*"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R11",
+   "s": "~",
+   "quoted": {
+    "go-shellquote": "\\~",
+    "mvdan sh Quote": "'~'",
+    "shell-escape": "'~'",
+    "shell-quote": "\\~",
+    "shell-words (Rust)": "~",
+    "shlex (Python)": "'~'",
+    "shlex (Rust)": "'~'",
+    "shlex (npm)": "'~'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "FAIL",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "~"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "~"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "~"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "~"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "~"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "~"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "~"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "~"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "/nonexistent-home"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "/nonexistent-home"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "~"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "~"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "~"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "~"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "~"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "~"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R12",
+   "s": "-n",
+   "quoted": {
+    "go-shellquote": "-n",
+    "mvdan sh Quote": "-n",
+    "shell-escape": "-n",
+    "shell-quote": "-n",
+    "shell-words (Rust)": "-n",
+    "shlex (Python)": "-n",
+    "shlex (Rust)": "-n",
+    "shlex (npm)": "-n"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "-n"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "-n"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R13",
+   "s": "héllo",
+   "quoted": {
+    "go-shellquote": "héllo",
+    "mvdan sh Quote": "héllo",
+    "shell-escape": "'héllo'",
+    "shell-quote": "héllo",
+    "shell-words (Rust)": "héllo",
+    "shlex (Python)": "'héllo'",
+    "shlex (Rust)": "'héllo'",
+    "shlex (npm)": "'héllo'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "héllo"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "héllo"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R14",
+   "s": "\t",
+   "quoted": {
+    "go-shellquote": "'\t'",
+    "mvdan sh Quote": null,
+    "shell-escape": "'\t'",
+    "shell-quote": "'\t'",
+    "shell-words (Rust)": "'\t'",
+    "shlex (Python)": "'\t'",
+    "shlex (Rust)": "'\t'",
+    "shlex (npm)": "'\t'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "E",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "\t"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\t"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "\t"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\t"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "\t"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\t"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "\t"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\t"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "\t"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\t"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "\t"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\t"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "\t"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\t"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R15",
+   "s": "'",
+   "quoted": {
+    "go-shellquote": "\\'",
+    "mvdan sh Quote": "\"'\"",
+    "shell-escape": "\\'",
+    "shell-quote": "\"'\"",
+    "shell-words (Rust)": "''\\'''",
+    "shlex (Python)": "''\"'\"''",
+    "shlex (Rust)": "\"'\"",
+    "shlex (npm)": "\"'\""
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "'"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "'"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R16",
+   "s": "\"",
+   "quoted": {
+    "go-shellquote": "\\\"",
+    "mvdan sh Quote": "'\"'",
+    "shell-escape": "'\"'",
+    "shell-quote": "'\"'",
+    "shell-words (Rust)": "'\"'",
+    "shlex (Python)": "'\"'",
+    "shlex (Rust)": "'\"'",
+    "shlex (npm)": "'\"'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "\""
+      ]
+     },
+     "bash": {
+      "argv": [
+       "\""
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R17",
+   "s": " lead",
+   "quoted": {
+    "go-shellquote": "' lead'",
+    "mvdan sh Quote": "' lead'",
+    "shell-escape": "' lead'",
+    "shell-quote": "' lead'",
+    "shell-words (Rust)": "' lead'",
+    "shlex (Python)": "' lead'",
+    "shlex (Rust)": "' lead'",
+    "shlex (npm)": "' lead'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       " lead"
+      ]
+     },
+     "bash": {
+      "argv": [
+       " lead"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R18",
+   "s": "#x",
+   "quoted": {
+    "go-shellquote": "#x",
+    "mvdan sh Quote": "'#x'",
+    "shell-escape": "'#x'",
+    "shell-quote": "\\#x",
+    "shell-words (Rust)": "'#x'",
+    "shlex (Python)": "'#x'",
+    "shlex (Rust)": "'#x'",
+    "shlex (npm)": "'#x'"
+   },
+   "cls": {
+    "go-shellquote": "FAIL",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": []
+     },
+     "bash": {
+      "argv": []
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "#x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "#x"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "#x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "#x"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "#x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "#x"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "#x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "#x"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "#x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "#x"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "#x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "#x"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "#x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "#x"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R19",
+   "s": ";",
+   "quoted": {
+    "go-shellquote": "\\;",
+    "mvdan sh Quote": "';'",
+    "shell-escape": "';'",
+    "shell-quote": "\\;",
+    "shell-words (Rust)": "';'",
+    "shlex (Python)": "';'",
+    "shlex (Rust)": "';'",
+    "shlex (npm)": "';'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       ";"
+      ]
+     },
+     "bash": {
+      "argv": [
+       ";"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R20",
+   "s": "a\\'b",
+   "quoted": {
+    "go-shellquote": "a\\\\\\'b",
+    "mvdan sh Quote": "\"a\\\\'b\"",
+    "shell-escape": "'a\\'\\''b'",
+    "shell-quote": "\"a\\\\'b\"",
+    "shell-words (Rust)": "'a\\'\\''b'",
+    "shlex (Python)": "'a\\'\"'\"'b'",
+    "shlex (Rust)": "\"a\\\\'b\"",
+    "shlex (npm)": "'a\\'\"'\"'b'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "a\\'b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\\'b"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R21",
+   "s": "$(x)",
+   "quoted": {
+    "go-shellquote": "\\$\\(x\\)",
+    "mvdan sh Quote": "'$(x)'",
+    "shell-escape": "'$(x)'",
+    "shell-quote": "\\$\\(x\\)",
+    "shell-words (Rust)": "'$(x)'",
+    "shlex (Python)": "'$(x)'",
+    "shlex (Rust)": "'$(x)'",
+    "shlex (npm)": "'$(x)'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "$(x)"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "$(x)"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R22",
+   "s": "{a,b}",
+   "quoted": {
+    "go-shellquote": "\\{a,b}",
+    "mvdan sh Quote": "'{a,b}'",
+    "shell-escape": "'{a,b}'",
+    "shell-quote": "\\{a\\,b\\}",
+    "shell-words (Rust)": "{a,b}",
+    "shlex (Python)": "'{a,b}'",
+    "shlex (Rust)": "'{a,b}'",
+    "shlex (npm)": "'{a,b}'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "FAIL-bash",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "{a,b}"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "{a,b}"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "{a,b}"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "{a,b}"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a",
+       "b"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "{a,b}"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "{a,b}"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "{a,b}"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "{a,b}"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R23",
+   "s": "a\rb",
+   "quoted": {
+    "go-shellquote": "a\rb",
+    "mvdan sh Quote": null,
+    "shell-escape": "'a\rb'",
+    "shell-quote": "'a\rb'",
+    "shell-words (Rust)": "a\rb",
+    "shlex (Python)": "'a\rb'",
+    "shlex (Rust)": "'a\rb'",
+    "shlex (npm)": "'a\rb'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "E",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "a\rb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\rb"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "a\rb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\rb"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "a\rb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\rb"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "a\rb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\rb"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "a\rb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\rb"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "a\rb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\rb"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "a\rb"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a\rb"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R24",
+   "s": " ",
+   "quoted": {
+    "go-shellquote": " ",
+    "mvdan sh Quote": null,
+    "shell-escape": "' '",
+    "shell-quote": "' '",
+    "shell-words (Rust)": " ",
+    "shlex (Python)": "' '",
+    "shlex (Rust)": "' '",
+    "shlex (npm)": "' '"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "E",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       " "
+      ]
+     },
+     "bash": {
+      "argv": [
+       " "
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       " "
+      ]
+     },
+     "bash": {
+      "argv": [
+       " "
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       " "
+      ]
+     },
+     "bash": {
+      "argv": [
+       " "
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       " "
+      ]
+     },
+     "bash": {
+      "argv": [
+       " "
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       " "
+      ]
+     },
+     "bash": {
+      "argv": [
+       " "
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       " "
+      ]
+     },
+     "bash": {
+      "argv": [
+       " "
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       " "
+      ]
+     },
+     "bash": {
+      "argv": [
+       " "
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R25",
+   "s": "=x",
+   "quoted": {
+    "go-shellquote": "=x",
+    "mvdan sh Quote": "'=x'",
+    "shell-escape": "'=x'",
+    "shell-quote": "\\=x",
+    "shell-words (Rust)": "'=x'",
+    "shlex (Python)": "=x",
+    "shlex (Rust)": "'=x'",
+    "shlex (npm)": "=x"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "=x"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "=x"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R26",
+   "s": "[a]",
+   "quoted": {
+    "go-shellquote": "\\[a]",
+    "mvdan sh Quote": "'[a]'",
+    "shell-escape": "'[a]'",
+    "shell-quote": "\\[a\\]",
+    "shell-words (Rust)": "'[a]'",
+    "shlex (Python)": "'[a]'",
+    "shlex (Rust)": "'[a]'",
+    "shlex (npm)": "'[a]'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "[a]"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "[a]"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R27",
+   "s": "a*",
+   "quoted": {
+    "go-shellquote": "a\\*",
+    "mvdan sh Quote": "'a*'",
+    "shell-escape": "'a*'",
+    "shell-quote": "a\\*",
+    "shell-words (Rust)": "'a*'",
+    "shlex (Python)": "'a*'",
+    "shlex (Rust)": "'a*'",
+    "shlex (npm)": "'a*'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "a*"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "a*"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R28",
+   "s": "?",
+   "quoted": {
+    "go-shellquote": "\\?",
+    "mvdan sh Quote": "'?'",
+    "shell-escape": "'?'",
+    "shell-quote": "\\?",
+    "shell-words (Rust)": "'?'",
+    "shlex (Python)": "'?'",
+    "shlex (Rust)": "'?'",
+    "shlex (npm)": "'?'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "?"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "?"
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "R29",
+   "s": "é b",
+   "quoted": {
+    "go-shellquote": "'é b'",
+    "mvdan sh Quote": "'é b'",
+    "shell-escape": "'é b'",
+    "shell-quote": "'é b'",
+    "shell-words (Rust)": "'é b'",
+    "shlex (Python)": "'é b'",
+    "shlex (Rust)": "'é b'",
+    "shlex (npm)": "'é b'"
+   },
+   "cls": {
+    "go-shellquote": "OK",
+    "mvdan sh Quote": "OK",
+    "shell-escape": "OK",
+    "shell-quote": "OK",
+    "shell-words (Rust)": "OK",
+    "shlex (Python)": "OK",
+    "shlex (Rust)": "OK",
+    "shlex (npm)": "OK"
+   },
+   "sh": {
+    "go-shellquote": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    },
+    "mvdan sh Quote": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    },
+    "shell-escape": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    },
+    "shell-quote": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    },
+    "shell-words (Rust)": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    },
+    "shlex (Python)": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    },
+    "shlex (Rust)": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    },
+    "shlex (npm)": {
+     "dash": {
+      "argv": [
+       "é b"
+      ]
+     },
+     "bash": {
+      "argv": [
+       "é b"
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

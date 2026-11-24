@@ -1,0 +1,4 @@
+node_modules/
+target/
+.bin-go-words
+__pycache__/

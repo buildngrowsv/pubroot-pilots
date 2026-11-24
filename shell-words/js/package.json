@@ -1,0 +1,1 @@
+{"name":"shell-words-js","private":true,"type":"module","dependencies":{"shell-escape":"0.2.0","shell-quote":"1.12.0","shlex":"3.0.1","string-argv":"0.4.0"}}

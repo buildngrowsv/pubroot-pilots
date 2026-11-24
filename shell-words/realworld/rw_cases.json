@@ -1,0 +1,9816 @@
+[
+{
+"id": "N0000",
+"s": "",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0001",
+"s": "./bin/update-authors.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0002",
+"s": "./publish_docs.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0003",
+"s": "./scripts/build.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0004",
+"s": "./scripts/download-compat-table.sh && node ./scripts/build-data.mjs && node ./scripts/build-modules-support.mjs && node ./scripts/build-bugfixes-targets.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0005",
+"s": "./scripts/iodd && npm run build && npm-run-all --parallel examples:browser:**",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0006",
+"s": "./scripts/prepare-site && vuepress build docs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0007",
+"s": "./scripts/prepare-site && vuepress dev docs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0008",
+"s": "./scripts/release.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0009",
+"s": "AJV_FULL_TEST=true npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0010",
+"s": "IGNORE_ONLY_IGNORES=1 npm run tap test/ignore.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0011",
+"s": "IGNORE_TEST_WIN32=1 npm run test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0012",
+"s": "JITI_DEBUG=1 JITI_JSX=1 lib/jiti-cli.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0013",
+"s": "JITI_JSX=1 node --test test/node-register.test.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0014",
+"s": "NODE_ENV=development browserify index.js -t loose-envify --standalone PropTypes -o prop-types.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0015",
+"s": "NODE_ENV=production browserify index.js -t loose-envify -t uglifyify --standalone PropTypes  -p bundle-collapser/plugin -o | uglifyjs --compress unused,dead_code -o prop-types.min.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0016",
+"s": "NODE_OPTIONS=--experimental-vm-modules ./node_modules/.bin/jest --coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0017",
+"s": "NODE_VER=0.10 MOCHA_VER=3 npm run testversion",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0018",
+"s": "NODE_VER=11 npm run testversion",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0019",
+"s": "NODE_VER=4 npm run testversion",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0020",
+"s": "NODE_VER=6 npm run testversion",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0021",
+"s": "NODE_VER=9 npm run testversion",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0022",
+"s": "TEST_ENV=browser vitest --browser",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0023",
+"s": "These package scripts are mostly here for convenience. Task running is handled by Nx at the root level.",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0024",
+"s": "WARN_EXIT=1 jest --coverage -w 2",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0025",
+"s": "_mocha \"test/*.ts\" --require ts-node/register --reporter dot --timeout 10000 --watch-extensions ts --watch --growl",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0026",
+"s": "airtap -- test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0027",
+"s": "airtap -- test/*.js test/node/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0028",
+"s": "airtap -- tests/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0029",
+"s": "airtap --local -- test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0030",
+"s": "airtap --local -- test/*.js test/node/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0031",
+"s": "api-documenter generate --input-folder ./tmp --output-folder ./api/docs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0032",
+"s": "api-extractor run --local",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0033",
+"s": "api-extractor run --verbose",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0034",
+"s": "api-extractor run --verbose --local",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0035",
+"s": "ascjs esm cjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0036",
+"s": "attw --pack",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0037",
+"s": "attw -P",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0038",
+"s": "aud --production",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0039",
+"s": "auto-changelog && git add CHANGELOG.md",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0040",
+"s": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0041",
+"s": "ava",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0042",
+"s": "ava && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0043",
+"s": "babel -o legacy.js index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0044",
+"s": "babel src --out-dir lib",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0045",
+"s": "babel src -d dist --copy-files",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0046",
+"s": "babel-node ./scripts/output_as_hack.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0047",
+"s": "bash ./scripts/bench.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0048",
+"s": "bash bench-docker/bench.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0049",
+"s": "bash benchmark.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0050",
+"s": "bash fixup.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0051",
+"s": "bash prof.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0052",
+"s": "bash scripts/benchmark-results-typedoc.sh",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0053",
+"s": "biome check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0054",
+"s": "biome check --error-on-warnings",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0055",
+"s": "biome check --error-on-warnings && vitest run --coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0056",
+"s": "biome check --fix .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0057",
+"s": "biome check --write --error-on-warnings",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0058",
+"s": "biome check --write --unsafe",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0059",
+"s": "biome check --write .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0060",
+"s": "biome check .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0061",
+"s": "biome ci ./src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0062",
+"s": "biome format --check .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0063",
+"s": "biome format --write",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0064",
+"s": "biome format --write .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0065",
+"s": "biome lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0066",
+"s": "browserify --debug perf/bracket-notation.js > perf/bundle.js && open perf/index.html",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0067",
+"s": "browserify --external tape tests.js > browserify-tests.js && tape browserify-tests.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0068",
+"s": "browserify -o browser.js -e index.js -s index --bare",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0069",
+"s": "browserify -r ./ | uglifyjs -c -m | gzip | wc -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0070",
+"s": "browserify -s base64js -r ./ | minify > base64js.min.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0071",
+"s": "browserify -t browserify-istanbul test/lib/browserify_adjustment.js test/test-*.js | obake --coverage | tap-spec",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0072",
+"s": "browserify -t browserify-istanbul test/run-browser.js | obake --coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0073",
+"s": "browserify index.js | size-table asynckit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0074",
+"s": "build-api --tsc tsconfig.lib.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0075",
+"s": "build-api --tsc tsconfig.lib.json --aec api-extractor.json --aec api-extractor.dom.json --aec api-extractor.react.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0076",
+"s": "bumpp -x \"pnpm run changelog\" --all",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0077",
+"s": "bun --bun test test/bun",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0078",
+"s": "bun --bun test test/native/bun.test.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0079",
+"s": "bun index.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0080",
+"s": "bun test --cwd tests/smoke/bun",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0081",
+"s": "bundt",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0082",
+"s": "c8 --100 tape test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0083",
+"s": "c8 --99 --check-coverage mocha --require ./test/bootstrap/index.js test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0084",
+"s": "c8 --check-coverage tape 'test/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0085",
+"s": "c8 --exclude lib/__tests --reporter=lcovonly npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0086",
+"s": "c8 --experimental-monocart mocha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0087",
+"s": "c8 --merge-async node --test --test-concurrency=1 --test-timeout=240000 \"test/!(fixtures|helpers)/*.js\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0088",
+"s": "c8 --reporter html npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0089",
+"s": "c8 --reporter=lcov --reporter=text jasmine spec/*spec.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0090",
+"s": "c8 --reporter=lcov --reporter=text mocha test/test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0091",
+"s": "c8 --reporter=text --reporter=html mocha test/*.cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0092",
+"s": "c8 --reporter=text --reporter=html mocha test/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0093",
+"s": "c8 --reporter=text --reporter=html mocha test/esm/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0094",
+"s": "c8 --reporter=text --reporter=html npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0095",
+"s": "c8 -c ./c8.json tap --rcfile=./tap.yml test/parallel/test-*.js test/ours/test-*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0096",
+"s": "c8 mocha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0097",
+"s": "c8 mocha --color --reporter progress --timeout 30000 \"tests/**/*.test.js\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0098",
+"s": "c8 mocha --enable-source-maps ./test/*.mjs --require ./test/before.mjs --timeout=24000 --check-leaks",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0099",
+"s": "c8 mocha --enable-source-maps ./test/esm/*.mjs --check-leaks",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0100",
+"s": "c8 mocha --reporter dot \"test/*.mjs\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0101",
+"s": "c8 mocha ./build/test/typescript/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0102",
+"s": "c8 mocha ./test/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0103",
+"s": "c8 mocha tests",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0104",
+"s": "c8 node --test --experimental-test-coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0105",
+"s": "c8 node --test --experimental-test-coverage test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0106",
+"s": "c8 node test/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0107",
+"s": "c8 npm run test:unit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0108",
+"s": "c8 npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0109",
+"s": "c8 report --check-coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0110",
+"s": "c8 report --reporter=text-lcov | coveralls",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0111",
+"s": "c8 tap",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0112",
+"s": "c8 tape 'test/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0113",
+"s": "cat ./coverage/lcov.info | coveralls",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0114",
+"s": "cat index.js | wc -c;cat min.js | wc -c;gzip -c9 min.js | wc -c;cat min.js | brotli | wc -c; cat es.js | brotli | wc -c; cat esm.js | brotli | wc -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0115",
+"s": "cd ..; npm run build:main",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0116",
+"s": "cd ..; npm run build:walk",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0117",
+"s": "cd ./test/resolver/multirepo && npm install && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0118",
+"s": "cd ./test/resolver/nested_symlinks && node mylib/sync && node mylib/async",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0119",
+"s": "cd benchmark && npm install",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0120",
+"s": "cd docs && npm run docs:dev",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0121",
+"s": "cd docs-slate && ./deploy.sh",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0122",
+"s": "cd docs-slate && bundle exec middleman server",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0123",
+"s": "cd docs-slate && bundle install",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0124",
+"s": "cd example/api && ts-node main.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0125",
+"s": "cd example/perf && ts-node main.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0126",
+"s": "cd examples/benchmark && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0127",
+"s": "cd examples/browser-rollup && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0128",
+"s": "cd examples/browser-webpack && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0129",
+"s": "cd examples/node-esmodules && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0130",
+"s": "cd examples/node-jest && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0131",
+"s": "cd examples/typescript && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0132",
+"s": "cd playground && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0133",
+"s": "cd src && ts-node index.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0134",
+"s": "cd test && karma start saucelabs-evergreen.conf.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0135",
+"s": "cd test && karma start saucelabs-ie.conf.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0136",
+"s": "cd test && karma start saucelabs-safari.conf.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0137",
+"s": "cd tests/pnpm && node check.js && pnpm install && pnpm exec tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0138",
+"s": "cd tests/pnpm && pnpm install && pnpm exec tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0139",
+"s": "changeset publish",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0140",
+"s": "changeset version",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0141",
+"s": "check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0142",
+"s": "check-side-effects --test integration/side-effects/side-effects.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0143",
+"s": "clear && node --enable-source-maps --test --watch",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0144",
+"s": "concurrently 'yarn:build:types' 'yarn:build:es' && yarn build:cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0145",
+"s": "concurrently 'yarn:build:types' 'yarn:build:es:cjs'",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0146",
+"s": "concurrently --success first --kill-others \"yarn test:wpt:browser:run\" \"yarn test:wpt:browser:server\"",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0147",
+"s": "conventional-changelog -i CHANGELOG.md -s",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0148",
+"s": "conventional-changelog -p angular -i CHANGELOG.md -s",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0149",
+"s": "covert test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0150",
+"s": "covert test/*.js --quiet",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0151",
+"s": "covert test/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0152",
+"s": "covert test/index.js --quiet",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0153",
+"s": "cp src/tiny-invariant.js.flow dist/tiny-invariant.cjs.js.flow",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0154",
+"s": "cross-env BABEL_ENV=cjs babel sources --extensions \".ts\" --ignore \"**/__tests__/**/*\" --out-dir dist/ --out-file-extension=.js --source-maps",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0155",
+"s": "cross-env BABEL_ENV=esm babel sources --extensions \".ts\" --ignore \"**/__tests__/**/*\" --out-dir dist/ --out-file-extension=.mjs --source-maps",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0156",
+"s": "cross-env NODE_ENV=production tsc -b",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0157",
+"s": "cross-env NODE_OPTIONS=--disallow-code-generation-from-strings mocha -b -u tdd test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0158",
+"s": "cross-env TS_NODE_PROJECT=spec/tsconfig.json mocha -r ts-node/register \"spec/**/*.spec.{ts,js}\" -R dot",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0159",
+"s": "cross-env TS_NODE_PROJECT=tsconfig.mocha.json mocha --config spec/support/.mocharc.js \"spec/**/*-spec.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0160",
+"s": "cross-env WASM=1 NODE_OPTIONS=--disallow-code-generation-from-strings mocha -b -u tdd test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0161",
+"s": "cross-env WASM_SYNC=1 NODE_OPTIONS=--disallow-code-generation-from-strings mocha -b -u tdd test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0162",
+"s": "cspell \"**\" \".github/**/*\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0163",
+"s": "cspell --cache --no-must-find-files --quiet \"**/*.*\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0164",
+"s": "cypress open --project tests",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0165",
+"s": "cypress run --project tests",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0166",
+"s": "del-cli dist declarations",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0167",
+"s": "deno task --cwd tests/smoke/deno test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0168",
+"s": "deno test -A --no-check test/native/deno.test.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0169",
+"s": "dependency-cruiser --validate .dependency-cruiser.json -x \"^node_modules\" dist/esm5",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0170",
+"s": "docker run -it --rm -v $(PWD):/usr/src/app -w /usr/src/app node:${NODE_VER} npm install mocha@${MOCHA_VER:-latest} && npm t",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0171",
+"s": "doctoc --github --notitle README.md CONTRIBUTING.md",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0172",
+"s": "doctoc --title '## Table of Contents' README.md && prettier --write README.md",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0173",
+"s": "downlevel-dts dist-types dist-types/ts3.4",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0174",
+"s": "doxygen doc/Doxyfile",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0175",
+"s": "echo \"Browser test is not working currently\" && exit -1 && npm-run-all build:spec:browser && opn spec/support/mocha-browser-runner.html",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0176",
+"s": "echo \"Browser test is not working currently\" && exit -1 && webpack --config spec/support/webpack.mocha.config.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0177",
+"s": "echo \"Error: no test specified\" && exit 1",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0178",
+"s": "echo \"See https://travis-ci.org/lodash-archive/lodash-cli for testing details.\"",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0179",
+"s": "echo \"See https://travis-ci.org/lodash/lodash-cli for testing details.\"",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0180",
+"s": "eclint check $(git ls-files | grep -Ev test\\/list-exports$ | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git')",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0181",
+"s": "eclint check $(git ls-files | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git' | grep -v dist/)",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0182",
+"s": "eclint check $(git ls-files | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git')",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0183",
+"s": "env SEMANTIC=major npm run release",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0184",
+"s": "env SEMANTIC=minor npm run release",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0185",
+"s": "env SEMANTIC=patch npm run release",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0186",
+"s": "es-shim-api --bound",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0187",
+"s": "es-shim-api --bound --property",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0188",
+"s": "esbuild --bundle --format=esm --sourcemap --outfile=live-viewer/whatwg-url.mjs index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0189",
+"s": "esbuild --bundle --format=esm --target=es2021 --keep-names --legal-comments=none --outfile=index.js lib/chai.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0190",
+"s": "eslint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0191",
+"s": "eslint \"**/*.{js,cjs,ts,mjs,jsx,tsx}\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0192",
+"s": "eslint \"./{src,tests}/**/*.ts{,x}\" --ext .js,.ts,.tsx -f visualstudio",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0193",
+"s": "eslint \"lib/**/*.ts\" \"spec/**/*.*s\" --ignore-pattern spec/JSON-Schema-Test-Suite",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0194",
+"s": "eslint \"src/**/*.*s\" \"spec/**/*.*s\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0195",
+"s": "eslint \"src/**/*.ts\" --cache",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0196",
+"s": "eslint && node tools/clang-format",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0197",
+"s": "eslint '{src,test}/**/*.ts'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0198",
+"s": "eslint *.js *.mjs *.cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0199",
+"s": "eslint *.js */*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0200",
+"s": "eslint *.js benchmark/*.js spec/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0201",
+"s": "eslint *.js lib/*.js test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0202",
+"s": "eslint *.js test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0203",
+"s": "eslint --cache --cache-location node_modules/.cache/.eslintcache --report-unused-disable-directives --ignore-path .gitignore .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0204",
+"s": "eslint --cache .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0205",
+"s": "eslint --ext .js,.ts .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0206",
+"s": "eslint --ext .js,.ts . --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0207",
+"s": "eslint --ext .ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0208",
+"s": "eslint --ext .ts ./src/**/*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0209",
+"s": "eslint --ext=.js,.mjs .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0210",
+"s": "eslint --ext=js,mjs .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0211",
+"s": "eslint --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0212",
+"s": "eslint --fix && node tools/clang-format --fix",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0213",
+"s": "eslint --fix *.js lib/ test/ --ignore-pattern 'test/source-map-tests/**'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0214",
+"s": "eslint --fix .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0215",
+"s": "eslint --fix . && prettier -w src lib test stubs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0216",
+"s": "eslint --fix lib/**/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0217",
+"s": "eslint --plugin markdown --ext js,md .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0218",
+"s": "eslint --report-unused-disable-directives \"{scripts,sources}/**/*.{js,ts}\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0219",
+"s": "eslint .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0220",
+"s": "eslint . && node ./scripts/lint-readme-list.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0221",
+"s": "eslint . && prettier --check --ignore-path .gitignore \"**/*.{json,md,yaml,yml}\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0222",
+"s": "eslint . && prettier -c src lib test stubs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0223",
+"s": "eslint . && prettier -c src test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0224",
+"s": "eslint . --cache",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0225",
+"s": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0226",
+"s": "eslint . --ext .ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0227",
+"s": "eslint . --ext mjs --ext js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0228",
+"s": "eslint . --ext mjs --ext js --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0229",
+"s": "eslint . --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0230",
+"s": "eslint . --fix && prettier -w src test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0231",
+"s": "eslint . --max-warnings 0",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0232",
+"s": "eslint . --report-unused-disable-directives",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0233",
+"s": "eslint config/ src/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0234",
+"s": "eslint index.js spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0235",
+"s": "eslint index.js test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0236",
+"s": "eslint lib scripts && node scripts/review-syntax-patch --lint && node scripts/update-docs --lint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0237",
+"s": "eslint lib/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0238",
+"s": "eslint lib/* bin/*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0239",
+"s": "eslint lib/**/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0240",
+"s": "eslint src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0241",
+"s": "eslint src/ tests/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0242",
+"s": "eslint src/**/*.js spec/**/*.js benchmark/**/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0243",
+"s": "eslint-generate-prerelease alpha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0244",
+"s": "eslint-generate-prerelease beta",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0245",
+"s": "eslint-generate-prerelease rc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0246",
+"s": "eslint-generate-release",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0247",
+"s": "eslint-publish-release",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0248",
+"s": "evalmd --eslint README.md",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0249",
+"s": "evalmd README.md",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0250",
+"s": "evalmd README.md && eclint check $(git ls-files | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git' | grep -v dist/)",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0251",
+"s": "evalmd README.md && eclint check $(git ls-files | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git')",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0252",
+"s": "evalmd README.md && es-shim-api --bound",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0253",
+"s": "find ./lib/**/__tests__ -name *.test.js | xargs mocha",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0254",
+"s": "find benchmarks/run -name '*.js' -exec benchmarks/start.sh {} \\;",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0255",
+"s": "for i in examples/*.js ; do node $i -h > ${i/.js/.txt}; done",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0256",
+"s": "genversion --template version-template.ejs --force lib/version.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0257",
+"s": "git clean -Xdf -e '!node_modules' .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0258",
+"s": "git clean -fdxe node_modules",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0259",
+"s": "git clean -xdf . -e node_modules",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0260",
+"s": "git config core.hooksPath hooks || true",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0261",
+"s": "git diff --diff-filter=ACMRT --cached --name-only '*.js' '*.jsx' | xargs zeit-eslint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0262",
+"s": "git diff --name-only | grep -q '^src/data/timeline.js$' && echo 'changes-available=TRUE' || echo 'changes-available=FALSE'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0263",
+"s": "git ls-files | xargs git check-attr spackled | grep -v 'unspecified$' | cut -d: -f1",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0264",
+"s": "git ls-files | xargs git check-attr spackled | grep -v 'unspecified$' | cut -d: -f1 | xargs git add",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0265",
+"s": "git push && git push --tags",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0266",
+"s": "git push --follow-tags origin HEAD && npm publish",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0267",
+"s": "git push --tags && yarn publish --new-version $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0268",
+"s": "git push origin && git push origin --tags",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0269",
+"s": "git push origin --all; git push origin --tags",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0270",
+"s": "git push origin --follow-tags",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0271",
+"s": "git submodule update --init --recursive",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0272",
+"s": "git submodule update --init --recursive --remote && cd test/web-platform-tests/tests && python wpt.py manifest --path ../wpt-manifest.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0273",
+"s": "git submodule update --init --recursive; node test/run-tests.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0274",
+"s": "git submodule update --recursive --remote && cd tests/wpt && python wpt.py manifest --path ../wpt-jsdom/wpt-manifest.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0275",
+"s": "grunt benchmark",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0276",
+"s": "grunt build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0277",
+"s": "grunt template",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0278",
+"s": "grunt template && babel cssesc.js -o cssesc.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0279",
+"s": "gts clean",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0280",
+"s": "gts fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0281",
+"s": "gts fix && npm run fix:js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0282",
+"s": "gts lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0283",
+"s": "gts lint && npm run check:js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0284",
+"s": "gulp clear && cross-env NODE_ENV=production rollup -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0285",
+"s": "gulp dist",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0286",
+"s": "gulp lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0287",
+"s": "gulp test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0288",
+"s": "gulp travis",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0289",
+"s": "gulp version",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0290",
+"s": "hereby bench:async",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0291",
+"s": "hereby bench:product:async",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0292",
+"s": "hereby bench:product:stream",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0293",
+"s": "hereby bench:product:sync",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0294",
+"s": "hereby bench:regression:async",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0295",
+"s": "hereby bench:regression:stream",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0296",
+"s": "hereby bench:regression:sync",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0297",
+"s": "hereby bench:sync",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0298",
+"s": "http-server -p 1336",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0299",
+"s": "husky",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0300",
+"s": "husky && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0301",
+"s": "husky install",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0302",
+"s": "husky install || true",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0303",
+"s": "if [ -d .git ]; then npm run build; fi",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0304",
+"s": "if [ -d .git ]; then npx lefthook install; fi",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0305",
+"s": "installed-check -v -i installed-check -i npm-run-all2 -i knip -i rollup-plugin-dts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0306",
+"s": "is-ci test:coverage test:watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0307",
+"s": "is-node-modern 8 && npm run lint || is-node-not-modern 8",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0308",
+"s": "istanbul check-coverage --statement 100 --branch 100 --function 100",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0309",
+"s": "istanbul check-coverage coverage/coverage*.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0310",
+"s": "istanbul cover --print=none node_modules/mocha/bin/_mocha -- --reporter dot test/ && istanbul report lcov text-summary",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0311",
+"s": "istanbul cover --print=none node_modules/mocha/bin/_mocha -- --reporter spec test/ && istanbul report lcovonly text-summary",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0312",
+"s": "istanbul cover --report 'html' --verbose --dir 'coverage' 'tests/tests.js'",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0313",
+"s": "istanbul cover --report html node_modules/.bin/_mocha tests -- -u exports -R spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0314",
+"s": "istanbul cover --reporter=json tape -- 'test/test-*.js' | tap-spec",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0315",
+"s": "istanbul cover --verbose --dir 'coverage' 'tests/tests.js' && coveralls < coverage/lcov.info'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0316",
+"s": "istanbul cover ./node_modules/tape/bin/tape ./test/integration/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0317",
+"s": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0318",
+"s": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0319",
+"s": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0320",
+"s": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0321",
+"s": "istanbul cover test.js && istanbul check-cover --statements 100 --branches 100",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0322",
+"s": "istanbul cover test/run.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0323",
+"s": "istanbul cover test/unit-tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0324",
+"s": "istanbul report",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0325",
+"s": "istanbul report cobertura && codecov < ./coverage/cobertura-coverage.xml",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0326",
+"s": "istanbul report lcov text",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0327",
+"s": "jasmine",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0328",
+"s": "jest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0329",
+"s": "jest --ci --config scripts/jest/jest.ci.config.js --runInBand",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0330",
+"s": "jest --config config/jest.config.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0331",
+"s": "jest --config scripts/jest/jest.config.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0332",
+"s": "jest --config scripts/jest/jest.coverage.config.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0333",
+"s": "jest --coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0334",
+"s": "jest --env node --coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0335",
+"s": "jest --runInBand",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0336",
+"s": "jest --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0337",
+"s": "jest dist.*.ts --runInBand",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0338",
+"s": "jest spec/*.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0339",
+"s": "jest spec/*.ts --coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0340",
+"s": "jest src.*.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0341",
+"s": "jscs *.js */*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0342",
+"s": "jsdoc -c ./support/jsdoc/jsdoc.json && node support/jsdoc/jsdoc-fix-html.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0343",
+"s": "jshint estraverse.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0344",
+"s": "jshint index.js test/test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0345",
+"s": "jshint lib/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0346",
+"s": "karma start",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0347",
+"s": "karma start --single-run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0348",
+"s": "karma start karma.worker.js --single-run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0349",
+"s": "knip",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0350",
+"s": "lint-staged",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0351",
+"s": "make -C benchmark",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0352",
+"s": "make -C benchmark profile",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0353",
+"s": "make lib/lexer.wasm ; node build.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0354",
+"s": "make test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0355",
+"s": "markdownlint \"**/*.md\" \".github/**/*.md\" --rules sentences-per-line",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0356",
+"s": "matcha bench.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0357",
+"s": "matcha benchmark.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0358",
+"s": "mkdir -p ./coverage; c8 report --reporter=text-lcov > ./coverage/lcov.info",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0359",
+"s": "mkdir -p dist && browserify browserShim.js > dist/browser.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0360",
+"s": "mkdirp dist && browserify --standalone Qs -g unassertify -g @browserify/envify -g [@browserify/uglifyify --mangle.keep_fnames --compress.keep_fnames --format.indent_level=1 --compress.arrows=false --compress.passes=4 --compress.typeofs=false] -p common-shakeify -p bundle-collapser/plugin lib/index.js > dist/qs.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0361",
+"s": "mocha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0362",
+"s": "mocha \"out/**/*.e2e.js\" -s 0",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0363",
+"s": "mocha \"out/**/*.e2e.js\" -s 0 --grep \"\\(async\\)\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0364",
+"s": "mocha \"out/**/*.e2e.js\" -s 0 --grep \"\\(stream\\)\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0365",
+"s": "mocha \"out/**/*.e2e.js\" -s 0 --grep \"\\(sync\\)\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0366",
+"s": "mocha \"out/**/*.spec.js\" -s 0",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0367",
+"s": "mocha \"tests/**/*.test.cjs\" && mocha \"tests/**/*.test.js\" && npm run test:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0368",
+"s": "mocha \"tests/**/*.test.js\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0369",
+"s": "mocha && node benchmark.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0370",
+"s": "mocha 'test/**/*-test.js' && eslint src test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0371",
+"s": "mocha --check-leaks --bail --reporter spec test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0372",
+"s": "mocha --check-leaks --reporter spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0373",
+"s": "mocha --color --reporter progress --timeout 30000 \"tests/**/*.test.cjs\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0374",
+"s": "mocha --compilers coffee:coffee-script -R spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0375",
+"s": "mocha --compilers coffee:coffee-script/register",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0376",
+"s": "mocha --compilers js:babel-register",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0377",
+"s": "mocha --inspect-brk",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0378",
+"s": "mocha --reporter dot",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0379",
+"s": "mocha --reporter dot \"test/*.mjs\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0380",
+"s": "mocha --reporter spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0381",
+"s": "mocha --reporter spec --bail --check-leaks test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0382",
+"s": "mocha --reporter spec --bail test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0383",
+"s": "mocha --reporter spec --check-leaks --bail test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0384",
+"s": "mocha --reporter spec --check-leaks --grep .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0385",
+"s": "mocha --reporter spec --check-leaks --inspect --inspect-brk test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0386",
+"s": "mocha --reporter spec --check-leaks test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0387",
+"s": "mocha --reporter spec --inspect --inspect-brk test/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0388",
+"s": "mocha --reporter spec test/test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0389",
+"s": "mocha --reporter tap --check-leaks --grep .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0390",
+"s": "mocha --require ./runtime 'test/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0391",
+"s": "mocha --require chai/register-assert --require @babel/register tests",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0392",
+"s": "mocha --require coffeescript/register ./test/**/*.coffee",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0393",
+"s": "mocha --require should --reporter spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0394",
+"s": "mocha --require test/support/env --reporter spec --check-leaks test/ test/acceptance/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0395",
+"s": "mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0396",
+"s": "mocha --require ts-node/register/transpile-only \"test/*.ts\" --reporter dot --timeout 10000",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0397",
+"s": "mocha --throw-deprecation test/*.integration.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0398",
+"s": "mocha --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0399",
+"s": "mocha -R dot test/api-tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0400",
+"s": "mocha -R progress -c \"tests/lib/*.cjs\" && mocha -R progress -c \"tests/lib/**/*.js\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0401",
+"s": "mocha -u mocha-qunit-ui dist/es5/uri.all.js tests/tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0402",
+"s": "mocha ./tests/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0403",
+"s": "mocha cjs/__tests --require lib/__tests/helpers/setup.js --reporter progress",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0404",
+"s": "mocha dist/__tests --reporter progress",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0405",
+"s": "mocha lib/__tests --require lib/__tests/helpers/setup.js --reporter progress",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0406",
+"s": "mocha scripts/eslint-plugin/tests/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0407",
+"s": "mocha spec -R spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0408",
+"s": "mocha spec/*.spec.js -R spec",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0409",
+"s": "mocha test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0410",
+"s": "mocha test.js test.node.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0411",
+"s": "mocha test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0412",
+"s": "mocha test/api/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0413",
+"s": "mocha test/test.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0414",
+"s": "mocha test/to-port-to-wpts/ && mocha test/to-port-to-wpts/level1/ && mocha test/to-port-to-wpts/level2/ && mocha test/to-port-to-wpts/level3/",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0415",
+"s": "mocha test/web-platform-tests/run-tuwpts.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0416",
+"s": "mocha test/web-platform-tests/run-wpts.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0417",
+"s": "mocha tests",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0418",
+"s": "mocha tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0419",
+"s": "mocha tests/retrier.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0420",
+"s": "mocha tests/wpt-jsdom/run-wpts.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0421",
+"s": "mv READ.ME.md.bak README.md",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0422",
+"s": "mv README.md.bak READ.ME.md.bak",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0423",
+"s": "node  --es-staging --harmony test && node  --es-staging --harmony test/corejs && node --es-staging --harmony test/uglified",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0424",
+"s": "node --allow-natives-syntax optimization-test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0425",
+"s": "node --allow-natives-syntax performance/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0426",
+"s": "node --enable-source-maps --test --experimental-test-coverage --test-coverage-exclude=\"**/__tests__/**\" --test-coverage-lines=94 --test-coverage-branches=94 --test-coverage-functions=96 --test-reporter=spec src/__tests__/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0427",
+"s": "node --enable-source-maps -i -e 'YAML=require(\"./dist/index.js\");const{parse,parseDocument,parseAllDocuments}=YAML'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0428",
+"s": "node --experimental-config-file=node.config.json --test --test-reporter=spec --experimental-test-coverage 'test/test-*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0429",
+"s": "node --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info ./test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0430",
+"s": "node --experimental-vm-modules test/smoke/browser-run.cjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0431",
+"s": "node --expose-gc bench/index.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0432",
+"s": "node --expose-gc benchmark/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0433",
+"s": "node --expose-gc benchmark/index.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0434",
+"s": "node --expose-internals scripts/generate-string-width-ranges.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0435",
+"s": "node --expose_gc test/benchmark-tokenizer.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0436",
+"s": "node --import=tsx scripts/write-decode-map.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0437",
+"s": "node --import=tsx scripts/write-encode-map.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0438",
+"s": "node --max-old-space-size=12288 ./node_modules/.bin/xo --ignores=lint-processors/fixtures/**/*.d.ts '**/*.{js,ts,md}'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0439",
+"s": "node --max-old-space-size=4096 --hash-seed=1 --random-seed=1 --no-opt --predictable --predictable-gc-schedule --interpreted-frames-native-stack --allow-natives-syntax --expose-gc --no-concurrent-sweeping ./benchmark/run.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0440",
+"s": "node --prof test/profile.js && mv isolate*.log v8.log && node-tick-processor",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0441",
+"s": "node --stack-size=5120 test/ses-compat",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0442",
+"s": "node --test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0443",
+"s": "node --test \"test/**/*.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0444",
+"s": "node --test && ./test/exports_test.sh",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0445",
+"s": "node --test && npm run check",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0446",
+"s": "node --test && npm run check:type:ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0447",
+"s": "node --test './test/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0448",
+"s": "node --test --enable-source-maps --watch dist-node/test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0449",
+"s": "node --test --enable-source-maps dist-node/test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0450",
+"s": "node --test --experimental-strip-types test/native/node.test.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0451",
+"s": "node --test --experimental-test-coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0452",
+"s": "node --test --experimental-test-coverage \"test/**/*.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0453",
+"s": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=test/lcov.info \"test/*.js\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0454",
+"s": "node --test --experimental-test-coverage --test-timeout=3000 --test-coverage-lines=100 --test-coverage-functions=100 --test-coverage-branches=100 './test/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0455",
+"s": "node --test --test-only \"test/**/*.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0456",
+"s": "node --test --test-reporter=spec 'test/test-*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0457",
+"s": "node --test --test-update-snapshots './test/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0458",
+"s": "node --test ./test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0459",
+"s": "node --test src/__tests__/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0460",
+"s": "node --test test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0461",
+"s": "node --test test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0462",
+"s": "node --test test/tests.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0463",
+"s": "node -e \"console.log(require('./package.json').version)\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0464",
+"s": "node -e \"fs.copyFileSync('dist/retrier.d.ts', 'dist/retrier.d.cts')\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0465",
+"s": "node -e \"fs.cpSync('dist/esm/types.d.ts', 'dist/cjs/types.d.cts')\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0466",
+"s": "node -e \"fs.rmSync('dist', { recursive: true, force: true })\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0467",
+"s": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0468",
+"s": "node -e \"require('fs').rmSync('types', { recursive: true, force: true })\" && tsc -p tsconfig.types.json && prettier --log-level warn --write \"types/**/*.d.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0469",
+"s": "node -expose_gc test/benchmark-parser.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0470",
+"s": "node -p \"process.env.npm_command\" | npx \"dt-clean@^1.2.2\" --auto",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0471",
+"s": "node ../../../scripts/align-api-deps.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0472",
+"s": "node ../../../scripts/align-api-deps.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0473",
+"s": "node ../../../scripts/peer-api-check.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0474",
+"s": "node ../../../scripts/version-update.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0475",
+"s": "node ../../esbuild.mjs gen-mapping.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0476",
+"s": "node ../../esbuild.mjs sourcemap-codec.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0477",
+"s": "node ../../esbuild.mjs trace-mapping.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0478",
+"s": "node ../../mts-types.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0479",
+"s": "node ../../scripts/align-api-deps.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0480",
+"s": "node ../../scripts/compilation/es_cjs.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0481",
+"s": "node ../../scripts/compilation/inline",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0482",
+"s": "node ../../scripts/pack.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0483",
+"s": "node ../../scripts/peer-api-check.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0484",
+"s": "node ../../scripts/version-update.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0485",
+"s": "node ../../tools/build-cts.js dist/esm/index.d.ts dist/cjs/index.d.cts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0486",
+"s": "node ../../tools/build-cts.js dist/esm/index.d.ts dist/cjs/index.d.cts && node -e \"fs.cpSync('dist/esm/types.d.ts', 'dist/cjs/types.d.cts')\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0487",
+"s": "node ../../tools/dedupe-types.js dist/cjs/index.cjs dist/esm/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0488",
+"s": "node ../scripts/align-api-deps.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0489",
+"s": "node ../scripts/peer-api-check.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0490",
+"s": "node ../scripts/version-update.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0491",
+"s": "node ./benchmark/perfTest3.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0492",
+"s": "node ./examples/server.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0493",
+"s": "node ./node_modules/.bin/mocha test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0494",
+"s": "node ./node_modules/@typescript/native/bin/tsc -p tsconfig.declarations.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0495",
+"s": "node ./node_modules/@typescript/native/bin/tsc -p tsconfig.minimum-lib.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0496",
+"s": "node ./node_modules/prettier/bin/prettier.cjs --cache --ignore-unknown .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0497",
+"s": "node ./sandbox/server.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0498",
+"s": "node ./test-require.cjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0499",
+"s": "node ./tools/make-umd-bundle.js && node ./tools/make-closure-core.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0500",
+"s": "node Makefile.js checkRuleExamples",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0501",
+"s": "node Makefile.js cypress",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0502",
+"s": "node Makefile.js fuzz",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0503",
+"s": "node Makefile.js generatePrerelease -- alpha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0504",
+"s": "node Makefile.js generatePrerelease -- beta",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0505",
+"s": "node Makefile.js generatePrerelease -- rc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0506",
+"s": "node Makefile.js generateRelease -- latest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0507",
+"s": "node Makefile.js generateRelease -- maintenance",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0508",
+"s": "node Makefile.js generateRuleIndexPage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0509",
+"s": "node Makefile.js gensite",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0510",
+"s": "node Makefile.js lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0511",
+"s": "node Makefile.js lint -- fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0512",
+"s": "node Makefile.js lintDocsJS",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0513",
+"s": "node Makefile.js lintDocsJS -- fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0514",
+"s": "node Makefile.js perf",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0515",
+"s": "node Makefile.js publishRelease",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0516",
+"s": "node Makefile.js test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0517",
+"s": "node Makefile.js test && npm run test:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0518",
+"s": "node Makefile.js webpack",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0519",
+"s": "node automated-update.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0520",
+"s": "node benchclean.cjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0521",
+"s": "node benchmark",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0522",
+"s": "node benchmark.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0523",
+"s": "node benchmark/bench.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0524",
+"s": "node benchmark/bench.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0525",
+"s": "node benchmark/call-familySync.js && sleep 1 && node benchmark/call-isNonGlibcLinuxSync.js && sleep 1 && node benchmark/call-versionSync.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0526",
+"s": "node benchmark/compare.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0527",
+"s": "node benchmark/detect-libc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0528",
+"s": "node benchmark/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0529",
+"s": "node benchmark/runner.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0530",
+"s": "node benchmark/setup.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0531",
+"s": "node benchmarks/config-resolution.bench.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0532",
+"s": "node benchmarks/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0533",
+"s": "node bin",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0534",
+"s": "node build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0535",
+"s": "node build.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0536",
+"s": "node build.js ; babel dist/lexer.mjs -o dist/lexer.js ; terser dist/lexer.js -o dist/lexer.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0537",
+"s": "node build.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0538",
+"s": "node build/build.mjs 18.19.0",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0539",
+"s": "node build/package.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0540",
+"s": "node build/unicode.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0541",
+"s": "node build/wasm.js --local",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0542",
+"s": "node compat && node compat --win32",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0543",
+"s": "node demo/server.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0544",
+"s": "node dist/scripts/build.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0545",
+"s": "node docs/prepare-docs.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0546",
+"s": "node fixtures/view-codes.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0547",
+"s": "node generation/gen-typings.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0548",
+"s": "node heapdump.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0549",
+"s": "node index.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0550",
+"s": "node install.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0551",
+"s": "node integration/systemjs/systemjs-compatibility-spec.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0552",
+"s": "node node_modules/buildman/index.js --all",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0553",
+"s": "node operations/spackle 1 && node operations/build-unicode.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0554",
+"s": "node perf/bracket-notation.js && node perf/concat.js && node perf/copy-big.js && node perf/copy.js && node perf/new-big.js && node perf/new.js && node perf/readDoubleBE.js && node perf/readFloatBE.js && node perf/readUInt32LE.js && node perf/slice.js && node perf/writeFloatBE.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0555",
+"s": "node readable-stream-test/runner-prepare.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0556",
+"s": "node script/build.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0557",
+"s": "node scripts/benchmark.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0558",
+"s": "node scripts/build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0559",
+"s": "node scripts/build.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0560",
+"s": "node scripts/bundle",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0561",
+"s": "node scripts/bundle-node-gyp.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0562",
+"s": "node scripts/esm-to-cjs.cjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0563",
+"s": "node scripts/fetch-apache && node scripts/fetch-iana && node scripts/fetch-nginx",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0564",
+"s": "node scripts/fetch-apache.js && node scripts/fetch-iana.js && node scripts/fetch-nginx.js && node scripts/fetch-node.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0565",
+"s": "node scripts/generate-data.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0566",
+"s": "node scripts/generate-parse-fixtures.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0567",
+"s": "node scripts/generate-types.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0568",
+"s": "node scripts/generateMappingTable.mjs && node scripts/generateRegexes.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0569",
+"s": "node scripts/get-latest-platform-tests.js && node scripts/transform.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0570",
+"s": "node scripts/get-latest-platform-tests.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0571",
+"s": "node scripts/getLatestTests.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0572",
+"s": "node scripts/parse-perf.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0573",
+"s": "node scripts/prepublish.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0574",
+"s": "node scripts/review-syntax-patch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0575",
+"s": "node scripts/test-vms.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0576",
+"s": "node scripts/test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0577",
+"s": "node scripts/test.js --experimental-test-coverage --test-coverage-include=\"lib/**\" --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage/lcov.info",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0578",
+"s": "node scripts/test.js --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0579",
+"s": "node scripts/transform.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0580",
+"s": "node scripts/update-docs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0581",
+"s": "node scripts/update.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0582",
+"s": "node scripts/update.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0583",
+"s": "node scripts/update.mjs --job=audioWorklet",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0584",
+"s": "node scripts/update.mjs --job=browser",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0585",
+"s": "node scripts/update.mjs --job=builtin",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0586",
+"s": "node scripts/update.mjs --job=builtin-yearly",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0587",
+"s": "node scripts/update.mjs --job=bunBuiltin",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0588",
+"s": "node scripts/update.mjs --job=denoBuiltin",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0589",
+"s": "node scripts/update.mjs --job=jest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0590",
+"s": "node scripts/update.mjs --job=nodeBuiltin",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0591",
+"s": "node scripts/update.mjs --job=serviceworker",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0592",
+"s": "node scripts/update.mjs --job=sharedWorker",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0593",
+"s": "node scripts/update.mjs --job=shelljs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0594",
+"s": "node scripts/update.mjs --job=vitest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0595",
+"s": "node scripts/update.mjs --job=worker",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0596",
+"s": "node scripts/verify-tuwpts-in-browser.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0597",
+"s": "node scripts/version-history.js && git add HISTORY.md",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0598",
+"s": "node server.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0599",
+"s": "node sort-vendors.js && node create-typings.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0600",
+"s": "node spec/legacy-tests/legacy-test.cjs; node dist/cli.cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0601",
+"s": "node spec/module-test-spec.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0602",
+"s": "node support/build-dist.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0603",
+"s": "node support/build_fixtures.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0604",
+"s": "node support/get-yaml-test-suite.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0605",
+"s": "node support/get-yaml-test-suite.mjs update",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0606",
+"s": "node test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0607",
+"s": "node test-browser.js && node test-node.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0608",
+"s": "node test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0609",
+"s": "node test.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0610",
+"s": "node test/bench.mjs && deno -A test/bench.mjs && bun --bun test/bench.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0611",
+"s": "node test/browser/runner-browser.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0612",
+"s": "node test/browser/runner-node.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0613",
+"s": "node test/browser/runner-prepare.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0614",
+"s": "node test/check-complexity.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0615",
+"s": "node test/check-version.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0616",
+"s": "node test/corejs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0617",
+"s": "node test/downstream.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0618",
+"s": "node test/grammar-tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0619",
+"s": "node test/hostile-environment-tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0620",
+"s": "node test/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0621",
+"s": "node test/index.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0622",
+"s": "node test/performance/benchmark/public-benchmarks.js | tee .benchmark-results.txt",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0623",
+"s": "node test/regression-tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0624",
+"s": "node test/run.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0625",
+"s": "node test/ses-compat",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0626",
+"s": "node test/uglified",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0627",
+"s": "node test/unit-tests.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0628",
+"s": "node test/verify-line-ending.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0629",
+"s": "node tests/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0630",
+"s": "node tests/pkg.test.cjs && node tests/pkg.test.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0631",
+"s": "node tools/check-emfile-handling.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0632",
+"s": "node tools/fetch-docs-links.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0633",
+"s": "node tools/generate-fixtures.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0634",
+"s": "node tools/generate-identifier-regex.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0635",
+"s": "node tools/generate-xhtml-entities.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0636",
+"s": "node tools/sync-docs.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0637",
+"s": "node tools/test-ecosystem/index.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0638",
+"s": "node tools/test-ecosystem/update.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0639",
+"s": "node tools/update-readme.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0640",
+"s": "node tools/update-rule-type-headers.js --check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0641",
+"s": "node-gyp configure build -C test --debug",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0642",
+"s": "node-gyp rebuild -C benchmark",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0643",
+"s": "node-gyp rebuild -C test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0644",
+"s": "node-gyp rebuild -C test --debug",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0645",
+"s": "node-gyp rebuild -C test --debug && NODE_API_BUILD_CONFIG=Debug node ./test/index.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0646",
+"s": "node_modules/prettier/bin/prettier.cjs --cache --ignore-unknown .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0647",
+"s": "nodemon -w \"src/\" -w \"spec-dtslint/\" -e ts -x npm run dtslint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0648",
+"s": "nodemon -w \"src/\" -w \"spec/\" -e ts -x npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0649",
+"s": "not-in-publish || npm run prepublishOnly",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0650",
+"s": "not-in-publish || yarn build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0651",
+"s": "npm --prefix scripts/benchmark run benchmark --",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0652",
+"s": "npm --prefix tests/module/cjs run test:module:cjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0653",
+"s": "npm --prefix tests/module/esm run test:module:esm",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0654",
+"s": "npm --prefix tests/smoke/cjs run test:smoke:cjs:mocha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0655",
+"s": "npm --prefix tests/smoke/esm run test:smoke:esm:vitest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0656",
+"s": "npm audit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0657",
+"s": "npm audit --production",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0658",
+"s": "npm ci --prefix scripts/benchmark",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0659",
+"s": "npm i && npm run build && cd ./benchmark && npm i && node ./",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0660",
+"s": "npm i && npm run build && npm link && cd ./benchmark && npm link --legacy-peer-deps ajv && npm i && node ./jtd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0661",
+"s": "npm i @mdn/browser-compat-data@latest web-features@latest -D",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0662",
+"s": "npm install --no-save --prefix __tests__ && npm install --no-save --prefix __tests__/__fixtures__",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0663",
+"s": "npm install --package-lock --package-lock-only",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0664",
+"s": "npm install --prefix benchmark/extra/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0665",
+"s": "npm install -g chomp ; chomp build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0666",
+"s": "npm install -g chomp ; chomp test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0667",
+"s": "npm link && npm link ajv-keywords && npm run eslint && npm run test-cov",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0668",
+"s": "npm pack && mv iconv-lite-*.tgz test/webpack/iconv-lite.tgz && cd test/webpack && npm install && npm run test && rm iconv-lite.tgz",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0669",
+"s": "npm pack --dry-run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0670",
+"s": "npm publish",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0671",
+"s": "npm run --silent audit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0672",
+"s": "npm run --silent lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0673",
+"s": "npm run --silent spackled | xargs rm || true",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0674",
+"s": "npm run --silent test:shams:getownpropertysymbols && npm run --silent test:shams:corejs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0675",
+"s": "npm run --silent tests-only",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0676",
+"s": "npm run -s build:tsc -- --removeComments false && dts-bundle --name @eslint-community/regexpp --main .temp/index.d.ts --out ../index.d.ts && prettier --write index.d.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0677",
+"s": "npm run -s clean",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0678",
+"s": "npm run -s format:check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0679",
+"s": "npm run -s format:prettier -- --check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0680",
+"s": "npm run -s format:prettier -- --write",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0681",
+"s": "npm run _lint:check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0682",
+"s": "npm run _version:generate && npm run prepare-pr && git add --renormalize .",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0683",
+"s": "npm run analyze-coverage && npm run check-coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0684",
+"s": "npm run bench:product:async && npm run bench:product:sync && npm run bench:product:stream",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0685",
+"s": "npm run bench:product:async && npm run bench:regression:async",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0686",
+"s": "npm run bench:product:stream && npm run bench:regression:stream",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0687",
+"s": "npm run bench:product:sync && npm run bench:regression:sync",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0688",
+"s": "npm run bench:regression:async && npm run bench:regression:sync && npm run bench:regression:stream",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0689",
+"s": "npm run bench:sync && npm run bench:async",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0690",
+"s": "npm run benchmark-parser && npm run benchmark-tokenizer",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0691",
+"s": "npm run biome:check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0692",
+"s": "npm run build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0693",
+"s": "npm run build && c8 npm run test:unit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0694",
+"s": "npm run build && cat dist/lexer.js | gzip -9f | wc -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0695",
+"s": "npm run build && changeset publish",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0696",
+"s": "npm run build && git add package.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0697",
+"s": "npm run build && npm run eslint && npm run test-ts && npm run test-cov",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0698",
+"s": "npm run build && npm run fix-cli-permissions && npm run test:format && npm run test:lint && npm run test:jasmine && npm run test:jasmine-browser",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0699",
+"s": "npm run build && npm run lint && npm run dts-check && tap run tests/**/*.js --allow-empty-coverage --disable-coverage --timeout=60000",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0700",
+"s": "npm run build && npm run spec:get && c8 --include 'dist/js-yaml.mjs' --include 'src/**' -r text -r html -r lcov node --test 'test/core/**/*.test.mjs' 'test/spec/*.test.mjs'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0701",
+"s": "npm run build && npm run spec:get && node test/spec/spec.test.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0702",
+"s": "npm run build && npm run test:dist && npm run test:cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0703",
+"s": "npm run build && npm run test:unit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0704",
+"s": "npm run build && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0705",
+"s": "npm run build && npm test -- run && npm run _api:update && npm run _docs:generate && npm run _format:fix && npm run _lint:fix && npm run _lint:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0706",
+"s": "npm run build && npx runmd --output=README.md README_js.md",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0707",
+"s": "npm run build && rimraf __tests-built__ && BABEL_ENV=test babel __tests__ --out-dir __tests-built__",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0708",
+"s": "npm run build && tape test/*.js && jsmd readme.md && npm run test:typescript",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0709",
+"s": "npm run build && uglifyjs --compress --mangle -- ./dist/umd.js | gzip -c | wc -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0710",
+"s": "npm run build && xo && node --test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0711",
+"s": "npm run build -- --no-pack",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0712",
+"s": "npm run build -- --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0713",
+"s": "npm run build -- -m",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0714",
+"s": "npm run build -- -w",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0715",
+"s": "npm run build-package && git add package.json5",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0716",
+"s": "npm run build:cjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0717",
+"s": "npm run build:cjs && npm run build:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0718",
+"s": "npm run build:cjs -- -m && npm run build:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0719",
+"s": "npm run build:dts && npm run build:rollup",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0720",
+"s": "npm run build:esnext && npm run build:es5 && npm run build:es5:min",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0721",
+"s": "npm run build:node && jest --config config/jest.config.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0722",
+"s": "npm run build:node && npm run build:browser",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0723",
+"s": "npm run build:package && npm run lint && npm run test && npm run test:circular && npm run dtslint && npm run test:side-effects",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0724",
+"s": "npm run build:parser && npm run build:browser",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0725",
+"s": "npm run build:tsc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0726",
+"s": "npm run build:tsc -- --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0727",
+"s": "npm run build:types",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0728",
+"s": "npm run bundle && npm run esm-to-cjs --",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0729",
+"s": "npm run bundle && npm run test:dist",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0730",
+"s": "npm run check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0731",
+"s": "npm run check-version && npm run tslint && npm run code-style && npm run complexity",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0732",
+"s": "npm run check:all && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0733",
+"s": "npm run check:type && npm run check:lint && npm run check:format",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0734",
+"s": "npm run check:type:js && npm run check:type:ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0735",
+"s": "npm run cjs && npm run rollup:esm && npm run rollup:es && npm run rollup:babel && npm run min && npm run test && npm run size",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0736",
+"s": "npm run clean",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0737",
+"s": "npm run clean && npm run compile && npm run lint && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0738",
+"s": "npm run clean && npm run compile -- -- --sourceMap --watch",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0739",
+"s": "npm run clean && npm run compile:watch",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0740",
+"s": "npm run clean && npm test && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0741",
+"s": "npm run clean && tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0742",
+"s": "npm run compile",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0743",
+"s": "npm run compile && npm run all-tests && npm run browser-tests",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0744",
+"s": "npm run compile && npm run all-tests && npm run saucelabs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0745",
+"s": "npm run compile && npm run all-tests && npm run static-analysis && npm run dynamic-analysis",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0746",
+"s": "npm run compile && npm run generate-fixtures && cd test && karma start --single-run",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0747",
+"s": "npm run compile -- -p tsconfig.test.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0748",
+"s": "npm run coverage-quiet",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0749",
+"s": "npm run demo && gh-pages -d demo -f",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0750",
+"s": "npm run demo:publish",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0751",
+"s": "npm run doc && gh-pages -d doc -f",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0752",
+"s": "npm run docs && git diff README.md",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0753",
+"s": "npm run docs && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0754",
+"s": "npm run eslint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0755",
+"s": "npm run eslint && nyc npm run test-spec",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0756",
+"s": "npm run eslint -- --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0757",
+"s": "npm run esm-to-cjs && npm run test:cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0758",
+"s": "npm run fetch && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0759",
+"s": "npm run fix:code && npm run build:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0760",
+"s": "npm run fix:code && npm run fmt",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0761",
+"s": "npm run fix:lint && npm run fix:format",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0762",
+"s": "npm run fmt:base -- --check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0763",
+"s": "npm run fmt:base -- --log-level warn --write",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0764",
+"s": "npm run fmt:check -- --write",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0765",
+"s": "npm run format",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0766",
+"s": "npm run format:es && npm run format:biome",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0767",
+"s": "npm run gh-doc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0768",
+"s": "npm run jscs && npm run eslint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0769",
+"s": "npm run json-tests && npm run prettier:check && npm run eslint && npm link && npm link --legacy-peer-deps ajv && npm run test-cov",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0770",
+"s": "npm run lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0771",
+"s": "npm run lint && c8 -r text -r html node --test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0772",
+"s": "npm run lint && es-shim-api --bound",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0773",
+"s": "npm run lint && flow",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0774",
+"s": "npm run lint && node --test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0775",
+"s": "npm run lint && node support/build_demo.mjs && npm run doc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0776",
+"s": "npm run lint && node test/test.js && npm run build:types && npm run test:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0777",
+"s": "npm run lint && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0778",
+"s": "npm run lint && npm run build && npm run type-check && node --test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0779",
+"s": "npm run lint && npm run build && npm run type-check && npm run spec:get && node --test 'test/core/**/*.test.mjs' 'test/spec/*.test.mjs'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0780",
+"s": "npm run lint && npm run build:types && npm run test:types && node test/test.js | faucet",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0781",
+"s": "npm run lint && npm run fmt:check",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0782",
+"s": "npm run lint && npm run mocha",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0783",
+"s": "npm run lint && npm run mocha-node-test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0784",
+"s": "npm run lint && npm run ts && npm run build && npm run test:cases && npm run compat",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0785",
+"s": "npm run lint && npm run typecheck && npm run coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0786",
+"s": "npm run lint && npm run unit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0787",
+"s": "npm run lint && npm run unit && npm run type",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0788",
+"s": "npm run lint && npm run unit && npm run unit-esm",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0789",
+"s": "npm run lint && npm run unit:report",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0790",
+"s": "npm run lint && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0791",
+"s": "npm run lint -- --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0792",
+"s": "npm run lint-and-test && npm run build-and-test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0793",
+"s": "npm run lint:code && npm run lint:types && npm run fmt:check",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0794",
+"s": "npm run lint:code && npm run lint:types && npm run lint:types-test && npm run fmt:check && npm run lint:spellcheck",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0795",
+"s": "npm run lint:code -- --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0796",
+"s": "npm run lint:es && npm run lint:biome",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0797",
+"s": "npm run lint:es && npm run lint:biome && npm run lint:tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0798",
+"s": "npm run lint:es && npm run lint:ts && npm run lint:biome",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0799",
+"s": "npm run lint:es -- --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0800",
+"s": "npm run lint:js && npm run lint:format",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0801",
+"s": "npm run mocha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0802",
+"s": "npm run mocha-node-test && npm run mocha-browser-test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0803",
+"s": "npm run node010 && npm run node4 && npm run node6 && npm run node9 && npm run node11",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0804",
+"s": "npm run posttest -- --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0805",
+"s": "npm run prepare",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0806",
+"s": "npm run prepare && npm run wpt:init",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0807",
+"s": "npm run pretest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0808",
+"s": "npm run pretest:browser && bundlewatch --config bundlewatch.config.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0809",
+"s": "npm run prettier:check && npm run build && npm run eslint && npm run test-cov",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0810",
+"s": "npm run preversion",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0811",
+"s": "npm run production",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0812",
+"s": "npm run profclean && TEST_REGEN=1 node --no-warnings --loader ts-node/esm test/00-setup.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0813",
+"s": "npm run restore-readme",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0814",
+"s": "npm run rollup",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0815",
+"s": "npm run saucelabs-evergreen && npm run saucelabs-ie && npm run saucelabs-safari",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0816",
+"s": "npm run tap test/*.test.js -- --coverage --100",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0817",
+"s": "npm run tap test/*.test.js -- --no-check-coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0818",
+"s": "npm run tap test/git-check-ignore.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0819",
+"s": "npm run tap test/ignore.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0820",
+"s": "npm run tap test/others.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0821",
+"s": "npm run tdd:node",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0822",
+"s": "npm run test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0823",
+"s": "npm run test && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0824",
+"s": "npm run test && npm run lint && npm run format:check",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0825",
+"s": "npm run test -- --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0826",
+"s": "npm run test -- --watch-extensions ts --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0827",
+"s": "npm run test-cov",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0828",
+"s": "npm run test-coverage && genhtml lcov.info -o coverage/",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0829",
+"s": "npm run test-coverage && npm run -s build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0830",
+"s": "npm run test-node && npm run test-chrome",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0831",
+"s": "npm run test-spec -- --inspect-brk",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0832",
+"s": "npm run test-wasm && npm run test-wasm-sync && npm run test-js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0833",
+"s": "npm run test:browser:chromium && npm run test:browser:firefox && npm run test:browser:webkit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0834",
+"s": "npm run test:cjs && npm run test:esm && nyc report",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0835",
+"s": "npm run test:cover",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0836",
+"s": "npm run test:coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0837",
+"s": "npm run test:format -- --write",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0838",
+"s": "npm run test:implementation && npm run test:shim",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0839",
+"s": "npm run test:index && npm run test:corejs && npm run test:uglified",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0840",
+"s": "npm run test:lint:prettier -- --write",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0841",
+"s": "npm run test:lint:ts -- --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0842",
+"s": "npm run test:multirepo && npx npm@'>= 10.2' audit --production",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0843",
+"s": "npm run test:node && npm run test:browser && npm run lint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0844",
+"s": "npm run test:only",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0845",
+"s": "npm run test:only -- --collectCoverageFrom=\"src/**/*.js\" --coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0846",
+"s": "npm run test:only -- --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0847",
+"s": "npm run test:side-effects -- --update",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0848",
+"s": "npm run test:stock && npm run test:shams",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0849",
+"s": "npm run test:ts && npm run test:16",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0850",
+"s": "npm run test:ts:16 && npm run test:cjs:16 && npm run test:mjs:16",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0851",
+"s": "npm run test:types",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0852",
+"s": "npm run test:types && npm run test:cjs && npm run test:esm",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0853",
+"s": "npm run test:types && npm run test:types:5.3 && npm run test:types:5.x && npm run test:types:7.x",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0854",
+"s": "npm run test:types && npm run test:unit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0855",
+"s": "npm run test:types -- --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0856",
+"s": "npm run test:unit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0857",
+"s": "npm run test:unit && npm run test:build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0858",
+"s": "npm run test:unit -- --coverage-report=html",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0859",
+"s": "npm run test:vi && npm run lint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0860",
+"s": "npm run test:vitest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0861",
+"s": "npm run tests-only",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0862",
+"s": "npm run tests-only && npm run browser && npm run report",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0863",
+"s": "npm run tests-only && npm run test:corejs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0864",
+"s": "npm run tests-only && npm run test:harmony",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0865",
+"s": "npm run tests-only && npm run test:ses",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0866",
+"s": "npm run tests-only --",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0867",
+"s": "npm run tsc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0868",
+"s": "npm run update-readme",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0869",
+"s": "npm run verify-line-ending && npm run generate-fixtures && npm run unit-tests && npm run api-tests && npm run grammar-tests && npm run regression-tests && npm run hostile-env-tests",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0870",
+"s": "npm run-s -n build test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0871",
+"s": "npm run-script lint && npm run-script unit-test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0872",
+"s": "npm t",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0873",
+"s": "npm t && npm run lint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0874",
+"s": "npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0875",
+"s": "npm test && npm run -s build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0876",
+"s": "npm test && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0877",
+"s": "npm test && npm run build && npm run demo",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0878",
+"s": "npm test && npm run build && npm run doc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0879",
+"s": "npm test && npm run codecov && npm run downstream",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0880",
+"s": "npm test && npm run test:types && npm run test:dist && npm run test:dist:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0881",
+"s": "npm test --coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0882",
+"s": "npm update @globby/main-branch glob-stream fast-glob && node bench.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0883",
+"s": "npm version ${SEMANTIC:-patch} -m \"Release %s\" && git push && git push --tags && npm publish",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0884",
+"s": "npm-run-all --continue-on-error test:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0885",
+"s": "npm-run-all --parallel examples:node:**",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0886",
+"s": "npm-run-all --parallel lint_*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0887",
+"s": "npm-run-all -p \"build:**\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0888",
+"s": "npm-run-all build:clean compile build:global && node ./tools/prepare-package.js && node ./tools/generate-alias.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0889",
+"s": "npm-run-all fix:code fmt",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0890",
+"s": "npm-run-all lint:code lint:types fmt:check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0891",
+"s": "npmignore --auto --commentLines=auto",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0892",
+"s": "npmignore --auto --commentLines=autogenerated",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0893",
+"s": "npmignore --auto --commentLines=autogenerated && cp node_modules/is-core-module/core.json ./lib/ ||:",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0894",
+"s": "npmignore --auto --commentLines=autogenerated && npm run dist",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0895",
+"s": "npx --yes http-server docs/generated",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0896",
+"s": "npx -p @typescript/native-preview@latest -y -- tsgo -p tsconfig.types.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0897",
+"s": "npx -p typescript@5.3 -y -- tsc -p tsconfig.types-legacy.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0898",
+"s": "npx -p typescript@5.x -y -- tsc -p tsconfig.types.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0899",
+"s": "npx -y jsr@latest publish --dry-run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0900",
+"s": "npx @pkgjs/support validate",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0901",
+"s": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0902",
+"s": "npx eslint --fix lib test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0903",
+"s": "npx eslint .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0904",
+"s": "npx eslint lib",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0905",
+"s": "npx jasmine",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0906",
+"s": "npx jasmine-browser-runner runSpecs --config ./spec/support/jasmine-browser.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0907",
+"s": "npx jsr@latest publish --dry-run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0908",
+"s": "npx npm@\">= 10.2\" audit --production",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0909",
+"s": "npx npm@\">=10.2\" audit --production",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0910",
+"s": "npx npm@'>= 10.2' audit --production",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0911",
+"s": "npx npm@'>=10.2' audit --production",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0912",
+"s": "npx npmpub",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0913",
+"s": "npx prettier --check .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0914",
+"s": "npx tsx --env-file-if-exists=.env scripts/refresh-downstream.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0915",
+"s": "npx tsx scripts/create-timeline.ts; npx prettier ./src/data/timeline.js --write",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0916",
+"s": "npx tsx scripts/refresh-static.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0917",
+"s": "nub ../../scripts/check-versions.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0918",
+"s": "nub ../../scripts/write-stub-package-jsons.ts && nub exec --node biome check --write .",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0919",
+"s": "nub exec --node vitest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0920",
+"s": "nub exec --node vitest run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0921",
+"s": "nub exec --node zshy --project tsconfig.build.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0922",
+"s": "nyc --exclude examples --exclude test --exclude benchmarks --reporter=html --reporter=text npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0923",
+"s": "nyc --exclude examples --exclude test --exclude benchmarks --reporter=lcovonly --reporter=text npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0924",
+"s": "nyc --exclude test --reporter=html --reporter=text npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0925",
+"s": "nyc --exclude test --reporter=lcovonly --reporter=text npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0926",
+"s": "nyc --lines 100 --branches 100 --functions 100 --check-coverage --reporter=text tape test/test.js test/promise.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0927",
+"s": "nyc --reporter=html --reporter=cobertura --reporter=text tape test/test.js test/promise.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0928",
+"s": "nyc --reporter=html --reporter=text npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0929",
+"s": "nyc --reporter=lcov --reporter=text mocha --throw-deprecation test/*.test.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0930",
+"s": "nyc --reporter=lcov --reporter=text npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0931",
+"s": "nyc --reporter=lcovonly --reporter=text npm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0932",
+"s": "nyc --silent --no-clean mocha --experimental-loader=./hook.mjs 'test/node/*.test.mjs'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0933",
+"s": "nyc --silent mocha 'test/**/*.test.ts' --exclude 'test/browser/**/*.ts'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0934",
+"s": "nyc --silent node test.js | tap -c -",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0935",
+"s": "nyc _mocha \"test/*.ts\" --reporter dot --timeout 10000",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0936",
+"s": "nyc ava --verbose",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0937",
+"s": "nyc cross-env TS_NODE_PROJECT=spec/tsconfig.json mocha -r ts-node/register 'spec/codegen.spec.ts' -R spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0938",
+"s": "nyc mocha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0939",
+"s": "nyc mocha 'test/**/*.test.ts'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0940",
+"s": "nyc mocha 'test/**/*.test.ts' --exclude 'test/browser/**/*.ts'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0941",
+"s": "nyc mocha test/**/*.test.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0942",
+"s": "nyc node --harmony --es-staging test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0943",
+"s": "nyc node --stack-size=5120 test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0944",
+"s": "nyc node test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0945",
+"s": "nyc node test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0946",
+"s": "nyc node test/native",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0947",
+"s": "nyc node test/shams/core-js.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0948",
+"s": "nyc node test/shams/get-own-property-symbols.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0949",
+"s": "nyc node test/shimmed",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0950",
+"s": "nyc npm run mocha",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0951",
+"s": "nyc npm run mocha && npm run lint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0952",
+"s": "nyc npm run mocha-node-test -- --grep @nycinvalid --invert",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0953",
+"s": "nyc npm run test-spec",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0954",
+"s": "nyc npm run test:all",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0955",
+"s": "nyc report",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0956",
+"s": "nyc report --reporter=text-lcov > coverage.lcov",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0957",
+"s": "nyc report --reporter=text-lcov | coveralls",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0958",
+"s": "nyc tape 'test/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0959",
+"s": "nyc tape 'test/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0960",
+"s": "nyc tape --strict -r @babel/register '__tests__/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0961",
+"s": "nyc tape --strict -r array.from/auto '__tests-built__/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0962",
+"s": "nyc tape test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0963",
+"s": "nyc tape test-core-js.js 'test/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0964",
+"s": "nyc tape test-corejs.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0965",
+"s": "nyc yarn _test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0966",
+"s": "nz",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0967",
+"s": "nz && tsc --exactOptionalPropertyTypes",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0968",
+"s": "opener ./coverage/lcov-report/index.html",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0969",
+"s": "output=$(npx baseline-browser-mapping 2>&1); path=$(printf '%s\n' \"$output\" | sed -n 's/^.*: \\(.*\\): Permission denied$/\\1/p; t; s/^\\(.*\\): Permission denied$/\\1/p'); if [ -n \"$path\" ]; then echo \"Permission denied for: $path\"; echo \"Removing $path ...\"; rm -rf \"$path\"; else echo \"$output\"; fi",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0970",
+"s": "oxfmt",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0971",
+"s": "oxfmt --check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0972",
+"s": "oxfmt --check src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0973",
+"s": "oxfmt src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0974",
+"s": "oxlint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0975",
+"s": "oxlint --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0976",
+"s": "oxlint --fix src test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0977",
+"s": "oxlint --max-warnings 0 src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0978",
+"s": "php php/test.php",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0979",
+"s": "pkgfiles --sort=name",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0980",
+"s": "playwright test ./test/functional",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0981",
+"s": "playwright-test ./test/* --runner tape --browser=chromium",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0982",
+"s": "playwright-test ./test/* --runner tape --browser=firefox",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0983",
+"s": "playwright-test ./test/* --runner tape --browser=webkit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0984",
+"s": "pnpm -w exec format",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0985",
+"s": "pnpm -w exec nx attw-check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0986",
+"s": "pnpm -w exec nx build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0987",
+"s": "pnpm -w exec nx generate-lib repo",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0988",
+"s": "pnpm -w exec nx lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0989",
+"s": "pnpm -w exec nx run scope-manager:generate-lib",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0990",
+"s": "pnpm -w exec nx test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0991",
+"s": "pnpm -w exec nx typecheck",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0992",
+"s": "pnpm -w exec nx typecheck:tsc6",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0993",
+"s": "pnpm -w run format",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0994",
+"s": "pnpm -w run generate-configs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0995",
+"s": "pnpm build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N0996",
+"s": "pnpm build && pnpm test && changelogen --release --push && npm publish",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0997",
+"s": "pnpm clean && pnpm rolldown -c rolldown.config.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0998",
+"s": "pnpm clean && pnpm rspack",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N0999",
+"s": "pnpm clean && pnpm rspack --watch",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1000",
+"s": "pnpm dedupe --check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1001",
+"s": "pnpm exec nx build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1002",
+"s": "pnpm lint && pnpm test:types && vitest run --coverage && pnpm test:node-register && pnpm test:bun && pnpm test:native",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1003",
+"s": "pnpm lint && vitest run --coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1004",
+"s": "pnpm lint:ci && vitest --run --sequence.setupFiles=list --coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1005",
+"s": "pnpm run build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1006",
+"s": "pnpm run build && vitest bench --run --reporter=verbose",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1007",
+"s": "pnpm test && pnpm build && changelogen --release && pnpm publish && git push --follow-tags",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1008",
+"s": "pnpm test:native:bun && pnpm test:native:node && pnpm test:native:deno",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1009",
+"s": "premove dist && rollup -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1010",
+"s": "premove dist-cjs dist-es dist-types",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1011",
+"s": "premove dist-es && tsc -p tsconfig.es.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1012",
+"s": "premove dist-types && tsc -p tsconfig.types.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1013",
+"s": "premove dist-types && yarn g:tsc -p tsconfig.types.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1014",
+"s": "premove dist-types/ts3.4 && downlevel-dts dist-types dist-types/ts3.4 && node scripts/downlevel",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1015",
+"s": "prettier \"**/*\" --ignore-unknown",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1016",
+"s": "prettier \"**/*.js\" \"**/*.ts\" --list-different",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1017",
+"s": "prettier \"**/*.{js,ts,json,yml,yaml}\" --check",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1018",
+"s": "prettier \"**/*.{js,ts,json,yml,yaml}\" --write",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1019",
+"s": "prettier \"**/*.{json,js,md,ts,yml}\" --write --ignore-path .prettierignore",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1020",
+"s": "prettier \"{**/*,*}.{js,json,md,yml,css,ts}\" --list-different",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1021",
+"s": "prettier --check '{src,test}/**/*.ts'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1022",
+"s": "prettier --check .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1023",
+"s": "prettier --check . && eslint . --ext .ts,.js --max-warnings 0",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1024",
+"s": "prettier --check lib",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1025",
+"s": "prettier --check src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1026",
+"s": "prettier --ignore-path ../../.gitignore --write .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1027",
+"s": "prettier --list-different \"./**/*.{json,yaml,js,ts}\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1028",
+"s": "prettier --list-different \"./**/*.{md,json,yaml,js,ts}\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1029",
+"s": "prettier --write \"./**/*.{json,yaml,js,ts}\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1030",
+"s": "prettier --write \"./**/*.{md,json,yaml,js,ts}\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1031",
+"s": "prettier --write .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1032",
+"s": "prettier --write . && eslint . --ext .ts,.js --max-warnings 0 --fix",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1033",
+"s": "prettier --write . --log-level warn",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1034",
+"s": "prettier --write . --loglevel warn",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1035",
+"s": "prettier --write . --loglevel warn --ignore-path ../../.prettierignore --cache",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1036",
+"s": "prettier --write build.ts **/*.{ts,js,json,md}",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1037",
+"s": "prettier --write index.ts test/index.test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1038",
+"s": "prettier --write lib",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1039",
+"s": "prettier --write src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1040",
+"s": "prettier --write src __tests__ benchmarks",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1041",
+"s": "prettier --write src benchmark scripts .github/funding.yml .github/workflows package.json README.md",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1042",
+"s": "prettier --write src/**/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1043",
+"s": "prettier -c .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1044",
+"s": "prettier -c src lib test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1045",
+"s": "prettier -w .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1046",
+"s": "prettier -w lib test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1047",
+"s": "prettier -w src lib test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1048",
+"s": "prettier .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1049",
+"s": "prettier . --check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1050",
+"s": "prettier . --write",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1051",
+"s": "publint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1052",
+"s": "publint --strict",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1053",
+"s": "python python/test.py",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1054",
+"s": "radix-build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1055",
+"s": "release-it",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1056",
+"s": "rimraf -g \"./tests/fixtures/**/*.shot\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1057",
+"s": "rimraf ./dist && tsdown src/index.ts --format cjs,esm --dts --clean",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1058",
+"s": "rimraf ./dist ./coverage ./node_modules",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1059",
+"s": "rimraf ./node_modules ./coverage ./test/testdb.sqlite ./dist",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1060",
+"s": "rimraf ./tests/wpt && yarn wpt:init",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1061",
+"s": "rimraf .nyc_output coverage index.* dist",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1062",
+"s": "rimraf .temp index.*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1063",
+"s": "rimraf build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1064",
+"s": "rimraf build && npm:watch:tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1065",
+"s": "rimraf build && tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1066",
+"s": "rimraf build && tsc -p tsconfig.test.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1067",
+"s": "rimraf build && tsc -p tsconfig.test.json && cross-env NODE_ENV=test npm run build:cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1068",
+"s": "rimraf coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1069",
+"s": "rimraf coverage && npm run cover:types && npm run cover:report && open-cli coverage/lcov-report/index.html",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1070",
+"s": "rimraf coverage test/tmp",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1071",
+"s": "rimraf dist",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1072",
+"s": "rimraf dist build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1073",
+"s": "rimraf dist out-tsc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1074",
+"s": "rimraf dist out-tsc dom react",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1075",
+"s": "rimraf dist out-tsc test-results",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1076",
+"s": "rimraf dist types",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1077",
+"s": "rimraf dist/ coverage/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1078",
+"s": "rimraf dist/ src/generated/ coverage/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1079",
+"s": "rimraf lib",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1080",
+"s": "rimraf lib && tsc -p .",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1081",
+"s": "rimraf out",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1082",
+"s": "rimraf tsconfig.build.tsbuildinfo",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1083",
+"s": "rimraf {tsconfig.tsbuildinfo,out}",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1084",
+"s": "rm -f v8.log profile.txt",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1085",
+"s": "rm -fr dist && tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1086",
+"s": "rm -rf ./test/web-platform-tests/tests && npm run wpt:init",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1087",
+"s": "rm -rf .browser && npm run bundle && scripts/prepare-tests && karma start",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1088",
+"s": "rm -rf build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1089",
+"s": "rm -rf bundle && node ./scripts/bundle.js ajv ajv7 ajv7 && node ./scripts/bundle.js 2019 ajv2019 ajv2019 && node ./scripts/bundle.js 2020 ajv2020 ajv2020 && node ./scripts/bundle.js jtd ajvJTD ajvJTD",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1090",
+"s": "rm -rf bundle && rollup -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1091",
+"s": "rm -rf coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1092",
+"s": "rm -rf coverage-html && mkdir coverage-html && gcovr -e test --merge-mode-functions merge-use-line-max --html-nested ./coverage-html/index.html test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1093",
+"s": "rm -rf coverage-xml && mkdir coverage-xml && gcovr -e test --merge-mode-functions merge-use-line-max --xml -o ./coverage-xml/coverage-cxx.xml test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1094",
+"s": "rm -rf dist",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1095",
+"s": "rm -rf dist && rollup -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1096",
+"s": "rm -rf dist && tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1097",
+"s": "rm -rf dist && tsc && cp -r lib/refs dist && rm dist/refs/json-schema-2019-09/index.ts && rm dist/refs/json-schema-2020-12/index.ts && rm dist/refs/jtd-schema.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1098",
+"s": "rm -rf dist && yarn test && rollup -c",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1099",
+"s": "rm -rf dist node_modules",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1100",
+"s": "rm -rf dist; mkdir dist; tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1101",
+"s": "rm -rf dist; npx prettier . --write; rollup -c; rm -rf ./dist/scripts/expose-data.d.ts ./dist/cli.d.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1102",
+"s": "rm -rf index.js coverage/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1103",
+"s": "rm -rf libcjs/ libesm/ dist/ coverage/ .nyc_output/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1104",
+"s": "rm -rf spec/_json/*.js && node scripts/jsontests",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1105",
+"s": "rm package-lock.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1106",
+"s": "rm parser.js && pegjs --cache --format umd -o \"parser.js\" \"grammar.pegjs\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1107",
+"s": "rollup --config rollup/babel.config.js && sed -i.bck 's/^var /self./' index.js && rm -rf index.js.bck",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1108",
+"s": "rollup --config rollup/es.config.js && sed -i.bck 's/^var /self./' es.js && rm -rf es.js.bck",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1109",
+"s": "rollup --config rollup/esm.config.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1110",
+"s": "rollup --sourcemap -c config/rollup.node-config.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1111",
+"s": "rollup -c",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1112",
+"s": "rollup -c && cp dist/esnext/uri.d.ts dist/es5/uri.all.d.ts && npm run build:es5:fix-sourcemap",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1113",
+"s": "rollup -c && node -e \"fs.copyFileSync('./lib/types/index.d.ts', './dist/eslintrc.d.cts')\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1114",
+"s": "rollup -c && npm run build:dedupe-types && tsc -p tsconfig.esm.json && npm run build:cts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1115",
+"s": "rollup -c && npm run build:dedupe-types && tsc -p tsconfig.esm.json && npm run build:cts && npm run build:std__path",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1116",
+"s": "rollup -c && tsc && npm run build:cts-types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1117",
+"s": "rollup -c --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1118",
+"s": "rollup -c -w",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1119",
+"s": "rollup -c config/rollup.browser-config.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1120",
+"s": "rollup -c config/rollup.node-config.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1121",
+"s": "rollup -c rollup.config.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1122",
+"s": "rollup -c rollup.config.js && npm run build:types && node -e \"fs.rmSync('dist/lib', { recursive: true })\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1123",
+"s": "rollup -c rollup.config.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1124",
+"s": "rollup -c rollup.std__path-config.js && node fix-std__path-imports",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1125",
+"s": "rollup is-plain-object.js --format cjs --file dist/is-plain-object.js && rollup is-plain-object.js --format esm --file dist/is-plain-object.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1126",
+"s": "run-p lint:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1127",
+"s": "run-p test:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1128",
+"s": "run-s -n build:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1129",
+"s": "run-s -n build:code build:types",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1130",
+"s": "run-s -n clean:code clean:types",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1131",
+"s": "run-s -n lint:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1132",
+"s": "run-s -n lint:types lint:format",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1133",
+"s": "run-s -n test:lint test:only",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1134",
+"s": "run-s -n test:lint:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1135",
+"s": "run-s -n test:types test:only test:format",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1136",
+"s": "run-s build:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1137",
+"s": "run-s build:code benchmark:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1138",
+"s": "run-s build:data build:types",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1139",
+"s": "run-s build:rollup",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1140",
+"s": "run-s build:types:force build:types:emit build:types:mts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1141",
+"s": "run-s lint-report tap",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1142",
+"s": "run-s test build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1143",
+"s": "run-s update:unicode:*",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1144",
+"s": "runmd --watch --output=README.md README_js.md",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1145",
+"s": "safe-publish-latest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1146",
+"s": "safe-publish-latest && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1147",
+"s": "safe-publish-latest && npm run spackle",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1148",
+"s": "sed -i.bak 's/\\/master\\.svg/\\/v'$(npm --silent run get-version)'.svg/g' README.md",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1149",
+"s": "semistandard && nyc --reporter=text --check-coverage --branches=100 ava test/unit.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1150",
+"s": "serve tests/wpt",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1151",
+"s": "set -e; for t in test/*.js; do node $t; done",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1152",
+"s": "should-semantic-release --verbose",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1153",
+"s": "shx rm -rf ./dist",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1154",
+"s": "size-limit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1155",
+"s": "sorcery -i dist/es5/uri.all.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1156",
+"s": "standard",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1157",
+"s": "standard && brittle-node test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1158",
+"s": "standard && mocha",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1159",
+"s": "standard && node ./bin/test.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1160",
+"s": "standard && node test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1161",
+"s": "standard && node test.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1162",
+"s": "standard && npm run test-node && npm run test-browser",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1163",
+"s": "standard && nyc --reporter text --reporter lcovonly tape test/*.js | colortape",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1164",
+"s": "standard && tape test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1165",
+"s": "standard && tape tests.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1166",
+"s": "standard && tman",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1167",
+"s": "standard --fix",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1168",
+"s": "standard BufferList.js BufferListStream.js test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1169",
+"s": "standard-version",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1170",
+"s": "standard-version --no-verify",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1171",
+"s": "standardx '**/*.ts' && standardx '**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1172",
+"s": "standardx **/*.ts **/*.cjs **/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1173",
+"s": "standardx --fix '**/*.ts' && standardx --fix '**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1174",
+"s": "standardx --fix **/*.ts **/*.cjs **/*.mjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1175",
+"s": "start-server-and-test 'serve ./ -p 8080' http://127.0.0.1:8080/package.json 'node ./test/browser/yargs-test.cjs'",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1176",
+"s": "svg-term --command='node screenshot' --out=screenshot.svg --padding=3 --width=55 --height=3 --at=1000 --no-cursor",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1177",
+"s": "tap",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1178",
+"s": "tap --coverage test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1179",
+"s": "tap --coverage-report html test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1180",
+"s": "tap --coverage-report=html",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1181",
+"s": "tap --rcfile=./tap.yml test/parallel/test-*.js test/ours/test-*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1182",
+"s": "tap --reporter classic",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1183",
+"s": "tap -Rspec --100 test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1184",
+"s": "tap test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1185",
+"s": "tap test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1186",
+"s": "tap test/*.js --color",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1187",
+"s": "tap test/*.js --cov",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1188",
+"s": "tap test/parallel/*.js && node test/verify-dependencies",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1189",
+"s": "tap test/parallel/*.js test/ours/*.js --tap | tee test.tap && node test/verify-dependencies.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1190",
+"s": "tape 'test/**/*.js'",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1191",
+"s": "tape test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1192",
+"s": "tape test/**/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1193",
+"s": "tape test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1194",
+"s": "tape test/*.js test/node/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1195",
+"s": "tape test/*.js | tap-spec",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1196",
+"s": "tape test/test-*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1197",
+"s": "tape test/test.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1198",
+"s": "template-oss-apply --force",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1199",
+"s": "template-oss-check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1200",
+"s": "terser index.js -c -m -o min.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1201",
+"s": "ts-node --compilerOptions '{\"moduleResolution\": \"Node16\", \"module\": \"Node16\"}' ./test/import/simple.cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1202",
+"s": "ts-node --compilerOptions '{\"moduleResolution\": \"Node16\", \"module\": \"Node16\"}' ./test/import/simple.mjs && babel -o ./test/import/simple-mjs.js ./test/import/simple.mjs && node ./test/import/simple-mjs.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1203",
+"s": "ts-node --compilerOptions '{\"moduleResolution\": \"Node16\", \"module\": \"Node16\"}' ./test/import/simple.ts && tsc ./test/import/simple.ts --lib ES6 --moduleResolution Node16 --module Node16 --strict --exactOptionalPropertyTypes && node ./test/import/simple.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1204",
+"s": "ts-node -T scripts/extract-test262.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1205",
+"s": "ts-node ./integration/import/runner.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1206",
+"s": "ts-node ./test/import/simple.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1207",
+"s": "ts-node benchmarks/benchmark.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1208",
+"s": "ts-node benchmarks/fdir-benchmark.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1209",
+"s": "ts-node benchmarks/glob-benchmark.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1210",
+"s": "ts-node scripts/update-fixtures.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1211",
+"s": "ts-node scripts/update-unicode-ids.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1212",
+"s": "ts-node scripts/update-unicode-properties.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1213",
+"s": "ts-scripts build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1214",
+"s": "ts-scripts check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1215",
+"s": "ts-scripts format",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1216",
+"s": "ts-scripts install",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1217",
+"s": "ts-scripts install && npm run build",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1218",
+"s": "ts-scripts lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1219",
+"s": "ts-scripts specs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1220",
+"s": "ts-scripts test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1221",
+"s": "ts-scripts test && npm run size",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1222",
+"s": "tsc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1223",
+"s": "tsc && attw --pack",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1224",
+"s": "tsc && attw -P",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1225",
+"s": "tsc && npm run build:cts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1226",
+"s": "tsc && npm run lint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1227",
+"s": "tsc && npm test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1228",
+"s": "tsc && tsc -p tsconfig-cjs.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1229",
+"s": "tsc && tsc -p tsconfig.test.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1230",
+"s": "tsc --allowJs --moduleResolution node --noEmit --target es5 dist/index.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1231",
+"s": "tsc --build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1232",
+"s": "tsc --build --clean tsconfig.build.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1233",
+"s": "tsc --build --clean tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1234",
+"s": "tsc --build --watch tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1235",
+"s": "tsc --build tsconfig.json tsconfig.esm.json tsconfig.esnext.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1236",
+"s": "tsc --declaration --emitDeclarationOnly --outDir declarations && prettier \"declarations/**/*.ts\" --write",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1237",
+"s": "tsc --module es2015",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1238",
+"s": "tsc --noEmit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1239",
+"s": "tsc --noEmit && attw --pack .",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1240",
+"s": "tsc --noEmit && eslint src && publint",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1241",
+"s": "tsc --noEmit && tsc --noEmit -p tests/tsconfig.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1242",
+"s": "tsc --noEmit --strict --module nodenext --moduleResolution nodenext --target esnext --skipLibCheck --types node test/types.ts --ignoreConfig && node test/verify-types.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1243",
+"s": "tsc --noEmit --strict postcss-selector-parser.d.ts postcss-selector-parser.test.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1244",
+"s": "tsc --noEmit -p tsconfig.eslint.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1245",
+"s": "tsc --noEmit spec/typings/typings-test.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1246",
+"s": "tsc --noEmit test/typescript.ts && ts-node test/typescript.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1247",
+"s": "tsc --pretty --noEmit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1248",
+"s": "tsc --project ./test/tsconfig.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1249",
+"s": "tsc --project tests/types/tsconfig.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1250",
+"s": "tsc --project tsconfig.build.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1251",
+"s": "tsc --project tsconfig.build.json && mv build/index.js build/index.mjs && tsc --project tsconfig.build.json --module commonjs && mv build/index.js build/index.cjs",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1252",
+"s": "tsc --project tsconfig.build.json --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1253",
+"s": "tsc --target ES5 --noImplicitAny index.d.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1254",
+"s": "tsc --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1255",
+"s": "tsc --watch -p tsconfig.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1256",
+"s": "tsc -b",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1257",
+"s": "tsc -b .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1258",
+"s": "tsc -b . --watch --sourceMap",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1259",
+"s": "tsc -b ./src/tsconfig.cjs.json ./src/tsconfig.cjs.spec.json ./src/tsconfig.esm.json ./src/tsconfig.esm5.json ./src/tsconfig.esm5.rollup.json ./src/tsconfig.types.json ./src/tsconfig.types.spec.json ./spec/tsconfig.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1260",
+"s": "tsc -b ./src/tsconfig.types.json && tslint -c spec-dtslint/tslint.json -p spec-dtslint/tsconfig.json \"spec-dtslint/**/*.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1261",
+"s": "tsc -p .",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1262",
+"s": "tsc -p . && attw -P",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1263",
+"s": "tsc -p . && eclint check $(git ls-files | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git' | grep -v dist/)",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1264",
+"s": "tsc -p . && tsc -p test/es2020 && attw -P",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1265",
+"s": "tsc -p src/ && webpack && node tools/fixupbundle.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1266",
+"s": "tsc -p tests/lib/types/tsconfig.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1267",
+"s": "tsc -p tests/lib/types/tsconfig.json && npm run test:types --workspaces --if-present",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1268",
+"s": "tsc -p tests/types/tsconfig.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1269",
+"s": "tsc -p tsconfig.build.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1270",
+"s": "tsc -p tsconfig.js.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1271",
+"s": "tsc -p tsconfig.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1272",
+"s": "tsc -p tsconfig.json && tsc -p tests/types/tsconfig.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1273",
+"s": "tsc -p tsconfig.json && tsc -p tsconfig-esm.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1274",
+"s": "tsc -p tsconfig.json && tsc -p tsconfig-esm.json && bash ./scripts/fixup.sh",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1275",
+"s": "tsc -p tsconfig.json --emitDeclarationOnly",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1276",
+"s": "tsc -p tsconfig.json --noEmit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1277",
+"s": "tsc -p tsconfig.test.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1278",
+"s": "tsc -p tsconfig.types.test.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1279",
+"s": "tsc -v && tsc",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1280",
+"s": "tsc ./src/tiny-invariant.ts --emitDeclarationOnly --declaration --outDir ./dist",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1281",
+"s": "tsc ./src/tiny-invariant.ts --emitDeclarationOnly --declaration --outDir ./dist/esm",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1282",
+"s": "tsc index.js --checkJs --declaration --declarationMap --emitDeclarationOnly --types ./node.d.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1283",
+"s": "tsc index.js --checkJs --noEmit --types ./node.d.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1284",
+"s": "tsd",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1285",
+"s": "tsd && tsc -p tsconfig.ts.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1286",
+"s": "tsd --typings dist/espree.d.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1287",
+"s": "tsdown",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1288",
+"s": "tsdown --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1289",
+"s": "tsdown --watch --no-clean",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1290",
+"s": "tsdown -w",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1291",
+"s": "tsfmt --verify src/*.ts && tsfmt --verify test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1292",
+"s": "tsfmt -r src/*.ts && tsfmt -r test/*.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1293",
+"s": "tsgo --noEmit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1294",
+"s": "tshy",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1295",
+"s": "tshy && bash build.sh",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1296",
+"s": "tshy && bash scripts/build.sh",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1297",
+"s": "tslint -c spec/tslint.json -p spec/tsconfig.json \"spec/**/*.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1298",
+"s": "tslint -c tslint.json -p src/tsconfig.base.json \"src/**/*.ts\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1299",
+"s": "tslint src/*.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1300",
+"s": "tstyche",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1301",
+"s": "tsup lib/cookie/index.ts --format cjs,esm --dts --clean --sourcemap",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1302",
+"s": "tsup src/index.ts && cp lib/index.d.ts lib/index.d.cts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1303",
+"s": "tsx --inspect build.ts --start",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1304",
+"s": "tsx ./tools/copy-ast-spec.mts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1305",
+"s": "tsx build.ts --watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1306",
+"s": "tsx scripts/build-readme.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1307",
+"s": "tsx scripts/build-readme.ts --check",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1308",
+"s": "tsx tools/generate-breaking-changes.mts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1309",
+"s": "tsx update.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1310",
+"s": "typedoc",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1311",
+"s": "typedoc --hideGenerator --plugin typedoc-plugin-missing-exports src/index.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1312",
+"s": "typedoc --hideGenerator src/index.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1313",
+"s": "typedoc --tsconfig ./.tshy/esm.json ./src/*.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1314",
+"s": "typedoc --tsconfig .tshy/esm.json ./src/*.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1315",
+"s": "typedoc --tsconfig tsconfig-esm.json ./src/*.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1316",
+"s": "typedoc --validation --treatValidationWarningsAsErrors",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1317",
+"s": "typedoc src",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1318",
+"s": "uglifyjs dist/diff.js -c -o dist/diff.min.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1319",
+"s": "uglifyjs dist/es5/uri.all.js --support-ie8 --output dist/es5/uri.all.min.js --in-source-map dist/es5/uri.all.js.map --source-map uri.all.min.js.map --comments --compress --mangle --pure-funcs merge subexp && mv uri.all.min.js.map dist/es5/ && cp dist/es5/uri.all.d.ts dist/es5/uri.all.min.d.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1320",
+"s": "unbuild",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1321",
+"s": "uvu -r esm -i utils -i xyz",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1322",
+"s": "uvu -r esm test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1323",
+"s": "uvu -r esm test -i fixtures",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1324",
+"s": "uvu test",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1325",
+"s": "verbose=1 ./test/run.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1326",
+"s": "vite",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1327",
+"s": "vitepress build docs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1328",
+"s": "vitepress dev docs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1329",
+"s": "vitest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1330",
+"s": "vitest --exclude test/e2e.test.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1331",
+"s": "vitest --project pluginutils",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1332",
+"s": "vitest --project pluginutils --typecheck.only",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1333",
+"s": "vitest __tests__/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1334",
+"s": "vitest bench",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1335",
+"s": "vitest bench --run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1336",
+"s": "vitest run",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1337",
+"s": "vitest run --coverage",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1338",
+"s": "vitest run --coverage --coverage.reporter=html --coverage.reporter=text",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1339",
+"s": "vitest run --coverage --coverage.reporter=lcovonly --coverage.reporter=text",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1340",
+"s": "vitest run --coverage __tests__/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1341",
+"s": "vitest run --globals",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1342",
+"s": "vitest run --project browser",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1343",
+"s": "vitest run --project browser-headless",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1344",
+"s": "vitest run --project unit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1345",
+"s": "vitest run __tests__/",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1346",
+"s": "vitest run test/e2e.test.ts",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1347",
+"s": "vitest watch",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1348",
+"s": "vitest watch --globals",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1349",
+"s": "warun \"{src,test}/**/*.mjs\" -- npm run -s test:mocha",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1350",
+"s": "wdio run ./wdio.conf.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1351",
+"s": "web-test-runner --playwright",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1352",
+"s": "webpack --config webpack.cjs.config.js",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1353",
+"s": "wireit",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1354",
+"s": "xo",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1355",
+"s": "xo && NODE_ENV=test node --test test.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1356",
+"s": "xo && ava",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1357",
+"s": "xo && ava && tsc index.d.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1358",
+"s": "xo && ava && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1359",
+"s": "xo && ava && tsd --typings=source/index.d.ts --files=source/index.test-d.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1360",
+"s": "xo && ava test/findup.js test/finddown.js && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1361",
+"s": "xo && c8 ava && tsc --noEmit --types node source/index.d.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1362",
+"s": "xo && c8 ava && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1363",
+"s": "xo && node --test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1364",
+"s": "xo && node --test && nz",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1365",
+"s": "xo && node --test && tsc --lib esnext index.d.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1366",
+"s": "xo && node --test && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1367",
+"s": "xo && node --test tests/*.js && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1368",
+"s": "xo && node test.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1369",
+"s": "xo && nyc ava && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1370",
+"s": "xo && tsd",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1371",
+"s": "xo && tsd && node --test",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1372",
+"s": "xo && tsd && node test/basic.js",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1373",
+"s": "yarn attw --pack --entrypoints . && yarn attw --pack --entrypoints lib/diff/word.js --profile node16",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1374",
+"s": "yarn build",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1375",
+"s": "yarn build && cd ./example/node && ts-node -r ../../register.js main.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1376",
+"s": "yarn build && cross-env NODE_ENV=test yarn run-mocha",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1377",
+"s": "yarn build && ts-node -r ./register.js -P ./example/project/tsconfig.json ./example/project/main.ts",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1378",
+"s": "yarn build && yarn changeset publish",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1379",
+"s": "yarn build && yarn lint && yarn test-coverage",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1380",
+"s": "yarn build && yarn size-limit",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1381",
+"s": "yarn build:clean && yarn build:dist && yarn build:typescript && yarn build:typescript:esm",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1382",
+"s": "yarn build:clean && yarn build:source && yarn build:source:cjs && yarn build:types",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1383",
+"s": "yarn eslint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1384",
+"s": "yarn g:tsc -p tsconfig.cjs.json && yarn g:tsc -p tsconfig.es.json && yarn g:tsc -p tsconfig.types.json",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1385",
+"s": "yarn g:tsc -p tsconfig.test.json",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1386",
+"s": "yarn g:turbo run build -F=\"$npm_package_name\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1387",
+"s": "yarn jest",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1388",
+"s": "yarn lint",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1389",
+"s": "yarn lint && yarn generate-esm && yarn generate-cjs && yarn check-types && yarn run-rollup && yarn run-uglify",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1390",
+"s": "yarn lint:js && yarn lint:prettier",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1391",
+"s": "yarn prettier --debug-check src/** test/**",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1392",
+"s": "yarn prettier --write src/** test/**",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1393",
+"s": "yarn prettier:check && yarn typescript:check",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1394",
+"s": "yarn rollup --config rollup.config.mjs",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1395",
+"s": "yarn run-tsd && yarn run-attw",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1396",
+"s": "yarn tsc --module commonjs --outDir libcjs && node --eval \"fs.writeFileSync('libcjs/package.json', JSON.stringify({type:'commonjs',sideEffects:false}))\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1397",
+"s": "yarn tsc --module nodenext --outDir libesm --target es6 && node --eval \"fs.writeFileSync('libesm/package.json', JSON.stringify({type:'module',sideEffects:false}))\"",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1398",
+"s": "yarn tsd --typings libesm/ && yarn tsd --files test-d/",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1399",
+"s": "yarn umd && yarn umd-min",
+"group": "npm",
+"scored": false,
+"open": null
+},
+{
+"id": "N1400",
+"s": "yarn verify",
+"group": "npm",
+"scored": true,
+"open": null
+},
+{
+"id": "N1401",
+"s": "zeit-eslint --ext .jsx,.js .",
+"group": "npm",
+"scored": true,
+"open": null
+}
+]
