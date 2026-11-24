@@ -1,0 +1,9 @@
+[package]
+name = "rs-refs"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+
+[dependencies]
+oci-spec = { version = "=0.10.0", default-features = false, features = ["distribution"] }
+serde_json = "1"

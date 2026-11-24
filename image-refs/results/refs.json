@@ -1,0 +1,4258 @@
+{
+ "distribution/reference": {
+  "B01": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    "latest",
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    "latest",
+    null
+   ]
+  },
+  "B11": {
+   "ref": [
+    "registry.example.com",
+    "a/b/c",
+    "1",
+    null
+   ]
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "D01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "tag",
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "error": "invalid reference format"
+  },
+  "D05": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "error": "unsupported digest algorithm"
+  },
+  "D07": {
+   "error": "invalid checksum digest format"
+  },
+  "D08": {
+   "error": "invalid reference format"
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "error": "invalid reference format"
+  },
+  "D11": {
+   "error": "invalid reference format"
+  },
+  "D12": {
+   "error": "unsupported digest algorithm"
+  },
+  "H01": {
+   "ref": [
+    "localhost",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H06": {
+   "ref": [
+    "[::1]:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    "docker.io",
+    "example/app",
+    "latest",
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    "docker.io",
+    "my-host/app",
+    "latest",
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    "latest",
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "ref": [
+    "[2001:db8::1]",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H16": {
+   "error": "invalid reference format"
+  },
+  "L01": {
+   "ref": [
+    "docker.io",
+    "library/nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    "docker.io",
+    "library/postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    "docker.io",
+    "library/redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "N01": {
+   "error": "invalid reference format: repository name (library/Ubuntu) must be lowercase"
+  },
+  "N02": {
+   "error": "invalid reference format: repository name (user/App) must be lowercase"
+  },
+  "N03": {
+   "ref": [
+    "docker.io",
+    "library/a__b",
+    "latest",
+    null
+   ]
+  },
+  "N04": {
+   "error": "invalid reference format"
+  },
+  "N05": {
+   "error": "invalid reference format"
+  },
+  "N06": {
+   "error": "invalid reference format"
+  },
+  "N07": {
+   "error": "invalid reference format"
+  },
+  "N08": {
+   "error": "invalid reference format"
+  },
+  "N09": {
+   "error": "invalid reference format"
+  },
+  "N10": {
+   "error": "invalid reference format"
+  },
+  "N11": {
+   "error": "repository name must not be more than 255 characters"
+  },
+  "N12": {
+   "error": "invalid reference format"
+  },
+  "N13": {
+   "error": "invalid reference format"
+  },
+  "N14": {
+   "error": "invalid reference format"
+  },
+  "N15": {
+   "ref": [
+    "",
+    "a-b_c.d/e--f",
+    "latest",
+    null
+   ]
+  },
+  "N16": {
+   "ref": [
+    "docker.io",
+    "a/b/b/b/b/b/b/b/b/b/b",
+    "latest",
+    null
+   ]
+  },
+  "N17": {
+   "ref": [
+    "docker.io",
+    "library/a_b",
+    "latest",
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    "docker.io",
+    "library/a--b",
+    "latest",
+    null
+   ]
+  },
+  "N19": {
+   "error": "invalid reference format"
+  },
+  "N20": {
+   "error": "invalid reference format"
+  },
+  "T01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "error": "invalid reference format"
+  },
+  "T03": {
+   "error": "invalid reference format"
+  },
+  "T04": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "error": "invalid reference format"
+  },
+  "T06": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "error": "invalid reference format"
+  },
+  "T08": {
+   "error": "invalid reference format"
+  },
+  "T09": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "error": "invalid reference format"
+  }
+ },
+ "go-containerregistry": {
+  "B01": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    "index.docker.io",
+    "user/app",
+    "latest",
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    "index.docker.io",
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    "latest",
+    null
+   ]
+  },
+  "B11": {
+   "ref": [
+    "registry.example.com",
+    "a/b/c",
+    "1",
+    null
+   ]
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "D01": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "error": "could not parse reference: app@sha256:abc"
+  },
+  "D05": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "error": "could not parse reference: app@md5:0123456789abcdef0123456789abcdef"
+  },
+  "D07": {
+   "error": "could not parse reference: app@sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+  },
+  "D08": {
+   "error": "could not parse reference: app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "error": "could not parse reference: app@"
+  },
+  "D11": {
+   "error": "could not parse reference: app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  },
+  "D12": {
+   "error": "could not parse reference: app@foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  },
+  "H01": {
+   "ref": [
+    "localhost",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H06": {
+   "ref": [
+    "[::1]:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    "index.docker.io",
+    "example/app",
+    "latest",
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    "index.docker.io",
+    "my-host/app",
+    "latest",
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    "index.docker.io",
+    "library/localhost",
+    "latest",
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    "index.docker.io",
+    "library/localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "ref": [
+    "[2001:db8::1]",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H16": {
+   "ref": [
+    "example.com:",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "L01": {
+   "ref": [
+    "index.docker.io",
+    "library/nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    "index.docker.io",
+    "library/postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "index.docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    "index.docker.io",
+    "library/redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "N01": {
+   "error": "could not parse reference: Ubuntu"
+  },
+  "N02": {
+   "error": "could not parse reference: user/App"
+  },
+  "N03": {
+   "ref": [
+    "index.docker.io",
+    "library/a__b",
+    "latest",
+    null
+   ]
+  },
+  "N04": {
+   "ref": [
+    "index.docker.io",
+    "library/a___b",
+    "latest",
+    null
+   ]
+  },
+  "N05": {
+   "ref": [
+    "index.docker.io",
+    "library/a..b",
+    "latest",
+    null
+   ]
+  },
+  "N06": {
+   "ref": [
+    "index.docker.io",
+    "library/a.-b",
+    "latest",
+    null
+   ]
+  },
+  "N07": {
+   "ref": [
+    "index.docker.io",
+    "-a/b",
+    "latest",
+    null
+   ]
+  },
+  "N08": {
+   "ref": [
+    "index.docker.io",
+    "a/b/",
+    "latest",
+    null
+   ]
+  },
+  "N09": {
+   "ref": [
+    "index.docker.io",
+    "a//b",
+    "latest",
+    null
+   ]
+  },
+  "N10": {
+   "ref": [
+    "index.docker.io",
+    "/a/b",
+    "latest",
+    null
+   ]
+  },
+  "N11": {
+   "error": "could not parse reference: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "N12": {
+   "error": "could not parse reference: café"
+  },
+  "N13": {
+   "error": "could not parse reference: a b"
+  },
+  "N14": {
+   "error": "could not parse reference: "
+  },
+  "N15": {
+   "ref": [
+    "a-b_c.d",
+    "e--f",
+    "latest",
+    null
+   ]
+  },
+  "N16": {
+   "ref": [
+    "index.docker.io",
+    "a/b/b/b/b/b/b/b/b/b/b",
+    "latest",
+    null
+   ]
+  },
+  "N17": {
+   "ref": [
+    "index.docker.io",
+    "library/a_b",
+    "latest",
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    "index.docker.io",
+    "library/a--b",
+    "latest",
+    null
+   ]
+  },
+  "N19": {
+   "error": "could not parse reference: ubuntu "
+  },
+  "N20": {
+   "ref": [
+    "index.docker.io",
+    "library/a__",
+    "latest",
+    null
+   ]
+  },
+  "T01": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    ".hidden",
+    null
+   ]
+  },
+  "T03": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    "-dash",
+    null
+   ]
+  },
+  "T04": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "error": "could not parse reference: app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "T06": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "error": "could not parse reference: app:"
+  },
+  "T08": {
+   "error": "could not parse reference: app:1:2"
+  },
+  "T09": {
+   "ref": [
+    "index.docker.io",
+    "library/app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "error": "could not parse reference: app:v1.0/x"
+  }
+ },
+ "docker-image-py": {
+  "B01": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    null,
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    null,
+    null
+   ]
+  },
+  "B11": {
+   "ref": [
+    "registry.example.com",
+    "a/b/c",
+    "1",
+    null
+   ]
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "H01": {
+   "ref": [
+    "localhost",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H06": {
+   "ref": [
+    "[::1]:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    "docker.io",
+    "example/app",
+    null,
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    "docker.io",
+    "my-host/app",
+    null,
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    null,
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "ref": [
+    "[2001:db8::1]",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H16": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "D01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "tag",
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "D05": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "error": "DigestUnsupported: unsupported digest algorithm"
+  },
+  "D07": {
+   "error": "InvalidDigest: invalid digest"
+  },
+  "D08": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "D11": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "D12": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "T01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "T03": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "T04": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "T06": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "T08": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "T09": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N01": {
+   "error": "InvalidReference: invalid reference format: repository name (library/Ubuntu) must be lowercase"
+  },
+  "N02": {
+   "error": "InvalidReference: invalid reference format: repository name (user/App) must be lowercase"
+  },
+  "N03": {
+   "ref": [
+    "docker.io",
+    "library/a__b",
+    null,
+    null
+   ]
+  },
+  "N04": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N05": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N06": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N07": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N08": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N09": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N10": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N11": {
+   "error": "NameTooLong: repository name must not be more than 255 characters"
+  },
+  "N12": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N13": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N14": {
+   "error": "NameEmpty: repository name must have at least one component"
+  },
+  "N15": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N16": {
+   "ref": [
+    "docker.io",
+    "a/b/b/b/b/b/b/b/b/b/b",
+    null,
+    null
+   ]
+  },
+  "N17": {
+   "ref": [
+    "docker.io",
+    "library/a_b",
+    null,
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    "docker.io",
+    "library/a--b",
+    null,
+    null
+   ]
+  },
+  "N19": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "N20": {
+   "error": "ReferenceInvalidFormat: invalid reference format"
+  },
+  "L01": {
+   "ref": [
+    "docker.io",
+    "library/nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    "docker.io",
+    "library/postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    "docker.io",
+    "library/redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  }
+ },
+ "docker-py": {
+  "B01": {
+   "ref": [
+    "docker.io",
+    "ubuntu",
+    null,
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    "docker.io",
+    "ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "docker.io",
+    "ubuntu",
+    null,
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    null,
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    null,
+    null
+   ]
+  },
+  "B11": {
+   "ref": [
+    "registry.example.com",
+    "a/b/c",
+    "1",
+    null
+   ]
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "H01": {
+   "ref": [
+    "localhost",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H06": {
+   "ref": [
+    "[::1]:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    "docker.io",
+    "example/app",
+    null,
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    "docker.io",
+    "my-host/app",
+    null,
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    "docker.io",
+    "localhost",
+    null,
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    "docker.io",
+    "localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "ref": [
+    "[2001:db8::1]",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H16": {
+   "ref": [
+    "example.com:",
+    "app",
+    null,
+    null
+   ]
+  },
+  "D01": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    "docker.io",
+    "app:tag",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    "sha256:abc"
+   ]
+  },
+  "D05": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    "md5:0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D07": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+   ]
+  },
+  "D08": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"
+   ]
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    ""
+   ]
+  },
+  "D11": {
+   "ref": [
+    "docker.io",
+    "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D12": {
+   "ref": [
+    "docker.io",
+    "app",
+    null,
+    "foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "T01": {
+   "ref": [
+    "docker.io",
+    "app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "ref": [
+    "docker.io",
+    "app",
+    ".hidden",
+    null
+   ]
+  },
+  "T03": {
+   "ref": [
+    "docker.io",
+    "app",
+    "-dash",
+    null
+   ]
+  },
+  "T04": {
+   "ref": [
+    "docker.io",
+    "app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "ref": [
+    "docker.io",
+    "app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T06": {
+   "ref": [
+    "docker.io",
+    "app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "ref": [
+    "docker.io",
+    "app",
+    "",
+    null
+   ]
+  },
+  "T08": {
+   "ref": [
+    "docker.io",
+    "app:1",
+    "2",
+    null
+   ]
+  },
+  "T09": {
+   "ref": [
+    "docker.io",
+    "app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "ref": [
+    "app:v1.0",
+    "x",
+    null,
+    null
+   ]
+  },
+  "N01": {
+   "ref": [
+    "docker.io",
+    "Ubuntu",
+    null,
+    null
+   ]
+  },
+  "N02": {
+   "ref": [
+    "docker.io",
+    "user/App",
+    null,
+    null
+   ]
+  },
+  "N03": {
+   "ref": [
+    "docker.io",
+    "a__b",
+    null,
+    null
+   ]
+  },
+  "N04": {
+   "ref": [
+    "docker.io",
+    "a___b",
+    null,
+    null
+   ]
+  },
+  "N05": {
+   "ref": [
+    "docker.io",
+    "a..b",
+    null,
+    null
+   ]
+  },
+  "N06": {
+   "ref": [
+    "docker.io",
+    "a.-b",
+    null,
+    null
+   ]
+  },
+  "N07": {
+   "ref": [
+    "docker.io",
+    "-a/b",
+    null,
+    null
+   ]
+  },
+  "N08": {
+   "ref": [
+    "docker.io",
+    "a/b/",
+    null,
+    null
+   ]
+  },
+  "N09": {
+   "ref": [
+    "docker.io",
+    "a//b",
+    null,
+    null
+   ]
+  },
+  "N10": {
+   "ref": [
+    "docker.io",
+    "/a/b",
+    null,
+    null
+   ]
+  },
+  "N11": {
+   "ref": [
+    "docker.io",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null,
+    null
+   ]
+  },
+  "N12": {
+   "ref": [
+    "docker.io",
+    "café",
+    null,
+    null
+   ]
+  },
+  "N13": {
+   "ref": [
+    "docker.io",
+    "a b",
+    null,
+    null
+   ]
+  },
+  "N14": {
+   "ref": [
+    "docker.io",
+    "",
+    null,
+    null
+   ]
+  },
+  "N15": {
+   "ref": [
+    "a-b_c.d",
+    "e--f",
+    null,
+    null
+   ]
+  },
+  "N16": {
+   "ref": [
+    "docker.io",
+    "a/b/b/b/b/b/b/b/b/b/b",
+    null,
+    null
+   ]
+  },
+  "N17": {
+   "ref": [
+    "docker.io",
+    "a_b",
+    null,
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    "docker.io",
+    "a--b",
+    null,
+    null
+   ]
+  },
+  "N19": {
+   "ref": [
+    "docker.io",
+    "ubuntu ",
+    null,
+    null
+   ]
+  },
+  "N20": {
+   "ref": [
+    "docker.io",
+    "a__",
+    null,
+    null
+   ]
+  },
+  "L01": {
+   "ref": [
+    "docker.io",
+    "nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    "docker.io",
+    "postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    "docker.io",
+    "redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  }
+ },
+ "@swimlane/docker-reference": {
+  "B01": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    null,
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    null,
+    null
+   ]
+  },
+  "B11": {
+   "ref": [
+    "registry.example.com",
+    "a/b/c",
+    "1",
+    null
+   ]
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "H01": {
+   "ref": [
+    "localhost",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H06": {
+   "error": "invalid reference format"
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    "docker.io",
+    "example/app",
+    null,
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    "docker.io",
+    "my-host/app",
+    null,
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    null,
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "error": "invalid reference format"
+  },
+  "H16": {
+   "error": "invalid reference format"
+  },
+  "D01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "tag",
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "error": "invalid reference format"
+  },
+  "D05": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "error": "unsupported digest algorithm"
+  },
+  "D07": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+   ]
+  },
+  "D08": {
+   "error": "invalid reference format"
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "error": "invalid reference format"
+  },
+  "D11": {
+   "error": "invalid reference format"
+  },
+  "D12": {
+   "error": "unsupported digest algorithm"
+  },
+  "T01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "error": "invalid reference format"
+  },
+  "T03": {
+   "error": "invalid reference format"
+  },
+  "T04": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "error": "invalid reference format"
+  },
+  "T06": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "error": "invalid reference format"
+  },
+  "T08": {
+   "error": "invalid reference format"
+  },
+  "T09": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "error": "invalid reference format"
+  },
+  "N01": {
+   "error": "invalid reference format: repository name must be lowercase"
+  },
+  "N02": {
+   "error": "invalid reference format: repository name must be lowercase"
+  },
+  "N03": {
+   "ref": [
+    "docker.io",
+    "library/a__b",
+    null,
+    null
+   ]
+  },
+  "N04": {
+   "error": "invalid reference format"
+  },
+  "N05": {
+   "error": "invalid reference format"
+  },
+  "N06": {
+   "error": "invalid reference format"
+  },
+  "N07": {
+   "error": "invalid reference format"
+  },
+  "N08": {
+   "error": "invalid reference format"
+  },
+  "N09": {
+   "error": "invalid reference format"
+  },
+  "N10": {
+   "error": "invalid reference format"
+  },
+  "N11": {
+   "error": "repository name must not be more than 255 characters"
+  },
+  "N12": {
+   "error": "invalid reference format"
+  },
+  "N13": {
+   "error": "invalid reference format"
+  },
+  "N14": {
+   "error": "invalid reference format"
+  },
+  "N15": {
+   "ref": [
+    "",
+    "a-b_c.d/e--f",
+    null,
+    null
+   ]
+  },
+  "N16": {
+   "ref": [
+    "docker.io",
+    "a/b/b/b/b/b/b/b/b/b/b",
+    null,
+    null
+   ]
+  },
+  "N17": {
+   "ref": [
+    "docker.io",
+    "library/a_b",
+    null,
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    "docker.io",
+    "library/a--b",
+    null,
+    null
+   ]
+  },
+  "N19": {
+   "error": "invalid reference format"
+  },
+  "N20": {
+   "error": "invalid reference format"
+  },
+  "L01": {
+   "ref": [
+    "docker.io",
+    "library/nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    "docker.io",
+    "library/postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    "docker.io",
+    "library/redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  }
+ },
+ "docker-parse-image": {
+  "B01": {
+   "ref": [
+    null,
+    "ubuntu",
+    null,
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    null,
+    "ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    null,
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "docker.io",
+    "ubuntu",
+    null,
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    null,
+    "user/app",
+    null,
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    null,
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    null,
+    null
+   ]
+  },
+  "B11": {
+   "error": "no match"
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "H01": {
+   "ref": [
+    null,
+    "localhost/app",
+    null,
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H06": {
+   "ref": [
+    "[::1]:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    null,
+    "example/app",
+    null,
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    null,
+    "my-host/app",
+    null,
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    null,
+    "localhost",
+    null,
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    null,
+    "localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "ref": [
+    "[2001:db8::1]",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H16": {
+   "ref": [
+    "example.com:",
+    "app",
+    null,
+    null
+   ]
+  },
+  "D01": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    null,
+    "app",
+    "tag@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    null
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha256:abc"
+   ]
+  },
+  "D05": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "md5:0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D07": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+   ]
+  },
+  "D08": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"
+   ]
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "error": "no match"
+  },
+  "D11": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D12": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "T01": {
+   "ref": [
+    null,
+    "app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "ref": [
+    null,
+    "app",
+    ".hidden",
+    null
+   ]
+  },
+  "T03": {
+   "ref": [
+    null,
+    "app",
+    "-dash",
+    null
+   ]
+  },
+  "T04": {
+   "ref": [
+    null,
+    "app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "ref": [
+    null,
+    "app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T06": {
+   "ref": [
+    null,
+    "app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "error": "no match"
+  },
+  "T08": {
+   "ref": [
+    null,
+    "app",
+    "1:2",
+    null
+   ]
+  },
+  "T09": {
+   "ref": [
+    null,
+    "app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "ref": [
+    "app:v1.0",
+    "x",
+    null,
+    null
+   ]
+  },
+  "N01": {
+   "ref": [
+    null,
+    "Ubuntu",
+    null,
+    null
+   ]
+  },
+  "N02": {
+   "ref": [
+    null,
+    "user/App",
+    null,
+    null
+   ]
+  },
+  "N03": {
+   "ref": [
+    null,
+    "a__b",
+    null,
+    null
+   ]
+  },
+  "N04": {
+   "ref": [
+    null,
+    "a___b",
+    null,
+    null
+   ]
+  },
+  "N05": {
+   "ref": [
+    null,
+    "a..b",
+    null,
+    null
+   ]
+  },
+  "N06": {
+   "ref": [
+    null,
+    "a.-b",
+    null,
+    null
+   ]
+  },
+  "N07": {
+   "ref": [
+    null,
+    "-a/b",
+    null,
+    null
+   ]
+  },
+  "N08": {
+   "error": "no match"
+  },
+  "N09": {
+   "error": "no match"
+  },
+  "N10": {
+   "error": "no match"
+  },
+  "N11": {
+   "ref": [
+    null,
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null,
+    null
+   ]
+  },
+  "N12": {
+   "ref": [
+    null,
+    "café",
+    null,
+    null
+   ]
+  },
+  "N13": {
+   "ref": [
+    null,
+    "a b",
+    null,
+    null
+   ]
+  },
+  "N14": {
+   "error": "no match"
+  },
+  "N15": {
+   "ref": [
+    "a-b_c.d",
+    "e--f",
+    null,
+    null
+   ]
+  },
+  "N16": {
+   "error": "no match"
+  },
+  "N17": {
+   "ref": [
+    null,
+    "a_b",
+    null,
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    null,
+    "a--b",
+    null,
+    null
+   ]
+  },
+  "N19": {
+   "ref": [
+    null,
+    "ubuntu ",
+    null,
+    null
+   ]
+  },
+  "N20": {
+   "ref": [
+    null,
+    "a__",
+    null,
+    null
+   ]
+  },
+  "L01": {
+   "ref": [
+    null,
+    "nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    null,
+    "postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    null,
+    "redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  }
+ },
+ "parse-docker-image-name": {
+  "B01": {
+   "ref": [
+    null,
+    "ubuntu",
+    null,
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    null,
+    "ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    null,
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "docker.io",
+    "ubuntu",
+    null,
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "index.docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    null,
+    "user/app",
+    null,
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    null,
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    null,
+    null
+   ]
+  },
+  "B11": {
+   "ref": [
+    "registry.example.com",
+    "a/b/c",
+    "1",
+    null
+   ]
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    null,
+    null
+   ]
+  },
+  "H01": {
+   "ref": [
+    "localhost",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H06": {
+   "error": "empty result"
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    null,
+    "example/app",
+    null,
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    null,
+    "my-host/app",
+    null,
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    null,
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    null,
+    "localhost",
+    null,
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    null,
+    "localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "error": "empty result"
+  },
+  "H16": {
+   "error": "empty result"
+  },
+  "D01": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    null,
+    "app",
+    "tag",
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "error": "empty result"
+  },
+  "D05": {
+   "ref": [
+    null,
+    "app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "error": "empty result"
+  },
+  "D07": {
+   "error": "empty result"
+  },
+  "D08": {
+   "error": "empty result"
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "error": "empty result"
+  },
+  "D11": {
+   "error": "empty result"
+  },
+  "D12": {
+   "error": "empty result"
+  },
+  "T01": {
+   "ref": [
+    null,
+    "app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "error": "empty result"
+  },
+  "T03": {
+   "error": "empty result"
+  },
+  "T04": {
+   "ref": [
+    null,
+    "app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "error": "empty result"
+  },
+  "T06": {
+   "ref": [
+    null,
+    "app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "error": "empty result"
+  },
+  "T08": {
+   "error": "empty result"
+  },
+  "T09": {
+   "ref": [
+    null,
+    "app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "error": "empty result"
+  },
+  "N01": {
+   "error": "empty result"
+  },
+  "N02": {
+   "error": "empty result"
+  },
+  "N03": {
+   "ref": [
+    null,
+    "a__b",
+    null,
+    null
+   ]
+  },
+  "N04": {
+   "error": "empty result"
+  },
+  "N05": {
+   "error": "empty result"
+  },
+  "N06": {
+   "error": "empty result"
+  },
+  "N07": {
+   "error": "empty result"
+  },
+  "N08": {
+   "error": "empty result"
+  },
+  "N09": {
+   "error": "empty result"
+  },
+  "N10": {
+   "error": "empty result"
+  },
+  "N11": {
+   "error": "empty result"
+  },
+  "N12": {
+   "error": "empty result"
+  },
+  "N13": {
+   "error": "empty result"
+  },
+  "N14": {
+   "error": "empty result"
+  },
+  "N15": {
+   "ref": [
+    null,
+    "a-b_c.d/e--f",
+    null,
+    null
+   ]
+  },
+  "N16": {
+   "ref": [
+    null,
+    "a/b/b/b/b/b/b/b/b/b/b",
+    null,
+    null
+   ]
+  },
+  "N17": {
+   "ref": [
+    null,
+    "a_b",
+    null,
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    null,
+    "a--b",
+    null,
+    null
+   ]
+  },
+  "N19": {
+   "error": "empty result"
+  },
+  "N20": {
+   "error": "empty result"
+  },
+  "L01": {
+   "ref": [
+    null,
+    "nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    null,
+    "postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    null,
+    "redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  }
+ },
+ "oci-spec": {
+  "B01": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B02": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B03": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B04": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "22.04",
+    null
+   ]
+  },
+  "B05": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B06": {
+   "ref": [
+    "docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "B07": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    "latest",
+    null
+   ]
+  },
+  "B08": {
+   "ref": [
+    "docker.io",
+    "user/app",
+    "v1",
+    null
+   ]
+  },
+  "B09": {
+   "ref": [
+    "ghcr.io",
+    "owner/repo",
+    "tag",
+    null
+   ]
+  },
+  "B10": {
+   "ref": [
+    "quay.io",
+    "org/repo",
+    "latest",
+    null
+   ]
+  },
+  "B11": {
+   "ref": [
+    "registry.example.com",
+    "a/b/c",
+    "1",
+    null
+   ]
+  },
+  "B12": {
+   "ref": [
+    "registry-1.docker.io",
+    "library/ubuntu",
+    "latest",
+    null
+   ]
+  },
+  "D01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D02": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "tag",
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D03": {
+   "ref": [
+    "ghcr.io",
+    "o/r",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D04": {
+   "error": "invalid reference format"
+  },
+  "D05": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D06": {
+   "error": "unsupported digest algorithm"
+  },
+  "D07": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    null,
+    "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+   ]
+  },
+  "D08": {
+   "error": "invalid reference format"
+  },
+  "D09": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "D10": {
+   "error": "invalid reference format"
+  },
+  "D11": {
+   "error": "invalid reference format"
+  },
+  "D12": {
+   "error": "unsupported digest algorithm"
+  },
+  "H01": {
+   "ref": [
+    "localhost",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H02": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H03": {
+   "ref": [
+    "localhost:5000",
+    "app",
+    "1.0",
+    null
+   ]
+  },
+  "H04": {
+   "ref": [
+    "myregistry:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H05": {
+   "ref": [
+    "127.0.0.1:5000",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H06": {
+   "error": "invalid reference format"
+  },
+  "H07": {
+   "ref": [
+    "example.com",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H08": {
+   "ref": [
+    "docker.io",
+    "example/app",
+    "latest",
+    null
+   ]
+  },
+  "H09": {
+   "ref": [
+    "docker.io",
+    "my-host/app",
+    "latest",
+    null
+   ]
+  },
+  "H10": {
+   "ref": [
+    "sub.example.com:443",
+    "a",
+    "tag",
+    null
+   ]
+  },
+  "H11": {
+   "ref": [
+    "Example.com",
+    "app",
+    "latest",
+    null
+   ]
+  },
+  "H12": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    "latest",
+    null
+   ]
+  },
+  "H13": {
+   "ref": [
+    "docker.io",
+    "library/localhost",
+    "5000",
+    null
+   ]
+  },
+  "H14": {
+   "ref": [
+    "registry:5000",
+    "a/b",
+    "t",
+    null
+   ]
+  },
+  "H15": {
+   "error": "invalid reference format"
+  },
+  "H16": {
+   "error": "invalid reference format"
+  },
+  "L01": {
+   "ref": [
+    "docker.io",
+    "library/nginx",
+    "1.27-alpine",
+    null
+   ]
+  },
+  "L02": {
+   "ref": [
+    "docker.io",
+    "library/postgres",
+    "16",
+    null
+   ]
+  },
+  "L03": {
+   "ref": [
+    "mcr.microsoft.com",
+    "dotnet/sdk",
+    "8.0",
+    null
+   ]
+  },
+  "L04": {
+   "ref": [
+    "gcr.io",
+    "distroless/static-debian12",
+    "nonroot",
+    null
+   ]
+  },
+  "L05": {
+   "ref": [
+    "public.ecr.aws",
+    "lambda/python",
+    "3.12",
+    null
+   ]
+  },
+  "L06": {
+   "ref": [
+    "registry.k8s.io",
+    "pause",
+    "3.9",
+    null
+   ]
+  },
+  "L07": {
+   "ref": [
+    "ghcr.io",
+    "home-assistant/home-assistant",
+    "stable",
+    null
+   ]
+  },
+  "L08": {
+   "ref": [
+    "docker.io",
+    "bitnami/redis",
+    "7.2",
+    null
+   ]
+  },
+  "L09": {
+   "ref": [
+    "quay.io",
+    "prometheus/node-exporter",
+    "v1.8.2",
+    null
+   ]
+  },
+  "L10": {
+   "ref": [
+    "docker.io",
+    "library/redis",
+    null,
+    "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+   ]
+  },
+  "N01": {
+   "error": "invalid reference format"
+  },
+  "N02": {
+   "error": "invalid reference format"
+  },
+  "N03": {
+   "ref": [
+    "docker.io",
+    "library/a__b",
+    "latest",
+    null
+   ]
+  },
+  "N04": {
+   "error": "invalid reference format"
+  },
+  "N05": {
+   "error": "invalid reference format"
+  },
+  "N06": {
+   "error": "invalid reference format"
+  },
+  "N07": {
+   "error": "invalid reference format"
+  },
+  "N08": {
+   "error": "invalid reference format"
+  },
+  "N09": {
+   "error": "invalid reference format"
+  },
+  "N10": {
+   "error": "invalid reference format"
+  },
+  "N11": {
+   "error": "repository name must not be more than 255 characters"
+  },
+  "N12": {
+   "error": "invalid reference format"
+  },
+  "N13": {
+   "error": "invalid reference format"
+  },
+  "N14": {
+   "error": "repository name must have at least one component"
+  },
+  "N15": {
+   "ref": [
+    "a-b_c.d",
+    "e--f",
+    "latest",
+    null
+   ]
+  },
+  "N16": {
+   "ref": [
+    "docker.io",
+    "a/b/b/b/b/b/b/b/b/b/b",
+    "latest",
+    null
+   ]
+  },
+  "N17": {
+   "ref": [
+    "docker.io",
+    "library/a_b",
+    "latest",
+    null
+   ]
+  },
+  "N18": {
+   "ref": [
+    "docker.io",
+    "library/a--b",
+    "latest",
+    null
+   ]
+  },
+  "N19": {
+   "error": "invalid reference format"
+  },
+  "N20": {
+   "error": "invalid reference format"
+  },
+  "T01": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "1.2.3-rc_1",
+    null
+   ]
+  },
+  "T02": {
+   "error": "invalid reference format"
+  },
+  "T03": {
+   "error": "invalid reference format"
+  },
+  "T04": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    null
+   ]
+  },
+  "T05": {
+   "error": "invalid reference format"
+  },
+  "T06": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "Latest",
+    null
+   ]
+  },
+  "T07": {
+   "error": "invalid reference format"
+  },
+  "T08": {
+   "error": "invalid reference format"
+  },
+  "T09": {
+   "ref": [
+    "docker.io",
+    "library/app",
+    "_x",
+    null
+   ]
+  },
+  "T10": {
+   "error": "invalid reference format"
+  }
+ }
+}

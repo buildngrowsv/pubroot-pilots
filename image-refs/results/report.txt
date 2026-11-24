@@ -1,0 +1,170 @@
+cases 80 (79 scored); some library differs from the reference on 36; scored cases with a deviation: 35
+classes on scored cases (A/W/R/L) | N15:
+  go-containerregistry         A=67 W=1 R=0 L=11 | W
+  docker-image-py              A=79 W=0 R=0 L=0 | R
+  docker-py                    A=49 W=1 R=0 L=29 | W
+  @swimlane/docker-reference   A=76 W=0 R=2 L=1 | A
+  docker-parse-image           A=52 W=2 R=2 L=23 | W
+  parse-docker-image-name      A=77 W=0 R=2 L=0 | W
+  oci-spec                     A=76 W=0 R=2 L=1 | W
+pairwise differences on scored cases: min 0 max 32
+B01 'ubuntu' ref=['docker.io', 'library/ubuntu', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B02 'ubuntu:22.04' ref=['docker.io', 'library/ubuntu', '22.04', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B03 'library/ubuntu' ref=['docker.io', 'library/ubuntu', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B04 'docker.io/library/ubuntu:22.04' ref=['docker.io', 'library/ubuntu', '22.04', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B05 'docker.io/ubuntu' ref=['docker.io', 'library/ubuntu', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B06 'index.docker.io/library/ubuntu' ref=['docker.io', 'library/ubuntu', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B07 'user/app' ref=['docker.io', 'user/app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B08 'user/app:v1' ref=['docker.io', 'user/app', 'v1', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B09 'ghcr.io/owner/repo:tag' ref=['ghcr.io', 'owner/repo', 'tag', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B10 'quay.io/org/repo' ref=['quay.io', 'org/repo', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+B11 'registry.example.com/a/b/c:1' ref=['registry.example.com', 'a/b/c', '1', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=R:ERR; parse-docker-image-name=A; oci-spec=A
+B12 'registry-1.docker.io/library/ubuntu' ref=['registry-1.docker.io', 'library/ubuntu', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H01 'localhost/app' ref=['localhost', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=W:["docker.io", "localhost/app", "latest", null]; parse-docker-image-name=A; oci-spec=A
+H02 'localhost:5000/app' ref=['localhost:5000', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H03 'localhost:5000/app:1.0' ref=['localhost:5000', 'app', '1.0', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H04 'myregistry:5000/app' ref=['myregistry:5000', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H05 '127.0.0.1:5000/app' ref=['127.0.0.1:5000', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H06 '[::1]:5000/app' ref=['[::1]:5000', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=R:ERR; docker-parse-image=A; parse-docker-image-name=R:ERR; oci-spec=R:ERR
+H07 'example.com/app' ref=['example.com', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H08 'example/app' ref=['docker.io', 'example/app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H09 'my-host/app' ref=['docker.io', 'my-host/app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H10 'sub.example.com:443/a:tag' ref=['sub.example.com:443', 'a', 'tag', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H11 'Example.com/app' ref=['Example.com', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H12 'localhost' ref=['docker.io', 'library/localhost', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H13 'localhost:5000' ref=['docker.io', 'library/localhost', '5000', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H14 'registry:5000/a/b:t' ref=['registry:5000', 'a/b', 't', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+H15 '[2001:db8::1]/app' ref=['[2001:db8::1]', 'app', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=R:ERR; docker-parse-image=A; parse-docker-image-name=R:ERR; oci-spec=R:ERR
+H16 'example.com:/app' ref=ERROR
+    go-containerregistry=L:["example.com:", "app", "latest", null]; docker-image-py=A; docker-py=L:["example.com:", "app", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["example.com:", "app", "latest", null]; parse-docker-image-name=A; oci-spec=A
+D01 'app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=['docker.io', 'library/app', None, 'sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef']
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+D02 'app:tag@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=['docker.io', 'library/app', 'tag', 'sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef']
+    go-containerregistry=W:["docker.io", "library/app", null, "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"]; docker-image-py=A; docker-py=W:["docker.io", "library/app:tag", null, "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"]; @swimlane/docker-reference=A; docker-parse-image=W:["docker.io", "library/app", "tag@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef", null]; parse-docker-image-name=A; oci-spec=A
+D03 'ghcr.io/o/r@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=['ghcr.io', 'o/r', None, 'sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef']
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+D04 'app@sha256:abc' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", null, "sha256:abc"]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", null, "sha256:abc"]; parse-docker-image-name=A; oci-spec=A
+D05 'app@sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=['docker.io', 'library/app', None, 'sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef']
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+D06 'app@md5:0123456789abcdef0123456789abcdef' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", null, "md5:0123456789abcdef0123456789abcdef"]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", null, "md5:0123456789abcdef0123456789abcdef"]; parse-docker-image-name=A; oci-spec=A
+D07 'app@sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", null, "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"]; @swimlane/docker-reference=L:["docker.io", "library/app", null, "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"]; docker-parse-image=L:["docker.io", "library/app", null, "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"]; parse-docker-image-name=A; oci-spec=L:["docker.io", "library/app", null, "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"]
+D08 'app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", null, "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", null, "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"]; parse-docker-image-name=A; oci-spec=A
+D09 'localhost:5000/app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=['localhost:5000', 'app', None, 'sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef']
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+D10 'app@' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", null, ""]; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+D11 'app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef", null, "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", null, "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"]; parse-docker-image-name=A; oci-spec=A
+D12 'app@foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", null, "foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", null, "foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"]; parse-docker-image-name=A; oci-spec=A
+T01 'app:1.2.3-rc_1' ref=['docker.io', 'library/app', '1.2.3-rc_1', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+T02 'app:.hidden' ref=ERROR
+    go-containerregistry=L:["docker.io", "library/app", ".hidden", null]; docker-image-py=A; docker-py=L:["docker.io", "library/app", ".hidden", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", ".hidden", null]; parse-docker-image-name=A; oci-spec=A
+T03 'app:-dash' ref=ERROR
+    go-containerregistry=L:["docker.io", "library/app", "-dash", null]; docker-image-py=A; docker-py=L:["docker.io", "library/app", "-dash", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", "-dash", null]; parse-docker-image-name=A; oci-spec=A
+T04 'app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' ref=['docker.io', 'library/app', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+T05 'app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", null]; parse-docker-image-name=A; oci-spec=A
+T06 'app:Latest' ref=['docker.io', 'library/app', 'Latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+T07 'app:' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app", "", null]; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+T08 'app:1:2' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/app:1", "2", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/app", "1:2", null]; parse-docker-image-name=A; oci-spec=A
+T09 'app:_x' ref=['docker.io', 'library/app', '_x', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+T10 'app:v1.0/x' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["app:v1.0", "x", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["app:v1.0", "x", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N01 'Ubuntu' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/Ubuntu", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/Ubuntu", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N02 'user/App' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "user/App", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "user/App", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N03 'a__b' ref=['docker.io', 'library/a__b', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+N04 'a___b' ref=ERROR
+    go-containerregistry=L:["docker.io", "library/a___b", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "library/a___b", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/a___b", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N05 'a..b' ref=ERROR
+    go-containerregistry=L:["docker.io", "library/a..b", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "library/a..b", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/a..b", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N06 'a.-b' ref=ERROR
+    go-containerregistry=L:["docker.io", "library/a.-b", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "library/a.-b", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/a.-b", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N07 '-a/b' ref=ERROR
+    go-containerregistry=L:["docker.io", "-a/b", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "-a/b", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "-a/b", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N08 'a/b/' ref=ERROR
+    go-containerregistry=L:["docker.io", "a/b/", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "a/b/", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+N09 'a//b' ref=ERROR
+    go-containerregistry=L:["docker.io", "a//b", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "a//b", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+N10 '/a/b' ref=ERROR
+    go-containerregistry=L:["docker.io", "/a/b", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "/a/b", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+N11 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N12 'café' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/caf\u00e9", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/caf\u00e9", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N13 'a b' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/a b", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/a b", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N14 '' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+N15 (open) 'a-b_c.d/e--f' ref=['', 'a-b_c.d/e--f', 'latest', None]
+    go-containerregistry=W:["a-b_c.d", "e--f", "latest", null]; docker-image-py=R:ERR; docker-py=W:["a-b_c.d", "e--f", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=W:["a-b_c.d", "e--f", "latest", null]; parse-docker-image-name=W:["docker.io", "a-b_c.d/e--f", "latest", null]; oci-spec=W:["a-b_c.d", "e--f", "latest", null]
+N16 'a/b/b/b/b/b/b/b/b/b/b' ref=['docker.io', 'a/b/b/b/b/b/b/b/b/b/b', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=R:ERR; parse-docker-image-name=A; oci-spec=A
+N17 'a_b' ref=['docker.io', 'library/a_b', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+N18 'a--b' ref=['docker.io', 'library/a--b', 'latest', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+N19 'ubuntu ' ref=ERROR
+    go-containerregistry=A; docker-image-py=A; docker-py=L:["docker.io", "library/ubuntu ", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/ubuntu ", "latest", null]; parse-docker-image-name=A; oci-spec=A
+N20 'a__' ref=ERROR
+    go-containerregistry=L:["docker.io", "library/a__", "latest", null]; docker-image-py=A; docker-py=L:["docker.io", "library/a__", "latest", null]; @swimlane/docker-reference=A; docker-parse-image=L:["docker.io", "library/a__", "latest", null]; parse-docker-image-name=A; oci-spec=A
+L01 'nginx:1.27-alpine' ref=['docker.io', 'library/nginx', '1.27-alpine', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L02 'postgres:16' ref=['docker.io', 'library/postgres', '16', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L03 'mcr.microsoft.com/dotnet/sdk:8.0' ref=['mcr.microsoft.com', 'dotnet/sdk', '8.0', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L04 'gcr.io/distroless/static-debian12:nonroot' ref=['gcr.io', 'distroless/static-debian12', 'nonroot', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L05 'public.ecr.aws/lambda/python:3.12' ref=['public.ecr.aws', 'lambda/python', '3.12', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L06 'registry.k8s.io/pause:3.9' ref=['registry.k8s.io', 'pause', '3.9', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L07 'ghcr.io/home-assistant/home-assistant:stable' ref=['ghcr.io', 'home-assistant/home-assistant', 'stable', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L08 'docker.io/bitnami/redis:7.2' ref=['docker.io', 'bitnami/redis', '7.2', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L09 'quay.io/prometheus/node-exporter:v1.8.2' ref=['quay.io', 'prometheus/node-exporter', 'v1.8.2', None]
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A
+L10 'redis@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef' ref=['docker.io', 'library/redis', None, 'sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef']
+    go-containerregistry=A; docker-image-py=A; docker-py=A; @swimlane/docker-reference=A; docker-parse-image=A; parse-docker-image-name=A; oci-spec=A

@@ -1,0 +1,5 @@
+node_modules/
+target/
+.bin-go-refs
+__pycache__/
+.venv/

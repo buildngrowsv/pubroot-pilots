@@ -1,0 +1,5666 @@
+{
+ "n_cases": 80,
+ "n_scored": 79,
+ "n_any_differs": 36,
+ "n_scored_dev": 35,
+ "classes": {
+  "go-containerregistry": {
+   "A": 67,
+   "L": 11,
+   "W": 1
+  },
+  "docker-image-py": {
+   "A": 79
+  },
+  "docker-py": {
+   "A": 49,
+   "L": 29,
+   "W": 1
+  },
+  "@swimlane/docker-reference": {
+   "A": 76,
+   "R": 2,
+   "L": 1
+  },
+  "docker-parse-image": {
+   "A": 52,
+   "R": 2,
+   "W": 2,
+   "L": 23
+  },
+  "parse-docker-image-name": {
+   "A": 77,
+   "R": 2
+  },
+  "oci-spec": {
+   "A": 76,
+   "R": 2,
+   "L": 1
+  }
+ },
+ "pairwise_scored": {
+  "go-containerregistry vs docker-image-py": 12,
+  "go-containerregistry vs docker-py": 19,
+  "go-containerregistry vs @swimlane/docker-reference": 15,
+  "go-containerregistry vs docker-parse-image": 22,
+  "go-containerregistry vs parse-docker-image-name": 14,
+  "go-containerregistry vs oci-spec": 15,
+  "docker-image-py vs docker-py": 30,
+  "docker-image-py vs @swimlane/docker-reference": 3,
+  "docker-image-py vs docker-parse-image": 27,
+  "docker-image-py vs parse-docker-image-name": 2,
+  "docker-image-py vs oci-spec": 3,
+  "docker-py vs @swimlane/docker-reference": 31,
+  "docker-py vs docker-parse-image": 12,
+  "docker-py vs parse-docker-image-name": 32,
+  "docker-py vs oci-spec": 31,
+  "@swimlane/docker-reference vs docker-parse-image": 28,
+  "@swimlane/docker-reference vs parse-docker-image-name": 1,
+  "@swimlane/docker-reference vs oci-spec": 0,
+  "docker-parse-image vs parse-docker-image-name": 29,
+  "docker-parse-image vs oci-spec": 28,
+  "parse-docker-image-name vs oci-spec": 1
+ },
+ "rows": [
+  {
+   "id": "B01",
+   "s": "ubuntu",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/ubuntu",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "ubuntu",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "ubuntu",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "ubuntu",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B02",
+   "s": "ubuntu:22.04",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/ubuntu",
+     "22.04",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B03",
+   "s": "library/ubuntu",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/ubuntu",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B04",
+   "s": "docker.io/library/ubuntu:22.04",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/ubuntu",
+     "22.04",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "22.04",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B05",
+   "s": "docker.io/ubuntu",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/ubuntu",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "ubuntu",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "docker.io",
+      "ubuntu",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "docker.io",
+      "ubuntu",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B06",
+   "s": "index.docker.io/library/ubuntu",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/ubuntu",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "index.docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B07",
+   "s": "user/app",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "user/app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "user/app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "user/app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "user/app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B08",
+   "s": "user/app:v1",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "user/app",
+     "v1",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "user/app",
+      "v1",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      "v1",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      "v1",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      "v1",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "user/app",
+      "v1",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "user/app",
+      "v1",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "user/app",
+      "v1",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B09",
+   "s": "ghcr.io/owner/repo:tag",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "ghcr.io",
+     "owner/repo",
+     "tag",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "ghcr.io",
+      "owner/repo",
+      "tag",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "ghcr.io",
+      "owner/repo",
+      "tag",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "ghcr.io",
+      "owner/repo",
+      "tag",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "ghcr.io",
+      "owner/repo",
+      "tag",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "ghcr.io",
+      "owner/repo",
+      "tag",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "ghcr.io",
+      "owner/repo",
+      "tag",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "ghcr.io",
+      "owner/repo",
+      "tag",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B10",
+   "s": "quay.io/org/repo",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "quay.io",
+     "org/repo",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "quay.io",
+      "org/repo",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "quay.io",
+      "org/repo",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "quay.io",
+      "org/repo",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "quay.io",
+      "org/repo",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "quay.io",
+      "org/repo",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "quay.io",
+      "org/repo",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "quay.io",
+      "org/repo",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B11",
+   "s": "registry.example.com/a/b/c:1",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "registry.example.com",
+     "a/b/c",
+     "1",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "registry.example.com",
+      "a/b/c",
+      "1",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "registry.example.com",
+      "a/b/c",
+      "1",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "registry.example.com",
+      "a/b/c",
+      "1",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "registry.example.com",
+      "a/b/c",
+      "1",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "registry.example.com",
+      "a/b/c",
+      "1",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "registry.example.com",
+      "a/b/c",
+      "1",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "R",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "B12",
+   "s": "registry-1.docker.io/library/ubuntu",
+   "group": "basic and Docker Hub",
+   "open": null,
+   "ref": {
+    "ref": [
+     "registry-1.docker.io",
+     "library/ubuntu",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "registry-1.docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "registry-1.docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "registry-1.docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "registry-1.docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "registry-1.docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "registry-1.docker.io",
+      "library/ubuntu",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "registry-1.docker.io",
+      "library/ubuntu",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H01",
+   "s": "localhost/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "localhost",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "localhost",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "localhost",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "localhost",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "localhost",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "localhost/app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "localhost",
+      "app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "localhost",
+      "app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "W",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H02",
+   "s": "localhost:5000/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "localhost:5000",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H03",
+   "s": "localhost:5000/app:1.0",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "localhost:5000",
+     "app",
+     "1.0",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "1.0",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "1.0",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "1.0",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "1.0",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "1.0",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "1.0",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      "1.0",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H04",
+   "s": "myregistry:5000/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "myregistry:5000",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "myregistry:5000",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "myregistry:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "myregistry:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "myregistry:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "myregistry:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "myregistry:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "myregistry:5000",
+      "app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H05",
+   "s": "127.0.0.1:5000/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "127.0.0.1:5000",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "127.0.0.1:5000",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "127.0.0.1:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "127.0.0.1:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "127.0.0.1:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "127.0.0.1:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "127.0.0.1:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "127.0.0.1:5000",
+      "app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H06",
+   "s": "[::1]:5000/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "[::1]:5000",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "[::1]:5000",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "[::1]:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "[::1]:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      "[::1]:5000",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "R",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "R",
+    "oci-spec": "R"
+   }
+  },
+  {
+   "id": "H07",
+   "s": "example.com/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "example.com",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "example.com",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "example.com",
+      "app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H08",
+   "s": "example/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "example/app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "example/app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "example/app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "example/app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "example/app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "example/app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "example/app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "example/app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H09",
+   "s": "my-host/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "my-host/app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "my-host/app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "my-host/app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "my-host/app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "my-host/app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "my-host/app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "my-host/app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "my-host/app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H10",
+   "s": "sub.example.com:443/a:tag",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "sub.example.com:443",
+     "a",
+     "tag",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "sub.example.com:443",
+      "a",
+      "tag",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "sub.example.com:443",
+      "a",
+      "tag",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "sub.example.com:443",
+      "a",
+      "tag",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "sub.example.com:443",
+      "a",
+      "tag",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "sub.example.com:443",
+      "a",
+      "tag",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "sub.example.com:443",
+      "a",
+      "tag",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "sub.example.com:443",
+      "a",
+      "tag",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H11",
+   "s": "Example.com/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "Example.com",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "Example.com",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "Example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "Example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "Example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "Example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "Example.com",
+      "app",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "Example.com",
+      "app",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H12",
+   "s": "localhost",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/localhost",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/localhost",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/localhost",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "localhost",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/localhost",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "localhost",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "localhost",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/localhost",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H13",
+   "s": "localhost:5000",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/localhost",
+     "5000",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/localhost",
+      "5000",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/localhost",
+      "5000",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "localhost",
+      "5000",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/localhost",
+      "5000",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "localhost",
+      "5000",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "localhost",
+      "5000",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/localhost",
+      "5000",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H14",
+   "s": "registry:5000/a/b:t",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "registry:5000",
+     "a/b",
+     "t",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "registry:5000",
+      "a/b",
+      "t",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "registry:5000",
+      "a/b",
+      "t",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "registry:5000",
+      "a/b",
+      "t",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "registry:5000",
+      "a/b",
+      "t",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "registry:5000",
+      "a/b",
+      "t",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "registry:5000",
+      "a/b",
+      "t",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "registry:5000",
+      "a/b",
+      "t",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "H15",
+   "s": "[2001:db8::1]/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "ref": [
+     "[2001:db8::1]",
+     "app",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "[2001:db8::1]",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "[2001:db8::1]",
+      "app",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "[2001:db8::1]",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      "[2001:db8::1]",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "R",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "R",
+    "oci-spec": "R"
+   }
+  },
+  {
+   "id": "H16",
+   "s": "example.com:/app",
+   "group": "registry host",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "example.com:",
+      "app",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "example.com:",
+      "app",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      "example.com:",
+      "app",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D01",
+   "s": "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/app",
+     null,
+     "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D02",
+   "s": "app:tag@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/app",
+     "tag",
+     "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "tag",
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app:tag",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "tag",
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "tag@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "app",
+      "tag",
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "tag",
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "W",
+    "docker-image-py": "A",
+    "docker-py": "W",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "W",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D03",
+   "s": "ghcr.io/o/r@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "ref": [
+     "ghcr.io",
+     "o/r",
+     null,
+     "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "ghcr.io",
+      "o/r",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "ghcr.io",
+      "o/r",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "ghcr.io",
+      "o/r",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "ghcr.io",
+      "o/r",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "ghcr.io",
+      "o/r",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "ghcr.io",
+      "o/r",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "ghcr.io",
+      "o/r",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D04",
+   "s": "app@sha256:abc",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app@sha256:abc"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      "sha256:abc"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha256:abc"
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D05",
+   "s": "app@sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/app",
+     null,
+     "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      null,
+      "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D06",
+   "s": "app@md5:0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "error": "unsupported digest algorithm"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app@md5:0123456789abcdef0123456789abcdef"
+    },
+    "docker-image-py": {
+     "error": "DigestUnsupported: unsupported digest algorithm"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      "md5:0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "unsupported digest algorithm"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "md5:0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "unsupported digest algorithm"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D07",
+   "s": "app@sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "error": "invalid checksum digest format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app@sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+    },
+    "docker-image-py": {
+     "error": "InvalidDigest: invalid digest"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      null,
+      "sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF"
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "L",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "L"
+   }
+  },
+  {
+   "id": "D08",
+   "s": "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx"
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D09",
+   "s": "localhost:5000/app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "ref": [
+     "localhost:5000",
+     "app",
+     null,
+     "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "localhost:5000",
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D10",
+   "s": "app@",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app@"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      ""
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D11",
+   "s": "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "D12",
+   "s": "app@foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "digests",
+   "open": null,
+   "ref": {
+    "error": "unsupported digest algorithm"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app@foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      null,
+      "foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "unsupported digest algorithm"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      null,
+      "foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "unsupported digest algorithm"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T01",
+   "s": "app:1.2.3-rc_1",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/app",
+     "1.2.3-rc_1",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      "1.2.3-rc_1",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "1.2.3-rc_1",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      "1.2.3-rc_1",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "1.2.3-rc_1",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "1.2.3-rc_1",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "app",
+      "1.2.3-rc_1",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "1.2.3-rc_1",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T02",
+   "s": "app:.hidden",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      ".hidden",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      ".hidden",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      ".hidden",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T03",
+   "s": "app:-dash",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      "-dash",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      "-dash",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "-dash",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T04",
+   "s": "app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/app",
+     "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T05",
+   "s": "app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T06",
+   "s": "app:Latest",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/app",
+     "Latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      "Latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "Latest",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      "Latest",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "Latest",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "Latest",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "app",
+      "Latest",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "Latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T07",
+   "s": "app:",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app:"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      "",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T08",
+   "s": "app:1:2",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app:1:2"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app:1",
+      "2",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "1:2",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T09",
+   "s": "app:_x",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/app",
+     "_x",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/app",
+      "_x",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "_x",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "app",
+      "_x",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "_x",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "app",
+      "_x",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "app",
+      "_x",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/app",
+      "_x",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "T10",
+   "s": "app:v1.0/x",
+   "group": "tags",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: app:v1.0/x"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "app:v1.0",
+      "x",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      "app:v1.0",
+      "x",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N01",
+   "s": "Ubuntu",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format: repository name (library/Ubuntu) must be lowercase"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: Ubuntu"
+    },
+    "docker-image-py": {
+     "error": "InvalidReference: invalid reference format: repository name (library/Ubuntu) must be lowercase"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "Ubuntu",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format: repository name must be lowercase"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "Ubuntu",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N02",
+   "s": "user/App",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format: repository name (user/App) must be lowercase"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: user/App"
+    },
+    "docker-image-py": {
+     "error": "InvalidReference: invalid reference format: repository name (user/App) must be lowercase"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "user/App",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format: repository name must be lowercase"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "user/App",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N03",
+   "s": "a__b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/a__b",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/a__b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/a__b",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a__b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/a__b",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a__b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "a__b",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/a__b",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N04",
+   "s": "a___b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/a___b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a___b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a___b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N05",
+   "s": "a..b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/a..b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a..b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a..b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N06",
+   "s": "a.-b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/a.-b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a.-b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a.-b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N07",
+   "s": "-a/b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "-a/b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "-a/b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "-a/b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N08",
+   "s": "a/b/",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "a/b/",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a/b/",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N09",
+   "s": "a//b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "a//b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a//b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N10",
+   "s": "/a/b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "/a/b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "/a/b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N11",
+   "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "repository name must not be more than 255 characters"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "docker-image-py": {
+     "error": "NameTooLong: repository name must not be more than 255 characters"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "repository name must not be more than 255 characters"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "repository name must not be more than 255 characters"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N12",
+   "s": "café",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: café"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "café",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "café",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N13",
+   "s": "a b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: a b"
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N14",
+   "s": "",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: "
+    },
+    "docker-image-py": {
+     "error": "NameEmpty: repository name must have at least one component"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "repository name must have at least one component"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N15",
+   "s": "a-b_c.d/e--f",
+   "group": "repository names",
+   "open": "reference returns an empty registry",
+   "ref": {
+    "ref": [
+     "",
+     "a-b_c.d/e--f",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "a-b_c.d",
+      "e--f",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "a-b_c.d",
+      "e--f",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "",
+      "a-b_c.d/e--f",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "a-b_c.d",
+      "e--f",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "a-b_c.d/e--f",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "a-b_c.d",
+      "e--f",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "W",
+    "docker-image-py": "R",
+    "docker-py": "W",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "W",
+    "parse-docker-image-name": "W",
+    "oci-spec": "W"
+   }
+  },
+  {
+   "id": "N16",
+   "s": "a/b/b/b/b/b/b/b/b/b/b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "a/b/b/b/b/b/b/b/b/b/b",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "a/b/b/b/b/b/b/b/b/b/b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "a/b/b/b/b/b/b/b/b/b/b",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a/b/b/b/b/b/b/b/b/b/b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "a/b/b/b/b/b/b/b/b/b/b",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "error": "no match"
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "a/b/b/b/b/b/b/b/b/b/b",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "a/b/b/b/b/b/b/b/b/b/b",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "R",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N17",
+   "s": "a_b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/a_b",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/a_b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/a_b",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a_b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/a_b",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a_b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "a_b",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/a_b",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N18",
+   "s": "a--b",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/a--b",
+     "latest",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/a--b",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/a--b",
+      null,
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a--b",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/a--b",
+      null,
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a--b",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "a--b",
+      null,
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/a--b",
+      "latest",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N19",
+   "s": "ubuntu ",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "error": "could not parse reference: ubuntu "
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "ubuntu ",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "ubuntu ",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "N20",
+   "s": "a__",
+   "group": "repository names",
+   "open": null,
+   "ref": {
+    "error": "invalid reference format"
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/a__",
+      "latest",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "error": "ReferenceInvalidFormat: invalid reference format"
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "a__",
+      null,
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "error": "invalid reference format"
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "a__",
+      null,
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "error": "empty result"
+    },
+    "oci-spec": {
+     "error": "invalid reference format"
+    }
+   },
+   "cls": {
+    "go-containerregistry": "L",
+    "docker-image-py": "A",
+    "docker-py": "L",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "L",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L01",
+   "s": "nginx:1.27-alpine",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/nginx",
+     "1.27-alpine",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/nginx",
+      "1.27-alpine",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/nginx",
+      "1.27-alpine",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "nginx",
+      "1.27-alpine",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/nginx",
+      "1.27-alpine",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "nginx",
+      "1.27-alpine",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "nginx",
+      "1.27-alpine",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/nginx",
+      "1.27-alpine",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L02",
+   "s": "postgres:16",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/postgres",
+     "16",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/postgres",
+      "16",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/postgres",
+      "16",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "postgres",
+      "16",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/postgres",
+      "16",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "postgres",
+      "16",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "postgres",
+      "16",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/postgres",
+      "16",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L03",
+   "s": "mcr.microsoft.com/dotnet/sdk:8.0",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "mcr.microsoft.com",
+     "dotnet/sdk",
+     "8.0",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "mcr.microsoft.com",
+      "dotnet/sdk",
+      "8.0",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "mcr.microsoft.com",
+      "dotnet/sdk",
+      "8.0",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "mcr.microsoft.com",
+      "dotnet/sdk",
+      "8.0",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "mcr.microsoft.com",
+      "dotnet/sdk",
+      "8.0",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "mcr.microsoft.com",
+      "dotnet/sdk",
+      "8.0",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "mcr.microsoft.com",
+      "dotnet/sdk",
+      "8.0",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "mcr.microsoft.com",
+      "dotnet/sdk",
+      "8.0",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L04",
+   "s": "gcr.io/distroless/static-debian12:nonroot",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "gcr.io",
+     "distroless/static-debian12",
+     "nonroot",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "gcr.io",
+      "distroless/static-debian12",
+      "nonroot",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "gcr.io",
+      "distroless/static-debian12",
+      "nonroot",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "gcr.io",
+      "distroless/static-debian12",
+      "nonroot",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "gcr.io",
+      "distroless/static-debian12",
+      "nonroot",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "gcr.io",
+      "distroless/static-debian12",
+      "nonroot",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "gcr.io",
+      "distroless/static-debian12",
+      "nonroot",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "gcr.io",
+      "distroless/static-debian12",
+      "nonroot",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L05",
+   "s": "public.ecr.aws/lambda/python:3.12",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "public.ecr.aws",
+     "lambda/python",
+     "3.12",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "public.ecr.aws",
+      "lambda/python",
+      "3.12",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "public.ecr.aws",
+      "lambda/python",
+      "3.12",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "public.ecr.aws",
+      "lambda/python",
+      "3.12",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "public.ecr.aws",
+      "lambda/python",
+      "3.12",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "public.ecr.aws",
+      "lambda/python",
+      "3.12",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "public.ecr.aws",
+      "lambda/python",
+      "3.12",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "public.ecr.aws",
+      "lambda/python",
+      "3.12",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L06",
+   "s": "registry.k8s.io/pause:3.9",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "registry.k8s.io",
+     "pause",
+     "3.9",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "registry.k8s.io",
+      "pause",
+      "3.9",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "registry.k8s.io",
+      "pause",
+      "3.9",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "registry.k8s.io",
+      "pause",
+      "3.9",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "registry.k8s.io",
+      "pause",
+      "3.9",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "registry.k8s.io",
+      "pause",
+      "3.9",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "registry.k8s.io",
+      "pause",
+      "3.9",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "registry.k8s.io",
+      "pause",
+      "3.9",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L07",
+   "s": "ghcr.io/home-assistant/home-assistant:stable",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "ghcr.io",
+     "home-assistant/home-assistant",
+     "stable",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "ghcr.io",
+      "home-assistant/home-assistant",
+      "stable",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "ghcr.io",
+      "home-assistant/home-assistant",
+      "stable",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "ghcr.io",
+      "home-assistant/home-assistant",
+      "stable",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "ghcr.io",
+      "home-assistant/home-assistant",
+      "stable",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "ghcr.io",
+      "home-assistant/home-assistant",
+      "stable",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "ghcr.io",
+      "home-assistant/home-assistant",
+      "stable",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "ghcr.io",
+      "home-assistant/home-assistant",
+      "stable",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L08",
+   "s": "docker.io/bitnami/redis:7.2",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "bitnami/redis",
+     "7.2",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "bitnami/redis",
+      "7.2",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "bitnami/redis",
+      "7.2",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "bitnami/redis",
+      "7.2",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "bitnami/redis",
+      "7.2",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "docker.io",
+      "bitnami/redis",
+      "7.2",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "docker.io",
+      "bitnami/redis",
+      "7.2",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "bitnami/redis",
+      "7.2",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L09",
+   "s": "quay.io/prometheus/node-exporter:v1.8.2",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "quay.io",
+     "prometheus/node-exporter",
+     "v1.8.2",
+     null
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "quay.io",
+      "prometheus/node-exporter",
+      "v1.8.2",
+      null
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "quay.io",
+      "prometheus/node-exporter",
+      "v1.8.2",
+      null
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "quay.io",
+      "prometheus/node-exporter",
+      "v1.8.2",
+      null
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "quay.io",
+      "prometheus/node-exporter",
+      "v1.8.2",
+      null
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      "quay.io",
+      "prometheus/node-exporter",
+      "v1.8.2",
+      null
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      "quay.io",
+      "prometheus/node-exporter",
+      "v1.8.2",
+      null
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "quay.io",
+      "prometheus/node-exporter",
+      "v1.8.2",
+      null
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  },
+  {
+   "id": "L10",
+   "s": "redis@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+   "group": "practical",
+   "open": null,
+   "ref": {
+    "ref": [
+     "docker.io",
+     "library/redis",
+     null,
+     "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    ]
+   },
+   "out": {
+    "go-containerregistry": {
+     "ref": [
+      "index.docker.io",
+      "library/redis",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-image-py": {
+     "ref": [
+      "docker.io",
+      "library/redis",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-py": {
+     "ref": [
+      "docker.io",
+      "redis",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "@swimlane/docker-reference": {
+     "ref": [
+      "docker.io",
+      "library/redis",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "docker-parse-image": {
+     "ref": [
+      null,
+      "redis",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "parse-docker-image-name": {
+     "ref": [
+      null,
+      "redis",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    },
+    "oci-spec": {
+     "ref": [
+      "docker.io",
+      "library/redis",
+      null,
+      "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+     ]
+    }
+   },
+   "cls": {
+    "go-containerregistry": "A",
+    "docker-image-py": "A",
+    "docker-py": "A",
+    "@swimlane/docker-reference": "A",
+    "docker-parse-image": "A",
+    "parse-docker-image-name": "A",
+    "oci-spec": "A"
+   }
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+python 3.13.5
+pypi docker==7.2.0
+pypi docker-image-py==0.2.0
+node v24.22.1
+npm @swimlane/docker-reference 2.0.1
+npm docker-parse-image 3.0.1
+npm parse-docker-image-name 3.0.0
+go version go1.27.3 linux/amd64
+go github.com/distribution/reference v0.6.0
+go github.com/google/go-containerregistry v0.22.1
+rustc 1.85.1 (4eb161250 2025-03-15) (built from a source tarball)
+crate oci-spec 0.10.0

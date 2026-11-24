@@ -1,0 +1,4476 @@
+{
+ "sources": [
+  [
+   "docker/awesome-compose",
+   "503c0dcef31b07fb77b2d4c5556bfafdf86f4f1a"
+  ],
+  [
+   "kubernetes/examples",
+   "22934a040acbb0c0aa103023ccbd871507bf17f6"
+  ],
+  [
+   "argoproj/argo-workflows",
+   "c2b35edf4829b1fcbc5cebafd77b8cebc8eb9709"
+  ],
+  [
+   "GoogleCloudPlatform/kubernetes-engine-samples",
+   "2c7091f9066e82d036e16f0a0ab68a18b09d29e1"
+  ],
+  [
+   "GoogleCloudPlatform/microservices-demo",
+   "c7cb6d5bfd6ea3aed768634ebbcb98cb7a523712"
+  ],
+  [
+   "tektoncd/catalog",
+   "112374ce1262b133a77300bd8133445722605e04"
+  ]
+ ],
+ "references": 2435,
+ "distinct": 477,
+ "templated_skipped": 317,
+ "reference_rejects": [
+  "<DOCKER_REPO>/chatbot:1.0",
+  "<DOCKER_REPO>/embed-docs:1.0",
+  "<YOUR-CONTAINER>",
+  "<YOUR_REGION>-docker.pkg.dev/<YOUR_PROJECT_ID>/<YOUR_REPO_NAME>/maxtext-grpo-runner:v2",
+  "<image_url>",
+  ">-",
+  "CONTAINER_IMAGE",
+  "IMAGE_NAME",
+  "Placeholder for TensorFlow distributed training image",
+  "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/book-details-app:v1",
+  "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/book-reviews-app:v1",
+  "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/home-app:v1",
+  "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/images-app:v1",
+  "REGION-docker.pkg.dev/PROJECT_ID/gke-llm/max-diffusion-web:latest",
+  "REGION-docker.pkg.dev/PROJECT_ID/gke-llm/max-diffusion:latest",
+  "REGION_NAME-docker.pkg.dev/PROJECT_ID/optimum-tpu/tgi-tpu:latest",
+  "gcr.io/<<PROJECT>>/jax/hello:latest",
+  "gcr.io/@IMAGE_REGISTRY_PROJECT@/gke-deploy-tekton-demo",
+  "us-central1-docker.pkg.dev/<PROJECT_ID>/adk-repo/adk-agent:latest",
+  "us-central1-docker.pkg.dev/PROJECT_ID/gke-scheduled-autoscaler/custom-metric-exporter",
+  "us-central1-docker.pkg.dev/PROJECT_ID/models/fastdash:latest",
+  "us-central1-docker.pkg.dev/PROJECT_ID/models/t5-small:1.0-cpu",
+  "us-central1-docker.pkg.dev/PROJECT_ID/models/t5-small:1.0-gpu"
+ ],
+ "docker_hub": 271,
+ "with_digest": 92,
+ "classes": {
+  "docker-image-py": {
+   "A": 477
+  },
+  "docker-py": {
+   "L": 23,
+   "A": 394,
+   "W": 60
+  },
+  "@swimlane/docker-reference": {
+   "A": 477
+  },
+  "docker-parse-image": {
+   "L": 9,
+   "A": 331,
+   "W": 56,
+   "R": 81
+  },
+  "parse-docker-image-name": {
+   "A": 477
+  },
+  "go-containerregistry": {
+   "A": 417,
+   "W": 60
+  },
+  "oci-spec": {
+   "A": 477
+  }
+ },
+ "classes_weighted_by_use": {
+  "docker-image-py": {
+   "A": 2435
+  },
+  "docker-py": {
+   "L": 36,
+   "A": 2261,
+   "W": 138
+  },
+  "@swimlane/docker-reference": {
+   "A": 2435
+  },
+  "docker-parse-image": {
+   "L": 18,
+   "A": 2118,
+   "W": 126,
+   "R": 173
+  },
+  "parse-docker-image-name": {
+   "A": 2435
+  },
+  "go-containerregistry": {
+   "A": 2297,
+   "W": 138
+  },
+  "oci-spec": {
+   "A": 2435
+  }
+ },
+ "deviations": {
+  "docker-image-py": [],
+  "docker-py": [
+   {
+    "s": "<DOCKER_REPO>/chatbot:1.0",
+    "uses": 4,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "<DOCKER_REPO>/chatbot",
+     "1.0",
+     null
+    ]
+   },
+   {
+    "s": "<DOCKER_REPO>/embed-docs:1.0",
+    "uses": 4,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "<DOCKER_REPO>/embed-docs",
+     "1.0",
+     null
+    ]
+   },
+   {
+    "s": "<YOUR-CONTAINER>",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/<YOUR-CONTAINER>",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "<YOUR_REGION>-docker.pkg.dev/<YOUR_PROJECT_ID>/<YOUR_REPO_NAME>/maxtext-grpo-runner:v2",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "<YOUR_REGION>-docker.pkg.dev",
+     "<YOUR_PROJECT_ID>/<YOUR_REPO_NAME>/maxtext-grpo-runner",
+     "v2",
+     null
+    ]
+   },
+   {
+    "s": "<image_url>",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/<image_url>",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": ">-",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/>-",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "CONTAINER_IMAGE",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/CONTAINER_IMAGE",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "IMAGE_NAME",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/IMAGE_NAME",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "Placeholder for TensorFlow distributed training image",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/Placeholder for TensorFlow distributed training image",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/book-details-app:v1",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "REGION-docker.pkg.dev",
+     "PROJECT_ID/REPOSITORY_NAME/book-details-app",
+     "v1",
+     null
+    ]
+   },
+   {
+    "s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/book-reviews-app:v1",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "REGION-docker.pkg.dev",
+     "PROJECT_ID/REPOSITORY_NAME/book-reviews-app",
+     "v1",
+     null
+    ]
+   },
+   {
+    "s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/home-app:v1",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "REGION-docker.pkg.dev",
+     "PROJECT_ID/REPOSITORY_NAME/home-app",
+     "v1",
+     null
+    ]
+   },
+   {
+    "s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/images-app:v1",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "REGION-docker.pkg.dev",
+     "PROJECT_ID/REPOSITORY_NAME/images-app",
+     "v1",
+     null
+    ]
+   },
+   {
+    "s": "REGION-docker.pkg.dev/PROJECT_ID/gke-llm/max-diffusion-web:latest",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "REGION-docker.pkg.dev",
+     "PROJECT_ID/gke-llm/max-diffusion-web",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "REGION-docker.pkg.dev/PROJECT_ID/gke-llm/max-diffusion:latest",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "REGION-docker.pkg.dev",
+     "PROJECT_ID/gke-llm/max-diffusion",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "REGION_NAME-docker.pkg.dev/PROJECT_ID/optimum-tpu/tgi-tpu:latest",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "REGION_NAME-docker.pkg.dev",
+     "PROJECT_ID/optimum-tpu/tgi-tpu",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "busybox:1.38.0@sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616",
+    "uses": 6,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/busybox",
+     "1.38.0",
+     "sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616"
+    ],
+    "lib": [
+     "docker.io",
+     "library/busybox:1.38.0",
+     null,
+     "sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616"
+    ]
+   },
+   {
+    "s": "cgr.dev/chainguard/git:2.39@sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "cgr.dev",
+     "chainguard/git",
+     "2.39",
+     "sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb"
+    ],
+    "lib": [
+     "cgr.dev",
+     "chainguard/git:2.39",
+     null,
+     "sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb"
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v3.4@sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3.4",
+     "sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit:v3.4",
+     null,
+     "sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5"
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v3@sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3",
+     "sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit:v3",
+     null,
+     "sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37"
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v4.2@sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v4.2",
+     "sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit:v4.2",
+     null,
+     "sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe"
+    ]
+   },
+   {
+    "s": "docker.io/amazon/aws-cli:2.0.52@sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4",
+    "uses": 3,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "amazon/aws-cli",
+     "2.0.52",
+     "sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4"
+    ],
+    "lib": [
+     "docker.io",
+     "amazon/aws-cli:2.0.52",
+     null,
+     "sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4"
+    ]
+   },
+   {
+    "s": "docker.io/ansible/ansible-runner:1.4.6@sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "ansible/ansible-runner",
+     "1.4.6",
+     "sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb"
+    ],
+    "lib": [
+     "docker.io",
+     "ansible/ansible-runner:1.4.6",
+     null,
+     "sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb"
+    ]
+   },
+   {
+    "s": "docker.io/appleboy/drone-scp:1.6.14@sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "appleboy/drone-scp",
+     "1.6.14",
+     "sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818"
+    ],
+    "lib": [
+     "docker.io",
+     "appleboy/drone-scp:1.6.14",
+     null,
+     "sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818"
+    ]
+   },
+   {
+    "s": "docker.io/appleboy/drone-ssh:1.6.1@sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "appleboy/drone-ssh",
+     "1.6.1",
+     "sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a"
+    ],
+    "lib": [
+     "docker.io",
+     "appleboy/drone-ssh:1.6.1",
+     null,
+     "sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a"
+    ]
+   },
+   {
+    "s": "docker.io/buildpacksio/lifecycle:0.8.1@sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86",
+    "uses": 3,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "buildpacksio/lifecycle",
+     "0.8.1",
+     "sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86"
+    ],
+    "lib": [
+     "docker.io",
+     "buildpacksio/lifecycle:0.8.1",
+     null,
+     "sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86"
+    ]
+   },
+   {
+    "s": "docker.io/curlimages/curl:7.70.0@sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4",
+    "uses": 12,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "curlimages/curl",
+     "7.70.0",
+     "sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4"
+    ],
+    "lib": [
+     "docker.io",
+     "curlimages/curl:7.70.0",
+     null,
+     "sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/black:latest-0.2@sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/black",
+     "latest-0.2",
+     "sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/black:latest-0.2",
+     null,
+     "sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/checkmake:0.1.0@sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/checkmake",
+     "0.1.0",
+     "sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/checkmake:0.1.0",
+     null,
+     "sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/mypy:latest-0.2@sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/mypy",
+     "latest-0.2",
+     "sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/mypy:latest-0.2",
+     null,
+     "sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/yamllint:1.23@sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/yamllint",
+     "1.23",
+     "sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/yamllint:1.23",
+     null,
+     "sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2"
+    ]
+   },
+   {
+    "s": "docker.io/garethr/kubeval:0.15.0@sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "garethr/kubeval",
+     "0.15.0",
+     "sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d"
+    ],
+    "lib": [
+     "docker.io",
+     "garethr/kubeval:0.15.0",
+     null,
+     "sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d"
+    ]
+   },
+   {
+    "s": "docker.io/hugomods/hugo:0.122.0@sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "hugomods/hugo",
+     "0.122.0",
+     "sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d"
+    ],
+    "lib": [
+     "docker.io",
+     "hugomods/hugo:0.122.0",
+     null,
+     "sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d"
+    ]
+   },
+   {
+    "s": "docker.io/instrumenta/conftest:v0.21.0@sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "instrumenta/conftest",
+     "v0.21.0",
+     "sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21"
+    ],
+    "lib": [
+     "docker.io",
+     "instrumenta/conftest:v0.21.0",
+     null,
+     "sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21"
+    ]
+   },
+   {
+    "s": "docker.io/koalaman/shellcheck:v0.7.1@sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "koalaman/shellcheck",
+     "v0.7.1",
+     "sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee"
+    ],
+    "lib": [
+     "docker.io",
+     "koalaman/shellcheck:v0.7.1",
+     null,
+     "sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee"
+    ]
+   },
+   {
+    "s": "docker.io/library/alpine:3.12@sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/alpine",
+     "3.12",
+     "sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad"
+    ],
+    "lib": [
+     "docker.io",
+     "library/alpine:3.12",
+     null,
+     "sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad"
+    ]
+   },
+   {
+    "s": "docker.io/library/alpine:3.12@sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/alpine",
+     "3.12",
+     "sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e"
+    ],
+    "lib": [
+     "docker.io",
+     "library/alpine:3.12",
+     null,
+     "sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e"
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.0.18@sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.0.18",
+     "sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash:5.0.18",
+     null,
+     "sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404"
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.1.4@sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6",
+    "uses": 20,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.1.4",
+     "sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash:5.1.4",
+     null,
+     "sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6"
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.1.4@sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.1.4",
+     "sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash:5.1.4",
+     null,
+     "sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9"
+    ]
+   },
+   {
+    "s": "docker.io/library/busybox:1.32.0@sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/busybox",
+     "1.32.0",
+     "sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc"
+    ],
+    "lib": [
+     "docker.io",
+     "library/busybox:1.32.0",
+     null,
+     "sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.12-alpine@sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.12-alpine",
+     "sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python:3.12-alpine",
+     null,
+     "sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.8-alpine@sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.8-alpine",
+     "sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python:3.8-alpine",
+     null,
+     "sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.9-alpine3.13@sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.9-alpine3.13",
+     "sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python:3.9-alpine3.13",
+     null,
+     "sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.9.19-alpine3.20@sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.9.19-alpine3.20",
+     "sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python:3.9.19-alpine3.20",
+     null,
+     "sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d"
+    ]
+   },
+   {
+    "s": "docker.io/macstadium/orka-tekton-runner:2020-10-23-a93757dc-0.1@sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "macstadium/orka-tekton-runner",
+     "2020-10-23-a93757dc-0.1",
+     "sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339"
+    ],
+    "lib": [
+     "docker.io",
+     "macstadium/orka-tekton-runner:2020-10-23-a93757dc-0.1",
+     null,
+     "sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339"
+    ]
+   },
+   {
+    "s": "docker.io/markdownlint/markdownlint:0.11.0@sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "markdownlint/markdownlint",
+     "0.11.0",
+     "sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724"
+    ],
+    "lib": [
+     "docker.io",
+     "markdownlint/markdownlint:0.11.0",
+     null,
+     "sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724"
+    ]
+   },
+   {
+    "s": "docker.io/mikefarah/yq:4@sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "mikefarah/yq",
+     "4",
+     "sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b"
+    ],
+    "lib": [
+     "docker.io",
+     "mikefarah/yq:4",
+     null,
+     "sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b"
+    ]
+   },
+   {
+    "s": "docker.io/openpolicyagent/conftest:v0.54.0@sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "openpolicyagent/conftest",
+     "v0.54.0",
+     "sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86"
+    ],
+    "lib": [
+     "docker.io",
+     "openpolicyagent/conftest:v0.54.0",
+     null,
+     "sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86"
+    ]
+   },
+   {
+    "s": "docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46",
+    "uses": 5,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pgsty/silo",
+     "RELEASE.2026-09-16T00-00-00Z",
+     "sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46"
+    ],
+    "lib": [
+     "docker.io",
+     "pgsty/silo:RELEASE.2026-09-16T00-00-00Z",
+     null,
+     "sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46"
+    ]
+   },
+   {
+    "s": "docker.io/pipelinecomponents/rubocop:0.19.0@sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pipelinecomponents/rubocop",
+     "0.19.0",
+     "sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3"
+    ],
+    "lib": [
+     "docker.io",
+     "pipelinecomponents/rubocop:0.19.0",
+     null,
+     "sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3"
+    ]
+   },
+   {
+    "s": "docker.io/pipelinecomponents/tslint:0.14.1@sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pipelinecomponents/tslint",
+     "0.14.1",
+     "sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45"
+    ],
+    "lib": [
+     "docker.io",
+     "pipelinecomponents/tslint:0.14.1",
+     null,
+     "sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45"
+    ]
+   },
+   {
+    "s": "docker.io/shaowenchen/rsync-sshpass:v1@sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "shaowenchen/rsync-sshpass",
+     "v1",
+     "sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323"
+    ],
+    "lib": [
+     "docker.io",
+     "shaowenchen/rsync-sshpass:v1",
+     null,
+     "sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323"
+    ]
+   },
+   {
+    "s": "docker.io/sonarsource/sonar-scanner-cli:4.5@sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "sonarsource/sonar-scanner-cli",
+     "4.5",
+     "sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a"
+    ],
+    "lib": [
+     "docker.io",
+     "sonarsource/sonar-scanner-cli:4.5",
+     null,
+     "sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a"
+    ]
+   },
+   {
+    "s": "docker.io/stackrox/kube-linter:0.2.2-2-g7d10a69154-alpine@sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "stackrox/kube-linter",
+     "0.2.2-2-g7d10a69154-alpine",
+     "sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0"
+    ],
+    "lib": [
+     "docker.io",
+     "stackrox/kube-linter:0.2.2-2-g7d10a69154-alpine",
+     null,
+     "sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0"
+    ]
+   },
+   {
+    "s": "docker.io/weaveworks/eksctl:0.35.0@sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "weaveworks/eksctl",
+     "0.35.0",
+     "sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327"
+    ],
+    "lib": [
+     "docker.io",
+     "weaveworks/eksctl:0.35.0",
+     null,
+     "sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327"
+    ]
+   },
+   {
+    "s": "docker.io/zricethezav/gitleaks:v7.5.0@sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "zricethezav/gitleaks",
+     "v7.5.0",
+     "sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456"
+    ],
+    "lib": [
+     "docker.io",
+     "zricethezav/gitleaks:v7.5.0",
+     null,
+     "sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456"
+    ]
+   },
+   {
+    "s": "envoyproxy/envoy:v1.24.0@sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "envoyproxy/envoy",
+     "v1.24.0",
+     "sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0"
+    ],
+    "lib": [
+     "docker.io",
+     "envoyproxy/envoy:v1.24.0",
+     null,
+     "sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0"
+    ]
+   },
+   {
+    "s": "gcr.io/<<PROJECT>>/jax/hello:latest",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "gcr.io",
+     "<<PROJECT>>/jax/hello",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "gcr.io/@IMAGE_REGISTRY_PROJECT@/gke-deploy-tekton-demo",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "gcr.io",
+     "@IMAGE_REGISTRY_PROJECT",
+     null,
+     "/gke-deploy-tekton-demo"
+    ]
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:310.0.0@sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "310.0.0",
+     "sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506"
+    ],
+    "lib": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk:310.0.0",
+     null,
+     "sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506"
+    ]
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:379.0.0-slim@sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "379.0.0-slim",
+     "sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9"
+    ],
+    "lib": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk:379.0.0-slim",
+     null,
+     "sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9"
+    ]
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:slim@sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "slim",
+     "sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17"
+    ],
+    "lib": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk:slim",
+     null,
+     "sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17"
+    ]
+   },
+   {
+    "s": "gcr.io/kythe-public/golang-extractor:git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc@sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc",
+     "sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3"
+    ],
+    "lib": [
+     "gcr.io",
+     "kythe-public/golang-extractor:git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc",
+     null,
+     "sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3"
+    ]
+   },
+   {
+    "s": "gcr.io/kythe-public/golang-extractor:stable@sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "stable",
+     "sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb"
+    ],
+    "lib": [
+     "gcr.io",
+     "kythe-public/golang-extractor:stable",
+     null,
+     "sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb"
+    ]
+   },
+   {
+    "s": "gcr.io/uber-container-tools/makisu:v0.3.1@sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "uber-container-tools/makisu",
+     "v0.3.1",
+     "sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c"
+    ],
+    "lib": [
+     "gcr.io",
+     "uber-container-tools/makisu:v0.3.1",
+     null,
+     "sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c"
+    ]
+   },
+   {
+    "s": "ghcr.io/hadolint/hadolint:v2.8.0-debian@sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "ghcr.io",
+     "hadolint/hadolint",
+     "v2.8.0-debian",
+     "sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4"
+    ],
+    "lib": [
+     "ghcr.io",
+     "hadolint/hadolint:v2.8.0-debian",
+     null,
+     "sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4"
+    ]
+   },
+   {
+    "s": "ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "ghcr.io",
+     "macstadium/orka-tekton-runner",
+     "2022-06-29-ec3440a7",
+     "sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e"
+    ],
+    "lib": [
+     "ghcr.io",
+     "macstadium/orka-tekton-runner:2022-06-29-ec3440a7",
+     null,
+     "sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e"
+    ]
+   },
+   {
+    "s": "gke.gcr.io/pause:3.8@sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gke.gcr.io",
+     "pause",
+     "3.8",
+     "sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830"
+    ],
+    "lib": [
+     "gke.gcr.io",
+     "pause:3.8",
+     null,
+     "sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830"
+    ]
+   },
+   {
+    "s": "mcr.microsoft.com/dotnet/sdk:3.1-focal@sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "mcr.microsoft.com",
+     "dotnet/sdk",
+     "3.1-focal",
+     "sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba"
+    ],
+    "lib": [
+     "mcr.microsoft.com",
+     "dotnet/sdk:3.1-focal",
+     null,
+     "sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba"
+    ]
+   },
+   {
+    "s": "otel/opentelemetry-collector-contrib:0.160.0@sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "otel/opentelemetry-collector-contrib",
+     "0.160.0",
+     "sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6"
+    ],
+    "lib": [
+     "docker.io",
+     "otel/opentelemetry-collector-contrib:0.160.0",
+     null,
+     "sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6"
+    ]
+   },
+   {
+    "s": "quay.io/holos/mccutchen/go-httpbin:v2.14.1@sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97",
+    "uses": 5,
+    "cls": "W",
+    "ref": [
+     "quay.io",
+     "holos/mccutchen/go-httpbin",
+     "v2.14.1",
+     "sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97"
+    ],
+    "lib": [
+     "quay.io",
+     "holos/mccutchen/go-httpbin:v2.14.1",
+     null,
+     "sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97"
+    ]
+   },
+   {
+    "s": "quay.io/prometheus/prometheus:v3.2.1@sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "quay.io",
+     "prometheus/prometheus",
+     "v3.2.1",
+     "sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62"
+    ],
+    "lib": [
+     "quay.io",
+     "prometheus/prometheus:v3.2.1",
+     null,
+     "sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62"
+    ]
+   },
+   {
+    "s": "redis:alpine@sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/redis",
+     "alpine",
+     "sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb"
+    ],
+    "lib": [
+     "docker.io",
+     "library/redis:alpine",
+     null,
+     "sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/python-38:1-34.1599745032@sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/python-38",
+     "1-34.1599745032",
+     "sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/python-38:1-34.1599745032",
+     null,
+     "sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/ubi-minimal:8.2@sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6",
+    "uses": 6,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/ubi-minimal",
+     "8.2",
+     "sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/ubi-minimal:8.2",
+     null,
+     "sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/ubi:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/ubi",
+     "8.2",
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/ubi:8.2",
+     null,
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8",
+     "8.2",
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8:8.2",
+     null,
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ]
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/<PROJECT_ID>/adk-repo/adk-agent:latest",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "us-central1-docker.pkg.dev",
+     "<PROJECT_ID>/adk-repo/adk-agent",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/PROJECT_ID/gke-scheduled-autoscaler/custom-metric-exporter",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "us-central1-docker.pkg.dev",
+     "PROJECT_ID/gke-scheduled-autoscaler/custom-metric-exporter",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/PROJECT_ID/models/fastdash:latest",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "us-central1-docker.pkg.dev",
+     "PROJECT_ID/models/fastdash",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/PROJECT_ID/models/t5-small:1.0-cpu",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "us-central1-docker.pkg.dev",
+     "PROJECT_ID/models/t5-small",
+     "1.0-cpu",
+     null
+    ]
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/PROJECT_ID/models/t5-small:1.0-gpu",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "us-central1-docker.pkg.dev",
+     "PROJECT_ID/models/t5-small",
+     "1.0-gpu",
+     null
+    ]
+   }
+  ],
+  "@swimlane/docker-reference": [],
+  "docker-parse-image": [
+   {
+    "s": "<DOCKER_REPO>/chatbot:1.0",
+    "uses": 4,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "<DOCKER_REPO>/chatbot",
+     "1.0",
+     null
+    ]
+   },
+   {
+    "s": "<DOCKER_REPO>/embed-docs:1.0",
+    "uses": 4,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "<DOCKER_REPO>/embed-docs",
+     "1.0",
+     null
+    ]
+   },
+   {
+    "s": "<YOUR-CONTAINER>",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/<YOUR-CONTAINER>",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "<image_url>",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/<image_url>",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": ">-",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/>-",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "CONTAINER_IMAGE",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/CONTAINER_IMAGE",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "IMAGE_NAME",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/IMAGE_NAME",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "Placeholder for TensorFlow distributed training image",
+    "uses": 1,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "docker.io",
+     "library/Placeholder for TensorFlow distributed training image",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "busybox:1.38.0@sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616",
+    "uses": 6,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/busybox",
+     "1.38.0",
+     "sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616"
+    ],
+    "lib": [
+     "docker.io",
+     "library/busybox",
+     "1.38.0@sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616",
+     null
+    ]
+   },
+   {
+    "s": "cgr.dev/chainguard/git:2.39@sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "cgr.dev",
+     "chainguard/git",
+     "2.39",
+     "sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb"
+    ],
+    "lib": [
+     "cgr.dev",
+     "chainguard/git",
+     "2.39@sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v3.4@sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3.4",
+     "sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3.4@sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v3@sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3",
+     "sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3@sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v4.2@sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v4.2",
+     "sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v4.2@sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/amazon/aws-cli:2.0.52@sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4",
+    "uses": 3,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "amazon/aws-cli",
+     "2.0.52",
+     "sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4"
+    ],
+    "lib": [
+     "docker.io",
+     "amazon/aws-cli",
+     "2.0.52@sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/ansible/ansible-runner:1.4.6@sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "ansible/ansible-runner",
+     "1.4.6",
+     "sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb"
+    ],
+    "lib": [
+     "docker.io",
+     "ansible/ansible-runner",
+     "1.4.6@sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/appleboy/drone-scp:1.6.14@sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "appleboy/drone-scp",
+     "1.6.14",
+     "sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818"
+    ],
+    "lib": [
+     "docker.io",
+     "appleboy/drone-scp",
+     "1.6.14@sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/appleboy/drone-ssh:1.6.1@sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "appleboy/drone-ssh",
+     "1.6.1",
+     "sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a"
+    ],
+    "lib": [
+     "docker.io",
+     "appleboy/drone-ssh",
+     "1.6.1@sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/buildpacksio/lifecycle:0.8.1@sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86",
+    "uses": 3,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "buildpacksio/lifecycle",
+     "0.8.1",
+     "sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86"
+    ],
+    "lib": [
+     "docker.io",
+     "buildpacksio/lifecycle",
+     "0.8.1@sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/curlimages/curl:7.70.0@sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4",
+    "uses": 12,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "curlimages/curl",
+     "7.70.0",
+     "sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4"
+    ],
+    "lib": [
+     "docker.io",
+     "curlimages/curl",
+     "7.70.0@sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/black:latest-0.2@sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/black",
+     "latest-0.2",
+     "sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/black",
+     "latest-0.2@sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/checkmake:0.1.0@sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/checkmake",
+     "0.1.0",
+     "sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/checkmake",
+     "0.1.0@sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/mypy:latest-0.2@sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/mypy",
+     "latest-0.2",
+     "sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/mypy",
+     "latest-0.2@sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/yamllint:1.23@sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/yamllint",
+     "1.23",
+     "sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/yamllint",
+     "1.23@sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/garethr/kubeval:0.15.0@sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "garethr/kubeval",
+     "0.15.0",
+     "sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d"
+    ],
+    "lib": [
+     "docker.io",
+     "garethr/kubeval",
+     "0.15.0@sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/hugomods/hugo:0.122.0@sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "hugomods/hugo",
+     "0.122.0",
+     "sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d"
+    ],
+    "lib": [
+     "docker.io",
+     "hugomods/hugo",
+     "0.122.0@sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/instrumenta/conftest:v0.21.0@sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "instrumenta/conftest",
+     "v0.21.0",
+     "sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21"
+    ],
+    "lib": [
+     "docker.io",
+     "instrumenta/conftest",
+     "v0.21.0@sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/koalaman/shellcheck:v0.7.1@sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "koalaman/shellcheck",
+     "v0.7.1",
+     "sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee"
+    ],
+    "lib": [
+     "docker.io",
+     "koalaman/shellcheck",
+     "v0.7.1@sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/alpine:3.12@sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/alpine",
+     "3.12",
+     "sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad"
+    ],
+    "lib": [
+     "docker.io",
+     "library/alpine",
+     "3.12@sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/alpine:3.12@sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/alpine",
+     "3.12",
+     "sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e"
+    ],
+    "lib": [
+     "docker.io",
+     "library/alpine",
+     "3.12@sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.0.18@sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.0.18",
+     "sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash",
+     "5.0.18@sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.1.4@sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6",
+    "uses": 20,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.1.4",
+     "sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash",
+     "5.1.4@sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.1.4@sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.1.4",
+     "sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash",
+     "5.1.4@sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/busybox:1.32.0@sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/busybox",
+     "1.32.0",
+     "sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc"
+    ],
+    "lib": [
+     "docker.io",
+     "library/busybox",
+     "1.32.0@sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.12-alpine@sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.12-alpine",
+     "sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     "3.12-alpine@sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.8-alpine@sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.8-alpine",
+     "sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     "3.8-alpine@sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.9-alpine3.13@sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.9-alpine3.13",
+     "sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     "3.9-alpine3.13@sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.9.19-alpine3.20@sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.9.19-alpine3.20",
+     "sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     "3.9.19-alpine3.20@sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/macstadium/orka-tekton-runner:2020-10-23-a93757dc-0.1@sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "macstadium/orka-tekton-runner",
+     "2020-10-23-a93757dc-0.1",
+     "sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339"
+    ],
+    "lib": [
+     "docker.io",
+     "macstadium/orka-tekton-runner",
+     "2020-10-23-a93757dc-0.1@sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/markdownlint/markdownlint:0.11.0@sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "markdownlint/markdownlint",
+     "0.11.0",
+     "sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724"
+    ],
+    "lib": [
+     "docker.io",
+     "markdownlint/markdownlint",
+     "0.11.0@sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/mikefarah/yq:4@sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "mikefarah/yq",
+     "4",
+     "sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b"
+    ],
+    "lib": [
+     "docker.io",
+     "mikefarah/yq",
+     "4@sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/openpolicyagent/conftest:v0.54.0@sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "openpolicyagent/conftest",
+     "v0.54.0",
+     "sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86"
+    ],
+    "lib": [
+     "docker.io",
+     "openpolicyagent/conftest",
+     "v0.54.0@sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46",
+    "uses": 5,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pgsty/silo",
+     "RELEASE.2026-09-16T00-00-00Z",
+     "sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46"
+    ],
+    "lib": [
+     "docker.io",
+     "pgsty/silo",
+     "RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/pipelinecomponents/rubocop:0.19.0@sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pipelinecomponents/rubocop",
+     "0.19.0",
+     "sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3"
+    ],
+    "lib": [
+     "docker.io",
+     "pipelinecomponents/rubocop",
+     "0.19.0@sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/pipelinecomponents/tslint:0.14.1@sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pipelinecomponents/tslint",
+     "0.14.1",
+     "sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45"
+    ],
+    "lib": [
+     "docker.io",
+     "pipelinecomponents/tslint",
+     "0.14.1@sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/shaowenchen/rsync-sshpass:v1@sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "shaowenchen/rsync-sshpass",
+     "v1",
+     "sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323"
+    ],
+    "lib": [
+     "docker.io",
+     "shaowenchen/rsync-sshpass",
+     "v1@sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/sonarsource/sonar-scanner-cli:4.5@sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "sonarsource/sonar-scanner-cli",
+     "4.5",
+     "sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a"
+    ],
+    "lib": [
+     "docker.io",
+     "sonarsource/sonar-scanner-cli",
+     "4.5@sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/stackrox/kube-linter:0.2.2-2-g7d10a69154-alpine@sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "stackrox/kube-linter",
+     "0.2.2-2-g7d10a69154-alpine",
+     "sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0"
+    ],
+    "lib": [
+     "docker.io",
+     "stackrox/kube-linter",
+     "0.2.2-2-g7d10a69154-alpine@sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/weaveworks/eksctl:0.35.0@sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "weaveworks/eksctl",
+     "0.35.0",
+     "sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327"
+    ],
+    "lib": [
+     "docker.io",
+     "weaveworks/eksctl",
+     "0.35.0@sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327",
+     null
+    ]
+   },
+   {
+    "s": "docker.io/zricethezav/gitleaks:v7.5.0@sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "zricethezav/gitleaks",
+     "v7.5.0",
+     "sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456"
+    ],
+    "lib": [
+     "docker.io",
+     "zricethezav/gitleaks",
+     "v7.5.0@sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456",
+     null
+    ]
+   },
+   {
+    "s": "envoyproxy/envoy:v1.24.0@sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "envoyproxy/envoy",
+     "v1.24.0",
+     "sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0"
+    ],
+    "lib": [
+     "docker.io",
+     "envoyproxy/envoy",
+     "v1.24.0@sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0",
+     null
+    ]
+   },
+   {
+    "s": "gcr.io/@IMAGE_REGISTRY_PROJECT@/gke-deploy-tekton-demo",
+    "uses": 2,
+    "cls": "L",
+    "ref": null,
+    "lib": [
+     "gcr.io",
+     "@IMAGE_REGISTRY_PROJECT@/gke-deploy-tekton-demo",
+     "latest",
+     null
+    ]
+   },
+   {
+    "s": "gcr.io/gke-release/slinky/slurmd:IMAGE_TAG",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "gke-release/slinky/slurmd",
+     "IMAGE_TAG",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/gke-release/slinky/slurmd:TAG",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "gke-release/slinky/slurmd",
+     "TAG",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/adservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/adservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/cartservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/cartservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/checkoutservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/checkoutservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/currencyservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/currencyservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/emailservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/emailservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/frontend:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/frontend",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/loadgenerator:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/loadgenerator",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/paymentservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/paymentservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/productcatalogservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/productcatalogservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/recommendationservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/recommendationservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google-samples/microservices-demo/shippingservice:v0.4.1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google-samples/microservices-demo/shippingservice",
+     "v0.4.1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:310.0.0@sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506",
+    "uses": 4,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "310.0.0",
+     "sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506"
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:379.0.0-slim@sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "379.0.0-slim",
+     "sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9"
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:slim@sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "slim",
+     "sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17"
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/google-cloud-cli:slim",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/google-cloud-cli",
+     "slim",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/knative-releases/knative.dev/eventing-contrib/cmd/event_display",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "gcr.io",
+     "knative-releases/knative.dev/eventing-contrib/cmd/event_display",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gcr.io/kythe-public/golang-extractor:git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc@sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc",
+     "sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3"
+    ],
+    "lib": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc@sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3",
+     null
+    ]
+   },
+   {
+    "s": "gcr.io/kythe-public/golang-extractor:stable@sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "stable",
+     "sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb"
+    ],
+    "lib": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "stable@sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb",
+     null
+    ]
+   },
+   {
+    "s": "gcr.io/uber-container-tools/makisu:v0.3.1@sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "uber-container-tools/makisu",
+     "v0.3.1",
+     "sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c"
+    ],
+    "lib": [
+     "gcr.io",
+     "uber-container-tools/makisu",
+     "v0.3.1@sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c",
+     null
+    ]
+   },
+   {
+    "s": "ghcr.io/hadolint/hadolint:v2.8.0-debian@sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "ghcr.io",
+     "hadolint/hadolint",
+     "v2.8.0-debian",
+     "sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4"
+    ],
+    "lib": [
+     "ghcr.io",
+     "hadolint/hadolint",
+     "v2.8.0-debian@sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4",
+     null
+    ]
+   },
+   {
+    "s": "ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "ghcr.io",
+     "macstadium/orka-tekton-runner",
+     "2022-06-29-ec3440a7",
+     "sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e"
+    ],
+    "lib": [
+     "ghcr.io",
+     "macstadium/orka-tekton-runner",
+     "2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e",
+     null
+    ]
+   },
+   {
+    "s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/git-init:v0.14.2",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "ghcr.io",
+     "tektoncd/github.com/tektoncd/pipeline/cmd/git-init",
+     "v0.14.2",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.16.2",
+    "uses": 3,
+    "cls": "R",
+    "ref": [
+     "ghcr.io",
+     "tektoncd/github.com/tektoncd/pipeline/cmd/imagedigestexporter",
+     "v0.16.2",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.18.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "ghcr.io",
+     "tektoncd/github.com/tektoncd/pipeline/cmd/imagedigestexporter",
+     "v0.18.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/kubeconfigwriter@sha256:b2c6d0962cda88fb3095128b6202da9b0e6c9c0df3ef6cf7863505ffd25072fd",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "ghcr.io",
+     "tektoncd/github.com/tektoncd/pipeline/cmd/kubeconfigwriter",
+     null,
+     "sha256:b2c6d0962cda88fb3095128b6202da9b0e6c9c0df3ef6cf7863505ffd25072fd"
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/pullrequest-init@sha256:69633ecd0e948f6462c61bb9e008b940a05b143ef51c67e6e4093278a23dac53",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "ghcr.io",
+     "tektoncd/github.com/tektoncd/pipeline/cmd/pullrequest-init",
+     null,
+     "sha256:69633ecd0e948f6462c61bb9e008b940a05b143ef51c67e6e4093278a23dac53"
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "ghcr.io/tektoncd/plumbing/test-runner@sha256:44aa00796831a4ed5586152058dd96a6d14174b8a4ea9fcae663fb37f72c9454",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "ghcr.io",
+     "tektoncd/plumbing/test-runner",
+     null,
+     "sha256:44aa00796831a4ed5586152058dd96a6d14174b8a4ea9fcae663fb37f72c9454"
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "github.com/knative/eventing/cmd/sendevent",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "github.com",
+     "knative/eventing/cmd/sendevent",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "gke.gcr.io/pause:3.8@sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gke.gcr.io",
+     "pause",
+     "3.8",
+     "sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830"
+    ],
+    "lib": [
+     "gke.gcr.io",
+     "pause",
+     "3.8@sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830",
+     null
+    ]
+   },
+   {
+    "s": "mcr.microsoft.com/dotnet/sdk:3.1-focal@sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "mcr.microsoft.com",
+     "dotnet/sdk",
+     "3.1-focal",
+     "sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba"
+    ],
+    "lib": [
+     "mcr.microsoft.com",
+     "dotnet/sdk",
+     "3.1-focal@sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba",
+     null
+    ]
+   },
+   {
+    "s": "nvcr.io/nim/nvidia/llm-nim:1.14",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "nvcr.io",
+     "nim/nvidia/llm-nim",
+     "1.14",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "nvcr.io/nim/nvidia/llm-nim:latest",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "nvcr.io",
+     "nim/nvidia/llm-nim",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "otel/opentelemetry-collector-contrib:0.160.0@sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "otel/opentelemetry-collector-contrib",
+     "0.160.0",
+     "sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6"
+    ],
+    "lib": [
+     "docker.io",
+     "otel/opentelemetry-collector-contrib",
+     "0.160.0@sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6",
+     null
+    ]
+   },
+   {
+    "s": "quay.io/holos/mccutchen/go-httpbin:v2.14.1@sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97",
+    "uses": 5,
+    "cls": "R",
+    "ref": [
+     "quay.io",
+     "holos/mccutchen/go-httpbin",
+     "v2.14.1",
+     "sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97"
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "quay.io/prometheus/prometheus:v3.2.1@sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "quay.io",
+     "prometheus/prometheus",
+     "v3.2.1",
+     "sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62"
+    ],
+    "lib": [
+     "quay.io",
+     "prometheus/prometheus",
+     "v3.2.1@sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62",
+     null
+    ]
+   },
+   {
+    "s": "redis:alpine@sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/redis",
+     "alpine",
+     "sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb"
+    ],
+    "lib": [
+     "docker.io",
+     "library/redis",
+     "alpine@sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb",
+     null
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/python-38:1-34.1599745032@sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/python-38",
+     "1-34.1599745032",
+     "sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/python-38",
+     "1-34.1599745032@sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3",
+     null
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/ubi-minimal:8.2@sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6",
+    "uses": 6,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/ubi-minimal",
+     "8.2",
+     "sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/ubi-minimal",
+     "8.2@sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6",
+     null
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/ubi:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/ubi",
+     "8.2",
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/ubi",
+     "8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+     null
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8",
+     "8.2",
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8",
+     "8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+     null
+    ]
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/k8s-staging-images/gateway-api-inference-extension/epp:main",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "k8s-staging-images/gateway-api-inference-extension/epp",
+     "main",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/k8s-staging-images/gateway-api-inference-extension/lora-syncer:main",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "k8s-staging-images/gateway-api-inference-extension/lora-syncer",
+     "main",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/adservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/cartservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/checkoutservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/currencyservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/emailservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/frontend",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/loadgenerator:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/loadgenerator",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/paymentservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/productcatalogservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/recommendationservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-central1-docker.pkg.dev",
+     "online-boutique-ci/microservices-demo/shippingservice",
+     "v0.10.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/inference-checkpoint:v0.2.3",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/inference-checkpoint",
+     "v0.2.3",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/jetstream-http:v0.2.3",
+    "uses": 4,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/jetstream-http",
+     "v0.2.3",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/jetstream-pathways:v0.2.0",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/jetstream-pathways",
+     "v0.2.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/jetstream-pytorch-server:v0.2.4",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/jetstream-pytorch-server",
+     "v0.2.4",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-admin-server:v1.1.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/sax-admin-server",
+     "v1.1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-admin-server:v1.2.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/sax-admin-server",
+     "v1.2.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-http:v1.0.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/sax-http",
+     "v1.0.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-http:v1.2.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/sax-http",
+     "v1.2.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-model-server:v1.1.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/sax-model-server",
+     "v1.1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-model-server:v1.2.0",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-images/inference/sax-model-server",
+     "v1.2.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-v2-images/pathways/proxy_server:jax-0.5.3",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-v2-images/pathways/proxy_server",
+     "jax-0.5.3",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/cloud-tpu-v2-images/pathways/server:jax-0.5.3",
+    "uses": 4,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "cloud-tpu-v2-images/pathways/server",
+     "jax-0.5.3",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu121.1-4.ubuntu2204.py310",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu121.1-4.ubuntu2204.py310",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu121.2-1.ubuntu2204.py310",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu121.2-1.ubuntu2204.py310",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu124.2-3.ubuntu2204.py311",
+    "uses": 26,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu124.2-3.ubuntu2204.py311",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/gce-ai-infra/gpudirect-gib/nccl-plugin-gib:v1.0.6",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "gce-ai-infra/gpudirect-gib/nccl-plugin-gib",
+     "v1.0.6",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/batch-ml-workload",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/batch-ml-workload",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5",
+    "uses": 3,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/gb-frontend",
+     "v5",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/gb-redis-follower:v2",
+    "uses": 7,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/gb-redis-follower",
+     "v2",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/gemma-fine-tuning:v1.1.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/gemma-fine-tuning",
+     "v1.1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/gradio-app:v1.0.4",
+    "uses": 8,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/gradio-app",
+     "v1.0.4",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/gradio-app:v1.0.7",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/gradio-app",
+     "v1.0.7",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-cdn:1.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/hello-app-cdn",
+     "1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-cloud-spanner",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/hello-app-cloud-spanner",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-redis:1.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/hello-app-redis",
+     "1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-tls:1.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/hello-app-tls",
+     "1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0",
+    "uses": 8,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/hello-app",
+     "1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/hello-app",
+     "2.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/keda-pubsub-sample:v1",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/keda-pubsub-sample",
+     "v1",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/prometheus-dummy-exporter:v0.2.0",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/prometheus-dummy-exporter",
+     "v0.2.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/pubsub-sample:v2",
+    "uses": 3,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/pubsub-sample",
+     "v2",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/sd-dummy-exporter:v0.3.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/sd-dummy-exporter",
+     "v0.3.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/security/maven-vulns",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/security/maven-vulns",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/stateful-workload:latest",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/stateful-workload",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/tritonserver:2.42.0",
+    "uses": 3,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/tritonserver",
+     "2.42.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.28",
+    "uses": 2,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/whereami",
+     "v1.2.28",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.9",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/whereami",
+     "v1.2.9",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/gke/wi-secret-store:latest",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/gke/wi-secret-store",
+     "latest",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/google-samples/containers/workload-metrics:1.0",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "google-samples/containers/workload-metrics",
+     "1.0",
+     null
+    ],
+    "lib": "no match"
+   },
+   {
+    "s": "us-docker.pkg.dev/vertex-ai/vertex-vision-model-garden-dockers/pytorch-vllm-serve:20250801_0916_RC01",
+    "uses": 1,
+    "cls": "R",
+    "ref": [
+     "us-docker.pkg.dev",
+     "vertex-ai/vertex-vision-model-garden-dockers/pytorch-vllm-serve",
+     "20250801_0916_RC01",
+     null
+    ],
+    "lib": "no match"
+   }
+  ],
+  "parse-docker-image-name": [],
+  "go-containerregistry": [
+   {
+    "s": "busybox:1.38.0@sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616",
+    "uses": 6,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/busybox",
+     "1.38.0",
+     "sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616"
+    ],
+    "lib": [
+     "docker.io",
+     "library/busybox",
+     null,
+     "sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616"
+    ]
+   },
+   {
+    "s": "cgr.dev/chainguard/git:2.39@sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "cgr.dev",
+     "chainguard/git",
+     "2.39",
+     "sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb"
+    ],
+    "lib": [
+     "cgr.dev",
+     "chainguard/git",
+     null,
+     "sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb"
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v3.4@sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3.4",
+     "sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     null,
+     "sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5"
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v3@sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v3",
+     "sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     null,
+     "sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37"
+    ]
+   },
+   {
+    "s": "docker.io/42crunch/docker-api-security-audit:v4.2@sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     "v4.2",
+     "sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe"
+    ],
+    "lib": [
+     "docker.io",
+     "42crunch/docker-api-security-audit",
+     null,
+     "sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe"
+    ]
+   },
+   {
+    "s": "docker.io/amazon/aws-cli:2.0.52@sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4",
+    "uses": 3,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "amazon/aws-cli",
+     "2.0.52",
+     "sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4"
+    ],
+    "lib": [
+     "docker.io",
+     "amazon/aws-cli",
+     null,
+     "sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4"
+    ]
+   },
+   {
+    "s": "docker.io/ansible/ansible-runner:1.4.6@sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "ansible/ansible-runner",
+     "1.4.6",
+     "sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb"
+    ],
+    "lib": [
+     "docker.io",
+     "ansible/ansible-runner",
+     null,
+     "sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb"
+    ]
+   },
+   {
+    "s": "docker.io/appleboy/drone-scp:1.6.14@sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "appleboy/drone-scp",
+     "1.6.14",
+     "sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818"
+    ],
+    "lib": [
+     "docker.io",
+     "appleboy/drone-scp",
+     null,
+     "sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818"
+    ]
+   },
+   {
+    "s": "docker.io/appleboy/drone-ssh:1.6.1@sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "appleboy/drone-ssh",
+     "1.6.1",
+     "sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a"
+    ],
+    "lib": [
+     "docker.io",
+     "appleboy/drone-ssh",
+     null,
+     "sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a"
+    ]
+   },
+   {
+    "s": "docker.io/buildpacksio/lifecycle:0.8.1@sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86",
+    "uses": 3,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "buildpacksio/lifecycle",
+     "0.8.1",
+     "sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86"
+    ],
+    "lib": [
+     "docker.io",
+     "buildpacksio/lifecycle",
+     null,
+     "sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86"
+    ]
+   },
+   {
+    "s": "docker.io/curlimages/curl:7.70.0@sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4",
+    "uses": 12,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "curlimages/curl",
+     "7.70.0",
+     "sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4"
+    ],
+    "lib": [
+     "docker.io",
+     "curlimages/curl",
+     null,
+     "sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/black:latest-0.2@sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/black",
+     "latest-0.2",
+     "sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/black",
+     null,
+     "sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/checkmake:0.1.0@sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/checkmake",
+     "0.1.0",
+     "sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/checkmake",
+     null,
+     "sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/mypy:latest-0.2@sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/mypy",
+     "latest-0.2",
+     "sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/mypy",
+     null,
+     "sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b"
+    ]
+   },
+   {
+    "s": "docker.io/cytopia/yamllint:1.23@sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "cytopia/yamllint",
+     "1.23",
+     "sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2"
+    ],
+    "lib": [
+     "docker.io",
+     "cytopia/yamllint",
+     null,
+     "sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2"
+    ]
+   },
+   {
+    "s": "docker.io/garethr/kubeval:0.15.0@sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "garethr/kubeval",
+     "0.15.0",
+     "sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d"
+    ],
+    "lib": [
+     "docker.io",
+     "garethr/kubeval",
+     null,
+     "sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d"
+    ]
+   },
+   {
+    "s": "docker.io/hugomods/hugo:0.122.0@sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "hugomods/hugo",
+     "0.122.0",
+     "sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d"
+    ],
+    "lib": [
+     "docker.io",
+     "hugomods/hugo",
+     null,
+     "sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d"
+    ]
+   },
+   {
+    "s": "docker.io/instrumenta/conftest:v0.21.0@sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "instrumenta/conftest",
+     "v0.21.0",
+     "sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21"
+    ],
+    "lib": [
+     "docker.io",
+     "instrumenta/conftest",
+     null,
+     "sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21"
+    ]
+   },
+   {
+    "s": "docker.io/koalaman/shellcheck:v0.7.1@sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "koalaman/shellcheck",
+     "v0.7.1",
+     "sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee"
+    ],
+    "lib": [
+     "docker.io",
+     "koalaman/shellcheck",
+     null,
+     "sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee"
+    ]
+   },
+   {
+    "s": "docker.io/library/alpine:3.12@sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/alpine",
+     "3.12",
+     "sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad"
+    ],
+    "lib": [
+     "docker.io",
+     "library/alpine",
+     null,
+     "sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad"
+    ]
+   },
+   {
+    "s": "docker.io/library/alpine:3.12@sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/alpine",
+     "3.12",
+     "sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e"
+    ],
+    "lib": [
+     "docker.io",
+     "library/alpine",
+     null,
+     "sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e"
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.0.18@sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.0.18",
+     "sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash",
+     null,
+     "sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404"
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.1.4@sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6",
+    "uses": 20,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.1.4",
+     "sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash",
+     null,
+     "sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6"
+    ]
+   },
+   {
+    "s": "docker.io/library/bash:5.1.4@sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/bash",
+     "5.1.4",
+     "sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9"
+    ],
+    "lib": [
+     "docker.io",
+     "library/bash",
+     null,
+     "sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9"
+    ]
+   },
+   {
+    "s": "docker.io/library/busybox:1.32.0@sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/busybox",
+     "1.32.0",
+     "sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc"
+    ],
+    "lib": [
+     "docker.io",
+     "library/busybox",
+     null,
+     "sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.12-alpine@sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.12-alpine",
+     "sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     null,
+     "sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.8-alpine@sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.8-alpine",
+     "sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     null,
+     "sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.9-alpine3.13@sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.9-alpine3.13",
+     "sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     null,
+     "sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac"
+    ]
+   },
+   {
+    "s": "docker.io/library/python:3.9.19-alpine3.20@sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/python",
+     "3.9.19-alpine3.20",
+     "sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d"
+    ],
+    "lib": [
+     "docker.io",
+     "library/python",
+     null,
+     "sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d"
+    ]
+   },
+   {
+    "s": "docker.io/macstadium/orka-tekton-runner:2020-10-23-a93757dc-0.1@sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "macstadium/orka-tekton-runner",
+     "2020-10-23-a93757dc-0.1",
+     "sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339"
+    ],
+    "lib": [
+     "docker.io",
+     "macstadium/orka-tekton-runner",
+     null,
+     "sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339"
+    ]
+   },
+   {
+    "s": "docker.io/markdownlint/markdownlint:0.11.0@sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "markdownlint/markdownlint",
+     "0.11.0",
+     "sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724"
+    ],
+    "lib": [
+     "docker.io",
+     "markdownlint/markdownlint",
+     null,
+     "sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724"
+    ]
+   },
+   {
+    "s": "docker.io/mikefarah/yq:4@sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "mikefarah/yq",
+     "4",
+     "sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b"
+    ],
+    "lib": [
+     "docker.io",
+     "mikefarah/yq",
+     null,
+     "sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b"
+    ]
+   },
+   {
+    "s": "docker.io/openpolicyagent/conftest:v0.54.0@sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "openpolicyagent/conftest",
+     "v0.54.0",
+     "sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86"
+    ],
+    "lib": [
+     "docker.io",
+     "openpolicyagent/conftest",
+     null,
+     "sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86"
+    ]
+   },
+   {
+    "s": "docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46",
+    "uses": 5,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pgsty/silo",
+     "RELEASE.2026-09-16T00-00-00Z",
+     "sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46"
+    ],
+    "lib": [
+     "docker.io",
+     "pgsty/silo",
+     null,
+     "sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46"
+    ]
+   },
+   {
+    "s": "docker.io/pipelinecomponents/rubocop:0.19.0@sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pipelinecomponents/rubocop",
+     "0.19.0",
+     "sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3"
+    ],
+    "lib": [
+     "docker.io",
+     "pipelinecomponents/rubocop",
+     null,
+     "sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3"
+    ]
+   },
+   {
+    "s": "docker.io/pipelinecomponents/tslint:0.14.1@sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "pipelinecomponents/tslint",
+     "0.14.1",
+     "sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45"
+    ],
+    "lib": [
+     "docker.io",
+     "pipelinecomponents/tslint",
+     null,
+     "sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45"
+    ]
+   },
+   {
+    "s": "docker.io/shaowenchen/rsync-sshpass:v1@sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "shaowenchen/rsync-sshpass",
+     "v1",
+     "sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323"
+    ],
+    "lib": [
+     "docker.io",
+     "shaowenchen/rsync-sshpass",
+     null,
+     "sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323"
+    ]
+   },
+   {
+    "s": "docker.io/sonarsource/sonar-scanner-cli:4.5@sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "sonarsource/sonar-scanner-cli",
+     "4.5",
+     "sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a"
+    ],
+    "lib": [
+     "docker.io",
+     "sonarsource/sonar-scanner-cli",
+     null,
+     "sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a"
+    ]
+   },
+   {
+    "s": "docker.io/stackrox/kube-linter:0.2.2-2-g7d10a69154-alpine@sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "stackrox/kube-linter",
+     "0.2.2-2-g7d10a69154-alpine",
+     "sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0"
+    ],
+    "lib": [
+     "docker.io",
+     "stackrox/kube-linter",
+     null,
+     "sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0"
+    ]
+   },
+   {
+    "s": "docker.io/weaveworks/eksctl:0.35.0@sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "weaveworks/eksctl",
+     "0.35.0",
+     "sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327"
+    ],
+    "lib": [
+     "docker.io",
+     "weaveworks/eksctl",
+     null,
+     "sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327"
+    ]
+   },
+   {
+    "s": "docker.io/zricethezav/gitleaks:v7.5.0@sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "zricethezav/gitleaks",
+     "v7.5.0",
+     "sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456"
+    ],
+    "lib": [
+     "docker.io",
+     "zricethezav/gitleaks",
+     null,
+     "sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456"
+    ]
+   },
+   {
+    "s": "envoyproxy/envoy:v1.24.0@sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "envoyproxy/envoy",
+     "v1.24.0",
+     "sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0"
+    ],
+    "lib": [
+     "docker.io",
+     "envoyproxy/envoy",
+     null,
+     "sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0"
+    ]
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:310.0.0@sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "310.0.0",
+     "sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506"
+    ],
+    "lib": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     null,
+     "sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506"
+    ]
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:379.0.0-slim@sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "379.0.0-slim",
+     "sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9"
+    ],
+    "lib": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     null,
+     "sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9"
+    ]
+   },
+   {
+    "s": "gcr.io/google.com/cloudsdktool/cloud-sdk:slim@sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     "slim",
+     "sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17"
+    ],
+    "lib": [
+     "gcr.io",
+     "google.com/cloudsdktool/cloud-sdk",
+     null,
+     "sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17"
+    ]
+   },
+   {
+    "s": "gcr.io/kythe-public/golang-extractor:git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc@sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc",
+     "sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3"
+    ],
+    "lib": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     null,
+     "sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3"
+    ]
+   },
+   {
+    "s": "gcr.io/kythe-public/golang-extractor:stable@sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     "stable",
+     "sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb"
+    ],
+    "lib": [
+     "gcr.io",
+     "kythe-public/golang-extractor",
+     null,
+     "sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb"
+    ]
+   },
+   {
+    "s": "gcr.io/uber-container-tools/makisu:v0.3.1@sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gcr.io",
+     "uber-container-tools/makisu",
+     "v0.3.1",
+     "sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c"
+    ],
+    "lib": [
+     "gcr.io",
+     "uber-container-tools/makisu",
+     null,
+     "sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c"
+    ]
+   },
+   {
+    "s": "ghcr.io/hadolint/hadolint:v2.8.0-debian@sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "ghcr.io",
+     "hadolint/hadolint",
+     "v2.8.0-debian",
+     "sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4"
+    ],
+    "lib": [
+     "ghcr.io",
+     "hadolint/hadolint",
+     null,
+     "sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4"
+    ]
+   },
+   {
+    "s": "ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "ghcr.io",
+     "macstadium/orka-tekton-runner",
+     "2022-06-29-ec3440a7",
+     "sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e"
+    ],
+    "lib": [
+     "ghcr.io",
+     "macstadium/orka-tekton-runner",
+     null,
+     "sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e"
+    ]
+   },
+   {
+    "s": "gke.gcr.io/pause:3.8@sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "gke.gcr.io",
+     "pause",
+     "3.8",
+     "sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830"
+    ],
+    "lib": [
+     "gke.gcr.io",
+     "pause",
+     null,
+     "sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830"
+    ]
+   },
+   {
+    "s": "mcr.microsoft.com/dotnet/sdk:3.1-focal@sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "mcr.microsoft.com",
+     "dotnet/sdk",
+     "3.1-focal",
+     "sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba"
+    ],
+    "lib": [
+     "mcr.microsoft.com",
+     "dotnet/sdk",
+     null,
+     "sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba"
+    ]
+   },
+   {
+    "s": "otel/opentelemetry-collector-contrib:0.160.0@sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "otel/opentelemetry-collector-contrib",
+     "0.160.0",
+     "sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6"
+    ],
+    "lib": [
+     "docker.io",
+     "otel/opentelemetry-collector-contrib",
+     null,
+     "sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6"
+    ]
+   },
+   {
+    "s": "quay.io/holos/mccutchen/go-httpbin:v2.14.1@sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97",
+    "uses": 5,
+    "cls": "W",
+    "ref": [
+     "quay.io",
+     "holos/mccutchen/go-httpbin",
+     "v2.14.1",
+     "sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97"
+    ],
+    "lib": [
+     "quay.io",
+     "holos/mccutchen/go-httpbin",
+     null,
+     "sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97"
+    ]
+   },
+   {
+    "s": "quay.io/prometheus/prometheus:v3.2.1@sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62",
+    "uses": 2,
+    "cls": "W",
+    "ref": [
+     "quay.io",
+     "prometheus/prometheus",
+     "v3.2.1",
+     "sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62"
+    ],
+    "lib": [
+     "quay.io",
+     "prometheus/prometheus",
+     null,
+     "sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62"
+    ]
+   },
+   {
+    "s": "redis:alpine@sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "docker.io",
+     "library/redis",
+     "alpine",
+     "sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb"
+    ],
+    "lib": [
+     "docker.io",
+     "library/redis",
+     null,
+     "sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/python-38:1-34.1599745032@sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/python-38",
+     "1-34.1599745032",
+     "sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/python-38",
+     null,
+     "sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/ubi-minimal:8.2@sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6",
+    "uses": 6,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/ubi-minimal",
+     "8.2",
+     "sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/ubi-minimal",
+     null,
+     "sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8/ubi:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+    "uses": 4,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8/ubi",
+     "8.2",
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8/ubi",
+     null,
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ]
+   },
+   {
+    "s": "registry.access.redhat.com/ubi8:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc",
+    "uses": 1,
+    "cls": "W",
+    "ref": [
+     "registry.access.redhat.com",
+     "ubi8",
+     "8.2",
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ],
+    "lib": [
+     "registry.access.redhat.com",
+     "ubi8",
+     null,
+     "sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+    ]
+   }
+  ],
+  "oci-spec": []
+ }
+}

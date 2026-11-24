@@ -1,0 +1,402 @@
+[
+ {
+  "id": "B01",
+  "s": "ubuntu",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B02",
+  "s": "ubuntu:22.04",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B03",
+  "s": "library/ubuntu",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B04",
+  "s": "docker.io/library/ubuntu:22.04",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B05",
+  "s": "docker.io/ubuntu",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B06",
+  "s": "index.docker.io/library/ubuntu",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B07",
+  "s": "user/app",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B08",
+  "s": "user/app:v1",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B09",
+  "s": "ghcr.io/owner/repo:tag",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B10",
+  "s": "quay.io/org/repo",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B11",
+  "s": "registry.example.com/a/b/c:1",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "B12",
+  "s": "registry-1.docker.io/library/ubuntu",
+  "group": "basic and Docker Hub"
+ },
+ {
+  "id": "H01",
+  "s": "localhost/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H02",
+  "s": "localhost:5000/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H03",
+  "s": "localhost:5000/app:1.0",
+  "group": "registry host"
+ },
+ {
+  "id": "H04",
+  "s": "myregistry:5000/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H05",
+  "s": "127.0.0.1:5000/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H06",
+  "s": "[::1]:5000/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H07",
+  "s": "example.com/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H08",
+  "s": "example/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H09",
+  "s": "my-host/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H10",
+  "s": "sub.example.com:443/a:tag",
+  "group": "registry host"
+ },
+ {
+  "id": "H11",
+  "s": "Example.com/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H12",
+  "s": "localhost",
+  "group": "registry host"
+ },
+ {
+  "id": "H13",
+  "s": "localhost:5000",
+  "group": "registry host"
+ },
+ {
+  "id": "H14",
+  "s": "registry:5000/a/b:t",
+  "group": "registry host"
+ },
+ {
+  "id": "H15",
+  "s": "[2001:db8::1]/app",
+  "group": "registry host"
+ },
+ {
+  "id": "H16",
+  "s": "example.com:/app",
+  "group": "registry host"
+ },
+ {
+  "id": "D01",
+  "s": "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "D02",
+  "s": "app:tag@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "D03",
+  "s": "ghcr.io/o/r@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "D04",
+  "s": "app@sha256:abc",
+  "group": "digests"
+ },
+ {
+  "id": "D05",
+  "s": "app@sha512:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "D06",
+  "s": "app@md5:0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "D07",
+  "s": "app@sha256:0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF",
+  "group": "digests"
+ },
+ {
+  "id": "D08",
+  "s": "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdefx",
+  "group": "digests"
+ },
+ {
+  "id": "D09",
+  "s": "localhost:5000/app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "D10",
+  "s": "app@",
+  "group": "digests"
+ },
+ {
+  "id": "D11",
+  "s": "app@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "D12",
+  "s": "app@foo+bar:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "digests"
+ },
+ {
+  "id": "T01",
+  "s": "app:1.2.3-rc_1",
+  "group": "tags"
+ },
+ {
+  "id": "T02",
+  "s": "app:.hidden",
+  "group": "tags"
+ },
+ {
+  "id": "T03",
+  "s": "app:-dash",
+  "group": "tags"
+ },
+ {
+  "id": "T04",
+  "s": "app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "group": "tags"
+ },
+ {
+  "id": "T05",
+  "s": "app:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "group": "tags"
+ },
+ {
+  "id": "T06",
+  "s": "app:Latest",
+  "group": "tags"
+ },
+ {
+  "id": "T07",
+  "s": "app:",
+  "group": "tags"
+ },
+ {
+  "id": "T08",
+  "s": "app:1:2",
+  "group": "tags"
+ },
+ {
+  "id": "T09",
+  "s": "app:_x",
+  "group": "tags"
+ },
+ {
+  "id": "T10",
+  "s": "app:v1.0/x",
+  "group": "tags"
+ },
+ {
+  "id": "N01",
+  "s": "Ubuntu",
+  "group": "repository names"
+ },
+ {
+  "id": "N02",
+  "s": "user/App",
+  "group": "repository names"
+ },
+ {
+  "id": "N03",
+  "s": "a__b",
+  "group": "repository names"
+ },
+ {
+  "id": "N04",
+  "s": "a___b",
+  "group": "repository names"
+ },
+ {
+  "id": "N05",
+  "s": "a..b",
+  "group": "repository names"
+ },
+ {
+  "id": "N06",
+  "s": "a.-b",
+  "group": "repository names"
+ },
+ {
+  "id": "N07",
+  "s": "-a/b",
+  "group": "repository names"
+ },
+ {
+  "id": "N08",
+  "s": "a/b/",
+  "group": "repository names"
+ },
+ {
+  "id": "N09",
+  "s": "a//b",
+  "group": "repository names"
+ },
+ {
+  "id": "N10",
+  "s": "/a/b",
+  "group": "repository names"
+ },
+ {
+  "id": "N11",
+  "s": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "group": "repository names"
+ },
+ {
+  "id": "N12",
+  "s": "café",
+  "group": "repository names"
+ },
+ {
+  "id": "N13",
+  "s": "a b",
+  "group": "repository names"
+ },
+ {
+  "id": "N14",
+  "s": "",
+  "group": "repository names"
+ },
+ {
+  "id": "N15",
+  "s": "a-b_c.d/e--f",
+  "group": "repository names"
+ },
+ {
+  "id": "N16",
+  "s": "a/b/b/b/b/b/b/b/b/b/b",
+  "group": "repository names"
+ },
+ {
+  "id": "N17",
+  "s": "a_b",
+  "group": "repository names"
+ },
+ {
+  "id": "N18",
+  "s": "a--b",
+  "group": "repository names"
+ },
+ {
+  "id": "N19",
+  "s": "ubuntu ",
+  "group": "repository names"
+ },
+ {
+  "id": "N20",
+  "s": "a__",
+  "group": "repository names"
+ },
+ {
+  "id": "L01",
+  "s": "nginx:1.27-alpine",
+  "group": "practical"
+ },
+ {
+  "id": "L02",
+  "s": "postgres:16",
+  "group": "practical"
+ },
+ {
+  "id": "L03",
+  "s": "mcr.microsoft.com/dotnet/sdk:8.0",
+  "group": "practical"
+ },
+ {
+  "id": "L04",
+  "s": "gcr.io/distroless/static-debian12:nonroot",
+  "group": "practical"
+ },
+ {
+  "id": "L05",
+  "s": "public.ecr.aws/lambda/python:3.12",
+  "group": "practical"
+ },
+ {
+  "id": "L06",
+  "s": "registry.k8s.io/pause:3.9",
+  "group": "practical"
+ },
+ {
+  "id": "L07",
+  "s": "ghcr.io/home-assistant/home-assistant:stable",
+  "group": "practical"
+ },
+ {
+  "id": "L08",
+  "s": "docker.io/bitnami/redis:7.2",
+  "group": "practical"
+ },
+ {
+  "id": "L09",
+  "s": "quay.io/prometheus/node-exporter:v1.8.2",
+  "group": "practical"
+ },
+ {
+  "id": "L10",
+  "s": "redis@sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "group": "practical"
+ }
+]

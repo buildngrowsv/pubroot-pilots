@@ -1,0 +1,1910 @@
+[
+{
+"id": "R0000",
+"s": "<DOCKER_REPO>/chatbot:1.0"
+},
+{
+"id": "R0001",
+"s": "<DOCKER_REPO>/embed-docs:1.0"
+},
+{
+"id": "R0002",
+"s": "<YOUR-CONTAINER>"
+},
+{
+"id": "R0003",
+"s": "<YOUR_REGION>-docker.pkg.dev/<YOUR_PROJECT_ID>/<YOUR_REPO_NAME>/maxtext-grpo-runner:v2"
+},
+{
+"id": "R0004",
+"s": "<image_url>"
+},
+{
+"id": "R0005",
+"s": ">-"
+},
+{
+"id": "R0006",
+"s": "CONTAINER_IMAGE"
+},
+{
+"id": "R0007",
+"s": "IMAGE_NAME"
+},
+{
+"id": "R0008",
+"s": "Placeholder for TensorFlow distributed training image"
+},
+{
+"id": "R0009",
+"s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/book-details-app:v1"
+},
+{
+"id": "R0010",
+"s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/book-reviews-app:v1"
+},
+{
+"id": "R0011",
+"s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/home-app:v1"
+},
+{
+"id": "R0012",
+"s": "REGION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/images-app:v1"
+},
+{
+"id": "R0013",
+"s": "REGION-docker.pkg.dev/PROJECT_ID/gke-llm/max-diffusion-web:latest"
+},
+{
+"id": "R0014",
+"s": "REGION-docker.pkg.dev/PROJECT_ID/gke-llm/max-diffusion:latest"
+},
+{
+"id": "R0015",
+"s": "REGION_NAME-docker.pkg.dev/PROJECT_ID/optimum-tpu/tgi-tpu:latest"
+},
+{
+"id": "R0016",
+"s": "adservice"
+},
+{
+"id": "R0017",
+"s": "alpine"
+},
+{
+"id": "R0018",
+"s": "alpine/git:v2.24.3"
+},
+{
+"id": "R0019",
+"s": "alpine/git:v2.26.2"
+},
+{
+"id": "R0020",
+"s": "alpine/git:v2.36.2"
+},
+{
+"id": "R0021",
+"s": "alpine:3.19"
+},
+{
+"id": "R0022",
+"s": "alpine:3.23"
+},
+{
+"id": "R0023",
+"s": "alpine:doesntexist"
+},
+{
+"id": "R0024",
+"s": "alpine:latest"
+},
+{
+"id": "R0025",
+"s": "anthropic-dispatcher"
+},
+{
+"id": "R0026",
+"s": "anthropic-stats-adapter"
+},
+{
+"id": "R0027",
+"s": "anyscale/ray-llm:0.5.0"
+},
+{
+"id": "R0028",
+"s": "argoproj/argocli:latest"
+},
+{
+"id": "R0029",
+"s": "argoproj/argoexec:v2.9.5"
+},
+{
+"id": "R0030",
+"s": "argoproj/argosay:v1"
+},
+{
+"id": "R0031",
+"s": "argoproj/argosay:v2"
+},
+{
+"id": "R0032",
+"s": "arungupta/wildfly-mysql-javaee7:k8s"
+},
+{
+"id": "R0033",
+"s": "axolotlai/axolotl:main-latest"
+},
+{
+"id": "R0034",
+"s": "bash:latest"
+},
+{
+"id": "R0035",
+"s": "bats/bats:latest"
+},
+{
+"id": "R0036",
+"s": "bitnamilegacy/kubectl:1.15.3-ol-7-r165"
+},
+{
+"id": "R0037",
+"s": "busybox"
+},
+{
+"id": "R0038",
+"s": "busybox:1.35"
+},
+{
+"id": "R0039",
+"s": "busybox:1.38.0@sha256:dc2d74b28e4cf8984fa52af1f39bc7c3d9c73760b41a74d629f5d11b1ab28616"
+},
+{
+"id": "R0040",
+"s": "busybox:latest"
+},
+{
+"id": "R0041",
+"s": "capttofu/percona_xtradb_cluster_5_6:beta"
+},
+{
+"id": "R0042",
+"s": "cartservice"
+},
+{
+"id": "R0043",
+"s": "centos:7"
+},
+{
+"id": "R0044",
+"s": "cgr.dev/chainguard/git:2.39@sha256:fdaef225e3fd5cf190520553ff765f186a4363390af3f19912897b0b28f87aeb"
+},
+{
+"id": "R0045",
+"s": "checkoutservice"
+},
+{
+"id": "R0046",
+"s": "claude-agent-worker"
+},
+{
+"id": "R0047",
+"s": "cockroachdb/cockroach-k8s-init:0.2"
+},
+{
+"id": "R0048",
+"s": "cockroachdb/cockroach:v1.1.0"
+},
+{
+"id": "R0049",
+"s": "confluentinc/cp-kcat:7.4.0"
+},
+{
+"id": "R0050",
+"s": "confluentinc/cp-kcat:7.5.1"
+},
+{
+"id": "R0051",
+"s": "curlimages/curl:latest"
+},
+{
+"id": "R0052",
+"s": "currencyservice"
+},
+{
+"id": "R0053",
+"s": "danielqsj/kafka-exporter:v1.6.0"
+},
+{
+"id": "R0054",
+"s": "debian:9.2"
+},
+{
+"id": "R0055",
+"s": "debian:9.4"
+},
+{
+"id": "R0056",
+"s": "debian:9.5-slim"
+},
+{
+"id": "R0057",
+"s": "debian:latest"
+},
+{
+"id": "R0058",
+"s": "demo-microservice"
+},
+{
+"id": "R0059",
+"s": "docker"
+},
+{
+"id": "R0060",
+"s": "docker.io/42crunch/docker-api-security-audit:v3.4@sha256:a55fca6e063ad74d9f8c1d65f602aab431c80901a801af3cb045e3a4f961eba5"
+},
+{
+"id": "R0061",
+"s": "docker.io/42crunch/docker-api-security-audit:v3@sha256:1a62cdf9975531e2bd0b99d985b5e4e0b89fe1fe5c02f60ecb2e4c708807aa37"
+},
+{
+"id": "R0062",
+"s": "docker.io/42crunch/docker-api-security-audit:v4.2@sha256:350df27b2a1b1aac8e3772d8fb13b254569d49c960f31ab58aa3a1e2fbcec3fe"
+},
+{
+"id": "R0063",
+"s": "docker.io/alpine@sha256:203ee936961c0f491f72ce9d3c3c67d9440cdb1d61b9783cf340baa09308ffc1"
+},
+{
+"id": "R0064",
+"s": "docker.io/amazon/aws-cli:2.0.52@sha256:1506cec98a7101c935176d440a14302ea528b8f92fcaf4a6f1ea2d7ecef7edc4"
+},
+{
+"id": "R0065",
+"s": "docker.io/ansible/ansible-runner:1.4.6@sha256:bd09ef403f2f90f2c6bd133d7533e939058903f69223c5f12557a49e3aed14bb"
+},
+{
+"id": "R0066",
+"s": "docker.io/appleboy/drone-scp:1.6.14@sha256:0e0597678b948b0aa09888c66ac75af904cce81baf6af955208527d259c61818"
+},
+{
+"id": "R0067",
+"s": "docker.io/appleboy/drone-ssh:1.6.1@sha256:8252f5232316d832e14f259ed7b217d8d5f620d4668419d88ed47e1a48c0896a"
+},
+{
+"id": "R0068",
+"s": "docker.io/argoproj/argoexec:latest"
+},
+{
+"id": "R0069",
+"s": "docker.io/argoproj/argosay:v2"
+},
+{
+"id": "R0070",
+"s": "docker.io/bash:5.2.15"
+},
+{
+"id": "R0071",
+"s": "docker.io/bash:5.2.21"
+},
+{
+"id": "R0072",
+"s": "docker.io/buildpacksio/lifecycle:0.8.1@sha256:261b7f85b4af986b5802eabc14d581d1830b1d9e38379f99740f5bcdd8a75b86"
+},
+{
+"id": "R0073",
+"s": "docker.io/centos@sha256:a1801b843b1bfaf77c501e7a6d3f709401a1e0c83863037fa3aab063a7fdb9dc"
+},
+{
+"id": "R0074",
+"s": "docker.io/curlimages/curl:7.70.0@sha256:031df77a11e5edded840bc761a845eab6e3c2edee22669fb8ad6d59484b6a1c4"
+},
+{
+"id": "R0075",
+"s": "docker.io/cytopia/black:latest-0.2@sha256:2ec766f1c7e42e6b59c0873ce066fa0a2aa2bf8a80dbc1c40f1566bb539303e0"
+},
+{
+"id": "R0076",
+"s": "docker.io/cytopia/checkmake:0.1.0@sha256:50957311f1ae25fd5925e1a45798d323cf00b3654cd1eede8db7814c72cec41d"
+},
+{
+"id": "R0077",
+"s": "docker.io/cytopia/mypy:latest-0.2@sha256:12d01d8b3cb146daca62c561734270a1c3df16036bb5b486f3d8c992c48af69b"
+},
+{
+"id": "R0078",
+"s": "docker.io/cytopia/yamllint:1.23@sha256:e9deea51bbdc35950cacf6594dab94100d9bbf5c987540b8874167d58e6bdce2"
+},
+{
+"id": "R0079",
+"s": "docker.io/garethr/kubeval:0.15.0@sha256:6962d8ecbb7839637667f66e6703e6ebaae0c29dfe93a31d9968fba4324c7b8d"
+},
+{
+"id": "R0080",
+"s": "docker.io/goreleaser/goreleaser@sha256:1705d73d62a271d9b4684534d9ed3f5fef943e353d22d79693b8d48d730f4db1"
+},
+{
+"id": "R0081",
+"s": "docker.io/goreleaser/goreleaser@sha256:8a596892311c6a5ca45f531eeaf415138e3ea04f3f3d7bd11b46ec320e2d593f"
+},
+{
+"id": "R0082",
+"s": "docker.io/hugomods/hugo:0.122.0@sha256:e90f2e6786969463f3475c7d5e7f031cb5dbf75a8394687d52f99d6c9d0eda0d"
+},
+{
+"id": "R0083",
+"s": "docker.io/iancoffey/bentoml-python3@sha256:ac99d45853efa4750bd4e5f6bc4ab9a7d7aedce57e7930bbb6ef643f9892915d"
+},
+{
+"id": "R0084",
+"s": "docker.io/iancoffey/prometheus-gate-cf7c3e662ede0a4e9bc24d37d2af86d6@sha256:c3df9d8400aef7acb76f409d1e347c5ecaa6f28a69df50981c14bfe87add85d7"
+},
+{
+"id": "R0085",
+"s": "docker.io/iancoffey/sendevent-89c3de01c503ceb66b676a3e41c265ed@sha256:fc39998cba7ad8e54323b948b56b11b0b235996069349fb74776865fedf182a5"
+},
+{
+"id": "R0086",
+"s": "docker.io/instrumenta/conftest:v0.21.0@sha256:7da62b227612d5cf50d6de80db740b77bcfb7fd52b2e1aa679dd9edd692fec21"
+},
+{
+"id": "R0087",
+"s": "docker.io/instrumenta/helm-conftest@sha256:11cb9fd6d101d80af87931db359d4b3ad9a843cf0eb1ea0ab7173424eb379948"
+},
+{
+"id": "R0088",
+"s": "docker.io/koalaman/shellcheck:v0.7.1@sha256:ad95c140f7bf5cc66e50e19da7d72c398583ba24c5866ac32c882eb3ddc153ee"
+},
+{
+"id": "R0089",
+"s": "docker.io/lachlanevenson/k8s-kubectl@sha256:3a5e22a406a109f4f26ec06b5f1f6a66ae0cd0e185bc28499eb7b7a3bbf1fe09"
+},
+{
+"id": "R0090",
+"s": "docker.io/library/alpine:3.12@sha256:36553b10a4947067b9fbb7d532951066293a68eae893beba1d9235f7d11a20ad"
+},
+{
+"id": "R0091",
+"s": "docker.io/library/alpine:3.12@sha256:d7342993700f8cd7aba8496c2d0e57be0666e80b4c441925fc6f9361fa81d10e"
+},
+{
+"id": "R0092",
+"s": "docker.io/library/alpine:latest"
+},
+{
+"id": "R0093",
+"s": "docker.io/library/bash:5.0.18@sha256:879f94a9da53dc064779e7a68339aecd60a9028ff884cacaa47ae752ca690404"
+},
+{
+"id": "R0094",
+"s": "docker.io/library/bash:5.1.4@sha256:b208215a4655538be652b2769d82e576bc4d0a2bb132144c060efc5be8c3f5d6"
+},
+{
+"id": "R0095",
+"s": "docker.io/library/bash:5.1.4@sha256:c523c636b722339f41b6a431b44588ab2f762c5de5ec3bd7964420ff982fb1d9"
+},
+{
+"id": "R0096",
+"s": "docker.io/library/busybox:1.32.0@sha256:c9249fdf56138f0d929e2080ae98ee9cb2946f71498fc1484288e6a935b5e5bc"
+},
+{
+"id": "R0097",
+"s": "docker.io/library/python:3.12-alpine@sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de"
+},
+{
+"id": "R0098",
+"s": "docker.io/library/python:3.12-slim"
+},
+{
+"id": "R0099",
+"s": "docker.io/library/python:3.8-alpine@sha256:e11bbd37d4371894e954421b85dbe8dd4eb7198d7cb4ed144ab529f19f57c3f1"
+},
+{
+"id": "R0100",
+"s": "docker.io/library/python:3.9-alpine3.13@sha256:437482dd314471f5f10967f7376489d9e7f67c111850c123cc725a1741b66aac"
+},
+{
+"id": "R0101",
+"s": "docker.io/library/python:3.9.19-alpine3.20@sha256:45cc18540209d878c2b24080cf8f64fc37603721b67d0ecc508799e2f9a9b21d"
+},
+{
+"id": "R0102",
+"s": "docker.io/macstadium/orka-tekton-runner:2020-10-23-a93757dc-0.1@sha256:e8ed3370dcb91cdb8bcd4e9a7e9f6652879d80acdab9644cda69a98cd8c93339"
+},
+{
+"id": "R0103",
+"s": "docker.io/markdownlint/markdownlint:0.11.0@sha256:399a199c92f89f42cf3a0a1159bd86ca5cdc293fcfd39f87c0669ddee9767724"
+},
+{
+"id": "R0104",
+"s": "docker.io/mikefarah/yq:4@sha256:34f1d11ad51dc4639fc6d8dd5ade019fe57cf6084bb6a99a2f11ea522906033b"
+},
+{
+"id": "R0105",
+"s": "docker.io/monitoringartist/docker-killer:latest"
+},
+{
+"id": "R0106",
+"s": "docker.io/openpolicyagent/conftest:v0.54.0@sha256:094e3bc9af439d16d15379bff9fc3aec0d558936aa1ac1e0574c0dcfa1c43e86"
+},
+{
+"id": "R0107",
+"s": "docker.io/pgsty/silo:RELEASE.2026-09-16T00-00-00Z@sha256:635197cb9f36d01bee221d34d1c7d7960f6a95c48b0b6c01d99cd13bdae51a46"
+},
+{
+"id": "R0108",
+"s": "docker.io/pipelinecomponents/rubocop:0.19.0@sha256:81da232199b1df7f6caec4c7d67981fd00825d3d86c998c258de56207ae118e3"
+},
+{
+"id": "R0109",
+"s": "docker.io/pipelinecomponents/tslint:0.14.1@sha256:85c7dd3f2b6d411fd01b8ad489afd20fb6ac4b2560f29ca506782c1f1a8d9b45"
+},
+{
+"id": "R0110",
+"s": "docker.io/redis:6.0.5"
+},
+{
+"id": "R0111",
+"s": "docker.io/registry:2"
+},
+{
+"id": "R0112",
+"s": "docker.io/shaowenchen/rsync-sshpass:v1@sha256:934985f9a955f416c7378e22d847ac1320fcae1495ee70ad53c9f9fc08b99323"
+},
+{
+"id": "R0113",
+"s": "docker.io/sonarsource/sonar-scanner-cli:4.5@sha256:b8c95a37025f3c13162118cd55761ea0b2a13d1837f9deec51b7b6d82c52040a"
+},
+{
+"id": "R0114",
+"s": "docker.io/sonatype/nexus-iq-cli:1.136.0-01"
+},
+{
+"id": "R0115",
+"s": "docker.io/stackrox/kube-linter:0.2.2-2-g7d10a69154-alpine@sha256:e520e9d8d3a2dfa611914836536545b135845e7bda9f1df34b060e116232dbf0"
+},
+{
+"id": "R0116",
+"s": "docker.io/stedolan/jq@sha256:a61ed0bca213081b64be94c5e1b402ea58bc549f457c2682a86704dd55231e09"
+},
+{
+"id": "R0117",
+"s": "docker.io/vllm/vllm-openai:v0.10.0"
+},
+{
+"id": "R0118",
+"s": "docker.io/weaveworks/eksctl:0.35.0@sha256:48c1fa508970a01fd87a73ac7932a7160479d678cd019a3c84533d911fc54327"
+},
+{
+"id": "R0119",
+"s": "docker.io/zricethezav/gitleaks:v7.5.0@sha256:55b2e1831c7395f17e9da3649924736b396b25be69efdc7a0137073fe0b0f456"
+},
+{
+"id": "R0120",
+"s": "docker.redpanda.com/vectorized/redpanda:v22.2.2"
+},
+{
+"id": "R0121",
+"s": "docker/whalesay"
+},
+{
+"id": "R0122",
+"s": "docker/whalesay:latest"
+},
+{
+"id": "R0123",
+"s": "docker:18.05-dind"
+},
+{
+"id": "R0124",
+"s": "docker:19.03.13"
+},
+{
+"id": "R0125",
+"s": "docker:19.03.13-dind"
+},
+{
+"id": "R0126",
+"s": "dpage/pgadmin4:latest"
+},
+{
+"id": "R0127",
+"s": "echo-grpc"
+},
+{
+"id": "R0128",
+"s": "elasticsearch:7.16.1"
+},
+{
+"id": "R0129",
+"s": "elsonrodriguez/spark-ui-proxy:1.0"
+},
+{
+"id": "R0130",
+"s": "emailservice"
+},
+{
+"id": "R0131",
+"s": "envoyproxy/envoy:v1.24.0@sha256:9ae6b26d14ce92f67cd500cb3e5a89aa3351e013140f8b06c36619d929687ce0"
+},
+{
+"id": "R0132",
+"s": "etl-kafka"
+},
+{
+"id": "R0133",
+"s": "fluent/fluent-bit:latest"
+},
+{
+"id": "R0134",
+"s": "foo"
+},
+{
+"id": "R0135",
+"s": "foo:bar"
+},
+{
+"id": "R0136",
+"s": "frontend"
+},
+{
+"id": "R0137",
+"s": "gcr.io/<<PROJECT>>/jax/hello:latest"
+},
+{
+"id": "R0138",
+"s": "gcr.io/@IMAGE_REGISTRY_PROJECT@/gke-deploy-tekton-demo"
+},
+{
+"id": "R0139",
+"s": "gcr.io/cloud-builders/gke-deploy@sha256:6d18a1efabf8a7ea7f2169c93f3e01fc5b8247b12099618c496ab097aaae341f"
+},
+{
+"id": "R0140",
+"s": "gcr.io/cloud-builders/gradle@sha256:797c9936cf33fc30d82a54437541d7ea7f7825c93e3237a89d254b9bc40b0898"
+},
+{
+"id": "R0141",
+"s": "gcr.io/cloud-builders/mvn@sha256:57523fc43394d6d9d2414ee8d1c85ed7a13460cbb268c3cd16d28cfb3859e641"
+},
+{
+"id": "R0142",
+"s": "gcr.io/cloudsql-docker/gce-proxy:1.11"
+},
+{
+"id": "R0143",
+"s": "gcr.io/gke-release/custom-metrics-stackdriver-adapter:v0.12.0-gke.0"
+},
+{
+"id": "R0144",
+"s": "gcr.io/gke-release/custom-metrics-stackdriver-adapter:v0.15.2-gke.1"
+},
+{
+"id": "R0145",
+"s": "gcr.io/gke-release/slinky/slurmd:IMAGE_TAG"
+},
+{
+"id": "R0146",
+"s": "gcr.io/gke-release/slinky/slurmd:TAG"
+},
+{
+"id": "R0147",
+"s": "gcr.io/google-containers/prometheus-to-sd:v0.5.0"
+},
+{
+"id": "R0148",
+"s": "gcr.io/google-samples/cassandra:v14"
+},
+{
+"id": "R0149",
+"s": "gcr.io/google-samples/gb-frontend:v5"
+},
+{
+"id": "R0150",
+"s": "gcr.io/google-samples/microservices-demo/adservice:v0.4.1"
+},
+{
+"id": "R0151",
+"s": "gcr.io/google-samples/microservices-demo/cartservice:v0.4.1"
+},
+{
+"id": "R0152",
+"s": "gcr.io/google-samples/microservices-demo/checkoutservice:v0.4.1"
+},
+{
+"id": "R0153",
+"s": "gcr.io/google-samples/microservices-demo/currencyservice:v0.4.1"
+},
+{
+"id": "R0154",
+"s": "gcr.io/google-samples/microservices-demo/emailservice:v0.4.1"
+},
+{
+"id": "R0155",
+"s": "gcr.io/google-samples/microservices-demo/frontend:v0.4.1"
+},
+{
+"id": "R0156",
+"s": "gcr.io/google-samples/microservices-demo/loadgenerator:v0.4.1"
+},
+{
+"id": "R0157",
+"s": "gcr.io/google-samples/microservices-demo/paymentservice:v0.4.1"
+},
+{
+"id": "R0158",
+"s": "gcr.io/google-samples/microservices-demo/productcatalogservice:v0.4.1"
+},
+{
+"id": "R0159",
+"s": "gcr.io/google-samples/microservices-demo/recommendationservice:v0.4.1"
+},
+{
+"id": "R0160",
+"s": "gcr.io/google-samples/microservices-demo/shippingservice:v0.4.1"
+},
+{
+"id": "R0161",
+"s": "gcr.io/google-samples/xtrabackup:1.0"
+},
+{
+"id": "R0162",
+"s": "gcr.io/google.com/cloudsdktool/cloud-sdk:310.0.0@sha256:cb03669fcdb9191d55a6200f2911fff3baec0b8c39b156d95b68aabe975ac506"
+},
+{
+"id": "R0163",
+"s": "gcr.io/google.com/cloudsdktool/cloud-sdk:379.0.0-slim@sha256:d844877c7aaa06a0072979230c68417ddb0f27087277f29747c7169d6ed0d2b9"
+},
+{
+"id": "R0164",
+"s": "gcr.io/google.com/cloudsdktool/cloud-sdk:slim@sha256:70d3c9ef711c704259b06485f9ab3bab6e1b5c99e4a5c1ed37f9338004664c17"
+},
+{
+"id": "R0165",
+"s": "gcr.io/google.com/cloudsdktool/google-cloud-cli:slim"
+},
+{
+"id": "R0166",
+"s": "gcr.io/k8s-staging-boskos/boskosctl@sha256:a7fc984732c5dd0b4e0fe0a92e2730fa4b6bddecd0f6f6c7c6b5501abe4ab105"
+},
+{
+"id": "R0167",
+"s": "gcr.io/k8s-staging-perf-tests/sleep:latest"
+},
+{
+"id": "R0168",
+"s": "gcr.io/kaniko-project/executor:debug-v0.16.0"
+},
+{
+"id": "R0169",
+"s": "gcr.io/kaniko-project/executor:latest"
+},
+{
+"id": "R0170",
+"s": "gcr.io/kaniko-project/executor:v0.6.0"
+},
+{
+"id": "R0171",
+"s": "gcr.io/knative-releases/knative.dev/eventing-contrib/cmd/event_display"
+},
+{
+"id": "R0172",
+"s": "gcr.io/kythe-public/golang-extractor:git-8697a6c4b15caf12b59d8e32b9ac0ee4aa9306bc@sha256:e56f0afbae2408288828065a40dddb6d864aef12dc84c412f48fd6e664184dc3"
+},
+{
+"id": "R0173",
+"s": "gcr.io/kythe-public/golang-extractor:stable@sha256:b55233e8a077f94863aacb1c2755fab45be564f49c7ba6fe63ba674099b8cffb"
+},
+{
+"id": "R0174",
+"s": "gcr.io/openssf/scorecard@sha256:c16e433f68799fe69dc0f9675c7ba5d2553846b57262550c86c71165269a7961"
+},
+{
+"id": "R0175",
+"s": "gcr.io/uber-container-tools/makisu:v0.3.1@sha256:1b00578f5825143bdf83e7811bdca9d09aae3355f3968367a2668cdc5aaad29c"
+},
+{
+"id": "R0176",
+"s": "ghcr.io/argoproj-labs/artifact-driver-s3:v0.3.1"
+},
+{
+"id": "R0177",
+"s": "ghcr.io/dexidp/dex:v2.35.0"
+},
+{
+"id": "R0178",
+"s": "ghcr.io/equinix-labs/otel-cli:v0.4.5"
+},
+{
+"id": "R0179",
+"s": "ghcr.io/hadolint/hadolint:v2.8.0-debian@sha256:50b0e60aa2b4aba5a26eeb4ad08c96ed7a828fca996632e29114aabea18345f4"
+},
+{
+"id": "R0180",
+"s": "ghcr.io/macstadium/orka-tekton-runner:2022-06-29-ec3440a7@sha256:d7cfb75ea082a927e36c131aa96e96bfcacd23f62fdaf33f5b37320b86baf50e"
+},
+{
+"id": "R0181",
+"s": "ghcr.io/oracle/oci-cli:sha-5846bb2"
+},
+{
+"id": "R0182",
+"s": "ghcr.io/oracle/oci-cli:sha-b324bd6"
+},
+{
+"id": "R0183",
+"s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/git-init:v0.14.2"
+},
+{
+"id": "R0184",
+"s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.16.2"
+},
+{
+"id": "R0185",
+"s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.18.0"
+},
+{
+"id": "R0186",
+"s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/kubeconfigwriter@sha256:b2c6d0962cda88fb3095128b6202da9b0e6c9c0df3ef6cf7863505ffd25072fd"
+},
+{
+"id": "R0187",
+"s": "ghcr.io/tektoncd/github.com/tektoncd/pipeline/cmd/pullrequest-init@sha256:69633ecd0e948f6462c61bb9e008b940a05b143ef51c67e6e4093278a23dac53"
+},
+{
+"id": "R0188",
+"s": "ghcr.io/tektoncd/plumbing/test-runner@sha256:44aa00796831a4ed5586152058dd96a6d14174b8a4ea9fcae663fb37f72c9454"
+},
+{
+"id": "R0189",
+"s": "ghost:0.7.1"
+},
+{
+"id": "R0190",
+"s": "gitea/gitea:latest"
+},
+{
+"id": "R0191",
+"s": "github.com/knative/eventing/cmd/sendevent"
+},
+{
+"id": "R0192",
+"s": "gke.gcr.io/pause:3.8@sha256:880e63f94b145e46f1b1082bb71b85e21f16b99b180b9996407d61240ceb9830"
+},
+{
+"id": "R0193",
+"s": "golang:1.10"
+},
+{
+"id": "R0194",
+"s": "golang:1.17"
+},
+{
+"id": "R0195",
+"s": "golang:1.18"
+},
+{
+"id": "R0196",
+"s": "golang:1.27.4"
+},
+{
+"id": "R0197",
+"s": "golang:1.8"
+},
+{
+"id": "R0198",
+"s": "google/cloud-sdk:latest"
+},
+{
+"id": "R0199",
+"s": "google/cloud-sdk:slim"
+},
+{
+"id": "R0200",
+"s": "governmentpaas/curl-ssl"
+},
+{
+"id": "R0201",
+"s": "grafana/grafana"
+},
+{
+"id": "R0202",
+"s": "grafana/grafana:11.5.2"
+},
+{
+"id": "R0203",
+"s": "grafana/tempo:2.7.2"
+},
+{
+"id": "R0204",
+"s": "hello"
+},
+{
+"id": "R0205",
+"s": "hello-app"
+},
+{
+"id": "R0206",
+"s": "huggingface/downloader:0.17.3"
+},
+{
+"id": "R0207",
+"s": "influxdb:1.2"
+},
+{
+"id": "R0208",
+"s": "itzg/minecraft-server"
+},
+{
+"id": "R0209",
+"s": "janakiramm/myapp:v1"
+},
+{
+"id": "R0210",
+"s": "janakiramm/myapp:v2"
+},
+{
+"id": "R0211",
+"s": "k8s.gcr.io/hpa-example"
+},
+{
+"id": "R0212",
+"s": "k8s.gcr.io/nginx-slim:0.8"
+},
+{
+"id": "R0213",
+"s": "kibana:7.16.1"
+},
+{
+"id": "R0214",
+"s": "kubernetes/pause"
+},
+{
+"id": "R0215",
+"s": "kubernetes/redis:v1"
+},
+{
+"id": "R0216",
+"s": "linuxserver/plex"
+},
+{
+"id": "R0217",
+"s": "linuxserver/wireguard"
+},
+{
+"id": "R0218",
+"s": "litmuschaos.docker.scarf.sh/litmuschaos/go-runner:latest"
+},
+{
+"id": "R0219",
+"s": "litmuschaos/chaos-exporter:1.13.6"
+},
+{
+"id": "R0220",
+"s": "loadgenerator"
+},
+{
+"id": "R0221",
+"s": "locustio/locust"
+},
+{
+"id": "R0222",
+"s": "logstash:7.16.1"
+},
+{
+"id": "R0223",
+"s": "mariadb:10-focal"
+},
+{
+"id": "R0224",
+"s": "mariadb:10.5"
+},
+{
+"id": "R0225",
+"s": "mariadb:10.6.4-focal"
+},
+{
+"id": "R0226",
+"s": "mariadb:10.9"
+},
+{
+"id": "R0227",
+"s": "mattf/storm-worker"
+},
+{
+"id": "R0228",
+"s": "maven"
+},
+{
+"id": "R0229",
+"s": "maven:latest"
+},
+{
+"id": "R0230",
+"s": "mcr.microsoft.com/azure-cli"
+},
+{
+"id": "R0231",
+"s": "mcr.microsoft.com/azure-sql-edge:1.0.4"
+},
+{
+"id": "R0232",
+"s": "mcr.microsoft.com/azure-storage/azurite"
+},
+{
+"id": "R0233",
+"s": "mcr.microsoft.com/dotnet/sdk:3.1-focal@sha256:1e34d3881f9e1da0b2e81de59656abc29be6993eef2362d9134d66530db8b6ba"
+},
+{
+"id": "R0234",
+"s": "mcr.microsoft.com/windows/nanoserver:1809"
+},
+{
+"id": "R0235",
+"s": "mesosphere/aws-cli"
+},
+{
+"id": "R0236",
+"s": "minio/minio:latest"
+},
+{
+"id": "R0237",
+"s": "moby/buildkit:v0.6.2"
+},
+{
+"id": "R0238",
+"s": "moby/buildkit:v0.6.2-rootless"
+},
+{
+"id": "R0239",
+"s": "moby/buildkit:v0.9.3-rootless"
+},
+{
+"id": "R0240",
+"s": "mongo"
+},
+{
+"id": "R0241",
+"s": "mongo:4.2.0"
+},
+{
+"id": "R0242",
+"s": "my-image"
+},
+{
+"id": "R0243",
+"s": "mysql"
+},
+{
+"id": "R0244",
+"s": "mysql/mysql-router:8.0.27"
+},
+{
+"id": "R0245",
+"s": "mysql/mysql-server:8.0.28"
+},
+{
+"id": "R0246",
+"s": "mysql:5.7"
+},
+{
+"id": "R0247",
+"s": "mysql:8"
+},
+{
+"id": "R0248",
+"s": "mysql:8.0"
+},
+{
+"id": "R0249",
+"s": "mysql:latest"
+},
+{
+"id": "R0250",
+"s": "newrelic/infrastructure"
+},
+{
+"id": "R0251",
+"s": "newrelic/nrsysmond"
+},
+{
+"id": "R0252",
+"s": "nextcloud:apache"
+},
+{
+"id": "R0253",
+"s": "nginx"
+},
+{
+"id": "R0254",
+"s": "nginx:1.13"
+},
+{
+"id": "R0255",
+"s": "nginx:1.25"
+},
+{
+"id": "R0256",
+"s": "nginx:1.29"
+},
+{
+"id": "R0257",
+"s": "nginx:alpine"
+},
+{
+"id": "R0258",
+"s": "nginx:latest"
+},
+{
+"id": "R0259",
+"s": "nginx:stable"
+},
+{
+"id": "R0260",
+"s": "nginx:stable-alpine"
+},
+{
+"id": "R0261",
+"s": "node:0.10.40"
+},
+{
+"id": "R0262",
+"s": "node:9.1-alpine"
+},
+{
+"id": "R0263",
+"s": "nvcr.io/nim/nvidia/llm-nim:1.14"
+},
+{
+"id": "R0264",
+"s": "nvcr.io/nim/nvidia/llm-nim:latest"
+},
+{
+"id": "R0265",
+"s": "nvcr.io/nvidia/tritonserver:22.01-py3"
+},
+{
+"id": "R0266",
+"s": "nvcr.io/nvidia/vllm:25.09-py3"
+},
+{
+"id": "R0267",
+"s": "nvcr.io/nvidia/vllm:26.02-py3"
+},
+{
+"id": "R0268",
+"s": "oliver006/redis_exporter:v1.43.1"
+},
+{
+"id": "R0269",
+"s": "openshift/etcd-20-centos7"
+},
+{
+"id": "R0270",
+"s": "openshift/origin"
+},
+{
+"id": "R0271",
+"s": "otel/opentelemetry-collector-contrib:0.144.0"
+},
+{
+"id": "R0272",
+"s": "otel/opentelemetry-collector-contrib:0.160.0@sha256:799dc6cf12c96192af37b5bdba804da8c10b3bc563b43cb90c3f3c58d9572ad6"
+},
+{
+"id": "R0273",
+"s": "otel/opentelemetry-collector:0.144.0"
+},
+{
+"id": "R0274",
+"s": "panubo/sshd:1.3.0"
+},
+{
+"id": "R0275",
+"s": "paymentservice"
+},
+{
+"id": "R0276",
+"s": "pihole/pihole:latest"
+},
+{
+"id": "R0277",
+"s": "portainer/portainer-ce:alpine"
+},
+{
+"id": "R0278",
+"s": "postgres"
+},
+{
+"id": "R0279",
+"s": "postgres:12-alpine"
+},
+{
+"id": "R0280",
+"s": "postgres:15"
+},
+{
+"id": "R0281",
+"s": "postgres:15-alpine"
+},
+{
+"id": "R0282",
+"s": "postgres:16"
+},
+{
+"id": "R0283",
+"s": "postgres:alpine"
+},
+{
+"id": "R0284",
+"s": "postgres:latest"
+},
+{
+"id": "R0285",
+"s": "productcatalogservice"
+},
+{
+"id": "R0286",
+"s": "prom/prometheus"
+},
+{
+"id": "R0287",
+"s": "python"
+},
+{
+"id": "R0288",
+"s": "python:3"
+},
+{
+"id": "R0289",
+"s": "python:3.10-slim"
+},
+{
+"id": "R0290",
+"s": "python:3.11-alpine"
+},
+{
+"id": "R0291",
+"s": "python:3.12"
+},
+{
+"id": "R0292",
+"s": "python:alpine"
+},
+{
+"id": "R0293",
+"s": "python:alpine3.23"
+},
+{
+"id": "R0294",
+"s": "python:latest"
+},
+{
+"id": "R0295",
+"s": "quay.io/argoproj/argocli:latest"
+},
+{
+"id": "R0296",
+"s": "quay.io/argoproj/argoexec:latest"
+},
+{
+"id": "R0297",
+"s": "quay.io/argoproj/workflow-controller:latest"
+},
+{
+"id": "R0298",
+"s": "quay.io/buildah/stable:v1.17.0"
+},
+{
+"id": "R0299",
+"s": "quay.io/chmouel/github-app-token@sha256:bc45937ae588df876555ebb56c36350ed74592c7f55f2df255cabef39c926a88"
+},
+{
+"id": "R0300",
+"s": "quay.io/cilium/hubble-ui-backend:v0.11.0"
+},
+{
+"id": "R0301",
+"s": "quay.io/cilium/hubble-ui-backend:v0.13.2"
+},
+{
+"id": "R0302",
+"s": "quay.io/cilium/hubble-ui:v0.11.0"
+},
+{
+"id": "R0303",
+"s": "quay.io/cilium/hubble-ui:v0.13.2"
+},
+{
+"id": "R0304",
+"s": "quay.io/connordoyle/cpuset-visualizer"
+},
+{
+"id": "R0305",
+"s": "quay.io/diagrawa/github-hub@sha256:a002e05e3c3362f49dc31b8c16c10d76c6dbd854fdb0f596eaae8ac8b792adfb"
+},
+{
+"id": "R0306",
+"s": "quay.io/fairwinds/pluto:v5"
+},
+{
+"id": "R0307",
+"s": "quay.io/fedora/mysql-80@sha256:4f242c1ea0b77df36293784ed26acc12a1e048457fe6c4037bd5d49a0ec4d186"
+},
+{
+"id": "R0308",
+"s": "quay.io/fedora/postgresql-16@sha256:06d566b4be3ba0542690382c2586c5e7e033005cc09a689a5c1f5c1fe7c6cc96"
+},
+{
+"id": "R0309",
+"s": "quay.io/fluentd_elasticsearch/fluentd:v2.5.2"
+},
+{
+"id": "R0310",
+"s": "quay.io/holos/mccutchen/go-httpbin:v2.14.1@sha256:2612f203b1be154524b0dbb65212a158776f0643e2f6e1dad45984fc93413d97"
+},
+{
+"id": "R0311",
+"s": "quay.io/jumpstarter-dev/jumpstarter:latest"
+},
+{
+"id": "R0312",
+"s": "quay.io/openshift-pipeline/s2i:nightly"
+},
+{
+"id": "R0313",
+"s": "quay.io/openshift/origin-cli:4.6"
+},
+{
+"id": "R0314",
+"s": "quay.io/pires/docker-elasticsearch-kubernetes:1.7.1-4"
+},
+{
+"id": "R0315",
+"s": "quay.io/pires/docker-elasticsearch-kubernetes:5.6.2"
+},
+{
+"id": "R0316",
+"s": "quay.io/pires/hazelcast-kubernetes:3.8_1"
+},
+{
+"id": "R0317",
+"s": "quay.io/prometheus/prometheus:v3.2.1@sha256:6927e0919a144aa7616fd0137d4816816d42f6b816de3af269ab065250859a62"
+},
+{
+"id": "R0318",
+"s": "quay.io/prometheuscommunity/elasticsearch-exporter:v1.7.0"
+},
+{
+"id": "R0319",
+"s": "quay.io/prometheuscommunity/postgres-exporter:v0.14.0"
+},
+{
+"id": "R0320",
+"s": "quay.io/rcmendes/ansible-tower-cli@sha256:3a61778f410526db8d6e02e87715d58ee770c4a4faf57ac408cb5ec1a025ef2c"
+},
+{
+"id": "R0321",
+"s": "quay.io/rcmendes/terraform-cli@sha256:cfb8e04b1f62791758370a748d31affe284dcdc93a91eed232c15a05e39ec1a1"
+},
+{
+"id": "R0322",
+"s": "quay.io/skopeo/stable:v1"
+},
+{
+"id": "R0323",
+"s": "quay.io/strimzi/kafka:0.35.0-kafka-3.6.0"
+},
+{
+"id": "R0324",
+"s": "quay.io/thoth-station/twine:v0.0.2"
+},
+{
+"id": "R0325",
+"s": "quay.io/thoth-station/twine@sha256:643ab12bb05c91db1cec6c042160466a3f258e030f5acff2a39d5b0a00442f4b"
+},
+{
+"id": "R0326",
+"s": "quay.io/vinamra2807/openshift-client-python@sha256:17c6b464c2fa930d09203b75b68dbcf120c46a4e8fe56b60fb4e5d0015798343"
+},
+{
+"id": "R0327",
+"s": "quay.io/vinamra2807/replace-tokens@sha256:46b80f4b82d86624b3472f668900ad97ee052c0ea58ef32620b8e90ec83921e0"
+},
+{
+"id": "R0328",
+"s": "quay.io/vinamra2807/social-client:v1"
+},
+{
+"id": "R0329",
+"s": "quay.io/vinamra2807/social-client:v2"
+},
+{
+"id": "R0330",
+"s": "rayproject/ray-ml:2.9.0"
+},
+{
+"id": "R0331",
+"s": "rayproject/ray-ml:2.9.0-py310"
+},
+{
+"id": "R0332",
+"s": "rayproject/ray:2.37.0"
+},
+{
+"id": "R0333",
+"s": "rayproject/ray:2.37.0-gpu"
+},
+{
+"id": "R0334",
+"s": "rayproject/ray:2.40.0-py311-gpu"
+},
+{
+"id": "R0335",
+"s": "rayproject/ray:2.43.0-py310"
+},
+{
+"id": "R0336",
+"s": "rayproject/ray:2.53.0-py311"
+},
+{
+"id": "R0337",
+"s": "rayproject/ray:2.55.1-py311"
+},
+{
+"id": "R0338",
+"s": "rayproject/ray:2.55.1-py311-gpu"
+},
+{
+"id": "R0339",
+"s": "rayproject/ray:2.58.0"
+},
+{
+"id": "R0340",
+"s": "rayproject/ray:2.60.0-py312"
+},
+{
+"id": "R0341",
+"s": "rayproject/ray:2.60.0.b7f425-py312-tpu"
+},
+{
+"id": "R0342",
+"s": "rayproject/ray:nightly-py312-tpu"
+},
+{
+"id": "R0343",
+"s": "recommendationservice"
+},
+{
+"id": "R0344",
+"s": "redhat/ubi9-minimal:latest"
+},
+{
+"id": "R0345",
+"s": "redis"
+},
+{
+"id": "R0346",
+"s": "redis:6.2"
+},
+{
+"id": "R0347",
+"s": "redis:7.2"
+},
+{
+"id": "R0348",
+"s": "redis:alpine"
+},
+{
+"id": "R0349",
+"s": "redis:alpine@sha256:8096655e437712b07503796fb64d81359256cfcff0ab29d95a7da72863786efb"
+},
+{
+"id": "R0350",
+"s": "redis:latest"
+},
+{
+"id": "R0351",
+"s": "redislabs/redismod"
+},
+{
+"id": "R0352",
+"s": "registry"
+},
+{
+"id": "R0353",
+"s": "registry.access.redhat.com/ubi8/python-311@sha256:43605cb2491ef2297a7acf4b4bf0b7f54f0c91b96daf12ae41c49cc7f192b153"
+},
+{
+"id": "R0354",
+"s": "registry.access.redhat.com/ubi8/python-38:1-34.1599745032"
+},
+{
+"id": "R0355",
+"s": "registry.access.redhat.com/ubi8/python-38:1-34.1599745032@sha256:9a6830a753a77b0a2dc140d05bdf56f35c41867fa06c9b30366216e65bc600b3"
+},
+{
+"id": "R0356",
+"s": "registry.access.redhat.com/ubi8/python-38@sha256:af6f93b81f9313de95966e8cd681edb9dbcb5fdbddc5a4cc365af8e4534096ef"
+},
+{
+"id": "R0357",
+"s": "registry.access.redhat.com/ubi8/python-39@sha256:27e795fd6b1b77de70d1dc73a65e4c790650748a9cfda138fdbd194b3d6eea3d"
+},
+{
+"id": "R0358",
+"s": "registry.access.redhat.com/ubi8/ubi-minimal:8.2"
+},
+{
+"id": "R0359",
+"s": "registry.access.redhat.com/ubi8/ubi-minimal:8.2@sha256:5cfbaf45ca96806917830c183e9f37df2e913b187aadb32e89fd83fa455ebaa6"
+},
+{
+"id": "R0360",
+"s": "registry.access.redhat.com/ubi8/ubi-minimal@sha256:b2a1bec3dfbc7a14a1d84d98934dfe8fdde6eb822a211286601cf109cbccb075"
+},
+{
+"id": "R0361",
+"s": "registry.access.redhat.com/ubi8/ubi:8.2"
+},
+{
+"id": "R0362",
+"s": "registry.access.redhat.com/ubi8/ubi:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+},
+{
+"id": "R0363",
+"s": "registry.access.redhat.com/ubi8:8.2"
+},
+{
+"id": "R0364",
+"s": "registry.access.redhat.com/ubi8:8.2@sha256:d748c21a55796827da82c61f162b505c59451cba24f1874e5185f21275b6bddc"
+},
+{
+"id": "R0365",
+"s": "registry.access.redhat.com/ubi8:8.9-1160"
+},
+{
+"id": "R0366",
+"s": "registry.k8s.io/example-dns-backend:v2"
+},
+{
+"id": "R0367",
+"s": "registry.k8s.io/example-dns-frontend:v1"
+},
+{
+"id": "R0368",
+"s": "registry.k8s.io/explorer:1.0"
+},
+{
+"id": "R0369",
+"s": "registry.k8s.io/guestbook:v3"
+},
+{
+"id": "R0370",
+"s": "registry.k8s.io/nginx-slim:0.8"
+},
+{
+"id": "R0371",
+"s": "registry.k8s.io/prometheus-adapter/prometheus-adapter:v0.11.2"
+},
+{
+"id": "R0372",
+"s": "registry.k8s.io/redis-slave:v2"
+},
+{
+"id": "R0373",
+"s": "registry.k8s.io/redis:v1"
+},
+{
+"id": "R0374",
+"s": "registry.k8s.io/redis@sha256:cb111d1bd870a6a471385a4a69ad17469d326e9dd91e0e455350cacf36e1b3ee"
+},
+{
+"id": "R0375",
+"s": "registry.k8s.io/rethinkdb:1.16.0_1"
+},
+{
+"id": "R0376",
+"s": "registry.k8s.io/spark:1.5.2_v1"
+},
+{
+"id": "R0377",
+"s": "registry.k8s.io/test-webserver"
+},
+{
+"id": "R0378",
+"s": "registry.k8s.io/volume-nfs:0.8"
+},
+{
+"id": "R0379",
+"s": "registry.k8s.io/zeppelin:v0.5.6_v1"
+},
+{
+"id": "R0380",
+"s": "registry:2"
+},
+{
+"id": "R0381",
+"s": "remuslazar/gnuplot"
+},
+{
+"id": "R0382",
+"s": "resouer/mytomcat:7.0"
+},
+{
+"id": "R0383",
+"s": "resouer/sample:v1"
+},
+{
+"id": "R0384",
+"s": "resouer/sample:v2"
+},
+{
+"id": "R0385",
+"s": "reverse-grpc"
+},
+{
+"id": "R0386",
+"s": "selenium/hub:4.0"
+},
+{
+"id": "R0387",
+"s": "selenium/node-chrome:4.0"
+},
+{
+"id": "R0388",
+"s": "selenium/node-firefox:4.0"
+},
+{
+"id": "R0389",
+"s": "shippingservice"
+},
+{
+"id": "R0390",
+"s": "shoppingassistantservice"
+},
+{
+"id": "R0391",
+"s": "starefossen/gifsicle"
+},
+{
+"id": "R0392",
+"s": "stedolan/jq:latest"
+},
+{
+"id": "R0393",
+"s": "sysdig/agent"
+},
+{
+"id": "R0394",
+"s": "tensorflow/serving:2.13.1-gpu"
+},
+{
+"id": "R0395",
+"s": "tensorflow/serving:2.19.0"
+},
+{
+"id": "R0396",
+"s": "tensorflow/tensorflow:2.13.0-gpu-jupyter"
+},
+{
+"id": "R0397",
+"s": "tensorflow/tensorflow:2.14.0"
+},
+{
+"id": "R0398",
+"s": "tensorflow/tensorflow:2.15.0-jupyter"
+},
+{
+"id": "R0399",
+"s": "tpuongke/kueue-slice-controller:v0.10"
+},
+{
+"id": "R0400",
+"s": "traefik:2.6"
+},
+{
+"id": "R0401",
+"s": "ubuntu"
+},
+{
+"id": "R0402",
+"s": "ubuntu:22.04"
+},
+{
+"id": "R0403",
+"s": "ubuntu:latest"
+},
+{
+"id": "R0404",
+"s": "us-central1-docker.pkg.dev/<PROJECT_ID>/adk-repo/adk-agent:latest"
+},
+{
+"id": "R0405",
+"s": "us-central1-docker.pkg.dev/PROJECT_ID/gke-scheduled-autoscaler/custom-metric-exporter"
+},
+{
+"id": "R0406",
+"s": "us-central1-docker.pkg.dev/PROJECT_ID/models/fastdash:latest"
+},
+{
+"id": "R0407",
+"s": "us-central1-docker.pkg.dev/PROJECT_ID/models/t5-small:1.0-cpu"
+},
+{
+"id": "R0408",
+"s": "us-central1-docker.pkg.dev/PROJECT_ID/models/t5-small:1.0-gpu"
+},
+{
+"id": "R0409",
+"s": "us-central1-docker.pkg.dev/k8s-staging-images/gateway-api-inference-extension/epp:main"
+},
+{
+"id": "R0410",
+"s": "us-central1-docker.pkg.dev/k8s-staging-images/gateway-api-inference-extension/lora-syncer:main"
+},
+{
+"id": "R0411",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice:v0.10.7"
+},
+{
+"id": "R0412",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/cartservice:v0.10.7"
+},
+{
+"id": "R0413",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/checkoutservice:v0.10.7"
+},
+{
+"id": "R0414",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/currencyservice:v0.10.7"
+},
+{
+"id": "R0415",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/emailservice:v0.10.7"
+},
+{
+"id": "R0416",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/frontend:v0.10.7"
+},
+{
+"id": "R0417",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/loadgenerator:v0.10.7"
+},
+{
+"id": "R0418",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/paymentservice:v0.10.7"
+},
+{
+"id": "R0419",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/productcatalogservice:v0.10.7"
+},
+{
+"id": "R0420",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/recommendationservice:v0.10.7"
+},
+{
+"id": "R0421",
+"s": "us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/shippingservice:v0.10.7"
+},
+{
+"id": "R0422",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/inference-checkpoint:v0.2.3"
+},
+{
+"id": "R0423",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/jetstream-http:v0.2.3"
+},
+{
+"id": "R0424",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/jetstream-pathways:v0.2.0"
+},
+{
+"id": "R0425",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/jetstream-pytorch-server:v0.2.4"
+},
+{
+"id": "R0426",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-admin-server:v1.1.0"
+},
+{
+"id": "R0427",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-admin-server:v1.2.0"
+},
+{
+"id": "R0428",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-http:v1.0.0"
+},
+{
+"id": "R0429",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-http:v1.2.0"
+},
+{
+"id": "R0430",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-model-server:v1.1.0"
+},
+{
+"id": "R0431",
+"s": "us-docker.pkg.dev/cloud-tpu-images/inference/sax-model-server:v1.2.0"
+},
+{
+"id": "R0432",
+"s": "us-docker.pkg.dev/cloud-tpu-v2-images/pathways/proxy_server:jax-0.5.3"
+},
+{
+"id": "R0433",
+"s": "us-docker.pkg.dev/cloud-tpu-v2-images/pathways/server:jax-0.5.3"
+},
+{
+"id": "R0434",
+"s": "us-docker.pkg.dev/deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu121.1-4.ubuntu2204.py310"
+},
+{
+"id": "R0435",
+"s": "us-docker.pkg.dev/deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu121.2-1.ubuntu2204.py310"
+},
+{
+"id": "R0436",
+"s": "us-docker.pkg.dev/deeplearning-platform-release/gcr.io/huggingface-text-generation-inference-cu124.2-3.ubuntu2204.py311"
+},
+{
+"id": "R0437",
+"s": "us-docker.pkg.dev/gce-ai-infra/gpudirect-gib/nccl-plugin-gib:v1.0.6"
+},
+{
+"id": "R0438",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/batch-ml-workload"
+},
+{
+"id": "R0439",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5"
+},
+{
+"id": "R0440",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/gb-redis-follower:v2"
+},
+{
+"id": "R0441",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/gemma-fine-tuning:v1.1.0"
+},
+{
+"id": "R0442",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/gradio-app:v1.0.4"
+},
+{
+"id": "R0443",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/gradio-app:v1.0.7"
+},
+{
+"id": "R0444",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-cdn:1.0"
+},
+{
+"id": "R0445",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-cloud-spanner"
+},
+{
+"id": "R0446",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-redis:1.0"
+},
+{
+"id": "R0447",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app-tls:1.0"
+},
+{
+"id": "R0448",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0"
+},
+{
+"id": "R0449",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0"
+},
+{
+"id": "R0450",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/keda-pubsub-sample:v1"
+},
+{
+"id": "R0451",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/prometheus-dummy-exporter:v0.2.0"
+},
+{
+"id": "R0452",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/pubsub-sample:v2"
+},
+{
+"id": "R0453",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/sd-dummy-exporter:v0.3.0"
+},
+{
+"id": "R0454",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/security/maven-vulns"
+},
+{
+"id": "R0455",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/stateful-workload:latest"
+},
+{
+"id": "R0456",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/tritonserver:2.42.0"
+},
+{
+"id": "R0457",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.28"
+},
+{
+"id": "R0458",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.9"
+},
+{
+"id": "R0459",
+"s": "us-docker.pkg.dev/google-samples/containers/gke/wi-secret-store:latest"
+},
+{
+"id": "R0460",
+"s": "us-docker.pkg.dev/google-samples/containers/workload-metrics:1.0"
+},
+{
+"id": "R0461",
+"s": "us-docker.pkg.dev/vertex-ai/vertex-vision-model-garden-dockers/pytorch-vllm-serve:20250801_0916_RC01"
+},
+{
+"id": "R0462",
+"s": "us.gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.3.0-alpine"
+},
+{
+"id": "R0463",
+"s": "v4tech/imagemagick"
+},
+{
+"id": "R0464",
+"s": "verlai/verl:vllm011.latest"
+},
+{
+"id": "R0465",
+"s": "visibilityspots/cloudflared"
+},
+{
+"id": "R0466",
+"s": "vitess/etcd:v2.0.13-lite"
+},
+{
+"id": "R0467",
+"s": "vitess/guestbook:v2.0.0-alpha5"
+},
+{
+"id": "R0468",
+"s": "vitess/lite:v2.0.0-alpha5"
+},
+{
+"id": "R0469",
+"s": "vllm/vllm-openai:latest"
+},
+{
+"id": "R0470",
+"s": "vllm/vllm-openai:v0.11.0"
+},
+{
+"id": "R0471",
+"s": "vllm/vllm-openai:v0.8.5"
+},
+{
+"id": "R0472",
+"s": "vllm/vllm-tpu:latest"
+},
+{
+"id": "R0473",
+"s": "wordpress"
+},
+{
+"id": "R0474",
+"s": "wordpress:latest"
+},
+{
+"id": "R0475",
+"s": "ymqytw/nginxhttps:1.5"
+},
+{
+"id": "R0476",
+"s": "zshusers/zsh:4.3.15"
+}
+]
